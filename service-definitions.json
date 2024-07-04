@@ -6,7 +6,6 @@
             "Communication - Custom Communication Systems"
         ],
         "website": "https://gnunet.org/",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -77,7 +76,9 @@
                 "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
                 "value": "2086"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "AWStats ",
@@ -86,7 +87,6 @@
             "Analytics"
         ],
         "website": "https://awstats.org",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -185,7 +185,9 @@
                 "type": "null or string",
                 "value": "null"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Metabase",
@@ -194,7 +196,6 @@
             "Analytics"
         ],
         "website": "https://metabase.com",
-        "implmented": false,
         "logo": "https://metabase.com/images/favicon.ico",
         "specs": {
             "ram": 0,
@@ -251,7 +252,9 @@
                 "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
                 "value": "8443"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Matomo",
@@ -260,7 +263,6 @@
             "Analytics"
         ],
         "website": "https://matomo.org/",
-        "implmented": false,
         "logo": "https://m-img.org/spai/q_lossless+ret_img+to_webp/matomo.org/wp-content/uploads/2018/11/cropped-DefaultIcon-32x32.png",
         "specs": {
             "ram": 0,
@@ -639,7 +641,9 @@
                 "type": "null or string",
                 "value": "null"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Plausible Analytics",
@@ -648,7 +652,6 @@
             "Analytics"
         ],
         "website": "https://plausible.io/",
-        "implmented": false,
         "logo": "https://plausible.io/assets/images/icon/favicon-16x16.png",
         "specs": {
             "ram": 0,
@@ -817,7 +820,9 @@
                 "type": "path or string",
                 "value": null
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Ollama",
@@ -826,7 +831,6 @@
             "Analytics"
         ],
         "website": "https://github.com/ollama/ollama",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -925,7 +929,9 @@
                 "type": "list of string",
                 "value": "[ ]"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "changedetection.io",
@@ -934,7 +940,6 @@
             "Automation"
         ],
         "website": "https://github.com/dgtlmoon/changedetection.io",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -1026,7 +1031,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
@@ -1035,7 +1042,6 @@
             "Automation"
         ],
         "website": "https://lidarr.audio/",
-        "implmented": false,
         "logo": "https://lidarr.audio/img/favicon.ico",
         "specs": {
             "ram": 0,
@@ -1085,7 +1091,9 @@
                 "type": "string",
                 "value": "\"lidarr\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Headphones",
@@ -1094,7 +1102,6 @@
             "Automation"
         ],
         "website": "https://github.com/rembo10/headphones",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -1151,7 +1158,9 @@
                 "type": "string",
                 "value": "\"headphones\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Sonarr ",
@@ -1160,7 +1169,6 @@
             "Automation"
         ],
         "website": "https://sonarr.tv/",
-        "implmented": false,
         "logo": "https://sonarr.tv/img/favicon.ico",
         "specs": {
             "ram": 0,
@@ -1210,7 +1218,9 @@
                 "type": "string",
                 "value": "\"sonarr\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Radarr",
@@ -1219,7 +1229,6 @@
             "Automation"
         ],
         "website": "https://radarr.video/",
-        "implmented": false,
         "logo": "https://radarr.video/img/favicon.ico",
         "specs": {
             "ram": 0,
@@ -1269,7 +1278,9 @@
                 "type": "string",
                 "value": "\"radarr\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Healthchecks",
@@ -1278,7 +1289,6 @@
             "Monitoring"
         ],
         "website": "https://github.com/healthchecks/healthchecks",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -1391,7 +1401,9 @@
                 "type": "string",
                 "value": "\"healthchecks\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Syncthing",
@@ -1400,7 +1412,6 @@
             "File Transfer & Synchronization"
         ],
         "website": "https://syncthing.net/",
-        "implmented": false,
         "logo": "https://syncthing.net/img/favicon.png",
         "specs": {
             "ram": 0,
@@ -1737,7 +1748,9 @@
                 "type": "string",
                 "value": "\"syncthing\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Stalwart JMAP",
@@ -1746,7 +1759,6 @@
             "Communication - Email - Mail Delivery Agents"
         ],
         "website": "https://github.com/stalwartlabs/mail-server",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -1775,7 +1787,9 @@
                 "type": "TOML value",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Discourse",
@@ -1784,7 +1798,6 @@
             "Communication - Social Networks and Forums"
         ],
         "website": "https://www.discourse.org/",
-        "implmented": false,
         "logo": "https://www.discourse.org/a/img/favicon.ico",
         "specs": {
             "ram": 0,
@@ -2100,7 +2113,9 @@
                 "type": "signed integer",
                 "value": "30"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Mastodon",
@@ -2109,7 +2124,6 @@
             "Communication - Social Networks and Forums"
         ],
         "website": "https://joinmastodon.org",
-        "implmented": false,
         "logo": "https://joinmastodon.org/_next/static/media/favicon-32x32.3a702fe9.png",
         "specs": {
             "ram": 0,
@@ -2467,7 +2481,9 @@
                 "type": "signed integer",
                 "value": "5"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Jitsi Meet",
@@ -2476,7 +2492,6 @@
             "Communication - Video Conferencing"
         ],
         "website": "https://github.com/jitsi/jitsi-meet",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -2603,7 +2618,9 @@
                 "type": "null or string",
                 "value": "null"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "BorgBackup",
@@ -2612,7 +2629,6 @@
             "Backup"
         ],
         "website": "https://www.borgbackup.org",
-        "implmented": false,
         "logo": "https://www.borgbackup.org/favicon.ico",
         "specs": {
             "ram": 0,
@@ -2935,7 +2951,9 @@
                 "type": "string",
                 "value": "\"borg\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Duplicati",
@@ -2944,7 +2962,6 @@
             "Backup"
         ],
         "website": "https://www.duplicati.com/",
-        "implmented": false,
         "logo": "https://framerusercontent.com/images/X7jKnThcZvMtDy6jL3AneV66g.png",
         "specs": {
             "ram": 0,
@@ -2994,7 +3011,9 @@
                 "type": "string",
                 "value": "\"duplicati\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Duplicity",
@@ -3003,7 +3022,6 @@
             "Backup"
         ],
         "website": "https://duplicity.gitlab.io/duplicity-web/",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -3095,7 +3113,9 @@
                 "type": "string",
                 "value": null
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Restic",
@@ -3104,7 +3124,6 @@
             "Backup"
         ],
         "website": "https://restic.net",
-        "implmented": false,
         "logo": "https://restic.net/favicon.ico",
         "specs": {
             "ram": 0,
@@ -3329,7 +3348,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Rsnapshot ",
@@ -3338,7 +3359,6 @@
             "Backup"
         ],
         "website": "https://rsnapshot.org/",
-        "implmented": false,
         "logo": "https://rsnapshot.org/favicon.ico",
         "specs": {
             "ram": 0,
@@ -3374,7 +3394,9 @@
                 "type": "strings concatenated with \"\\n\"",
                 "value": "\"\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "GoToSocial",
@@ -3383,7 +3405,6 @@
             "Communication - Social Networks and Forums"
         ],
         "website": "https://gotosocial.org",
-        "implmented": false,
         "logo": "https://gotosocial.org/assets/logo.png",
         "specs": {
             "ram": 0,
@@ -3433,7 +3454,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Isso",
@@ -3442,7 +3465,6 @@
             "Communication - Social Networks and Forums"
         ],
         "website": "https://posativ.org/isso/",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -3464,7 +3486,9 @@
                 "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))",
                 "value": null
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Libreddit ",
@@ -3473,7 +3497,6 @@
             "Communication - Social Networks and Forums"
         ],
         "website": "https://github.com/libreddit/libreddit",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -3516,7 +3539,9 @@
                 "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
                 "value": "8080"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Nitter ",
@@ -3525,7 +3550,6 @@
             "Communication - Social Networks and Forums"
         ],
         "website": "https://github.com/zedeus/nitter",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -3827,7 +3851,9 @@
                 "type": "attribute set",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Pleroma",
@@ -3836,7 +3862,6 @@
             "Communication - Social Networks and Forums"
         ],
         "website": "https://git.pleroma.social/pleroma/pleroma",
-        "implmented": false,
         "logo": "https://git.pleroma.social/uploads/-/system/appearance/favicon/1/favicon.png",
         "specs": {
             "ram": 0,
@@ -3893,7 +3918,9 @@
                 "type": "string",
                 "value": "\"pleroma\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Galene",
@@ -3902,7 +3929,6 @@
             "Communication - Video Conferencing"
         ],
         "website": "https://github.com/jech/galene",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -4008,7 +4034,9 @@
                 "type": "string",
                 "value": "\"galene\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "DRBD",
@@ -4017,7 +4045,6 @@
             "File Transfer - Distributed Filesystems"
         ],
         "website": "https://linbit.com/drbd/",
-        "implmented": false,
         "logo": "https://linbit.com/wp-content/uploads/2019/07/cropped-Linbit_Site_Icon-32x32.png",
         "specs": {
             "ram": 0,
@@ -4039,7 +4066,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "GlusterFS",
@@ -4048,7 +4077,6 @@
             "File Transfer - Distributed Filesystems"
         ],
         "website": "https://www.gluster.org",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -4133,7 +4161,9 @@
                 "type": "boolean",
                 "value": "true"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Kubo",
@@ -4142,7 +4172,6 @@
             "File Transfer - Distributed Filesystems"
         ],
         "website": "https://ipfs.io/",
-        "implmented": false,
         "logo": "https://ipfs.io/favicon.ico",
         "specs": {
             "ram": 0,
@@ -4290,7 +4319,9 @@
                 "type": "string",
                 "value": "\"ipfs\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "MooseFS",
@@ -4299,7 +4330,6 @@
             "File Transfer - Distributed Filesystems"
         ],
         "website": "https://moosefs.com",
-        "implmented": false,
         "logo": "https://moosefs.com/wp-content/themes/Moose/img/android-icon-192x192.png",
         "specs": {
             "ram": 0,
@@ -4419,7 +4449,9 @@
                 "type": "boolean",
                 "value": "true"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "SFTPGo ",
@@ -4428,7 +4460,6 @@
             "File Transfer - Object Storage & File Servers"
         ],
         "website": "https://github.com/drakkan/sftpgo",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -4639,7 +4670,9 @@
                 "type": "string",
                 "value": "\"sftpgo\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Transmission ",
@@ -4648,7 +4681,6 @@
             "File Transfer - Peer-to-peer Filesharing"
         ],
         "website": "https://www.raylib.com/games.html",
-        "implmented": false,
         "logo": "https://www.raylib.com/favicon.ico",
         "specs": {
             "ram": 0,
@@ -4873,7 +4905,9 @@
                 "type": "null or path",
                 "value": "null"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Audiobookshelf",
@@ -4882,7 +4916,6 @@
             "Media Streaming - Audio Streaming\r"
         ],
         "website": "https://www.audiobookshelf.org/",
-        "implmented": false,
         "logo": "https://www.audiobookshelf.org/favicon.ico",
         "specs": {
             "ram": 0,
@@ -4946,7 +4979,9 @@
                 "type": "string",
                 "value": "\"audiobookshelf\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "gonic",
@@ -4955,7 +4990,6 @@
             "Media Streaming - Audio Streaming\r"
         ],
         "website": "https://github.com/sentriz/gonic",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -4977,7 +5011,9 @@
                 "type": "attribute set of (atom (null, bool, int, float or string) or a list of them for duplicate keys)",
                 "value": "{\n  cache-path = \"/var/cache/gonic\";\n  listen-addr = \"127.0.0.1:4747\";\n  tls-cert = null;\n  tls-key = null;\n}"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Mopidy",
@@ -4986,7 +5022,6 @@
             "Media Streaming - Audio Streaming\r"
         ],
         "website": "https://www.mopidy.com/",
-        "implmented": false,
         "logo": "https://www.mopidy.com/media/favicon/favicon-32x32.png",
         "specs": {
             "ram": 0,
@@ -5029,7 +5064,9 @@
                 "type": "list of string",
                 "value": "[ ]"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Navidrome Music Server",
@@ -5038,7 +5075,6 @@
             "Media Streaming - Audio Streaming\r"
         ],
         "website": "https://www.navidrome.org/",
-        "implmented": false,
         "logo": "https://www.navidrome.org/favicons/favicon.ico",
         "specs": {
             "ram": 0,
@@ -5102,7 +5138,9 @@
                 "type": "string",
                 "value": "\"navidrome\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Jellyfin",
@@ -5111,7 +5149,6 @@
             "Media Streaming - Multimedia Streaming"
         ],
         "website": "https://jellyfin.org/",
-        "implmented": false,
         "logo": "https://jellyfin.org/images/favicon.ico",
         "specs": {
             "ram": 0,
@@ -5182,7 +5219,9 @@
                 "type": "string",
                 "value": "\"jellyfin\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Invidious",
@@ -5191,7 +5230,6 @@
             "Media Streaming - Video Streaming"
         ],
         "website": "https://invidious.io/",
-        "implmented": false,
         "logo": "https://invidious.io/favicon-32x32.png",
         "specs": {
             "ram": 0,
@@ -5311,7 +5349,9 @@
                 "type": "JSON value",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Owncast",
@@ -5320,7 +5360,6 @@
             "Media Streaming - Video Streaming"
         ],
         "website": "https://owncast.online",
-        "implmented": false,
         "logo": "https://owncast.online/favicon.png",
         "specs": {
             "ram": 0,
@@ -5384,7 +5423,9 @@
                 "type": "string",
                 "value": "\"owncast\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Alerta",
@@ -5393,7 +5434,6 @@
             "Monitoring"
         ],
         "website": "https://alerta.io",
-        "implmented": false,
         "logo": "https://alerta.io/favicon.ico",
         "specs": {
             "ram": 0,
@@ -5471,7 +5511,9 @@
                 "type": "boolean",
                 "value": "true"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "cadvisor",
@@ -5480,7 +5522,6 @@
             "Monitoring"
         ],
         "website": "https://github.com/google/cadvisor",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -5565,7 +5606,9 @@
                 "type": "string",
                 "value": "\"root\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Netdata",
@@ -5574,7 +5617,6 @@
             "Monitoring"
         ],
         "website": "https://www.netdata.cloud/",
-        "implmented": false,
         "logo": "https://www.netdata.cloud/favicon-32x32.png",
         "specs": {
             "ram": 0,
@@ -5680,7 +5722,9 @@
                 "type": "string",
                 "value": "\"netdata\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Prometheus",
@@ -5689,7 +5733,6 @@
             "Monitoring"
         ],
         "website": "https://prometheus.io",
-        "implmented": false,
         "logo": "https://prometheus.io/assets/favicons/favicon.ico",
         "specs": {
             "ram": 0,
@@ -17471,7 +17514,9 @@
                 "type": "YAML value",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "iodine",
@@ -17480,7 +17525,6 @@
             "Proxy"
         ],
         "website": "http://code.kryo.se/iodine/",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -17558,7 +17602,9 @@
                 "type": "string",
                 "value": "\"\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Pomerium",
@@ -17567,7 +17613,6 @@
             "Proxy"
         ],
         "website": "https://pomerium.io",
-        "implmented": false,
         "logo": "https://pomerium.io/static-img/favicon.svg",
         "specs": {
             "ram": 0,
@@ -17610,7 +17655,9 @@
                 "type": "null or string",
                 "value": "null"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Privoxy",
@@ -17619,7 +17666,6 @@
             "Proxy"
         ],
         "website": "https://www.privoxy.org/",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -17704,7 +17750,9 @@
                 "type": "strings concatenated with \"\\n\"",
                 "value": "\"\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Squid",
@@ -17713,7 +17761,6 @@
             "Proxy"
         ],
         "website": "http://www.squid-cache.org",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -17763,7 +17810,9 @@
                 "type": "signed integer",
                 "value": "3128"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Tinyproxy",
@@ -17772,7 +17821,6 @@
             "Proxy"
         ],
         "website": "https://tinyproxy.github.io/",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -17829,7 +17877,9 @@
                 "type": "signed integer",
                 "value": "8888"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Guacamole",
@@ -17838,7 +17888,6 @@
             "Remote Access\r"
         ],
         "website": "https://guacamole.apache.org/",
-        "implmented": false,
         "logo": "https://guacamole.apache.org/images/logos/guac-classic-logo.svg",
         "specs": {
             "ram": 0,
@@ -17895,7 +17944,9 @@
                 "type": "null or path",
                 "value": "null"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "MeshCentral",
@@ -17904,7 +17955,6 @@
             "Remote Access\r"
         ],
         "website": "https://meshcentral.com/",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -17933,7 +17983,9 @@
                 "type": "JSON value",
                 "value": null
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "ShellHub",
@@ -17942,7 +17994,6 @@
             "Remote Access\r"
         ],
         "website": "https://shellhub.io/",
-        "implmented": false,
         "logo": "https://shellhub.io/favicon-32x32.png?v=b7691a4d022678a921902ece55ea2058",
         "specs": {
             "ram": 0,
@@ -17999,7 +18050,9 @@
                 "type": "string",
                 "value": null
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Hound",
@@ -18008,7 +18061,6 @@
             "Search Engines\r"
         ],
         "website": "https://github.com/hound-search/hound",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -18065,7 +18117,9 @@
                 "type": "string",
                 "value": "\"hound\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "OpenSearch",
@@ -18074,7 +18128,6 @@
             "Search Engines\r"
         ],
         "website": "https://github.com/opensearch-project/OpenSearch",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -18194,7 +18247,9 @@
                 "type": "string",
                 "value": "\"opensearch\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Typesense",
@@ -18203,7 +18258,6 @@
             "Search Engines\r"
         ],
         "website": "https://typesense.org",
-        "implmented": false,
         "logo": "https://typesense.org/favicon.png",
         "specs": {
             "ram": 0,
@@ -18260,7 +18314,9 @@
                 "type": "string",
                 "value": "\"/var/lib/typesense\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "GitLab CI",
@@ -18269,7 +18325,6 @@
             "Software Development - Continuous Integration & Continuous Deployment"
         ],
         "website": "https://github.com/python-gitlab/python-gitlab",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -18823,7 +18878,9 @@
                 "type": "TOML value",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "GoCD",
@@ -18832,7 +18889,6 @@
             "Software Development - Continuous Integration & Continuous Deployment"
         ],
         "website": "http://www.go.cd",
-        "implmented": false,
         "logo": "http://www.go.cd/assets/images/favicon.ico",
         "specs": {
             "ram": 0,
@@ -18938,7 +18994,9 @@
                 "type": "string",
                 "value": "\"/var/lib/go-server\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Jenkins",
@@ -18947,7 +19005,6 @@
             "Software Development - Continuous Integration & Continuous Deployment"
         ],
         "website": "https://jenkins.io/",
-        "implmented": false,
         "logo": "https://jenkins.io/favicon.ico",
         "specs": {
             "ram": 0,
@@ -19109,7 +19166,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "code-server",
@@ -19118,7 +19177,6 @@
             "Software Development - IDE & Tools\r"
         ],
         "website": "https://github.com/gitpod-io/openvscode-server",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -19252,7 +19310,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "RStudio Server",
@@ -19261,7 +19321,6 @@
             "Software Development - IDE & Tools\r"
         ],
         "website": "https://www.rstudio.com/",
-        "implmented": false,
         "logo": "https://posit.co/wp-content/themes/Posit/dist/images/favicon/favicon-32x32.png",
         "specs": {
             "ram": 0,
@@ -19311,7 +19370,9 @@
                 "type": "string",
                 "value": "\"/var/lib/rstudio-server\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Cgit",
@@ -19320,7 +19381,6 @@
             "Software Development - Project Management\r"
         ],
         "website": "https://git.zx2c4.com/cgit/about/",
-        "implmented": false,
         "logo": "https://git.zx2c4.com/favicon.ico",
         "specs": {
             "ram": 0,
@@ -19384,7 +19444,9 @@
                 "type": "attribute set of (boolean or signed integer or string)",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Forgejo",
@@ -19393,7 +19455,6 @@
             "Software Development - Project Management\r"
         ],
         "website": "https://forgejo.org",
-        "implmented": false,
         "logo": "https://forgejo.org/favicon.ico",
         "specs": {
             "ram": 0,
@@ -19660,7 +19721,9 @@
                 "type": "string",
                 "value": "\"forgejo\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Gerrit",
@@ -19669,7 +19732,6 @@
             "Software Development - Project Management\r"
         ],
         "website": "https://github.com/kubernetes/test-infra/tree/master/prow",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -19754,7 +19816,9 @@
                 "type": "lazy attribute set of lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer) or lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer)))",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Gitolite",
@@ -19763,7 +19827,6 @@
             "Software Development - Project Management\r"
         ],
         "website": "https://gitolite.com/gitolite/index.html",
-        "implmented": false,
         "logo": "https://gitolite.com/gitolite/img/favicon.ico",
         "specs": {
             "ram": 0,
@@ -19834,7 +19897,9 @@
                 "type": "string",
                 "value": "\"gitolite\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Gogs",
@@ -19843,7 +19908,6 @@
             "Software Development - Project Management\r"
         ],
         "website": "https://gogs.io",
-        "implmented": false,
         "logo": "https://gogs.io/img/favicon.png",
         "specs": {
             "ram": 0,
@@ -19998,7 +20062,9 @@
                 "type": "string",
                 "value": "\"gogs\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Zammad",
@@ -20007,7 +20073,6 @@
             "Ticketing\r"
         ],
         "website": "https://zammad.org",
-        "implmented": false,
         "logo": "https://zammad.org/assets/images/favicon.ico",
         "specs": {
             "ram": 0,
@@ -20155,7 +20220,9 @@
                 "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
                 "value": "6042"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Zoneminder",
@@ -20164,7 +20231,6 @@
             "Video Surveillance\r"
         ],
         "website": "https://zoneminder.com",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -20263,7 +20329,9 @@
                 "type": "one of \"nginx\", \"none\"",
                 "value": "\"nginx\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Headscale",
@@ -20272,7 +20340,6 @@
             "VPN"
         ],
         "website": "https://github.com/juanfont/headscale",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -20581,7 +20648,9 @@
                 "type": "string",
                 "value": "\"headscale\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Nebula",
@@ -20590,7 +20659,6 @@
             "VPN"
         ],
         "website": "https://github.com/slackhq/nebula",
-        "implmented": false,
         "logo": "https://github.githubassets.com/favicons/favicon.png",
         "specs": {
             "ram": 0,
@@ -20724,7 +20792,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "ocserv",
@@ -20733,7 +20803,6 @@
             "VPN"
         ],
         "website": "https://gitlab.com/openconnect/ocserv",
-        "implmented": false,
         "logo": "https://gitlab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png",
         "specs": {
             "ram": 0,
@@ -20755,7 +20824,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "SoftEther",
@@ -20764,7 +20835,6 @@
             "VPN"
         ],
         "website": "https://www.softether.org/",
-        "implmented": false,
         "logo": "https://www.softether.org/favicon.ico",
         "specs": {
             "ram": 0,
@@ -20828,7 +20898,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "strongSwan",
@@ -20837,7 +20909,6 @@
             "VPN"
         ],
         "website": "https://www.strongswan.org",
-        "implmented": false,
         "logo": "https://www.strongswan.org/favicon-32x32.png",
         "specs": {
             "ram": 0,
@@ -20894,7 +20965,9 @@
                 "type": "attribute set of string",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Caddy",
@@ -20903,7 +20976,6 @@
             "Web Servers"
         ],
         "website": "https://caddyserver.com",
-        "implmented": false,
         "logo": "https://caddyserver.com/resources/images/favicon.png?v=50fb678",
         "specs": {
             "ram": 0,
@@ -21072,7 +21144,9 @@
                 "type": "null or string",
                 "value": "null"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "HAProxy",
@@ -21081,7 +21155,6 @@
             "Web Servers"
         ],
         "website": "https://haproxy.org",
-        "implmented": false,
         "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEX////n5+dRUf//AAAA5+fn5wAA5wCtv7miAAAAUUlEQVQI12PABhgFBQUFQAwmIUFDCENJWBgqImwMZUBFFASAECTAyMTIyMTAIAgFDEoijmKiooaGDIoqIomJgUAGUATIEBZkUBQRAUoBGRgAALrGCAzjYWFDAAAAAElFTkSuQmCC",
         "specs": {
             "ram": 0,
@@ -21124,7 +21197,9 @@
                 "type": "string",
                 "value": "\"haproxy\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Lighttpd",
@@ -21133,7 +21208,6 @@
             "Web Servers"
         ],
         "website": "http://www.lighttpd.net/",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -21253,7 +21327,9 @@
                 "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
                 "value": "80"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Static Web Server",
@@ -21262,7 +21338,6 @@
             "Web Servers"
         ],
         "website": "https://static-web-server.net/",
-        "implmented": false,
         "logo": "https://static-web-server.net/assets/sws.svg",
         "specs": {
             "ram": 0,
@@ -21298,7 +21373,9 @@
                 "type": "path",
                 "value": null
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Traefik",
@@ -21307,7 +21384,6 @@
             "Web Servers"
         ],
         "website": "https://traefik.io",
-        "implmented": false,
         "logo": "https://traefik.io/favicon.svg",
         "specs": {
             "ram": 0,
@@ -21378,7 +21454,9 @@
                 "type": "JSON value",
                 "value": "{\n  entryPoints = {\n    http = {\n      address = \":80\";\n    };\n  };\n}"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Varnish",
@@ -21387,7 +21465,6 @@
             "Web Servers"
         ],
         "website": "https://www.varnish-cache.org",
-        "implmented": false,
         "logo": "",
         "specs": {
             "ram": 0,
@@ -21451,7 +21528,9 @@
                 "type": "path",
                 "value": "\"/var/spool/varnish/${config.networking.hostName}\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Minecraft Server",
@@ -21531,7 +21610,9 @@
                 "type": "attribute set of Minecraft UUID",
                 "value": "{ }"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "OpenSSH Server",
@@ -21855,7 +21936,9 @@
                 "type": "boolean",
                 "value": "false"
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     },
     {
         "name": "Open WebUI",
@@ -21923,6 +22006,8 @@
                 "type": "path",
                 "value": "\"/var/lib/open-webui\""
             }
-        ]
+        ],
+        "show": false,
+        "tested": false
     }
 ]
