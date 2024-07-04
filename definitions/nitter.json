@@ -1,0 +1,312 @@
+{
+    "name": "Nitter ",
+    "desc": "Alternative Twitter front-end",
+    "tags": [
+        "Communication - Social Networks and Forums"
+    ],
+    "website": "https://github.com/zedeus/nitter",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "nitter",
+    "options": [
+        {
+            "name": "cache.listMinutes",
+            "desc": "How long to cache list info (not the tweets, so keep it high).",
+            "nixName": "cache.listMinutes",
+            "type": "signed integer",
+            "value": "240"
+        },
+        {
+            "name": "cache.redisConnections",
+            "desc": "Redis connection pool size.",
+            "nixName": "cache.redisConnections",
+            "type": "signed integer",
+            "value": "20"
+        },
+        {
+            "name": "cache.redisHost",
+            "desc": "Redis host.",
+            "nixName": "cache.redisHost",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "cache.redisMaxConnections",
+            "desc": "Maximum number of connections to Redis.  New connections are opened when none are available, but if the poolsize goes above this, they are closed when released, do not worry aboutthis unless you receive tons of requests per second.",
+            "nixName": "cache.redisMaxConnections",
+            "type": "signed integer",
+            "value": "30"
+        },
+        {
+            "name": "cache.redisPort",
+            "desc": "Redis port.",
+            "nixName": "cache.redisPort",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "6379"
+        },
+        {
+            "name": "cache.rssMinutes",
+            "desc": "How long to cache RSS queries.",
+            "nixName": "cache.rssMinutes",
+            "type": "signed integer",
+            "value": "10"
+        },
+        {
+            "name": "config.base64Media",
+            "desc": "Use base64 encoding for proxied media URLs.",
+            "nixName": "config.base64Media",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "config.enableDebug",
+            "desc": "Whether to enable request logs and debug endpoints.",
+            "nixName": "config.enableDebug",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "config.enableRSS",
+            "desc": "Whether to enable RSS feeds.",
+            "nixName": "config.enableRSS",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "config.proxy",
+            "desc": "URL to a HTTP/HTTPS proxy.",
+            "nixName": "config.proxy",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "config.proxyAuth",
+            "desc": "Credentials for proxy.",
+            "nixName": "config.proxyAuth",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "config.tokenCount",
+            "desc": "Minimum amount of usable tokens.  Tokens are used to authorize API requests, but they expire after ~1hour, and have a limit of 187 requests. The limit gets reset every 15minutes, and the pool is filled up so there is always at leasttokenCount usable tokens. Only increase this if you receive major burstsall the time.",
+            "nixName": "config.tokenCount",
+            "type": "signed integer",
+            "value": "10"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Nitter, an alternative Twitter front-end.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "guestAccounts",
+            "desc": "Path to the guest accounts file.  This file contains a list of guest accounts that can be used toaccess the instance without logging in. The file is in JSONL format,where each line is a JSON object with the following fields:  {\u201coauth_token\u201d:\u201csome_token\u201d,\u201coauth_token_secret\u201d:\u201csome_secret_key\u201d}  See  https://github.com/zedeus/nitter/wiki/Guest-Account-Branch-Deployment for more information on guest accounts and how to generate them.",
+            "nixName": "guestAccounts",
+            "type": "path",
+            "value": "\"/var/lib/nitter/guest_accounts.jsonl\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open ports in the firewall for Nitter web interface.",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The nitter package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.nitter"
+        },
+        {
+            "name": "preferences.autoplayGifs",
+            "desc": "Autoplay GIFs.",
+            "nixName": "preferences.autoplayGifs",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "preferences.bidiSupport",
+            "desc": "Support bidirectional text (makes clicking on tweets harder).",
+            "nixName": "preferences.bidiSupport",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.hideBanner",
+            "desc": "Hide profile banner.",
+            "nixName": "preferences.hideBanner",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.hidePins",
+            "desc": "Hide pinned tweets.",
+            "nixName": "preferences.hidePins",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.hideReplies",
+            "desc": "Hide tweet replies.",
+            "nixName": "preferences.hideReplies",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.hideTweetStats",
+            "desc": "Hide tweet stats (replies, retweets, likes).",
+            "nixName": "preferences.hideTweetStats",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.hlsPlayback",
+            "desc": "Enable HLS video streaming (requires JavaScript).",
+            "nixName": "preferences.hlsPlayback",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.infiniteScroll",
+            "desc": "Infinite scrolling (requires JavaScript, experimental!).",
+            "nixName": "preferences.infiniteScroll",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.mp4Playback",
+            "desc": "Enable MP4 video playback.",
+            "nixName": "preferences.mp4Playback",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "preferences.muteVideos",
+            "desc": "Mute videos by default.",
+            "nixName": "preferences.muteVideos",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.proxyVideos",
+            "desc": "Proxy video streaming through the server (might be slow).",
+            "nixName": "preferences.proxyVideos",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "preferences.replaceReddit",
+            "desc": "Replace Reddit links with links to this instance (blank todisable).",
+            "nixName": "preferences.replaceReddit",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "preferences.replaceTwitter",
+            "desc": "Replace Twitter links with links to this instance (blank todisable).",
+            "nixName": "preferences.replaceTwitter",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "preferences.replaceYouTube",
+            "desc": "Replace YouTube links with links to this instance (blank todisable).",
+            "nixName": "preferences.replaceYouTube",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "preferences.squareAvatars",
+            "desc": "Square profile pictures.",
+            "nixName": "preferences.squareAvatars",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "preferences.stickyProfile",
+            "desc": "Make profile sidebar stick to top.",
+            "nixName": "preferences.stickyProfile",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "preferences.theme",
+            "desc": "Instance theme.",
+            "nixName": "preferences.theme",
+            "type": "string",
+            "value": "\"Nitter\""
+        },
+        {
+            "name": "redisCreateLocally",
+            "desc": "Configure local Redis server for Nitter.",
+            "nixName": "redisCreateLocally",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "server.address",
+            "desc": "The address to listen on.",
+            "nixName": "server.address",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "server.hostname",
+            "desc": "Hostname of the instance.",
+            "nixName": "server.hostname",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "server.httpMaxConnections",
+            "desc": "Maximum number of HTTP connections.",
+            "nixName": "server.httpMaxConnections",
+            "type": "signed integer",
+            "value": "100"
+        },
+        {
+            "name": "server.https",
+            "desc": "Set secure attribute on cookies. Keep it disabled to enable cookieswhen not using HTTPS.",
+            "nixName": "server.https",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "server.port",
+            "desc": "The port to listen on.",
+            "nixName": "server.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8080"
+        },
+        {
+            "name": "server.staticDir",
+            "desc": "Path to the static files directory.",
+            "nixName": "server.staticDir",
+            "type": "path",
+            "value": "\"${config.services.nitter.package}/share/nitter/public\""
+        },
+        {
+            "name": "server.title",
+            "desc": "Title of the instance.",
+            "nixName": "server.title",
+            "type": "string",
+            "value": "\"nitter\""
+        },
+        {
+            "name": "settings",
+            "desc": "Add settings here to override NixOS module generated settings.  Check the official repository for the available settings:  https://github.com/zedeus/nitter/blob/master/nitter.example.conf",
+            "nixName": "settings",
+            "type": "attribute set",
+            "value": "{ }"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

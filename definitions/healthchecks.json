@@ -1,0 +1,123 @@
+{
+    "name": "Healthchecks",
+    "desc": "A cron monitoring tool written in Python & Django",
+    "tags": [
+        "Monitoring"
+    ],
+    "website": "https://github.com/healthchecks/healthchecks",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "healthchecks",
+    "options": [
+        {
+            "name": "dataDir",
+            "desc": "The directory used to store all data for healthchecks.   If left as the default value this directory will automatically becreated before the healthchecks server starts, otherwise you areresponsible for ensuring the directory exists with appropriate ownershipand permissions.",
+            "nixName": "dataDir",
+            "type": "string",
+            "value": "\"/var/lib/healthchecks\""
+        },
+        {
+            "name": "enable",
+            "desc": "Enable healthchecks. It is expected to be run behind a HTTP reverseproxy.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group account under which healthchecks runs.   If left as the default value this group will automatically be createdon system activation, otherwise you are responsible for ensuring thegroup exists before the healthchecks service starts.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"healthchecks\""
+        },
+        {
+            "name": "listenAddress",
+            "desc": "Address the server will listen on.",
+            "nixName": "listenAddress",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "package",
+            "desc": "The healthchecks package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.healthchecks"
+        },
+        {
+            "name": "port",
+            "desc": "Port the server will listen on.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8000"
+        },
+        {
+            "name": "settings",
+            "desc": "Environment variables which are read by healthchecks (local)_settings.py .  Settings which are explicitly covered in options below, aretype-checked and/or transformed before added to the environment,everything else is passed as a string.  See  https://healthchecks.io/docs/self_hosted_configuration/ for a full documentation of settings.  We add additional variables to this list inside the packages local_settings.py.     STATIC_ROOT  to set a state directory for dynamicallygenerated static files.   SECRET_KEY_FILE  to read  SECRET_KEY  from afile at runtime and keep it out of /nix/store.   _FILE  variants for several values that hold sensitiveinformation in  Healthchecksconfiguration  so that they also can be read from a file and kept outof /nix/store. To see which values have support for a  _FILE variant, run:   nix-instantiate --eval --expr '(import <nixpkgs> {}).healthchecks.secrets'   or  nix eval 'nixpkgs#healthchecks.secrets'  if the flakesupport has been enabled.     If the same variable is set in both  settings  and settingsFile  the value from  settingsFile  haspriority.",
+            "nixName": "settings",
+            "type": "attribute set of string",
+            "value": null
+        },
+        {
+            "name": "settings.ALLOWED_HOSTS",
+            "desc": "The host/domain names that this site can serve.",
+            "nixName": "settings.ALLOWED_HOSTS",
+            "type": "list of string",
+            "value": "[\n  \"*\"\n]"
+        },
+        {
+            "name": "settings.DB",
+            "desc": "Database engine to use.",
+            "nixName": "settings.DB",
+            "type": "one of \"sqlite\", \"postgres\", \"mysql\"",
+            "value": "\"sqlite\""
+        },
+        {
+            "name": "settings.DB_NAME",
+            "desc": "Database name.",
+            "nixName": "settings.DB_NAME",
+            "type": "string",
+            "value": "if config.services.healthchecks.settings.DB == \"sqlite\"\nthen \"${config.services.healthchecks.dataDir}/healthchecks.sqlite\"\nelse \"hc\"\n"
+        },
+        {
+            "name": "settings.DEBUG",
+            "desc": "Enable debug mode.",
+            "nixName": "settings.DEBUG",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.REGISTRATION_OPEN",
+            "desc": "A boolean that controls whether site visitors can create newaccounts. Set it to false if you are setting up a private Healthchecksinstance, but it needs to be publicly accessible (so, for example, yourcloud services can send pings to it). If you close new userregistration, you can still selectively invite users to your teamaccount.",
+            "nixName": "settings.REGISTRATION_OPEN",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.SECRET_KEY_FILE",
+            "desc": "Path to a file containing the secret key.",
+            "nixName": "settings.SECRET_KEY_FILE",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "settingsFile",
+            "desc": "Environment variables which are read by healthchecks (local)_settings.py .  Settings which are explicitly covered in options below, aretype-checked and/or transformed before added to the environment,everything else is passed as a string.  See  https://healthchecks.io/docs/self_hosted_configuration/ for a full documentation of settings.  We add additional variables to this list inside the packages local_settings.py.     STATIC_ROOT  to set a state directory for dynamicallygenerated static files.   SECRET_KEY_FILE  to read  SECRET_KEY  from afile at runtime and keep it out of /nix/store.   _FILE  variants for several values that hold sensitiveinformation in  Healthchecksconfiguration  so that they also can be read from a file and kept outof /nix/store. To see which values have support for a  _FILE variant, run:   nix-instantiate --eval --expr '(import <nixpkgs> {}).healthchecks.secrets'   or  nix eval 'nixpkgs#healthchecks.secrets'  if the flakesupport has been enabled.     If the same variable is set in both  settings  and settingsFile  the value from  settingsFile  haspriority.",
+            "nixName": "settingsFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which healthchecks runs.   If left as the default value this user will automatically be createdon system activation, otherwise you are responsible for ensuring theuser exists before the healthchecks service starts.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"healthchecks\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

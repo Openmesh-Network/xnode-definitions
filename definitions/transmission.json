@@ -1,0 +1,235 @@
+{
+    "name": "Transmission ",
+    "desc": "A collection of games made with raylib",
+    "tags": [
+        "File Transfer - Peer-to-peer Filesharing"
+    ],
+    "website": "https://www.raylib.com/games.html",
+    "logo": "https://www.raylib.com/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "transmission",
+    "options": [
+        {
+            "name": "credentialsFile",
+            "desc": "Path to a JSON file to be merged with the settings. Useful to merge afile which is better kept out of the Nix store to set secret configparameters like  rpc-password .",
+            "nixName": "credentialsFile",
+            "type": "path",
+            "value": "\"/dev/null\""
+        },
+        {
+            "name": "downloadDirPermissions",
+            "desc": "If not  null , is used as the permissions set by system.activationScripts.transmission-daemon  on thedirectories  services.transmission.settings.download-dir , services.transmission.settings.incomplete-dir .and  services.transmission.settings.watch-dir .Note that you may also want to change  services.transmission.settings.umask .",
+            "nixName": "downloadDirPermissions",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable the headless Transmission BitTorrent daemon.  Transmission daemon can be controlled via the RPC interface usingtransmission-remote, the WebUI ( http://127.0.0.1:9091/  by default), orother clients like stig or tremc.  Torrents are downloaded to  services.transmission.home /Downloadsby default and are accessible to users in the \u201ctransmission\u201d group.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraFlags",
+            "desc": "Extra flags passed to the transmission command in the servicedefinition.",
+            "nixName": "extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "group",
+            "desc": "Group account under which Transmission runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"transmission\""
+        },
+        {
+            "name": "home",
+            "desc": "The directory where Transmission will create .config/transmission-daemon . as well as Downloads/  unless  services.transmission.settings.download-dir is changed, and  .incomplete/  unless  services.transmission.settings.incomplete-dir is changed.",
+            "nixName": "home",
+            "type": "path",
+            "value": "\"/var/lib/transmission\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Alias of  services.transmission.openPeerPorts .",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": null
+        },
+        {
+            "name": "openPeerPorts",
+            "desc": "Whether to enable opening of the peer port(s) in the firewall.",
+            "nixName": "openPeerPorts",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "openRPCPort",
+            "desc": "Whether to enable opening of the RPC port in the firewall.",
+            "nixName": "openRPCPort",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The transmission package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.transmission_3"
+        },
+        {
+            "name": "performanceNetParameters",
+            "desc": "Whether to enable tweaking of kernel parameters to open many moreconnections at the same time.  Note that you may also want to increase peer-limit-global . And be aware that these settings arequite aggressive and might not suite your regular desktop use. Forinstance, SSH sessions may time out more easily.",
+            "nixName": "performanceNetParameters",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings",
+            "desc": "Settings whose options overwrite fields in .config/transmission-daemon/settings.json  (each time theservice starts).  See  Transmission\u2019sWiki  for documentation of settings not explicitly covered by thismodule.",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.download-dir",
+            "desc": "Directory where to download torrents.",
+            "nixName": "settings.download-dir",
+            "type": "path",
+            "value": "\"${config.services.transmission.home}/Downloads\""
+        },
+        {
+            "name": "settings.incomplete-dir",
+            "desc": "When enabled with services.transmission.home  services.transmission.settings.incomplete-dir-enabled ,new torrents will download the files to this directory. When complete,the files will be moved to download-dir  services.transmission.settings.download-dir .",
+            "nixName": "settings.incomplete-dir",
+            "type": "path",
+            "value": "\"${config.services.transmission.home}/.incomplete\""
+        },
+        {
+            "name": "settings.incomplete-dir-enabled",
+            "desc": "",
+            "nixName": "settings.incomplete-dir-enabled",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.message-level",
+            "desc": "Set verbosity of transmission messages.",
+            "nixName": "settings.message-level",
+            "type": "integer between 0 and 6 (both inclusive)",
+            "value": "2"
+        },
+        {
+            "name": "settings.peer-port",
+            "desc": "The peer port to listen for incoming connections.",
+            "nixName": "settings.peer-port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "51413"
+        },
+        {
+            "name": "settings.peer-port-random-high",
+            "desc": "The maximum peer port to listen to for incoming connections when  services.transmission.settings.peer-port-random-on-start is enabled.",
+            "nixName": "settings.peer-port-random-high",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "65535"
+        },
+        {
+            "name": "settings.peer-port-random-low",
+            "desc": "The minimal peer port to listen to for incoming connections when  services.transmission.settings.peer-port-random-on-start is enabled.",
+            "nixName": "settings.peer-port-random-low",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "65535"
+        },
+        {
+            "name": "settings.peer-port-random-on-start",
+            "desc": "Randomize the peer port.",
+            "nixName": "settings.peer-port-random-on-start",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.rpc-bind-address",
+            "desc": "Where to listen for RPC connections. Use  0.0.0.0  tolisten on all interfaces.",
+            "nixName": "settings.rpc-bind-address",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "settings.rpc-port",
+            "desc": "The RPC port to listen to.",
+            "nixName": "settings.rpc-port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "9091"
+        },
+        {
+            "name": "settings.script-torrent-done-enabled",
+            "desc": "Whether to run  services.transmission.settings.script-torrent-done-filename at torrent completion.",
+            "nixName": "settings.script-torrent-done-enabled",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.script-torrent-done-filename",
+            "desc": "Executable to be run at torrent completion.",
+            "nixName": "settings.script-torrent-done-filename",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "settings.trash-original-torrent-files",
+            "desc": "Whether to delete torrents added from the  services.transmission.settings.watch-dir .",
+            "nixName": "settings.trash-original-torrent-files",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.umask",
+            "desc": "Sets transmission\u2019s file mode creation mask. See the umask(2) manpagefor more information. Users who want their saved torrents to beworld-writable may want to set this value to 0. Bear in mind that thejson markup language only accepts numbers in base 10, so the standardumask(2) octal notation \u201c022\u201d is written in settings.json as 18.",
+            "nixName": "settings.umask",
+            "type": "signed integer",
+            "value": "2"
+        },
+        {
+            "name": "settings.utp-enabled",
+            "desc": "Whether to enable  MicroTransport Protocol (\u00b5TP) .",
+            "nixName": "settings.utp-enabled",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.watch-dir",
+            "desc": "Watch a directory for torrent files and add them to transmission.",
+            "nixName": "settings.watch-dir",
+            "type": "path",
+            "value": "\"${config.services.transmission.home}/watchdir\""
+        },
+        {
+            "name": "settings.watch-dir-enabled",
+            "desc": "Whether to enable the  services.transmission.settings.watch-dir .",
+            "nixName": "settings.watch-dir-enabled",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which Transmission runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"transmission\""
+        },
+        {
+            "name": "webHome",
+            "desc": "If not  null , sets the value of the TRANSMISSION_WEB_HOME  environment variable used by theservice. Useful for overriding the web interface files, withoutoverriding the transmission package and thus requiring rebuilding itlocally. Use this if you want to use an alternative web interface, suchas  pkgs.flood-for-transmission .",
+            "nixName": "webHome",
+            "type": "null or path",
+            "value": "null"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

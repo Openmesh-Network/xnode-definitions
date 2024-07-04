@@ -1,0 +1,102 @@
+{
+    "name": "changedetection.io",
+    "desc": "Self-hosted free open source website change detection tracking, monitoring and notification service",
+    "tags": [
+        "Automation"
+    ],
+    "website": "https://github.com/dgtlmoon/changedetection.io",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "changedetection-io",
+    "options": [
+        {
+            "name": "baseURL",
+            "desc": "The base url used in notifications and  {base_url} token.",
+            "nixName": "baseURL",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "behindProxy",
+            "desc": "Enable this option when changedetection-io runs behind a reverseproxy, so that it trusts X-* headers. It is recommend to runchangedetection-io behind a TLS reverse proxy.",
+            "nixName": "behindProxy",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "chromePort",
+            "desc": "A free port on which webDriverSupport or playwrightSupport listen onlocalhost.",
+            "nixName": "chromePort",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "4444"
+        },
+        {
+            "name": "datastorePath",
+            "desc": "The directory used to store all data for changedetection-io.",
+            "nixName": "datastorePath",
+            "type": "string",
+            "value": "\"/var/lib/changedetection-io\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable changedetection-io.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "environmentFile",
+            "desc": "Securely pass environment variabels to changedetection-io.  This can be used to set for example a frontend password reproduciblevia  SALTED_PASS  which convinetly also deactivates nagsabout the hosted version.  SALTED_PASS  should be 64characters long while the first 32 are the salt and the second thefrontend password. It can easily be retrieved from the settings filewhen first set via the frontend with the following command: jq -r .settings.application.password /var/lib/changedetection-io/url-watches.json",
+            "nixName": "environmentFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "group",
+            "desc": "Group account under which changedetection-io runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"changedetection-io\""
+        },
+        {
+            "name": "listenAddress",
+            "desc": "Address the server will listen on.",
+            "nixName": "listenAddress",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "playwrightSupport",
+            "desc": "Enable support for fetching web pages using playwright and Chromium.This starts a headless Chromium controlled by puppeteer in an ocicontainer.   Playwright can currently leak memory. See  https://github.com/dgtlmoon/changedetection.io/wiki/Playwright-content-fetcher#playwright-memory-leak",
+            "nixName": "playwrightSupport",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "port",
+            "desc": "Port the server will listen on.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "5000"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which changedetection-io runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"changedetection-io\""
+        },
+        {
+            "name": "webDriverSupport",
+            "desc": "Enable support for fetching web pages using WebDriver and Chromium.This starts a headless chromium controlled by puppeteer in an ocicontainer.   Playwright can currently leak memory. See  https://github.com/dgtlmoon/changedetection.io/wiki/Playwright-content-fetcher#playwright-memory-leak",
+            "nixName": "webDriverSupport",
+            "type": "boolean",
+            "value": "false"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

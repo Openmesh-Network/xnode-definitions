@@ -1,0 +1,60 @@
+{
+    "name": "Radarr",
+    "desc": "A Usenet/BitTorrent movie downloader",
+    "tags": [
+        "Automation"
+    ],
+    "website": "https://radarr.video/",
+    "logo": "https://radarr.video/img/favicon.ico",
+    "specs": {
+        "ram": 2048,
+        "storage": 0
+    },
+    "nixName": "radarr",
+    "options": [
+        {
+            "name": "dataDir",
+            "desc": "The directory where Radarr stores its data files.",
+            "nixName": "dataDir",
+            "type": "string",
+            "value": "\"/var/lib/radarr/.config/Radarr\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Radarr, a UsetNet/BitTorrent movie downloader.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which Radarr runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"radarr\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open ports in the firewall for the Radarr web interface.",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The radarr package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.radarr"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which Radarr runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"radarr\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

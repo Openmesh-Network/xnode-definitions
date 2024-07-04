@@ -1,0 +1,389 @@
+{
+    "name": "Matomo",
+    "desc": "A real-time web analytics application",
+    "tags": [
+        "Analytics"
+    ],
+    "website": "https://matomo.org/",
+    "logo": "https://m-img.org/spai/q_lossless+ret_img+to_webp/matomo.org/wp-content/uploads/2018/11/cropped-DefaultIcon-32x32.png",
+    "specs": {
+        "ram": 512,
+        "storage": 500
+    },
+    "nixName": "matomo",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Enable Matomo web analytics with php-fpm backend. Either the nginxoption or the webServerUser option is mandatory.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "hostname",
+            "desc": "URL of the host, without https prefix. You may want to change it ifyou run Matomo on a different URL than matomo.yourdomain.",
+            "nixName": "hostname",
+            "type": "string",
+            "value": "\"matomo.${config.networking.fqdnOrHostName}\"\n"
+        },
+        {
+            "name": "nginx",
+            "desc": "With this option, you can customize an nginx virtualHost whichalready has sensible defaults for Matomo. Either this option or thewebServerUser option is mandatory. Set this to {} to just enable thevirtualHost if you don\u2019t need any customization. If enabled, then bydefault, the  serverName  is ${user}.${config.networking.hostName}.${config.networking.domain} ,SSL is active, and certificates are acquired via ACME. If this is set tonull (the default), no nginx virtualHost will be configured.",
+            "nixName": "nginx",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "nginx.acmeFallbackHost",
+            "desc": "Host which to proxy requests to if ACME challenge is not found.Useful if you want multiple hosts to be able to verify the same domainname.  With this option, you could request certificates for the presentdomain with an ACME client that is running on another host, which youwould specify here.",
+            "nixName": "nginx.acmeFallbackHost",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "nginx.acmeRoot",
+            "desc": "Directory for the ACME challenge, which is  public .Don\u2019t put certs or keys in here. Set to null to inherit fromconfig.security.acme.",
+            "nixName": "nginx.acmeRoot",
+            "type": "null or string",
+            "value": "\"/var/lib/acme/acme-challenge\""
+        },
+        {
+            "name": "nginx.addSSL",
+            "desc": "Whether to enable HTTPS in addition to plain HTTP. This will setdefaults for  listen  to listen on all interfaces on therespective default ports (80, 443).",
+            "nixName": "nginx.addSSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.basicAuth",
+            "desc": "Basic Auth protection for a vhost.  WARNING: This is implemented to store the password in plain text inthe Nix store.",
+            "nixName": "nginx.basicAuth",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "nginx.basicAuthFile",
+            "desc": "Basic Auth password file for a vhost. Can be created via:  htpasswd -c <filename> <username> .  WARNING: The generate file contains the users\u2019 passwords in anon-cryptographically-securely hashed way.",
+            "nixName": "nginx.basicAuthFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "nginx.default",
+            "desc": "Makes this vhost the default.",
+            "nixName": "nginx.default",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.enableACME",
+            "desc": "Whether to ask Let\u2019s Encrypt to sign a certificate for this vhost.Alternately, you can use an existing certificate through  useACMEHost .",
+            "nixName": "nginx.enableACME",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "nginx.extraConfig",
+            "desc": "These lines go to the end of the vhost verbatim.",
+            "nixName": "nginx.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "nginx.forceSSL",
+            "desc": "Whether to add a separate nginx server block that redirects (defaultsto 301, configurable with  redirectCode ) all plain HTTPtraffic to HTTPS. This will set defaults for  listen  tolisten on all interfaces on the respective default ports (80, 443),where the non-SSL listens are used for the redirect vhosts.",
+            "nixName": "nginx.forceSSL",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "nginx.globalRedirect",
+            "desc": "If set, all requests for this host are redirected (defaults to 301,configurable with  redirectCode ) to the given hostname.",
+            "nixName": "nginx.globalRedirect",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "nginx.http2",
+            "desc": "Whether to enable the HTTP/2 protocol. Note that (as of writing) dueto nginx\u2019s implementation, to disable HTTP/2 you have to disable it onall vhosts that use a given IP address / port. If there is one serverblock configured to enable http2, then it is enabled for all serverblocks on this IP. See  https://stackoverflow.com/a/39466948/263061 .",
+            "nixName": "nginx.http2",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "nginx.http3",
+            "desc": "Whether to enable the HTTP/3 protocol. This requires using pkgs.nginxQuic  package which can be achieved by setting services.nginx.package = pkgs.nginxQuic;  and activate theQUIC transport protocol services.nginx.virtualHosts.<name>.quic = true; . Notethat HTTP/3 support is experimental and  not  yet recommended forproduction. Read more at  https://quic.nginx.org/  HTTP/3availability must be manually advertised, preferably in each locationblock.",
+            "nixName": "nginx.http3",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "nginx.http3_hq",
+            "desc": "Whether to enable the HTTP/0.9 protocol negotiation used in QUICinteroperability tests. This requires using  pkgs.nginxQuic package which can be achieved by setting services.nginx.package = pkgs.nginxQuic;  and activate theQUIC transport protocol services.nginx.virtualHosts.<name>.quic = true; . Notethat special application protocol support is experimental and not  yet recommended for production. Read more at  https://quic.nginx.org/",
+            "nixName": "nginx.http3_hq",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.kTLS",
+            "desc": "Whether to enable kTLS support. Implementing TLS in the kernel (kTLS)improves performance by significantly reducing the need for copyingoperations between user space and the kernel. Required Nginx version1.21.4 or later.",
+            "nixName": "nginx.kTLS",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.listen",
+            "desc": "Listen addresses and ports for this virtual host. IPv6 addresses mustbe enclosed in square brackets. Note: this option overrides addSSL  and  onlySSL .  If you only want to set the addresses manually and not the ports,take a look at  listenAddresses .",
+            "nixName": "nginx.listen",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "nginx.listen.*.addr",
+            "desc": "Listen address.",
+            "nixName": "nginx.listen.*.addr",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "nginx.listen.*.extraParameters",
+            "desc": "Extra parameters of this listen directive.",
+            "nixName": "nginx.listen.*.extraParameters",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "nginx.listen.*.port",
+            "desc": "Port number to listen on. If unset and the listen address is not asocket then nginx defaults to 80.",
+            "nixName": "nginx.listen.*.port",
+            "type": "null or 16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "null"
+        },
+        {
+            "name": "nginx.listen.*.proxyProtocol",
+            "desc": "Enable PROXY protocol.",
+            "nixName": "nginx.listen.*.proxyProtocol",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.listen.*.ssl",
+            "desc": "Enable SSL.",
+            "nixName": "nginx.listen.*.ssl",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.listenAddresses",
+            "desc": "Listen addresses for this virtual host. Compared to listen  this only sets the addresses and the ports arechosen automatically.  Note: This option overrides  enableIPv6",
+            "nixName": "nginx.listenAddresses",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "nginx.locations",
+            "desc": "Declarative location config",
+            "nixName": "nginx.locations",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "nginx.locations.<name>.alias",
+            "desc": "Alias directory for requests.",
+            "nixName": "nginx.locations.<name>.alias",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "nginx.locations.<name>.basicAuth",
+            "desc": "Basic Auth protection for a vhost.  WARNING: This is implemented to store the password in plain text inthe Nix store.",
+            "nixName": "nginx.locations.<name>.basicAuth",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "nginx.locations.<name>.basicAuthFile",
+            "desc": "Basic Auth password file for a vhost. Can be created via:  htpasswd -c <filename> <username> .  WARNING: The generate file contains the users\u2019 passwords in anon-cryptographically-securely hashed way.",
+            "nixName": "nginx.locations.<name>.basicAuthFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "nginx.locations.<name>.extraConfig",
+            "desc": "These lines go to the end of the location verbatim.",
+            "nixName": "nginx.locations.<name>.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "nginx.locations.<name>.fastcgiParams",
+            "desc": "FastCGI parameters to override. Unlike in the Nginx configurationfile, overriding only some default parameters won\u2019t unset the defaultvalues for other parameters.",
+            "nixName": "nginx.locations.<name>.fastcgiParams",
+            "type": "attribute set of (string or path)",
+            "value": "{ }"
+        },
+        {
+            "name": "nginx.locations.<name>.index",
+            "desc": "Adds index directive.",
+            "nixName": "nginx.locations.<name>.index",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "nginx.locations.<name>.priority",
+            "desc": "Order of this location block in relation to the others in the vhost.The semantics are the same as with  lib.mkOrder . Smallervalues have a greater priority.",
+            "nixName": "nginx.locations.<name>.priority",
+            "type": "signed integer",
+            "value": "1000"
+        },
+        {
+            "name": "nginx.locations.<name>.proxyPass",
+            "desc": "Adds proxy_pass directive and sets recommended proxy headers ifrecommendedProxySettings is enabled.",
+            "nixName": "nginx.locations.<name>.proxyPass",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "nginx.locations.<name>.proxyWebsockets",
+            "desc": "Whether to support proxying websocket connections with HTTP/1.1.",
+            "nixName": "nginx.locations.<name>.proxyWebsockets",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.locations.<name>.recommendedProxySettings",
+            "desc": "Enable recommended proxy settings.",
+            "nixName": "nginx.locations.<name>.recommendedProxySettings",
+            "type": "boolean",
+            "value": "config.services.nginx.recommendedProxySettings"
+        },
+        {
+            "name": "nginx.locations.<name>.return",
+            "desc": "Adds a return directive, for e.g. redirections.",
+            "nixName": "nginx.locations.<name>.return",
+            "type": "null or string or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "nginx.locations.<name>.root",
+            "desc": "Root directory for requests.",
+            "nixName": "nginx.locations.<name>.root",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "nginx.locations.<name>.tryFiles",
+            "desc": "Adds try_files directive.",
+            "nixName": "nginx.locations.<name>.tryFiles",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "nginx.onlySSL",
+            "desc": "Whether to enable HTTPS and reject plain HTTP connections. This willset defaults for  listen  to listen on all interfaces on port443.",
+            "nixName": "nginx.onlySSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.quic",
+            "desc": "Whether to enable the QUIC transport protocol. This requires using pkgs.nginxQuic  package which can be achieved by setting services.nginx.package = pkgs.nginxQuic; . Note that QUICsupport is experimental and  not  yet recommended for production.Read more at  https://quic.nginx.org/",
+            "nixName": "nginx.quic",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.redirectCode",
+            "desc": "HTTP status used by  globalRedirect  and forceSSL . Possible usecases include temporary (302, 307)redirects, keeping the request method and body (307, 308), or explicitlyresetting the method to GET (303). See  https://developer.mozilla.org/en-US/docs/Web/HTTP/Redirections .",
+            "nixName": "nginx.redirectCode",
+            "type": "integer between 300 and 399 (both inclusive)",
+            "value": "301"
+        },
+        {
+            "name": "nginx.rejectSSL",
+            "desc": "Whether to listen for and reject all HTTPS connections to this vhost.Useful in  default server blocks to avoid serving the certificate for another vhost. Usesthe  ssl_reject_handshake  directive available in nginxversions 1.19.4 and above.",
+            "nixName": "nginx.rejectSSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.reuseport",
+            "desc": "Create an individual listening socket . It is required to specifyonly once on one of the hosts.",
+            "nixName": "nginx.reuseport",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.root",
+            "desc": "The path of the web root directory.",
+            "nixName": "nginx.root",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "nginx.serverAliases",
+            "desc": "Additional names of virtual hosts served by this virtual hostconfiguration.",
+            "nixName": "nginx.serverAliases",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "nginx.serverName",
+            "desc": "Name of this virtual host. Defaults to attribute name invirtualHosts.",
+            "nixName": "nginx.serverName",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "nginx.sslCertificate",
+            "desc": "Path to server SSL certificate.",
+            "nixName": "nginx.sslCertificate",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "nginx.sslCertificateKey",
+            "desc": "Path to server SSL certificate key.",
+            "nixName": "nginx.sslCertificateKey",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "nginx.sslTrustedCertificate",
+            "desc": "Path to root SSL certificate for stapling and clientcertificates.",
+            "nixName": "nginx.sslTrustedCertificate",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "nginx.useACMEHost",
+            "desc": "A host of an existing Let\u2019s Encrypt certificate to use. This isuseful if you have many subdomains and want to avoid hitting the  rate limit .Alternately, you can generate a certificate through  enableACME .  Note thatthis option does not create any certificates, nor it does add subdomainsto existing ones \u2013 you will need to create them manually using  security.acme.certs .",
+            "nixName": "nginx.useACMEHost",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "package",
+            "desc": "The matomo package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.matomo"
+        },
+        {
+            "name": "periodicArchiveProcessing",
+            "desc": "Enable periodic archive processing, which generates aggregatedreports from the visits.  This means that you can safely disable browser triggers for Matomoarchiving, and safely enable to delete old visitor logs. Before deletingvisitor logs, make sure though that you run systemctl start matomo-archive-processing.service  at leastonce without errors if you have already collected data before.",
+            "nixName": "periodicArchiveProcessing",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "webServerUser",
+            "desc": "Name of the web server user that forwards requests to  services.phpfpm.pools.<name>.socket  thefastcgi socket for Matomo if the nginx option is not used. Either thisoption or the nginx option is mandatory. If you want to use anotherwebserver than nginx, you need to set this to that server\u2019s user andpass fastcgi requests to  index.php ,  matomo.php and  piwik.php  (legacy name) to this socket.",
+            "nixName": "webServerUser",
+            "type": "null or string",
+            "value": "null"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

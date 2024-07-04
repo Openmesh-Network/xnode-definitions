@@ -1,0 +1,39 @@
+{
+    "name": "MeshCentral",
+    "desc": "Computer management web app",
+    "tags": [
+        "Remote Access\r"
+    ],
+    "website": "https://meshcentral.com/",
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "meshcentral",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable MeshCentral computer management server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The meshcentral package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.meshcentral"
+        },
+        {
+            "name": "settings",
+            "desc": "Settings for MeshCentral. Refer to upstream documentation fordetails:    JSONSchema definition    simplesample configuration    complexsample configuration    Old homepagewith documentation link",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": null
+        }
+    ],
+    "show": false,
+    "tested": false
+}

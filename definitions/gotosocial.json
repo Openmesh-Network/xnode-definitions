@@ -1,0 +1,60 @@
+{
+    "name": "GoToSocial",
+    "desc": "Fast, fun, ActivityPub server, powered by Go",
+    "tags": [
+        "Communication - Social Networks and Forums"
+    ],
+    "website": "https://gotosocial.org",
+    "logo": "https://gotosocial.org/assets/logo.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "gotosocial",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable ActivityPub social network server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "environmentFile",
+            "desc": "File path containing environment variables for configuring theGoToSocial service in the format of an EnvironmentFile as described bysystemd.exec(5).  This option could be used to pass sensitive configuration to theGoToSocial daemon.  Please refer to the Environment Variables section in the  documentation .",
+            "nixName": "environmentFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open the configured port in the firewall. Using a reverse proxyinstead is highly recommended.",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The gotosocial package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.gotosocial"
+        },
+        {
+            "name": "settings",
+            "desc": "Contents of the GoToSocial YAML config.  Please refer to the  documentation and  exampleconfig .  Please note that the  host  option cannot be changed laterso it is important to configure this correctly before you startGoToSocial.",
+            "nixName": "settings",
+            "type": "YAML value",
+            "value": "{\n  application-name = \"gotosocial\";\n  bind-address = \"127.0.0.1\";\n  db-address = \"/var/lib/gotosocial/database.sqlite\";\n  db-type = \"sqlite\";\n  port = 8080;\n  protocol = \"https\";\n  storage-local-base-path = \"/var/lib/gotosocial/storage\";\n}"
+        },
+        {
+            "name": "setupPostgresqlDB",
+            "desc": "Whether to setup a local postgres database and populate the db-type  fields in services.gotosocial.settings .",
+            "nixName": "setupPostgresqlDB",
+            "type": "boolean",
+            "value": "false"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

@@ -1,0 +1,60 @@
+{
+    "name": "RStudio Server",
+    "desc": "Set of integrated tools for the R language",
+    "tags": [
+        "Software Development - IDE & Tools\r"
+    ],
+    "website": "https://www.rstudio.com/",
+    "logo": "https://posit.co/wp-content/themes/Posit/dist/images/favicon/favicon-32x32.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "rstudio-server",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable RStudio server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "listenAddr",
+            "desc": "Address to listen on (www-address in rserver.conf).",
+            "nixName": "listenAddr",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "package",
+            "desc": "The rstudio-server package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.rstudio-server"
+        },
+        {
+            "name": "rserverExtraConfig",
+            "desc": "Extra contents for rserver.conf.",
+            "nixName": "rserverExtraConfig",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "rsessionExtraConfig",
+            "desc": "Extra contents for resssion.conf.",
+            "nixName": "rsessionExtraConfig",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "serverWorkingDir",
+            "desc": "Default working directory for server (server-working-dir inrserver.conf).",
+            "nixName": "serverWorkingDir",
+            "type": "string",
+            "value": "\"/var/lib/rstudio-server\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

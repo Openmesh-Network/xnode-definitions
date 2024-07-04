@@ -18,7 +18,6 @@ def main():
         scraper_service = services_with_metadata[service]
         new_service = {}
         new_service = scraper_service
-        accum += 1
         # Add nix option data
         for svc in nix_option_data:
             if svc['nixName'] == scraper_service['nixName']:
@@ -30,10 +29,27 @@ def main():
         # Add manual spec overrides   
         for svc in spec_overrides:
             if svc['nixName'] == scraper_service['nixName']:
-                print(svc['specs'])
                 new_service['specs'] = svc['specs']
+
+        # Manually check for undesired formatting
+        backslash_in_name = False
+        if '/' in new_service['name']:
+            print(new_service['name'])
+            backslash_in_name = True
+
+        for option in new_service['options']:
+            if '/' in option['name']:
+                print(option['name'])
+                backslash_in_name = True
+        if not backslash_in_name:
+            new_services.append(new_service)
+            accum += 1
+
         
-        new_services.append(new_service)
+        # Write services to individual files
+        with open(f'definitions/{new_service["nixName"]}.json', 'w') as output:
+            output.write(json.dumps(new_service, indent=4))
+
 
                 
 

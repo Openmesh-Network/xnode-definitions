@@ -1,0 +1,367 @@
+{
+    "name": "Dar ",
+    "desc": "Disk ARchiver, allows backing up files into indexed archives",
+    "tags": [
+        "Backup"
+    ],
+    "website": "http://dar.linux.free.fr",
+    "implmented": false,
+    "logo": "http://dar.linux.free.fr/favicon.png",
+    "specs": {
+        "ram": 256,
+        "storage": 0
+    },
+    "nixName": "dar",
+    "options": [
+        {
+            "name": "programs.darling.enable",
+            "desc": "Whether to enable Darling, a Darwin/macOS compatibility layer forLinux.",
+            "nixName": "programs.darling.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "programs.darling.package",
+            "desc": "The darling package to use.",
+            "nixName": "programs.darling.package",
+            "type": "package",
+            "value": "pkgs.darling"
+        },
+        {
+            "name": "web-servers/darkhttpd.nix",
+            "desc": "Whether to enable DarkHTTPd web server.",
+            "nixName": "relatedOption.darkhttpd.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "virtualisation.host.pkgs",
+            "desc": "Package set to use for the host-specific packages of the VM runner.Changing this to e.g. a Darwin package set allows running NixOS VMs onDarwin.",
+            "nixName": "virtualisation.host.pkgs",
+            "type": "An evaluation of Nixpkgs; the top level attribute set of packages",
+            "value": "pkgs"
+        },
+        {
+            "name": "misc/tabby.nix",
+            "desc": "Specifies the device to use for hardware acceleration.cpu: no acceleration just use the CPUrocm: supported by modern AMD GPUscuda: supported by modern NVIDIA GPUsmetal: supported on darwin aarch64 machinesTabby will try and determine what type of acceleration that isalready enabled in your configuration whenacceleration = null.nixpkgs.config.cudaSupportnixpkgs.config.rocmSupportif stdenv.isDarwin && stdenv.isAarch64IFF multiple acceleration methods are found to be enabled or if youhaven\u2019t set either cudaSupport or rocmSupport you will haveto specify the device type manually here otherwise it will default tothe first from the list above or to cpu.",
+            "nixName": "relatedOption.tabby.acceleration",
+            "type": "null or one of \"cpu\", \"rocm\", \"cuda\", \"metal\"",
+            "value": "null"
+        },
+        {
+            "name": "misc/readarr.nix",
+            "desc": "User account under which Readarr runs.",
+            "nixName": "relatedOption.readarr.user",
+            "type": "string",
+            "value": "\"readarr\""
+        },
+        {
+            "name": "misc/readarr.nix",
+            "desc": "The readarr package to use.",
+            "nixName": "relatedOption.readarr.package",
+            "type": "package",
+            "value": "pkgs.readarr"
+        },
+        {
+            "name": "misc/readarr.nix",
+            "desc": "Open ports in the firewall for Readarr",
+            "nixName": "relatedOption.readarr.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "misc/readarr.nix",
+            "desc": "Group under which Readarr runs.",
+            "nixName": "relatedOption.readarr.group",
+            "type": "string",
+            "value": "\"readarr\""
+        },
+        {
+            "name": "misc/readarr.nix",
+            "desc": "Whether to enable Readarr, a Usenet/BitTorrent ebook downloader.",
+            "nixName": "relatedOption.readarr.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "misc/readarr.nix",
+            "desc": "The directory where Readarr stores its data files.",
+            "nixName": "relatedOption.readarr.dataDir",
+            "type": "string",
+            "value": "\"/var/lib/readarr/\""
+        },
+        {
+            "name": "misc/radarr.nix",
+            "desc": "User account under which Radarr runs.",
+            "nixName": "relatedOption.radarr.user",
+            "type": "string",
+            "value": "\"radarr\""
+        },
+        {
+            "name": "misc/radarr.nix",
+            "desc": "The radarr package to use.",
+            "nixName": "relatedOption.radarr.package",
+            "type": "package",
+            "value": "pkgs.radarr"
+        },
+        {
+            "name": "misc/radarr.nix",
+            "desc": "Open ports in the firewall for the Radarr web interface.",
+            "nixName": "relatedOption.radarr.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "misc/radarr.nix",
+            "desc": "Group under which Radarr runs.",
+            "nixName": "relatedOption.radarr.group",
+            "type": "string",
+            "value": "\"radarr\""
+        },
+        {
+            "name": "misc/radarr.nix",
+            "desc": "Whether to enable Radarr, a UsetNet/BitTorrent movie downloader.",
+            "nixName": "relatedOption.radarr.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "misc/radarr.nix",
+            "desc": "The directory where Radarr stores its data files.",
+            "nixName": "relatedOption.radarr.dataDir",
+            "type": "string",
+            "value": "\"/var/lib/radarr/.config/Radarr\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "User name under which the exportarr-readarr exporter shall berun.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.user",
+            "type": "string",
+            "value": "\"exportarr-readarr-exporter\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.url",
+            "type": "string",
+            "value": "\"http://127.0.0.1\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Port to listen on.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "9708"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "The exportarr package to use.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.package",
+            "type": "package",
+            "value": "pkgs.exportarr"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Open port in firewall for incoming connections.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Address to listen on.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.listenAddress",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Group under which the exportarr-readarr exporter shall be run.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.group",
+            "type": "string",
+            "value": "\"exportarr-readarr-exporter\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Specify rules for nftables to add to the input chain when services.prometheus.exporters.exportarr-readarr.openFirewallis true.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.firewallRules",
+            "type": "null or strings concatenated with \"\\n\"",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Specify a filter for iptables to use when services.prometheus.exporters.exportarr-readarr.openFirewallis true. It is used asip46tables -I nixos-fw firewallFilter -j nixos-fw-accept.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.firewallFilter",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Extra commandline options to pass to the exportarr-readarrexporter.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "See theconfiguration guide for available options.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.environment",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Whether to enable the prometheus exportarr-readarr exporter.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "File containing the api-key.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-readarr.apiKeyFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "User name under which the exportarr-radarr exporter shall be run.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.user",
+            "type": "string",
+            "value": "\"exportarr-radarr-exporter\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.url",
+            "type": "string",
+            "value": "\"http://127.0.0.1\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Port to listen on.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "9708"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "The exportarr package to use.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.package",
+            "type": "package",
+            "value": "pkgs.exportarr"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Open port in firewall for incoming connections.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Address to listen on.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.listenAddress",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Group under which the exportarr-radarr exporter shall be run.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.group",
+            "type": "string",
+            "value": "\"exportarr-radarr-exporter\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Specify rules for nftables to add to the input chain when services.prometheus.exporters.exportarr-radarr.openFirewallis true.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.firewallRules",
+            "type": "null or strings concatenated with \"\\n\"",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Specify a filter for iptables to use when services.prometheus.exporters.exportarr-radarr.openFirewallis true. It is used asip46tables -I nixos-fw firewallFilter -j nixos-fw-accept.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.firewallFilter",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Extra commandline options to pass to the exportarr-radarrexporter.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "See theconfiguration guide for available options.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.environment",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Whether to enable the prometheus exportarr-radarr exporter.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "File containing the api-key.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-radarr.apiKeyFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "User name under which the exportarr-lidarr exporter shall be run.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-lidarr.user",
+            "type": "string",
+            "value": "\"exportarr-lidarr-exporter\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-lidarr.url",
+            "type": "string",
+            "value": "\"http://127.0.0.1\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Port to listen on.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-lidarr.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "9708"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "The exportarr package to use.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-lidarr.package",
+            "type": "package",
+            "value": "pkgs.exportarr"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Open port in firewall for incoming connections.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-lidarr.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Address to listen on.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-lidarr.listenAddress",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Group under which the exportarr-lidarr exporter shall be run.",
+            "nixName": "relatedOption.prometheus.exporters.exportarr-lidarr.group",
+            "type": "string",
+            "value": "\"exportarr-lidarr-exporter\""
+        }
+    ]
+}

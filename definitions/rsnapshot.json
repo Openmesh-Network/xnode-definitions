@@ -1,0 +1,46 @@
+{
+    "name": "Rsnapshot ",
+    "desc": "A filesystem snapshot utility for making backups of local and remote systems",
+    "tags": [
+        "Backup"
+    ],
+    "website": "https://rsnapshot.org/",
+    "logo": "https://rsnapshot.org/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "rsnapshot",
+    "options": [
+        {
+            "name": "cronIntervals",
+            "desc": "Periodicity at which intervals should be run by cron. Note that theintervals also have to exist in configuration as retain options.",
+            "nixName": "cronIntervals",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable rsnapshot backups.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "enableManualRsnapshot",
+            "desc": "Whether to enable manual usage of the rsnapshot command with thismodule.",
+            "nixName": "enableManualRsnapshot",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "extraConfig",
+            "desc": "rsnapshot configuration option in addition to the defaults fromrsnapshot and this module.  Note that tabs are required to separate option arguments, anddirectory names require trailing slashes.  The \u201cextra\u201d in the option name might be a little misleading rightnow, as it is required to get a functional configuration.",
+            "nixName": "extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

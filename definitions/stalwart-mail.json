@@ -1,0 +1,39 @@
+{
+    "name": "Stalwart JMAP",
+    "desc": "Secure & Modern All-in-One Mail Server (IMAP, JMAP, SMTP)",
+    "tags": [
+        "Communication - Email - Mail Delivery Agents"
+    ],
+    "website": "https://github.com/stalwartlabs/mail-server",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "stalwart-mail",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable the Stalwart all-in-one email server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The stalwart-mail package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.stalwart-mail"
+        },
+        {
+            "name": "settings",
+            "desc": "Configuration options for the Stalwart email server. See  https://stalw.art/docs/category/configuration for available options.  By default, the module is configured to store everything locally.",
+            "nixName": "settings",
+            "type": "TOML value",
+            "value": "{ }"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

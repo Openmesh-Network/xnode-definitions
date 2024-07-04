@@ -1,0 +1,95 @@
+{
+    "name": "Privoxy",
+    "desc": "Non-caching web proxy with advanced filtering capabilities",
+    "tags": [
+        "Proxy"
+    ],
+    "website": "https://www.privoxy.org/",
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "privoxy",
+    "options": [
+        {
+            "name": "certsLifetime",
+            "desc": "If  inspectHttps  is enabled, the time generated HTTPScertificates will be stored in a temporary directory for reuse. Once thelifetime has expired the directory will cleared and the certificate willhave to be generated again, on-demand.  Depending on the traffic, you may want to reduce the lifetime tolimit the disk usage, since Privoxy itself never deletes thecertificates.   The format is that of the  tmpfiles.d(5)  Ageparameter.",
+            "nixName": "certsLifetime",
+            "type": "tmpfiles.d(5) age format",
+            "value": "\"10d\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Privoxy, non-caching filtering proxy.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "enableTor",
+            "desc": "Whether to configure Privoxy to use Tor\u2019s faster SOCKS port, suitablefor HTTP.",
+            "nixName": "enableTor",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "inspectHttps",
+            "desc": "Whether to configure Privoxy to inspect HTTPS requests, meaning allencrypted traffic will be filtered as well. This works by decrypting andre-encrypting the requests using a per-domain generated certificate.  To issue per-domain certificates, Privoxy must be provided with a CAcertificate, using the  ca-cert-file , ca-key-file  settings.   The CA certificate must also be added to the system trust roots,otherwise browsers will reject all Privoxy certificates as invalid. Youcan do so by using the option  security.pki.certificateFiles .",
+            "nixName": "inspectHttps",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings",
+            "desc": "This option is mapped to the main Privoxy configuration file. Checkout the Privoxy user manual at  https://www.privoxy.org/user-manual/config.html for available settings and documentation.   Repeated settings can be represented by using a list.",
+            "nixName": "settings",
+            "type": "privoxy configuration type. The format consists of an attribute\nset of settings. Each setting can be either a value (integer, string,\nboolean or path) or a list of such values.\n",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.actionsfile",
+            "desc": "List of paths to Privoxy action files. These paths may either beabsolute or relative to the privoxy configuration directory.",
+            "nixName": "settings.actionsfile",
+            "type": "list of string",
+            "value": "[\n  \"match-all.action\"\n  \"default.action\"\n]"
+        },
+        {
+            "name": "settings.enable-edit-actions",
+            "desc": "Whether the web-based actions file editor may be used.",
+            "nixName": "settings.enable-edit-actions",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.filterfile",
+            "desc": "List of paths to Privoxy filter files. These paths may either beabsolute or relative to the privoxy configuration directory.",
+            "nixName": "settings.filterfile",
+            "type": "list of string",
+            "value": "[\n  \"default.filter\"\n]"
+        },
+        {
+            "name": "settings.listen-address",
+            "desc": "Pair of address:port the proxy server is listening to.",
+            "nixName": "settings.listen-address",
+            "type": "string",
+            "value": "\"127.0.0.1:8118\""
+        },
+        {
+            "name": "userActions",
+            "desc": "Actions to be included in a  user.action  file. This willhave a higher priority and can be used to override all otheractions.",
+            "nixName": "userActions",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "userFilters",
+            "desc": "Filters to be included in a  user.filter  file. This willhave a higher priority and can be used to override all other filtersdefinitions.",
+            "nixName": "userFilters",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

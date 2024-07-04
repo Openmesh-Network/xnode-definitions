@@ -1,0 +1,53 @@
+{
+    "name": "Libreddit ",
+    "desc": "Private front-end for Reddit",
+    "tags": [
+        "Communication - Social Networks and Forums"
+    ],
+    "website": "https://github.com/libreddit/libreddit",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "libreddit",
+    "options": [
+        {
+            "name": "address",
+            "desc": "The address to listen on",
+            "nixName": "address",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Private front-end for Reddit.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open ports in the firewall for the libreddit web interface",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The libreddit package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.libreddit"
+        },
+        {
+            "name": "port",
+            "desc": "The port to listen on",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8080"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

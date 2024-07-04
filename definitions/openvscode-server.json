@@ -1,0 +1,144 @@
+{
+    "name": "code-server",
+    "desc": "Run VS Code on a remote machine",
+    "tags": [
+        "Software Development - IDE & Tools\r"
+    ],
+    "website": "https://github.com/gitpod-io/openvscode-server",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "openvscode-server",
+    "options": [
+        {
+            "name": "connectionToken",
+            "desc": "A secret that must be included with all requests.",
+            "nixName": "connectionToken",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "connectionTokenFile",
+            "desc": "Path to a file that contains the connection token.",
+            "nixName": "connectionTokenFile",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable openvscode-server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extensionsDir",
+            "desc": "Set the root path for extensions.",
+            "nixName": "extensionsDir",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "extraArguments",
+            "desc": "Additional arguments to pass to openvscode-server.",
+            "nixName": "extraArguments",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "extraEnvironment",
+            "desc": "Additional environment variables to pass to openvscode-server.",
+            "nixName": "extraEnvironment",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "extraGroups",
+            "desc": "An array of additional groups for the  openvscode-server user.",
+            "nixName": "extraGroups",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "extraPackages",
+            "desc": "Additional packages to add to the openvscode-server  PATH .",
+            "nixName": "extraPackages",
+            "type": "list of package",
+            "value": "[ ]"
+        },
+        {
+            "name": "group",
+            "desc": "The group to run openvscode-server under. By default, a group named openvscode-server  will be created.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"openvscode-server\""
+        },
+        {
+            "name": "host",
+            "desc": "The host name or IP address the server should listen to.",
+            "nixName": "host",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "package",
+            "desc": "The openvscode-server package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.openvscode-server"
+        },
+        {
+            "name": "port",
+            "desc": "The port the server should listen to. If 0 is passed a random freeport is picked. If a range in the format num-num is passed, a free portfrom the range (end inclusive) is selected.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "3000"
+        },
+        {
+            "name": "serverDataDir",
+            "desc": "Specifies the directory that server data is kept in.",
+            "nixName": "serverDataDir",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "socketPath",
+            "desc": "The path to a socket file for the server to listen to.",
+            "nixName": "socketPath",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "telemetryLevel",
+            "desc": "Sets the initial telemetry level. Valid levels are: \u2018off\u2019, \u2018crash\u2019,\u2018error\u2019 and \u2018all\u2019.",
+            "nixName": "telemetryLevel",
+            "type": "null or one of \"off\", \"crash\", \"error\", \"all\"",
+            "value": "null"
+        },
+        {
+            "name": "user",
+            "desc": "The user to run openvscode-server as. By default, a user named openvscode-server  will be created.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"openvscode-server\""
+        },
+        {
+            "name": "userDataDir",
+            "desc": "Specifies the directory that user data is kept in. Can be used toopen multiple distinct instances of Code.",
+            "nixName": "userDataDir",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "withoutConnectionToken",
+            "desc": "Run without a connection token. Only use this if the connection issecured by other means.",
+            "nixName": "withoutConnectionToken",
+            "type": "boolean",
+            "value": "false"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

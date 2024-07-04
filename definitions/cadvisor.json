@@ -1,0 +1,95 @@
+{
+    "name": "cadvisor",
+    "desc": "Analyzes resource usage and performance characteristics of running docker containers",
+    "tags": [
+        "Monitoring"
+    ],
+    "website": "https://github.com/google/cadvisor",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "cadvisor",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable Cadvisor service.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraOptions",
+            "desc": "Additional cadvisor options.  See  https://github.com/google/cadvisor/blob/master/docs/runtime_options.md for available options.",
+            "nixName": "extraOptions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "listenAddress",
+            "desc": "Cadvisor listening host",
+            "nixName": "listenAddress",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "port",
+            "desc": "Cadvisor listening port",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8080"
+        },
+        {
+            "name": "storageDriver",
+            "desc": "Cadvisor storage driver.",
+            "nixName": "storageDriver",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "storageDriverDb",
+            "desc": "Cadvisord storage driver database name.",
+            "nixName": "storageDriverDb",
+            "type": "string",
+            "value": "\"root\""
+        },
+        {
+            "name": "storageDriverHost",
+            "desc": "Cadvisor storage driver host.",
+            "nixName": "storageDriverHost",
+            "type": "string",
+            "value": "\"localhost:8086\""
+        },
+        {
+            "name": "storageDriverPassword",
+            "desc": "Cadvisor storage driver password.  Warning: this password is stored in the world-readable Nix store.It\u2019s recommended to use the  storageDriverPasswordFile  option since that givesyou control over the security of the password.  storageDriverPasswordFile also takes precedence over  storageDriverPassword .",
+            "nixName": "storageDriverPassword",
+            "type": "string",
+            "value": "\"root\""
+        },
+        {
+            "name": "storageDriverPasswordFile",
+            "desc": "File that contains the cadvisor storage driver password.   storageDriverPasswordFile  takes precedence over storageDriverPassword   Warning: when  storageDriverPassword  is non-empty this defaults toa file in the world-readable Nix store that contains the value of  storageDriverPassword .  It\u2019s recommended to override this with a path not in the Nix store.Tip: use  nixops keymanagement",
+            "nixName": "storageDriverPasswordFile",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "storageDriverSecure",
+            "desc": "Cadvisor storage driver, enable secure communication.",
+            "nixName": "storageDriverSecure",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "storageDriverUser",
+            "desc": "Cadvisor storage driver username.",
+            "nixName": "storageDriverUser",
+            "type": "string",
+            "value": "\"root\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

@@ -1,0 +1,116 @@
+{
+    "name": "GoCD",
+    "desc": "A continuous delivery server specializing in advanced workflow modeling and visualization",
+    "tags": [
+        "Software Development - Continuous Integration & Continuous Deployment"
+    ],
+    "website": "http://www.go.cd",
+    "logo": "http://www.go.cd/assets/images/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "gocd-server",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable gocd-server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "environment",
+            "desc": "Additional environment variables to be passed to the gocd-serverprocess. As a base environment, gocd-server receives NIX_PATH from  environment.sessionVariables , NIX_REMOTE is set to\u201cdaemon\u201d.",
+            "nixName": "environment",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "extraGroups",
+            "desc": "List of extra groups that the \u201cgocd-server\u201d user should be a partof.",
+            "nixName": "extraGroups",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "extraOptions",
+            "desc": "Specifies additional command line arguments to pass to Go.CD server\u2019sjava process. Example contains debug and gcLog arguments.",
+            "nixName": "extraOptions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "group",
+            "desc": "If the default user \u201cgocd-server\u201d is configured then this is theprimary group of that user.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"gocd-server\""
+        },
+        {
+            "name": "initialJavaHeapSize",
+            "desc": "Specifies the initial java heap memory size for the Go.CD server\u2019sjava process.",
+            "nixName": "initialJavaHeapSize",
+            "type": "string",
+            "value": "\"512m\""
+        },
+        {
+            "name": "listenAddress",
+            "desc": "Specifies the bind address on which the Go.CD server HTTP interfacelistens.",
+            "nixName": "listenAddress",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "maxJavaHeapMemory",
+            "desc": "Specifies the java maximum heap memory size for the Go.CD server\u2019sjava process.",
+            "nixName": "maxJavaHeapMemory",
+            "type": "string",
+            "value": "\"1024m\""
+        },
+        {
+            "name": "packages",
+            "desc": "Packages to add to PATH for the Go.CD server\u2019s process.",
+            "nixName": "packages",
+            "type": "list of package",
+            "value": "[ pkgs.stdenv pkgs.jre pkgs.git config.programs.ssh.package pkgs.nix ]"
+        },
+        {
+            "name": "port",
+            "desc": "Specifies port number on which the Go.CD server HTTP interfacelistens.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8153"
+        },
+        {
+            "name": "sslPort",
+            "desc": "Specifies port number on which the Go.CD server HTTPS interfacelistens.",
+            "nixName": "sslPort",
+            "type": "signed integer",
+            "value": "8154"
+        },
+        {
+            "name": "startupOptions",
+            "desc": "Specifies startup command line arguments to pass to Go.CD server javaprocess.",
+            "nixName": "startupOptions",
+            "type": "list of string",
+            "value": "[\n  \"-Xms${config.services.gocd-server.initialJavaHeapSize}\"\n  \"-Xmx${config.services.gocd-server.maxJavaHeapMemory}\"\n  \"-Dcruise.listen.host=${config.services.gocd-server.listenAddress}\"\n  \"-Duser.language=en\"\n  \"-Djruby.rack.request.size.threshold.bytes=30000000\"\n  \"-Duser.country=US\"\n  \"-Dcruise.config.dir=${config.services.gocd-server.workDir}/conf\"\n  \"-Dcruise.config.file=${config.services.gocd-server.workDir}/conf/cruise-config.xml\"\n  \"-Dcruise.server.port=${toString config.services.gocd-server.port}\"\n  \"-Dcruise.server.ssl.port=${toString config.services.gocd-server.sslPort}\"\n  \"--add-opens=java.base/java.lang=ALL-UNNAMED\"\n  \"--add-opens=java.base/java.util=ALL-UNNAMED\"\n]\n"
+        },
+        {
+            "name": "user",
+            "desc": "User the Go.CD server should execute under.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"gocd-server\""
+        },
+        {
+            "name": "workDir",
+            "desc": "Specifies the working directory in which the Go.CD server javaarchive resides.",
+            "nixName": "workDir",
+            "type": "string",
+            "value": "\"/var/lib/go-server\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

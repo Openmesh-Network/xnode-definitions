@@ -1,0 +1,70 @@
+{
+    "name": "Open WebUI",
+    "desc": "Play around with AI in a web-based GUI! Runs alongside Ollama.",
+    "logo": "https://docs.openwebui.com/img/favicon.png",
+    "tags": [
+        "AI",
+        "LLM",
+        "GPU",
+        "Open-source",
+        "Web Application"
+    ],
+    "specs": {
+        "ram": 512,
+        "storage": 1024
+    },
+    "nixName": "open-webui",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable Open-WebUI server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "environment",
+            "desc": "Extra environment variables for Open-WebUI",
+            "nixName": "environment",
+            "type": "attribute set of string",
+            "value": "{\n  ANONYMIZED_TELEMETRY = \"False\";\n  DO_NOT_TRACK = \"True\";\n  SCARF_NO_ANALYTICS = \"True\";\n}"
+        },
+        {
+            "name": "host",
+            "desc": "The host address which the Open-WebUI server HTTP interface listensto.",
+            "nixName": "host",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Whether to open the firewall for Open-WebUI. This adds services.open-webui.port  to networking.firewall.allowedTCPPorts .",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The open-webui package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.open-webui"
+        },
+        {
+            "name": "port",
+            "desc": "Which port the Open-WebUI server listens to.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8080"
+        },
+        {
+            "name": "stateDir",
+            "desc": "State directory of Open-WebUI.",
+            "nixName": "stateDir",
+            "type": "path",
+            "value": "\"/var/lib/open-webui\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

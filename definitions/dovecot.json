@@ -1,0 +1,367 @@
+{
+    "name": "Dovecot",
+    "desc": "Open source IMAP and POP3 email server written with security primarily in mind",
+    "tags": [
+        "Communication - Email - Mail Delivery Agents"
+    ],
+    "website": "https://dovecot.org/",
+    "implmented": false,
+    "logo": "https://www.dovecot.org/wp-content/uploads/2021/09/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "dovecot",
+    "options": [
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Location that dovecot will use for mail folders. Dovecotmail_location option.",
+            "nixName": "relatedOption.dovecot2.mailLocation",
+            "type": "string",
+            "value": "\"maildir:/var/spool/mail/%u\""
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Symlinks the contents of lib/dovecot of every given package into/etc/dovecot/modules. This will make the given modules available if adovecot package with the module_dir patch applied is being used.",
+            "nixName": "relatedOption.dovecot2.modules",
+            "type": "list of package",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Dovecot user name.",
+            "nixName": "relatedOption.dovecot2.user",
+            "type": "string",
+            "value": "\"dovecot2\""
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Dovecot group name.",
+            "nixName": "relatedOption.dovecot2.group",
+            "type": "string",
+            "value": "\"dovecot2\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Path under which the stats socket is placed. The user/group underwhich the exporter runs, should be able to access the socket in order toscrape the metrics successfully.Please keep in mind that the stats module has changed in Dovecot 2.3+ which isnot compatiblewith this exporter.The following extra config has to be passed to Dovecot to ensure thatrecent versions work with this exporter:{  services.prometheus.exporters.dovecot.enable = true;  services.prometheus.exporters.dovecot.socketPath = \"/var/run/dovecot2/old-stats\";  services.dovecot2.mailPlugins.globally.enable = [ \"old_stats\" ];  services.dovecot2.extraConfig = ''    service old-stats {      unix_listener old-stats {        user = dovecot-exporter        group = dovecot-exporter        mode = 0660      }      fifo_listener old-stats-mail {        mode = 0660        user = dovecot        group = dovecot      }      fifo_listener old-stats-user {        mode = 0660        user = dovecot        group = dovecot      }    }    plugin {      old_stats_refresh = 30 secs      old_stats_track_cmds = yes    }  '';}",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.socketPath",
+            "type": "path",
+            "value": "\"/var/run/dovecot/stats\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Whether to enable the prometheus dovecot exporter.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Whether to enable the dovecot quota service.",
+            "nixName": "relatedOption.dovecot2.enableQuota",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Extra commandline options to pass to the dovecot exporter.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Additional listeners to start when Dovecot is enabled.",
+            "nixName": "relatedOption.dovecot2.protocols",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Config file used for the whole dovecot configuration.",
+            "nixName": "relatedOption.dovecot2.configFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Group under which the dovecot exporter shall be run.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.group",
+            "type": "string",
+            "value": "\"dovecot-exporter\""
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Additional entries to put verbatim into Dovecot\u2019s config file.",
+            "nixName": "relatedOption.dovecot2.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "User name under which the dovecot exporter shall be run.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.user",
+            "type": "string",
+            "value": "\"dovecot-exporter\""
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Whether to enable starting the POP3 listener (when Dovecot isenabled).",
+            "nixName": "relatedOption.dovecot2.enablePop3",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Whether to enable starting the LMTP listener (when Dovecot isenabled).",
+            "nixName": "relatedOption.dovecot2.enableLmtp",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Whether to enable starting the IMAP listener (when Dovecot isenabled).",
+            "nixName": "relatedOption.dovecot2.enableImap",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Whether to enable the dovecot 2.x POP3/IMAP server.",
+            "nixName": "relatedOption.dovecot2.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Whether to enable creating a own Dovecot PAM service and configurePAM user logins.",
+            "nixName": "relatedOption.dovecot2.enablePAM",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "The Port the dovecot quota service binds to. If using postfix, addcheck_policy_service inet:localhost:12340 to yoursmtpd_recipient_restrictions in your postfix config.",
+            "nixName": "relatedOption.dovecot2.quotaPort",
+            "type": "string",
+            "value": "\"12340\""
+        },
+        {
+            "name": "monitoring/parsedmarc.nix",
+            "desc": "Whether Postfix and Dovecot should be set up to receive mail locally.parsedmarc will be configured to watch the local inbox as theautomatically created user specified in services.parsedmarc.provision.localMail.recipientName",
+            "nixName": "relatedOption.parsedmarc.provision.localMail.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Plugin settings for dovecot in general, e.g. sieve,sieve_default, etc.Some of the other knobs of this module will influence by default theplugin settings, but you can still override any plugin settings.If you override a plugin setting, its value is cleared and you haveto copy over the defaults.",
+            "nixName": "relatedOption.dovecot2.pluginSettings",
+            "type": "attribute set of (string or package)",
+            "value": "{ }"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Path under which to expose metrics.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.telemetryPath",
+            "type": "string",
+            "value": "\"/metrics\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Stats scopes to query.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.scopes",
+            "type": "list of string",
+            "value": "[\n  \"user\"\n]"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Port to listen on.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "9166"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Open port in firewall for incoming connections.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Address to listen on.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.listenAddress",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Specify rules for nftables to add to the input chain when services.prometheus.exporters.dovecot.openFirewallis true.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.firewallRules",
+            "type": "null or strings concatenated with \"\\n\"",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Specify a filter for iptables to use when services.prometheus.exporters.dovecot.openFirewallis true. It is used asip46tables -I nixos-fw firewallFilter -j nixos-fw-accept.",
+            "nixName": "relatedOption.prometheus.exporters.dovecot.firewallFilter",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Path to the server\u2019s private key.",
+            "nixName": "relatedOption.dovecot2.sslServerKey",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Path to the server\u2019s public key.",
+            "nixName": "relatedOption.dovecot2.sslServerCert",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Path to the server\u2019s CA certificate key.",
+            "nixName": "relatedOption.dovecot2.sslCACert",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Sieve scripts to be executed. Key is a sequence, e.g. \u2018before2\u2019,\u2018after\u2019 etc.",
+            "nixName": "relatedOption.dovecot2.sieve.scripts",
+            "type": "attribute set of path",
+            "value": "{ }"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Sieve plugins to load",
+            "nixName": "relatedOption.dovecot2.sieve.plugins",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Programs available for use by the vnd.dovecot.pipe extension",
+            "nixName": "relatedOption.dovecot2.sieve.pipeBins",
+            "type": "list of path",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Sieve extensions for use in global scripts",
+            "nixName": "relatedOption.dovecot2.sieve.globalExtensions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Sieve extensions for use in user scripts",
+            "nixName": "relatedOption.dovecot2.sieve.extensions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Whether to enable showing the PAM failure message on authenticationerror (useful for OTPW).",
+            "nixName": "relatedOption.dovecot2.showPAMFailure",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Quota limit for the user in bytes. Supports suffixes b, k, M, G, Tand %.",
+            "nixName": "relatedOption.dovecot2.quotaGlobalPerUser",
+            "type": "string",
+            "value": "\"100G\""
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Null if no special use flag is set. Other than that every use flagmentioned in the RFC is valid.",
+            "nixName": "relatedOption.dovecot2.mailboxes.<name>.specialUse",
+            "type": "null or one of \"All\", \"Archive\", \"Drafts\", \"Flagged\", \"Junk\", \"Sent\", \"Trash\"",
+            "value": "null"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "The name of the mailbox.",
+            "nixName": "relatedOption.dovecot2.mailboxes.<name>.name",
+            "type": "string matching the pattern [^\"]+",
+            "value": "\"\u2039name\u203a\""
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "To automatically remove all email from the mailbox which is olderthan the specified time.",
+            "nixName": "relatedOption.dovecot2.mailboxes.<name>.autoexpunge",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Whether to automatically create or create and subscribe to themailbox or not.",
+            "nixName": "relatedOption.dovecot2.mailboxes.<name>.auto",
+            "type": "one of \"no\", \"create\", \"subscribe\"",
+            "value": "\"no\""
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Configure mailboxes and auto create or subscribe them.",
+            "nixName": "relatedOption.dovecot2.mailboxes",
+            "type": "(attribute set of (submodule)) or (list of unspecified value) convertible to it",
+            "value": "{ }"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Default user to store mail for virtual users.",
+            "nixName": "relatedOption.dovecot2.mailUser",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "mail plugins to enable as a list of strings to append to thecorresponding per-protocol $mail_plugins configurationvariable",
+            "nixName": "relatedOption.dovecot2.mailPlugins.perProtocol.<name>.enable",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Additional entries to add to the mail_plugins variable, perprotocol",
+            "nixName": "relatedOption.dovecot2.mailPlugins.perProtocol",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "mail plugins to enable as a list of strings to append to thetop-level $mail_plugins configuration variable",
+            "nixName": "relatedOption.dovecot2.mailPlugins.globally.enable",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Additional entries to add to the mail_plugins variable for allprotocols",
+            "nixName": "relatedOption.dovecot2.mailPlugins.globally",
+            "type": "submodule",
+            "value": "{\n  enable = [ ];\n}"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Additional entries to add to the mail_plugins variable, globally andper protocol",
+            "nixName": "relatedOption.dovecot2.mailPlugins",
+            "type": "submodule",
+            "value": "{\n  globally = {\n    enable = [ ];\n  };\n  perProtocol = { };\n}"
+        },
+        {
+            "name": "mail/dovecot.nix",
+            "desc": "Default group to store mail for virtual users.",
+            "nixName": "relatedOption.dovecot2.mailGroup",
+            "type": "null or string",
+            "value": "null"
+        }
+    ]
+}

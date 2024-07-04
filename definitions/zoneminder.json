@@ -1,0 +1,109 @@
+{
+    "name": "Zoneminder",
+    "desc": "Video surveillance software system",
+    "tags": [
+        "Video Surveillance\r"
+    ],
+    "website": "https://zoneminder.com",
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "zoneminder",
+    "options": [
+        {
+            "name": "cameras",
+            "desc": "Set this to the number of cameras you expect to support.",
+            "nixName": "cameras",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "database.createLocally",
+            "desc": "Create the database and database user locally.",
+            "nixName": "database.createLocally",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "database.host",
+            "desc": "Hostname hosting the database.",
+            "nixName": "database.host",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "database.name",
+            "desc": "Name of database.",
+            "nixName": "database.name",
+            "type": "string",
+            "value": "\"zm\""
+        },
+        {
+            "name": "database.password",
+            "desc": "Username for accessing the database. Not used if createLocally  is set.",
+            "nixName": "database.password",
+            "type": "string",
+            "value": "\"zmpass\""
+        },
+        {
+            "name": "database.username",
+            "desc": "Username for accessing the database.",
+            "nixName": "database.username",
+            "type": "string",
+            "value": "\"zmuser\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable ZoneMinder.  If you intend to run the database locally, you should set config.services.zoneminder.database.createLocally  to true.Otherwise, when set to  false  (the default), you will haveto create the database and database user as well as populate thedatabase yourself. Additionally, you will need to run zmupdate.pl  yourself when upgrading to a newer version.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraConfig",
+            "desc": "Additional configuration added verbatim to the configurationfile.",
+            "nixName": "extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "hostname",
+            "desc": "The hostname on which to listen.",
+            "nixName": "hostname",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open the firewall port(s).",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "port",
+            "desc": "The port on which to listen.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8095"
+        },
+        {
+            "name": "storageDir",
+            "desc": "ZoneMinder can generate quite a lot of data, so in case you don\u2019twant to use the default /var/lib/zoneminder, you can override the pathhere.",
+            "nixName": "storageDir",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "webserver",
+            "desc": "The webserver to configure for the PHP frontend.  Set it to  none  if you want to configure it yourself. PRsare welcome for support for other web servers.",
+            "nixName": "webserver",
+            "type": "one of \"nginx\", \"none\"",
+            "value": "\"nginx\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

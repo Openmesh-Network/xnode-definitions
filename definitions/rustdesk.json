@@ -1,0 +1,59 @@
+{
+    "name": "RustDesk",
+    "desc": "Virtual / remote desktop infrastructure for everyone! Open source TeamViewer / Citrix alternative",
+    "tags": [
+        "Remote Access\r"
+    ],
+    "website": "https://rustdesk.com",
+    "implmented": false,
+    "logo": "https://rustdesk.com/images/favicon.png?v2",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "rustdesk",
+    "options": [
+        {
+            "name": "monitoring/rustdesk-server.nix",
+            "desc": "The rustdesk-server package to use.",
+            "nixName": "relatedOption.rustdesk-server.package",
+            "type": "package",
+            "value": "pkgs.rustdesk-server"
+        },
+        {
+            "name": "monitoring/rustdesk-server.nix",
+            "desc": "The public facing IP of the RustDesk relay.",
+            "nixName": "relatedOption.rustdesk-server.relayIP",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "monitoring/rustdesk-server.nix",
+            "desc": "Whether to enable RustDesk, a remote access and remote controlsoftware, allowing maintenance of computers and other devices..",
+            "nixName": "relatedOption.rustdesk-server.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/rustdesk-server.nix",
+            "desc": "Open the connection ports. TCP (21115, 21116, 21117, 21118, 21119)UDP (21116)",
+            "nixName": "relatedOption.rustdesk-server.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/rustdesk-server.nix",
+            "desc": "A list of extra command line arguments to pass to thehbbs process.",
+            "nixName": "relatedOption.rustdesk-server.extraSignalArgs",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "monitoring/rustdesk-server.nix",
+            "desc": "A list of extra command line arguments to pass to thehbbr process.",
+            "nixName": "relatedOption.rustdesk-server.extraRelayArgs",
+            "type": "list of string",
+            "value": "[ ]"
+        }
+    ]
+}

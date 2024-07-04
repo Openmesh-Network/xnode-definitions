@@ -1,0 +1,347 @@
+{
+    "name": "Syncthing",
+    "desc": "Open Source Continuous File Synchronization",
+    "tags": [
+        "File Transfer & Synchronization"
+    ],
+    "website": "https://syncthing.net/",
+    "logo": "https://syncthing.net/img/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "syncthing",
+    "options": [
+        {
+            "name": "all_proxy",
+            "desc": "Overwrites the all_proxy environment variable for the Syncthingprocess to the given value. This is normally used to let Syncthingconnect through a SOCKS5 proxy server. See  https://docs.syncthing.net/users/proxying.html .",
+            "nixName": "all_proxy",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "cert",
+            "desc": "Path to the  cert.pem  file, which will be copied intoSyncthing\u2019s  configDir .",
+            "nixName": "cert",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "configDir",
+            "desc": "The path where the settings and keys will exist.",
+            "nixName": "configDir",
+            "type": "path",
+            "value": "<rendered-html><ul>\n<li><p>if <code>stateVersion &gt;= 19.03</code>:</p>\n<pre><code>config.services.syncthing.dataDir + &quot;/.config/syncthing&quot;</code></pre></li>\n<li><p>otherwise:</p>\n<pre><code>config.services.syncthing.dataDir</code></pre></li>\n</ul>\n</rendered-html>"
+        },
+        {
+            "name": "dataDir",
+            "desc": "The path where synchronised directories will exist.",
+            "nixName": "dataDir",
+            "type": "path",
+            "value": "\"/var/lib/syncthing\""
+        },
+        {
+            "name": "databaseDir",
+            "desc": "The directory containing the database and logs.",
+            "nixName": "databaseDir",
+            "type": "path",
+            "value": "config.services.syncthing.configDir"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Syncthing, a self-hosted open-source alternative toDropbox and Bittorrent Sync.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraFlags",
+            "desc": "Extra flags passed to the syncthing command in the servicedefinition.",
+            "nixName": "extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "group",
+            "desc": "The group to run Syncthing under. By default, a group named syncthing  will be created.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"syncthing\""
+        },
+        {
+            "name": "guiAddress",
+            "desc": "The address to serve the web interface at.",
+            "nixName": "guiAddress",
+            "type": "string",
+            "value": "\"127.0.0.1:8384\""
+        },
+        {
+            "name": "key",
+            "desc": "Path to the  key.pem  file, which will be copied intoSyncthing\u2019s  configDir .",
+            "nixName": "key",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "openDefaultPorts",
+            "desc": "Whether to open the default ports in the firewall: TCP/UDP 22000 fortransfers and UDP 21027 for discovery.  If multiple users are running Syncthing on this machine, you willneed to manually open a set of ports for each instance and leave thisdisabled. Alternatively, if you are running only a single instance onthis machine using the default ports, enable this.",
+            "nixName": "openDefaultPorts",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "overrideDevices",
+            "desc": "Whether to delete the devices which are not configured via the  devices option. If set to  false , devices added via the webinterface will persist and will have to be deleted manually.",
+            "nixName": "overrideDevices",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "overrideFolders",
+            "desc": "Whether to delete the folders which are not configured via the  folders option. If set to  false , folders added via the webinterface will persist and will have to be deleted manually.",
+            "nixName": "overrideFolders",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "package",
+            "desc": "The syncthing package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.syncthing"
+        },
+        {
+            "name": "relay.enable",
+            "desc": "Whether to enable Syncthing relay service.",
+            "nixName": "relay.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "relay.extraOptions",
+            "desc": "Extra command line arguments to pass to strelaysrv.",
+            "nixName": "relay.extraOptions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "relay.globalRateBps",
+            "desc": "Global bandwidth rate limit in bytes per second.",
+            "nixName": "relay.globalRateBps",
+            "type": "null or (positive integer, meaning >0)",
+            "value": "null"
+        },
+        {
+            "name": "relay.listenAddress",
+            "desc": "Address to listen on for relay traffic.",
+            "nixName": "relay.listenAddress",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "relay.perSessionRateBps",
+            "desc": "Per session bandwidth rate limit in bytes per second.",
+            "nixName": "relay.perSessionRateBps",
+            "type": "null or (positive integer, meaning >0)",
+            "value": "null"
+        },
+        {
+            "name": "relay.pools",
+            "desc": "Relay pools to join. If null, uses the default global pool.",
+            "nixName": "relay.pools",
+            "type": "null or (list of string)",
+            "value": "null"
+        },
+        {
+            "name": "relay.port",
+            "desc": "Port to listen on for relay traffic. This port should be added to networking.firewall.allowedTCPPorts .",
+            "nixName": "relay.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "22067"
+        },
+        {
+            "name": "relay.providedBy",
+            "desc": "Human-readable description of the provider of the relay (you).",
+            "nixName": "relay.providedBy",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "relay.statusListenAddress",
+            "desc": "Address to listen on for serving the relay status API.",
+            "nixName": "relay.statusListenAddress",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "relay.statusPort",
+            "desc": "Port to listen on for serving the relay status API. This port shouldbe added to  networking.firewall.allowedTCPPorts .",
+            "nixName": "relay.statusPort",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "22070"
+        },
+        {
+            "name": "settings",
+            "desc": "Extra configuration options for Syncthing. See  https://docs.syncthing.net/users/config.html .Note that this attribute set does not exactly match the documented xmlformat. Instead, this is the format of the json rest api. There areslight differences. For example, this xml:       < options >      < listenAddress >default</ listenAddress >      < minHomeDiskFree   unit=  \"%\" >1</ minHomeDiskFree >    </ options >     corresponds to the json:        {        options  :   {          listenAddresses   =   [            \"default\"          ];          minHomeDiskFree   =   {            unit   =   \"%\"  ;            value   =   1;          }  ;        }  ;      }",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.devices",
+            "desc": "Peers/devices which Syncthing should communicate with.  Note that you can still add devices manually, but those changes willbe reverted on restart if  overrideDevices is enabled.",
+            "nixName": "settings.devices",
+            "type": "attribute set of (JSON value)",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.devices.<name>.autoAcceptFolders",
+            "desc": "Automatically create or share folders that this device advertises atthe default path. See  https://docs.syncthing.net/users/config.html?highlight=autoaccept#config-file-format .",
+            "nixName": "settings.devices.<name>.autoAcceptFolders",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.devices.<name>.id",
+            "desc": "The device ID. See  https://docs.syncthing.net/dev/device-ids.html .",
+            "nixName": "settings.devices.<name>.id",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "settings.devices.<name>.name",
+            "desc": "The name of the device.",
+            "nixName": "settings.devices.<name>.name",
+            "type": "string",
+            "value": "\"\u2039name\u203a\""
+        },
+        {
+            "name": "settings.folders",
+            "desc": "Folders which should be shared by Syncthing.  Note that you can still add folders manually, but those changes willbe reverted on restart if  overrideFolders is enabled.",
+            "nixName": "settings.folders",
+            "type": "attribute set of (JSON value)",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.folders.<name>.copyOwnershipFromParent",
+            "desc": "On Unix systems, tries to copy file/folder ownership from the parentdirectory (the directory it\u2019s located in). Requires running Syncthing asa privileged user, or granting it additional capabilities (e.g.CAP_CHOWN on Linux).",
+            "nixName": "settings.folders.<name>.copyOwnershipFromParent",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.folders.<name>.devices",
+            "desc": "The devices this folder should be shared with. Each device must bedefined in the  devices option.",
+            "nixName": "settings.folders.<name>.devices",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.folders.<name>.enable",
+            "desc": "Whether to share this folder. This option is useful when you want todefine all folders in one place, but not every machine should share allfolders.",
+            "nixName": "settings.folders.<name>.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.folders.<name>.id",
+            "desc": "The ID of the folder. Must be the same on all devices.",
+            "nixName": "settings.folders.<name>.id",
+            "type": "string",
+            "value": "\"\u2039name\u203a\""
+        },
+        {
+            "name": "settings.folders.<name>.label",
+            "desc": "The label of the folder.",
+            "nixName": "settings.folders.<name>.label",
+            "type": "string",
+            "value": "\"\u2039name\u203a\""
+        },
+        {
+            "name": "settings.folders.<name>.path",
+            "desc": "The path to the folder which should be shared. Only absolute paths(starting with  / ) and paths relative to the  user \u2019shome directory (starting with  ~/ ) are allowed.",
+            "nixName": "settings.folders.<name>.path",
+            "type": "string starting with / or ~/",
+            "value": "\"\u2039name\u203a\""
+        },
+        {
+            "name": "settings.folders.<name>.versioning",
+            "desc": "How to keep changed/deleted files with Syncthing. There are 4different types of versioning with different parameters. See  https://docs.syncthing.net/users/versioning.html .",
+            "nixName": "settings.folders.<name>.versioning",
+            "type": "null or (JSON value)",
+            "value": "null"
+        },
+        {
+            "name": "settings.folders.<name>.versioning.type",
+            "desc": "The type of versioning. See  https://docs.syncthing.net/users/versioning.html .",
+            "nixName": "settings.folders.<name>.versioning.type",
+            "type": "one of \"external\", \"simple\", \"staggered\", \"trashcan\"",
+            "value": null
+        },
+        {
+            "name": "settings.options",
+            "desc": "The options element contains all other global configurationoptions",
+            "nixName": "settings.options",
+            "type": "JSON value",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.options.limitBandwidthInLan",
+            "desc": "Whether to apply bandwidth limits to devices in the same broadcastdomain as the local device.",
+            "nixName": "settings.options.limitBandwidthInLan",
+            "type": "null or boolean",
+            "value": "null"
+        },
+        {
+            "name": "settings.options.localAnnounceEnabled",
+            "desc": "Whether to send announcements to the local LAN, also use suchannouncements to find other devices.",
+            "nixName": "settings.options.localAnnounceEnabled",
+            "type": "null or boolean",
+            "value": "null"
+        },
+        {
+            "name": "settings.options.localAnnouncePort",
+            "desc": "The port on which to listen and send IPv4 broadcast announcementsto.",
+            "nixName": "settings.options.localAnnouncePort",
+            "type": "null or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "settings.options.maxFolderConcurrency",
+            "desc": "This option controls how many folders may concurrently be inI/O-intensive operations such as syncing or scanning. The mechanism isdescribed in detail in a  separatechapter .",
+            "nixName": "settings.options.maxFolderConcurrency",
+            "type": "null or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "settings.options.relaysEnabled",
+            "desc": "When true, relays will be connected to and potentially used fordevice to device connections.",
+            "nixName": "settings.options.relaysEnabled",
+            "type": "null or boolean",
+            "value": "null"
+        },
+        {
+            "name": "settings.options.urAccepted",
+            "desc": "Whether the user has accepted to submit anonymous usage data. Thedefault, 0, mean the user has not made a choice, and Syncthing will askat some point in the future. \u201c-1\u201d means no, a number above zero meansthat that version of usage reporting has been accepted.",
+            "nixName": "settings.options.urAccepted",
+            "type": "null or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "systemService",
+            "desc": "Whether to auto-launch Syncthing as a system service.",
+            "nixName": "systemService",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "user",
+            "desc": "The user to run Syncthing as. By default, a user named syncthing  will be created whose home directory is  dataDir .",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"syncthing\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

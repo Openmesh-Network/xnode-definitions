@@ -1,0 +1,235 @@
+{
+    "name": "Restic",
+    "desc": "A backup program that is fast, efficient and secure",
+    "tags": [
+        "Backup"
+    ],
+    "website": "https://restic.net",
+    "logo": "https://restic.net/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "restic",
+    "options": [
+        {
+            "name": "backups",
+            "desc": "Periodic backups to create with Restic.",
+            "nixName": "backups",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "backups.<name>.backupCleanupCommand",
+            "desc": "A script that must run after finishing the backup process.",
+            "nixName": "backups.<name>.backupCleanupCommand",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.backupPrepareCommand",
+            "desc": "A script that must run before starting the backup process.",
+            "nixName": "backups.<name>.backupPrepareCommand",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.checkOpts",
+            "desc": "A list of options for \u2018restic check\u2019.",
+            "nixName": "backups.<name>.checkOpts",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "backups.<name>.createWrapper",
+            "desc": "Whether to generate and add a script to the system path, that has thesame environment variables set as the systemd service. This can be usedto e.g. mount snapshots or perform other opterations, without having tomanually specify most options.",
+            "nixName": "backups.<name>.createWrapper",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "backups.<name>.dynamicFilesFrom",
+            "desc": "A script that produces a list of files to back up. The results ofthis command are given to the \u2018\u2013files-from\u2019 option. The result is mergedwith paths specified via  paths .",
+            "nixName": "backups.<name>.dynamicFilesFrom",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.environmentFile",
+            "desc": "file containing the credentials to access the repository, in theformat of an EnvironmentFile as described by systemd.exec(5)",
+            "nixName": "backups.<name>.environmentFile",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.exclude",
+            "desc": "Patterns to exclude when backing up. See  https://restic.readthedocs.io/en/latest/040_backup.html#excluding-files for details on syntax.",
+            "nixName": "backups.<name>.exclude",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "backups.<name>.extraBackupArgs",
+            "desc": "Extra arguments passed to restic backup.",
+            "nixName": "backups.<name>.extraBackupArgs",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "backups.<name>.extraOptions",
+            "desc": "Extra extended options to be passed to the restic \u2013option flag.",
+            "nixName": "backups.<name>.extraOptions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "backups.<name>.initialize",
+            "desc": "Create the repository if it doesn\u2019t exist.",
+            "nixName": "backups.<name>.initialize",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "backups.<name>.package",
+            "desc": "The restic package to use.",
+            "nixName": "backups.<name>.package",
+            "type": "package",
+            "value": "pkgs.restic"
+        },
+        {
+            "name": "backups.<name>.passwordFile",
+            "desc": "Read the repository password from a file.",
+            "nixName": "backups.<name>.passwordFile",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "backups.<name>.paths",
+            "desc": "Which paths to backup, in addition to ones specified via dynamicFilesFrom . If null or an empty array and dynamicFilesFrom  is also null, no backup command will berun. This can be used to create a prune-only job.",
+            "nixName": "backups.<name>.paths",
+            "type": "null or (list of string)",
+            "value": "[ ]"
+        },
+        {
+            "name": "backups.<name>.pruneOpts",
+            "desc": "A list of options (\u2013keep-* et al.) for \u2018restic forget \u2013prune\u2019, toautomatically prune old snapshots. The \u2018forget\u2019 command is run after  the \u2018backup\u2019 command, so keep that in mind whenconstructing the \u2013keep-* options.",
+            "nixName": "backups.<name>.pruneOpts",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "backups.<name>.rcloneConfig",
+            "desc": "Configuration for the rclone remote being used for backup. See theremote\u2019s specific options under rclone\u2019s docs at  https://rclone.org/docs/ . Whenspecifying option names, use the \u201cconfig\u201d name specified in the docs.For example, to set  --b2-hard-delete  for a B2 remote, use hard_delete = true  in the attribute set. Warning: Secretsset in here will be world-readable in the Nix store! Consider using the rcloneConfigFile  option instead to specify secret valuesseparately. Note that options set here will override those set in theconfig file.",
+            "nixName": "backups.<name>.rcloneConfig",
+            "type": "null or (attribute set of (string or boolean))",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.rcloneConfigFile",
+            "desc": "Path to the file containing rclone configuration. This file mustcontain configuration for the remote specified in this backup set andalso must be readable by root. Options set in  rcloneConfig will override those set in this file.",
+            "nixName": "backups.<name>.rcloneConfigFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.rcloneOptions",
+            "desc": "Options to pass to rclone to control its behavior. See  https://rclone.org/docs/#options for available options. When specifying option names, strip the leading -- . To set a flag such as  --drive-use-trash ,which does not take a value, set the value to the Boolean true .",
+            "nixName": "backups.<name>.rcloneOptions",
+            "type": "null or (attribute set of (string or boolean))",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.repository",
+            "desc": "repository to backup to.",
+            "nixName": "backups.<name>.repository",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.repositoryFile",
+            "desc": "Path to the file containing the repository location to backup to.",
+            "nixName": "backups.<name>.repositoryFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "backups.<name>.runCheck",
+            "desc": "Whether to run the  check  command with the provided checkOpts  options.",
+            "nixName": "backups.<name>.runCheck",
+            "type": "boolean",
+            "value": "builtins.length config.services.backups.\u2039name\u203a.checkOpts > 0"
+        },
+        {
+            "name": "backups.<name>.timerConfig",
+            "desc": "When to run the backup. See   systemd.timer(5)   fordetails. If null no timer is created and the backup will only run whenexplicitly started.",
+            "nixName": "backups.<name>.timerConfig",
+            "type": "null or (attribute set of (systemd option))",
+            "value": "{\n  OnCalendar = \"daily\";\n  Persistent = true;\n}"
+        },
+        {
+            "name": "backups.<name>.user",
+            "desc": "As which user the backup should run.",
+            "nixName": "backups.<name>.user",
+            "type": "string",
+            "value": "\"root\""
+        },
+        {
+            "name": "server.appendOnly",
+            "desc": "Enable append only mode. This mode allows creation of new backups butprevents deletion and modification of existing backups. This can beuseful when backing up systems that have a potential of beinghacked.",
+            "nixName": "server.appendOnly",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "server.dataDir",
+            "desc": "The directory for storing the restic repository.",
+            "nixName": "server.dataDir",
+            "type": "path",
+            "value": "\"/var/lib/restic\""
+        },
+        {
+            "name": "server.enable",
+            "desc": "Whether to enable Restic REST Server.",
+            "nixName": "server.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "server.extraFlags",
+            "desc": "Extra commandline options to pass to Restic REST server.",
+            "nixName": "server.extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "server.listenAddress",
+            "desc": "Listen on a specific IP address and port.",
+            "nixName": "server.listenAddress",
+            "type": "string",
+            "value": "\"8000\""
+        },
+        {
+            "name": "server.package",
+            "desc": "The restic-rest-server package to use.",
+            "nixName": "server.package",
+            "type": "package",
+            "value": "pkgs.restic-rest-server"
+        },
+        {
+            "name": "server.privateRepos",
+            "desc": "Enable private repos. Grants access only when a subdirectory with thesame name as the user is specified in the repository URL.",
+            "nixName": "server.privateRepos",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "server.prometheus",
+            "desc": "Enable Prometheus metrics at /metrics.",
+            "nixName": "server.prometheus",
+            "type": "boolean",
+            "value": "false"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

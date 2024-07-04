@@ -1,0 +1,31 @@
+{
+    "name": "Lemmy",
+    "desc": "Building a federated alternative to reddit in rust",
+    "tags": [
+        "Communication - Social Networks and Forums"
+    ],
+    "website": "https://join-lemmy.org/",
+    "implmented": false,
+    "logo": "https://join-lemmy.org/static/assets/icons/favicon.svg",
+    "specs": {
+        "ram": 2048,
+        "storage": 0
+    },
+    "nixName": "lemmy-ui",
+    "options": [
+        {
+            "name": "web-apps/lemmy.nix",
+            "desc": "The lemmy-ui package to use.",
+            "nixName": "relatedOption.lemmy.ui.package",
+            "type": "package",
+            "value": "pkgs.lemmy-ui"
+        },
+        {
+            "name": "web-apps/lemmy.nix",
+            "desc": "Port where lemmy-ui should listen for incoming requests.",
+            "nixName": "relatedOption.lemmy.ui.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "1234"
+        }
+    ]
+}

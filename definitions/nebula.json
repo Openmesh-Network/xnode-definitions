@@ -1,0 +1,144 @@
+{
+    "name": "Nebula",
+    "desc": "Overlay networking tool with a focus on performance, simplicity and security",
+    "tags": [
+        "VPN"
+    ],
+    "website": "https://github.com/slackhq/nebula",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "nebula",
+    "options": [
+        {
+            "name": "networks",
+            "desc": "Nebula network definitions.",
+            "nixName": "networks",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "networks.<name>.ca",
+            "desc": "Path to the certificate authority certificate.",
+            "nixName": "networks.<name>.ca",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "networks.<name>.cert",
+            "desc": "Path to the host certificate.",
+            "nixName": "networks.<name>.cert",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "networks.<name>.enable",
+            "desc": "Enable or disable this network.",
+            "nixName": "networks.<name>.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "networks.<name>.firewall.inbound",
+            "desc": "Firewall rules for inbound traffic.",
+            "nixName": "networks.<name>.firewall.inbound",
+            "type": "list of (attribute set)",
+            "value": "[ ]"
+        },
+        {
+            "name": "networks.<name>.firewall.outbound",
+            "desc": "Firewall rules for outbound traffic.",
+            "nixName": "networks.<name>.firewall.outbound",
+            "type": "list of (attribute set)",
+            "value": "[ ]"
+        },
+        {
+            "name": "networks.<name>.isLighthouse",
+            "desc": "Whether this node is a lighthouse.",
+            "nixName": "networks.<name>.isLighthouse",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "networks.<name>.isRelay",
+            "desc": "Whether this node is a relay.",
+            "nixName": "networks.<name>.isRelay",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "networks.<name>.key",
+            "desc": "Path to the host key.",
+            "nixName": "networks.<name>.key",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "networks.<name>.lighthouses",
+            "desc": "List of IPs of lighthouse hosts this node should report to and queryfrom. This should be empty on lighthouse nodes. The IPs should be thelighthouse\u2019s Nebula IPs, not their external IPs.",
+            "nixName": "networks.<name>.lighthouses",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "networks.<name>.listen.host",
+            "desc": "IP address to listen on.",
+            "nixName": "networks.<name>.listen.host",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "networks.<name>.listen.port",
+            "desc": "Port number to listen on.",
+            "nixName": "networks.<name>.listen.port",
+            "type": "null or 16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "if (config.services.nebula.networks.${name}.isLighthouse ||\n    config.services.nebula.networks.${name}.isRelay) then\n  4242\nelse\n  0;\n"
+        },
+        {
+            "name": "networks.<name>.package",
+            "desc": "The nebula package to use.",
+            "nixName": "networks.<name>.package",
+            "type": "package",
+            "value": "pkgs.nebula"
+        },
+        {
+            "name": "networks.<name>.relays",
+            "desc": "List of IPs of relays that this node should allow traffic from.",
+            "nixName": "networks.<name>.relays",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "networks.<name>.settings",
+            "desc": "Nebula configuration. Refer to  https://github.com/slackhq/nebula/blob/master/examples/config.yml for details on supported values.",
+            "nixName": "networks.<name>.settings",
+            "type": "YAML value",
+            "value": "{ }"
+        },
+        {
+            "name": "networks.<name>.staticHostMap",
+            "desc": "The static host map defines a set of hosts with fixed IP addresses onthe internet (or any network). A host can have multiple fixed IPaddresses defined here, and nebula will try each when establishing atunnel.",
+            "nixName": "networks.<name>.staticHostMap",
+            "type": "attribute set of list of string",
+            "value": "{ }"
+        },
+        {
+            "name": "networks.<name>.tun.device",
+            "desc": "Name of the tun device. Defaults to nebula.${networkName}.",
+            "nixName": "networks.<name>.tun.device",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "networks.<name>.tun.disable",
+            "desc": "When tun is disabled, a lighthouse can be started without a local tuninterface (and therefore without root).",
+            "nixName": "networks.<name>.tun.disable",
+            "type": "boolean",
+            "value": "false"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

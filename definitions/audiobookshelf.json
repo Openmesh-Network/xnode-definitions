@@ -1,0 +1,74 @@
+{
+    "name": "Audiobookshelf",
+    "desc": "Self-hosted audiobook and podcast server",
+    "tags": [
+        "Media Streaming - Audio Streaming\r"
+    ],
+    "website": "https://www.audiobookshelf.org/",
+    "logo": "https://www.audiobookshelf.org/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "audiobookshelf",
+    "options": [
+        {
+            "name": "dataDir",
+            "desc": "Path to Audiobookshelf config and metadata inside of /var/lib.",
+            "nixName": "dataDir",
+            "type": "string",
+            "value": "\"audiobookshelf\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Audiobookshelf, self-hosted audiobook and podcastserver.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which Audiobookshelf runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"audiobookshelf\""
+        },
+        {
+            "name": "host",
+            "desc": "The host Audiobookshelf binds to.",
+            "nixName": "host",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open ports in the firewall for the Audiobookshelf web interface.",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The audiobookshelf package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.audiobookshelf"
+        },
+        {
+            "name": "port",
+            "desc": "The TCP port Audiobookshelf will listen on.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8000"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which Audiobookshelf runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"audiobookshelf\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

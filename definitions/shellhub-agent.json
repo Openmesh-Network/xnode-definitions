@@ -1,0 +1,67 @@
+{
+    "name": "ShellHub",
+    "desc": "Enables easy access any Linux device behind firewall and NAT",
+    "tags": [
+        "Remote Access\r"
+    ],
+    "website": "https://shellhub.io/",
+    "logo": "https://shellhub.io/favicon-32x32.png?v=b7691a4d022678a921902ece55ea2058",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "shellhub-agent",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable ShellHub Agent daemon.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "keepAliveInterval",
+            "desc": "Determine the interval to send the keep alive message to the server.This has a direct impact of the bandwidth used by the device.",
+            "nixName": "keepAliveInterval",
+            "type": "signed integer",
+            "value": "30"
+        },
+        {
+            "name": "package",
+            "desc": "The shellhub-agent package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.shellhub-agent"
+        },
+        {
+            "name": "preferredHostname",
+            "desc": "Set the device preferred hostname. This provides a hint to the serverto use this as hostname if it is available.",
+            "nixName": "preferredHostname",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "privateKey",
+            "desc": "Location where to store the ShellHub Agent private key.",
+            "nixName": "privateKey",
+            "type": "path",
+            "value": "\"/var/lib/shellhub-agent/private.key\""
+        },
+        {
+            "name": "server",
+            "desc": "Server address of ShellHub Gateway to connect.",
+            "nixName": "server",
+            "type": "string",
+            "value": "\"https://cloud.shellhub.io\""
+        },
+        {
+            "name": "tenantId",
+            "desc": "The tenant ID to use when connecting to the ShellHub Gateway.",
+            "nixName": "tenantId",
+            "type": "string",
+            "value": null
+        }
+    ],
+    "show": false,
+    "tested": false
+}

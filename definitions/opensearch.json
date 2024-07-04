@@ -1,0 +1,130 @@
+{
+    "name": "OpenSearch",
+    "desc": "Open Source, Distributed, RESTful Search Engine",
+    "tags": [
+        "Search Engines\r"
+    ],
+    "website": "https://github.com/opensearch-project/OpenSearch",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "opensearch",
+    "options": [
+        {
+            "name": "dataDir",
+            "desc": "Data directory for OpenSearch. If you change this, you need tomanually create the directory. You also need to create the opensearch  user and group, or change  services.opensearch.user and  services.opensearch.group to existing ones with access to the directory.",
+            "nixName": "dataDir",
+            "type": "path",
+            "value": "\"/var/lib/opensearch\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable OpenSearch.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraCmdLineOptions",
+            "desc": "Extra command line options for the OpenSearch launcher.",
+            "nixName": "extraCmdLineOptions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "extraJavaOptions",
+            "desc": "Extra command line options for Java.",
+            "nixName": "extraJavaOptions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "group",
+            "desc": "The group OpenSearch runs as. Should be left at default unless youhave very specific needs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"opensearch\""
+        },
+        {
+            "name": "logging",
+            "desc": "opensearch logging configuration.",
+            "nixName": "logging",
+            "type": "string",
+            "value": "''\n  logger.action.name = org.opensearch.action\n  logger.action.level = info\n  \n  appender.console.type = Console\n  appender.console.name = console\n  appender.console.layout.type = PatternLayout\n  appender.console.layout.pattern = [%d{ISO8601}][%-5p][%-25c{1.}] %marker%m%n\n  \n  rootLogger.level = info\n  rootLogger.appenderRef.console.ref = console\n''"
+        },
+        {
+            "name": "package",
+            "desc": "The OpenSearch package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.opensearch"
+        },
+        {
+            "name": "restartIfChanged",
+            "desc": "Automatically restart the service on config change. This can be setto false to defer restarts on a server or cluster. Please consider thesecurity implications of inadvertently running an older version, and thepossibility of unexpected behavior caused by inconsistent versionsacross a cluster when disabling this option.",
+            "nixName": "restartIfChanged",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings",
+            "desc": "OpenSearch configuration.",
+            "nixName": "settings",
+            "type": "YAML value",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.\"cluster.name\"",
+            "desc": "The name of the cluster.",
+            "nixName": "settings.\"cluster.name\"",
+            "type": "string",
+            "value": "\"opensearch\""
+        },
+        {
+            "name": "settings.\"discovery.type\"",
+            "desc": "The type of discovery to use.",
+            "nixName": "settings.\"discovery.type\"",
+            "type": "string",
+            "value": "\"single-node\""
+        },
+        {
+            "name": "settings.\"http.port\"",
+            "desc": "The port to listen on for HTTP traffic.",
+            "nixName": "settings.\"http.port\"",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "9200"
+        },
+        {
+            "name": "settings.\"network.host\"",
+            "desc": "Which port this service should listen on.",
+            "nixName": "settings.\"network.host\"",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "settings.\"plugins.security.disabled\"",
+            "desc": "Whether to enable the security plugin, plugins.security.ssl.transport.keystore_filepath  or plugins.security.ssl.transport.server.pemcert_filepath  and plugins.security.ssl.transport.client.pemcert_filepath  mustbe set for this plugin to be enabled.",
+            "nixName": "settings.\"plugins.security.disabled\"",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.\"transport.port\"",
+            "desc": "The port to listen on for transport traffic.",
+            "nixName": "settings.\"transport.port\"",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "9300"
+        },
+        {
+            "name": "user",
+            "desc": "The user OpenSearch runs as. Should be left at default unless youhave very specific needs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"opensearch\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

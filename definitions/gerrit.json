@@ -1,0 +1,95 @@
+{
+    "name": "Gerrit",
+    "desc": "A Kubernetes based CI/CD system",
+    "tags": [
+        "Software Development - Project Management\r"
+    ],
+    "website": "https://github.com/kubernetes/test-infra/tree/master/prow",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "gerrit",
+    "options": [
+        {
+            "name": "builtinPlugins",
+            "desc": "List of builtins plugins to install. Those are shipped in the gerrit.war  file.",
+            "nixName": "builtinPlugins",
+            "type": "list of (one of \"codemirror-editor\", \"commit-message-length-validator\", \"delete-project\", \"download-commands\", \"gitiles\", \"hooks\", \"plugin-manager\", \"replication\", \"reviewnotes\", \"singleusergroup\", \"webhooks\")",
+            "value": "[ ]"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Gerrit service.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "jvmHeapLimit",
+            "desc": "How much memory to allocate to the JVM heap",
+            "nixName": "jvmHeapLimit",
+            "type": "string",
+            "value": "\"1024m\""
+        },
+        {
+            "name": "jvmOpts",
+            "desc": "A list of JVM options to start gerrit with.",
+            "nixName": "jvmOpts",
+            "type": "list of string",
+            "value": "[\n  \"-Dflogger.backend_factory=com.google.common.flogger.backend.log4j.Log4jBackendFactory#getInstance\"\n  \"-Dflogger.logging_context=com.google.gerrit.server.logging.LoggingContext#getInstance\"\n]"
+        },
+        {
+            "name": "jvmPackage",
+            "desc": "The jre_headless package to use.",
+            "nixName": "jvmPackage",
+            "type": "package",
+            "value": "pkgs.jre_headless"
+        },
+        {
+            "name": "listenAddress",
+            "desc": "hostname:port  to listen for HTTP traffic.  This is bound using the systemd socket activation.",
+            "nixName": "listenAddress",
+            "type": "string",
+            "value": "\"[::]:8080\""
+        },
+        {
+            "name": "package",
+            "desc": "The gerrit package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.gerrit"
+        },
+        {
+            "name": "plugins",
+            "desc": "List of plugins to add to Gerrit. Each derivation is a jar fileitself where the name of the derivation is the name of plugin.",
+            "nixName": "plugins",
+            "type": "list of package",
+            "value": "[ ]"
+        },
+        {
+            "name": "replicationSettings",
+            "desc": "Replication configuration. This will be generated to the etc/replication.config  file.",
+            "nixName": "replicationSettings",
+            "type": "lazy attribute set of lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer) or lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer)))",
+            "value": "{ }"
+        },
+        {
+            "name": "serverId",
+            "desc": "Set a UUID that uniquely identifies the server.  This can be generated with nix-shell -p util-linux --run uuidgen .",
+            "nixName": "serverId",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "settings",
+            "desc": "Gerrit configuration. This will be generated to the etc/gerrit.config  file.",
+            "nixName": "settings",
+            "type": "lazy attribute set of lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer) or lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer)))",
+            "value": "{ }"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

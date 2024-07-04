@@ -1,0 +1,24 @@
+{
+    "name": "Rygel",
+    "desc": "A home media solution (UPnP AV MediaServer) that allows you to easily share audio, video and pictures to other devices",
+    "tags": [
+        "Media Streaming - Multimedia Streaming"
+    ],
+    "website": "https://gitlab.gnome.org/GNOME/rygel",
+    "implmented": false,
+    "logo": "https://gitlab.gnome.org/uploads/-/system/appearance/favicon/1/GnomeLogoVertical.svg.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "gnome.rygel",
+    "options": [
+        {
+            "name": "desktops/gnome/rygel.nix",
+            "desc": "Whether to enable Rygel UPnP Mediaserver.You will need to also allow UPnP connections in firewall, see thefollowing comment.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        }
+    ]
+}

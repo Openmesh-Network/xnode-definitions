@@ -1,0 +1,32 @@
+{
+    "name": "Isso",
+    "desc": "A commenting server similar to Disqus",
+    "tags": [
+        "Communication - Social Networks and Forums"
+    ],
+    "website": "https://posativ.org/isso/",
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "isso",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable isso, a commenting server similar to Disqus.  Note: The application\u2019s author suppose to run isso behind a reverseproxy. The embedded solution offered by NixOS is also only suitable forsmall installations below 20 requests per second .",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings",
+            "desc": "Configuration for  isso .  See  Isso ServerConfiguration  for supported values.",
+            "nixName": "settings",
+            "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))",
+            "value": null
+        }
+    ],
+    "show": false,
+    "tested": false
+}

@@ -1,0 +1,46 @@
+{
+    "name": "Static Web Server",
+    "desc": "An asynchronous web server for static files-serving",
+    "tags": [
+        "Web Servers"
+    ],
+    "website": "https://static-web-server.net/",
+    "logo": "https://static-web-server.net/assets/sws.svg",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "static-web-server",
+    "options": [
+        {
+            "name": "configuration",
+            "desc": "Configuration for Static Web Server. See  https://static-web-server.net/configuration/config-file/ .NOTE: Don\u2019t set \u201chost\u201d, \u201cport\u201d, or \u201croot\u201d here. They will be ignored.Use the top-level \u201clisten\u201d and \u201croot\u201d options instead.",
+            "nixName": "configuration",
+            "type": "TOML value",
+            "value": "{ }"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Static Web Server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "listen",
+            "desc": "The \u201cListenStream\u201d used in static-web-server.socket. This isequivalent to SWS\u2019s \u201chost\u201d and \u201cport\u201d options. See here for specificsyntax:  https://www.freedesktop.org/software/systemd/man/systemd.socket.html#ListenStream=",
+            "nixName": "listen",
+            "type": "string",
+            "value": "\"[::]:8787\""
+        },
+        {
+            "name": "root",
+            "desc": "The location of files for SWS to serve. Equivalent to SWS\u2019s \u201croot\u201dconfig value. NOTE: This folder must exist before starting SWS.",
+            "nixName": "root",
+            "type": "path",
+            "value": null
+        }
+    ],
+    "show": false,
+    "tested": false
+}

@@ -1,0 +1,116 @@
+{
+    "name": "Galene",
+    "desc": "Videoconferencing server that is easy to deploy, written in Go",
+    "tags": [
+        "Communication - Video Conferencing"
+    ],
+    "website": "https://github.com/jech/galene",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "galene",
+    "options": [
+        {
+            "name": "certFile",
+            "desc": "Path to the server\u2019s certificate. The file is copied at runtime toGalene\u2019s data directory where it needs to reside.",
+            "nixName": "certFile",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "dataDir",
+            "desc": "Data directory.",
+            "nixName": "dataDir",
+            "type": "string",
+            "value": "\"${config.services.galene.stateDir}/data\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Galene Service.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which galene runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"galene\""
+        },
+        {
+            "name": "groupsDir",
+            "desc": "Web server directory.",
+            "nixName": "groupsDir",
+            "type": "string",
+            "value": "\"${config.services.galene.stateDir}/groups\""
+        },
+        {
+            "name": "httpAddress",
+            "desc": "HTTP listen address for galene.",
+            "nixName": "httpAddress",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "httpPort",
+            "desc": "HTTP listen port.",
+            "nixName": "httpPort",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8443"
+        },
+        {
+            "name": "insecure",
+            "desc": "Whether Galene should listen in http or in https. If left as thedefault value (false), Galene needs to be fed a private key and acertificate.",
+            "nixName": "insecure",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "keyFile",
+            "desc": "Path to the server\u2019s private key. The file is copied at runtime toGalene\u2019s data directory where it needs to reside.",
+            "nixName": "keyFile",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "package",
+            "desc": "The galene package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.galene"
+        },
+        {
+            "name": "recordingsDir",
+            "desc": "Recordings directory.",
+            "nixName": "recordingsDir",
+            "type": "string",
+            "value": "\"${config.services.galene.stateDir}/recordings\""
+        },
+        {
+            "name": "stateDir",
+            "desc": "The directory where Galene stores its internal state. If left as thedefault value this directory will automatically be created before theGalene server starts, otherwise the sysadmin is responsible for ensuringthe directory exists with appropriate ownership and permissions.",
+            "nixName": "stateDir",
+            "type": "string",
+            "value": "\"/var/lib/galene\""
+        },
+        {
+            "name": "staticDir",
+            "desc": "Web server directory.",
+            "nixName": "staticDir",
+            "type": "string",
+            "value": "\"${package.static}/static\""
+        },
+        {
+            "name": "user",
+            "desc": "User account under which galene runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"galene\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

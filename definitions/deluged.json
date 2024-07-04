@@ -1,0 +1,24 @@
+{
+    "name": "Deluge ",
+    "desc": "Torrent client",
+    "tags": [
+        "File Transfer - Peer-to-peer Filesharing"
+    ],
+    "website": "https://deluge-torrent.org",
+    "implmented": false,
+    "logo": "https://deluge-torrent.org/images/deluge-icon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "deluged",
+    "options": [
+        {
+            "name": "torrent/deluge.nix",
+            "desc": "Number of files to allow deluged to open.",
+            "nixName": "relatedOption.deluge.openFilesLimit",
+            "type": "signed integer or string",
+            "value": "4096"
+        }
+    ]
+}

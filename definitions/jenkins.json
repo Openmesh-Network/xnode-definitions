@@ -1,0 +1,172 @@
+{
+    "name": "Jenkins",
+    "desc": "An extendable open source continuous integration server",
+    "tags": [
+        "Software Development - Continuous Integration & Continuous Deployment"
+    ],
+    "website": "https://jenkins.io/",
+    "logo": "https://jenkins.io/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "jenkins",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable the jenkins continuous integration server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "environment",
+            "desc": "Additional environment variables to be passed to the jenkins process.As a base environment, jenkins receives NIX_PATH from  environment.sessionVariables , NIX_REMOTE is set to\u201cdaemon\u201d and JENKINS_HOME is set to the value of  services.jenkins.home .This option has precedence and can be used to override those mentionedvariables.",
+            "nixName": "environment",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "extraGroups",
+            "desc": "List of extra groups that the \u201cjenkins\u201d user should be a part of.",
+            "nixName": "extraGroups",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "extraJavaOptions",
+            "desc": "Additional command line arguments to pass to the Java run time (asopposed to Jenkins).",
+            "nixName": "extraJavaOptions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "extraOptions",
+            "desc": "Additional command line arguments to pass to Jenkins.",
+            "nixName": "extraOptions",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "group",
+            "desc": "If the default user \u201cjenkins\u201d is configured then this is the primarygroup of that user.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"jenkins\""
+        },
+        {
+            "name": "home",
+            "desc": "The path to use as JENKINS_HOME. If the default user \u201cjenkins\u201d isconfigured then this is the home of the \u201cjenkins\u201d user.",
+            "nixName": "home",
+            "type": "path",
+            "value": "\"/var/lib/jenkins\""
+        },
+        {
+            "name": "jobBuilder.accessToken",
+            "desc": "User token in Jenkins used to reload config. WARNING: This token willbe world readable in the Nix store. To keep it secret, use the  accessTokenFile  optioninstead.",
+            "nixName": "jobBuilder.accessToken",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "jobBuilder.accessTokenFile",
+            "desc": "File containing the API token for the  accessUser  user.",
+            "nixName": "jobBuilder.accessTokenFile",
+            "type": "string",
+            "value": "\"${config.services.jenkins.home}/secrets/initialAdminPassword\""
+        },
+        {
+            "name": "jobBuilder.accessUser",
+            "desc": "User id in Jenkins used to reload config.",
+            "nixName": "jobBuilder.accessUser",
+            "type": "string",
+            "value": "\"admin\""
+        },
+        {
+            "name": "jobBuilder.enable",
+            "desc": "Whether to enable the Jenkins Job Builder (JJB) service. It allowsdefining jobs for Jenkins in a declarative manner.  Jobs managed through the Jenkins WebUI (or by other means) are leftunchanged.  Note that it really is declarative configuration; if you remove apreviously defined job, the corresponding job directory will bedeleted.  Please see the Jenkins Job Builder documentation for more info:  https://jenkins-job-builder.readthedocs.io/ .",
+            "nixName": "jobBuilder.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "jobBuilder.jsonJobs",
+            "desc": "Job descriptions for Jenkins Job Builder in JSON format.",
+            "nixName": "jobBuilder.jsonJobs",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobBuilder.nixJobs",
+            "desc": "Job descriptions for Jenkins Job Builder in Nix format.  This is a trivial wrapper around jsonJobs, using builtins.toJSONbehind the scene.",
+            "nixName": "jobBuilder.nixJobs",
+            "type": "list of (attribute set)",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobBuilder.yamlJobs",
+            "desc": "Job descriptions for Jenkins Job Builder in YAML format.",
+            "nixName": "jobBuilder.yamlJobs",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "listenAddress",
+            "desc": "Specifies the bind address on which the jenkins HTTP interfacelistens. The default is the wildcard address.",
+            "nixName": "listenAddress",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "package",
+            "desc": "The jenkins package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.jenkins"
+        },
+        {
+            "name": "packages",
+            "desc": "Packages to add to PATH for the jenkins process.",
+            "nixName": "packages",
+            "type": "list of package",
+            "value": "[ pkgs.stdenv pkgs.git pkgs.jdk17 config.programs.ssh.package pkgs.nix ]"
+        },
+        {
+            "name": "plugins",
+            "desc": "A set of plugins to activate. Note that this will completely removeand replace any previously installed plugins. If you havemanually-installed plugins that you want to keep while using thismodule, set this option to  null . You can generate this setwith a tool such as  jenkinsPlugins2nix .",
+            "nixName": "plugins",
+            "type": "null or (attribute set of package)",
+            "value": "null"
+        },
+        {
+            "name": "port",
+            "desc": "Specifies port number on which the jenkins HTTP interface listens.The default is 8080.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8080"
+        },
+        {
+            "name": "prefix",
+            "desc": "Specifies a urlPrefix to use with jenkins. If the example /jenkins isgiven, the jenkins server will be accessible usinglocalhost:8080/jenkins.",
+            "nixName": "prefix",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "user",
+            "desc": "User the jenkins server should execute under.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"jenkins\""
+        },
+        {
+            "name": "withCLI",
+            "desc": "Whether to make the CLI available.  More info about the CLI available at [  https://www.jenkins.io/doc/book/managing/cli](https://www.jenkins.io/doc/book/managing/cli) .",
+            "nixName": "withCLI",
+            "type": "boolean",
+            "value": "false"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

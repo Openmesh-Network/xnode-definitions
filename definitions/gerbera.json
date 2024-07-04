@@ -1,0 +1,45 @@
+{
+    "name": "Gerbera",
+    "desc": "UPnP Media Server for 2020",
+    "tags": [
+        "Media Streaming - Multimedia Streaming"
+    ],
+    "website": "https://docs.gerbera.io/",
+    "implmented": false,
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "gerbera",
+    "options": [
+        {
+            "name": "misc/mediatomb.nix",
+            "desc": "The gerbera package to use.",
+            "nixName": "relatedOption.mediatomb.package",
+            "type": "package",
+            "value": "pkgs.gerbera"
+        },
+        {
+            "name": "misc/mediatomb.nix",
+            "desc": "Whether to enable the Gerbera/Mediatomb DLNA server.",
+            "nixName": "relatedOption.mediatomb.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "misc/mediatomb.nix",
+            "desc": "The directory where Gerbera/Mediatomb stores its state, data,etc.",
+            "nixName": "relatedOption.mediatomb.dataDir",
+            "type": "path",
+            "value": "\"/var/lib/${config.services.mediatomb.package.pname}\""
+        },
+        {
+            "name": "misc/mediatomb.nix",
+            "desc": "Allow the service to create and use its own config file inside thedataDir as configured by services.mediatomb.dataDir. Deactivated by default,the service then runs with the configuration generated from this module.Otherwise, when enabled, no service configuration is generated.Gerbera/Mediatomb then starts using config.xml within the configureddataDir. It\u2019s up to the user to make a correctconfiguration file.",
+            "nixName": "relatedOption.mediatomb.customCfg",
+            "type": "boolean",
+            "value": "false"
+        }
+    ]
+}

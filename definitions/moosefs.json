@@ -1,0 +1,130 @@
+{
+    "name": "MooseFS",
+    "desc": "Open Source, Petabyte, Fault-Tolerant, Highly Performing, Scalable Network Distributed File System",
+    "tags": [
+        "File Transfer - Distributed Filesystems"
+    ],
+    "website": "https://moosefs.com",
+    "logo": "https://moosefs.com/wp-content/themes/Moose/img/android-icon-192x192.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "moosefs",
+    "options": [
+        {
+            "name": "chunkserver.enable",
+            "desc": "Whether to enable Moosefs chunkserver daemon.",
+            "nixName": "chunkserver.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "chunkserver.hdds",
+            "desc": "Mount points to be used by chunkserver for storage (seemfshdd.cfg).",
+            "nixName": "chunkserver.hdds",
+            "type": "list of string",
+            "value": "null"
+        },
+        {
+            "name": "chunkserver.openFirewall",
+            "desc": "Whether to automatically open the necessary ports in thefirewall.",
+            "nixName": "chunkserver.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "chunkserver.settings",
+            "desc": "Contents of chunkserver config file (mfschunkserver.cfg).",
+            "nixName": "chunkserver.settings",
+            "type": "attribute set of (Flat key-value file)",
+            "value": null
+        },
+        {
+            "name": "chunkserver.settings.DATA_PATH",
+            "desc": "Directory for lock file.",
+            "nixName": "chunkserver.settings.DATA_PATH",
+            "type": "string",
+            "value": "\"/var/lib/mfs\""
+        },
+        {
+            "name": "client.enable",
+            "desc": "Whether to enable Moosefs client.",
+            "nixName": "client.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "master.enable",
+            "desc": "Enable Moosefs master daemon.  You need to run  mfsmaster-init  on a freshly installedmaster server to initialize the  DATA_PATH  directory.",
+            "nixName": "master.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "master.exports",
+            "desc": "Paths to export (see mfsexports.cfg).",
+            "nixName": "master.exports",
+            "type": "list of string",
+            "value": "null"
+        },
+        {
+            "name": "master.openFirewall",
+            "desc": "Whether to automatically open the necessary ports in thefirewall.",
+            "nixName": "master.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "master.settings",
+            "desc": "Contents of config file (mfsmaster.cfg).",
+            "nixName": "master.settings",
+            "type": "attribute set of (Flat key-value file)",
+            "value": null
+        },
+        {
+            "name": "master.settings.DATA_PATH",
+            "desc": "Data storage directory.",
+            "nixName": "master.settings.DATA_PATH",
+            "type": "string",
+            "value": "\"/var/lib/mfs\""
+        },
+        {
+            "name": "masterHost",
+            "desc": "IP or DNS name of master host.",
+            "nixName": "masterHost",
+            "type": "string",
+            "value": "null"
+        },
+        {
+            "name": "metalogger.enable",
+            "desc": "Whether to enable Moosefs metalogger daemon.",
+            "nixName": "metalogger.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "metalogger.settings",
+            "desc": "Contents of metalogger config file (mfsmetalogger.cfg).",
+            "nixName": "metalogger.settings",
+            "type": "attribute set of (Flat key-value file)",
+            "value": null
+        },
+        {
+            "name": "metalogger.settings.DATA_PATH",
+            "desc": "Data storage directory",
+            "nixName": "metalogger.settings.DATA_PATH",
+            "type": "string",
+            "value": "\"/var/lib/mfs\""
+        },
+        {
+            "name": "runAsUser",
+            "desc": "Run daemons as user moosefs instead of root.",
+            "nixName": "runAsUser",
+            "type": "boolean",
+            "value": "true"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

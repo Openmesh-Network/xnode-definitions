@@ -1,0 +1,95 @@
+{
+    "name": "GlusterFS",
+    "desc": "Distributed storage system",
+    "tags": [
+        "File Transfer - Distributed Filesystems"
+    ],
+    "website": "https://www.gluster.org",
+    "logo": "",
+    "specs": {
+        "ram": 1024,
+        "storage": 0
+    },
+    "nixName": "glusterfs",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable GlusterFS Daemon.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "enableGlustereventsd",
+            "desc": "Whether to enable the GlusterFS Events Daemon",
+            "nixName": "enableGlustereventsd",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "extraFlags",
+            "desc": "Extra flags passed to the GlusterFS daemon",
+            "nixName": "extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "killMode",
+            "desc": "The systemd KillMode to use for glusterd.  glusterd spawns other daemons like gsyncd. If you want these to stopwhen glusterd is stopped (e.g. to ensure that NixOS config changes arereflected even for these sub-daemons), set this to \u2018control-group\u2019. Ifhowever you want running volume processes (glusterfsd) and thus glustermounts not be interrupted when glusterd is restarted (for example, whenyou want to restart them manually at a later time), set this to\u2018process\u2019.",
+            "nixName": "killMode",
+            "type": "one of \"control-group\", \"process\", \"mixed\", \"none\"",
+            "value": "\"control-group\""
+        },
+        {
+            "name": "logLevel",
+            "desc": "Log level used by the GlusterFS daemon",
+            "nixName": "logLevel",
+            "type": "one of \"DEBUG\", \"INFO\", \"WARNING\", \"ERROR\", \"CRITICAL\", \"TRACE\", \"NONE\"",
+            "value": "\"INFO\""
+        },
+        {
+            "name": "stopKillTimeout",
+            "desc": "The systemd TimeoutStopSec to use.  After this time after having been asked to shut down, glusterd (anddepending on the killMode setting also its child processes) are killedby systemd.  The default is set low because GlusterFS (as of 3.10) is known to nottell its children (like gsyncd) to terminate at all.",
+            "nixName": "stopKillTimeout",
+            "type": "string",
+            "value": "\"5s\""
+        },
+        {
+            "name": "tlsSettings",
+            "desc": "Make the server communicate via TLS. This means it will only connectto other gluster servers having certificates signed by the same CA.  Enabling this will create a file  /var/lib/glusterd/secure-access . Disabling willdelete this file again.  See also:  https://gluster.readthedocs.io/en/latest/Administrator%20Guide/SSL/",
+            "nixName": "tlsSettings",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "tlsSettings.caCert",
+            "desc": "Path certificate authority used to sign the cluster certificates.",
+            "nixName": "tlsSettings.caCert",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "tlsSettings.tlsKeyPath",
+            "desc": "Path to the private key used for TLS.",
+            "nixName": "tlsSettings.tlsKeyPath",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "tlsSettings.tlsPem",
+            "desc": "Path to the certificate used for TLS.",
+            "nixName": "tlsSettings.tlsPem",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "useRpcbind",
+            "desc": "Enable use of rpcbind. This is required for Gluster\u2019s NFSfunctionality.  You may want to turn it off to reduce the attack surface for DDoSreflection attacks.  See  https://davelozier.com/glusterfs-and-rpcbind-portmap-ddos-reflection-attacks/ and  https://bugzilla.redhat.com/show_bug.cgi?id=1426842 for details.",
+            "nixName": "useRpcbind",
+            "type": "boolean",
+            "value": "true"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

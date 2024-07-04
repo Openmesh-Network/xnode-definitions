@@ -1,0 +1,88 @@
+{
+    "name": "iodine",
+    "desc": "Tool to tunnel IPv4 data through a DNS server",
+    "tags": [
+        "Proxy"
+    ],
+    "website": "http://code.kryo.se/iodine/",
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "iodine",
+    "options": [
+        {
+            "name": "clients",
+            "desc": "Each attribute of this option defines a systemd service that runsiodine. Many or none may be defined. The name of each service is iodine-\u00abname\u00bb  where \u00abname\u00bb is the name of the correspondingattribute name.",
+            "nixName": "clients",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "clients.<name>.extraConfig",
+            "desc": "Additional command line parameters",
+            "nixName": "clients.<name>.extraConfig",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "clients.<name>.passwordFile",
+            "desc": "Path to a file containing the password.",
+            "nixName": "clients.<name>.passwordFile",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "clients.<name>.relay",
+            "desc": "DNS server to use as an intermediate relay to the iodined server",
+            "nixName": "clients.<name>.relay",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "clients.<name>.server",
+            "desc": "Hostname of server running iodined",
+            "nixName": "clients.<name>.server",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "server.domain",
+            "desc": "Domain or subdomain of which nameservers point to us",
+            "nixName": "server.domain",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "server.enable",
+            "desc": "enable iodined server",
+            "nixName": "server.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "server.extraConfig",
+            "desc": "Additional command line parameters",
+            "nixName": "server.extraConfig",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "server.ip",
+            "desc": "The assigned ip address or ip range",
+            "nixName": "server.ip",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "server.passwordFile",
+            "desc": "File that contains password",
+            "nixName": "server.passwordFile",
+            "type": "string",
+            "value": "\"\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

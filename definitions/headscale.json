@@ -1,0 +1,319 @@
+{
+    "name": "Headscale",
+    "desc": "An open source, self-hosted implementation of the Tailscale control server",
+    "tags": [
+        "VPN"
+    ],
+    "website": "https://github.com/juanfont/headscale",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "headscale",
+    "options": [
+        {
+            "name": "address",
+            "desc": "Listening address of headscale.",
+            "nixName": "address",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable headscale, Open Source coordination server forTailscale.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which headscale runs.   If left as the default value this group will automatically be createdon system activation, otherwise you are responsible for ensuring theuser exists before the headscale service starts.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"headscale\""
+        },
+        {
+            "name": "package",
+            "desc": "The headscale package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.headscale"
+        },
+        {
+            "name": "port",
+            "desc": "Listening port of headscale.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8080"
+        },
+        {
+            "name": "settings",
+            "desc": "Overrides to  config.yaml  as a Nix attribute set. Check the  exampleconfig  for possible options.",
+            "nixName": "settings",
+            "type": "YAML value",
+            "value": null
+        },
+        {
+            "name": "settings.acl_policy_path",
+            "desc": "Path to a file containing ACL policies.",
+            "nixName": "settings.acl_policy_path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "settings.db_host",
+            "desc": "Database host address.",
+            "nixName": "settings.db_host",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.db_name",
+            "desc": "Database name.",
+            "nixName": "settings.db_name",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.db_password_file",
+            "desc": "A file containing the password corresponding to  database.user .",
+            "nixName": "settings.db_password_file",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "settings.db_path",
+            "desc": "Path to the sqlite3 database file.",
+            "nixName": "settings.db_path",
+            "type": "null or string",
+            "value": "\"/var/lib/headscale/db.sqlite\""
+        },
+        {
+            "name": "settings.db_port",
+            "desc": "Database host port.",
+            "nixName": "settings.db_port",
+            "type": "null or 16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "null"
+        },
+        {
+            "name": "settings.db_type",
+            "desc": "Database engine to use.",
+            "nixName": "settings.db_type",
+            "type": "one of \"sqlite3\", \"postgres\"",
+            "value": "\"sqlite3\""
+        },
+        {
+            "name": "settings.db_user",
+            "desc": "Database user.",
+            "nixName": "settings.db_user",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.derp.auto_update_enable",
+            "desc": "Whether to automatically update DERP maps on a set frequency.",
+            "nixName": "settings.derp.auto_update_enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.derp.paths",
+            "desc": "List of file paths containing DERP maps. See  How Tailscaleworks  for more information on DERP maps.",
+            "nixName": "settings.derp.paths",
+            "type": "list of path",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.derp.update_frequency",
+            "desc": "Frequency to update DERP maps.",
+            "nixName": "settings.derp.update_frequency",
+            "type": "string",
+            "value": "\"24h\""
+        },
+        {
+            "name": "settings.derp.urls",
+            "desc": "List of urls containing DERP maps. See  How Tailscaleworks  for more information on DERP maps.",
+            "nixName": "settings.derp.urls",
+            "type": "list of string",
+            "value": "[\n  \"https://controlplane.tailscale.com/derpmap/default\"\n]"
+        },
+        {
+            "name": "settings.dns_config.base_domain",
+            "desc": "Defines the base domain to create the hostnames for MagicDNS.  baseDomain  must be aFQDNs, without the trailing dot. The FQDN of the hosts will be hostname.namespace.base_domain  (e.g. myhost.mynamespace.example.com ).",
+            "nixName": "settings.dns_config.base_domain",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "settings.dns_config.domains",
+            "desc": "Search domains to inject to Tailscale clients.",
+            "nixName": "settings.dns_config.domains",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.dns_config.magic_dns",
+            "desc": "Whether to use  MagicDNS . Only worksif there is at least a nameserver defined.",
+            "nixName": "settings.dns_config.magic_dns",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.dns_config.nameservers",
+            "desc": "List of nameservers to pass to Tailscale clients.",
+            "nixName": "settings.dns_config.nameservers",
+            "type": "list of string",
+            "value": "[\n  \"1.1.1.1\"\n]"
+        },
+        {
+            "name": "settings.dns_config.override_local_dns",
+            "desc": "Whether to use  Overridelocal DNS .",
+            "nixName": "settings.dns_config.override_local_dns",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.ephemeral_node_inactivity_timeout",
+            "desc": "Time before an inactive ephemeral node is deleted.",
+            "nixName": "settings.ephemeral_node_inactivity_timeout",
+            "type": "string",
+            "value": "\"30m\""
+        },
+        {
+            "name": "settings.log.format",
+            "desc": "headscale log format.",
+            "nixName": "settings.log.format",
+            "type": "string",
+            "value": "\"text\""
+        },
+        {
+            "name": "settings.log.level",
+            "desc": "headscale log level.",
+            "nixName": "settings.log.level",
+            "type": "string",
+            "value": "\"info\""
+        },
+        {
+            "name": "settings.noise.private_key_path",
+            "desc": "Path to noise private key file, generated automatically if it doesnot exist.",
+            "nixName": "settings.noise.private_key_path",
+            "type": "path",
+            "value": "\"/var/lib/headscale/noise_private.key\""
+        },
+        {
+            "name": "settings.oidc.allowed_domains",
+            "desc": "Allowed principal domains. if an authenticated user\u2019s domain is notin this list authentication request will be rejected.",
+            "nixName": "settings.oidc.allowed_domains",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.oidc.allowed_users",
+            "desc": "Users allowed to authenticate even if not in allowedDomains.",
+            "nixName": "settings.oidc.allowed_users",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.oidc.client_id",
+            "desc": "OpenID Connect client ID.",
+            "nixName": "settings.oidc.client_id",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "settings.oidc.client_secret_path",
+            "desc": "Path to OpenID Connect client secret file. Expands environmentvariables in format ${VAR}.",
+            "nixName": "settings.oidc.client_secret_path",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.oidc.extra_params",
+            "desc": "Custom query parameters to send with the Authorize Endpointrequest.",
+            "nixName": "settings.oidc.extra_params",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.oidc.issuer",
+            "desc": "URL to OpenID issuer.",
+            "nixName": "settings.oidc.issuer",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "settings.oidc.scope",
+            "desc": "Scopes used in the OIDC flow.",
+            "nixName": "settings.oidc.scope",
+            "type": "list of string",
+            "value": "[\n  \"openid\"\n  \"profile\"\n  \"email\"\n]"
+        },
+        {
+            "name": "settings.oidc.strip_email_domain",
+            "desc": "Whether the domain part of the email address should be removed whengenerating namespaces.",
+            "nixName": "settings.oidc.strip_email_domain",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.private_key_path",
+            "desc": "Path to private key file, generated automatically if it does notexist.",
+            "nixName": "settings.private_key_path",
+            "type": "path",
+            "value": "\"/var/lib/headscale/private.key\""
+        },
+        {
+            "name": "settings.server_url",
+            "desc": "The url clients will connect to.",
+            "nixName": "settings.server_url",
+            "type": "string",
+            "value": "\"http://127.0.0.1:8080\""
+        },
+        {
+            "name": "settings.tls_cert_path",
+            "desc": "Path to already created certificate.",
+            "nixName": "settings.tls_cert_path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "settings.tls_key_path",
+            "desc": "Path to key for already created certificate.",
+            "nixName": "settings.tls_key_path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "settings.tls_letsencrypt_challenge_type",
+            "desc": "Type of ACME challenge to use, currently supported types: HTTP-01  or  TLS-ALPN-01 .",
+            "nixName": "settings.tls_letsencrypt_challenge_type",
+            "type": "one of \"TLS-ALPN-01\", \"HTTP-01\"",
+            "value": "\"HTTP-01\""
+        },
+        {
+            "name": "settings.tls_letsencrypt_hostname",
+            "desc": "Domain name to request a TLS certificate for.",
+            "nixName": "settings.tls_letsencrypt_hostname",
+            "type": "null or string",
+            "value": "\"\""
+        },
+        {
+            "name": "settings.tls_letsencrypt_listen",
+            "desc": "When HTTP-01 challenge is chosen, letsencrypt must set up averification endpoint, and it will be listening on: :http = port 80 .",
+            "nixName": "settings.tls_letsencrypt_listen",
+            "type": "null or string",
+            "value": "\":http\""
+        },
+        {
+            "name": "user",
+            "desc": "User account under which headscale runs.   If left as the default value this user will automatically be createdon system activation, otherwise you are responsible for ensuring theuser exists before the headscale service starts.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"headscale\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

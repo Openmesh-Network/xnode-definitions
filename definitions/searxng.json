@@ -1,0 +1,38 @@
+{
+    "name": "SearXNG",
+    "desc": "A fork of Searx, a privacy-respecting, hackable metasearch engine",
+    "tags": [
+        "Search Engines\r"
+    ],
+    "website": "https://github.com/searxng/searxng",
+    "implmented": false,
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "searxng",
+    "options": [
+        {
+            "name": "networking/searx.nix",
+            "desc": "Limiter settings for SearXNG.For available settings, see the SearXNG schemafile.",
+            "nixName": "relatedOption.searx.limiterSettings",
+            "type": "attribute set of (JSON value)",
+            "value": "{ }"
+        },
+        {
+            "name": "networking/searx.nix",
+            "desc": "Configure a local Redis server for SearXNG. This is required if youwant to enable the rate limiter and bot protection of SearXNG.",
+            "nixName": "relatedOption.searx.redisCreateLocally",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "networking/searx.nix",
+            "desc": "The searxng package to use.",
+            "nixName": "relatedOption.searx.package",
+            "type": "package",
+            "value": "pkgs.searxng"
+        }
+    ]
+}

@@ -1,0 +1,304 @@
+{
+    "name": "Buildbot",
+    "desc": "",
+    "tags": [
+        "Software Development - Continuous Integration & Continuous Deployment"
+    ],
+    "website": "",
+    "implmented": false,
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "buildbot",
+    "options": [
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Buildbot home directory.",
+            "nixName": "relatedOption.buildbot-worker.home",
+            "type": "path",
+            "value": "\"/home/bbworker\""
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Specifies the Buildbot directory.",
+            "nixName": "relatedOption.buildbot-worker.buildbotDir",
+            "type": "path",
+            "value": "\"${config.services.buildbot-worker.home}/worker\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Specifies the Buildbot TitleURL.",
+            "nixName": "relatedOption.buildbot-master.titleUrl",
+            "type": "string",
+            "value": "\"Buildbot\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Specifies the Buildbot Title.",
+            "nixName": "relatedOption.buildbot-master.title",
+            "type": "string",
+            "value": "\"Buildbot\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Buildbot home directory.",
+            "nixName": "relatedOption.buildbot-master.home",
+            "type": "path",
+            "value": "\"/home/buildbot\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Specifies the Buildbot URL.",
+            "nixName": "relatedOption.buildbot-master.buildbotUrl",
+            "type": "string",
+            "value": "\"http://localhost:8010/\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Specifies the Buildbot directory.",
+            "nixName": "relatedOption.buildbot-master.buildbotDir",
+            "type": "path",
+            "value": "\"${config.services.buildbot-master.home}/master\""
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Specifies the Buildbot Worker user.",
+            "nixName": "relatedOption.buildbot-worker.workerUser",
+            "type": "string",
+            "value": "\"example-worker\""
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Specifies the Buildbot Worker password.",
+            "nixName": "relatedOption.buildbot-worker.workerPass",
+            "type": "string",
+            "value": "\"pass\""
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "The buildbot-worker package to use.",
+            "nixName": "relatedOption.buildbot-worker.package",
+            "type": "package",
+            "value": "pkgs.buildbot-worker"
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Whether to enable the Buildbot Worker.",
+            "nixName": "relatedOption.buildbot-worker.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "The buildbot-full package to use.",
+            "nixName": "relatedOption.buildbot-master.package",
+            "type": "package",
+            "value": "pkgs.buildbot-full"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Primary group of buildbot user.",
+            "nixName": "relatedOption.buildbot-master.group",
+            "type": "string",
+            "value": "\"buildbot\""
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Packages to add to PATH for the buildbot process.",
+            "nixName": "relatedOption.buildbot-worker.packages",
+            "type": "list of package",
+            "value": "[ pkgs.git ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Specifies the Buildbot Worker connection string.",
+            "nixName": "relatedOption.buildbot-worker.masterUrl",
+            "type": "string",
+            "value": "\"localhost:9989\""
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Primary group of buildbot Worker user.",
+            "nixName": "relatedOption.buildbot-worker.group",
+            "type": "string",
+            "value": "\"bbworker\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Packages to add the to the PYTHONPATH of the buildbot process.",
+            "nixName": "relatedOption.buildbot-master.pythonPackages",
+            "type": "function that evaluates to a(n) list of package",
+            "value": "pythonPackages: with pythonPackages; [ ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Packages to add to PATH for the buildbot process.",
+            "nixName": "relatedOption.buildbot-master.packages",
+            "type": "list of package",
+            "value": "[ pkgs.git ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "File used to store the Buildbot Worker password",
+            "nixName": "relatedOption.buildbot-worker.workerPassFile",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "User the buildbot Worker should execute under.",
+            "nixName": "relatedOption.buildbot-worker.user",
+            "type": "string",
+            "value": "\"bbworker\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "User the buildbot server should execute under.",
+            "nixName": "relatedOption.buildbot-master.user",
+            "type": "string",
+            "value": "\"buildbot\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Whether to enable the Buildbot continuous integration server.",
+            "nixName": "relatedOption.buildbot-master.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "List of extra groups that the buildbot user should be a part of.",
+            "nixName": "relatedOption.buildbot-master.extraGroups",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "List of extra groups that the Buildbot Worker user should be a partof.",
+            "nixName": "relatedOption.buildbot-worker.extraGroups",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Specifies port number on which the buildbot HTTP interfacelistens.",
+            "nixName": "relatedOption.buildbot-master.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8010"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Specifies the bind address on which the buildbot HTTP interfacelistens.",
+            "nixName": "relatedOption.buildbot-master.listenAddress",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "This is a number that indicates how frequently keepalive messagesshould be sent from the worker to the buildmaster, expressed inseconds.",
+            "nixName": "relatedOption.buildbot-worker.keepalive",
+            "type": "signed integer",
+            "value": "600"
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Description of this worker",
+            "nixName": "relatedOption.buildbot-worker.hostMessage",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "continuous-integration/buildbot/worker.nix",
+            "desc": "Name of the administrator of this worker",
+            "nixName": "relatedOption.buildbot-worker.adminMessage",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "List of Workers.",
+            "nixName": "relatedOption.buildbot-master.workers",
+            "type": "list of string",
+            "value": "[\n  \"worker.Worker('example-worker', 'pass')\"\n]"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "List of Schedulers.",
+            "nixName": "relatedOption.buildbot-master.schedulers",
+            "type": "list of string",
+            "value": "[\n  \"schedulers.SingleBranchScheduler(name='all', change_filter=util.ChangeFilter(branch='master'), treeStableTimer=None, builderNames=['runtests'])\"\n  \"schedulers.ForceScheduler(name='force',builderNames=['runtests'])\"\n]"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "List of reporter objects used to present build status to varioususers.",
+            "nixName": "relatedOption.buildbot-master.reporters",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "The buildmaster will listen on a TCP port of your choosing forconnections from workers. It can also use this port for connections fromremote Change Sources, status clients, and debug tools. This port shouldbe visible to the outside world, and you\u2019ll need to tell your workeradmins about your choice. If put in (single) quotes, this can also beused as a connection string, as defined in the ConnectionStringsguide.",
+            "nixName": "relatedOption.buildbot-master.pbPort",
+            "type": "string or signed integer",
+            "value": "9989"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Optionally pass master.cfg path. Other options in this configurationwill be ignored.",
+            "nixName": "relatedOption.buildbot-master.masterCfg",
+            "type": "path",
+            "value": "<rendered-html><p>generated configuration file</p>\n</rendered-html>"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Factory Steps",
+            "nixName": "relatedOption.buildbot-master.factorySteps",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Extra python imports to prepend to master.cfg",
+            "nixName": "relatedOption.buildbot-master.extraImports",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Extra configuration to append to master.cfg",
+            "nixName": "relatedOption.buildbot-master.extraConfig",
+            "type": "string",
+            "value": "\"c['buildbotNetUsageData'] = None\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Specifies the database connection string.",
+            "nixName": "relatedOption.buildbot-master.dbUrl",
+            "type": "string",
+            "value": "\"sqlite:///state.sqlite\""
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "Configurator Steps, see https://docs.buildbot.net/latest/manual/configuration/configurators.html",
+            "nixName": "relatedOption.buildbot-master.configurators",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "List of Change Sources.",
+            "nixName": "relatedOption.buildbot-master.changeSource",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "continuous-integration/buildbot/master.nix",
+            "desc": "List of Builders.",
+            "nixName": "relatedOption.buildbot-master.builders",
+            "type": "list of string",
+            "value": "[\n  \"util.BuilderConfig(name='runtests',workernames=['example-worker'],factory=factory)\"\n]"
+        }
+    ]
+}

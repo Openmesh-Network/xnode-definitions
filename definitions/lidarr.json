@@ -1,0 +1,60 @@
+{
+    "name": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
+    "desc": "A Usenet/BitTorrent music downloader",
+    "tags": [
+        "Automation"
+    ],
+    "website": "https://lidarr.audio/",
+    "logo": "https://lidarr.audio/img/favicon.ico",
+    "specs": {
+        "ram": 2048,
+        "storage": 20480
+    },
+    "nixName": "lidarr",
+    "options": [
+        {
+            "name": "dataDir",
+            "desc": "The directory where Lidarr stores its data files.",
+            "nixName": "dataDir",
+            "type": "string",
+            "value": "\"/var/lib/lidarr/.config/Lidarr\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Lidarr, a Usenet/BitTorrent music downloader.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which Lidarr runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"lidarr\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open ports in the firewall for Lidarr",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The lidarr package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.lidarr"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which Lidarr runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"lidarr\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

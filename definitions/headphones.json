@@ -1,0 +1,67 @@
+{
+    "name": "Headphones",
+    "desc": "Automatic music downloader for SABnzbd",
+    "tags": [
+        "Automation"
+    ],
+    "website": "https://github.com/rembo10/headphones",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "headphones",
+    "options": [
+        {
+            "name": "configFile",
+            "desc": "Path to config file.",
+            "nixName": "configFile",
+            "type": "path",
+            "value": "\"${config.services.headphones.dataDir}/config.ini\""
+        },
+        {
+            "name": "dataDir",
+            "desc": "Path where to store data files.",
+            "nixName": "dataDir",
+            "type": "path",
+            "value": "\"/var/lib/headphones\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable the headphones server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group to run the service as",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"headphones\""
+        },
+        {
+            "name": "host",
+            "desc": "Host to listen on.",
+            "nixName": "host",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "port",
+            "desc": "Port to bind to.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8181"
+        },
+        {
+            "name": "user",
+            "desc": "User to run the service as",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"headphones\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

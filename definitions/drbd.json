@@ -1,0 +1,32 @@
+{
+    "name": "DRBD",
+    "desc": "Distributed Replicated Block Device, a distributed storage system for Linux (userspace utilities)",
+    "tags": [
+        "File Transfer - Distributed Filesystems"
+    ],
+    "website": "https://linbit.com/drbd/",
+    "logo": "https://linbit.com/wp-content/uploads/2019/07/cropped-Linbit_Site_Icon-32x32.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "drbd",
+    "options": [
+        {
+            "name": "config",
+            "desc": "Contents of the  drbd.conf  configuration file.",
+            "nixName": "config",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable support for DRBD, the Distributed Replicated BlockDevice.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

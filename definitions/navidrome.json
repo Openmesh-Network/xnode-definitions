@@ -1,0 +1,74 @@
+{
+    "name": "Navidrome Music Server",
+    "desc": "Navidrome Music Server and Streamer compatible with Subsonic/Airsonic",
+    "tags": [
+        "Media Streaming - Audio Streaming\r"
+    ],
+    "website": "https://www.navidrome.org/",
+    "logo": "https://www.navidrome.org/favicons/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "navidrome",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable Navidrome music server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which Navidrome runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"navidrome\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Whether to open the TCP port in the firewall",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The navidrome package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.navidrome"
+        },
+        {
+            "name": "settings",
+            "desc": "Configuration for Navidrome, see  https://www.navidrome.org/docs/usage/configuration-options/ for supported values.",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.Address",
+            "desc": "Address to run Navidrome on.",
+            "nixName": "settings.Address",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "settings.Port",
+            "desc": "Port to run Navidrome on.",
+            "nixName": "settings.Port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "4533"
+        },
+        {
+            "name": "user",
+            "desc": "User under which Navidrome runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"navidrome\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

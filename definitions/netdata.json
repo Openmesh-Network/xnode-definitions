@@ -1,0 +1,116 @@
+{
+    "name": "Netdata",
+    "desc": "Real-time performance monitoring tool",
+    "tags": [
+        "Monitoring"
+    ],
+    "website": "https://www.netdata.cloud/",
+    "logo": "https://www.netdata.cloud/favicon-32x32.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "netdata",
+    "options": [
+        {
+            "name": "claimTokenFile",
+            "desc": "If set, automatically registers the agent using the given claim tokenfile.",
+            "nixName": "claimTokenFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "config",
+            "desc": "netdata.conf configuration as nix attributes. cannot be combined withconfigText.",
+            "nixName": "config",
+            "type": "attribute set of (attribute set)",
+            "value": "{ }"
+        },
+        {
+            "name": "configDir",
+            "desc": "Complete netdata config directory except netdata.conf. The defaultconfiguration is merged with changes defined in this option. Eachtop-level attribute denotes a path in the configuration directory as inenvironment.etc. Its value is the absolute path and must be readable bynetdata. Cannot be combined with configText.",
+            "nixName": "configDir",
+            "type": "attribute set of path",
+            "value": "{ }"
+        },
+        {
+            "name": "configText",
+            "desc": "Verbatim netdata.conf, cannot be combined with config.",
+            "nixName": "configText",
+            "type": "null or strings concatenated with \"\\n\"",
+            "value": "null"
+        },
+        {
+            "name": "deadlineBeforeStopSec",
+            "desc": "In order to detect when netdata is misbehaving, we run a concurrenttask pinging netdata (wait-for-netdata-up) in the systemd unit.  If after a while, this task does not succeed, we stop the unit andmark it as failed.  You can control this deadline in seconds with this option, it\u2019suseful to bump it if you have (1) a lot of data (2) doing upgrades (3)have low IOPS/throughput.",
+            "nixName": "deadlineBeforeStopSec",
+            "type": "signed integer",
+            "value": "120"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable netdata.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "enableAnalyticsReporting",
+            "desc": "Enable reporting of anonymous usage statistics to Netdata Inc. viaeither Google Analytics (in versions prior to 1.29.4), or Netdata Inc.\u2019sself-hosted PostHog (in versions 1.29.4 and later). See:  https://learn.netdata.cloud/docs/agent/anonymous-statistics",
+            "nixName": "enableAnalyticsReporting",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraPluginPaths",
+            "desc": "Extra paths to add to the netdata global \u201cplugins directory\u201d option.Useful for when you want to include your own collection scripts.  Details about writing a custom netdata plugin are available at:  https://docs.netdata.cloud/collectors/plugins.d/   Cannot be combined with configText.",
+            "nixName": "extraPluginPaths",
+            "type": "list of path",
+            "value": "[ ]"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which netdata runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"netdata\""
+        },
+        {
+            "name": "package",
+            "desc": "The netdata package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.netdata"
+        },
+        {
+            "name": "python.enable",
+            "desc": "Whether to enable python-based plugins",
+            "nixName": "python.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "python.extraPackages",
+            "desc": "Extra python packages available at runtime to enable additionalpython plugins.",
+            "nixName": "python.extraPackages",
+            "type": "function that evaluates to a(n) list of package",
+            "value": "ps: []"
+        },
+        {
+            "name": "python.recommendedPythonPackages",
+            "desc": "Whether to enable a set of recommended Python plugins by installingextra Python packages.",
+            "nixName": "python.recommendedPythonPackages",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which netdata runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"netdata\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

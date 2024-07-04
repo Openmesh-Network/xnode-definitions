@@ -1,0 +1,60 @@
+{
+    "name": "Sonarr ",
+    "desc": "Smart PVR for newsgroup and bittorrent users",
+    "tags": [
+        "Automation"
+    ],
+    "website": "https://sonarr.tv/",
+    "logo": "https://sonarr.tv/img/favicon.ico",
+    "specs": {
+        "ram": 2048,
+        "storage": 0
+    },
+    "nixName": "sonarr",
+    "options": [
+        {
+            "name": "dataDir",
+            "desc": "The directory where Sonarr stores its data files.",
+            "nixName": "dataDir",
+            "type": "string",
+            "value": "\"/var/lib/sonarr/.config/NzbDrone\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Sonarr.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which Sonaar runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"sonarr\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open ports in the firewall for the Sonarr web interface",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The sonarr package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.sonarr"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which Sonaar runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"sonarr\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

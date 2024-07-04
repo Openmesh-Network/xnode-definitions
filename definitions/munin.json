@@ -1,0 +1,87 @@
+{
+    "name": "Munin",
+    "desc": "Networked resource monitoring tool",
+    "tags": [
+        "Monitoring"
+    ],
+    "website": "https://munin-monitoring.org/",
+    "implmented": false,
+    "logo": "https://munin-monitoring.org/assets/favicons/favicon-32x32.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "munin",
+    "options": [
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "Enable munin-cron. Takes care of all heavy lifting to collect datafrom nodes and draws graphs to html. Runs munin-update, munin-limits,munin-graphs and munin-html in that order.HTML output is in /var/www/munin/, configure your favourite webserverto serve static files.",
+            "nixName": "relatedOption.munin-cron.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "Munin plugins to disable, even ifmunin-node-configure --suggest tries to enable them. Todisable a wildcard plugin, use an actual wildcard, as in theexample.munin_stats is disabled by default as it tries to read/var/log/munin/munin-update.log for timing information, andthe NixOS build of Munin does not write this file.",
+            "nixName": "relatedOption.munin-node.disabledPlugins",
+            "type": "list of string",
+            "value": "[\n  \"munin_stats\"\n]"
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "munin-node.confextra configuration. See https://guide.munin-monitoring.org/en/latest/reference/munin-node.conf.html",
+            "nixName": "relatedOption.munin-node.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "Custom styling for the HTML that munin-cron generates. This will beappended to the CSS files used by munin-cron and will thus takeprecedence over the builtin styles.",
+            "nixName": "relatedOption.munin-cron.extraCSS",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "Enable Munin Node agent. Munin node listens on 0.0.0.0 and by defaultaccepts connections only from 127.0.0.1 for security reasons.See https://guide.munin-monitoring.org/en/latest/architecture/index.html.",
+            "nixName": "relatedOption.munin-node.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "Additional Munin plugins to autoconfigure, usingmunin-node-configure --suggest. These should be the actualpaths to the plugin files (or directories containing them), not justtheir names.If you want to manually enable individual plugins instead, use services.munin-node.extraPlugins.Note that only plugins that have the \u2018autoconfig\u2019 capability will doanything if listed here, since plugins that cannot autoconfigure won\u2019tbe automatically enabled by munin-node-configure.Plugins will be copied into the Nix store, and it will attempt tomodify them to run properly by fixing hardcoded references to/bin, /usr/bin, /sbin, and/usr/sbin.",
+            "nixName": "relatedOption.munin-node.extraAutoPlugins",
+            "type": "list of path",
+            "value": "[ ]"
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "Additional Munin plugins to activate. Keys are the name of the pluginsymlink, values are the path to the underlying plugin script. You canuse the same plugin script multiple times (e.g. for wildcardplugins).Note that these plugins do not participate in autoconfiguration. Ifyou want to autoconfigure additional plugins, use services.munin-node.extraAutoPlugins.Plugins enabled in this manner take precedence over autoconfiguredplugins.Plugins will be copied into the Nix store, and it will attempt tomodify them to run properly by fixing hardcoded references to/bin, /usr/bin, /sbin, and/usr/sbin.",
+            "nixName": "relatedOption.munin-node.extraPlugins",
+            "type": "attribute set of path",
+            "value": "{ }"
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "munin.conf extraglobal configuration. See https://guide.munin-monitoring.org/en/latest/reference/munin.conf.html.Useful to setup notifications, see https://guide.munin-monitoring.org/en/latest/tutorial/alert.html",
+            "nixName": "relatedOption.munin-cron.extraGlobalConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "plugin-conf.d extraplugin configuration. See https://guide.munin-monitoring.org/en/latest/plugin/use.html",
+            "nixName": "relatedOption.munin-node.extraPluginConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "monitoring/munin.nix",
+            "desc": "Definitions of hosts of nodes to collect data from. Needs at leastone host for cron to succeed. See https://guide.munin-monitoring.org/en/latest/reference/munin.conf.html",
+            "nixName": "relatedOption.munin-cron.hosts",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        }
+    ]
+}

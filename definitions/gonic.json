@@ -1,0 +1,32 @@
+{
+    "name": "gonic",
+    "desc": "Music streaming server / subsonic server API implementation",
+    "tags": [
+        "Media Streaming - Audio Streaming\r"
+    ],
+    "website": "https://github.com/sentriz/gonic",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "gonic",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable Gonic music server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings",
+            "desc": "Configuration for Gonic, see  https://github.com/sentriz/gonic#configuration-options for supported values.",
+            "nixName": "settings",
+            "type": "attribute set of (atom (null, bool, int, float or string) or a list of them for duplicate keys)",
+            "value": "{\n  cache-path = \"/var/cache/gonic\";\n  listen-addr = \"127.0.0.1:4747\";\n  tls-cert = null;\n  tls-key = null;\n}"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

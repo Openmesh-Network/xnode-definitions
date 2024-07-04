@@ -1,0 +1,325 @@
+{
+    "name": "OpenAFS",
+    "desc": "Open AFS client",
+    "tags": [
+        "File Transfer - Distributed Filesystems"
+    ],
+    "website": "https://www.openafs.org",
+    "implmented": false,
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "openafs",
+    "options": [
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "The openafs package to use.",
+            "nixName": "relatedOption.openafsServer.package",
+            "type": "package",
+            "value": "pkgs.openafs"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Whether to enable the OpenAFS client.",
+            "nixName": "relatedOption.openafsClient.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Whether to enable the OpenAFS server. An OpenAFS server needs acomplex setup. So, be aware that enabling this service and setting someoptions does not give you a turn-key-ready solution. You need at least arunning Kerberos 5 setup, as OpenAFS relies on it for authentication.See the Guide \u201cQuickStartUnix\u201d coming with pkgs.openafs.docfor complete setup instructions.",
+            "nixName": "relatedOption.openafsServer.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "OpenAFS programs package. MUST match the kernel module package!",
+            "nixName": "relatedOption.openafsClient.packages.programs",
+            "type": "package",
+            "value": "getBin pkgs.openafs"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "OpenAFS kernel module package. MUST match the userland package!",
+            "nixName": "relatedOption.openafsClient.packages.module",
+            "type": "package",
+            "value": "config.boot.kernelPackages.openafs"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Whether to enable the backup server role. When using OpenAFS built-inbuserver, use in conjunction with the database role tomaintain the Backup Database. Normally only used in conjunction withtape storage or IBM\u2019s Tivoli Storage Manager.For a modern backup server, enable this role and see enableFabs .",
+            "nixName": "relatedOption.openafsServer.roles.backup.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "UDP packet size to use in Bytes. Higher values can speed upcommunications. The default of 1 MB is a sufficient in most cases. Makesure to increase the kernel\u2019s UDP buffer size accordingly vianet.core(w|r|opt)mem_max sysctl.",
+            "nixName": "relatedOption.openafsServer.udpPacketSize",
+            "type": "signed integer",
+            "value": "1310720"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Arguments to the davolserver process. See its man page.",
+            "nixName": "relatedOption.openafsServer.roles.fileserver.volserverArgs",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Arguments to the salvageserver process. See its man page.",
+            "nixName": "relatedOption.openafsServer.roles.fileserver.salvageserverArgs",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Arguments to the dasalvager process. See its man page.",
+            "nixName": "relatedOption.openafsServer.roles.fileserver.salvagerArgs",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Arguments to the dafileserver process. See its man page.",
+            "nixName": "relatedOption.openafsServer.roles.fileserver.fileserverArgs",
+            "type": "string",
+            "value": "\"-vattachpar 128 -vhashsize 11 -L -rxpck 400 -cb 1000000\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Fileserver role, serves files and volumes from its local storage.",
+            "nixName": "relatedOption.openafsServer.roles.fileserver.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Arguments to the vlserver process. See its man page.",
+            "nixName": "relatedOption.openafsServer.roles.database.vlserverArgs",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Arguments to the ptserver process. See its man page.",
+            "nixName": "relatedOption.openafsServer.roles.database.ptserverArgs",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Database server role, maintains the Volume Location Database,Protection Database (and Backup Database, see backup role).There can be multiple servers in the database role for replication,which then need reliable network connection to each other.Servers in this role appear in AFSDB DNS records or theCellServDB.",
+            "nixName": "relatedOption.openafsServer.roles.database.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Additional configuration parameters for the FABS backup server.",
+            "nixName": "relatedOption.openafsServer.roles.backup.fabsExtraConfig",
+            "type": "attribute set",
+            "value": "{ }"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Arguments to the fabsys process. See fabsys_server(1) and fabsys_config(1).",
+            "nixName": "relatedOption.openafsServer.roles.backup.fabsArgs",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Whether to enable FABS, the flexible AFS backup system. It storesvolumes as dump files, relying on other pre-existing backup solutionsfor handling them. .",
+            "nixName": "relatedOption.openafsServer.roles.backup.enableFabs",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "IP Address of a database server",
+            "nixName": "relatedOption.openafsServer.roles.backup.cellServDB.*.ip",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "DNS full-qualified domain name of a database server",
+            "nixName": "relatedOption.openafsServer.roles.backup.cellServDB.*.dnsname",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Definition of all cell-local backup database server machines. Usethis when your cell uses less backup database servers than otherdatabase server machines.",
+            "nixName": "relatedOption.openafsServer.roles.backup.cellServDB",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Arguments to the buserver process. See its man page.",
+            "nixName": "relatedOption.openafsServer.roles.backup.buserverArgs",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "If enabled, allow principal names containing (.) dots. Enabling thishas security implications!",
+            "nixName": "relatedOption.openafsServer.dottedPrincipals",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "IP Address of a database server",
+            "nixName": "relatedOption.openafsServer.cellServDB.*.ip",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "DNS full-qualified domain name of a database server",
+            "nixName": "relatedOption.openafsServer.cellServDB.*.dnsname",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Definition of all cell-local database server machines.",
+            "nixName": "relatedOption.openafsServer.cellServDB",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "Cell name, this server will serve.",
+            "nixName": "relatedOption.openafsServer.cellName",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/server.nix",
+            "desc": "List of IP addresses this server is advertised under. SeeNetInfo(5)",
+            "nixName": "relatedOption.openafsServer.advertisedAddresses",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Start up in disconnected mode. You need to executefs disco online (as root) to switch to connected mode.Useful for roaming devices.",
+            "nixName": "relatedOption.openafsClient.startDisconnected",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Minimal cell list in /afs.",
+            "nixName": "relatedOption.openafsClient.sparse",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Mountpoint of the AFS file tree, conventionally /afs.When set to a different value, only cross-cells that use the same valuecan be accessed.",
+            "nixName": "relatedOption.openafsClient.mountPoint",
+            "type": "string",
+            "value": "\"/afs\""
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Inode calculation method. compat is computationally lessexpensive, but md5 greatly reduces the likelihood of inodecollisions in larger scenarios involving multiple cells mounted into oneAFS space.",
+            "nixName": "relatedOption.openafsClient.inumcalc",
+            "type": "string matching the pattern compat|md5",
+            "value": "\"compat\""
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Return fake data on stat() calls. If true, always do so.If false, only do so for cross-cell mounts (as these arepotentially expensive).",
+            "nixName": "relatedOption.openafsClient.fakestat",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Number of daemons to serve user requests. Numbers higher than 6usually do no increase performance. Default is sufficient for up to fiveconcurrent users.",
+            "nixName": "relatedOption.openafsClient.daemons",
+            "type": "signed integer",
+            "value": "2"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Whether to enable (weak) protocol encryption.",
+            "nixName": "relatedOption.openafsClient.crypt",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "IP Address of a database server",
+            "nixName": "relatedOption.openafsClient.cellServDB.*.ip",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "DNS full-qualified domain name of a database server",
+            "nixName": "relatedOption.openafsClient.cellServDB.*.dnsname",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "This cell\u2019s database server records, added to the global CellServDB.See CellServDB(5) man page for syntax. Ignored when afsdbis set to true.",
+            "nixName": "relatedOption.openafsClient.cellServDB",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Cell name.",
+            "nixName": "relatedOption.openafsClient.cellName",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Use in-memory cache for diskless machines. Has no real performancebenefit anymore.",
+            "nixName": "relatedOption.openafsClient.cache.diskless",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Cache directory.",
+            "nixName": "relatedOption.openafsClient.cache.directory",
+            "type": "string",
+            "value": "\"/var/cache/openafs\""
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Size of each cache chunk given in powers of 2. 0 resetsthe chunk size to its default values (13 (8 KB) for memcache, 18-20 (256KB to 1 MB) for diskcache). Maximum value is 30. Important performanceparameter. Set to higher values when dealing with large files.",
+            "nixName": "relatedOption.openafsClient.cache.chunksize",
+            "type": "integer between 0 and 30 (both inclusive)",
+            "value": "0"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Cache size in 1KB blocks.",
+            "nixName": "relatedOption.openafsClient.cache.blocks",
+            "type": "signed integer",
+            "value": "100000"
+        },
+        {
+            "name": "network-filesystems/openafs/client.nix",
+            "desc": "Resolve cells via AFSDB DNS records.",
+            "nixName": "relatedOption.openafsClient.afsdb",
+            "type": "boolean",
+            "value": "true"
+        }
+    ]
+}

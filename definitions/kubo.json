@@ -1,0 +1,158 @@
+{
+    "name": "Kubo",
+    "desc": "An IPFS implementation in Go",
+    "tags": [
+        "File Transfer - Distributed Filesystems"
+    ],
+    "website": "https://ipfs.io/",
+    "logo": "https://ipfs.io/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "kubo",
+    "options": [
+        {
+            "name": "autoMigrate",
+            "desc": "Whether Kubo should try to run the fs-repo-migration at startup.",
+            "nixName": "autoMigrate",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "autoMount",
+            "desc": "Whether Kubo should try to mount /ipfs and /ipns at startup.",
+            "nixName": "autoMount",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "dataDir",
+            "desc": "The data dir for Kubo",
+            "nixName": "dataDir",
+            "type": "string",
+            "value": "if versionAtLeast config.system.stateVersion \"17.09\"\nthen \"/var/lib/ipfs\"\nelse \"/var/lib/ipfs/.ipfs\"\n"
+        },
+        {
+            "name": "defaultMode",
+            "desc": "systemd service that is enabled by default",
+            "nixName": "defaultMode",
+            "type": "one of \"online\", \"offline\", \"norouting\"",
+            "value": "\"online\""
+        },
+        {
+            "name": "emptyRepo",
+            "desc": "If set to false, the repo will be initialized with help files",
+            "nixName": "emptyRepo",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable the Interplanetary File System (WARNING: may causesevere network degradation). NOTE: after enabling this option andrebuilding your system, you need to log out and back in for the IPFS_PATH  environment variable to be present in your shell.Until you do that, the CLI tools won\u2019t be able to talk to the daemon bydefault .",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "enableGC",
+            "desc": "Whether to enable automatic garbage collection",
+            "nixName": "enableGC",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraFlags",
+            "desc": "Extra flags passed to the Kubo daemon",
+            "nixName": "extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which the Kubo daemon runs",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"ipfs\""
+        },
+        {
+            "name": "localDiscovery",
+            "desc": "Whether to enable local discovery for the Kubo daemon. This willallow Kubo to scan ports on your local network. Some hosting serviceswill ban you if you do this.",
+            "nixName": "localDiscovery",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The kubo package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.kubo"
+        },
+        {
+            "name": "serviceFdlimit",
+            "desc": "The fdlimit for the Kubo systemd unit or  null  to havethe daemon attempt to manage it",
+            "nixName": "serviceFdlimit",
+            "type": "null or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "settings",
+            "desc": "Attrset of daemon configuration. See [ https://github.com/ipfs/kubo/blob/master/docs/config.md](https://github.com/ipfs/kubo/blob/master/docs/config.md) for reference. You can\u2019t set  Identity  or Pinning .",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.Addresses.API",
+            "desc": "Multiaddr or array of multiaddrs describing the address to serve thelocal HTTP API on. In addition to the multiaddrs listed here, the daemonwill also listen on a Unix domain socket. To allow the ipfs CLI tools tocommunicate with the daemon over that socket, add your user to thecorrect group, e.g. users.users.alice.extraGroups = [ config.services.kubo.group ];",
+            "nixName": "settings.Addresses.API",
+            "type": "string or list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.Addresses.Gateway",
+            "desc": "Where the IPFS Gateway can be reached",
+            "nixName": "settings.Addresses.Gateway",
+            "type": "string or list of string",
+            "value": "\"/ip4/127.0.0.1/tcp/8080\""
+        },
+        {
+            "name": "settings.Addresses.Swarm",
+            "desc": "Where Kubo listens for incoming p2p connections",
+            "nixName": "settings.Addresses.Swarm",
+            "type": "list of string",
+            "value": "[\n  \"/ip4/0.0.0.0/tcp/4001\"\n  \"/ip6/::/tcp/4001\"\n  \"/ip4/0.0.0.0/udp/4001/quic-v1\"\n  \"/ip4/0.0.0.0/udp/4001/quic-v1/webtransport\"\n  \"/ip6/::/udp/4001/quic-v1\"\n  \"/ip6/::/udp/4001/quic-v1/webtransport\"\n]"
+        },
+        {
+            "name": "settings.Mounts.IPFS",
+            "desc": "Where to mount the IPFS namespace to",
+            "nixName": "settings.Mounts.IPFS",
+            "type": "string",
+            "value": "\"/ipfs\""
+        },
+        {
+            "name": "settings.Mounts.IPNS",
+            "desc": "Where to mount the IPNS namespace to",
+            "nixName": "settings.Mounts.IPNS",
+            "type": "string",
+            "value": "\"/ipns\""
+        },
+        {
+            "name": "startWhenNeeded",
+            "desc": "Whether to use socket activation to start Kubo when needed.",
+            "nixName": "startWhenNeeded",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "user",
+            "desc": "User under which the Kubo daemon runs",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"ipfs\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

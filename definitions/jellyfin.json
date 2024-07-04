@@ -1,0 +1,81 @@
+{
+    "name": "Jellyfin",
+    "desc": "The Free Software Media System",
+    "tags": [
+        "Media Streaming - Multimedia Streaming"
+    ],
+    "website": "https://jellyfin.org/",
+    "logo": "https://jellyfin.org/images/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "jellyfin",
+    "options": [
+        {
+            "name": "cacheDir",
+            "desc": "Directory containing the jellyfin server cache, passed with --cachedir  see  #cache-directory",
+            "nixName": "cacheDir",
+            "type": "path",
+            "value": "\"/var/cache/jellyfin\""
+        },
+        {
+            "name": "configDir",
+            "desc": "Directory containing the server configuration files, passed with --configdir  see  configuration-directory",
+            "nixName": "configDir",
+            "type": "path",
+            "value": "\"\\${cfg.dataDir}/config\""
+        },
+        {
+            "name": "dataDir",
+            "desc": "Base data directory, passed with  --datadir  see  #data-directory",
+            "nixName": "dataDir",
+            "type": "path",
+            "value": "\"/var/lib/jellyfin\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Jellyfin Media Server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which jellyfin runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"jellyfin\""
+        },
+        {
+            "name": "logDir",
+            "desc": "Directory where the Jellyfin logs will be stored, passed with --logdir  see  #log-directory",
+            "nixName": "logDir",
+            "type": "path",
+            "value": "\"\\${cfg.dataDir}/log\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open the default ports in the firewall for the media server. TheHTTP/HTTPS ports can be changed in the Web UI, so this option shouldonly be used if they are unchanged, see  PortBindings .",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The jellyfin package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.jellyfin"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which Jellyfin runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"jellyfin\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

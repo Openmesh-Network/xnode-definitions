@@ -1,0 +1,53 @@
+{
+    "name": "Pomerium",
+    "desc": "Authenticating reverse proxy",
+    "tags": [
+        "Proxy"
+    ],
+    "website": "https://pomerium.io",
+    "logo": "https://pomerium.io/static-img/favicon.svg",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "pomerium",
+    "options": [
+        {
+            "name": "configFile",
+            "desc": "Path to Pomerium config YAML. If set, overridesservices.pomerium.settings.",
+            "nixName": "configFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable the Pomerium authenticating reverse proxy.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "secretsFile",
+            "desc": "Path to file containing secrets for Pomerium, in systemdEnvironmentFile format. See the systemd.exec(5) man page.",
+            "nixName": "secretsFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "settings",
+            "desc": "The contents of Pomerium\u2019s config.yaml, in Nix expressions.  Specifying configFile will override this in its entirety.  See  the Pomeriumconfiguration reference  for more information about what to puthere.",
+            "nixName": "settings",
+            "type": "YAML value",
+            "value": "{ }"
+        },
+        {
+            "name": "useACMEHost",
+            "desc": "If set, use a NixOS-generated ACME certificate with the specifiedname.  Note that this will require you to use a non-HTTP-based challenge, ordisable Pomerium\u2019s in-built HTTP redirect server by settinghttp_redirect_addr to null and use a different HTTP server for servingthe challenge response.  If you\u2019re using an HTTP-based challenge, you should use thePomerium-native autocert option instead.",
+            "nixName": "useACMEHost",
+            "type": "null or string",
+            "value": "null"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

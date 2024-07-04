@@ -1,0 +1,53 @@
+{
+    "name": "HAProxy",
+    "desc": "Reliable, high performance TCP/HTTP load balancer",
+    "tags": [
+        "Web Servers"
+    ],
+    "website": "https://haproxy.org",
+    "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAFVBMVEX////n5+dRUf//AAAA5+fn5wAA5wCtv7miAAAAUUlEQVQI12PABhgFBQUFQAwmIUFDCENJWBgqImwMZUBFFASAECTAyMTIyMTAIAgFDEoijmKiooaGDIoqIomJgUAGUATIEBZkUBQRAUoBGRgAALrGCAzjYWFDAAAAAElFTkSuQmCC",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "haproxy",
+    "options": [
+        {
+            "name": "config",
+            "desc": "Contents of the HAProxy configuration file,  haproxy.conf .",
+            "nixName": "config",
+            "type": "null or strings concatenated with \"\\n\"",
+            "value": "null"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable HAProxy, the reliable, high performance TCP/HTTPload balancer.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group account under which haproxy runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"haproxy\""
+        },
+        {
+            "name": "package",
+            "desc": "The haproxy package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.haproxy"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which haproxy runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"haproxy\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

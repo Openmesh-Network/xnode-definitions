@@ -1,0 +1,333 @@
+{
+    "name": "BorgBackup",
+    "desc": "Deduplicating archiver with compression and encryption",
+    "tags": [
+        "Backup"
+    ],
+    "website": "https://www.borgbackup.org",
+    "logo": "https://www.borgbackup.org/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "borgbackup",
+    "options": [
+        {
+            "name": "jobs",
+            "desc": "Deduplicating backups using BorgBackup. Adding a job will cause aborg-job-NAME wrapper to be added to your system path, so that you canperform maintenance easily. See also the chapter about BorgBackup in theNixOS manual.",
+            "nixName": "jobs",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "jobs.<name>.appendFailedSuffix",
+            "desc": "Append a  .failed  suffix to the archive name, which isonly removed if  borg create  has a zero exit status.",
+            "nixName": "jobs.<name>.appendFailedSuffix",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "jobs.<name>.archiveBaseName",
+            "desc": "How to name the created archives. A timestamp, whose format isdetermined by  dateFormat , will be appended. The full name can bemodified at runtime ( $archiveName ). Placeholders like {hostname}  must not be used. Use  null  for nobase name.",
+            "nixName": "jobs.<name>.archiveBaseName",
+            "type": "null or string matching the pattern [^/{}]+",
+            "value": "\"${config.networking.hostName}-<name>\""
+        },
+        {
+            "name": "jobs.<name>.compression",
+            "desc": "Compression method to use. Refer to  borg help compression  for all availableoptions.",
+            "nixName": "jobs.<name>.compression",
+            "type": "string matching the pattern none|(auto,)?(lz4|zstd|zlib|lzma)(,[[:digit:]]{1,2})?",
+            "value": "\"lz4\""
+        },
+        {
+            "name": "jobs.<name>.dateFormat",
+            "desc": "Arguments passed to  date  to create a timestamp suffix for the archivename.",
+            "nixName": "jobs.<name>.dateFormat",
+            "type": "string",
+            "value": "\"+%Y-%m-%dT%H:%M:%S\""
+        },
+        {
+            "name": "jobs.<name>.doInit",
+            "desc": "Run  borg init  ifthe specified  repo does not exist. You should set this to  false  if therepository is located on an external drive that might not always bemounted.",
+            "nixName": "jobs.<name>.doInit",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "jobs.<name>.dumpCommand",
+            "desc": "Backup the stdout of this program instead of filesystem paths.Mutually exclusive with  paths .",
+            "nixName": "jobs.<name>.dumpCommand",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "jobs.<name>.encryption.mode",
+            "desc": "Encryption mode to use. Setting a mode other than  \"none\" requires you to specify a  passCommand  or a  passphrase .",
+            "nixName": "jobs.<name>.encryption.mode",
+            "type": "one of \"repokey\", \"keyfile\", \"repokey-blake2\", \"keyfile-blake2\", \"authenticated\", \"authenticated-blake2\", \"none\"",
+            "value": null
+        },
+        {
+            "name": "jobs.<name>.encryption.passCommand",
+            "desc": "A command which prints the passphrase to stdout. Mutually exclusivewith  passphrase .",
+            "nixName": "jobs.<name>.encryption.passCommand",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "jobs.<name>.encryption.passphrase",
+            "desc": "The passphrase the backups are encrypted with. Mutually exclusivewith  passCommand . Ifyou do not want the passphrase to be stored in the world-readable Nixstore, use  passCommand .",
+            "nixName": "jobs.<name>.encryption.passphrase",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "jobs.<name>.environment",
+            "desc": "Environment variables passed to the backup script. You can forexample specify which SSH key to use.",
+            "nixName": "jobs.<name>.environment",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "jobs.<name>.exclude",
+            "desc": "Exclude paths matching any of the given patterns. See  borg help patterns  forpattern syntax.",
+            "nixName": "jobs.<name>.exclude",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobs.<name>.extraArgs",
+            "desc": "Additional arguments for all  borg  calls the service has. Handle with care.",
+            "nixName": "jobs.<name>.extraArgs",
+            "type": "string or (list of string) convertible to it",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobs.<name>.extraCompactArgs",
+            "desc": "Additional arguments for  borg compact . Can also be set at runtime using $extraCompactArgs .",
+            "nixName": "jobs.<name>.extraCompactArgs",
+            "type": "string or (list of string) convertible to it",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobs.<name>.extraCreateArgs",
+            "desc": "Additional arguments for  borg create . Can also be set at runtime using $extraCreateArgs .",
+            "nixName": "jobs.<name>.extraCreateArgs",
+            "type": "string or (list of string) convertible to it",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobs.<name>.extraInitArgs",
+            "desc": "Additional arguments for  borg init . Can also be set at runtime using $extraInitArgs .",
+            "nixName": "jobs.<name>.extraInitArgs",
+            "type": "string or (list of string) convertible to it",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobs.<name>.extraPruneArgs",
+            "desc": "Additional arguments for  borg prune . Can also be set at runtime using $extraPruneArgs .",
+            "nixName": "jobs.<name>.extraPruneArgs",
+            "type": "string or (list of string) convertible to it",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobs.<name>.failOnWarnings",
+            "desc": "Fail the whole backup job if any borg command returns a warning (exitcode 1), for example because a file changed during backup.",
+            "nixName": "jobs.<name>.failOnWarnings",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "jobs.<name>.group",
+            "desc": "The group borg is run as. User or group needs read permission for thespecified  paths .",
+            "nixName": "jobs.<name>.group",
+            "type": "string",
+            "value": "\"root\""
+        },
+        {
+            "name": "jobs.<name>.inhibitsSleep",
+            "desc": "Prevents the system from sleeping while backing up.",
+            "nixName": "jobs.<name>.inhibitsSleep",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "jobs.<name>.paths",
+            "desc": "Path(s) to back up. Mutually exclusive with  dumpCommand .",
+            "nixName": "jobs.<name>.paths",
+            "type": "null or ((list of string) or string convertible to it)",
+            "value": "null"
+        },
+        {
+            "name": "jobs.<name>.patterns",
+            "desc": "Include/exclude paths matching the given patterns. The first matchingpatterns is used, so if an include pattern (prefix  + )matches before an exclude pattern (prefix  - ), the file isbacked up. See   borg help patterns  for pattern syntax.",
+            "nixName": "jobs.<name>.patterns",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobs.<name>.persistentTimer",
+            "desc": "Set the  Persistent  option for the   systemd.timer(5)  which triggers the backup immediately if the last trigger was missed(e.g. if the system was powered down).",
+            "nixName": "jobs.<name>.persistentTimer",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "jobs.<name>.postCreate",
+            "desc": "Shell commands to run after  borg create . The name of the created archive isstored in  $archiveName .",
+            "nixName": "jobs.<name>.postCreate",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "jobs.<name>.postHook",
+            "desc": "Shell commands to run just before exit. They are executed even if aprevious command exits with a non-zero exit code. The latter isavailable as  $exitStatus .",
+            "nixName": "jobs.<name>.postHook",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "jobs.<name>.postInit",
+            "desc": "Shell commands to run after  borg init .",
+            "nixName": "jobs.<name>.postInit",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "jobs.<name>.postPrune",
+            "desc": "Shell commands to run after  borg prune .",
+            "nixName": "jobs.<name>.postPrune",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "jobs.<name>.preHook",
+            "desc": "Shell commands to run before the backup. This can for example be usedto mount file systems.",
+            "nixName": "jobs.<name>.preHook",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "jobs.<name>.privateTmp",
+            "desc": "Set the  PrivateTmp  option for the systemd-service. Setto false if you need sockets or other files from global /tmp.",
+            "nixName": "jobs.<name>.privateTmp",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "jobs.<name>.prune.keep",
+            "desc": "Prune a repository by deleting all archives not matching any of thespecified retention options. See  borg help prune  for the available options.",
+            "nixName": "jobs.<name>.prune.keep",
+            "type": "attribute set of (signed integer or string matching the pattern [[:digit:]]+[Hdwmy])",
+            "value": "{ }"
+        },
+        {
+            "name": "jobs.<name>.prune.prefix",
+            "desc": "Only consider archive names starting with this prefix for pruning. Bydefault, only archives created by this job are considered. Use \"\"  or  null  to consider all archives.",
+            "nixName": "jobs.<name>.prune.prefix",
+            "type": "null or string",
+            "value": "archiveBaseName"
+        },
+        {
+            "name": "jobs.<name>.readWritePaths",
+            "desc": "By default, borg cannot write anywhere on the system but $HOME/.config/borg  and  $HOME/.cache/borg . If,for example, your preHook script needs to dump files somewhere, putthose directories here.",
+            "nixName": "jobs.<name>.readWritePaths",
+            "type": "list of path",
+            "value": "[ ]"
+        },
+        {
+            "name": "jobs.<name>.removableDevice",
+            "desc": "Whether the repo (which must be local) is a removable device.",
+            "nixName": "jobs.<name>.removableDevice",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "jobs.<name>.repo",
+            "desc": "Remote or local repository to back up to.",
+            "nixName": "jobs.<name>.repo",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "jobs.<name>.startAt",
+            "desc": "When or how often the backup should run. Must be in the formatdescribed in   systemd.time(7)  . Ifyou do not want the backup to start automatically, use  [ ] .It will generate a systemd service borgbackup-job-NAME. You may triggerit manually via systemctl restart borgbackup-job-NAME.",
+            "nixName": "jobs.<name>.startAt",
+            "type": "string or list of string",
+            "value": "\"daily\""
+        },
+        {
+            "name": "jobs.<name>.user",
+            "desc": "The user  borg  isrun as. User or group need read permission for the specified  paths .",
+            "nixName": "jobs.<name>.user",
+            "type": "string",
+            "value": "\"root\""
+        },
+        {
+            "name": "package",
+            "desc": "The borgbackup package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.borgbackup"
+        },
+        {
+            "name": "repos",
+            "desc": "Serve BorgBackup repositories to given public SSH keys, restrictingtheir access to the repository only. See also the chapter aboutBorgBackup in the NixOS manual. Also, clients do not need to specify theabsolute path when accessing the repository, i.e. user@machine:.  is enough. (Note colon and dot.)",
+            "nixName": "repos",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "repos.<name>.allowSubRepos",
+            "desc": "Allow clients to create repositories in subdirectories of thespecified  path .These can be accessed using  user@machine:path/to/subrepo .Note that a  quota applies to repositories independently. Therefore, if this is enabled,clients can create multiple repositories and upload an arbitrary amountof data.",
+            "nixName": "repos.<name>.allowSubRepos",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "repos.<name>.authorizedKeys",
+            "desc": "Public SSH keys that are given full write access to this repository.You should use a different SSH key for each repository you write to,because the specified keys are restricted to running  borg serve  and can onlyaccess this single repository.",
+            "nixName": "repos.<name>.authorizedKeys",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "repos.<name>.authorizedKeysAppendOnly",
+            "desc": "Public SSH keys that can only be used to append new data (archives)to the repository. Note that archives can still be marked as deleted andare subsequently removed from disk upon accessing the repo with fullwrite access, e.g. when pruning.",
+            "nixName": "repos.<name>.authorizedKeysAppendOnly",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "repos.<name>.group",
+            "desc": "The group  borg serve  is run as. User or group needs writepermission for the specified  path .",
+            "nixName": "repos.<name>.group",
+            "type": "string",
+            "value": "\"borg\""
+        },
+        {
+            "name": "repos.<name>.path",
+            "desc": "Where to store the backups. Note that the directory is createdautomatically, with correct permissions.",
+            "nixName": "repos.<name>.path",
+            "type": "path",
+            "value": "\"/var/lib/borgbackup\""
+        },
+        {
+            "name": "repos.<name>.quota",
+            "desc": "Storage quota for the repository. This quota is ensured for allsub-repositories if  allowSubRepos  is enabled but not for the overallstorage space used.",
+            "nixName": "repos.<name>.quota",
+            "type": "null or string matching the pattern [[:digit:].]+[KMGTP]?",
+            "value": "null"
+        },
+        {
+            "name": "repos.<name>.user",
+            "desc": "The user  borg serve  is run as. User or group needs writepermission for the specified  path .",
+            "nixName": "repos.<name>.user",
+            "type": "string",
+            "value": "\"borg\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

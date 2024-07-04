@@ -1,0 +1,31 @@
+{
+    "name": "Manticore Search",
+    "desc": "Easy to use open source fast database for search",
+    "tags": [
+        "Search Engines\r"
+    ],
+    "website": "https://manticoresearch.com",
+    "implmented": false,
+    "logo": "https://manticoresearch.com/images/favicon_huef5b6b9b4667cfcb07efebc9f11841a5_5793_32x0_resize_box_3.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "manticoresearch",
+    "options": [
+        {
+            "name": "search/manticore.nix",
+            "desc": "Whether to enable Manticoresearch.",
+            "nixName": "relatedOption.manticore.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "search/manticore.nix",
+            "desc": "Configuration for Manticoresearch. See https://manual.manticoresearch.com/Server%20settingsfor more information.",
+            "nixName": "relatedOption.manticore.settings",
+            "type": "JSON value",
+            "value": "{\n  searchd = {\n    data_dir = \"/var/lib/manticore\";\n    listen = [\n      \"127.0.0.1:9312\"\n      \"127.0.0.1:9306:mysql\"\n      \"127.0.0.1:9308:http\"\n    ];\n    log = \"/var/log/manticore/searchd.log\";\n    pid_file = \"/run/manticore/searchd.pid\";\n    query_log = \"/var/log/manticore/query.log\";\n  };\n}"
+        }
+    ]
+}

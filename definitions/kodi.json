@@ -1,0 +1,31 @@
+{
+    "name": "Kodi",
+    "desc": "Media center",
+    "tags": [
+        "Media Streaming - Multimedia Streaming"
+    ],
+    "website": "https://kodi.tv/",
+    "implmented": false,
+    "logo": "https://kodi.tv/favicon-32x32.png?v=0f7311d6dfc6bbfa30848b0c28f33af2",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "kodi",
+    "options": [
+        {
+            "name": "x11/desktop-managers/kodi.nix",
+            "desc": "The kodi package to use.",
+            "nixName": "relatedOption.xserver.desktopManager.kodi.package",
+            "type": "package",
+            "value": "pkgs.kodi"
+        },
+        {
+            "name": "x11/desktop-managers/kodi.nix",
+            "desc": "Enable the kodi multimedia center.",
+            "nixName": "relatedOption.xserver.desktopManager.kodi.enable",
+            "type": "boolean",
+            "value": "false"
+        }
+    ]
+}

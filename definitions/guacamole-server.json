@@ -1,0 +1,67 @@
+{
+    "name": "Guacamole",
+    "desc": "Clientless remote desktop gateway",
+    "tags": [
+        "Remote Access\r"
+    ],
+    "website": "https://guacamole.apache.org/",
+    "logo": "https://guacamole.apache.org/images/logos/guac-classic-logo.svg",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "guacamole-server",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable Apache Guacamole Server (guacd).",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraEnvironment",
+            "desc": "Environment variables to pass to guacd.",
+            "nixName": "extraEnvironment",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "host",
+            "desc": "The host name or IP address the server should listen to.",
+            "nixName": "host",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "logbackXml",
+            "desc": "Configuration file that correspond to  logback.xml .",
+            "nixName": "logbackXml",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "package",
+            "desc": "The guacamole-server package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.guacamole-server"
+        },
+        {
+            "name": "port",
+            "desc": "The port the guacd server should listen to.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "4822"
+        },
+        {
+            "name": "userMappingXml",
+            "desc": "Configuration file that correspond to user-mapping.xml .",
+            "nixName": "userMappingXml",
+            "type": "null or path",
+            "value": "null"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

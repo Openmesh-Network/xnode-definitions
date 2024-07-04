@@ -1,0 +1,137 @@
+{
+    "name": "Jitsi Meet",
+    "desc": "Secure, Simple and Scalable Video Conferences",
+    "tags": [
+        "Communication - Video Conferencing"
+    ],
+    "website": "https://github.com/jitsi/jitsi-meet",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 2048,
+        "storage": 0
+    },
+    "nixName": "jitsi-meet",
+    "options": [
+        {
+            "name": "caddy.enable",
+            "desc": "Whether to enable caddy reverse proxy to expose jitsi-meet.",
+            "nixName": "caddy.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "config",
+            "desc": "Client-side web application settings that override the defaults in config.js .  See  https://github.com/jitsi/jitsi-meet/blob/master/config.js for default configuration with comments.",
+            "nixName": "config",
+            "type": "attribute set",
+            "value": "{ }"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Jitsi Meet - Secure, Simple and Scalable VideoConferences.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "excalidraw.enable",
+            "desc": "Whether to enable Excalidraw collaboration backend for Jitsi.",
+            "nixName": "excalidraw.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "excalidraw.port",
+            "desc": "The port which the Excalidraw backend for Jitsi should listen to.",
+            "nixName": "excalidraw.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "3002"
+        },
+        {
+            "name": "extraConfig",
+            "desc": "Text to append to  config.js  web application config file.  Can be used to insert JavaScript logic to determine user\u2019s region incascading bridges setup.",
+            "nixName": "extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "hostName",
+            "desc": "FQDN of the Jitsi Meet instance.",
+            "nixName": "hostName",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "interfaceConfig",
+            "desc": "Client-side web-app interface settings that override the defaults in interface_config.js .  See  https://github.com/jitsi/jitsi-meet/blob/master/interface_config.js for default configuration with comments.",
+            "nixName": "interfaceConfig",
+            "type": "attribute set",
+            "value": "{ }"
+        },
+        {
+            "name": "jibri.enable",
+            "desc": "Whether to enable a Jibri instance and configure it to connect toProsody.  Additional configuration is possible with  services.jibri , and  services.jibri.finalizeScript  is especiallyuseful.",
+            "nixName": "jibri.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "jicofo.enable",
+            "desc": "Whether to enable JiCoFo instance and configure it to connect toProsody.  Additional configuration is possible with  services.jicofo .",
+            "nixName": "jicofo.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "jigasi.enable",
+            "desc": "Whether to enable jigasi instance and configure it to connect toProsody.  Additional configuration is possible with services.jigasi .",
+            "nixName": "jigasi.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "nginx.enable",
+            "desc": "Whether to enable nginx virtual host that will serve the javascriptapplication and act as a proxy for the XMPP server. Further nginxconfiguration can be done by adapting  services.nginx.virtualHosts.<hostName> . Whenthis is enabled, ACME will be used to retrieve a TLS certificate bydefault. To disable this, set the  services.nginx.virtualHosts.<hostName>.enableACME to  false  and if appropriate do the same for  services.nginx.virtualHosts.<hostName>.forceSSL .",
+            "nixName": "nginx.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "prosody.enable",
+            "desc": "Whether to configure Prosody to relay XMPP messages between JitsiMeet components. Turn this off if you want to configure it manually.",
+            "nixName": "prosody.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "secureDomain.authentication",
+            "desc": "The authentication type to be used by jitsi",
+            "nixName": "secureDomain.authentication",
+            "type": "string",
+            "value": "\"internal_hashed\""
+        },
+        {
+            "name": "secureDomain.enable",
+            "desc": "Whether to enable Authenticated room creation.",
+            "nixName": "secureDomain.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "videobridge.enable",
+            "desc": "Jitsi Videobridge instance and configure it to connect toProsody.  Additional configuration is possible with  services.jitsi-videobridge",
+            "nixName": "videobridge.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "videobridge.passwordFile",
+            "desc": "File containing password to the Prosody account for videobridge.  If  null , a file with password will be generatedautomatically. Setting this option is useful if you plan to connectadditional videobridges to the XMPP server.",
+            "nixName": "videobridge.passwordFile",
+            "type": "null or string",
+            "value": "null"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

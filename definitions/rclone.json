@@ -1,0 +1,59 @@
+{
+    "name": "rclone",
+    "desc": "Command line program to sync files and directories to and from major cloud storage",
+    "tags": [
+        "Backup"
+    ],
+    "website": "https://rclone.org",
+    "implmented": false,
+    "logo": "https://rclone.org/img/rclone-32x32.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "rclone",
+    "options": [
+        {
+            "name": "backup/restic.nix",
+            "desc": "Path to the file containing rclone configuration. This file mustcontain configuration for the remote specified in this backup set andalso must be readable by root. Options set in rcloneConfigwill override those set in this file.",
+            "nixName": "relatedOption.restic.backups.<name>.rcloneConfigFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "backup/restic.nix",
+            "desc": "Configuration for the rclone remote being used for backup. See theremote\u2019s specific options under rclone\u2019s docs at https://rclone.org/docs/. Whenspecifying option names, use the \u201cconfig\u201d name specified in the docs.For example, to set --b2-hard-delete for a B2 remote, usehard_delete = true in the attribute set. Warning: Secretsset in here will be world-readable in the Nix store! Consider using thercloneConfigFile option instead to specify secret valuesseparately. Note that options set here will override those set in theconfig file.",
+            "nixName": "relatedOption.restic.backups.<name>.rcloneConfig",
+            "type": "null or (attribute set of (string or boolean))",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Path to the file containing rclone configuration. This file mustcontain configuration for the remote specified in this backup set andalso must be readable by root.Options set in rcloneConfig will override those set inthis file.",
+            "nixName": "relatedOption.prometheus.exporters.restic.rcloneConfigFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Configuration for the rclone remote being used for backup. See theremote\u2019s specific options under rclone\u2019s docs at https://rclone.org/docs/. Whenspecifying option names, use the \u201cconfig\u201d name specified in the docs.For example, to set --b2-hard-delete for a B2 remote, usehard_delete = true in the attribute set.Secrets set in here will be world-readable in the Nix store! Considerusing the rcloneConfigFile option instead to specify secretvalues separately. Note that options set here will override those set inthe config file.",
+            "nixName": "relatedOption.prometheus.exporters.restic.rcloneConfig",
+            "type": "attribute set of (string or boolean)",
+            "value": "{ }"
+        },
+        {
+            "name": "backup/restic.nix",
+            "desc": "Options to pass to rclone to control its behavior. See https://rclone.org/docs/#optionsfor available options. When specifying option names, strip the leading--. To set a flag such as --drive-use-trash,which does not take a value, set the value to the Booleantrue.",
+            "nixName": "relatedOption.restic.backups.<name>.rcloneOptions",
+            "type": "null or (attribute set of (string or boolean))",
+            "value": "null"
+        },
+        {
+            "name": "monitoring/prometheus/exporters.nix",
+            "desc": "Options to pass to rclone to control its behavior. See https://rclone.org/docs/#optionsfor available options. When specifying option names, strip the leading--. To set a flag such as --drive-use-trash,which does not take a value, set the value to the Booleantrue.",
+            "nixName": "relatedOption.prometheus.exporters.restic.rcloneOptions",
+            "type": "attribute set of (string or boolean)",
+            "value": "{ }"
+        }
+    ]
+}

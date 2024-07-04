@@ -1,0 +1,67 @@
+{
+    "name": "Typesense",
+    "desc": "Typesense is a fast, typo-tolerant search engine for building delightful search experiences.",
+    "tags": [
+        "Search Engines\r"
+    ],
+    "website": "https://typesense.org",
+    "logo": "https://typesense.org/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "typesense",
+    "options": [
+        {
+            "name": "apiKeyFile",
+            "desc": "Sets the admin api key for typesense. Always use this option insteadof  settings.server.api-key  to prevent the key frombeing written to the world-readable nix store.",
+            "nixName": "apiKeyFile",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable typesense.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The typesense package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.typesense"
+        },
+        {
+            "name": "settings",
+            "desc": "Typesense configuration. Refer to  thedocumentation  for supported values.",
+            "nixName": "settings",
+            "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string) or a non-empty list of them)",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.server.api-address",
+            "desc": "Address to which Typesense API service binds.",
+            "nixName": "settings.server.api-address",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "settings.server.api-port",
+            "desc": "Port on which the Typesense API service listens.",
+            "nixName": "settings.server.api-port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8108"
+        },
+        {
+            "name": "settings.server.data-dir",
+            "desc": "Path to the directory where data will be stored on disk.",
+            "nixName": "settings.server.data-dir",
+            "type": "string",
+            "value": "\"/var/lib/typesense\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

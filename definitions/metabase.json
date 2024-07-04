@@ -1,0 +1,67 @@
+{
+    "name": "Metabase",
+    "desc": "The easy, open source way for everyone in your company to ask questions and learn from data",
+    "tags": [
+        "Analytics"
+    ],
+    "website": "https://metabase.com",
+    "logo": "https://metabase.com/images/favicon.ico",
+    "specs": {
+        "ram": 1000,
+        "storage": 10000
+    },
+    "nixName": "metabase",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable Metabase service.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "listen.ip",
+            "desc": "IP address that Metabase should listen on.",
+            "nixName": "listen.ip",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "listen.port",
+            "desc": "Listen port for Metabase.",
+            "nixName": "listen.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "3000"
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Open ports in the firewall for Metabase.",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "ssl.enable",
+            "desc": "Whether to enable SSL (https) support.",
+            "nixName": "ssl.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "ssl.keystore",
+            "desc": "JavaKeyStore  file containing the certificates.",
+            "nixName": "ssl.keystore",
+            "type": "null or path",
+            "value": "\"/var/lib/metabase/metabase.jks\""
+        },
+        {
+            "name": "ssl.port",
+            "desc": "Listen port over SSL (https) for Metabase.",
+            "nixName": "ssl.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8443"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

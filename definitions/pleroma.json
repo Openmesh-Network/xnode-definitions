@@ -1,0 +1,67 @@
+{
+    "name": "Pleroma",
+    "desc": "ActivityPub microblogging server",
+    "tags": [
+        "Communication - Social Networks and Forums"
+    ],
+    "website": "https://git.pleroma.social/pleroma/pleroma",
+    "logo": "https://git.pleroma.social/uploads/-/system/appearance/favicon/1/favicon.png",
+    "specs": {
+        "ram": 2048,
+        "storage": 0
+    },
+    "nixName": "pleroma",
+    "options": [
+        {
+            "name": "configs",
+            "desc": "Pleroma public configuration.  This list gets appended from left to right into/etc/pleroma/config.exs. Elixir evaluates its configurationimperatively, meaning you can override a setting by appending a new strto this NixOS option list.   DO NOT STORE ANY PLEROMA SECRET HERE , use  services.pleroma.secretConfigFile instead.  This setting is going to be stored in a file part of the Nix store.The Nix store being world-readable, it\u2019s not the right place to storeany secret  Have a look to Pleroma section in the NixOS manual for moreinformation.",
+            "nixName": "configs",
+            "type": "list of string",
+            "value": null
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable pleroma.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group account under which pleroma runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"pleroma\""
+        },
+        {
+            "name": "package",
+            "desc": "The pleroma package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.pleroma"
+        },
+        {
+            "name": "secretConfigFile",
+            "desc": "Path to the file containing your secret pleroma configuration.   DO NOT POINT THIS OPTION TO THE NIX STORE , the store beingworld-readable, it\u2019ll compromise all your secrets.",
+            "nixName": "secretConfigFile",
+            "type": "string",
+            "value": "\"/var/lib/pleroma/secrets.exs\""
+        },
+        {
+            "name": "stateDir",
+            "desc": "Directory where the pleroma service will save the uploads and staticfiles.",
+            "nixName": "stateDir",
+            "type": "string",
+            "value": "\"/var/lib/pleroma\""
+        },
+        {
+            "name": "user",
+            "desc": "User account under which pleroma runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"pleroma\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

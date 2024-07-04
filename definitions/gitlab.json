@@ -1,0 +1,564 @@
+{
+    "name": "GitLab CI",
+    "desc": "Interact with GitLab API",
+    "tags": [
+        "Software Development - Continuous Integration & Continuous Deployment"
+    ],
+    "website": "https://github.com/python-gitlab/python-gitlab",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "gitlab",
+    "options": [
+        {
+            "name": "backup.keepTime",
+            "desc": "How long to keep the backups around, in hours.  0  means\u201ckeep forever\u201d.",
+            "nixName": "backup.keepTime",
+            "type": "signed integer",
+            "value": "0"
+        },
+        {
+            "name": "backup.path",
+            "desc": "GitLab path for backups.",
+            "nixName": "backup.path",
+            "type": "string",
+            "value": "config.services.gitlab.statePath + \"/backup\""
+        },
+        {
+            "name": "backup.skip",
+            "desc": "Directories to exclude from the backup. The example excludes CIartifacts and LFS objects from the backups. The  tar  optionskips the creation of a tar file.  Refer to  https://docs.gitlab.com/ee/raketasks/backup_restore.html#excluding-specific-directories-from-the-backup for more information.",
+            "nixName": "backup.skip",
+            "type": "one of \"db\", \"uploads\", \"builds\", \"artifacts\", \"lfs\", \"registry\", \"pages\", \"repositories\", \"tar\" or list of (one of \"db\", \"uploads\", \"builds\", \"artifacts\", \"lfs\", \"registry\", \"pages\", \"repositories\", \"tar\")",
+            "value": "[ ]"
+        },
+        {
+            "name": "backup.startAt",
+            "desc": "The time(s) to run automatic backup of GitLab state. Specified insystemd\u2019s time format; see   systemd.time(7)  .",
+            "nixName": "backup.startAt",
+            "type": "string or list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "backup.uploadOptions",
+            "desc": "GitLab automatic upload specification. Tells GitLab to upload thebackup to a remote location when done.  Attributes specified here are added under production -> backup -> upload  in  config/gitlab.yml .",
+            "nixName": "backup.uploadOptions",
+            "type": "attribute set",
+            "value": "{ }"
+        },
+        {
+            "name": "databaseCreateLocally",
+            "desc": "Whether a database should be automatically created on the local host.Set this to  false  if you plan on provisioning a localdatabase yourself. This has no effect if  services.gitlab.databaseHost  is customized.",
+            "nixName": "databaseCreateLocally",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "databaseHost",
+            "desc": "GitLab database hostname. An empty string means \u201cuse local unixsocket connection\u201d.",
+            "nixName": "databaseHost",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "databaseName",
+            "desc": "GitLab database name.",
+            "nixName": "databaseName",
+            "type": "string",
+            "value": "\"gitlab\""
+        },
+        {
+            "name": "databasePasswordFile",
+            "desc": "File containing the GitLab database user password.  This should be a string, not a nix path, since nix paths are copiedinto the world-readable nix store.",
+            "nixName": "databasePasswordFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "databasePool",
+            "desc": "Database connection pool size.",
+            "nixName": "databasePool",
+            "type": "signed integer",
+            "value": "5"
+        },
+        {
+            "name": "databaseUsername",
+            "desc": "GitLab database user.",
+            "nixName": "databaseUsername",
+            "type": "string",
+            "value": "\"gitlab\""
+        },
+        {
+            "name": "enable",
+            "desc": "Enable the gitlab service.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "extraConfig",
+            "desc": "Extra options to be added under  production  in  config/gitlab.yml , as a nixattribute set.  Options containing secret data should be set to an attribute setcontaining the attribute  _secret  - a string pointing to afile containing the value the option should be set to. See the exampleto get a better picture of this: in the resulting  config/gitlab.yml  file, the production.omniauth.providers[0].args.client_options.secret key will be set to the contents of the  /var/keys/gitlab_oidc_secret  file.",
+            "nixName": "extraConfig",
+            "type": "YAML value",
+            "value": "{ }"
+        },
+        {
+            "name": "extraDatabaseConfig",
+            "desc": "Extra configuration in config/database.yml.",
+            "nixName": "extraDatabaseConfig",
+            "type": "attribute set",
+            "value": "{ }"
+        },
+        {
+            "name": "extraEnv",
+            "desc": "Additional environment variables for the GitLab environment.",
+            "nixName": "extraEnv",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "extraGitlabRb",
+            "desc": "Extra configuration to be placed in config/extra-gitlab.rb. This canbe used to add configuration not otherwise exposed through this module\u2019soptions.",
+            "nixName": "extraGitlabRb",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "extraShellConfig",
+            "desc": "Extra configuration to merge into shell-config.yml",
+            "nixName": "extraShellConfig",
+            "type": "attribute set",
+            "value": "{ }"
+        },
+        {
+            "name": "group",
+            "desc": "Group to run gitlab and all related services.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"gitlab\""
+        },
+        {
+            "name": "host",
+            "desc": "GitLab host name. Used e.g. for copy-paste URLs.",
+            "nixName": "host",
+            "type": "string",
+            "value": "config.networking.hostName"
+        },
+        {
+            "name": "https",
+            "desc": "Whether gitlab prints URLs with https as scheme.",
+            "nixName": "https",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "initialRootEmail",
+            "desc": "Initial email address of the root account if this is a newinstall.",
+            "nixName": "initialRootEmail",
+            "type": "string",
+            "value": "\"admin@local.host\""
+        },
+        {
+            "name": "initialRootPasswordFile",
+            "desc": "File containing the initial password of the root account if this is anew install.  This should be a string, not a nix path, since nix paths are copiedinto the world-readable nix store.",
+            "nixName": "initialRootPasswordFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "logrotate.enable",
+            "desc": "Enable rotation of log files.",
+            "nixName": "logrotate.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "logrotate.frequency",
+            "desc": "How often to rotate the logs.",
+            "nixName": "logrotate.frequency",
+            "type": "string",
+            "value": "\"daily\""
+        },
+        {
+            "name": "logrotate.keep",
+            "desc": "How many rotations to keep.",
+            "nixName": "logrotate.keep",
+            "type": "signed integer",
+            "value": "30"
+        },
+        {
+            "name": "packages.gitaly",
+            "desc": "The gitaly package to use.",
+            "nixName": "packages.gitaly",
+            "type": "package",
+            "value": "pkgs.gitaly"
+        },
+        {
+            "name": "packages.gitlab",
+            "desc": "The gitlab package to use.",
+            "nixName": "packages.gitlab",
+            "type": "package",
+            "value": "pkgs.gitlab"
+        },
+        {
+            "name": "packages.gitlab-shell",
+            "desc": "The gitlab-shell package to use.",
+            "nixName": "packages.gitlab-shell",
+            "type": "package",
+            "value": "pkgs.gitlab-shell"
+        },
+        {
+            "name": "packages.gitlab-workhorse",
+            "desc": "The gitlab-workhorse package to use.",
+            "nixName": "packages.gitlab-workhorse",
+            "type": "package",
+            "value": "pkgs.gitlab-workhorse"
+        },
+        {
+            "name": "packages.pages",
+            "desc": "The gitlab-pages package to use.",
+            "nixName": "packages.pages",
+            "type": "package",
+            "value": "pkgs.gitlab-pages"
+        },
+        {
+            "name": "pages.enable",
+            "desc": "Whether to enable the GitLab Pages service.",
+            "nixName": "pages.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "pages.settings",
+            "desc": "Configuration options to set in the GitLab Pages config file.  Options containing secret data should be set to an attribute setcontaining the attribute  _secret  - a string pointing to afile containing the value the option should be set to. See the exampleto get a better picture of this: in the resulting configuration file,the  auth-client-secret  and  auth-secret  keyswill be set to the contents of the  /var/keys/auth-client-secret  and  /var/keys/auth-secret  filesrespectively.",
+            "nixName": "pages.settings",
+            "type": "attribute set of (null or string or signed integer or boolean or (attribute set))",
+            "value": null
+        },
+        {
+            "name": "pages.settings.artifacts-server",
+            "desc": "API URL to proxy artifact requests to.",
+            "nixName": "pages.settings.artifacts-server",
+            "type": "null or string",
+            "value": "\"http(s)://<services.gitlab.host>/api/v4\""
+        },
+        {
+            "name": "pages.settings.gitlab-server",
+            "desc": "Public GitLab server URL.",
+            "nixName": "pages.settings.gitlab-server",
+            "type": "null or string",
+            "value": "\"http(s)://<services.gitlab.host>\""
+        },
+        {
+            "name": "pages.settings.internal-gitlab-server",
+            "desc": "Internal GitLab server used for API requests, useful if you want tosend that traffic over an internal load balancer. By default, the valueof  services.gitlab.pages.settings.gitlab-server  isused.",
+            "nixName": "pages.settings.internal-gitlab-server",
+            "type": "null or string",
+            "value": "\"http(s)://<services.gitlab.host>\""
+        },
+        {
+            "name": "pages.settings.listen-http",
+            "desc": "The address(es) to listen on for HTTP requests.",
+            "nixName": "pages.settings.listen-http",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "pages.settings.listen-https",
+            "desc": "The address(es) to listen on for HTTPS requests.",
+            "nixName": "pages.settings.listen-https",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "pages.settings.listen-proxy",
+            "desc": "The address(es) to listen on for proxy requests.",
+            "nixName": "pages.settings.listen-proxy",
+            "type": "list of string",
+            "value": "[\n  \"127.0.0.1:8090\"\n]"
+        },
+        {
+            "name": "pages.settings.pages-domain",
+            "desc": "The domain to serve static pages on.",
+            "nixName": "pages.settings.pages-domain",
+            "type": "null or string",
+            "value": null
+        },
+        {
+            "name": "pages.settings.pages-root",
+            "desc": "The directory where pages are stored.",
+            "nixName": "pages.settings.pages-root",
+            "type": "string",
+            "value": "config.services.gitlab.extraConfig.production.shared.path + \"/pages\""
+        },
+        {
+            "name": "port",
+            "desc": "GitLab server port for copy-paste URLs, e.g. 80 or 443 if you\u2019reservice over https.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8080"
+        },
+        {
+            "name": "puma.threadsMax",
+            "desc": "The maximum number of threads Puma should use per worker. This limitshow many threads Puma will automatically spawn in response to requests.In contrast to workers, threads will never be able to run Ruby code inparallel, but give higher IO parallelism.   Each thread consumes memory and contributes to Global VM Lockcontention, so be careful when increasing this.",
+            "nixName": "puma.threadsMax",
+            "type": "signed integer",
+            "value": "4"
+        },
+        {
+            "name": "puma.threadsMin",
+            "desc": "The minimum number of threads Puma should use per worker.   Each thread consumes memory and contributes to Global VM Lockcontention, so be careful when increasing this.",
+            "nixName": "puma.threadsMin",
+            "type": "signed integer",
+            "value": "0"
+        },
+        {
+            "name": "puma.workers",
+            "desc": "The number of worker processes Puma should spawn. This controls theamount of parallel Ruby code can be executed. GitLab recommends Number of CPU cores - 1 , but at least two.   Each worker consumes quite a bit of memory, so be careful whenincreasing this.",
+            "nixName": "puma.workers",
+            "type": "signed integer",
+            "value": "2"
+        },
+        {
+            "name": "redisUrl",
+            "desc": "Redis URL for all GitLab services.",
+            "nixName": "redisUrl",
+            "type": "string",
+            "value": "\"unix:/run/gitlab/redis.sock\""
+        },
+        {
+            "name": "registry.certFile",
+            "desc": "Path to GitLab container registry certificate.",
+            "nixName": "registry.certFile",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "registry.defaultForProjects",
+            "desc": "If GitLab container registry should be enabled by default forprojects.",
+            "nixName": "registry.defaultForProjects",
+            "type": "boolean",
+            "value": "config.services.gitlab.registry.enable"
+        },
+        {
+            "name": "registry.enable",
+            "desc": "Enable GitLab container registry.",
+            "nixName": "registry.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "registry.externalAddress",
+            "desc": "External address used to access registry from the internet",
+            "nixName": "registry.externalAddress",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "registry.externalPort",
+            "desc": "External port used to access registry from the internet",
+            "nixName": "registry.externalPort",
+            "type": "signed integer",
+            "value": null
+        },
+        {
+            "name": "registry.host",
+            "desc": "GitLab container registry host name.",
+            "nixName": "registry.host",
+            "type": "string",
+            "value": "config.services.gitlab.host"
+        },
+        {
+            "name": "registry.issuer",
+            "desc": "GitLab container registry issuer.",
+            "nixName": "registry.issuer",
+            "type": "string",
+            "value": "\"gitlab-issuer\""
+        },
+        {
+            "name": "registry.keyFile",
+            "desc": "Path to GitLab container registry certificate-key.",
+            "nixName": "registry.keyFile",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "registry.package",
+            "desc": "Container registry package to use.  External container registries such as pkgs.docker-distribution  are not supported anymore sinceGitLab 16.0.0.",
+            "nixName": "registry.package",
+            "type": "package",
+            "value": "pkgs.docker-distribution"
+        },
+        {
+            "name": "registry.port",
+            "desc": "GitLab container registry port.",
+            "nixName": "registry.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "4567"
+        },
+        {
+            "name": "registry.serviceName",
+            "desc": "GitLab container registry service name.",
+            "nixName": "registry.serviceName",
+            "type": "string",
+            "value": "\"container_registry\""
+        },
+        {
+            "name": "secrets.dbFile",
+            "desc": "A file containing the secret used to encrypt variables in the DB. Ifyou change or lose this key you will be unable to access variablesstored in database.  Make sure the secret is at least 32 characters and all random, noregular words or you\u2019ll be exposed to dictionary attacks.  This should be a string, not a nix path, since nix paths are copiedinto the world-readable nix store.",
+            "nixName": "secrets.dbFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "secrets.jwsFile",
+            "desc": "A file containing the secret used to encrypt session keys. If youchange or lose this key, users will be disconnected.  Make sure the secret is an RSA private key in PEM format. You cangenerate one with  openssl genrsa 2048  This should be a string, not a nix path, since nix paths are copiedinto the world-readable nix store.",
+            "nixName": "secrets.jwsFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "secrets.otpFile",
+            "desc": "A file containing the secret used to encrypt secrets for OTP tokens.If you change or lose this key, users which have 2FA enabled for loginwon\u2019t be able to login anymore.  Make sure the secret is at least 32 characters and all random, noregular words or you\u2019ll be exposed to dictionary attacks.  This should be a string, not a nix path, since nix paths are copiedinto the world-readable nix store.",
+            "nixName": "secrets.otpFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "secrets.secretFile",
+            "desc": "A file containing the secret used to encrypt variables in the DB. Ifyou change or lose this key you will be unable to access variablesstored in database.  Make sure the secret is at least 32 characters and all random, noregular words or you\u2019ll be exposed to dictionary attacks.  This should be a string, not a nix path, since nix paths are copiedinto the world-readable nix store.",
+            "nixName": "secrets.secretFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "sidekiq.concurrency",
+            "desc": "How many processor threads to use for processing sidekiq backgroundjob queues. When null, the GitLab default is used.  See  https://docs.gitlab.com/ee/administration/sidekiq/extra_sidekiq_processes.html#manage-thread-counts-explicitly for details.",
+            "nixName": "sidekiq.concurrency",
+            "type": "null or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "sidekiq.memoryKiller.enable",
+            "desc": "Whether the Sidekiq MemoryKiller should be turned on. MemoryKillerkills Sidekiq when its memory consumption exceeds a certain limit.  See  https://docs.gitlab.com/ee/administration/operations/sidekiq_memory_killer.html for details.",
+            "nixName": "sidekiq.memoryKiller.enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "sidekiq.memoryKiller.graceTime",
+            "desc": "The time MemoryKiller waits after noticing excessive memoryconsumption before killing Sidekiq.",
+            "nixName": "sidekiq.memoryKiller.graceTime",
+            "type": "signed integer",
+            "value": "900"
+        },
+        {
+            "name": "sidekiq.memoryKiller.maxMemory",
+            "desc": "The maximum amount of memory, in MiB, a Sidekiq worker is allowed toconsume before being killed.",
+            "nixName": "sidekiq.memoryKiller.maxMemory",
+            "type": "signed integer",
+            "value": "2000"
+        },
+        {
+            "name": "sidekiq.memoryKiller.shutdownWait",
+            "desc": "The time allowed for all jobs to finish before Sidekiq is killedforcefully.",
+            "nixName": "sidekiq.memoryKiller.shutdownWait",
+            "type": "signed integer",
+            "value": "30"
+        },
+        {
+            "name": "smtp.address",
+            "desc": "Address of the SMTP server for GitLab.",
+            "nixName": "smtp.address",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "smtp.authentication",
+            "desc": "Authentication type to use, see  http://api.rubyonrails.org/classes/ActionMailer/Base.html",
+            "nixName": "smtp.authentication",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "smtp.domain",
+            "desc": "HELO domain to use for outgoing mail.",
+            "nixName": "smtp.domain",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "smtp.enable",
+            "desc": "Enable gitlab mail delivery over SMTP.",
+            "nixName": "smtp.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "smtp.enableStartTLSAuto",
+            "desc": "Whether to try to use StartTLS.",
+            "nixName": "smtp.enableStartTLSAuto",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "smtp.opensslVerifyMode",
+            "desc": "How OpenSSL checks the certificate, see  http://api.rubyonrails.org/classes/ActionMailer/Base.html",
+            "nixName": "smtp.opensslVerifyMode",
+            "type": "string",
+            "value": "\"peer\""
+        },
+        {
+            "name": "smtp.passwordFile",
+            "desc": "File containing the password of the SMTP server for GitLab.  This should be a string, not a nix path, since nix paths are copiedinto the world-readable nix store.",
+            "nixName": "smtp.passwordFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "smtp.port",
+            "desc": "Port of the SMTP server for GitLab.",
+            "nixName": "smtp.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "25"
+        },
+        {
+            "name": "smtp.tls",
+            "desc": "Whether to use TLS wrapper-mode.",
+            "nixName": "smtp.tls",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "smtp.username",
+            "desc": "Username of the SMTP server for GitLab.",
+            "nixName": "smtp.username",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "statePath",
+            "desc": "GitLab state directory. Configuration, repositories and logs, amongother things, are stored here.  The directory will be created automatically if it doesn\u2019t existalready. Its parent directories must be owned by either root  or the user set in  services.gitlab.user .",
+            "nixName": "statePath",
+            "type": "string",
+            "value": "\"/var/gitlab/state\""
+        },
+        {
+            "name": "user",
+            "desc": "User to run gitlab and all related services.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"gitlab\""
+        },
+        {
+            "name": "workhorse.config",
+            "desc": "Configuration options to add to Workhorse\u2019s configuration file.  See  https://gitlab.com/gitlab-org/gitlab/-/blob/master/workhorse/config.toml.example and  https://docs.gitlab.com/ee/development/workhorse/configuration.html for examples and option documentation.  Options containing secret data should be set to an attribute setcontaining the attribute  _secret  - a string pointing to afile containing the value the option should be set to. See the exampleto get a better picture of this: in the resulting configuration file,the  object_storage.s3.aws_secret_access_key  key will be setto the contents of the  /var/keys/aws_secret_access_key  file.",
+            "nixName": "workhorse.config",
+            "type": "TOML value",
+            "value": "{ }"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

@@ -1,0 +1,82 @@
+{
+    "name": "Minecraft Server",
+    "desc": "Server for Minecraft java edition",
+    "logo": "<URL to image>",
+    "tags": [
+        "Game",
+        "Server",
+        "Proprietary"
+    ],
+    "specs": {
+        "ram": 1024,
+        "storage": 1024
+    },
+    "nixName": "minecraft-server",
+    "options": [
+        {
+            "name": "dataDir",
+            "desc": "Directory to store Minecraft database and other state/data files.",
+            "nixName": "dataDir",
+            "type": "path",
+            "value": "\"/var/lib/minecraft\""
+        },
+        {
+            "name": "declarative",
+            "desc": "Whether to use a declarative Minecraft server configuration. Only ifset to  true , the options  services.minecraft-server.whitelist  and  services.minecraft-server.serverProperties  will beapplied.",
+            "nixName": "declarative",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "enable",
+            "desc": "If enabled, start a Minecraft Server. The server data will be loadedfrom and saved to  services.minecraft-server.dataDir .",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "eula",
+            "desc": "Whether you agree to   MojangsEULA . This option must be set to  true  to run Minecraftserver.",
+            "nixName": "eula",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "jvmOpts",
+            "desc": "JVM options for the Minecraft server.",
+            "nixName": "jvmOpts",
+            "type": "strings concatenated with \" \"",
+            "value": "\"-Xmx2048M -Xms2048M\""
+        },
+        {
+            "name": "openFirewall",
+            "desc": "Whether to open ports in the firewall for the server.",
+            "nixName": "openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The minecraft-server package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.minecraft-server"
+        },
+        {
+            "name": "serverProperties",
+            "desc": "Minecraft server properties for the server.properties file. Only hasan effect when  services.minecraft-server.declarative  is set to true . See  https://minecraft.gamepedia.com/Server.properties#Java_Edition_3 for documentation on these values.",
+            "nixName": "serverProperties",
+            "type": "attribute set of (boolean or signed integer or string)",
+            "value": "{ }"
+        },
+        {
+            "name": "whitelist",
+            "desc": "Whitelisted players, only has an effect when  services.minecraft-server.declarative  is true  and the whitelist is enabled via  services.minecraft-server.serverProperties  bysetting  white-list  to  true . This is a mappingfrom Minecraft usernames to UUIDs. You can use  https://mcuuid.net/  to get a MinecraftUUID for a username.",
+            "nixName": "whitelist",
+            "type": "attribute set of Minecraft UUID",
+            "value": "{ }"
+        }
+    ],
+    "show": false,
+    "tested": false
+}

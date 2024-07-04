@@ -1,0 +1,24 @@
+{
+    "name": "Taskwarrior",
+    "desc": "Highly flexible command-line tool to manage TODO lists",
+    "tags": [
+        "Task Management & To-do Lists\r"
+    ],
+    "website": "https://taskwarrior.org",
+    "implmented": false,
+    "logo": "https://taskwarrior.org/images/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "taskwarrior",
+    "options": [
+        {
+            "name": "misc/taskserver",
+            "desc": "Whether to enable the Taskwarrior server.More instructions about NixOS in conjunction with Taskserver can befound inthe NixOS manual.",
+            "nixName": "relatedOption.taskserver.enable",
+            "type": "boolean",
+            "value": "false"
+        }
+    ]
+}

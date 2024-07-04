@@ -1,0 +1,67 @@
+{
+    "name": "Hound",
+    "desc": "Lightning fast code searching made easy",
+    "tags": [
+        "Search Engines\r"
+    ],
+    "website": "https://github.com/hound-search/hound",
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "hound",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable hound.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group the hound daemon should execute under.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"hound\""
+        },
+        {
+            "name": "home",
+            "desc": "The path to use as hound\u2019s $HOME. If the default user \u201chound\u201d isconfigured then this is the home of the \u201chound\u201d user.",
+            "nixName": "home",
+            "type": "path",
+            "value": "\"/var/lib/hound\""
+        },
+        {
+            "name": "listen",
+            "desc": "Listen on this [IP]:port",
+            "nixName": "listen",
+            "type": "string",
+            "value": "\"0.0.0.0:6080\""
+        },
+        {
+            "name": "package",
+            "desc": "The hound package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.hound"
+        },
+        {
+            "name": "settings",
+            "desc": "The full configuration of the Hound daemon. See the upstreamdocumentation  https://github.com/hound-search/hound/blob/main/docs/config-options.md for details.   The  dbpath  should be an absolute path to a writabledirectory.",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": null
+        },
+        {
+            "name": "user",
+            "desc": "User the hound daemon should execute under.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"hound\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

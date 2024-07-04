@@ -1,0 +1,277 @@
+{
+    "name": "Forgejo",
+    "desc": "A self-hosted lightweight software forge",
+    "tags": [
+        "Software Development - Project Management\r"
+    ],
+    "website": "https://forgejo.org",
+    "logo": "https://forgejo.org/favicon.ico",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "forgejo",
+    "options": [
+        {
+            "name": "customDir",
+            "desc": "Base directory for custom templates and other options.  If  services.forgejo.useWizard  is disabled (default),this directory will also hold secrets and the resulting  app.ini  config atruntime.",
+            "nixName": "customDir",
+            "type": "string",
+            "value": "\"${config.services.forgejo.stateDir}/custom\""
+        },
+        {
+            "name": "database.createDatabase",
+            "desc": "Whether to create a local database automatically.",
+            "nixName": "database.createDatabase",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "database.host",
+            "desc": "Database host address.",
+            "nixName": "database.host",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "database.name",
+            "desc": "Database name.",
+            "nixName": "database.name",
+            "type": "string",
+            "value": "\"forgejo\""
+        },
+        {
+            "name": "database.passwordFile",
+            "desc": "A file containing the password corresponding to  services.forgejo.database.user .",
+            "nixName": "database.passwordFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "database.path",
+            "desc": "Path to the sqlite3 database file.",
+            "nixName": "database.path",
+            "type": "string",
+            "value": "\"${config.services.forgejo.stateDir}/data/forgejo.db\""
+        },
+        {
+            "name": "database.port",
+            "desc": "Database host port.",
+            "nixName": "database.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "if config.services.forgejo.database.type != \"postgresql\"\nthen 3306\nelse 5432\n"
+        },
+        {
+            "name": "database.socket",
+            "desc": "Path to the unix socket file to use for authentication.",
+            "nixName": "database.socket",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "database.type",
+            "desc": "Database engine to use.",
+            "nixName": "database.type",
+            "type": "one of \"sqlite3\", \"mysql\", \"postgres\"",
+            "value": "\"sqlite3\""
+        },
+        {
+            "name": "database.user",
+            "desc": "Database user.",
+            "nixName": "database.user",
+            "type": "string",
+            "value": "\"forgejo\""
+        },
+        {
+            "name": "dump.backupDir",
+            "desc": "Path to the directory where the dump archives will be stored.",
+            "nixName": "dump.backupDir",
+            "type": "string",
+            "value": "\"${config.services.forgejo.stateDir}/dump\""
+        },
+        {
+            "name": "dump.enable",
+            "desc": "Whether to enable periodic dumps via the  built-in dump command .",
+            "nixName": "dump.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "dump.file",
+            "desc": "Filename to be used for the dump. If  null  a default nameis chosen by forgejo.",
+            "nixName": "dump.file",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "dump.interval",
+            "desc": "Run a Forgejo dump at this interval. Runs by default at 04:31 everyday.  The format is described in   systemd.time(7)  .",
+            "nixName": "dump.interval",
+            "type": "string",
+            "value": "\"04:31\""
+        },
+        {
+            "name": "dump.type",
+            "desc": "Archive format used to store the dump file.",
+            "nixName": "dump.type",
+            "type": "one of \"zip\", \"tar\", \"tar.sz\", \"tar.gz\", \"tar.xz\", \"tar.bz2\", \"tar.br\", \"tar.lz4\", \"tar.zst\"",
+            "value": "\"zip\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Forgejo, a software forge.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which Forgejo runs.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"forgejo\""
+        },
+        {
+            "name": "lfs.contentDir",
+            "desc": "Where to store LFS files.",
+            "nixName": "lfs.contentDir",
+            "type": "string",
+            "value": "\"${config.services.forgejo.stateDir}/data/lfs\""
+        },
+        {
+            "name": "lfs.enable",
+            "desc": "Enables git-lfs support.",
+            "nixName": "lfs.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The forgejo package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.forgejo"
+        },
+        {
+            "name": "repositoryRoot",
+            "desc": "Path to the git repositories.",
+            "nixName": "repositoryRoot",
+            "type": "string",
+            "value": "\"${config.services.forgejo.stateDir}/repositories\""
+        },
+        {
+            "name": "secrets",
+            "desc": "This is a small wrapper over systemd\u2019s LoadCredential .  It takes the same sections and keys as  services.forgejo.settings , but the value of eachkey is a path instead of a string or bool.  The path is then loaded as credential, exported as environmentvariable and then feed through  https://codeberg.org/forgejo/forgejo/src/branch/forgejo/contrib/environment-to-ini/environment-to-ini.go .  It does the required environment variable escaping for you.   Keys specified here take priority over the ones in  services.forgejo.settings !",
+            "nixName": "secrets",
+            "type": "attribute set of attribute set of path",
+            "value": "{ }"
+        },
+        {
+            "name": "settings",
+            "desc": "Free-form settings written directly to the  app.ini configfile file. Refer to  https://forgejo.org/docs/latest/admin/config-cheat-sheet/ for supported values.",
+            "nixName": "settings",
+            "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.log.LEVEL",
+            "desc": "General log level.",
+            "nixName": "settings.log.LEVEL",
+            "type": "one of \"Trace\", \"Debug\", \"Info\", \"Warn\", \"Error\", \"Critical\"",
+            "value": "\"Info\""
+        },
+        {
+            "name": "settings.log.ROOT_PATH",
+            "desc": "Root path for log files.",
+            "nixName": "settings.log.ROOT_PATH",
+            "type": "string",
+            "value": "\"${config.services.forgejo.stateDir}/log\""
+        },
+        {
+            "name": "settings.server.DISABLE_SSH",
+            "desc": "Disable external SSH feature.",
+            "nixName": "settings.server.DISABLE_SSH",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.server.DOMAIN",
+            "desc": "Domain name of your server.",
+            "nixName": "settings.server.DOMAIN",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "settings.server.HTTP_ADDR",
+            "desc": "Listen address. Must be a path when using a unix socket.",
+            "nixName": "settings.server.HTTP_ADDR",
+            "type": "string or path",
+            "value": "if lib.hasSuffix \"+unix\" cfg.settings.server.PROTOCOL then \"/run/forgejo/forgejo.sock\" else \"0.0.0.0\""
+        },
+        {
+            "name": "settings.server.HTTP_PORT",
+            "desc": "Listen port. Ignored when using a unix socket.",
+            "nixName": "settings.server.HTTP_PORT",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "3000"
+        },
+        {
+            "name": "settings.server.PROTOCOL",
+            "desc": "Listen protocol.  +unix  means \u201cover unix\u201d, not \u201cinaddition to.\u201d",
+            "nixName": "settings.server.PROTOCOL",
+            "type": "one of \"http\", \"https\", \"fcgi\", \"http+unix\", \"fcgi+unix\"",
+            "value": "\"http\""
+        },
+        {
+            "name": "settings.server.ROOT_URL",
+            "desc": "Full public URL of Forgejo server.",
+            "nixName": "settings.server.ROOT_URL",
+            "type": "string",
+            "value": "\"http://${config.services.forgejo.settings.server.DOMAIN}:${toString config.services.forgejo.settings.server.HTTP_PORT}/\""
+        },
+        {
+            "name": "settings.server.SSH_PORT",
+            "desc": "SSH port displayed in clone URL. The option is required to configurea service when the external visible port differs from the locallistening port i.e. if port forwarding is used.",
+            "nixName": "settings.server.SSH_PORT",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "22"
+        },
+        {
+            "name": "settings.server.STATIC_ROOT_PATH",
+            "desc": "Upper level of template and static files path.",
+            "nixName": "settings.server.STATIC_ROOT_PATH",
+            "type": "string or path",
+            "value": "config.services.forgejo.package.data"
+        },
+        {
+            "name": "settings.session.COOKIE_SECURE",
+            "desc": "Marks session cookies as \u201csecure\u201d as a hint for browsers to only sendthem via HTTPS. This option is recommend, if Forgejo is being servedover HTTPS.",
+            "nixName": "settings.session.COOKIE_SECURE",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "stateDir",
+            "desc": "Forgejo data directory.",
+            "nixName": "stateDir",
+            "type": "string",
+            "value": "\"/var/lib/forgejo\""
+        },
+        {
+            "name": "useWizard",
+            "desc": "Whether to use the built-in installation wizard instead ofdeclaratively managing the  app.ini  config file in nix.",
+            "nixName": "useWizard",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "user",
+            "desc": "User account under which Forgejo runs.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"forgejo\""
+        }
+    ],
+    "show": false,
+    "tested": false
+}

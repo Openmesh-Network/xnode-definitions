@@ -1,0 +1,67 @@
+{
+    "name": "Tinyproxy",
+    "desc": "A light-weight HTTP/HTTPS proxy daemon for POSIX operating systems",
+    "tags": [
+        "Proxy"
+    ],
+    "website": "https://tinyproxy.github.io/",
+    "logo": "",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "nixName": "tinyproxy",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable Tinyproxy daemon.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The tinyproxy package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.tinyproxy"
+        },
+        {
+            "name": "settings",
+            "desc": "Configuration for  tinyproxy .",
+            "nixName": "settings",
+            "type": "attribute set of (atom (null, bool, int, float or string) or a list of them for duplicate keys)",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.Anonymous",
+            "desc": "If an  Anonymous  keyword is present, then anonymousproxying is enabled. The headers listed with  Anonymous  areallowed through, while all others are denied. If no Anonymous keyword ispresent, then all headers are allowed through. You must include quotesaround the headers.",
+            "nixName": "settings.Anonymous",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.Filter",
+            "desc": "Tinyproxy supports filtering of web sites based on URLs or domains.This option specifies the location of the file containing the filterrules, one rule per line.",
+            "nixName": "settings.Filter",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "settings.Listen",
+            "desc": "Specify which address to listen to.",
+            "nixName": "settings.Listen",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "settings.Port",
+            "desc": "Specify which port to listen to.",
+            "nixName": "settings.Port",
+            "type": "signed integer",
+            "value": "8888"
+        }
+    ],
+    "show": false,
+    "tested": false
+}
