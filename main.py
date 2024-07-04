@@ -1,6 +1,11 @@
 import json
 
 def main():
+    make_definitions()
+    reduce_spec_overrides()
+
+def make_definitions():
+    # This function creates the required definitions for the frontend to push to the backend to be read by the xnode
     new_services = []
     with open('nix-scraper/outputs/servicesWithOptions.json', 'r') as metadata:
         services_with_metadata = json.loads(metadata.read())['services']
@@ -12,8 +17,6 @@ def main():
         spec_overrides = json.loads(specs.read())
 
     accum = 0
-
-
     for service in services_with_metadata:
         scraper_service = services_with_metadata[service]
         new_service = {}
@@ -44,20 +47,31 @@ def main():
         if not backslash_in_name:
             new_services.append(new_service)
             accum += 1
-
         
         # Write services to individual files
         with open(f'definitions/{new_service["nixName"]}.json', 'w') as output:
-            output.write(json.dumps(new_service, indent=4))
-
-
-                
+            output.write(json.dumps(new_service, indent=4))      
 
     print("Total services:",accum)
     print("Total potential services:", len(nix_option_data))
 
     with open('service-definitions.json', 'w') as output:
         output.write(json.dumps(new_services, indent=4))
+
+def reduce_spec_overrides():
+    with open('manual-spec-overrides.json', 'r') as specs:
+        spec_overrides = json.loads(specs.read())
+
+    reduced_spec_overrides = []
+    for override in spec_overrides:
+        new_override = {}
+        new_override['nixName'] = override['nixName']
+        new_override['specs'] = override['specs']
+        if new_override not in reduced_spec_overrides:
+            reduced_spec_overrides.append(new_override)
+
+    with open('manual-spec-overrides.json', 'w') as output:
+        output.write(json.dumps(reduced_spec_overrides, indent=4))
 
 if __name__ == "__main__":
     main()
