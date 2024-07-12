@@ -45,7 +45,7 @@
             "desc": "Enable gitolite management under the  gitolite  user.After switching to a configuration with Gitolite enabled, you can thenrun  git clone gitolite@host:gitolite-admin.git  to manage itfurther.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "enableGitAnnex",

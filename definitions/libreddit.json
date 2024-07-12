@@ -24,7 +24,7 @@
             "desc": "Whether to enable Private front-end for Reddit.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "openFirewall",

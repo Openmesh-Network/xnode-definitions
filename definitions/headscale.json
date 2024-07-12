@@ -24,7 +24,7 @@
             "desc": "Whether to enable headscale, Open Source coordination server forTailscale.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "group",

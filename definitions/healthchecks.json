@@ -24,7 +24,7 @@
             "desc": "Enable healthchecks. It is expected to be run behind a HTTP reverseproxy.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "group",

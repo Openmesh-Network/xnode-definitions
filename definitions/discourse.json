@@ -108,7 +108,7 @@
             "desc": "Whether to enable Discourse, an open source discussion platform.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "enableACME",

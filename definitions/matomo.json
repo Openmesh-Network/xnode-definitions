@@ -17,7 +17,7 @@
             "desc": "Enable Matomo web analytics with php-fpm backend. Either the nginxoption or the webServerUser option is mandatory.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "hostname",

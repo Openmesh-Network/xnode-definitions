@@ -24,7 +24,7 @@
             "desc": "Whether to run squid web proxy.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "extraConfig",

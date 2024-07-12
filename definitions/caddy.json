@@ -52,7 +52,7 @@
             "desc": "Whether to enable Caddy web server.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "enableReload",

@@ -18,7 +18,7 @@
                 "desc": "Whether to run the GNUnet daemon. GNUnet is GNU\u2019s anonymouspeer-to-peer communication and file sharing framework.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraOptions",
@@ -176,7 +176,7 @@
                 "desc": "Whether to enable awstats, a real-time logfile analyzer.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "updateAt",
@@ -208,7 +208,7 @@
                 "desc": "Whether to enable Metabase service.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "listen.ip",
@@ -275,7 +275,7 @@
                 "desc": "Enable Matomo web analytics with php-fpm backend. Either the nginxoption or the webServerUser option is mandatory.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "hostname",
@@ -727,7 +727,7 @@
                 "desc": "Whether to enable plausible.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "mail.email",
@@ -850,7 +850,7 @@
                 "desc": "Whether to enable ollama server for local large language models.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "environmentVariables",
@@ -980,7 +980,7 @@
                 "desc": "Whether to enable changedetection-io.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "environmentFile",
@@ -1061,7 +1061,7 @@
                 "desc": "Whether to enable Lidarr, a Usenet/BitTorrent music downloader.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -1128,7 +1128,7 @@
                 "desc": "Whether to enable the headphones server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -1188,7 +1188,7 @@
                 "desc": "Whether to enable Sonarr.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -1248,7 +1248,7 @@
                 "desc": "Whether to enable Radarr, a UsetNet/BitTorrent movie downloader.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -1308,7 +1308,7 @@
                 "desc": "Enable healthchecks. It is expected to be run behind a HTTP reverseproxy.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -1459,7 +1459,7 @@
                 "desc": "Whether to enable Syncthing, a self-hosted open-source alternative toDropbox and Bittorrent Sync.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraFlags",
@@ -1771,7 +1771,7 @@
                 "desc": "Whether to enable the Stalwart all-in-one email server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "package",
@@ -1901,7 +1901,7 @@
                 "desc": "Whether to enable Discourse, an open source discussion platform.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableACME",
@@ -2227,7 +2227,7 @@
                 "desc": "Whether to enable Mastodon, a federated social network server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableUnixSocket",
@@ -2518,7 +2518,7 @@
                 "desc": "Whether to enable Jitsi Meet - Secure, Simple and Scalable VideoConferences.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "excalidraw.enable",
@@ -2981,7 +2981,7 @@
                 "desc": "Whether to enable Duplicati.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "interface",
@@ -3055,7 +3055,7 @@
                 "desc": "Whether to enable backups with duplicity.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "exclude",
@@ -3378,7 +3378,7 @@
                 "desc": "Whether to enable rsnapshot backups.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableManualRsnapshot",
@@ -3417,7 +3417,7 @@
                 "desc": "Whether to enable ActivityPub social network server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "environmentFile",
@@ -3477,7 +3477,7 @@
                 "desc": "Whether to enable isso, a commenting server similar to Disqus.  Note: The application\u2019s author suppose to run isso behind a reverseproxy. The embedded solution offered by NixOS is also only suitable forsmall installations below 20 requests per second .",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "settings",
@@ -3516,7 +3516,7 @@
                 "desc": "Whether to enable Private front-end for Reddit.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "openFirewall",
@@ -3646,7 +3646,7 @@
                 "desc": "Whether to enable Nitter, an alternative Twitter front-end.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "guestAccounts",
@@ -3881,7 +3881,7 @@
                 "desc": "Whether to enable pleroma.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -3955,7 +3955,7 @@
                 "desc": "Whether to enable Galene Service.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -4064,7 +4064,7 @@
                 "desc": "Whether to enable support for DRBD, the Distributed Replicated BlockDevice.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             }
         ],
         "show": false,
@@ -4089,7 +4089,7 @@
                 "desc": "Whether to enable GlusterFS Daemon.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableGlustereventsd",
@@ -4219,7 +4219,7 @@
                 "desc": "Whether to enable the Interplanetary File System (WARNING: may causesevere network degradation). NOTE: after enabling this option andrebuilding your system, you need to log out and back in for the IPFS_PATH  environment variable to be present in your shell.Until you do that, the CLI tools won\u2019t be able to talk to the daemon bydefault .",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableGC",
@@ -4479,7 +4479,7 @@
                 "desc": "sftpgo",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraArgs",
@@ -4707,7 +4707,7 @@
                 "desc": "Whether to enable the headless Transmission BitTorrent daemon.  Transmission daemon can be controlled via the RPC interface usingtransmission-remote, the WebUI ( http://127.0.0.1:9091/  by default), orother clients like stig or tremc.  Torrents are downloaded to  services.transmission.home /Downloadsby default and are accessible to users in the \u201ctransmission\u201d group.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraFlags",
@@ -4935,7 +4935,7 @@
                 "desc": "Whether to enable Audiobookshelf, self-hosted audiobook and podcastserver.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -5002,7 +5002,7 @@
                 "desc": "Whether to enable Gonic music server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "settings",
@@ -5048,7 +5048,7 @@
                 "desc": "Whether to enable Mopidy, a music player daemon.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extensionPackages",
@@ -5087,7 +5087,7 @@
                 "desc": "Whether to enable Navidrome music server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -5182,7 +5182,7 @@
                 "desc": "Whether to enable Jellyfin Media Server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -5284,7 +5284,7 @@
                 "desc": "Whether to enable Invidious.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraSettingsFile",
@@ -5379,7 +5379,7 @@
                 "desc": "Whether to enable owncast, a video live streaming solution.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -5481,7 +5481,7 @@
                 "desc": "Whether to enable alerta.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraConfig",
@@ -5534,7 +5534,7 @@
                 "desc": "Whether to enable Cadvisor service.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraOptions",
@@ -5664,7 +5664,7 @@
                 "desc": "Whether to enable netdata.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableAnalyticsReporting",
@@ -5920,7 +5920,7 @@
                 "desc": "Whether to enable Prometheus monitoring daemon.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableAgentMode",
@@ -17632,7 +17632,7 @@
                 "desc": "Whether to enable the Pomerium authenticating reverse proxy.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "secretsFile",
@@ -17685,7 +17685,7 @@
                 "desc": "Whether to enable Privoxy, non-caching filtering proxy.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableTor",
@@ -17780,7 +17780,7 @@
                 "desc": "Whether to run squid web proxy.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraConfig",
@@ -17833,7 +17833,7 @@
                 "desc": "Whether to enable Tinyproxy daemon.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "package",
@@ -17900,7 +17900,7 @@
                 "desc": "Whether to enable Apache Guacamole Server (guacd).",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraEnvironment",
@@ -17967,7 +17967,7 @@
                 "desc": "Whether to enable MeshCentral computer management server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "package",
@@ -18006,7 +18006,7 @@
                 "desc": "Whether to enable ShellHub Agent daemon.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "keepAliveInterval",
@@ -18073,7 +18073,7 @@
                 "desc": "Whether to enable hound.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -18147,7 +18147,7 @@
                 "desc": "Whether to enable OpenSearch.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraCmdLineOptions",
@@ -18277,7 +18277,7 @@
                 "desc": "Whether to enable typesense.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "package",
@@ -18414,7 +18414,7 @@
                 "desc": "Enable the gitlab service.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraConfig",
@@ -18901,7 +18901,7 @@
                 "desc": "Whether to enable gocd-server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "environment",
@@ -19017,7 +19017,7 @@
                 "desc": "Whether to enable the jenkins continuous integration server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "environment",
@@ -19203,7 +19203,7 @@
                 "desc": "Whether to enable openvscode-server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extensionsDir",
@@ -19333,7 +19333,7 @@
                 "desc": "Whether to enable RStudio server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "listenAddr",
@@ -19572,7 +19572,7 @@
                 "desc": "Whether to enable Forgejo, a software forge.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -19751,7 +19751,7 @@
                 "desc": "Whether to enable Gerrit service.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "jvmHeapLimit",
@@ -19867,7 +19867,7 @@
                 "desc": "Enable gitolite management under the  gitolite  user.After switching to a configuration with Gitolite enabled, you can thenrun  git clone gitolite@host:gitolite-admin.git  to manage itfurther.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableGitAnnex",
@@ -19997,7 +19997,7 @@
                 "desc": "Enable Go Git Service.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraConfig",
@@ -20148,7 +20148,7 @@
                 "desc": "Whether to enable Zammad, a web-based, open source usersupport/ticketing solution.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "host",
@@ -20285,7 +20285,7 @@
                 "desc": "Whether to enable ZoneMinder.  If you intend to run the database locally, you should set config.services.zoneminder.database.createLocally  to true.Otherwise, when set to  false  (the default), you will haveto create the database and database user as well as populate thedatabase yourself. Additionally, you will need to run zmupdate.pl  yourself when upgrading to a newer version.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraConfig",
@@ -20359,7 +20359,7 @@
                 "desc": "Whether to enable headscale, Open Source coordination server forTailscale.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -20822,7 +20822,7 @@
                 "desc": "Whether to enable ocserv.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             }
         ],
         "show": false,
@@ -20854,7 +20854,7 @@
                 "desc": "Whether to enable SoftEther VPN services.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "package",
@@ -20935,7 +20935,7 @@
                 "desc": "Whether to enable strongSwan.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enabledPlugins",
@@ -21023,7 +21023,7 @@
                 "desc": "Whether to enable Caddy web server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableReload",
@@ -21174,7 +21174,7 @@
                 "desc": "Whether to enable HAProxy, the reliable, high performance TCP/HTTPload balancer.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "group",
@@ -21269,7 +21269,7 @@
                 "desc": "Enable the lighttpd web server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableModules",
@@ -21357,7 +21357,7 @@
                 "desc": "Whether to enable Static Web Server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "listen",
@@ -21417,7 +21417,7 @@
                 "desc": "Whether to enable Traefik web server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "environmentFiles",
@@ -21484,7 +21484,7 @@
                 "desc": "Whether to enable Varnish Server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "enableConfigCheck",
@@ -21566,7 +21566,7 @@
                 "desc": "If enabled, start a Minecraft Server. The server data will be loadedfrom and saved to  services.minecraft-server.dataDir .",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "eula",
@@ -21675,7 +21675,7 @@
                 "desc": "Whether to enable the OpenSSH secure shell daemon, which allowssecure remote logins.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "extraConfig",
@@ -21962,7 +21962,7 @@
                 "desc": "Whether to enable Open-WebUI server.",
                 "nixName": "enable",
                 "type": "boolean",
-                "value": "false"
+                "value": "true"
             },
             {
                 "name": "environment",

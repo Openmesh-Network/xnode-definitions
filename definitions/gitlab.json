@@ -94,7 +94,7 @@
             "desc": "Enable the gitlab service.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "extraConfig",

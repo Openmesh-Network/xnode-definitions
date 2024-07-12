@@ -59,7 +59,7 @@
             "desc": "Whether to enable ZoneMinder.  If you intend to run the database locally, you should set config.services.zoneminder.database.createLocally  to true.Otherwise, when set to  false  (the default), you will haveto create the database and database user as well as populate thedatabase yourself. Additionally, you will need to run zmupdate.pl  yourself when upgrading to a newer version.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "extraConfig",

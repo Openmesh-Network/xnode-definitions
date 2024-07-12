@@ -52,7 +52,7 @@
             "desc": "Whether to enable the Interplanetary File System (WARNING: may causesevere network degradation). NOTE: after enabling this option andrebuilding your system, you need to log out and back in for the IPFS_PATH  environment variable to be present in your shell.Until you do that, the CLI tools won\u2019t be able to talk to the daemon bydefault .",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "enableGC",

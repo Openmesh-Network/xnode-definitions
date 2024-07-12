@@ -108,7 +108,7 @@
             "desc": "Whether to enable Mastodon, a federated social network server.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "enableUnixSocket",

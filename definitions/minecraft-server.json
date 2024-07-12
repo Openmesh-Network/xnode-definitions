@@ -32,7 +32,7 @@
             "desc": "If enabled, start a Minecraft Server. The server data will be loadedfrom and saved to  services.minecraft-server.dataDir .",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "eula",

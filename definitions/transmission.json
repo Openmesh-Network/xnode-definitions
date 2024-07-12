@@ -31,7 +31,7 @@
             "desc": "Whether to enable the headless Transmission BitTorrent daemon.  Transmission daemon can be controlled via the RPC interface usingtransmission-remote, the WebUI ( http://127.0.0.1:9091/  by default), orother clients like stig or tremc.  Torrents are downloaded to  services.transmission.home /Downloadsby default and are accessible to users in the \u201ctransmission\u201d group.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "extraFlags",

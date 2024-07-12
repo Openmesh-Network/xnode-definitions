@@ -17,7 +17,7 @@
             "desc": "Whether to enable GlusterFS Daemon.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "enableGlustereventsd",

@@ -122,7 +122,7 @@
             "desc": "Whether to enable Forgejo, a software forge.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "group",

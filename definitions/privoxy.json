@@ -24,7 +24,7 @@
             "desc": "Whether to enable Privoxy, non-caching filtering proxy.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "enableTor",

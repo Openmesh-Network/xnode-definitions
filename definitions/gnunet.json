@@ -17,7 +17,7 @@
             "desc": "Whether to run the GNUnet daemon. GNUnet is GNU\u2019s anonymouspeer-to-peer communication and file sharing framework.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "extraOptions",

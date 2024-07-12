@@ -31,7 +31,7 @@
             "desc": "Whether to enable the headphones server.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "group",

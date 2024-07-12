@@ -101,7 +101,7 @@
             "desc": "Whether to enable Nitter, an alternative Twitter front-end.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "guestAccounts",

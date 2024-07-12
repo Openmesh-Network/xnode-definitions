@@ -20,7 +20,7 @@
             "desc": "Whether to enable Open-WebUI server.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "environment",

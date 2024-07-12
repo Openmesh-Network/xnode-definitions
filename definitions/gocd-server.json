@@ -17,7 +17,7 @@
             "desc": "Whether to enable gocd-server.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "environment",

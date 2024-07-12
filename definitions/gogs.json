@@ -94,7 +94,7 @@
             "desc": "Enable Go Git Service.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "extraConfig",

@@ -38,7 +38,7 @@
             "desc": "Whether to enable backups with duplicity.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "exclude",

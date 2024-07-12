@@ -17,7 +17,7 @@
             "desc": "Whether to enable isso, a commenting server similar to Disqus.  Note: The application\u2019s author suppose to run isso behind a reverseproxy. The embedded solution offered by NixOS is also only suitable forsmall installations below 20 requests per second .",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "settings",

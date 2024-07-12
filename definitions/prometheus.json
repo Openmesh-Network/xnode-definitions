@@ -192,7 +192,7 @@
             "desc": "Whether to enable Prometheus monitoring daemon.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "enableAgentMode",

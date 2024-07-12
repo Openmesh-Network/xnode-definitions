@@ -24,7 +24,7 @@
             "desc": "Whether to enable owncast, a video live streaming solution.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "group",

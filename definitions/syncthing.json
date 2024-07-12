@@ -52,7 +52,7 @@
             "desc": "Whether to enable Syncthing, a self-hosted open-source alternative toDropbox and Bittorrent Sync.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "extraFlags",

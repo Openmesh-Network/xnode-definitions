@@ -17,7 +17,7 @@
             "desc": "Whether to enable Apache Guacamole Server (guacd).",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "extraEnvironment",

@@ -31,7 +31,7 @@
             "desc": "Whether to enable Jitsi Meet - Secure, Simple and Scalable VideoConferences.",
             "nixName": "enable",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "excalidraw.enable",
