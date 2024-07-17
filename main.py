@@ -29,6 +29,7 @@ def make_definition_from_templates(starting_services, nix_option_data):
         services_from_templates = json.loads(templatedata.read())
 
     # Filter by existing service defs and add basic nix options for any existing in templates
+    print("Total templates:", len(services_from_templates))
     extra_services = add_extra_definitions(starting_services, services_from_templates, nix_option_data)
 
     # need to fill in metadata for these extra services, such as specs, desc and tags
@@ -114,6 +115,8 @@ def add_extra_definitions(starting_services, extra_services, nix_data):
     # Find service data from nix option data, we can run 
     #print(starting_services)
     missing_services = []
+    still_missing = []
+    final_services_with_templates = 0
 
     for template in extra_services:
         # All templates
@@ -123,19 +126,29 @@ def add_extra_definitions(starting_services, extra_services, nix_data):
             for service in starting_services:
                 if service['nixName'] == template_service:
                     service_scraped = True
+                    final_services_with_templates += 1
                     break
 
             if template_service and not service_scraped:
                 # Service was missing from starting services but existed in extra services
+                found_missing = False
                 for nix_service in nix_data:
                     if nix_service["nixName"] == template_service: #in template_service:
                         missing_services.append(nix_service)
                         write_to_definition_file(nix_service)
+                        found_missing = True
+                        final_services_with_templates += 1
 
+                if not found_missing:
+                    still_missing.append(template_service)
 
     print("Included extra services: ", len(missing_services))
+    print("Unable to include services", len(still_missing), still_missing)
+    
+    final_services = starting_services.extend(missing_services)
+    print("Total services which have templates", final_services_with_templates)
 
-    return starting_services.extend(missing_services)
+    return final_services
 
 if __name__ == "__main__":
     main()
