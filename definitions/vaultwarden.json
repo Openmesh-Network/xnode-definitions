@@ -1,0 +1,55 @@
+{
+    "name": "vaultwarden",
+    "nixName": "vaultwarden",
+    "options": [
+        {
+            "name": "backupDir",
+            "desc": "The directory under which vaultwarden will backup its persistentdata.",
+            "nixName": "backupDir",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "config",
+            "desc": "The configuration of vaultwarden is done through environmentvariables, therefore it is recommended to use upper snake case (e.g. DISABLE_2FA_REMEMBER ).  However, camel case (e.g.  disable2FARemember ) is alsosupported: The NixOS module will convert it automatically to upper casesnake case (e.g.  DISABLE_2FA_REMEMBER ). In this conversion digits (0-9)are handled just like upper case characters, so  foo2  wouldbe converted to  FOO_2 .Names already in this format remain unchanged, so  FOO2 remains  FOO2  if passed as such, even though foo2  would have been converted to  FOO_2 . This allows workingaround any potential future conflicting naming conventions.  Based on the attributes passed to this config option an environmentfile will be generated that is passed to vaultwarden\u2019s systemdservice.  The available configuration options can be found in  theenvironment template file .  See  services.vaultwarden.environmentFile for how to set up access to the Admin UI to invite initial users.",
+            "nixName": "config",
+            "type": "attribute set of (null or boolean or signed integer or string)",
+            "value": "{\n  ROCKET_ADDRESS = \"::1\";\n  ROCKET_PORT = 8222;\n}"
+        },
+        {
+            "name": "dbBackend",
+            "desc": "Which database backend vaultwarden will be using.",
+            "nixName": "dbBackend",
+            "type": "one of \"sqlite\", \"mysql\", \"postgresql\"",
+            "value": "\"sqlite\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable vaultwarden.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "environmentFile",
+            "desc": "Additional environment file as defined in   systemd.exec(5)  .  Secrets like  ADMIN_TOKEN  and  SMTP_PASSWORD  should be passed to the service withoutadding them to the world-readable Nix store.  Note that this file needs to be available on the host on which vaultwarden  is running.  As a concrete example, to make the Admin UI available (from which newusers can be invited initially), the secret  ADMIN_TOKEN  needs to bedefined as described  here :   # Admin secret token, see# https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-pageADMIN_TOKEN=...copy-paste a unique generated secret token here...",
+            "nixName": "environmentFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "package",
+            "desc": "The vaultwarden package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.vaultwarden"
+        },
+        {
+            "name": "webVaultPackage",
+            "desc": "Web vault package to use.",
+            "nixName": "webVaultPackage",
+            "type": "package",
+            "value": "pkgs.vaultwarden.webvault"
+        }
+    ]
+}

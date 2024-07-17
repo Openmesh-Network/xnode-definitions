@@ -1,0 +1,1133 @@
+{
+    "name": "grafana",
+    "nixName": "grafana",
+    "options": [
+        {
+            "name": "dataDir",
+            "desc": "Data directory.",
+            "nixName": "dataDir",
+            "type": "path",
+            "value": "\"/var/lib/grafana\""
+        },
+        {
+            "name": "declarativePlugins",
+            "desc": "If non-null, then a list of packages containing Grafana plugins toinstall. If set, plugins cannot be manually installed.",
+            "nixName": "declarativePlugins",
+            "type": "null or (list of path)",
+            "value": "null"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable grafana.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "package",
+            "desc": "The grafana package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.grafana"
+        },
+        {
+            "name": "provision.alerting.contactPoints.path",
+            "desc": "Path to YAML contact points configuration. Can\u2019t be used with  services.grafana.provision.alerting.contactPoints.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+            "nixName": "provision.alerting.contactPoints.path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.contactPoints.settings",
+            "desc": "Grafana contact points configuration in Nix. Can\u2019t be used with  services.grafana.provision.alerting.contactPoints.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#contact-points for supported options.",
+            "nixName": "provision.alerting.contactPoints.settings",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.contactPoints.settings.apiVersion",
+            "desc": "Config file version.",
+            "nixName": "provision.alerting.contactPoints.settings.apiVersion",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.contactPoints.settings.contactPoints",
+            "desc": "List of contact points to import or update.",
+            "nixName": "provision.alerting.contactPoints.settings.contactPoints",
+            "type": "list of (YAML value)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.contactPoints.settings.contactPoints.*.name",
+            "desc": "Name of the contact point. Required.",
+            "nixName": "provision.alerting.contactPoints.settings.contactPoints.*.name",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.contactPoints.settings.deleteContactPoints",
+            "desc": "List of receivers that should be deleted.",
+            "nixName": "provision.alerting.contactPoints.settings.deleteContactPoints",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.contactPoints.settings.deleteContactPoints.*.orgId",
+            "desc": "Organization ID, default = 1.",
+            "nixName": "provision.alerting.contactPoints.settings.deleteContactPoints.*.orgId",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.contactPoints.settings.deleteContactPoints.*.uid",
+            "desc": "Unique identifier for the receiver. Required.",
+            "nixName": "provision.alerting.contactPoints.settings.deleteContactPoints.*.uid",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.muteTimings.path",
+            "desc": "Path to YAML mute timings configuration. Can\u2019t be used with  services.grafana.provision.alerting.muteTimings.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+            "nixName": "provision.alerting.muteTimings.path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.muteTimings.settings",
+            "desc": "Grafana mute timings configuration in Nix. Can\u2019t be used with  services.grafana.provision.alerting.muteTimings.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#mute-timings for supported options.",
+            "nixName": "provision.alerting.muteTimings.settings",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.muteTimings.settings.apiVersion",
+            "desc": "Config file version.",
+            "nixName": "provision.alerting.muteTimings.settings.apiVersion",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.muteTimings.settings.deleteMuteTimes",
+            "desc": "List of mute time intervals that should be deleted.",
+            "nixName": "provision.alerting.muteTimings.settings.deleteMuteTimes",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.name",
+            "desc": "Name of the mute time interval, must be unique. Required.",
+            "nixName": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.name",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.orgId",
+            "desc": "Organization ID, default = 1.",
+            "nixName": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.orgId",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.muteTimings.settings.muteTimes",
+            "desc": "List of mute time intervals to import or update.",
+            "nixName": "provision.alerting.muteTimings.settings.muteTimes",
+            "type": "list of (YAML value)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.muteTimings.settings.muteTimes.*.name",
+            "desc": "Name of the mute time interval, must be unique. Required.",
+            "nixName": "provision.alerting.muteTimings.settings.muteTimes.*.name",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.policies.path",
+            "desc": "Path to YAML notification policies configuration. Can\u2019t be used with services.grafana.provision.alerting.policies.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+            "nixName": "provision.alerting.policies.path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.policies.settings",
+            "desc": "Grafana notification policies configuration in Nix. Can\u2019t be usedwith  services.grafana.provision.alerting.policies.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#notification-policies for supported options.",
+            "nixName": "provision.alerting.policies.settings",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.policies.settings.apiVersion",
+            "desc": "Config file version.",
+            "nixName": "provision.alerting.policies.settings.apiVersion",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.policies.settings.policies",
+            "desc": "List of contact points to import or update.",
+            "nixName": "provision.alerting.policies.settings.policies",
+            "type": "list of (YAML value)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.policies.settings.resetPolicies",
+            "desc": "List of orgIds that should be reset to the default policy.",
+            "nixName": "provision.alerting.policies.settings.resetPolicies",
+            "type": "list of signed integer",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.rules.path",
+            "desc": "Path to YAML rules configuration. Can\u2019t be used with  services.grafana.provision.alerting.rules.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+            "nixName": "provision.alerting.rules.path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.rules.settings",
+            "desc": "Grafana rules configuration in Nix. Can\u2019t be used with  services.grafana.provision.alerting.rules.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#rules for supported options.",
+            "nixName": "provision.alerting.rules.settings",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.rules.settings.apiVersion",
+            "desc": "Config file version.",
+            "nixName": "provision.alerting.rules.settings.apiVersion",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.rules.settings.deleteRules",
+            "desc": "List of alert rule UIDs that should be deleted.",
+            "nixName": "provision.alerting.rules.settings.deleteRules",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.rules.settings.deleteRules.*.orgId",
+            "desc": "Organization ID, default = 1",
+            "nixName": "provision.alerting.rules.settings.deleteRules.*.orgId",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.rules.settings.deleteRules.*.uid",
+            "desc": "Unique identifier for the rule. Required.",
+            "nixName": "provision.alerting.rules.settings.deleteRules.*.uid",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.rules.settings.groups",
+            "desc": "List of rule groups to import or update.",
+            "nixName": "provision.alerting.rules.settings.groups",
+            "type": "list of (YAML value)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.rules.settings.groups.*.folder",
+            "desc": "Name of the folder the rule group will be stored in. Required.",
+            "nixName": "provision.alerting.rules.settings.groups.*.folder",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.rules.settings.groups.*.interval",
+            "desc": "Interval that the rule group should be evaluated at. Required.",
+            "nixName": "provision.alerting.rules.settings.groups.*.interval",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.rules.settings.groups.*.name",
+            "desc": "Name of the rule group. Required.",
+            "nixName": "provision.alerting.rules.settings.groups.*.name",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.templates.path",
+            "desc": "Path to YAML templates configuration. Can\u2019t be used with  services.grafana.provision.alerting.templates.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+            "nixName": "provision.alerting.templates.path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.templates.settings",
+            "desc": "Grafana templates configuration in Nix. Can\u2019t be used with  services.grafana.provision.alerting.templates.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#templates for supported options.",
+            "nixName": "provision.alerting.templates.settings",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "provision.alerting.templates.settings.apiVersion",
+            "desc": "Config file version.",
+            "nixName": "provision.alerting.templates.settings.apiVersion",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.templates.settings.deleteTemplates",
+            "desc": "List of alert rule UIDs that should be deleted.",
+            "nixName": "provision.alerting.templates.settings.deleteTemplates",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.templates.settings.deleteTemplates.*.name",
+            "desc": "Name of the template, must be unique. Required.",
+            "nixName": "provision.alerting.templates.settings.deleteTemplates.*.name",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.templates.settings.deleteTemplates.*.orgId",
+            "desc": "Organization ID, default = 1.",
+            "nixName": "provision.alerting.templates.settings.deleteTemplates.*.orgId",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.alerting.templates.settings.templates",
+            "desc": "List of templates to import or update.",
+            "nixName": "provision.alerting.templates.settings.templates",
+            "type": "list of (YAML value)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.alerting.templates.settings.templates.*.name",
+            "desc": "Name of the template, must be unique. Required.",
+            "nixName": "provision.alerting.templates.settings.templates.*.name",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.alerting.templates.settings.templates.*.template",
+            "desc": "Alerting with a custom text template",
+            "nixName": "provision.alerting.templates.settings.templates.*.template",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.dashboards",
+            "desc": "Declaratively provision Grafana\u2019s dashboards.",
+            "nixName": "provision.dashboards",
+            "type": "submodule",
+            "value": "{ }"
+        },
+        {
+            "name": "provision.dashboards.path",
+            "desc": "Path to YAML dashboard configuration. Can\u2019t be used with  services.grafana.provision.dashboards.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+            "nixName": "provision.dashboards.path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "provision.dashboards.settings",
+            "desc": "Grafana dashboard configuration in Nix. Can\u2019t be used with  services.grafana.provision.dashboards.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#dashboards for supported options.",
+            "nixName": "provision.dashboards.settings",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "provision.dashboards.settings.apiVersion",
+            "desc": "Config file version.",
+            "nixName": "provision.dashboards.settings.apiVersion",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.dashboards.settings.providers",
+            "desc": "List of dashboards to insert/update.",
+            "nixName": "provision.dashboards.settings.providers",
+            "type": "list of (YAML value)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.dashboards.settings.providers.*.name",
+            "desc": "A unique provider name.",
+            "nixName": "provision.dashboards.settings.providers.*.name",
+            "type": "string",
+            "value": "\"default\""
+        },
+        {
+            "name": "provision.dashboards.settings.providers.*.options.path",
+            "desc": "Path grafana will watch for dashboards. Required when using the\u2018file\u2019 type.",
+            "nixName": "provision.dashboards.settings.providers.*.options.path",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "provision.dashboards.settings.providers.*.type",
+            "desc": "Dashboard provider type.",
+            "nixName": "provision.dashboards.settings.providers.*.type",
+            "type": "string",
+            "value": "\"file\""
+        },
+        {
+            "name": "provision.datasources",
+            "desc": "Declaratively provision Grafana\u2019s datasources.",
+            "nixName": "provision.datasources",
+            "type": "submodule",
+            "value": "{ }"
+        },
+        {
+            "name": "provision.datasources.path",
+            "desc": "Path to YAML datasource configuration. Can\u2019t be used with  services.grafana.provision.datasources.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+            "nixName": "provision.datasources.path",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "provision.datasources.settings",
+            "desc": "Grafana datasource configuration in Nix. Can\u2019t be used with  services.grafana.provision.datasources.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#data-sources for supported options.",
+            "nixName": "provision.datasources.settings",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "provision.datasources.settings.apiVersion",
+            "desc": "Config file version.",
+            "nixName": "provision.datasources.settings.apiVersion",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "provision.datasources.settings.datasources",
+            "desc": "List of datasources to insert/update.",
+            "nixName": "provision.datasources.settings.datasources",
+            "type": "list of (YAML value)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.datasources.settings.datasources.*.access",
+            "desc": "Access mode. proxy or direct (Server or Browser in the UI).Required.",
+            "nixName": "provision.datasources.settings.datasources.*.access",
+            "type": "one of \"proxy\", \"direct\"",
+            "value": "\"proxy\""
+        },
+        {
+            "name": "provision.datasources.settings.datasources.*.editable",
+            "desc": "Allow users to edit datasources from the UI.",
+            "nixName": "provision.datasources.settings.datasources.*.editable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "provision.datasources.settings.datasources.*.jsonData",
+            "desc": "Extra data for datasource plugins.",
+            "nixName": "provision.datasources.settings.datasources.*.jsonData",
+            "type": "null or (attribute set)",
+            "value": "null"
+        },
+        {
+            "name": "provision.datasources.settings.datasources.*.name",
+            "desc": "Name of the datasource. Required.",
+            "nixName": "provision.datasources.settings.datasources.*.name",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.datasources.settings.datasources.*.secureJsonData",
+            "desc": "Datasource specific secure configuration. Please note that thecontents of this option will end up in a world-readable Nix store. Usethe file provider pointing at a reasonably secured file in the localfilesystem to work around that. Look at the documentation for details: https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+            "nixName": "provision.datasources.settings.datasources.*.secureJsonData",
+            "type": "null or (attribute set)",
+            "value": "null"
+        },
+        {
+            "name": "provision.datasources.settings.datasources.*.type",
+            "desc": "Datasource type. Required.",
+            "nixName": "provision.datasources.settings.datasources.*.type",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.datasources.settings.datasources.*.uid",
+            "desc": "Custom UID which can be used to reference this datasource in otherparts of the configuration, if not specified will be generatedautomatically.",
+            "nixName": "provision.datasources.settings.datasources.*.uid",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "provision.datasources.settings.datasources.*.url",
+            "desc": "Url of the datasource.",
+            "nixName": "provision.datasources.settings.datasources.*.url",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "provision.datasources.settings.deleteDatasources",
+            "desc": "List of datasources that should be deleted from the database.",
+            "nixName": "provision.datasources.settings.deleteDatasources",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "provision.datasources.settings.deleteDatasources.*.name",
+            "desc": "Name of the datasource to delete.",
+            "nixName": "provision.datasources.settings.deleteDatasources.*.name",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "provision.datasources.settings.deleteDatasources.*.orgId",
+            "desc": "Organization ID of the datasource to delete.",
+            "nixName": "provision.datasources.settings.deleteDatasources.*.orgId",
+            "type": "signed integer",
+            "value": null
+        },
+        {
+            "name": "provision.enable",
+            "desc": "Whether to enable provision.",
+            "nixName": "provision.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings",
+            "desc": "Grafana settings. See  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/ for available options. INI format is used.",
+            "nixName": "settings",
+            "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string) or a non-empty list of them)",
+            "value": null
+        },
+        {
+            "name": "settings.analytics.check_for_plugin_updates",
+            "desc": "When set to  false , disables checking for new versions ofinstalled plugins from  https://grafana.com . When enabled, thecheck for a new plugin runs every 10 minutes. It will notify, via theUI, when a new plugin update exists. The check itself will not promptany auto-updates of the plugin, nor will it send any sensitiveinformation.",
+            "nixName": "settings.analytics.check_for_plugin_updates",
+            "type": "boolean",
+            "value": "cfg.declarativePlugins == null"
+        },
+        {
+            "name": "settings.analytics.check_for_updates",
+            "desc": "When set to  false , disables checking for new versions ofGrafana from Grafana\u2019s GitHub repository. When enabled, the check for anew version runs every 10 minutes. It will notify, via the UI, when anew version is available. The check itself will not prompt anyauto-updates of the Grafana software, nor will it send any sensitiveinformation.",
+            "nixName": "settings.analytics.check_for_updates",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.analytics.feedback_links_enabled",
+            "desc": "Set to  false  to remove all feedback links from theUI.",
+            "nixName": "settings.analytics.feedback_links_enabled",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.analytics.reporting_enabled",
+            "desc": "When enabled Grafana will send anonymous usage statistics to stats.grafana.org . No IP addresses are being tracked, onlysimple counters to track running instances, versions, dashboard anderror counts. Counters are sent every 24 hours.",
+            "nixName": "settings.analytics.reporting_enabled",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.database.ca_cert_path",
+            "desc": "The path to the CA certificate to use.",
+            "nixName": "settings.database.ca_cert_path",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.database.cache_mode",
+            "desc": "For  sqlite3  only.  Shared cache  settingused for connecting to the database.",
+            "nixName": "settings.database.cache_mode",
+            "type": "one of \"private\", \"shared\"",
+            "value": "\"private\""
+        },
+        {
+            "name": "settings.database.client_cert_path",
+            "desc": "The path to the client cert. Only if server requires clientauthentication.",
+            "nixName": "settings.database.client_cert_path",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.database.client_key_path",
+            "desc": "The path to the client key. Only if server requires clientauthentication.",
+            "nixName": "settings.database.client_key_path",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.database.conn_max_lifetime",
+            "desc": "Sets the maximum amount of time a connection may be reused. Thedefault is 14400 (which means 14400 seconds or 4 hours). For MySQL, thissetting should be shorter than the  wait_timeout variable.",
+            "nixName": "settings.database.conn_max_lifetime",
+            "type": "signed integer",
+            "value": "14400"
+        },
+        {
+            "name": "settings.database.host",
+            "desc": "Only applicable to MySQL or Postgres. Includes IP or hostname andport or in case of Unix sockets the path to it. For example, for MySQLrunning on the same host as Grafana: host = \"127.0.0.1:3306\"  or with Unix sockets: host = \"/var/run/mysqld/mysqld.sock\"",
+            "nixName": "settings.database.host",
+            "type": "string",
+            "value": "\"127.0.0.1:3306\""
+        },
+        {
+            "name": "settings.database.isolation_level",
+            "desc": "Only the MySQL driver supports isolation levels in Grafana. In casethe value is empty, the driver\u2019s default isolation level is applied.",
+            "nixName": "settings.database.isolation_level",
+            "type": "null or one of \"READ-UNCOMMITTED\", \"READ-COMMITTED\", \"REPEATABLE-READ\", \"SERIALIZABLE\"",
+            "value": "null"
+        },
+        {
+            "name": "settings.database.locking_attempt_timeout_sec",
+            "desc": "For  mysql , if the  migrationLocking  featuretoggle is set, specify the time (in seconds) to wait before failing tolock the database for the migrations.",
+            "nixName": "settings.database.locking_attempt_timeout_sec",
+            "type": "signed integer",
+            "value": "0"
+        },
+        {
+            "name": "settings.database.log_queries",
+            "desc": "Set to  true  to log the sql calls and execution times",
+            "nixName": "settings.database.log_queries",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.database.max_idle_conn",
+            "desc": "The maximum number of connections in the idle connection pool.",
+            "nixName": "settings.database.max_idle_conn",
+            "type": "signed integer",
+            "value": "2"
+        },
+        {
+            "name": "settings.database.max_open_conn",
+            "desc": "The maximum number of open connections to the database.",
+            "nixName": "settings.database.max_open_conn",
+            "type": "signed integer",
+            "value": "0"
+        },
+        {
+            "name": "settings.database.name",
+            "desc": "The name of the Grafana database.",
+            "nixName": "settings.database.name",
+            "type": "string",
+            "value": "\"grafana\""
+        },
+        {
+            "name": "settings.database.password",
+            "desc": "The database user\u2019s password (not applicable for sqlite3 ).  Please note that the contents of this option will end up in aworld-readable Nix store. Use the file provider pointing at a reasonablysecured file in the local filesystem to work around that. Look at thedocumentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+            "nixName": "settings.database.password",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "settings.database.path",
+            "desc": "Only applicable to  sqlite3  database. The file path wherethe database will be stored.",
+            "nixName": "settings.database.path",
+            "type": "path",
+            "value": "\"${config.services.grafana.dataDir}/data/grafana.db\""
+        },
+        {
+            "name": "settings.database.query_retries",
+            "desc": "This setting applies to  sqlite3  only and controls thenumber of times the system retries a query when the database islocked.",
+            "nixName": "settings.database.query_retries",
+            "type": "signed integer",
+            "value": "0"
+        },
+        {
+            "name": "settings.database.server_cert_name",
+            "desc": "The common name field of the certificate used by the mysql  or  postgres  server. Not necessary if ssl_mode  is set to  skip-verify .",
+            "nixName": "settings.database.server_cert_name",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.database.ssl_mode",
+            "desc": "For Postgres, use either  disable ,  require or  verify-full . For MySQL, use either  true , false , or  skip-verify .",
+            "nixName": "settings.database.ssl_mode",
+            "type": "one of \"disable\", \"require\", \"verify-full\", \"true\", \"false\", \"skip-verify\"",
+            "value": "\"disable\""
+        },
+        {
+            "name": "settings.database.transaction_retries",
+            "desc": "This setting applies to  sqlite3  only and controls thenumber of times the system retries a transaction when the database islocked.",
+            "nixName": "settings.database.transaction_retries",
+            "type": "signed integer",
+            "value": "5"
+        },
+        {
+            "name": "settings.database.type",
+            "desc": "Database type.",
+            "nixName": "settings.database.type",
+            "type": "one of \"mysql\", \"sqlite3\", \"postgres\"",
+            "value": "\"sqlite3\""
+        },
+        {
+            "name": "settings.database.user",
+            "desc": "The database user (not applicable for  sqlite3 ).",
+            "nixName": "settings.database.user",
+            "type": "string",
+            "value": "\"root\""
+        },
+        {
+            "name": "settings.database.wal",
+            "desc": "For  sqlite3  only. Setting to enable/disable  Write-Ahead Logging .",
+            "nixName": "settings.database.wal",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.paths.plugins",
+            "desc": "Directory where grafana will automatically scan and look forplugins",
+            "nixName": "settings.paths.plugins",
+            "type": "path",
+            "value": "if (cfg.declarativePlugins == null) then \"${cfg.dataDir}/plugins\" else declarativePlugins"
+        },
+        {
+            "name": "settings.paths.provisioning",
+            "desc": "Folder that contains provisioning config files that grafana willapply on startup and while running. Don\u2019t change the value of thisoption if you are planning to use services.grafana.provision  options.",
+            "nixName": "settings.paths.provisioning",
+            "type": "path",
+            "value": "\"directory with links to files generated from services.grafana.provision\""
+        },
+        {
+            "name": "settings.security.admin_email",
+            "desc": "The email of the default Grafana Admin, created on startup.",
+            "nixName": "settings.security.admin_email",
+            "type": "string",
+            "value": "\"admin@localhost\""
+        },
+        {
+            "name": "settings.security.admin_password",
+            "desc": "Default admin password. Please note that the contents of this optionwill end up in a world-readable Nix store. Use the file providerpointing at a reasonably secured file in the local filesystem to workaround that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+            "nixName": "settings.security.admin_password",
+            "type": "string",
+            "value": "\"admin\""
+        },
+        {
+            "name": "settings.security.admin_user",
+            "desc": "Default admin username.",
+            "nixName": "settings.security.admin_user",
+            "type": "string",
+            "value": "\"admin\""
+        },
+        {
+            "name": "settings.security.allow_embedding",
+            "desc": "When  false , the HTTP header X-Frame-Options: deny  will be set in Grafana HTTP responseswhich will instruct browsers to not allow rendering Grafana in a <frame> ,  <iframe> , <embed>  or  <object> . The main goalis to mitigate the risk of  Clickjacking .",
+            "nixName": "settings.security.allow_embedding",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.content_security_policy",
+            "desc": "Set to  true  to add the Content-Security-Policy  header to your requests. CSP allowsto control resources that the user agent can load and helps prevent XSSattacks.",
+            "nixName": "settings.security.content_security_policy",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.content_security_policy_report_only",
+            "desc": "Set to  true  to add the Content-Security-Policy-Report-Only  header to yourrequests. CSP in Report Only mode enables you to experiment withpolicies by monitoring their effects without enforcing them. You canenable both policies simultaneously.",
+            "nixName": "settings.security.content_security_policy_report_only",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.cookie_samesite",
+            "desc": "Sets the  SameSite  cookie attribute and prevents thebrowser from sending this cookie along with cross-site requests. Themain goal is to mitigate the risk of cross-origin information leakage.This setting also provides some protection against cross-site requestforgery attacks (CSRF),  read more about SameSitehere . Using value  disabled  does not add any SameSite  attribute to cookies.",
+            "nixName": "settings.security.cookie_samesite",
+            "type": "one of \"lax\", \"strict\", \"none\", \"disabled\"",
+            "value": "\"lax\""
+        },
+        {
+            "name": "settings.security.cookie_secure",
+            "desc": "Set to  true  if you host Grafana behind HTTPS.",
+            "nixName": "settings.security.cookie_secure",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.csrf_additional_headers",
+            "desc": "List of allowed headers to be set by the user. Suggested to use forif authentication lives behind reverse proxies.",
+            "nixName": "settings.security.csrf_additional_headers",
+            "type": "string or list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.security.csrf_trusted_origins",
+            "desc": "List of additional allowed URLs to pass by the CSRF check. Suggestedwhen authentication comes from an IdP.",
+            "nixName": "settings.security.csrf_trusted_origins",
+            "type": "string or list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.security.data_source_proxy_whitelist",
+            "desc": "Define a whitelist of allowed IP addresses or domains, with ports, tobe used in data source URLs with the Grafana data source proxy. Format: ip_or_domain:port  separated by spaces. PostgreSQL, MySQL,and MSSQL data sources do not use the proxy and are therefore unaffectedby this setting.",
+            "nixName": "settings.security.data_source_proxy_whitelist",
+            "type": "string or list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "settings.security.disable_brute_force_login_protection",
+            "desc": "Set to  true  to disable  bruteforce login protection .",
+            "nixName": "settings.security.disable_brute_force_login_protection",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.disable_gravatar",
+            "desc": "Set to  true  to disable the use of Gravatar for userprofile images.",
+            "nixName": "settings.security.disable_gravatar",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.disable_initial_admin_creation",
+            "desc": "Disable creation of admin user on first start of Grafana.",
+            "nixName": "settings.security.disable_initial_admin_creation",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.secret_key",
+            "desc": "Secret key used for signing. Please note that the contents of thisoption will end up in a world-readable Nix store. Use the file providerpointing at a reasonably secured file in the local filesystem to workaround that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+            "nixName": "settings.security.secret_key",
+            "type": "string",
+            "value": "\"SW2YcwTIb9zpOOhoPsMm\""
+        },
+        {
+            "name": "settings.security.strict_transport_security",
+            "desc": "Set to  true  if you want to enable HTTP Strict-Transport-Security  (HSTS) response header. Only usethis when HTTPS is enabled in your configuration, or when there isanother upstream system that ensures your application does HTTPS (like afrontend load balancer). HSTS tells browsers that the site should onlybe accessed using HTTPS.",
+            "nixName": "settings.security.strict_transport_security",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.strict_transport_security_max_age_seconds",
+            "desc": "Sets how long a browser should cache HSTS in seconds. Only applied if strict_transport_security  is enabled.",
+            "nixName": "settings.security.strict_transport_security_max_age_seconds",
+            "type": "signed integer",
+            "value": "86400"
+        },
+        {
+            "name": "settings.security.strict_transport_security_preload",
+            "desc": "Set to  true  to enable HSTS  preloading option. Only applied if  strict_transport_security  isenabled.",
+            "nixName": "settings.security.strict_transport_security_preload",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.strict_transport_security_subdomains",
+            "desc": "Set to  true  to enable HSTS includeSubDomains  option. Only applied if strict_transport_security  is enabled.",
+            "nixName": "settings.security.strict_transport_security_subdomains",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.security.x_content_type_options",
+            "desc": "Set to  false  to disable the X-Content-Type-Options  response header. The X-Content-Type-Options  response HTTP header is a markerused by the server to indicate that the MIME types advertised in the Content-Type  headers should not be changed and befollowed.",
+            "nixName": "settings.security.x_content_type_options",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.security.x_xss_protection",
+            "desc": "Set to  false  to disable the X-XSS-Protection  header, which tells browsers to stop pagesfrom loading when they detect reflected cross-site scripting (XSS)attacks.",
+            "nixName": "settings.security.x_xss_protection",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.server.cdn_url",
+            "desc": "Specify a full HTTP URL address to the root of your Grafana CDNassets. Grafana will add edition and version paths.  For example, given a cdn url like https://cdn.myserver.com  grafana will try to load ajavascript file from http://cdn.myserver.com/grafana-oss/7.4.0/public/build/app.<hash>.js .",
+            "nixName": "settings.server.cdn_url",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.server.cert_file",
+            "desc": "Path to the certificate file (if  protocol  is set to https  or  h2 ).",
+            "nixName": "settings.server.cert_file",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.server.cert_key",
+            "desc": "Path to the certificate key file (if  protocol  is set to https  or  h2 ).",
+            "nixName": "settings.server.cert_key",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.server.domain",
+            "desc": "The public facing domain name used to access grafana from abrowser.  This setting is only used in the default value of the root_url  setting. If you set the latter manually, thisoption does not have to be specified.",
+            "nixName": "settings.server.domain",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "settings.server.enable_gzip",
+            "desc": "Set this option to  true  to enable HTTP compression, thiscan improve transfer speed and bandwidth utilization. It is recommendedthat most users set it to  true . By default it is set to false  for compatibility reasons.",
+            "nixName": "settings.server.enable_gzip",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.server.enforce_domain",
+            "desc": "Redirect to correct domain if the host header does not match thedomain. Prevents DNS rebinding attacks.",
+            "nixName": "settings.server.enforce_domain",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.server.http_addr",
+            "desc": "Listening address.   This setting intentionally varies from upstream\u2019s default to be a bitmore secure by default.",
+            "nixName": "settings.server.http_addr",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "settings.server.http_port",
+            "desc": "Listening port.",
+            "nixName": "settings.server.http_port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "3000"
+        },
+        {
+            "name": "settings.server.protocol",
+            "desc": "Which protocol to listen.",
+            "nixName": "settings.server.protocol",
+            "type": "one of \"http\", \"https\", \"h2\", \"socket\"",
+            "value": "\"http\""
+        },
+        {
+            "name": "settings.server.read_timeout",
+            "desc": "Sets the maximum time using a duration format (5s/5m/5ms) beforetiming out read of an incoming request and closing idle connections. 0means there is no timeout for reading the request.",
+            "nixName": "settings.server.read_timeout",
+            "type": "string",
+            "value": "\"0\""
+        },
+        {
+            "name": "settings.server.root_url",
+            "desc": "This is the full URL used to access Grafana from a web browser. Thisis important if you use Google or GitHub OAuth authentication (for thecallback URL to be correct).  This setting is also important if you have a reverse proxy in frontof Grafana that exposes it through a subpath. In that case add thesubpath to the end of this URL setting.",
+            "nixName": "settings.server.root_url",
+            "type": "string",
+            "value": "\"%(protocol)s://%(domain)s:%(http_port)s/\""
+        },
+        {
+            "name": "settings.server.router_logging",
+            "desc": "Set to  true  for Grafana to log all HTTP requests (notjust errors). These are logged as Info level events to the Grafanalog.",
+            "nixName": "settings.server.router_logging",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.server.serve_from_sub_path",
+            "desc": "Serve Grafana from subpath specified in the  root_url setting. By default it is set to  false  for compatibilityreasons.  By enabling this setting and using a subpath in  root_url above, e.g.  root_url = \"http://localhost:3000/grafana\" ,Grafana is accessible on  http://localhost:3000/grafana . Ifaccessed without subpath, Grafana will redirect to an URL with thesubpath.",
+            "nixName": "settings.server.serve_from_sub_path",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.server.socket",
+            "desc": "Path where the socket should be created when protocol=socket . Make sure that Grafana has appropriatepermissions before you change this setting.",
+            "nixName": "settings.server.socket",
+            "type": "string",
+            "value": "\"/run/grafana/grafana.sock\""
+        },
+        {
+            "name": "settings.server.socket_gid",
+            "desc": "GID where the socket should be set when  protocol=socket .Make sure that the target group is in the group of Grafana process andthat Grafana process is the file owner before you change this setting.It is recommended to set the gid as http server user gid. Not set whenthe value is -1.",
+            "nixName": "settings.server.socket_gid",
+            "type": "signed integer",
+            "value": "-1"
+        },
+        {
+            "name": "settings.server.socket_mode",
+            "desc": "Mode where the socket should be set when protocol=socket . Make sure that Grafana process is the fileowner before you change this setting.",
+            "nixName": "settings.server.socket_mode",
+            "type": "string",
+            "value": "\"0660\""
+        },
+        {
+            "name": "settings.server.static_root_path",
+            "desc": "Root path for static assets.",
+            "nixName": "settings.server.static_root_path",
+            "type": "string",
+            "value": "\"${package}/share/grafana/public\""
+        },
+        {
+            "name": "settings.smtp.cert_file",
+            "desc": "File path to a cert file.",
+            "nixName": "settings.smtp.cert_file",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.smtp.ehlo_identity",
+            "desc": "Name to be used as client identity for EHLO in SMTP dialog.",
+            "nixName": "settings.smtp.ehlo_identity",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.smtp.enabled",
+            "desc": "Whether to enable SMTP.",
+            "nixName": "settings.smtp.enabled",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.smtp.from_address",
+            "desc": "Address used when sending out emails.",
+            "nixName": "settings.smtp.from_address",
+            "type": "string",
+            "value": "\"admin@grafana.localhost\""
+        },
+        {
+            "name": "settings.smtp.from_name",
+            "desc": "Name to be used as client identity for EHLO in SMTP dialog.",
+            "nixName": "settings.smtp.from_name",
+            "type": "string",
+            "value": "\"Grafana\""
+        },
+        {
+            "name": "settings.smtp.host",
+            "desc": "Host to connect to.",
+            "nixName": "settings.smtp.host",
+            "type": "string",
+            "value": "\"localhost:25\""
+        },
+        {
+            "name": "settings.smtp.key_file",
+            "desc": "File path to a key file.",
+            "nixName": "settings.smtp.key_file",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.smtp.password",
+            "desc": "Password used for authentication. Please note that the contents ofthis option will end up in a world-readable Nix store. Use the fileprovider pointing at a reasonably secured file in the local filesystemto work around that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+            "nixName": "settings.smtp.password",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "settings.smtp.skip_verify",
+            "desc": "Verify SSL for SMTP server.",
+            "nixName": "settings.smtp.skip_verify",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.smtp.startTLS_policy",
+            "desc": "StartTLS policy when connecting to server.",
+            "nixName": "settings.smtp.startTLS_policy",
+            "type": "null or one of \"OpportunisticStartTLS\", \"MandatoryStartTLS\", \"NoStartTLS\"",
+            "value": "null"
+        },
+        {
+            "name": "settings.smtp.user",
+            "desc": "User used for authentication.",
+            "nixName": "settings.smtp.user",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "settings.users.allow_org_create",
+            "desc": "Set to  false  to prohibit users from creating neworganizations.",
+            "nixName": "settings.users.allow_org_create",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.users.allow_sign_up",
+            "desc": "Set to false to prohibit users from being able to sign up / createuser accounts. The admin user can still create users.",
+            "nixName": "settings.users.allow_sign_up",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.users.auto_assign_org",
+            "desc": "Set to  true  to automatically add new users to the mainorganization (id 1). When set to  false,  new usersautomatically cause a new organization to be created for that new user.The organization will be created even if the allow_org_create  setting is set to  false .",
+            "nixName": "settings.users.auto_assign_org",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.users.auto_assign_org_id",
+            "desc": "Set this value to automatically add new users to the provided org.This requires  auto_assign_org  to be set to true . Please make sure that this organization alreadyexists.",
+            "nixName": "settings.users.auto_assign_org_id",
+            "type": "signed integer",
+            "value": "1"
+        },
+        {
+            "name": "settings.users.auto_assign_org_role",
+            "desc": "The role new users will be assigned for the main organization (if the auto_assign_org  setting is set to  true ).",
+            "nixName": "settings.users.auto_assign_org_role",
+            "type": "one of \"Viewer\", \"Editor\", \"Admin\"",
+            "value": "\"Viewer\""
+        },
+        {
+            "name": "settings.users.default_language",
+            "desc": "This setting configures the default UI language, which must be asupported IETF language tag, such as  en-US .",
+            "nixName": "settings.users.default_language",
+            "type": "string",
+            "value": "\"en-US\""
+        },
+        {
+            "name": "settings.users.default_theme",
+            "desc": "Sets the default UI theme.  system  matches the user\u2019ssystem theme.",
+            "nixName": "settings.users.default_theme",
+            "type": "one of \"dark\", \"light\", \"system\"",
+            "value": "\"dark\""
+        },
+        {
+            "name": "settings.users.editors_can_admin",
+            "desc": "Editors can administrate dashboards, folders and teams theycreate.",
+            "nixName": "settings.users.editors_can_admin",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.users.hidden_users",
+            "desc": "This is a comma-separated list of usernames. Users specified here arehidden in the Grafana UI. They are still visible to Grafanaadministrators and to themselves.",
+            "nixName": "settings.users.hidden_users",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "settings.users.home_page",
+            "desc": "Path to a custom home page. Users are only redirected to this if thedefault home dashboard is used. It should match a frontend route andcontain a leading slash.",
+            "nixName": "settings.users.home_page",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "settings.users.login_hint",
+            "desc": "Text used as placeholder text on login page for login/usernameinput.",
+            "nixName": "settings.users.login_hint",
+            "type": "string",
+            "value": "\"email or username\""
+        },
+        {
+            "name": "settings.users.password_hint",
+            "desc": "Text used as placeholder text on login page for password input.",
+            "nixName": "settings.users.password_hint",
+            "type": "string",
+            "value": "\"password\""
+        },
+        {
+            "name": "settings.users.user_invite_max_lifetime_duration",
+            "desc": "The duration in time a user invitation remains valid before expiring.This setting should be expressed as a duration. Examples: 6h  (hours),  2d  (days),  1w  (week).The minimum supported duration is  15m  (15 minutes).",
+            "nixName": "settings.users.user_invite_max_lifetime_duration",
+            "type": "string",
+            "value": "\"24h\""
+        },
+        {
+            "name": "settings.users.verify_email_enabled",
+            "desc": "Require email validation before sign up completes.",
+            "nixName": "settings.users.verify_email_enabled",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "settings.users.viewers_can_edit",
+            "desc": "Viewers can access and use Explore and perform temporary edits onpanels in dashboards they have access to. They cannot save theirchanges.",
+            "nixName": "settings.users.viewers_can_edit",
+            "type": "boolean",
+            "value": "false"
+        }
+    ]
+}

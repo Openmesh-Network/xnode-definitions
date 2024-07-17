@@ -1,0 +1,1563 @@
+[
+    {
+        "id": "0",
+        "logo": "https://bookface-images.s3.amazonaws.com/logos/ee60f430e8cb6ae769306860a9c03b2672e0eaf2.png",
+        "name": "Ollama + Open-webui",
+        "category": "AI",
+        "tags": [
+            "Artificial Intelligence",
+            "Web-UI",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "With this template, you can easily deploy Ollama + Open-webui, an advanced AI platform with a web-based user interface. This setup allows you to access and interact with powerful AI capabilities directly from your web browser, effortlessly manage and configure AI tools without needing deep technical knowledge, and utilize comprehensive documentation and guides available at ollama.ai/docs to get the most out of the platform. This template streamlines the process, making it simple for you to leverage cutting-edge AI technology for your projects.",
+        "serviceNames": [
+            "ollama",
+            "open-webui"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "1",
+        "logo": "https://raw.githubusercontent.com/coder/modules/main/.icons/code.svg",
+        "name": "CodeServer",
+        "category": "Development Tools",
+        "tags": [
+            "IDE",
+            "Remote Development",
+            "Web-UI",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying OpenVS CodeServer,With CodeServer, you can effortlessly deploy a VS Code instance on any machine, enabling access through a web-based interface. This setup is ideal for remote development and collaborative coding sessions, allowing you to code from anywhere and share your workspace with others in real-time. Whether you're working on a personal project, collaborating with a team, or accessing your development environment on the go, OpenVSCodeServer makes it simple and efficient. ",
+        "serviceNames": [
+            "openvscode-server"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "2",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png",
+        "name": "Kubo: IPFS",
+        "category": "Distributed Storage",
+        "tags": [
+            "IPFS",
+            "Decentralized Storage",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying Kubo, Deploying Kubo sets up an IPFS node implementation, providing a decentralized storage solution...",
+        "serviceNames": [
+            "kubo"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "3",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png",
+        "name": "Jupyter Notebook",
+        "category": "Data Science",
+        "tags": [
+            "Data Analysis",
+            "Interactive Computing",
+            "Python",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying Jupyter Notebook, Deploying Jupyter Notebook sets up an interactive computing environment that empowers users to conduct data analysis, visualization, and machine learning seamlessly. With Jupyter Notebook, users can write and execute code in Python and other languages, fostering a versatile workspace for exploring datasets, experimenting with algorithms, and building predictive models. Users can leverage Jupyter's rich ecosystem of libraries and tools to analyze data, create visualizations, and collaborate with colleagues. Additionally, Jupyter Notebook supports markdown, allowing users to document their analyses, share insights, and communicate findings effectively. Explore the possibilities of interactive computing with Jupyter Notebook at https://jupyter.org.",
+        "serviceNames": [
+            "jupyter"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "4",
+        "logo": "https://i.ibb.co/BcTCfR1/metabase-svgrepo-com.png",
+        "name": "Metabase",
+        "category": "Data Analytics",
+        "tags": [
+            "Data Visualization",
+            "Business Intelligence",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying Metabase, Deploying Metabase provides you, as a single user, with a powerful analytics tool, allowing you to ask questions, analyze data, and gain insights efficiently. With Metabase, you can explore your data through intuitive queries, create visualizations to understand trends, and derive valuable insights to drive informed decision-making. Experience the capabilities of Metabase by deploying it today",
+        "serviceNames": [
+            "metabase"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "5",
+        "logo": "https://camo.githubusercontent.com/bbc7ceaccc568c103f9db2bdd9dc53b7999a957bbbf62cb8c8544dac47316626/68747470733a2f2f61726368697665626f782e696f2f69636f6e2e706e67",
+        "name": "ArchiveBox",
+        "category": "Data Preservation",
+        "tags": [
+            "Web Archiving",
+            "Data Backup",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying ArchiveBox, you gain the ability to create snapshots of web pages and entire websites, effectively preserving online content for future reference. With ArchiveBox, you can organize and store valuable information from the web, ensuring it remains accessible even if the original content is altered or removed. Users can customize archiving settings to specify the depth and frequency of snapshots, tailoring the archiving process to their specific needs. Additionally, ArchiveBox offers robust search and indexing features, allowing users to quickly locate archived content when needed. Whether you're archiving research materials, blog posts, or online documentation, ArchiveBox provides a reliable solution for preserving and accessing online content over time. Experience the convenience and reliability of web archiving with ArchiveBox today.",
+        "serviceNames": [
+            "archivebox"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "6",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/768px-WordPress_blue_logo.svg.png",
+        "name": "WordPress",
+        "category": "Content Management",
+        "tags": [
+            "Blogging",
+            "CMS",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying WordPress, a popular content management system (CMS) that powers millions of websites and blogs worldwide. Create, manage, and publish content easily with WordPress. Learn more at https://wordpress.org.",
+        "serviceNames": [
+            "wordpress"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "7",
+        "logo": "https://img.stackshare.io/service/9003/DOnqq1OM_400x400.jpg",
+        "name": "Go Ethereum",
+        "category": "Blockchain",
+        "tags": [
+            "Ethereum",
+            "Blockchain",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying Go Ethereum, one of the three original implementations of the Ethereum protocol. This template sets up an Ethereum node to interact with the Ethereum network. Learn more at https://geth.ethereum.org.",
+        "serviceNames": [
+            "geth"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "8",
+        "logo": "https://moralis.io/wp-content/uploads/web3wiki/49-lighthouse/637b9296c78e5825c0b80dec_ErubQ-vV0f3AnHXh9rz46CCorSCGf5nji_VzxmBX_8w.png",
+        "name": "Lighthouse",
+        "category": "Blockchain",
+        "tags": [
+            "Ethereum",
+            "Blockchain",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying Lighthouse, an open-source tool from Google that helps developers improve the quality of their web pages. Audit web pages for performance, accessibility, and more. Learn more at https://developers.google.com/web/tools/lighthouse.",
+        "serviceNames": [
+            "lighthouse"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "9",
+        "logo": "https://static.wikia.nocookie.net/logopedia/images/f/f9/Minecraft_Bedrock_icon.svg",
+        "name": "Minecraft Server",
+        "category": "Gaming",
+        "tags": [
+            "Minecraft",
+            "Server",
+            "Gaming"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying a Minecraft Server, allowing players to create and play on their own Minecraft worlds. Host a Minecraft server to enjoy multiplayer gaming with friends. Learn more at https://www.minecraft.net/en-us/download/server.",
+        "serviceNames": [
+            "minecraft-server"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "10",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Grafana_logo.svg/768px-Grafana_logo.svg.png?20230113183101",
+        "name": "Grafana",
+        "category": "Monitoring",
+        "tags": [
+            "Metrics",
+            "Monitoring",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying Grafana, an open-source analytics and monitoring platform. Visualize metrics, logs, and traces from multiple sources. Learn more at https://grafana.com.",
+        "serviceNames": [
+            "grafana"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "11",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/38/Prometheus_software_logo.svg",
+        "name": "Prometheus",
+        "category": "Monitoring",
+        "tags": [
+            "Metrics",
+            "Monitoring",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying Prometheus, an open-source monitoring and alerting toolkit. Monitor your systems and services and generate alerts based on predefined conditions. Learn more at https://prometheus.io.",
+        "serviceNames": [
+            "prometheus"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "12",
+        "logo": "https://i.ibb.co/XCFXD35/image.png",
+        "name": "Static Web Server",
+        "category": "Web Hosting",
+        "tags": [
+            "Web Server",
+            "Static Hosting",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying a static web server, which serves static content such as HTML, CSS, and JavaScript files without processing server-side scripts. Host your static websites with ease. Learn more at https://en.wikipedia.org/wiki/Web_server.",
+        "serviceNames": [
+            "static-web-server"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "13",
+        "logo": "https://b.thumbs.redditmedia.com/I0eJLPD4tT36qV2Jr5alNXC_QAhZvzfexiqo6GrCvVY.png",
+        "name": "Lidarr",
+        "category": "Media Management",
+        "tags": [
+            "Music",
+            "Management",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Template for deploying Lidarr, an open-source music collection manager for Usenet and BitTorrent users. This template monitors multiple RSS feeds for new tracks from your favorite artists and will grab, sort, and rename them. Learn more at https://lidarr.audio.",
+        "serviceNames": [
+            "lidarr"
+        ],
+        "quality": true,
+        "implementation": true,
+        "isUnitRunnable":true
+    },
+    {
+        "id": "14",
+        "logo": "https://images.opencollective.com/bitmagnet/62de69f/logo/256.png",
+        "name": "BitMagnet",
+        "category": "File Sharing",
+        "tags": [
+            "File Sharing",
+            "P2P",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up a BitMagnet instance, providing a decentralized peer-to-peer file sharing platform. It allows users to share files securely over the network without relying on a central server. The setup includes configuration for secure connections and optimized settings for efficient file transfers.",
+        "serviceNames": [
+            "bitmagnet"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "15",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVN_e7qkPWC5G5dTP0ClkwQh0Cczkh3VZx2g&s",
+        "name": "CKAN",
+        "category": "Data Management",
+        "tags": [
+            "Data Management",
+            "Open Data",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys CKAN, an open-source data management system that helps organizations manage and publish their data. The setup includes a web-based interface for easy data access, tools for data visualization, and features to support data discovery and sharing among users.",
+        "serviceNames": [
+            "ckan"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "17",
+        "logo": "https://avatars.githubusercontent.com/u/4143872?s=280&v=4",
+        "name": "Wallabag",
+        "category": "Content Management",
+        "tags": [
+            "Bookmarking",
+            "Read Later",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up a Wallabag instance, allowing users to save web pages for reading later. The deployment includes a user-friendly interface for managing saved articles, features for tagging and organizing content, and settings to ensure data privacy and security.",
+        "serviceNames": [
+            "wallabag"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "18",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFzCIuPsPokbP-V0RFFgCRJqcve5gpjJmTtg&s",
+        "name": "Apache Airflow",
+        "category": "Workflow Automation",
+        "tags": [
+            "Workflow",
+            "Automation",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys Apache Airflow to orchestrate complex workflows and data pipelines. It includes configurations for creating, scheduling, and monitoring workflows, as well as integration with various data sources and destinations. The setup is designed to automate tasks and ensure efficient workflow management.",
+        "serviceNames": [
+            "apache-airflow"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "19",
+        "logo": "https://developer.asustor.com/uploadIcons/0020_117518_1663638270_changedetection_256.png",
+        "name": "Changedetection.io",
+        "category": "Monitoring",
+        "tags": [
+            "Monitoring",
+            "Web",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up Changedetection.io, a tool for monitoring websites and detecting changes. It includes settings for tracking specific pages, configuring alerts for different types of changes, and managing multiple monitoring tasks. The setup is designed to help users stay informed about updates to the websites they care about.",
+        "serviceNames": [
+            "changedetection-io"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "20",
+        "logo": "https://avatars.githubusercontent.com/u/28475832?s=280&v=4",
+        "name": "Lidarr",
+        "category": "Media Management",
+        "tags": [
+            "Media",
+            "Music",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys Lidarr, a music collection manager for Usenet and BitTorrent users. The setup includes tools for tracking music collections, downloading new releases automatically, and organizing files. It is designed to help users manage their music libraries efficiently.",
+        "serviceNames": [
+            "lidarr"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "21",
+        "logo": "https://banner2.cleanpng.com/20180425/eve/kisspng-github-capgemini-america-inc-android-cordobesism-elegant-creative-5ae090290f3d15.4496778715246664090624.jpg",
+        "name": "Headphones",
+        "category": "Media Management",
+        "tags": [
+            "Media",
+            "Music",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up Headphones, an automated music downloader for NZB and Torrent. It includes configurations for searching and downloading music, integrating with media managers, and organizing downloaded files. The setup is tailored for users looking to automate their music collection process.",
+        "serviceNames": [
+            "headphones"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "22",
+        "logo": "https://avatars.githubusercontent.com/u/3521496?v=4",
+        "name": "pyLoad",
+        "category": "Download Management",
+        "tags": [
+            "Download",
+            "Automation",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys pyLoad, a lightweight download manager. It includes settings for automated downloading, managing download queues, and handling different types of download sources. The setup is optimized for reliable and efficient downloading.",
+        "serviceNames": [
+            "pyload"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "23",
+        "logo": "https://static-00.iconduck.com/assets.00/sonarr-icon-1024x1024-wkay604k.png",
+        "name": "Sonarr",
+        "category": "Media Management",
+        "tags": [
+            "Media",
+            "TV Shows",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up Sonarr, a PVR for Usenet and BitTorrent users that monitors multiple RSS feeds for new episodes of TV shows. It includes configurations for automated downloading, organizing episodes, and integrating with other media management tools. The setup is designed for seamless TV show management.",
+        "serviceNames": [
+            "sonarr"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "24",
+        "logo": "https://static-00.iconduck.com/assets.00/radarr-icon-462x512-bydv4e4f.png",
+        "name": "Radarr",
+        "category": "Media Management",
+        "tags": [
+            "Media",
+            "Movies",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys Radarr, a movie collection manager for Usenet and BitTorrent users. It includes tools for tracking movie releases, downloading new movies automatically, and organizing files. The setup is optimized for efficient movie collection management.",
+        "serviceNames": [
+            "radarr"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "25",
+        "logo": "https://healthchecks.io/static/img/logo.png",
+        "name": "Healthchecks",
+        "category": "Monitoring",
+        "tags": [
+            "Monitoring",
+            "Cron Jobs",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up Healthchecks, a monitoring tool for cron jobs and background tasks. It includes configurations for setting up periodic checks, alerting users when tasks fail or don't run on time, and integrating with various notification services. The setup ensures reliable monitoring of scheduled tasks.",
+        "serviceNames": [
+            "healthchecks"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "26",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgDZNMJd_iCRI1k892Rlp2vqc5v-co2501SQ&s",
+        "name": "Syncthing",
+        "category": "File Synchronization",
+        "tags": [
+            "File Sync",
+            "Peer-to-Peer",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys Syncthing, a continuous file synchronization program. It includes settings for synchronizing files between devices in real-time, ensuring data privacy and security, and managing synchronization tasks. The setup is designed for reliable and secure file synchronization.",
+        "serviceNames": [
+            "syncthing"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "27",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUo4Orz3fIsl_zGGybhvORCrrIH9SugS57Vw&s",
+        "name": "Wayback",
+        "category": "Archiving",
+        "tags": [
+            "Archiving",
+            "Web",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up a Wayback instance, allowing users to create local copies of websites for archival purposes. It includes tools for crawling web pages, storing versions, and accessing archived content. The setup is optimized for preserving web content.",
+        "serviceNames": [
+            "wayback"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "28",
+        "logo": "https://pbs.twimg.com/profile_images/1777704365660233729/7ejalPLp_400x400.jpg",
+        "name": "Stalwart Mail",
+        "category": "Email",
+        "tags": [
+            "Email",
+            "Server",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys Stalwart Mail, a robust and secure email server. It includes configurations for handling email delivery, managing user accounts, and ensuring email security. The setup is designed to provide a reliable email server solution.",
+        "serviceNames": [
+            "stalwart-mail"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "30",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Lemmy_logo.svg/2560px-Lemmy_logo.svg.png",
+        "name": "Lemmy",
+        "category": "Social Networking",
+        "tags": [
+            "Social Media",
+            "Community",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys the Lemmy UI, providing a front-end interface for the Lemmy federated alternative to reddit in rust. It includes configurations for setting up user accounts, managing communities, and interacting with other Lemmy instances. The setup is designed for hosting and participating in federated communities using the ActivityPub standard.",
+        "serviceNames": [
+            "lemmy"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "31",
+        "logo": "https://avatars.githubusercontent.com/u/117129612?s=280&v=4",
+        "name": "Libreddit",
+        "category": "Web Proxies",
+        "tags": [
+            "Reddit",
+            "Proxy",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up a Libreddit instance, providing a private front-end for browsing Reddit. It includes configurations for enhancing privacy, reducing tracking, and improving browsing performance. The setup is designed to offer a more secure and user-friendly Reddit experience.",
+        "serviceNames": [
+            "libreddit"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "32",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Nitter_logo.svg/2048px-Nitter_logo.svg.png",
+        "name": "Nitter",
+        "category": "Web Proxies",
+        "tags": [
+            "Twitter",
+            "Proxy",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys a Nitter instance, providing an alternative front-end for Twitter focused on privacy. It includes settings for reducing tracking, enhancing privacy, and improving performance when browsing Twitter. The setup is designed to offer a more private Twitter experience.",
+        "serviceNames": [
+            "nitter"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "33",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Pleroma_logo.svg/1200px-Pleroma_logo.svg.png",
+        "name": "Pleroma",
+        "category": "Social Networking",
+        "tags": [
+            "Social Media",
+            "Microblogging",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up a Pleroma instance, providing a lightweight and federated social networking server. It includes configurations for user management, content sharing, and interacting with other ActivityPub platforms. The setup is designed to offer a scalable and efficient social media solution.",
+        "serviceNames": [
+            "pleroma"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "35",
+        "logo": "https://canada1.discourse-cdn.com/free1/uploads/janus/original/1X/ed8aa8413a7d5b06ef3543e119fea32b1d6e76fe.png",
+        "name": "Janus Gateway",
+        "category": "WebRTC",
+        "tags": [
+            "WebRTC",
+            "Streaming",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up Janus Gateway, a modular WebRTC server. It includes configurations for handling real-time multimedia applications, managing media streams, and integrating with various streaming services. The setup is optimized for scalable and flexible WebRTC applications.",
+        "serviceNames": [
+            "janus-gateway"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "36",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRytFwnFFyeyKUkYZKeUgwfRaIEf98A_HeZgQ&s",
+        "name": "Baserow",
+        "category": "Database Management",
+        "tags": [
+            "Database",
+            "Collaboration",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys Baserow, an open-source no-code database and Airtable alternative. It includes tools for creating and managing databases, collaborating on data projects, and integrating with other applications. The setup is designed to make database management accessible and efficient.",
+        "serviceNames": [
+            "baserow"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "37",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Nextcloud_Logo.svg/1200px-Nextcloud_Logo.svg.png",
+        "name": "Nextcloud Client",
+        "category": "File Synchronization",
+        "tags": [
+            "File Sync",
+            "Cloud Storage",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up the Nextcloud Server, enabling file synchronization between devices and a Nextcloud server. It includes configurations for secure file transfer, user account management, and integration with other Nextcloud services. The setup is designed to provide a private and secure file synchronization solution.",
+        "serviceNames": [
+            "nextcloud"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "38",
+        "logo": "https://cdn.worldvectorlogo.com/logos/samba.svg",
+        "name": "Samba",
+        "category": "File Sharing",
+        "tags": [
+            "File Sharing",
+            "SMB",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up Samba, providing seamless file and print services to SMB/CIFS clients. It includes configurations for sharing files and printers across networks, managing user permissions, and ensuring secure access. The setup is optimized for reliable and efficient file sharing in networked environments.",
+        "serviceNames": [
+            "samba"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "39",
+        "logo": "https://manual.seafile.com/media/seafile-transparent-1024.png",
+        "name": "Seafile",
+        "category": "File Synchronization",
+        "tags": [
+            "File Sync",
+            "Cloud Storage",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template deploys Seafile, an open-source file synchronization and sharing solution. It includes tools for managing file repositories, synchronizing data across devices, and collaborating on documents. The setup is designed for efficient and secure file synchronization and sharing.",
+        "serviceNames": [
+            "seafile"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "40",
+        "logo": "https://wiki.mageia.org/mw-en/images/a/a6/Openafs-logo.jpg",
+        "name": "OpenAFS",
+        "category": "File Systems",
+        "tags": [
+            "File Systems",
+            "Distributed",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "This template sets up OpenAFS, a distributed file system that enables file sharing across both local and wide area networks. It includes configurations for managing file access, ensuring data consistency, and integrating with various operating systems. The setup is optimized for scalable and reliable distributed file storage.",
+        "serviceNames": [
+            "openafs"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "41",
+        "logo": "https://asset.brandfetch.io/idyg3y39gv/idSN6OT0Wm.jpeg",
+        "name": "Netdata",
+        "category": "Monitoring",
+        "tags": [
+            "Monitoring",
+            "Real-time",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Netdata is a real-time performance monitoring solution that visualizes metrics and logs to help identify performance issues. It provides insights into system health, resource usage, and application performance.",
+        "serviceNames": [
+            "netdata"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "42",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/2066px-Prometheus_software_logo.svg.png",
+        "name": "Prometheus",
+        "category": "Monitoring",
+        "tags": [
+            "Monitoring",
+            "Time Series",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Prometheus is an open-source monitoring and alerting toolkit designed for reliability and scalability. It collects time-series data and provides powerful querying capabilities, visualization tools, and alerting functionalities.",
+        "serviceNames": [
+            "prometheus"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "43",
+        "logo": "https://avatars.githubusercontent.com/u/1648901?s=280&v=4",
+        "name": "Sensu Go CLI",
+        "category": "Monitoring",
+        "tags": [
+            "Monitoring",
+            "CLI",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "The Sensu Go CLI is a command-line interface for Sensu Go, a monitoring tool that helps organizations monitor their infrastructure, applications, and services. It provides commands for managing Sensu Go resources, querying data, and configuring checks and handlers.",
+        "serviceNames": [
+            "sensu-go-cli"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "44",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Zabbix_logo_square.svg/2048px-Zabbix_logo_square.svg.png",
+        "name": "Zabbix Web",
+        "category": "Monitoring",
+        "tags": [
+            "Monitoring",
+            "Web Interface",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Zabbix Web is a web-based frontend for Zabbix, an enterprise-class open-source monitoring solution. It provides a user-friendly interface for monitoring and managing Zabbix servers, hosts, and monitoring configurations.",
+        "serviceNames": [
+            "zabbix.web"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "45",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/03/Bitwarden_Logo.png",
+        "name": "Bitwarden",
+        "category": "Security",
+        "tags": [
+            "Password Manager",
+            "Security",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Bitwarden is an open-source password manager that securely stores sensitive information such as passwords, credit card details, and secure notes. It provides features like cross-platform synchronization, password generation, and secure sharing.",
+        "serviceNames": [
+            "bitwarden"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "46",
+        "logo": "https://avatars.githubusercontent.com/u/81588505?v=4",
+        "name": "Passky Desktop",
+        "category": "Security",
+        "tags": [
+            "Password Manager",
+            "Desktop App",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Passky Desktop is an open-source password manager application for desktop platforms. It offers features such as secure password storage, password generation, and encryption to ensure the security of users' credentials.",
+        "serviceNames": [
+            "passky-desktop"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "47",
+        "logo": "https://developer.asustor.com/uploadIcons/0020_999_1594784775_bitwarden_new_256.png",
+        "name": "Vaultwarden",
+        "category": "Security",
+        "tags": [
+            "Password Manager",
+            "PostgreSQL",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Vaultwarden is a self-hosted password manager compatible with the Bitwarden ecosystem. It can use PostgreSQL as its backend database, providing scalability and robustness for securely storing users' passwords and other sensitive information.",
+        "serviceNames": [
+            "vaultwarden"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "48",
+        "logo": "https://imgproxy.net/static/social-cebc74ac8c5f6a709e430a1554f75c50.png",
+        "name": "Imgproxy",
+        "category": "Image Processing",
+        "tags": [
+            "Image Processing",
+            "Security",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Imgproxy is a fast and secure image processing service that allows users to resize, crop, and transform images on-the-fly. It ensures image security by automatically removing metadata and providing options for encryption and access control.",
+        "serviceNames": [
+            "imgproxy"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "49",
+        "logo": "https://www.kali.org/tools/iodine/images/iodine-logo.svg",
+        "name": "Iodine",
+        "category": "Networking",
+        "tags": [
+            "DNS Tunneling",
+            "Networking",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Iodine is a tool for tunneling IPv4 data through a DNS server. It allows users to bypass firewalls and access the internet from restricted networks by encapsulating data in DNS queries and responses.",
+        "serviceNames": [
+            "iodine"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "50",
+        "logo": "https://www.pomerium.com/wp-content/uploads/2021/08/share-image.png",
+        "name": "Pomerium",
+        "category": "Security",
+        "tags": [
+            "Identity-Aware Proxy",
+            "Security",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Iodine is a tool for tunneling IPv4 data through a DNS server. It allows users to bypass firewalls and access the internet from restricted networks by encapsulating data in DNS queries and responses.",
+        "serviceNames": [
+            "iodine"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "51",
+        "logo": "https://images.sftcdn.net/images/t_app-icon-m/p/9ce153c3-3a7d-4fa5-a051-06f43e6ff0a2/2730506020/privoxy-logo.png",
+        "name": "Privoxy",
+        "category": "Proxy",
+        "tags": [
+            "Proxy",
+            "Privacy",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Privoxy is a non-caching web proxy with advanced filtering capabilities for enhancing privacy, manipulating cookies, and removing advertisements. It can be used to protect user privacy and improve browsing security.",
+        "serviceNames": [
+            "privoxy"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "52",
+        "logo": "https://avatars.githubusercontent.com/u/12276251?s=200&v=4",
+        "name": "SISH",
+        "category": "SSH Tunneling",
+        "tags": [
+            "SSH",
+            "Tunneling",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "SISH is an open-source SSH tunneling server that allows users to create secure connections between devices over the internet. It provides features like port forwarding, reverse tunneling, and encrypted communication.",
+        "serviceNames": [
+            "sish"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "53",
+        "logo": "https://webhostinggeeks.com/blog/wp-content/uploads/2023/07/Squid-proxy.png",
+        "name": "Squid",
+        "category": "Proxy",
+        "tags": [
+            "Proxy",
+            "Caching",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Squid is a caching proxy server that improves web performance by caching frequently accessed web content. It accelerates web access and reduces bandwidth usage by serving cached content to users.",
+        "serviceNames": [
+            "squid"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "54",
+        "logo": "https://www.pc-freak.net/images/tinyproxy-quick-and-easy-way-to-run-proxy-caching-server-on-linux-bsd-unix-and-mac.png",
+        "name": "Tinyproxy",
+        "category": "Proxy",
+        "tags": [
+            "Proxy",
+            "HTTP",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Tinyproxy is a lightweight HTTP/HTTPS proxy server designed for simplicity and speed. It is easy to configure and deploy, making it suitable for scenarios where a small, efficient proxy server is needed.",
+        "serviceNames": [
+            "tinyproxy"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "55",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/31/Apache_Guacamole_logo.png",
+        "name": "Guacamole Server",
+        "category": "Remote Desktop",
+        "tags": [
+            "Remote Desktop",
+            "Web-based",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Guacamole Server is a clientless remote desktop gateway that provides access to desktop environments and applications from anywhere via a web browser. It supports protocols like VNC, RDP, and SSH for secure remote access.",
+        "serviceNames": [
+            "guacamole-server"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "56",
+        "logo": "https://pbs.twimg.com/profile_images/538050195666137088/azKzkG-M_400x400.png",
+        "name": "MeshCentral",
+        "category": "Remote Desktop",
+        "tags": [
+            "Remote Desktop",
+            "Management",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "MeshCentral is an open-source remote management web application for controlling computers and devices from a centralized interface. It provides features for remote desktop, file transfer, monitoring, and administration.",
+        "serviceNames": [
+            "meshcentral"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "57",
+        "logo": "https://avatars.githubusercontent.com/u/71636191?v=4",
+        "name": "RustDesk",
+        "category": "Remote Desktop",
+        "tags": [
+            "Remote Desktop",
+            "Cross-platform",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "RustDesk is a secure and fast remote desktop software built with Rust. It allows users to access and control remote computers from anywhere using a simple and intuitive interface.",
+        "serviceNames": [
+            "rustdesk"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "58",
+        "logo": "https://avatars.githubusercontent.com/u/52789761?s=280&v=4",
+        "name": "ShellHub Agent",
+        "category": "Remote Access",
+        "tags": [
+            "Remote Access",
+            "Shell",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "ShellHub Agent is a lightweight client-side component that securely connects devices to ShellHub, a cloud-based device management platform. It enables remote access and control of connected devices via SSH.",
+        "serviceNames": [
+            "shellhub-agent"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "59",
+        "logo": "https://avatars.githubusercontent.com/u/41094035?s=200&v=4",
+        "name": "Hound",
+        "category": "Code Quality",
+        "tags": [
+            "Code Quality",
+            "Static Analysis",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Hound is a hosted platform for automated code review that helps teams maintain code quality and consistency. It analyzes pull requests, identifies issues, and provides actionable feedback to developers.",
+        "serviceNames": [
+            "hound"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "60",
+        "logo": "https://manticoresearch.com/images/favicon.png",
+        "name": "Manticoresearch",
+        "category": "Search Engine",
+        "tags": [
+            "Search Engine",
+            "Full-text Search",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Manticore search is a full-text search engine that delivers fast and accurate search results for applications, websites, and data analytics. It supports features like natural language processing, geospatial search, and real-time indexing.",
+        "serviceNames": [
+            "manticore"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "61",
+        "logo": "https://global.discourse-cdn.com/business5/uploads/mauve_hedgehog/original/2X/9/978fed62e0f9d8d687f7316d1d060832056ba827.png",
+        "name": "OpenSearch",
+        "category": "Search Engine",
+        "tags": [
+            "Search Engine",
+            "Elasticsearch Fork",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "OpenSearch is a community-driven, open-source search and analytics engine forked from Elasticsearch and Kibana. It provides scalable and performant search capabilities for applications, log analysis, and data visualization.",
+        "serviceNames": [
+            "opensearch"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "62",
+        "logo": "https://static-00.iconduck.com/assets.00/searxng-icon-512x505-bhmi7cha.png",
+        "name": "Searx",
+        "category": "Search Engine",
+        "tags": [
+            "Search Engine",
+            "Privacy-focused",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Searx is a privacy-focused metasearch engine that aggregates results from various search engines while protecting user privacy. It does not track users or store personal information, making it an ideal choice for private web searches.",
+        "serviceNames": [
+            "searx"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "63",
+        "logo": "https://www.strattic.com/wp-content/uploads/2021/03/typesense.png",
+        "name": "Typesense",
+        "category": "Search Engine",
+        "tags": [
+            "Search Engine",
+            "Fast",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Typesense is an open-source search engine designed for ease of use, performance, and scalability. It provides fast and relevant search results for applications, websites, and data analytics.",
+        "serviceNames": [
+            "typesense"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "64",
+        "logo": "https://zincsearch-docs.zinc.dev/images/zinc.png",
+        "name": "ZincSearch",
+        "category": "Search Engine",
+        "tags": [
+            "Search Engine",
+            "Distributed",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "ZincSearch is a distributed search engine designed for indexing and querying large volumes of data. It provides features like distributed indexing, fault tolerance, and real-time search capabilities.",
+        "serviceNames": [
+            "zincsearch"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "65",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ5xoXimnJC3MeWwGVNUVdt68yGRJCDjFuWw&s",
+        "name": "Dockstarter",
+        "category": "Docker Management",
+        "tags": [
+            "Docker",
+            "Management",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Dockstarter is a collection of Docker containers and scripts that simplifies the process of setting up and managing Docker-based applications. It provides an easy-to-use interface for deploying and maintaining containers.",
+        "serviceNames": [
+            "dockstarter"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "66",
+        "logo": "https://avatars.githubusercontent.com/u/2227358?s=200&v=4",
+        "name": "SVIX Server",
+        "category": "Webhooks",
+        "tags": [
+            "Webhooks",
+            "Integration",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "SVIX Server is an open-source webhook server that helps developers build and manage webhook integrations. It provides features like event routing, payload transformation, and delivery reliability.",
+        "serviceNames": [
+            "svix-server"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "67",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Buildbot_logo.svg/2048px-Buildbot_logo.svg.png",
+        "name": "Buildbot",
+        "category": "Continuous Integration",
+        "tags": [
+            "Continuous Integration",
+            "Automation",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Buildbot is an open-source framework for automating build, test, and release processes. It provides a flexible and extensible platform for continuous integration and continuous delivery (CI/CD) workflows.",
+        "serviceNames": [
+            "buildbot"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "68",
+        "logo": "https://avatars.githubusercontent.com/u/5149601?s=200&v=4",
+        "name": "Drone OSS",
+        "category": "Continuous Integration",
+        "tags": [
+            "Continuous Integration",
+            "Pipeline",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Drone OSS is an open-source continuous integration and delivery platform built on container technology. It enables teams to automate software testing and deployment workflows, improving development efficiency and code quality.",
+        "serviceNames": [
+            "drone-oss"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "69",
+        "logo": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png",
+        "name": "GitLab",
+        "category": "Version Control",
+        "tags": [
+            "Version Control",
+            "Collaboration",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "GitLab is a web-based DevOps lifecycle tool that provides a Git repository manager, issue tracking, CI/CD pipelines, and more. It offers a complete solution for version control, code review, and collaboration.",
+        "serviceNames": [
+            "gitlab"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "70",
+        "logo": "https://avatars.githubusercontent.com/u/6099846?s=280&v=4",
+        "name": "GoCD Server",
+        "category": "Continuous Integration",
+        "tags": [
+            "Continuous Integration",
+            "Pipeline",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "GoCD Server is an open-source continuous delivery server that helps automate and streamline the build-test-release cycle. It provides advanced features for modeling complex workflows and managing dependencies between tasks.",
+        "serviceNames": [
+            "gocd-server"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "71",
+        "logo": "https://logowik.com/content/uploads/images/jenkins8460.jpg",
+        "name": "Jenkins",
+        "category": "Continuous Integration",
+        "tags": [
+            "Continuous Integration",
+            "Automation",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Jenkins is an open-source automation server that enables developers to build, test, and deploy software efficiently. It supports a wide range of plugins and integrations, making it highly extensible and customizable.",
+        "serviceNames": [
+            "jenkins"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "72",
+        "logo": "https://cdn.brighttalk.com/ams/california/images/channel/19498/image_855386.png?width=300&height=300",
+        "name": "Laminar",
+        "category": "Continuous Integration",
+        "tags": [
+            "Continuous Integration",
+            "Pipeline",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Laminar is an open-source continuous integration and delivery (CI/CD) server designed for simplicity and ease of use. It provides a lightweight and flexible platform for automating software development workflows.",
+        "serviceNames": [
+            "laminar"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "73",
+        "logo": "https://avatars.githubusercontent.com/u/66415983?s=280&v=4",
+        "name": "Werf",
+        "category": "Continuous Integration",
+        "tags": [
+            "Continuous Integration",
+            "Pipeline",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Werf is an open-source GitOps tool that helps automate the deployment of applications to Kubernetes clusters. It provides a streamlined workflow for building, testing, and deploying containerized applications.",
+        "serviceNames": [
+            "werf"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "74",
+        "logo": "https://avatars.githubusercontent.com/u/84780935?s=200&v=4",
+        "name": "Woodpecker CLI",
+        "category": "Continuous Integration",
+        "tags": [
+            "Continuous Integration",
+            "Pipeline",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Woodpecker CLI is an open-source command-line interface for automating continuous integration and continuous deployment (CI/CD) workflows. It provides features for defining pipelines, running tests, and deploying applications.",
+        "serviceNames": [
+            "woodpecker-cli"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "75",
+        "logo": "https://carleton.ca/scs/wp-content/uploads/vscode-1.png",
+        "name": "OpenVSCode Server",
+        "category": "Development Tools",
+        "tags": [
+            "IDE",
+            "Remote Development",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "OpenVSCode Server allows you to run a VS Code instance on any machine and access it through a web-based interface. Perfect for remote development and collaborative coding sessions.",
+        "serviceNames": [
+            "openvscode-server"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "76",
+        "logo": "https://static-00.iconduck.com/assets.00/rstudio-icon-2048x2048-as3h664f.png",
+        "name": "RStudio Server",
+        "category": "Development Tools",
+        "tags": [
+            "IDE",
+            "Data Science",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "RStudio Server is an open-source integrated development environment (IDE) for R programming language and data science. It provides a web-based interface for writing code, analyzing data, and visualizing results.",
+        "serviceNames": [
+            "rstudio-server"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "77",
+        "logo": "https://images.crunchbase.com/image/upload/pnu3gjjrh8qm92yqrfpt",
+        "name": "Wakapi",
+        "category": "Development Tools",
+        "tags": [
+            "Code Statistics",
+            "Productivity",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Wakapi is an open-source code statistics and productivity tracking tool for developers. It collects data on coding activity, such as lines of code written, time spent coding, and projects worked on, helping users analyze their productivity.",
+        "serviceNames": [
+            "wakapi"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "78",
+        "logo": "https://cdn.icon-icons.com/icons2/3914/PNG/512/pocketbase_logo_icon_248816.png",
+        "name": "PocketBase",
+        "category": "Database",
+        "tags": [
+            "Database",
+            "Mobile",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "PocketBase is an open-source mobile database designed for building offline-first applications. It provides features for data synchronization, conflict resolution, and efficient storage on mobile devices.",
+        "serviceNames": [
+            "pocketbase"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "81",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Forgejo_logo.svg/800px-Forgejo_logo.svg.png",
+        "name": "ForgeJo",
+        "category": "Version Control",
+        "tags": [
+            "Version Control",
+            "Code Review",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "ForgeJo is an open-source platform for hosting Git repositories and managing software development projects. It provides features for code review, issue tracking, and collaborative development.",
+        "serviceNames": [
+            "forgejo"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "82",
+        "logo": "https://static-00.iconduck.com/assets.00/gerrit-icon-2048x1913-lu5zt1wx.png",
+        "name": "Gerrit",
+        "category": "Version Control",
+        "tags": [
+            "Version Control",
+            "Code Review",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Gerrit is a web-based code review and project management tool for Git repositories. It provides features for code review, access control, and continuous integration, facilitating collaboration among developers.",
+        "serviceNames": [
+            "gerrit"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "83",
+        "logo": "https://res.cloudinary.com/apideck/image/upload/v1597100472/icons/gitolite.png",
+        "name": "Gitolite",
+        "category": "Version Control",
+        "tags": [
+            "Version Control",
+            "Access Control",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Gitolite is an access control layer on top of Git, providing fine-grained access control for Git repositories. It allows administrators to define access rules and permissions for individual users and groups.",
+        "serviceNames": [
+            "gitolite"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "84",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/09/Gogs_logo.png?20210324220156",
+        "name": "Gogs",
+        "category": "Version Control",
+        "tags": [
+            "Version Control",
+            "Self-hosted",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Gogs is a painless self-hosted Git service that enables users to host Git repositories on their own servers. It provides a lightweight and easy-to-install solution for version control and collaboration.",
+        "serviceNames": [
+            "gogs"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "85",
+        "logo": "https://avatars.githubusercontent.com/u/49686457?s=280&v=4",
+        "name": "Klaus",
+        "category": "Version Control",
+        "tags": [
+            "Version Control",
+            "Code Review",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "Klaus is a simple, easy-to-set-up Git web viewer that allows users to browse repositories and review code changes via a web interface. It is designed for small teams and projects that require minimal setup.",
+        "serviceNames": [
+            "klaus"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    },
+    {
+        "id": "86",
+        "logo": "https://miro.medium.com/v2/resize:fit:2400/1*mTPfm7CwU31-tLhtLNkyJw.png",
+        "name": "AppFlowy",
+        "category": "Productivity",
+        "tags": [
+            "Productivity",
+            "Note-taking",
+            "Open-source"
+        ],
+        "dateAdded": "2024-06-08T12:00:00Z",
+        "desc": "AppFlowy is an open-source note-taking and task management application inspired by workflowy.com. It provides a simple and intuitive interface for organizing thoughts, tasks, and ideas in hierarchical lists.",
+        "serviceNames": [
+            "appflowy"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable":false
+    }
+]

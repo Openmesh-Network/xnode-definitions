@@ -1,0 +1,62 @@
+{
+    "name": "pyload",
+    "nixName": "pyload",
+    "options": [
+        {
+            "name": "credentialsFile",
+            "desc": "File containing  PYLOAD_DEFAULT_USERNAME  and  PYLOAD_DEFAULT_PASSWORD  inthe format of an  EnvironmentFile= , as described by   systemd.exec(5)  .  If not given, they default to the username/password combo ofpyload/pyload.",
+            "nixName": "credentialsFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "downloadDirectory",
+            "desc": "Directory to store downloads.",
+            "nixName": "downloadDirectory",
+            "type": "path",
+            "value": "\"/var/lib/pyload/downloads\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable pyLoad download manager.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "group",
+            "desc": "Group under which pyLoad runs, and which owns the downloaddirectory.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"pyload\""
+        },
+        {
+            "name": "listenAddress",
+            "desc": "Address to listen on for the web UI.",
+            "nixName": "listenAddress",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "package",
+            "desc": "The pyLoad package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.pyload-ng"
+        },
+        {
+            "name": "port",
+            "desc": "Port to listen on for the web UI.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8000"
+        },
+        {
+            "name": "user",
+            "desc": "User under which pyLoad runs, and which owns the downloaddirectory.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"pyload\""
+        }
+    ]
+}

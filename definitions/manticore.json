@@ -1,0 +1,20 @@
+{
+    "name": "manticore",
+    "nixName": "manticore",
+    "options": [
+        {
+            "name": "enable",
+            "desc": "Whether to enable Manticoresearch.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings",
+            "desc": "Configuration for Manticoresearch. See  https://manual.manticoresearch.com/Server%20settings for more information.",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": "{\n  searchd = {\n    data_dir = \"/var/lib/manticore\";\n    listen = [\n      \"127.0.0.1:9312\"\n      \"127.0.0.1:9306:mysql\"\n      \"127.0.0.1:9308:http\"\n    ];\n    log = \"/var/log/manticore/searchd.log\";\n    pid_file = \"/run/manticore/searchd.pid\";\n    query_log = \"/var/log/manticore/query.log\";\n  };\n}"
+        }
+    ]
+}

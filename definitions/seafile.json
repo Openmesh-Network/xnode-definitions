@@ -1,0 +1,83 @@
+{
+    "name": "seafile",
+    "nixName": "seafile",
+    "options": [
+        {
+            "name": "adminEmail",
+            "desc": "Seafile Seahub Admin Account Email.",
+            "nixName": "adminEmail",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "ccnetSettings",
+            "desc": "Configuration for ccnet, see  https://manual.seafile.com/config/ccnet-conf/ for supported values.",
+            "nixName": "ccnetSettings",
+            "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))",
+            "value": "{ }"
+        },
+        {
+            "name": "ccnetSettings.General.SERVICE_URL",
+            "desc": "Seahub public URL.",
+            "nixName": "ccnetSettings.General.SERVICE_URL",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Seafile server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "initialAdminPassword",
+            "desc": "Seafile Seahub Admin Account initial password. Should be change viaSeahub web front-end.",
+            "nixName": "initialAdminPassword",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "seafilePackage",
+            "desc": "The seafile-server package to use.",
+            "nixName": "seafilePackage",
+            "type": "package",
+            "value": "pkgs.seafile-server"
+        },
+        {
+            "name": "seafileSettings",
+            "desc": "Configuration for seafile-server, see  https://manual.seafile.com/config/seafile-conf/ for supported values.",
+            "nixName": "seafileSettings",
+            "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))",
+            "value": "{ }"
+        },
+        {
+            "name": "seafileSettings.fileserver.host",
+            "desc": "The binding address used by seafile fileserver.",
+            "nixName": "seafileSettings.fileserver.host",
+            "type": "string",
+            "value": "\"127.0.0.1\""
+        },
+        {
+            "name": "seafileSettings.fileserver.port",
+            "desc": "The tcp port used by seafile fileserver.",
+            "nixName": "seafileSettings.fileserver.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8082"
+        },
+        {
+            "name": "seahubExtraConf",
+            "desc": "Extra config to append to  seahub_settings.py  file. Referto  https://manual.seafile.com/config/seahub_settings_py/ for all available options.",
+            "nixName": "seahubExtraConf",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "workers",
+            "desc": "The number of gunicorn worker processes for handling requests.",
+            "nixName": "workers",
+            "type": "signed integer",
+            "value": "4"
+        }
+    ]
+}

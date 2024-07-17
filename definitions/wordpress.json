@@ -1,0 +1,377 @@
+{
+    "name": "wordpress",
+    "nixName": "wordpress",
+    "options": [
+        {
+            "name": "sites",
+            "desc": "Specification of one or more WordPress sites to serve",
+            "nixName": "sites",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "sites.<name>.database.createLocally",
+            "desc": "Create the database and database user locally.",
+            "nixName": "sites.<name>.database.createLocally",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "sites.<name>.database.host",
+            "desc": "Database host address.",
+            "nixName": "sites.<name>.database.host",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "sites.<name>.database.name",
+            "desc": "Database name.",
+            "nixName": "sites.<name>.database.name",
+            "type": "string",
+            "value": "\"wordpress\""
+        },
+        {
+            "name": "sites.<name>.database.passwordFile",
+            "desc": "A file containing the password corresponding to  database.user .",
+            "nixName": "sites.<name>.database.passwordFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "sites.<name>.database.port",
+            "desc": "Database host port.",
+            "nixName": "sites.<name>.database.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "3306"
+        },
+        {
+            "name": "sites.<name>.database.socket",
+            "desc": "Path to the unix socket file to use for authentication.",
+            "nixName": "sites.<name>.database.socket",
+            "type": "null or path",
+            "value": "/run/mysqld/mysqld.sock"
+        },
+        {
+            "name": "sites.<name>.database.tablePrefix",
+            "desc": "The $table_prefix is the value placed in the front of your databasetables. Change the value if you want to use something other than wp_ foryour database prefix. Typically this is changed if you are installingmultiple WordPress blogs in the same database.  See  https://codex.wordpress.org/Editing_wp-config.php#table_prefix .",
+            "nixName": "sites.<name>.database.tablePrefix",
+            "type": "string",
+            "value": "\"wp_\""
+        },
+        {
+            "name": "sites.<name>.database.user",
+            "desc": "Database user.",
+            "nixName": "sites.<name>.database.user",
+            "type": "string",
+            "value": "\"wordpress\""
+        },
+        {
+            "name": "sites.<name>.extraConfig",
+            "desc": "Any additional text to be appended to the wp-config.php configurationfile. This is a PHP script. For configuration settings, see  https://codex.wordpress.org/Editing_wp-config.php .   Note : Please pass structured settings via services.wordpress.sites.\u2039name\u203a.settings  instead.",
+            "nixName": "sites.<name>.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "sites.<name>.fontsDir",
+            "desc": "This directory is used to download fonts from a remote location, e.g.to host google fonts locally.",
+            "nixName": "sites.<name>.fontsDir",
+            "type": "path",
+            "value": "\"/var/lib/wordpress/\u2039name\u203a/fonts\""
+        },
+        {
+            "name": "sites.<name>.languages",
+            "desc": "List of path(s) to respective language(s) which are copied from the\u2018languages\u2019 directory.",
+            "nixName": "sites.<name>.languages",
+            "type": "list of path",
+            "value": "[ ]"
+        },
+        {
+            "name": "sites.<name>.mergedConfig",
+            "desc": "Read only representation of the final configuration.",
+            "nixName": "sites.<name>.mergedConfig",
+            "type": "unspecified value",
+            "value": "{\n  DISALLOW_FILE_EDIT = true;\n  AUTOMATIC_UPDATER_DISABLED = true;\n}\n"
+        },
+        {
+            "name": "sites.<name>.package",
+            "desc": "The wordpress package to use.",
+            "nixName": "sites.<name>.package",
+            "type": "package",
+            "value": "pkgs.wordpress"
+        },
+        {
+            "name": "sites.<name>.plugins",
+            "desc": "Path(s) to respective plugin(s) which are copied from the \u2018plugins\u2019directory.   These plugins need to be packaged before use, see example.",
+            "nixName": "sites.<name>.plugins",
+            "type": "(attribute set of path) or (list of path) convertible to it",
+            "value": "{ }"
+        },
+        {
+            "name": "sites.<name>.poolConfig",
+            "desc": "Options for the WordPress PHP pool. See the documentation on php-fpm.conf  for details on configuration directives.",
+            "nixName": "sites.<name>.poolConfig",
+            "type": "attribute set of (string or signed integer or boolean)",
+            "value": "{\n  pm = \"dynamic\";\n  \"pm.max_children\" = 32;\n  \"pm.max_requests\" = 500;\n  \"pm.max_spare_servers\" = 4;\n  \"pm.min_spare_servers\" = 2;\n  \"pm.start_servers\" = 2;\n}"
+        },
+        {
+            "name": "sites.<name>.settings",
+            "desc": "Structural Wordpress configuration. Refer to  https://developer.wordpress.org/apis/wp-config-php for details and supported values.",
+            "nixName": "sites.<name>.settings",
+            "type": "attribute set of anything",
+            "value": "{ }"
+        },
+        {
+            "name": "sites.<name>.themes",
+            "desc": "Path(s) to respective theme(s) which are copied from the \u2018theme\u2019directory.   These themes need to be packaged before use, see example.",
+            "nixName": "sites.<name>.themes",
+            "type": "(attribute set of path) or (list of path) convertible to it",
+            "value": "{ inherit (pkgs.wordpressPackages.themes) twentytwentythree; }"
+        },
+        {
+            "name": "sites.<name>.uploadsDir",
+            "desc": "This directory is used for uploads of pictures. The directory passedhere is automatically created and permissions adjusted as required.",
+            "nixName": "sites.<name>.uploadsDir",
+            "type": "path",
+            "value": "\"/var/lib/wordpress/\u2039name\u203a/uploads\""
+        },
+        {
+            "name": "sites.<name>.virtualHost",
+            "desc": "Apache configuration can be done by adapting  services.httpd.virtualHosts .",
+            "nixName": "sites.<name>.virtualHost",
+            "type": "submodule",
+            "value": null
+        },
+        {
+            "name": "sites.<name>.virtualHost.acmeRoot",
+            "desc": "Directory for the acme challenge which is PUBLIC, don\u2019t put certs orkeys in here. Set to null to inherit from config.security.acme.",
+            "nixName": "sites.<name>.virtualHost.acmeRoot",
+            "type": "null or string",
+            "value": "\"/var/lib/acme/acme-challenge\""
+        },
+        {
+            "name": "sites.<name>.virtualHost.addSSL",
+            "desc": "Whether to enable HTTPS in addition to plain HTTP. This will setdefaults for  listen  to listen on all interfaces on therespective default ports (80, 443).",
+            "nixName": "sites.<name>.virtualHost.addSSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "sites.<name>.virtualHost.adminAddr",
+            "desc": "E-mail address of the server administrator.",
+            "nixName": "sites.<name>.virtualHost.adminAddr",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "sites.<name>.virtualHost.documentRoot",
+            "desc": "The path of Apache\u2019s document root directory. If left undefined, anempty directory in the Nix store will be used as root.",
+            "nixName": "sites.<name>.virtualHost.documentRoot",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "sites.<name>.virtualHost.enableACME",
+            "desc": "Whether to ask Let\u2019s Encrypt to sign a certificate for this vhost.Alternately, you can use an existing certificate through  useACMEHost .",
+            "nixName": "sites.<name>.virtualHost.enableACME",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "sites.<name>.virtualHost.enableUserDir",
+            "desc": "Whether to enable serving  ~/public_html  as  /~\u00abusername\u00bb .",
+            "nixName": "sites.<name>.virtualHost.enableUserDir",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "sites.<name>.virtualHost.extraConfig",
+            "desc": "These lines go to httpd.conf verbatim. They will go after directoriesand directory aliases defined by default.",
+            "nixName": "sites.<name>.virtualHost.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "sites.<name>.virtualHost.forceSSL",
+            "desc": "Whether to add a separate nginx server block that permanentlyredirects (301) all plain HTTP traffic to HTTPS. This will set defaultsfor  listen  to listen on all interfaces on the respectivedefault ports (80, 443), where the non-SSL listens are used for theredirect vhosts.",
+            "nixName": "sites.<name>.virtualHost.forceSSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "sites.<name>.virtualHost.globalRedirect",
+            "desc": "If set, all requests for this host are redirected permanently to thegiven URL.",
+            "nixName": "sites.<name>.virtualHost.globalRedirect",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "sites.<name>.virtualHost.hostName",
+            "desc": "Canonical hostname for the server.",
+            "nixName": "sites.<name>.virtualHost.hostName",
+            "type": "string",
+            "value": "\"\u2039name\u203a\""
+        },
+        {
+            "name": "sites.<name>.virtualHost.http2",
+            "desc": "Whether to enable HTTP 2. HTTP/2 is supported in all multi-processingmodules that come with httpd.  However, if you use the prefork mpm,there will be severe restrictions.  Refer to  https://httpd.apache.org/docs/2.4/howto/http2.html#mpm-config for details.",
+            "nixName": "sites.<name>.virtualHost.http2",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "sites.<name>.virtualHost.listen",
+            "desc": "Listen addresses and ports for this virtual host.   This option overrides  addSSL ,  forceSSL  and onlySSL .  If you only want to set the addresses manually and not the ports,take a look at  listenAddresses .",
+            "nixName": "sites.<name>.virtualHost.listen",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "sites.<name>.virtualHost.listen.*.ip",
+            "desc": "IP to listen on. 0.0.0.0 for IPv4 only, * for all.",
+            "nixName": "sites.<name>.virtualHost.listen.*.ip",
+            "type": "string",
+            "value": "\"*\""
+        },
+        {
+            "name": "sites.<name>.virtualHost.listen.*.port",
+            "desc": "Port to listen on",
+            "nixName": "sites.<name>.virtualHost.listen.*.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": null
+        },
+        {
+            "name": "sites.<name>.virtualHost.listen.*.ssl",
+            "desc": "Whether to enable SSL (https) support.",
+            "nixName": "sites.<name>.virtualHost.listen.*.ssl",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "sites.<name>.virtualHost.listenAddresses",
+            "desc": "Listen addresses for this virtual host. Compared to listen  this only sets the addresses and the ports arechosen automatically.",
+            "nixName": "sites.<name>.virtualHost.listenAddresses",
+            "type": "non-empty (list of string)",
+            "value": "[\n  \"*\"\n]"
+        },
+        {
+            "name": "sites.<name>.virtualHost.locations",
+            "desc": "Declarative location config. See  https://httpd.apache.org/docs/2.4/mod/core.html#location for details.",
+            "nixName": "sites.<name>.virtualHost.locations",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "sites.<name>.virtualHost.locations.<name>.alias",
+            "desc": "Alias directory for requests. See  https://httpd.apache.org/docs/2.4/mod/mod_alias.html#alias .",
+            "nixName": "sites.<name>.virtualHost.locations.<name>.alias",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "sites.<name>.virtualHost.locations.<name>.extraConfig",
+            "desc": "These lines go to the end of the location verbatim.",
+            "nixName": "sites.<name>.virtualHost.locations.<name>.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "sites.<name>.virtualHost.locations.<name>.index",
+            "desc": "Adds DirectoryIndex directive. See  https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex .",
+            "nixName": "sites.<name>.virtualHost.locations.<name>.index",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "sites.<name>.virtualHost.locations.<name>.priority",
+            "desc": "Order of this location block in relation to the others in the vhost.The semantics are the same as with  lib.mkOrder . Smallervalues have a greater priority.",
+            "nixName": "sites.<name>.virtualHost.locations.<name>.priority",
+            "type": "signed integer",
+            "value": "1000"
+        },
+        {
+            "name": "sites.<name>.virtualHost.locations.<name>.proxyPass",
+            "desc": "Sets up a simple reverse proxy as described by  https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html#simple .",
+            "nixName": "sites.<name>.virtualHost.locations.<name>.proxyPass",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "sites.<name>.virtualHost.logFormat",
+            "desc": "Log format for Apache\u2019s log files. Possible values are: combined,common, referer, agent.",
+            "nixName": "sites.<name>.virtualHost.logFormat",
+            "type": "string",
+            "value": "\"common\""
+        },
+        {
+            "name": "sites.<name>.virtualHost.onlySSL",
+            "desc": "Whether to enable HTTPS and reject plain HTTP connections. This willset defaults for  listen  to listen on all interfaces on port443.",
+            "nixName": "sites.<name>.virtualHost.onlySSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "sites.<name>.virtualHost.robotsEntries",
+            "desc": "Specification of pages to be ignored by web crawlers. See  http://www.robotstxt.org/  fordetails.",
+            "nixName": "sites.<name>.virtualHost.robotsEntries",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "sites.<name>.virtualHost.servedDirs",
+            "desc": "This option provides a simple way to serve static directories.",
+            "nixName": "sites.<name>.virtualHost.servedDirs",
+            "type": "list of (attribute set)",
+            "value": "[ ]"
+        },
+        {
+            "name": "sites.<name>.virtualHost.servedFiles",
+            "desc": "This option provides a simple way to serve individual, staticfiles.   This option has been deprecated and will be removed in a futureversion of NixOS. You can achieve the same result by making use of the locations.<name>.alias  option.",
+            "nixName": "sites.<name>.virtualHost.servedFiles",
+            "type": "list of (attribute set)",
+            "value": "[ ]"
+        },
+        {
+            "name": "sites.<name>.virtualHost.serverAliases",
+            "desc": "Additional names of virtual hosts served by this virtual hostconfiguration.",
+            "nixName": "sites.<name>.virtualHost.serverAliases",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "sites.<name>.virtualHost.sslServerCert",
+            "desc": "Path to server SSL certificate.",
+            "nixName": "sites.<name>.virtualHost.sslServerCert",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "sites.<name>.virtualHost.sslServerChain",
+            "desc": "Path to server SSL chain file.",
+            "nixName": "sites.<name>.virtualHost.sslServerChain",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "sites.<name>.virtualHost.sslServerKey",
+            "desc": "Path to server SSL certificate key.",
+            "nixName": "sites.<name>.virtualHost.sslServerKey",
+            "type": "path",
+            "value": null
+        },
+        {
+            "name": "sites.<name>.virtualHost.useACMEHost",
+            "desc": "A host of an existing Let\u2019s Encrypt certificate to use. This isuseful if you have many subdomains and want to avoid hitting the  rate limit .Alternately, you can generate a certificate through  enableACME .  Note thatthis option does not create any certificates, nor it does add subdomainsto existing ones \u2013 you will need to create them manually using  security.acme.certs .",
+            "nixName": "sites.<name>.virtualHost.useACMEHost",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "webserver",
+            "desc": "Whether to use apache2 or nginx for virtual host management.  Further nginx configuration can be done by adapting services.nginx.virtualHosts.<name> . See  services.nginx.virtualHosts for further information.  Further apache2 configuration can be done by adapting services.httpd.virtualHosts.<name> . See  services.httpd.virtualHosts for further information.",
+            "nixName": "webserver",
+            "type": "one of \"httpd\", \"nginx\", \"caddy\"",
+            "value": "\"httpd\""
+        }
+    ]
+}

@@ -700,7 +700,7 @@
         }
     },
     {
-        "nixName": "go-ethereum",
+        "nixName": "geth",
         "specs": {
             "ram": 16384,
             "storage": 4194304

@@ -22009,5 +22009,3002 @@
         ],
         "show": false,
         "tested": false
+    },
+    {
+        "name": "jupyter",
+        "nixName": "jupyter",
+        "options": [
+            {
+                "name": "command",
+                "desc": "Which command the service runs. Note that not all jupyter packageshave all commands, e.g. jupyter-lab isn\u2019t present in the defaultpackage.",
+                "nixName": "command",
+                "type": "string",
+                "value": "\"jupyter-notebook\""
+            },
+            {
+                "name": "enable",
+                "desc": "Whether to enable Jupyter development server.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "group",
+                "desc": "Name of the group used to run the jupyter service. Use this if youwant to create a group of users that are able to view the notebookdirectory\u2019s content.",
+                "nixName": "group",
+                "type": "string",
+                "value": "\"jupyter\""
+            },
+            {
+                "name": "ip",
+                "desc": "IP address Jupyter will be listening on.",
+                "nixName": "ip",
+                "type": "string",
+                "value": "\"localhost\""
+            },
+            {
+                "name": "kernels",
+                "desc": "Declarative kernel config.  Kernels can be declared in any language that supports and has therequired dependencies to communicate with a jupyter server. In python\u2019scase, it means that ipykernel package must always be included in thelist of packages of the targeted environment.",
+                "nixName": "kernels",
+                "type": "null or (attribute set of (JSON value))",
+                "value": "null"
+            },
+            {
+                "name": "kernels.<name>.argv",
+                "desc": "Command and arguments to start the kernel.",
+                "nixName": "kernels.<name>.argv",
+                "type": "list of string",
+                "value": null
+            },
+            {
+                "name": "kernels.<name>.displayName",
+                "desc": "Name that will be shown to the user.",
+                "nixName": "kernels.<name>.displayName",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "kernels.<name>.env",
+                "desc": "Environment variables to set for the kernel.",
+                "nixName": "kernels.<name>.env",
+                "type": "attribute set of string",
+                "value": "{ }"
+            },
+            {
+                "name": "kernels.<name>.extraPaths",
+                "desc": "Extra paths to link in kernel directory",
+                "nixName": "kernels.<name>.extraPaths",
+                "type": "attribute set of path",
+                "value": "{ }"
+            },
+            {
+                "name": "kernels.<name>.language",
+                "desc": "Language of the environment. Typically the name of the binary.",
+                "nixName": "kernels.<name>.language",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "kernels.<name>.logo32",
+                "desc": "Path to 32x32 logo png.",
+                "nixName": "kernels.<name>.logo32",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "kernels.<name>.logo64",
+                "desc": "Path to 64x64 logo png.",
+                "nixName": "kernels.<name>.logo64",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "notebookConfig",
+                "desc": "Raw jupyter config.",
+                "nixName": "notebookConfig",
+                "type": "strings concatenated with \"\\n\"",
+                "value": "\"\""
+            },
+            {
+                "name": "notebookDir",
+                "desc": "Root directory for notebooks.",
+                "nixName": "notebookDir",
+                "type": "string",
+                "value": "\"~/\""
+            },
+            {
+                "name": "package",
+                "desc": "The notebook package to use.",
+                "nixName": "package",
+                "type": "package",
+                "value": "pkgs.python3.pkgs.notebook"
+            },
+            {
+                "name": "password",
+                "desc": "Password to use with notebook. Can be generated using: In [1]: fromnotebook.auth import passwd In [2]: passwd(\u2018test\u2019) Out[2]:\u2018sha1:1b961dc713fb:88483270a63e57d18d43cf337e629539de1436ba\u2019 NOTE: youneed to keep the single quote inside the nix string. Or you can use apython oneliner: \u201copen(\u2018/path/secret_file\u2019, \u2018r\u2019,encoding=\u2018utf8\u2019).read().strip()\u201d It will be interpreted at the end ofthe notebookConfig.",
+                "nixName": "password",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "port",
+                "desc": "Port number Jupyter will be listening on.",
+                "nixName": "port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "8888"
+            },
+            {
+                "name": "user",
+                "desc": "Name of the user used to run the jupyter service. For securityreason, jupyter should really not be run as root. If not set (jupyter),the service will create a jupyter user with appropriate settings.",
+                "nixName": "user",
+                "type": "string",
+                "value": "\"jupyter\""
+            }
+        ]
+    },
+    {
+        "name": "wordpress",
+        "nixName": "wordpress",
+        "options": [
+            {
+                "name": "sites",
+                "desc": "Specification of one or more WordPress sites to serve",
+                "nixName": "sites",
+                "type": "attribute set of (submodule)",
+                "value": "{ }"
+            },
+            {
+                "name": "sites.<name>.database.createLocally",
+                "desc": "Create the database and database user locally.",
+                "nixName": "sites.<name>.database.createLocally",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "sites.<name>.database.host",
+                "desc": "Database host address.",
+                "nixName": "sites.<name>.database.host",
+                "type": "string",
+                "value": "\"localhost\""
+            },
+            {
+                "name": "sites.<name>.database.name",
+                "desc": "Database name.",
+                "nixName": "sites.<name>.database.name",
+                "type": "string",
+                "value": "\"wordpress\""
+            },
+            {
+                "name": "sites.<name>.database.passwordFile",
+                "desc": "A file containing the password corresponding to  database.user .",
+                "nixName": "sites.<name>.database.passwordFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "sites.<name>.database.port",
+                "desc": "Database host port.",
+                "nixName": "sites.<name>.database.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "3306"
+            },
+            {
+                "name": "sites.<name>.database.socket",
+                "desc": "Path to the unix socket file to use for authentication.",
+                "nixName": "sites.<name>.database.socket",
+                "type": "null or path",
+                "value": "/run/mysqld/mysqld.sock"
+            },
+            {
+                "name": "sites.<name>.database.tablePrefix",
+                "desc": "The $table_prefix is the value placed in the front of your databasetables. Change the value if you want to use something other than wp_ foryour database prefix. Typically this is changed if you are installingmultiple WordPress blogs in the same database.  See  https://codex.wordpress.org/Editing_wp-config.php#table_prefix .",
+                "nixName": "sites.<name>.database.tablePrefix",
+                "type": "string",
+                "value": "\"wp_\""
+            },
+            {
+                "name": "sites.<name>.database.user",
+                "desc": "Database user.",
+                "nixName": "sites.<name>.database.user",
+                "type": "string",
+                "value": "\"wordpress\""
+            },
+            {
+                "name": "sites.<name>.extraConfig",
+                "desc": "Any additional text to be appended to the wp-config.php configurationfile. This is a PHP script. For configuration settings, see  https://codex.wordpress.org/Editing_wp-config.php .   Note : Please pass structured settings via services.wordpress.sites.\u2039name\u203a.settings  instead.",
+                "nixName": "sites.<name>.extraConfig",
+                "type": "strings concatenated with \"\\n\"",
+                "value": "\"\""
+            },
+            {
+                "name": "sites.<name>.fontsDir",
+                "desc": "This directory is used to download fonts from a remote location, e.g.to host google fonts locally.",
+                "nixName": "sites.<name>.fontsDir",
+                "type": "path",
+                "value": "\"/var/lib/wordpress/\u2039name\u203a/fonts\""
+            },
+            {
+                "name": "sites.<name>.languages",
+                "desc": "List of path(s) to respective language(s) which are copied from the\u2018languages\u2019 directory.",
+                "nixName": "sites.<name>.languages",
+                "type": "list of path",
+                "value": "[ ]"
+            },
+            {
+                "name": "sites.<name>.mergedConfig",
+                "desc": "Read only representation of the final configuration.",
+                "nixName": "sites.<name>.mergedConfig",
+                "type": "unspecified value",
+                "value": "{\n  DISALLOW_FILE_EDIT = true;\n  AUTOMATIC_UPDATER_DISABLED = true;\n}\n"
+            },
+            {
+                "name": "sites.<name>.package",
+                "desc": "The wordpress package to use.",
+                "nixName": "sites.<name>.package",
+                "type": "package",
+                "value": "pkgs.wordpress"
+            },
+            {
+                "name": "sites.<name>.plugins",
+                "desc": "Path(s) to respective plugin(s) which are copied from the \u2018plugins\u2019directory.   These plugins need to be packaged before use, see example.",
+                "nixName": "sites.<name>.plugins",
+                "type": "(attribute set of path) or (list of path) convertible to it",
+                "value": "{ }"
+            },
+            {
+                "name": "sites.<name>.poolConfig",
+                "desc": "Options for the WordPress PHP pool. See the documentation on php-fpm.conf  for details on configuration directives.",
+                "nixName": "sites.<name>.poolConfig",
+                "type": "attribute set of (string or signed integer or boolean)",
+                "value": "{\n  pm = \"dynamic\";\n  \"pm.max_children\" = 32;\n  \"pm.max_requests\" = 500;\n  \"pm.max_spare_servers\" = 4;\n  \"pm.min_spare_servers\" = 2;\n  \"pm.start_servers\" = 2;\n}"
+            },
+            {
+                "name": "sites.<name>.settings",
+                "desc": "Structural Wordpress configuration. Refer to  https://developer.wordpress.org/apis/wp-config-php for details and supported values.",
+                "nixName": "sites.<name>.settings",
+                "type": "attribute set of anything",
+                "value": "{ }"
+            },
+            {
+                "name": "sites.<name>.themes",
+                "desc": "Path(s) to respective theme(s) which are copied from the \u2018theme\u2019directory.   These themes need to be packaged before use, see example.",
+                "nixName": "sites.<name>.themes",
+                "type": "(attribute set of path) or (list of path) convertible to it",
+                "value": "{ inherit (pkgs.wordpressPackages.themes) twentytwentythree; }"
+            },
+            {
+                "name": "sites.<name>.uploadsDir",
+                "desc": "This directory is used for uploads of pictures. The directory passedhere is automatically created and permissions adjusted as required.",
+                "nixName": "sites.<name>.uploadsDir",
+                "type": "path",
+                "value": "\"/var/lib/wordpress/\u2039name\u203a/uploads\""
+            },
+            {
+                "name": "sites.<name>.virtualHost",
+                "desc": "Apache configuration can be done by adapting  services.httpd.virtualHosts .",
+                "nixName": "sites.<name>.virtualHost",
+                "type": "submodule",
+                "value": null
+            },
+            {
+                "name": "sites.<name>.virtualHost.acmeRoot",
+                "desc": "Directory for the acme challenge which is PUBLIC, don\u2019t put certs orkeys in here. Set to null to inherit from config.security.acme.",
+                "nixName": "sites.<name>.virtualHost.acmeRoot",
+                "type": "null or string",
+                "value": "\"/var/lib/acme/acme-challenge\""
+            },
+            {
+                "name": "sites.<name>.virtualHost.addSSL",
+                "desc": "Whether to enable HTTPS in addition to plain HTTP. This will setdefaults for  listen  to listen on all interfaces on therespective default ports (80, 443).",
+                "nixName": "sites.<name>.virtualHost.addSSL",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "sites.<name>.virtualHost.adminAddr",
+                "desc": "E-mail address of the server administrator.",
+                "nixName": "sites.<name>.virtualHost.adminAddr",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "sites.<name>.virtualHost.documentRoot",
+                "desc": "The path of Apache\u2019s document root directory. If left undefined, anempty directory in the Nix store will be used as root.",
+                "nixName": "sites.<name>.virtualHost.documentRoot",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "sites.<name>.virtualHost.enableACME",
+                "desc": "Whether to ask Let\u2019s Encrypt to sign a certificate for this vhost.Alternately, you can use an existing certificate through  useACMEHost .",
+                "nixName": "sites.<name>.virtualHost.enableACME",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "sites.<name>.virtualHost.enableUserDir",
+                "desc": "Whether to enable serving  ~/public_html  as  /~\u00abusername\u00bb .",
+                "nixName": "sites.<name>.virtualHost.enableUserDir",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "sites.<name>.virtualHost.extraConfig",
+                "desc": "These lines go to httpd.conf verbatim. They will go after directoriesand directory aliases defined by default.",
+                "nixName": "sites.<name>.virtualHost.extraConfig",
+                "type": "strings concatenated with \"\\n\"",
+                "value": "\"\""
+            },
+            {
+                "name": "sites.<name>.virtualHost.forceSSL",
+                "desc": "Whether to add a separate nginx server block that permanentlyredirects (301) all plain HTTP traffic to HTTPS. This will set defaultsfor  listen  to listen on all interfaces on the respectivedefault ports (80, 443), where the non-SSL listens are used for theredirect vhosts.",
+                "nixName": "sites.<name>.virtualHost.forceSSL",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "sites.<name>.virtualHost.globalRedirect",
+                "desc": "If set, all requests for this host are redirected permanently to thegiven URL.",
+                "nixName": "sites.<name>.virtualHost.globalRedirect",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "sites.<name>.virtualHost.hostName",
+                "desc": "Canonical hostname for the server.",
+                "nixName": "sites.<name>.virtualHost.hostName",
+                "type": "string",
+                "value": "\"\u2039name\u203a\""
+            },
+            {
+                "name": "sites.<name>.virtualHost.http2",
+                "desc": "Whether to enable HTTP 2. HTTP/2 is supported in all multi-processingmodules that come with httpd.  However, if you use the prefork mpm,there will be severe restrictions.  Refer to  https://httpd.apache.org/docs/2.4/howto/http2.html#mpm-config for details.",
+                "nixName": "sites.<name>.virtualHost.http2",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "sites.<name>.virtualHost.listen",
+                "desc": "Listen addresses and ports for this virtual host.   This option overrides  addSSL ,  forceSSL  and onlySSL .  If you only want to set the addresses manually and not the ports,take a look at  listenAddresses .",
+                "nixName": "sites.<name>.virtualHost.listen",
+                "type": "list of (submodule)",
+                "value": "[ ]"
+            },
+            {
+                "name": "sites.<name>.virtualHost.listen.*.ip",
+                "desc": "IP to listen on. 0.0.0.0 for IPv4 only, * for all.",
+                "nixName": "sites.<name>.virtualHost.listen.*.ip",
+                "type": "string",
+                "value": "\"*\""
+            },
+            {
+                "name": "sites.<name>.virtualHost.listen.*.port",
+                "desc": "Port to listen on",
+                "nixName": "sites.<name>.virtualHost.listen.*.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": null
+            },
+            {
+                "name": "sites.<name>.virtualHost.listen.*.ssl",
+                "desc": "Whether to enable SSL (https) support.",
+                "nixName": "sites.<name>.virtualHost.listen.*.ssl",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "sites.<name>.virtualHost.listenAddresses",
+                "desc": "Listen addresses for this virtual host. Compared to listen  this only sets the addresses and the ports arechosen automatically.",
+                "nixName": "sites.<name>.virtualHost.listenAddresses",
+                "type": "non-empty (list of string)",
+                "value": "[\n  \"*\"\n]"
+            },
+            {
+                "name": "sites.<name>.virtualHost.locations",
+                "desc": "Declarative location config. See  https://httpd.apache.org/docs/2.4/mod/core.html#location for details.",
+                "nixName": "sites.<name>.virtualHost.locations",
+                "type": "attribute set of (submodule)",
+                "value": "{ }"
+            },
+            {
+                "name": "sites.<name>.virtualHost.locations.<name>.alias",
+                "desc": "Alias directory for requests. See  https://httpd.apache.org/docs/2.4/mod/mod_alias.html#alias .",
+                "nixName": "sites.<name>.virtualHost.locations.<name>.alias",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "sites.<name>.virtualHost.locations.<name>.extraConfig",
+                "desc": "These lines go to the end of the location verbatim.",
+                "nixName": "sites.<name>.virtualHost.locations.<name>.extraConfig",
+                "type": "strings concatenated with \"\\n\"",
+                "value": "\"\""
+            },
+            {
+                "name": "sites.<name>.virtualHost.locations.<name>.index",
+                "desc": "Adds DirectoryIndex directive. See  https://httpd.apache.org/docs/2.4/mod/mod_dir.html#directoryindex .",
+                "nixName": "sites.<name>.virtualHost.locations.<name>.index",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "sites.<name>.virtualHost.locations.<name>.priority",
+                "desc": "Order of this location block in relation to the others in the vhost.The semantics are the same as with  lib.mkOrder . Smallervalues have a greater priority.",
+                "nixName": "sites.<name>.virtualHost.locations.<name>.priority",
+                "type": "signed integer",
+                "value": "1000"
+            },
+            {
+                "name": "sites.<name>.virtualHost.locations.<name>.proxyPass",
+                "desc": "Sets up a simple reverse proxy as described by  https://httpd.apache.org/docs/2.4/howto/reverse_proxy.html#simple .",
+                "nixName": "sites.<name>.virtualHost.locations.<name>.proxyPass",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "sites.<name>.virtualHost.logFormat",
+                "desc": "Log format for Apache\u2019s log files. Possible values are: combined,common, referer, agent.",
+                "nixName": "sites.<name>.virtualHost.logFormat",
+                "type": "string",
+                "value": "\"common\""
+            },
+            {
+                "name": "sites.<name>.virtualHost.onlySSL",
+                "desc": "Whether to enable HTTPS and reject plain HTTP connections. This willset defaults for  listen  to listen on all interfaces on port443.",
+                "nixName": "sites.<name>.virtualHost.onlySSL",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "sites.<name>.virtualHost.robotsEntries",
+                "desc": "Specification of pages to be ignored by web crawlers. See  http://www.robotstxt.org/  fordetails.",
+                "nixName": "sites.<name>.virtualHost.robotsEntries",
+                "type": "strings concatenated with \"\\n\"",
+                "value": "\"\""
+            },
+            {
+                "name": "sites.<name>.virtualHost.servedDirs",
+                "desc": "This option provides a simple way to serve static directories.",
+                "nixName": "sites.<name>.virtualHost.servedDirs",
+                "type": "list of (attribute set)",
+                "value": "[ ]"
+            },
+            {
+                "name": "sites.<name>.virtualHost.servedFiles",
+                "desc": "This option provides a simple way to serve individual, staticfiles.   This option has been deprecated and will be removed in a futureversion of NixOS. You can achieve the same result by making use of the locations.<name>.alias  option.",
+                "nixName": "sites.<name>.virtualHost.servedFiles",
+                "type": "list of (attribute set)",
+                "value": "[ ]"
+            },
+            {
+                "name": "sites.<name>.virtualHost.serverAliases",
+                "desc": "Additional names of virtual hosts served by this virtual hostconfiguration.",
+                "nixName": "sites.<name>.virtualHost.serverAliases",
+                "type": "list of string",
+                "value": "[ ]"
+            },
+            {
+                "name": "sites.<name>.virtualHost.sslServerCert",
+                "desc": "Path to server SSL certificate.",
+                "nixName": "sites.<name>.virtualHost.sslServerCert",
+                "type": "path",
+                "value": null
+            },
+            {
+                "name": "sites.<name>.virtualHost.sslServerChain",
+                "desc": "Path to server SSL chain file.",
+                "nixName": "sites.<name>.virtualHost.sslServerChain",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "sites.<name>.virtualHost.sslServerKey",
+                "desc": "Path to server SSL certificate key.",
+                "nixName": "sites.<name>.virtualHost.sslServerKey",
+                "type": "path",
+                "value": null
+            },
+            {
+                "name": "sites.<name>.virtualHost.useACMEHost",
+                "desc": "A host of an existing Let\u2019s Encrypt certificate to use. This isuseful if you have many subdomains and want to avoid hitting the  rate limit .Alternately, you can generate a certificate through  enableACME .  Note thatthis option does not create any certificates, nor it does add subdomainsto existing ones \u2013 you will need to create them manually using  security.acme.certs .",
+                "nixName": "sites.<name>.virtualHost.useACMEHost",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "webserver",
+                "desc": "Whether to use apache2 or nginx for virtual host management.  Further nginx configuration can be done by adapting services.nginx.virtualHosts.<name> . See  services.nginx.virtualHosts for further information.  Further apache2 configuration can be done by adapting services.httpd.virtualHosts.<name> . See  services.httpd.virtualHosts for further information.",
+                "nixName": "webserver",
+                "type": "one of \"httpd\", \"nginx\", \"caddy\"",
+                "value": "\"httpd\""
+            }
+        ]
+    },
+    {
+        "name": "geth",
+        "nixName": "geth",
+        "options": [
+            {
+                "name": "<name>.authrpc.address",
+                "desc": "Listen address of Go Ethereum Auth RPC API.",
+                "nixName": "<name>.authrpc.address",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "<name>.authrpc.enable",
+                "desc": "Whether to enable Go Ethereum Auth RPC API.",
+                "nixName": "<name>.authrpc.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "<name>.authrpc.jwtsecret",
+                "desc": "Path to a JWT secret for authenticated RPC endpoint.",
+                "nixName": "<name>.authrpc.jwtsecret",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "<name>.authrpc.port",
+                "desc": "Port number of Go Ethereum Auth RPC API.",
+                "nixName": "<name>.authrpc.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "8551"
+            },
+            {
+                "name": "<name>.authrpc.vhosts",
+                "desc": "List of virtual hostnames from which to accept requests.",
+                "nixName": "<name>.authrpc.vhosts",
+                "type": "null or (list of string)",
+                "value": "[\n  \"localhost\"\n]"
+            },
+            {
+                "name": "<name>.enable",
+                "desc": "Whether to enable Go Ethereum Node.",
+                "nixName": "<name>.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "<name>.extraArgs",
+                "desc": "Additional arguments passed to Go Ethereum.",
+                "nixName": "<name>.extraArgs",
+                "type": "list of string",
+                "value": "[ ]"
+            },
+            {
+                "name": "<name>.gcmode",
+                "desc": "Blockchain garbage collection mode.",
+                "nixName": "<name>.gcmode",
+                "type": "one of \"full\", \"archive\"",
+                "value": "\"full\""
+            },
+            {
+                "name": "<name>.http.address",
+                "desc": "Listen address of Go Ethereum HTTP API.",
+                "nixName": "<name>.http.address",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "<name>.http.apis",
+                "desc": "APIs to enable over WebSocket",
+                "nixName": "<name>.http.apis",
+                "type": "null or (list of string)",
+                "value": "null"
+            },
+            {
+                "name": "<name>.http.enable",
+                "desc": "Whether to enable Go Ethereum HTTP API.",
+                "nixName": "<name>.http.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "<name>.http.port",
+                "desc": "Port number of Go Ethereum HTTP API.",
+                "nixName": "<name>.http.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "8545"
+            },
+            {
+                "name": "<name>.maxpeers",
+                "desc": "Maximum peers to connect to.",
+                "nixName": "<name>.maxpeers",
+                "type": "signed integer",
+                "value": "50"
+            },
+            {
+                "name": "<name>.metrics.address",
+                "desc": "Listen address of Go Ethereum metrics service.",
+                "nixName": "<name>.metrics.address",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "<name>.metrics.enable",
+                "desc": "Whether to enable Go Ethereum prometheus metrics.",
+                "nixName": "<name>.metrics.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "<name>.metrics.port",
+                "desc": "Port number of Go Ethereum metrics service.",
+                "nixName": "<name>.metrics.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "6060"
+            },
+            {
+                "name": "<name>.network",
+                "desc": "The network to connect to. Mainnet (null) is the default ethereumnetwork.",
+                "nixName": "<name>.network",
+                "type": "null or one of \"goerli\", \"rinkeby\", \"yolov2\", \"ropsten\"",
+                "value": "null"
+            },
+            {
+                "name": "<name>.package",
+                "desc": "The geth package to use.",
+                "nixName": "<name>.package",
+                "type": "package",
+                "value": "pkgs.go-ethereum.geth"
+            },
+            {
+                "name": "<name>.port",
+                "desc": "Port number Go Ethereum will be listening on, both TCP and UDP.",
+                "nixName": "<name>.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "30303"
+            },
+            {
+                "name": "<name>.syncmode",
+                "desc": "Blockchain sync mode.",
+                "nixName": "<name>.syncmode",
+                "type": "one of \"snap\", \"fast\", \"full\", \"light\"",
+                "value": "\"snap\""
+            },
+            {
+                "name": "<name>.websocket.address",
+                "desc": "Listen address of Go Ethereum WebSocket API.",
+                "nixName": "<name>.websocket.address",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "<name>.websocket.apis",
+                "desc": "APIs to enable over WebSocket",
+                "nixName": "<name>.websocket.apis",
+                "type": "null or (list of string)",
+                "value": "null"
+            },
+            {
+                "name": "<name>.websocket.enable",
+                "desc": "Whether to enable Go Ethereum WebSocket API.",
+                "nixName": "<name>.websocket.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "<name>.websocket.port",
+                "desc": "Port number of Go Ethereum WebSocket API.",
+                "nixName": "<name>.websocket.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "8546"
+            }
+        ]
+    },
+    {
+        "name": "lighthouse",
+        "nixName": "lighthouse",
+        "options": [
+            {
+                "name": "beacon",
+                "desc": "Beacon node",
+                "nixName": "beacon",
+                "type": "submodule",
+                "value": "{ }"
+            },
+            {
+                "name": "beacon.address",
+                "desc": "Listen address of Beacon node.",
+                "nixName": "beacon.address",
+                "type": "string",
+                "value": "\"0.0.0.0\""
+            },
+            {
+                "name": "beacon.dataDir",
+                "desc": "Directory where data will be stored. Each chain will be stored underit\u2019s own specific subdirectory.",
+                "nixName": "beacon.dataDir",
+                "type": "string",
+                "value": "\"/var/lib/lighthouse-beacon\""
+            },
+            {
+                "name": "beacon.disableDepositContractSync",
+                "desc": "Explicitly disables syncing of deposit logs from the execution node.This overrides any previous option that depends on it. Useful if youintend to run a non-validating beacon node.",
+                "nixName": "beacon.disableDepositContractSync",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "beacon.enable",
+                "desc": "Whether to enable Lightouse Beacon node.",
+                "nixName": "beacon.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "beacon.execution.address",
+                "desc": "Listen address for the execution layer.",
+                "nixName": "beacon.execution.address",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "beacon.execution.jwtPath",
+                "desc": "Path for the jwt secret required to connect to the executionlayer.",
+                "nixName": "beacon.execution.jwtPath",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "beacon.execution.port",
+                "desc": "Port number the Beacon node will be listening on for the executionlayer.",
+                "nixName": "beacon.execution.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "8551"
+            },
+            {
+                "name": "beacon.extraArgs",
+                "desc": "Additional arguments passed to the lighthouse beacon command.",
+                "nixName": "beacon.extraArgs",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "beacon.http.address",
+                "desc": "Listen address of Beacon node RPC service.",
+                "nixName": "beacon.http.address",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "beacon.http.enable",
+                "desc": "Whether to enable Beacon node http api.",
+                "nixName": "beacon.http.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "beacon.http.port",
+                "desc": "Port number of Beacon node RPC service.",
+                "nixName": "beacon.http.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "5052"
+            },
+            {
+                "name": "beacon.metrics.address",
+                "desc": "Listen address of Beacon node metrics service.",
+                "nixName": "beacon.metrics.address",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "beacon.metrics.enable",
+                "desc": "Whether to enable Beacon node prometheus metrics.",
+                "nixName": "beacon.metrics.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "beacon.metrics.port",
+                "desc": "Port number of Beacon node metrics service.",
+                "nixName": "beacon.metrics.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "5054"
+            },
+            {
+                "name": "beacon.openFirewall",
+                "desc": "Open the port in the firewall",
+                "nixName": "beacon.openFirewall",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "beacon.port",
+                "desc": "Port number the Beacon node will be listening on.",
+                "nixName": "beacon.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "9000"
+            },
+            {
+                "name": "extraArgs",
+                "desc": "Additional arguments passed to every lighthouse command.",
+                "nixName": "extraArgs",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "network",
+                "desc": "The network to connect to. Mainnet is the default ethereumnetwork.",
+                "nixName": "network",
+                "type": "one of \"mainnet\", \"prater\", \"goerli\", \"gnosis\", \"kiln\", \"ropsten\", \"sepolia\"",
+                "value": "\"mainnet\""
+            },
+            {
+                "name": "validator",
+                "desc": "Validator node",
+                "nixName": "validator",
+                "type": "submodule",
+                "value": "{ }"
+            },
+            {
+                "name": "validator.beaconNodes",
+                "desc": "Beacon nodes to connect to.",
+                "nixName": "validator.beaconNodes",
+                "type": "list of string",
+                "value": "[\n  \"http://localhost:5052\"\n]"
+            },
+            {
+                "name": "validator.dataDir",
+                "desc": "Directory where data will be stored. Each chain will be stored underit\u2019s own specific subdirectory.",
+                "nixName": "validator.dataDir",
+                "type": "string",
+                "value": "\"/var/lib/lighthouse-validator\""
+            },
+            {
+                "name": "validator.enable",
+                "desc": "Enable Lightouse Validator node.",
+                "nixName": "validator.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "validator.extraArgs",
+                "desc": "Additional arguments passed to the lighthouse validator command.",
+                "nixName": "validator.extraArgs",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "validator.metrics.address",
+                "desc": "Listen address of Validator node metrics service.",
+                "nixName": "validator.metrics.address",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "validator.metrics.enable",
+                "desc": "Whether to enable Validator node prometheus metrics.",
+                "nixName": "validator.metrics.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "validator.metrics.port",
+                "desc": "Port number of Validator node metrics service.",
+                "nixName": "validator.metrics.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "5056"
+            }
+        ]
+    },
+    {
+        "name": "grafana",
+        "nixName": "grafana",
+        "options": [
+            {
+                "name": "dataDir",
+                "desc": "Data directory.",
+                "nixName": "dataDir",
+                "type": "path",
+                "value": "\"/var/lib/grafana\""
+            },
+            {
+                "name": "declarativePlugins",
+                "desc": "If non-null, then a list of packages containing Grafana plugins toinstall. If set, plugins cannot be manually installed.",
+                "nixName": "declarativePlugins",
+                "type": "null or (list of path)",
+                "value": "null"
+            },
+            {
+                "name": "enable",
+                "desc": "Whether to enable grafana.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "package",
+                "desc": "The grafana package to use.",
+                "nixName": "package",
+                "type": "package",
+                "value": "pkgs.grafana"
+            },
+            {
+                "name": "provision.alerting.contactPoints.path",
+                "desc": "Path to YAML contact points configuration. Can\u2019t be used with  services.grafana.provision.alerting.contactPoints.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+                "nixName": "provision.alerting.contactPoints.path",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.contactPoints.settings",
+                "desc": "Grafana contact points configuration in Nix. Can\u2019t be used with  services.grafana.provision.alerting.contactPoints.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#contact-points for supported options.",
+                "nixName": "provision.alerting.contactPoints.settings",
+                "type": "null or (submodule)",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.contactPoints.settings.apiVersion",
+                "desc": "Config file version.",
+                "nixName": "provision.alerting.contactPoints.settings.apiVersion",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.contactPoints.settings.contactPoints",
+                "desc": "List of contact points to import or update.",
+                "nixName": "provision.alerting.contactPoints.settings.contactPoints",
+                "type": "list of (YAML value)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.contactPoints.settings.contactPoints.*.name",
+                "desc": "Name of the contact point. Required.",
+                "nixName": "provision.alerting.contactPoints.settings.contactPoints.*.name",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.contactPoints.settings.deleteContactPoints",
+                "desc": "List of receivers that should be deleted.",
+                "nixName": "provision.alerting.contactPoints.settings.deleteContactPoints",
+                "type": "list of (submodule)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.contactPoints.settings.deleteContactPoints.*.orgId",
+                "desc": "Organization ID, default = 1.",
+                "nixName": "provision.alerting.contactPoints.settings.deleteContactPoints.*.orgId",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.contactPoints.settings.deleteContactPoints.*.uid",
+                "desc": "Unique identifier for the receiver. Required.",
+                "nixName": "provision.alerting.contactPoints.settings.deleteContactPoints.*.uid",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.muteTimings.path",
+                "desc": "Path to YAML mute timings configuration. Can\u2019t be used with  services.grafana.provision.alerting.muteTimings.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+                "nixName": "provision.alerting.muteTimings.path",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.muteTimings.settings",
+                "desc": "Grafana mute timings configuration in Nix. Can\u2019t be used with  services.grafana.provision.alerting.muteTimings.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#mute-timings for supported options.",
+                "nixName": "provision.alerting.muteTimings.settings",
+                "type": "null or (submodule)",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.muteTimings.settings.apiVersion",
+                "desc": "Config file version.",
+                "nixName": "provision.alerting.muteTimings.settings.apiVersion",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.muteTimings.settings.deleteMuteTimes",
+                "desc": "List of mute time intervals that should be deleted.",
+                "nixName": "provision.alerting.muteTimings.settings.deleteMuteTimes",
+                "type": "list of (submodule)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.name",
+                "desc": "Name of the mute time interval, must be unique. Required.",
+                "nixName": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.name",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.orgId",
+                "desc": "Organization ID, default = 1.",
+                "nixName": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.orgId",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.muteTimings.settings.muteTimes",
+                "desc": "List of mute time intervals to import or update.",
+                "nixName": "provision.alerting.muteTimings.settings.muteTimes",
+                "type": "list of (YAML value)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.muteTimings.settings.muteTimes.*.name",
+                "desc": "Name of the mute time interval, must be unique. Required.",
+                "nixName": "provision.alerting.muteTimings.settings.muteTimes.*.name",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.policies.path",
+                "desc": "Path to YAML notification policies configuration. Can\u2019t be used with services.grafana.provision.alerting.policies.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+                "nixName": "provision.alerting.policies.path",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.policies.settings",
+                "desc": "Grafana notification policies configuration in Nix. Can\u2019t be usedwith  services.grafana.provision.alerting.policies.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#notification-policies for supported options.",
+                "nixName": "provision.alerting.policies.settings",
+                "type": "null or (submodule)",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.policies.settings.apiVersion",
+                "desc": "Config file version.",
+                "nixName": "provision.alerting.policies.settings.apiVersion",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.policies.settings.policies",
+                "desc": "List of contact points to import or update.",
+                "nixName": "provision.alerting.policies.settings.policies",
+                "type": "list of (YAML value)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.policies.settings.resetPolicies",
+                "desc": "List of orgIds that should be reset to the default policy.",
+                "nixName": "provision.alerting.policies.settings.resetPolicies",
+                "type": "list of signed integer",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.rules.path",
+                "desc": "Path to YAML rules configuration. Can\u2019t be used with  services.grafana.provision.alerting.rules.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+                "nixName": "provision.alerting.rules.path",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.rules.settings",
+                "desc": "Grafana rules configuration in Nix. Can\u2019t be used with  services.grafana.provision.alerting.rules.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#rules for supported options.",
+                "nixName": "provision.alerting.rules.settings",
+                "type": "null or (submodule)",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.rules.settings.apiVersion",
+                "desc": "Config file version.",
+                "nixName": "provision.alerting.rules.settings.apiVersion",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.rules.settings.deleteRules",
+                "desc": "List of alert rule UIDs that should be deleted.",
+                "nixName": "provision.alerting.rules.settings.deleteRules",
+                "type": "list of (submodule)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.rules.settings.deleteRules.*.orgId",
+                "desc": "Organization ID, default = 1",
+                "nixName": "provision.alerting.rules.settings.deleteRules.*.orgId",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.rules.settings.deleteRules.*.uid",
+                "desc": "Unique identifier for the rule. Required.",
+                "nixName": "provision.alerting.rules.settings.deleteRules.*.uid",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.rules.settings.groups",
+                "desc": "List of rule groups to import or update.",
+                "nixName": "provision.alerting.rules.settings.groups",
+                "type": "list of (YAML value)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.rules.settings.groups.*.folder",
+                "desc": "Name of the folder the rule group will be stored in. Required.",
+                "nixName": "provision.alerting.rules.settings.groups.*.folder",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.rules.settings.groups.*.interval",
+                "desc": "Interval that the rule group should be evaluated at. Required.",
+                "nixName": "provision.alerting.rules.settings.groups.*.interval",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.rules.settings.groups.*.name",
+                "desc": "Name of the rule group. Required.",
+                "nixName": "provision.alerting.rules.settings.groups.*.name",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.templates.path",
+                "desc": "Path to YAML templates configuration. Can\u2019t be used with  services.grafana.provision.alerting.templates.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+                "nixName": "provision.alerting.templates.path",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.templates.settings",
+                "desc": "Grafana templates configuration in Nix. Can\u2019t be used with  services.grafana.provision.alerting.templates.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#templates for supported options.",
+                "nixName": "provision.alerting.templates.settings",
+                "type": "null or (submodule)",
+                "value": "null"
+            },
+            {
+                "name": "provision.alerting.templates.settings.apiVersion",
+                "desc": "Config file version.",
+                "nixName": "provision.alerting.templates.settings.apiVersion",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.templates.settings.deleteTemplates",
+                "desc": "List of alert rule UIDs that should be deleted.",
+                "nixName": "provision.alerting.templates.settings.deleteTemplates",
+                "type": "list of (submodule)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.templates.settings.deleteTemplates.*.name",
+                "desc": "Name of the template, must be unique. Required.",
+                "nixName": "provision.alerting.templates.settings.deleteTemplates.*.name",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.templates.settings.deleteTemplates.*.orgId",
+                "desc": "Organization ID, default = 1.",
+                "nixName": "provision.alerting.templates.settings.deleteTemplates.*.orgId",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.alerting.templates.settings.templates",
+                "desc": "List of templates to import or update.",
+                "nixName": "provision.alerting.templates.settings.templates",
+                "type": "list of (YAML value)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.alerting.templates.settings.templates.*.name",
+                "desc": "Name of the template, must be unique. Required.",
+                "nixName": "provision.alerting.templates.settings.templates.*.name",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.alerting.templates.settings.templates.*.template",
+                "desc": "Alerting with a custom text template",
+                "nixName": "provision.alerting.templates.settings.templates.*.template",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.dashboards",
+                "desc": "Declaratively provision Grafana\u2019s dashboards.",
+                "nixName": "provision.dashboards",
+                "type": "submodule",
+                "value": "{ }"
+            },
+            {
+                "name": "provision.dashboards.path",
+                "desc": "Path to YAML dashboard configuration. Can\u2019t be used with  services.grafana.provision.dashboards.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+                "nixName": "provision.dashboards.path",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "provision.dashboards.settings",
+                "desc": "Grafana dashboard configuration in Nix. Can\u2019t be used with  services.grafana.provision.dashboards.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#dashboards for supported options.",
+                "nixName": "provision.dashboards.settings",
+                "type": "null or (submodule)",
+                "value": "null"
+            },
+            {
+                "name": "provision.dashboards.settings.apiVersion",
+                "desc": "Config file version.",
+                "nixName": "provision.dashboards.settings.apiVersion",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.dashboards.settings.providers",
+                "desc": "List of dashboards to insert/update.",
+                "nixName": "provision.dashboards.settings.providers",
+                "type": "list of (YAML value)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.dashboards.settings.providers.*.name",
+                "desc": "A unique provider name.",
+                "nixName": "provision.dashboards.settings.providers.*.name",
+                "type": "string",
+                "value": "\"default\""
+            },
+            {
+                "name": "provision.dashboards.settings.providers.*.options.path",
+                "desc": "Path grafana will watch for dashboards. Required when using the\u2018file\u2019 type.",
+                "nixName": "provision.dashboards.settings.providers.*.options.path",
+                "type": "path",
+                "value": null
+            },
+            {
+                "name": "provision.dashboards.settings.providers.*.type",
+                "desc": "Dashboard provider type.",
+                "nixName": "provision.dashboards.settings.providers.*.type",
+                "type": "string",
+                "value": "\"file\""
+            },
+            {
+                "name": "provision.datasources",
+                "desc": "Declaratively provision Grafana\u2019s datasources.",
+                "nixName": "provision.datasources",
+                "type": "submodule",
+                "value": "{ }"
+            },
+            {
+                "name": "provision.datasources.path",
+                "desc": "Path to YAML datasource configuration. Can\u2019t be used with  services.grafana.provision.datasources.settings simultaneously. Can be either a directory or a single YAML file. Willend up in the store.",
+                "nixName": "provision.datasources.path",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "provision.datasources.settings",
+                "desc": "Grafana datasource configuration in Nix. Can\u2019t be used with  services.grafana.provision.datasources.path simultaneously. See  https://grafana.com/docs/grafana/latest/administration/provisioning/#data-sources for supported options.",
+                "nixName": "provision.datasources.settings",
+                "type": "null or (submodule)",
+                "value": "null"
+            },
+            {
+                "name": "provision.datasources.settings.apiVersion",
+                "desc": "Config file version.",
+                "nixName": "provision.datasources.settings.apiVersion",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "provision.datasources.settings.datasources",
+                "desc": "List of datasources to insert/update.",
+                "nixName": "provision.datasources.settings.datasources",
+                "type": "list of (YAML value)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.datasources.settings.datasources.*.access",
+                "desc": "Access mode. proxy or direct (Server or Browser in the UI).Required.",
+                "nixName": "provision.datasources.settings.datasources.*.access",
+                "type": "one of \"proxy\", \"direct\"",
+                "value": "\"proxy\""
+            },
+            {
+                "name": "provision.datasources.settings.datasources.*.editable",
+                "desc": "Allow users to edit datasources from the UI.",
+                "nixName": "provision.datasources.settings.datasources.*.editable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "provision.datasources.settings.datasources.*.jsonData",
+                "desc": "Extra data for datasource plugins.",
+                "nixName": "provision.datasources.settings.datasources.*.jsonData",
+                "type": "null or (attribute set)",
+                "value": "null"
+            },
+            {
+                "name": "provision.datasources.settings.datasources.*.name",
+                "desc": "Name of the datasource. Required.",
+                "nixName": "provision.datasources.settings.datasources.*.name",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.datasources.settings.datasources.*.secureJsonData",
+                "desc": "Datasource specific secure configuration. Please note that thecontents of this option will end up in a world-readable Nix store. Usethe file provider pointing at a reasonably secured file in the localfilesystem to work around that. Look at the documentation for details: https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+                "nixName": "provision.datasources.settings.datasources.*.secureJsonData",
+                "type": "null or (attribute set)",
+                "value": "null"
+            },
+            {
+                "name": "provision.datasources.settings.datasources.*.type",
+                "desc": "Datasource type. Required.",
+                "nixName": "provision.datasources.settings.datasources.*.type",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.datasources.settings.datasources.*.uid",
+                "desc": "Custom UID which can be used to reference this datasource in otherparts of the configuration, if not specified will be generatedautomatically.",
+                "nixName": "provision.datasources.settings.datasources.*.uid",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "provision.datasources.settings.datasources.*.url",
+                "desc": "Url of the datasource.",
+                "nixName": "provision.datasources.settings.datasources.*.url",
+                "type": "string",
+                "value": "\"localhost\""
+            },
+            {
+                "name": "provision.datasources.settings.deleteDatasources",
+                "desc": "List of datasources that should be deleted from the database.",
+                "nixName": "provision.datasources.settings.deleteDatasources",
+                "type": "list of (submodule)",
+                "value": "[ ]"
+            },
+            {
+                "name": "provision.datasources.settings.deleteDatasources.*.name",
+                "desc": "Name of the datasource to delete.",
+                "nixName": "provision.datasources.settings.deleteDatasources.*.name",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "provision.datasources.settings.deleteDatasources.*.orgId",
+                "desc": "Organization ID of the datasource to delete.",
+                "nixName": "provision.datasources.settings.deleteDatasources.*.orgId",
+                "type": "signed integer",
+                "value": null
+            },
+            {
+                "name": "provision.enable",
+                "desc": "Whether to enable provision.",
+                "nixName": "provision.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings",
+                "desc": "Grafana settings. See  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/ for available options. INI format is used.",
+                "nixName": "settings",
+                "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string) or a non-empty list of them)",
+                "value": null
+            },
+            {
+                "name": "settings.analytics.check_for_plugin_updates",
+                "desc": "When set to  false , disables checking for new versions ofinstalled plugins from  https://grafana.com . When enabled, thecheck for a new plugin runs every 10 minutes. It will notify, via theUI, when a new plugin update exists. The check itself will not promptany auto-updates of the plugin, nor will it send any sensitiveinformation.",
+                "nixName": "settings.analytics.check_for_plugin_updates",
+                "type": "boolean",
+                "value": "cfg.declarativePlugins == null"
+            },
+            {
+                "name": "settings.analytics.check_for_updates",
+                "desc": "When set to  false , disables checking for new versions ofGrafana from Grafana\u2019s GitHub repository. When enabled, the check for anew version runs every 10 minutes. It will notify, via the UI, when anew version is available. The check itself will not prompt anyauto-updates of the Grafana software, nor will it send any sensitiveinformation.",
+                "nixName": "settings.analytics.check_for_updates",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.analytics.feedback_links_enabled",
+                "desc": "Set to  false  to remove all feedback links from theUI.",
+                "nixName": "settings.analytics.feedback_links_enabled",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "settings.analytics.reporting_enabled",
+                "desc": "When enabled Grafana will send anonymous usage statistics to stats.grafana.org . No IP addresses are being tracked, onlysimple counters to track running instances, versions, dashboard anderror counts. Counters are sent every 24 hours.",
+                "nixName": "settings.analytics.reporting_enabled",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "settings.database.ca_cert_path",
+                "desc": "The path to the CA certificate to use.",
+                "nixName": "settings.database.ca_cert_path",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.database.cache_mode",
+                "desc": "For  sqlite3  only.  Shared cache  settingused for connecting to the database.",
+                "nixName": "settings.database.cache_mode",
+                "type": "one of \"private\", \"shared\"",
+                "value": "\"private\""
+            },
+            {
+                "name": "settings.database.client_cert_path",
+                "desc": "The path to the client cert. Only if server requires clientauthentication.",
+                "nixName": "settings.database.client_cert_path",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.database.client_key_path",
+                "desc": "The path to the client key. Only if server requires clientauthentication.",
+                "nixName": "settings.database.client_key_path",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.database.conn_max_lifetime",
+                "desc": "Sets the maximum amount of time a connection may be reused. Thedefault is 14400 (which means 14400 seconds or 4 hours). For MySQL, thissetting should be shorter than the  wait_timeout variable.",
+                "nixName": "settings.database.conn_max_lifetime",
+                "type": "signed integer",
+                "value": "14400"
+            },
+            {
+                "name": "settings.database.host",
+                "desc": "Only applicable to MySQL or Postgres. Includes IP or hostname andport or in case of Unix sockets the path to it. For example, for MySQLrunning on the same host as Grafana: host = \"127.0.0.1:3306\"  or with Unix sockets: host = \"/var/run/mysqld/mysqld.sock\"",
+                "nixName": "settings.database.host",
+                "type": "string",
+                "value": "\"127.0.0.1:3306\""
+            },
+            {
+                "name": "settings.database.isolation_level",
+                "desc": "Only the MySQL driver supports isolation levels in Grafana. In casethe value is empty, the driver\u2019s default isolation level is applied.",
+                "nixName": "settings.database.isolation_level",
+                "type": "null or one of \"READ-UNCOMMITTED\", \"READ-COMMITTED\", \"REPEATABLE-READ\", \"SERIALIZABLE\"",
+                "value": "null"
+            },
+            {
+                "name": "settings.database.locking_attempt_timeout_sec",
+                "desc": "For  mysql , if the  migrationLocking  featuretoggle is set, specify the time (in seconds) to wait before failing tolock the database for the migrations.",
+                "nixName": "settings.database.locking_attempt_timeout_sec",
+                "type": "signed integer",
+                "value": "0"
+            },
+            {
+                "name": "settings.database.log_queries",
+                "desc": "Set to  true  to log the sql calls and execution times",
+                "nixName": "settings.database.log_queries",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.database.max_idle_conn",
+                "desc": "The maximum number of connections in the idle connection pool.",
+                "nixName": "settings.database.max_idle_conn",
+                "type": "signed integer",
+                "value": "2"
+            },
+            {
+                "name": "settings.database.max_open_conn",
+                "desc": "The maximum number of open connections to the database.",
+                "nixName": "settings.database.max_open_conn",
+                "type": "signed integer",
+                "value": "0"
+            },
+            {
+                "name": "settings.database.name",
+                "desc": "The name of the Grafana database.",
+                "nixName": "settings.database.name",
+                "type": "string",
+                "value": "\"grafana\""
+            },
+            {
+                "name": "settings.database.password",
+                "desc": "The database user\u2019s password (not applicable for sqlite3 ).  Please note that the contents of this option will end up in aworld-readable Nix store. Use the file provider pointing at a reasonablysecured file in the local filesystem to work around that. Look at thedocumentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+                "nixName": "settings.database.password",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "settings.database.path",
+                "desc": "Only applicable to  sqlite3  database. The file path wherethe database will be stored.",
+                "nixName": "settings.database.path",
+                "type": "path",
+                "value": "\"${config.services.grafana.dataDir}/data/grafana.db\""
+            },
+            {
+                "name": "settings.database.query_retries",
+                "desc": "This setting applies to  sqlite3  only and controls thenumber of times the system retries a query when the database islocked.",
+                "nixName": "settings.database.query_retries",
+                "type": "signed integer",
+                "value": "0"
+            },
+            {
+                "name": "settings.database.server_cert_name",
+                "desc": "The common name field of the certificate used by the mysql  or  postgres  server. Not necessary if ssl_mode  is set to  skip-verify .",
+                "nixName": "settings.database.server_cert_name",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.database.ssl_mode",
+                "desc": "For Postgres, use either  disable ,  require or  verify-full . For MySQL, use either  true , false , or  skip-verify .",
+                "nixName": "settings.database.ssl_mode",
+                "type": "one of \"disable\", \"require\", \"verify-full\", \"true\", \"false\", \"skip-verify\"",
+                "value": "\"disable\""
+            },
+            {
+                "name": "settings.database.transaction_retries",
+                "desc": "This setting applies to  sqlite3  only and controls thenumber of times the system retries a transaction when the database islocked.",
+                "nixName": "settings.database.transaction_retries",
+                "type": "signed integer",
+                "value": "5"
+            },
+            {
+                "name": "settings.database.type",
+                "desc": "Database type.",
+                "nixName": "settings.database.type",
+                "type": "one of \"mysql\", \"sqlite3\", \"postgres\"",
+                "value": "\"sqlite3\""
+            },
+            {
+                "name": "settings.database.user",
+                "desc": "The database user (not applicable for  sqlite3 ).",
+                "nixName": "settings.database.user",
+                "type": "string",
+                "value": "\"root\""
+            },
+            {
+                "name": "settings.database.wal",
+                "desc": "For  sqlite3  only. Setting to enable/disable  Write-Ahead Logging .",
+                "nixName": "settings.database.wal",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.paths.plugins",
+                "desc": "Directory where grafana will automatically scan and look forplugins",
+                "nixName": "settings.paths.plugins",
+                "type": "path",
+                "value": "if (cfg.declarativePlugins == null) then \"${cfg.dataDir}/plugins\" else declarativePlugins"
+            },
+            {
+                "name": "settings.paths.provisioning",
+                "desc": "Folder that contains provisioning config files that grafana willapply on startup and while running. Don\u2019t change the value of thisoption if you are planning to use services.grafana.provision  options.",
+                "nixName": "settings.paths.provisioning",
+                "type": "path",
+                "value": "\"directory with links to files generated from services.grafana.provision\""
+            },
+            {
+                "name": "settings.security.admin_email",
+                "desc": "The email of the default Grafana Admin, created on startup.",
+                "nixName": "settings.security.admin_email",
+                "type": "string",
+                "value": "\"admin@localhost\""
+            },
+            {
+                "name": "settings.security.admin_password",
+                "desc": "Default admin password. Please note that the contents of this optionwill end up in a world-readable Nix store. Use the file providerpointing at a reasonably secured file in the local filesystem to workaround that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+                "nixName": "settings.security.admin_password",
+                "type": "string",
+                "value": "\"admin\""
+            },
+            {
+                "name": "settings.security.admin_user",
+                "desc": "Default admin username.",
+                "nixName": "settings.security.admin_user",
+                "type": "string",
+                "value": "\"admin\""
+            },
+            {
+                "name": "settings.security.allow_embedding",
+                "desc": "When  false , the HTTP header X-Frame-Options: deny  will be set in Grafana HTTP responseswhich will instruct browsers to not allow rendering Grafana in a <frame> ,  <iframe> , <embed>  or  <object> . The main goalis to mitigate the risk of  Clickjacking .",
+                "nixName": "settings.security.allow_embedding",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.content_security_policy",
+                "desc": "Set to  true  to add the Content-Security-Policy  header to your requests. CSP allowsto control resources that the user agent can load and helps prevent XSSattacks.",
+                "nixName": "settings.security.content_security_policy",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.content_security_policy_report_only",
+                "desc": "Set to  true  to add the Content-Security-Policy-Report-Only  header to yourrequests. CSP in Report Only mode enables you to experiment withpolicies by monitoring their effects without enforcing them. You canenable both policies simultaneously.",
+                "nixName": "settings.security.content_security_policy_report_only",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.cookie_samesite",
+                "desc": "Sets the  SameSite  cookie attribute and prevents thebrowser from sending this cookie along with cross-site requests. Themain goal is to mitigate the risk of cross-origin information leakage.This setting also provides some protection against cross-site requestforgery attacks (CSRF),  read more about SameSitehere . Using value  disabled  does not add any SameSite  attribute to cookies.",
+                "nixName": "settings.security.cookie_samesite",
+                "type": "one of \"lax\", \"strict\", \"none\", \"disabled\"",
+                "value": "\"lax\""
+            },
+            {
+                "name": "settings.security.cookie_secure",
+                "desc": "Set to  true  if you host Grafana behind HTTPS.",
+                "nixName": "settings.security.cookie_secure",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.csrf_additional_headers",
+                "desc": "List of allowed headers to be set by the user. Suggested to use forif authentication lives behind reverse proxies.",
+                "nixName": "settings.security.csrf_additional_headers",
+                "type": "string or list of string",
+                "value": "[ ]"
+            },
+            {
+                "name": "settings.security.csrf_trusted_origins",
+                "desc": "List of additional allowed URLs to pass by the CSRF check. Suggestedwhen authentication comes from an IdP.",
+                "nixName": "settings.security.csrf_trusted_origins",
+                "type": "string or list of string",
+                "value": "[ ]"
+            },
+            {
+                "name": "settings.security.data_source_proxy_whitelist",
+                "desc": "Define a whitelist of allowed IP addresses or domains, with ports, tobe used in data source URLs with the Grafana data source proxy. Format: ip_or_domain:port  separated by spaces. PostgreSQL, MySQL,and MSSQL data sources do not use the proxy and are therefore unaffectedby this setting.",
+                "nixName": "settings.security.data_source_proxy_whitelist",
+                "type": "string or list of string",
+                "value": "[ ]"
+            },
+            {
+                "name": "settings.security.disable_brute_force_login_protection",
+                "desc": "Set to  true  to disable  bruteforce login protection .",
+                "nixName": "settings.security.disable_brute_force_login_protection",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.disable_gravatar",
+                "desc": "Set to  true  to disable the use of Gravatar for userprofile images.",
+                "nixName": "settings.security.disable_gravatar",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.disable_initial_admin_creation",
+                "desc": "Disable creation of admin user on first start of Grafana.",
+                "nixName": "settings.security.disable_initial_admin_creation",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.secret_key",
+                "desc": "Secret key used for signing. Please note that the contents of thisoption will end up in a world-readable Nix store. Use the file providerpointing at a reasonably secured file in the local filesystem to workaround that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+                "nixName": "settings.security.secret_key",
+                "type": "string",
+                "value": "\"SW2YcwTIb9zpOOhoPsMm\""
+            },
+            {
+                "name": "settings.security.strict_transport_security",
+                "desc": "Set to  true  if you want to enable HTTP Strict-Transport-Security  (HSTS) response header. Only usethis when HTTPS is enabled in your configuration, or when there isanother upstream system that ensures your application does HTTPS (like afrontend load balancer). HSTS tells browsers that the site should onlybe accessed using HTTPS.",
+                "nixName": "settings.security.strict_transport_security",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.strict_transport_security_max_age_seconds",
+                "desc": "Sets how long a browser should cache HSTS in seconds. Only applied if strict_transport_security  is enabled.",
+                "nixName": "settings.security.strict_transport_security_max_age_seconds",
+                "type": "signed integer",
+                "value": "86400"
+            },
+            {
+                "name": "settings.security.strict_transport_security_preload",
+                "desc": "Set to  true  to enable HSTS  preloading option. Only applied if  strict_transport_security  isenabled.",
+                "nixName": "settings.security.strict_transport_security_preload",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.strict_transport_security_subdomains",
+                "desc": "Set to  true  to enable HSTS includeSubDomains  option. Only applied if strict_transport_security  is enabled.",
+                "nixName": "settings.security.strict_transport_security_subdomains",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.security.x_content_type_options",
+                "desc": "Set to  false  to disable the X-Content-Type-Options  response header. The X-Content-Type-Options  response HTTP header is a markerused by the server to indicate that the MIME types advertised in the Content-Type  headers should not be changed and befollowed.",
+                "nixName": "settings.security.x_content_type_options",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "settings.security.x_xss_protection",
+                "desc": "Set to  false  to disable the X-XSS-Protection  header, which tells browsers to stop pagesfrom loading when they detect reflected cross-site scripting (XSS)attacks.",
+                "nixName": "settings.security.x_xss_protection",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "settings.server.cdn_url",
+                "desc": "Specify a full HTTP URL address to the root of your Grafana CDNassets. Grafana will add edition and version paths.  For example, given a cdn url like https://cdn.myserver.com  grafana will try to load ajavascript file from http://cdn.myserver.com/grafana-oss/7.4.0/public/build/app.<hash>.js .",
+                "nixName": "settings.server.cdn_url",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.server.cert_file",
+                "desc": "Path to the certificate file (if  protocol  is set to https  or  h2 ).",
+                "nixName": "settings.server.cert_file",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.server.cert_key",
+                "desc": "Path to the certificate key file (if  protocol  is set to https  or  h2 ).",
+                "nixName": "settings.server.cert_key",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.server.domain",
+                "desc": "The public facing domain name used to access grafana from abrowser.  This setting is only used in the default value of the root_url  setting. If you set the latter manually, thisoption does not have to be specified.",
+                "nixName": "settings.server.domain",
+                "type": "string",
+                "value": "\"localhost\""
+            },
+            {
+                "name": "settings.server.enable_gzip",
+                "desc": "Set this option to  true  to enable HTTP compression, thiscan improve transfer speed and bandwidth utilization. It is recommendedthat most users set it to  true . By default it is set to false  for compatibility reasons.",
+                "nixName": "settings.server.enable_gzip",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.server.enforce_domain",
+                "desc": "Redirect to correct domain if the host header does not match thedomain. Prevents DNS rebinding attacks.",
+                "nixName": "settings.server.enforce_domain",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.server.http_addr",
+                "desc": "Listening address.   This setting intentionally varies from upstream\u2019s default to be a bitmore secure by default.",
+                "nixName": "settings.server.http_addr",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "settings.server.http_port",
+                "desc": "Listening port.",
+                "nixName": "settings.server.http_port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "3000"
+            },
+            {
+                "name": "settings.server.protocol",
+                "desc": "Which protocol to listen.",
+                "nixName": "settings.server.protocol",
+                "type": "one of \"http\", \"https\", \"h2\", \"socket\"",
+                "value": "\"http\""
+            },
+            {
+                "name": "settings.server.read_timeout",
+                "desc": "Sets the maximum time using a duration format (5s/5m/5ms) beforetiming out read of an incoming request and closing idle connections. 0means there is no timeout for reading the request.",
+                "nixName": "settings.server.read_timeout",
+                "type": "string",
+                "value": "\"0\""
+            },
+            {
+                "name": "settings.server.root_url",
+                "desc": "This is the full URL used to access Grafana from a web browser. Thisis important if you use Google or GitHub OAuth authentication (for thecallback URL to be correct).  This setting is also important if you have a reverse proxy in frontof Grafana that exposes it through a subpath. In that case add thesubpath to the end of this URL setting.",
+                "nixName": "settings.server.root_url",
+                "type": "string",
+                "value": "\"%(protocol)s://%(domain)s:%(http_port)s/\""
+            },
+            {
+                "name": "settings.server.router_logging",
+                "desc": "Set to  true  for Grafana to log all HTTP requests (notjust errors). These are logged as Info level events to the Grafanalog.",
+                "nixName": "settings.server.router_logging",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.server.serve_from_sub_path",
+                "desc": "Serve Grafana from subpath specified in the  root_url setting. By default it is set to  false  for compatibilityreasons.  By enabling this setting and using a subpath in  root_url above, e.g.  root_url = \"http://localhost:3000/grafana\" ,Grafana is accessible on  http://localhost:3000/grafana . Ifaccessed without subpath, Grafana will redirect to an URL with thesubpath.",
+                "nixName": "settings.server.serve_from_sub_path",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.server.socket",
+                "desc": "Path where the socket should be created when protocol=socket . Make sure that Grafana has appropriatepermissions before you change this setting.",
+                "nixName": "settings.server.socket",
+                "type": "string",
+                "value": "\"/run/grafana/grafana.sock\""
+            },
+            {
+                "name": "settings.server.socket_gid",
+                "desc": "GID where the socket should be set when  protocol=socket .Make sure that the target group is in the group of Grafana process andthat Grafana process is the file owner before you change this setting.It is recommended to set the gid as http server user gid. Not set whenthe value is -1.",
+                "nixName": "settings.server.socket_gid",
+                "type": "signed integer",
+                "value": "-1"
+            },
+            {
+                "name": "settings.server.socket_mode",
+                "desc": "Mode where the socket should be set when protocol=socket . Make sure that Grafana process is the fileowner before you change this setting.",
+                "nixName": "settings.server.socket_mode",
+                "type": "string",
+                "value": "\"0660\""
+            },
+            {
+                "name": "settings.server.static_root_path",
+                "desc": "Root path for static assets.",
+                "nixName": "settings.server.static_root_path",
+                "type": "string",
+                "value": "\"${package}/share/grafana/public\""
+            },
+            {
+                "name": "settings.smtp.cert_file",
+                "desc": "File path to a cert file.",
+                "nixName": "settings.smtp.cert_file",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.smtp.ehlo_identity",
+                "desc": "Name to be used as client identity for EHLO in SMTP dialog.",
+                "nixName": "settings.smtp.ehlo_identity",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.smtp.enabled",
+                "desc": "Whether to enable SMTP.",
+                "nixName": "settings.smtp.enabled",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.smtp.from_address",
+                "desc": "Address used when sending out emails.",
+                "nixName": "settings.smtp.from_address",
+                "type": "string",
+                "value": "\"admin@grafana.localhost\""
+            },
+            {
+                "name": "settings.smtp.from_name",
+                "desc": "Name to be used as client identity for EHLO in SMTP dialog.",
+                "nixName": "settings.smtp.from_name",
+                "type": "string",
+                "value": "\"Grafana\""
+            },
+            {
+                "name": "settings.smtp.host",
+                "desc": "Host to connect to.",
+                "nixName": "settings.smtp.host",
+                "type": "string",
+                "value": "\"localhost:25\""
+            },
+            {
+                "name": "settings.smtp.key_file",
+                "desc": "File path to a key file.",
+                "nixName": "settings.smtp.key_file",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.smtp.password",
+                "desc": "Password used for authentication. Please note that the contents ofthis option will end up in a world-readable Nix store. Use the fileprovider pointing at a reasonably secured file in the local filesystemto work around that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
+                "nixName": "settings.smtp.password",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "settings.smtp.skip_verify",
+                "desc": "Verify SSL for SMTP server.",
+                "nixName": "settings.smtp.skip_verify",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.smtp.startTLS_policy",
+                "desc": "StartTLS policy when connecting to server.",
+                "nixName": "settings.smtp.startTLS_policy",
+                "type": "null or one of \"OpportunisticStartTLS\", \"MandatoryStartTLS\", \"NoStartTLS\"",
+                "value": "null"
+            },
+            {
+                "name": "settings.smtp.user",
+                "desc": "User used for authentication.",
+                "nixName": "settings.smtp.user",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings.users.allow_org_create",
+                "desc": "Set to  false  to prohibit users from creating neworganizations.",
+                "nixName": "settings.users.allow_org_create",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.users.allow_sign_up",
+                "desc": "Set to false to prohibit users from being able to sign up / createuser accounts. The admin user can still create users.",
+                "nixName": "settings.users.allow_sign_up",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.users.auto_assign_org",
+                "desc": "Set to  true  to automatically add new users to the mainorganization (id 1). When set to  false,  new usersautomatically cause a new organization to be created for that new user.The organization will be created even if the allow_org_create  setting is set to  false .",
+                "nixName": "settings.users.auto_assign_org",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "settings.users.auto_assign_org_id",
+                "desc": "Set this value to automatically add new users to the provided org.This requires  auto_assign_org  to be set to true . Please make sure that this organization alreadyexists.",
+                "nixName": "settings.users.auto_assign_org_id",
+                "type": "signed integer",
+                "value": "1"
+            },
+            {
+                "name": "settings.users.auto_assign_org_role",
+                "desc": "The role new users will be assigned for the main organization (if the auto_assign_org  setting is set to  true ).",
+                "nixName": "settings.users.auto_assign_org_role",
+                "type": "one of \"Viewer\", \"Editor\", \"Admin\"",
+                "value": "\"Viewer\""
+            },
+            {
+                "name": "settings.users.default_language",
+                "desc": "This setting configures the default UI language, which must be asupported IETF language tag, such as  en-US .",
+                "nixName": "settings.users.default_language",
+                "type": "string",
+                "value": "\"en-US\""
+            },
+            {
+                "name": "settings.users.default_theme",
+                "desc": "Sets the default UI theme.  system  matches the user\u2019ssystem theme.",
+                "nixName": "settings.users.default_theme",
+                "type": "one of \"dark\", \"light\", \"system\"",
+                "value": "\"dark\""
+            },
+            {
+                "name": "settings.users.editors_can_admin",
+                "desc": "Editors can administrate dashboards, folders and teams theycreate.",
+                "nixName": "settings.users.editors_can_admin",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.users.hidden_users",
+                "desc": "This is a comma-separated list of usernames. Users specified here arehidden in the Grafana UI. They are still visible to Grafanaadministrators and to themselves.",
+                "nixName": "settings.users.hidden_users",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "settings.users.home_page",
+                "desc": "Path to a custom home page. Users are only redirected to this if thedefault home dashboard is used. It should match a frontend route andcontain a leading slash.",
+                "nixName": "settings.users.home_page",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "settings.users.login_hint",
+                "desc": "Text used as placeholder text on login page for login/usernameinput.",
+                "nixName": "settings.users.login_hint",
+                "type": "string",
+                "value": "\"email or username\""
+            },
+            {
+                "name": "settings.users.password_hint",
+                "desc": "Text used as placeholder text on login page for password input.",
+                "nixName": "settings.users.password_hint",
+                "type": "string",
+                "value": "\"password\""
+            },
+            {
+                "name": "settings.users.user_invite_max_lifetime_duration",
+                "desc": "The duration in time a user invitation remains valid before expiring.This setting should be expressed as a duration. Examples: 6h  (hours),  2d  (days),  1w  (week).The minimum supported duration is  15m  (15 minutes).",
+                "nixName": "settings.users.user_invite_max_lifetime_duration",
+                "type": "string",
+                "value": "\"24h\""
+            },
+            {
+                "name": "settings.users.verify_email_enabled",
+                "desc": "Require email validation before sign up completes.",
+                "nixName": "settings.users.verify_email_enabled",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.users.viewers_can_edit",
+                "desc": "Viewers can access and use Explore and perform temporary edits onpanels in dashboards they have access to. They cannot save theirchanges.",
+                "nixName": "settings.users.viewers_can_edit",
+                "type": "boolean",
+                "value": "false"
+            }
+        ]
+    },
+    {
+        "name": "pyload",
+        "nixName": "pyload",
+        "options": [
+            {
+                "name": "credentialsFile",
+                "desc": "File containing  PYLOAD_DEFAULT_USERNAME  and  PYLOAD_DEFAULT_PASSWORD  inthe format of an  EnvironmentFile= , as described by   systemd.exec(5)  .  If not given, they default to the username/password combo ofpyload/pyload.",
+                "nixName": "credentialsFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "downloadDirectory",
+                "desc": "Directory to store downloads.",
+                "nixName": "downloadDirectory",
+                "type": "path",
+                "value": "\"/var/lib/pyload/downloads\""
+            },
+            {
+                "name": "enable",
+                "desc": "Whether to enable pyLoad download manager.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "group",
+                "desc": "Group under which pyLoad runs, and which owns the downloaddirectory.",
+                "nixName": "group",
+                "type": "string",
+                "value": "\"pyload\""
+            },
+            {
+                "name": "listenAddress",
+                "desc": "Address to listen on for the web UI.",
+                "nixName": "listenAddress",
+                "type": "string",
+                "value": "\"localhost\""
+            },
+            {
+                "name": "package",
+                "desc": "The pyLoad package to use.",
+                "nixName": "package",
+                "type": "package",
+                "value": "pkgs.pyload-ng"
+            },
+            {
+                "name": "port",
+                "desc": "Port to listen on for the web UI.",
+                "nixName": "port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "8000"
+            },
+            {
+                "name": "user",
+                "desc": "User under which pyLoad runs, and which owns the downloaddirectory.",
+                "nixName": "user",
+                "type": "string",
+                "value": "\"pyload\""
+            }
+        ]
+    },
+    {
+        "name": "lemmy",
+        "nixName": "lemmy",
+        "options": [
+            {
+                "name": "adminPasswordFile",
+                "desc": "File which contains the value of setup.admin_password .",
+                "nixName": "adminPasswordFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "caddy.enable",
+                "desc": "Whether to enable exposing lemmy with the caddy reverse proxy.",
+                "nixName": "caddy.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "database.createLocally",
+                "desc": "Whether to enable creation of database on the instance.",
+                "nixName": "database.createLocally",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "database.uri",
+                "desc": "The connection URI to use. Takes priority over the configuration fileif set.",
+                "nixName": "database.uri",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "database.uriFile",
+                "desc": "File which contains the database uri.",
+                "nixName": "database.uriFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "enable",
+                "desc": "Whether to enable lemmy a federated alternative to reddit inrust.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "nginx.enable",
+                "desc": "Whether to enable exposing lemmy with the nginx reverse proxy.",
+                "nixName": "nginx.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "pictrsApiKeyFile",
+                "desc": "File which contains the value of  pictrs.api_key .",
+                "nixName": "pictrsApiKeyFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "server.package",
+                "desc": "The lemmy-server package to use.",
+                "nixName": "server.package",
+                "type": "package",
+                "value": "pkgs.lemmy-server"
+            },
+            {
+                "name": "settings",
+                "desc": "Lemmy configuration",
+                "nixName": "settings",
+                "type": "JSON value",
+                "value": "{ }"
+            },
+            {
+                "name": "settings.captcha.difficulty",
+                "desc": "The difficultly of the captcha to solve.",
+                "nixName": "settings.captcha.difficulty",
+                "type": "one of \"easy\", \"medium\", \"hard\"",
+                "value": "\"medium\""
+            },
+            {
+                "name": "settings.captcha.enabled",
+                "desc": "Enable Captcha.",
+                "nixName": "settings.captcha.enabled",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "settings.hostname",
+                "desc": "The domain name of your instance (eg \u2018lemmy.ml\u2019).",
+                "nixName": "settings.hostname",
+                "type": "string",
+                "value": "null"
+            },
+            {
+                "name": "settings.port",
+                "desc": "Port where lemmy should listen for incoming requests.",
+                "nixName": "settings.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "8536"
+            },
+            {
+                "name": "smtpPasswordFile",
+                "desc": "File which contains the value of email.smtp_password .",
+                "nixName": "smtpPasswordFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "ui.package",
+                "desc": "The lemmy-ui package to use.",
+                "nixName": "ui.package",
+                "type": "package",
+                "value": "pkgs.lemmy-ui"
+            },
+            {
+                "name": "ui.port",
+                "desc": "Port where lemmy-ui should listen for incoming requests.",
+                "nixName": "ui.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "1234"
+            }
+        ]
+    },
+    {
+        "name": "nextcloud",
+        "nixName": "nextcloud",
+        "options": [
+            {
+                "name": "appstoreEnable",
+                "desc": "Allow the installation and updating of apps from the Nextcloudappstore. Enabled by default unless there are packages in  services.nextcloud.extraApps .Set this to true to force enable the store even if  services.nextcloud.extraApps is used. Set this to false to disable the installation of apps from theglobal appstore. App management is always enabled regardless of thissetting.",
+                "nixName": "appstoreEnable",
+                "type": "null or boolean",
+                "value": "null"
+            },
+            {
+                "name": "autoUpdateApps.enable",
+                "desc": "Run a regular auto-update of all apps installed from the Nextcloudapp store.",
+                "nixName": "autoUpdateApps.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "autoUpdateApps.startAt",
+                "desc": "When to run the update. See systemd.services.<name>.startAt .",
+                "nixName": "autoUpdateApps.startAt",
+                "type": "string or list of string",
+                "value": "\"05:00:00\""
+            },
+            {
+                "name": "caching.apcu",
+                "desc": "Whether to load the APCu module into PHP.",
+                "nixName": "caching.apcu",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "caching.memcached",
+                "desc": "Whether to load the Memcached module into PHP. You still need toenable Memcached in your config.php. See  https://docs.nextcloud.com/server/14/admin_manual/configuration_server/caching_configuration.html",
+                "nixName": "caching.memcached",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "caching.redis",
+                "desc": "Whether to load the Redis module into PHP. You still need to enableRedis in your config.php. See  https://docs.nextcloud.com/server/14/admin_manual/configuration_server/caching_configuration.html",
+                "nixName": "caching.redis",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "cli.memoryLimit",
+                "desc": "The  memory_limit  of PHP is equal to  services.nextcloud.maxUploadSize .The value can be customized for  nextcloud-cron.service using this option.",
+                "nixName": "cli.memoryLimit",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "config.adminpassFile",
+                "desc": "The full path to a file that contains the admin\u2019s password. Must bereadable by user  nextcloud . The password is set only in theinitial setup of Nextcloud by the systemd service nextcloud-setup.service .",
+                "nixName": "config.adminpassFile",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "config.adminuser",
+                "desc": "Username for the admin account. The username is only set during theinitial setup of Nextcloud! Since the username also acts as unique IDinternally, it cannot be changed later!",
+                "nixName": "config.adminuser",
+                "type": "string",
+                "value": "\"root\""
+            },
+            {
+                "name": "config.dbhost",
+                "desc": "Database host (+port) or socket path. If  services.nextcloud.database.createLocally is true and  services.nextcloud.config.dbtype is either  pgsql  or  mysql , defaults to thecorrect Unix socket instead.",
+                "nixName": "config.dbhost",
+                "type": "null or string",
+                "value": "\"localhost\""
+            },
+            {
+                "name": "config.dbname",
+                "desc": "Database name.",
+                "nixName": "config.dbname",
+                "type": "null or string",
+                "value": "\"nextcloud\""
+            },
+            {
+                "name": "config.dbpassFile",
+                "desc": "The full path to a file that contains the database password.",
+                "nixName": "config.dbpassFile",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "config.dbtableprefix",
+                "desc": "Table prefix in Nextcloud\u2019s database.   Note:  since Nextcloud 20 it\u2019s not an option anymoreto create a database schema with a custom table prefix. This option onlyexists for backwards compatibility with installations that wereoriginally provisioned with Nextcloud <20.",
+                "nixName": "config.dbtableprefix",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "config.dbtype",
+                "desc": "Database type.",
+                "nixName": "config.dbtype",
+                "type": "one of \"sqlite\", \"pgsql\", \"mysql\"",
+                "value": "\"sqlite\""
+            },
+            {
+                "name": "config.dbuser",
+                "desc": "Database user.",
+                "nixName": "config.dbuser",
+                "type": "null or string",
+                "value": "\"nextcloud\""
+            },
+            {
+                "name": "config.objectstore.s3.autocreate",
+                "desc": "Create the objectstore if it does not exist.",
+                "nixName": "config.objectstore.s3.autocreate",
+                "type": "boolean",
+                "value": null
+            },
+            {
+                "name": "config.objectstore.s3.bucket",
+                "desc": "The name of the S3 bucket.",
+                "nixName": "config.objectstore.s3.bucket",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "config.objectstore.s3.enable",
+                "desc": "Whether to enable S3 object storage as primary storage.  This mounts a bucket on an Amazon S3 object storage or compatibleimplementation into the virtual filesystem.  Further details about this feature can be found in the  upstreamdocumentation  .",
+                "nixName": "config.objectstore.s3.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "config.objectstore.s3.hostname",
+                "desc": "Required for some non-Amazon implementations.",
+                "nixName": "config.objectstore.s3.hostname",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "config.objectstore.s3.key",
+                "desc": "The access key for the S3 bucket.",
+                "nixName": "config.objectstore.s3.key",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "config.objectstore.s3.port",
+                "desc": "Required for some non-Amazon implementations.",
+                "nixName": "config.objectstore.s3.port",
+                "type": "null or 16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "null"
+            },
+            {
+                "name": "config.objectstore.s3.region",
+                "desc": "Required for some non-Amazon implementations.",
+                "nixName": "config.objectstore.s3.region",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "config.objectstore.s3.secretFile",
+                "desc": "The full path to a file that contains the access secret. Must bereadable by user  nextcloud .",
+                "nixName": "config.objectstore.s3.secretFile",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "config.objectstore.s3.sseCKeyFile",
+                "desc": "If provided this is the full path to a file that contains the key toenable  server-sideencryption with customer-provided keys  (SSE-C).  The file must contain a random 32-byte key encoded as a base64string, e.g. generated with the command   openssl rand 32 | base64   Must be readable by user  nextcloud .",
+                "nixName": "config.objectstore.s3.sseCKeyFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "config.objectstore.s3.usePathStyle",
+                "desc": "Required for some non-Amazon S3 implementations.  Ordinarily, requests will be made with http://bucket.hostname.domain/ , but with path style enabledrequests are made with  http://hostname.domain/bucket instead.",
+                "nixName": "config.objectstore.s3.usePathStyle",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "config.objectstore.s3.useSsl",
+                "desc": "Use SSL for objectstore access.",
+                "nixName": "config.objectstore.s3.useSsl",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "configureRedis",
+                "desc": "Whether to configure Nextcloud to use the recommended Redis settingsfor small instances.   The  notify_push  app requires Redis to be configured. Ifthis option is turned off, this must be configured manually.",
+                "nixName": "configureRedis",
+                "type": "boolean",
+                "value": "config.services.nextcloud.notify_push.enable"
+            },
+            {
+                "name": "database.createLocally",
+                "desc": "Whether to create the database and database user locally.",
+                "nixName": "database.createLocally",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "datadir",
+                "desc": "Nextcloud\u2019s data storage path. Will be  services.nextcloud.home by default. This folder will be populated with a config.php file and adata folder which contains the state of the instance (excluding thedatabase).\u201c;",
+                "nixName": "datadir",
+                "type": "string",
+                "value": "config.services.nextcloud.home"
+            },
+            {
+                "name": "enable",
+                "desc": "Whether to enable nextcloud.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "enableImagemagick",
+                "desc": "Whether to enable the ImageMagick module for PHP. This is used by thetheming app and for generating previews of certain images (e.g. SVG andHEIF). You may want to disable it for increased security. In that case,previews will still be available for some images (e.g. JPEG and PNG).See  https://github.com/nextcloud/server/issues/13099 .",
+                "nixName": "enableImagemagick",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "extraApps",
+                "desc": "Extra apps to install. Should be an attrSet of appid to packagesgenerated by fetchNextcloudApp. The appid must be identical to the \u201cid\u201dvalue in the apps appinfo/info.xml. Using this will disable the appstoreto prevent Nextcloud from updating these apps (see  services.nextcloud.appstoreEnable ).",
+                "nixName": "extraApps",
+                "type": "attribute set of package",
+                "value": "{ }"
+            },
+            {
+                "name": "extraAppsEnable",
+                "desc": "Automatically enable the apps in  services.nextcloud.extraApps every time Nextcloud starts. If set to false, apps need to be enabled inthe Nextcloud web user interface or with nextcloud-occ app:enable .",
+                "nixName": "extraAppsEnable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "fastcgiTimeout",
+                "desc": "FastCGI timeout for database connection in seconds.",
+                "nixName": "fastcgiTimeout",
+                "type": "signed integer",
+                "value": "120"
+            },
+            {
+                "name": "home",
+                "desc": "Storage path of nextcloud.",
+                "nixName": "home",
+                "type": "string",
+                "value": "\"/var/lib/nextcloud\""
+            },
+            {
+                "name": "hostName",
+                "desc": "FQDN for the nextcloud instance.",
+                "nixName": "hostName",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "https",
+                "desc": "Use HTTPS for generated links.",
+                "nixName": "https",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "maxUploadSize",
+                "desc": "The upload limit for files. This changes the relevant options inphp.ini and nginx if enabled.",
+                "nixName": "maxUploadSize",
+                "type": "string",
+                "value": "\"512M\""
+            },
+            {
+                "name": "nginx.hstsMaxAge",
+                "desc": "Value for the  max-age  directive of the HTTP Strict-Transport-Security  header.  See section 6.1.1 of IETF RFC 6797 for detailed information on thisdirective and header.",
+                "nixName": "nginx.hstsMaxAge",
+                "type": "positive integer, meaning >0",
+                "value": "15552000"
+            },
+            {
+                "name": "nginx.recommendedHttpHeaders",
+                "desc": "Enable additional recommended HTTP response headers",
+                "nixName": "nginx.recommendedHttpHeaders",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "notify_push.bendDomainToLocalhost",
+                "desc": "Whether to add an entry to  /etc/hosts  for the configurednextcloud domain to point to  localhost  and add localhost  to nextcloud\u2019s  trusted_proxies config option.  This is useful when nextcloud\u2019s domain is not a static IP address andwhen the reverse proxy cannot be bypassed because the backend connectionis done via unix socket.",
+                "nixName": "notify_push.bendDomainToLocalhost",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "notify_push.dbhost",
+                "desc": "Database host (+port) or socket path. If  services.nextcloud.database.createLocally is true and  services.nextcloud.config.dbtype is either  pgsql  or  mysql , defaults to thecorrect Unix socket instead.",
+                "nixName": "notify_push.dbhost",
+                "type": "null or string",
+                "value": "\"config.services.nextcloud.config.dbhost\""
+            },
+            {
+                "name": "notify_push.dbname",
+                "desc": "Database name.",
+                "nixName": "notify_push.dbname",
+                "type": "null or string",
+                "value": "\"config.services.nextcloud.config.dbname\""
+            },
+            {
+                "name": "notify_push.dbpassFile",
+                "desc": "The full path to a file that contains the database password.",
+                "nixName": "notify_push.dbpassFile",
+                "type": "null or string",
+                "value": "\"config.services.nextcloud.config.dbpassFile\""
+            },
+            {
+                "name": "notify_push.dbtableprefix",
+                "desc": "Table prefix in Nextcloud\u2019s database.   Note:  since Nextcloud 20 it\u2019s not an option anymoreto create a database schema with a custom table prefix. This option onlyexists for backwards compatibility with installations that wereoriginally provisioned with Nextcloud <20.",
+                "nixName": "notify_push.dbtableprefix",
+                "type": "null or string",
+                "value": "\"config.services.nextcloud.config.dbtableprefix\""
+            },
+            {
+                "name": "notify_push.dbtype",
+                "desc": "Database type.",
+                "nixName": "notify_push.dbtype",
+                "type": "one of \"sqlite\", \"pgsql\", \"mysql\"",
+                "value": "\"config.services.nextcloud.config.dbtype\""
+            },
+            {
+                "name": "notify_push.dbuser",
+                "desc": "Database user.",
+                "nixName": "notify_push.dbuser",
+                "type": "null or string",
+                "value": "\"config.services.nextcloud.config.dbuser\""
+            },
+            {
+                "name": "notify_push.enable",
+                "desc": "Whether to enable Notify push.",
+                "nixName": "notify_push.enable",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "notify_push.logLevel",
+                "desc": "Log level",
+                "nixName": "notify_push.logLevel",
+                "type": "one of \"error\", \"warn\", \"info\", \"debug\", \"trace\"",
+                "value": "\"error\""
+            },
+            {
+                "name": "notify_push.package",
+                "desc": "Which package to use for notify_push",
+                "nixName": "notify_push.package",
+                "type": "package",
+                "value": "<rendered-html><p>pkgs.nextcloud-notify_push</p>\n</rendered-html>"
+            },
+            {
+                "name": "notify_push.socketPath",
+                "desc": "Socket path to use for notify_push",
+                "nixName": "notify_push.socketPath",
+                "type": "string",
+                "value": "\"/run/nextcloud-notify_push/sock\""
+            },
+            {
+                "name": "occ",
+                "desc": "The nextcloud-occ program preconfigured to target this Nextcloudinstance.",
+                "nixName": "occ",
+                "type": "package",
+                "value": "<rendered-html><p>generated script</p>\n</rendered-html>"
+            },
+            {
+                "name": "package",
+                "desc": "Which package to use for the Nextcloud instance.",
+                "nixName": "package",
+                "type": "package",
+                "value": null
+            },
+            {
+                "name": "phpExtraExtensions",
+                "desc": "Additional PHP extensions to use for Nextcloud. By default, onlyextensions necessary for a vanilla Nextcloud installation are enabled,but you may choose from the list of available extensions and add furtherones. This is sometimes necessary to be able to install a certainNextcloud app that has additional requirements.",
+                "nixName": "phpExtraExtensions",
+                "type": "function that evaluates to a(n) list of package",
+                "value": "all: []"
+            },
+            {
+                "name": "phpOptions",
+                "desc": "Options for PHP\u2019s php.ini file for nextcloud.  Please note that this option is  additive  on purpose whilethe attribute values inside the default are option defaults: that meansthat        {        services . nextcloud . phpOptions . \" opcache.interned_strings_buffer \"   =   \"23\"  ;      }      will override the  php.ini  option opcache.interned_strings_buffer  without discarding the restof the defaults.  Overriding all of  phpOptions  (including upload_max_filesize ,  post_max_size  and memory_limit  which all point to  services.nextcloud.maxUploadSize by default) can be done like this:        {        services . nextcloud . phpOptions   =  lib.mkForce  {          /* ... */        };      }",
+                "nixName": "phpOptions",
+                "type": "attribute set of (string or signed integer)",
+                "value": "{\n  catch_workers_output = \"yes\";\n  display_errors = \"stderr\";\n  error_reporting = \"E_ALL & ~E_DEPRECATED & ~E_STRICT\";\n  expose_php = \"Off\";\n  \"opcache.fast_shutdown\" = \"1\";\n  \"opcache.interned_strings_buffer\" = \"8\";\n  \"opcache.max_accelerated_files\" = \"10000\";\n  \"opcache.memory_consumption\" = \"128\";\n  \"opcache.revalidate_freq\" = \"1\";\n  \"openssl.cafile\" = \"/etc/ssl/certs/ca-certificates.crt\";\n  output_buffering = \"0\";\n  short_open_tag = \"Off\";\n}"
+            },
+            {
+                "name": "phpPackage",
+                "desc": "The php package to use.",
+                "nixName": "phpPackage",
+                "type": "package",
+                "value": "pkgs.php"
+            },
+            {
+                "name": "poolConfig",
+                "desc": "Options for Nextcloud\u2019s PHP pool. See the documentation on php-fpm.conf  for details on configuration directives.",
+                "nixName": "poolConfig",
+                "type": "null or strings concatenated with \"\\n\"",
+                "value": "null"
+            },
+            {
+                "name": "poolSettings",
+                "desc": "Options for nextcloud\u2019s PHP pool. See the documentation on php-fpm.conf  for details on configuration directives.",
+                "nixName": "poolSettings",
+                "type": "attribute set of (string or signed integer or boolean)",
+                "value": "{\n  pm = \"dynamic\";\n  \"pm.max_children\" = \"32\";\n  \"pm.max_requests\" = \"500\";\n  \"pm.max_spare_servers\" = \"4\";\n  \"pm.min_spare_servers\" = \"2\";\n  \"pm.start_servers\" = \"2\";\n}"
+            },
+            {
+                "name": "secretFile",
+                "desc": "Secret options which will be appended to Nextcloud\u2019s config.php file(written as JSON, in the same form as the  services.nextcloud.settings option), for example  {\"redis\":{\"password\":\"secret\"}} .",
+                "nixName": "secretFile",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "settings",
+                "desc": "Extra options which should be appended to Nextcloud\u2019s config.phpfile.",
+                "nixName": "settings",
+                "type": "JSON value",
+                "value": "{ }"
+            },
+            {
+                "name": "settings.default_phone_region",
+                "desc": "An  ISO3166-1  country code which replaces automatic phone-number detectionwithout a country code.  As an example, with  DE  set as the default phone region,the  +49  prefix can be omitted for phone numbers.",
+                "nixName": "settings.default_phone_region",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "settings.log_type",
+                "desc": "Logging backend to use. systemd requires the php-systemd package tobe added to services.nextcloud.phpExtraExtensions. See the  nextclouddocumentation  for details.",
+                "nixName": "settings.log_type",
+                "type": "one of \"errorlog\", \"file\", \"syslog\", \"systemd\"",
+                "value": "\"syslog\""
+            },
+            {
+                "name": "settings.loglevel",
+                "desc": "Log level value between 0 (DEBUG) and 4 (FATAL).    0 (debug): Log all activity.    1 (info): Log activity such as user logins and file activities,plus warnings, errors, and fatal errors.    2 (warn): Log successful operations, as well as warnings ofpotential problems, errors and fatal errors.    3 (error): Log failed operations and fatal errors.    4 (fatal): Log only fatal errors that cause the server tostop.",
+                "nixName": "settings.loglevel",
+                "type": "integer between 0 and 4 (both inclusive)",
+                "value": "2"
+            },
+            {
+                "name": "settings.overwriteprotocol",
+                "desc": "Force Nextcloud to always use HTTP or HTTPS i.e. for link generation.Nextcloud uses the currently used protocol by default, but when behind areverse-proxy, it may use  http  for everything althoughNextcloud may be served via HTTPS.",
+                "nixName": "settings.overwriteprotocol",
+                "type": "one of \"\", \"http\", \"https\"",
+                "value": "\"\""
+            },
+            {
+                "name": "settings.\"profile.enabled\"",
+                "desc": "Makes user-profiles globally available under nextcloud.tld/u/user.name . Even though it\u2019s enabled bydefault in Nextcloud, it must be explicitly enabled here because it hasthe side-effect that personal information is even accessible tounauthenticated users by default. By default, the following propertiesare set to \u201cShow to everyone\u201d if this flag is enabled:   About  Full name  Headline  Organisation  Profile picture  Role  Twitter  Website Only has an effect in Nextcloud 23 and later.",
+                "nixName": "settings.\"profile.enabled\"",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings.skeletondirectory",
+                "desc": "The directory where the skeleton files are located. These files willbe copied to the data directory of new users. Leave empty to not copyany skeleton files.",
+                "nixName": "settings.skeletondirectory",
+                "type": "string",
+                "value": "\"\""
+            },
+            {
+                "name": "settings.trusted_domains",
+                "desc": "Trusted domains, from which the nextcloud installation will beaccessible. You don\u2019t need to add services.nextcloud.hostname  here.",
+                "nixName": "settings.trusted_domains",
+                "type": "list of string",
+                "value": "[ ]"
+            },
+            {
+                "name": "settings.trusted_proxies",
+                "desc": "Trusted proxies, to provide if the nextcloud installation is beingproxied to secure against e.g. spoofing.",
+                "nixName": "settings.trusted_proxies",
+                "type": "list of string",
+                "value": "[ ]"
+            },
+            {
+                "name": "webfinger",
+                "desc": "Enable this option if you plan on using the webfinger plugin. Theappropriate nginx rewrite rules will be added to your configuration.",
+                "nixName": "webfinger",
+                "type": "boolean",
+                "value": "false"
+            }
+        ]
+    },
+    {
+        "name": "samba",
+        "nixName": "samba",
+        "options": [
+            {
+                "name": "configText",
+                "desc": "Verbatim contents of smb.conf. If null (default), use theautogenerated file from NixOS instead.",
+                "nixName": "configText",
+                "type": "null or strings concatenated with \"\\n\"",
+                "value": "null"
+            },
+            {
+                "name": "enable",
+                "desc": "Whether to enable Samba, which provides file and print services toWindows clients through the SMB/CIFS protocol.   If you use the firewall consider adding the following:   services.samba.openFirewall = true;",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "enableNmbd",
+                "desc": "Whether to enable Samba\u2019s nmbd, which replies to NetBIOS over IP nameservice requests. It also participates in the browsing protocols whichmake up the Windows \u201cNetwork Neighborhood\u201d view.",
+                "nixName": "enableNmbd",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "enableWinbindd",
+                "desc": "Whether to enable Samba\u2019s winbindd, which provides a number ofservices to the Name Service Switch capability found in most modern Clibraries, to arbitrary applications via PAM and ntlm_auth and to Sambaitself.",
+                "nixName": "enableWinbindd",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "extraConfig",
+                "desc": "Additional global section and extra section lines go in here.",
+                "nixName": "extraConfig",
+                "type": "strings concatenated with \"\\n\"",
+                "value": "\"\""
+            },
+            {
+                "name": "invalidUsers",
+                "desc": "List of users who are denied to login via Samba.",
+                "nixName": "invalidUsers",
+                "type": "list of string",
+                "value": "[\n  \"root\"\n]"
+            },
+            {
+                "name": "nsswins",
+                "desc": "Whether to enable the WINS NSS (Name Service Switch) plug-in.Enabling it allows applications to resolve WINS/NetBIOS names (a.k.a.Windows machine names) by transparently querying the winbindddaemon.",
+                "nixName": "nsswins",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "openFirewall",
+                "desc": "Whether to automatically open the necessary ports in thefirewall.",
+                "nixName": "openFirewall",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "package",
+                "desc": "The samba package to use.",
+                "nixName": "package",
+                "type": "package",
+                "value": "pkgs.samba"
+            },
+            {
+                "name": "securityType",
+                "desc": "Samba security type",
+                "nixName": "securityType",
+                "type": "one of \"auto\", \"user\", \"domain\", \"ads\"",
+                "value": "\"user\""
+            },
+            {
+                "name": "shares",
+                "desc": "A set describing shared resources. See  man smb.conf  for options.",
+                "nixName": "shares",
+                "type": "attribute set of attribute set of unspecified value",
+                "value": "{ }"
+            }
+        ]
+    },
+    {
+        "name": "seafile",
+        "nixName": "seafile",
+        "options": [
+            {
+                "name": "adminEmail",
+                "desc": "Seafile Seahub Admin Account Email.",
+                "nixName": "adminEmail",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "ccnetSettings",
+                "desc": "Configuration for ccnet, see  https://manual.seafile.com/config/ccnet-conf/ for supported values.",
+                "nixName": "ccnetSettings",
+                "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))",
+                "value": "{ }"
+            },
+            {
+                "name": "ccnetSettings.General.SERVICE_URL",
+                "desc": "Seahub public URL.",
+                "nixName": "ccnetSettings.General.SERVICE_URL",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "enable",
+                "desc": "Whether to enable Seafile server.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "initialAdminPassword",
+                "desc": "Seafile Seahub Admin Account initial password. Should be change viaSeahub web front-end.",
+                "nixName": "initialAdminPassword",
+                "type": "string",
+                "value": null
+            },
+            {
+                "name": "seafilePackage",
+                "desc": "The seafile-server package to use.",
+                "nixName": "seafilePackage",
+                "type": "package",
+                "value": "pkgs.seafile-server"
+            },
+            {
+                "name": "seafileSettings",
+                "desc": "Configuration for seafile-server, see  https://manual.seafile.com/config/seafile-conf/ for supported values.",
+                "nixName": "seafileSettings",
+                "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))",
+                "value": "{ }"
+            },
+            {
+                "name": "seafileSettings.fileserver.host",
+                "desc": "The binding address used by seafile fileserver.",
+                "nixName": "seafileSettings.fileserver.host",
+                "type": "string",
+                "value": "\"127.0.0.1\""
+            },
+            {
+                "name": "seafileSettings.fileserver.port",
+                "desc": "The tcp port used by seafile fileserver.",
+                "nixName": "seafileSettings.fileserver.port",
+                "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "value": "8082"
+            },
+            {
+                "name": "seahubExtraConf",
+                "desc": "Extra config to append to  seahub_settings.py  file. Referto  https://manual.seafile.com/config/seahub_settings_py/ for all available options.",
+                "nixName": "seahubExtraConf",
+                "type": "strings concatenated with \"\\n\"",
+                "value": "\"\""
+            },
+            {
+                "name": "workers",
+                "desc": "The number of gunicorn worker processes for handling requests.",
+                "nixName": "workers",
+                "type": "signed integer",
+                "value": "4"
+            }
+        ]
+    },
+    {
+        "name": "vaultwarden",
+        "nixName": "vaultwarden",
+        "options": [
+            {
+                "name": "backupDir",
+                "desc": "The directory under which vaultwarden will backup its persistentdata.",
+                "nixName": "backupDir",
+                "type": "null or string",
+                "value": "null"
+            },
+            {
+                "name": "config",
+                "desc": "The configuration of vaultwarden is done through environmentvariables, therefore it is recommended to use upper snake case (e.g. DISABLE_2FA_REMEMBER ).  However, camel case (e.g.  disable2FARemember ) is alsosupported: The NixOS module will convert it automatically to upper casesnake case (e.g.  DISABLE_2FA_REMEMBER ). In this conversion digits (0-9)are handled just like upper case characters, so  foo2  wouldbe converted to  FOO_2 .Names already in this format remain unchanged, so  FOO2 remains  FOO2  if passed as such, even though foo2  would have been converted to  FOO_2 . This allows workingaround any potential future conflicting naming conventions.  Based on the attributes passed to this config option an environmentfile will be generated that is passed to vaultwarden\u2019s systemdservice.  The available configuration options can be found in  theenvironment template file .  See  services.vaultwarden.environmentFile for how to set up access to the Admin UI to invite initial users.",
+                "nixName": "config",
+                "type": "attribute set of (null or boolean or signed integer or string)",
+                "value": "{\n  ROCKET_ADDRESS = \"::1\";\n  ROCKET_PORT = 8222;\n}"
+            },
+            {
+                "name": "dbBackend",
+                "desc": "Which database backend vaultwarden will be using.",
+                "nixName": "dbBackend",
+                "type": "one of \"sqlite\", \"mysql\", \"postgresql\"",
+                "value": "\"sqlite\""
+            },
+            {
+                "name": "enable",
+                "desc": "Whether to enable vaultwarden.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "environmentFile",
+                "desc": "Additional environment file as defined in   systemd.exec(5)  .  Secrets like  ADMIN_TOKEN  and  SMTP_PASSWORD  should be passed to the service withoutadding them to the world-readable Nix store.  Note that this file needs to be available on the host on which vaultwarden  is running.  As a concrete example, to make the Admin UI available (from which newusers can be invited initially), the secret  ADMIN_TOKEN  needs to bedefined as described  here :   # Admin secret token, see# https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-pageADMIN_TOKEN=...copy-paste a unique generated secret token here...",
+                "nixName": "environmentFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "package",
+                "desc": "The vaultwarden package to use.",
+                "nixName": "package",
+                "type": "package",
+                "value": "pkgs.vaultwarden"
+            },
+            {
+                "name": "webVaultPackage",
+                "desc": "Web vault package to use.",
+                "nixName": "webVaultPackage",
+                "type": "package",
+                "value": "pkgs.vaultwarden.webvault"
+            }
+        ]
+    },
+    {
+        "name": "manticore",
+        "nixName": "manticore",
+        "options": [
+            {
+                "name": "enable",
+                "desc": "Whether to enable Manticoresearch.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "settings",
+                "desc": "Configuration for Manticoresearch. See  https://manual.manticoresearch.com/Server%20settings for more information.",
+                "nixName": "settings",
+                "type": "JSON value",
+                "value": "{\n  searchd = {\n    data_dir = \"/var/lib/manticore\";\n    listen = [\n      \"127.0.0.1:9312\"\n      \"127.0.0.1:9306:mysql\"\n      \"127.0.0.1:9308:http\"\n    ];\n    log = \"/var/log/manticore/searchd.log\";\n    pid_file = \"/run/manticore/searchd.pid\";\n    query_log = \"/var/log/manticore/query.log\";\n  };\n}"
+            }
+        ]
+    },
+    {
+        "name": "searx",
+        "nixName": "searx",
+        "options": [
+            {
+                "name": "enable",
+                "desc": "Whether to enable Searx, the meta search engine.",
+                "nixName": "enable",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "environmentFile",
+                "desc": "Environment file (see  systemd.exec(5)  \u201cEnvironmentFile=\u201dsection for the syntax) to define variables for Searx. This option canbe used to safely include secret keys into the Searx configuration.",
+                "nixName": "environmentFile",
+                "type": "null or path",
+                "value": "null"
+            },
+            {
+                "name": "limiterSettings",
+                "desc": "Limiter settings for SearXNG.   For available settings, see the SearXNG  schemafile .",
+                "nixName": "limiterSettings",
+                "type": "attribute set of (JSON value)",
+                "value": "{ }"
+            },
+            {
+                "name": "package",
+                "desc": "The searxng package to use.",
+                "nixName": "package",
+                "type": "package",
+                "value": "pkgs.searxng"
+            },
+            {
+                "name": "redisCreateLocally",
+                "desc": "Configure a local Redis server for SearXNG. This is required if youwant to enable the rate limiter and bot protection of SearXNG.",
+                "nixName": "redisCreateLocally",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "runInUwsgi",
+                "desc": "Whether to run searx in uWSGI as a \u201cvassal\u201d, instead of using itsbuilt-in HTTP server. This is the recommended mode for public or largeinstances, but is unnecessary for LAN or local-only use.   The built-in HTTP server logs all queries by default.",
+                "nixName": "runInUwsgi",
+                "type": "boolean",
+                "value": "false"
+            },
+            {
+                "name": "settings",
+                "desc": "Searx settings. These will be merged with (taking precedence over)the default configuration. It\u2019s also possible to refer to environmentvariables (defined in  services.searx.environmentFile )using the syntax  @VARIABLE_NAME@ .   For available settings, see the Searx  docs .",
+                "nixName": "settings",
+                "type": "attribute set of (JSON value)",
+                "value": "{ }"
+            },
+            {
+                "name": "settingsFile",
+                "desc": "The path of the Searx server settings.yml file. If no file isspecified, a default file is used (default config file has debug modeenabled). Note: setting this options overrides  services.searx.settings .   This file, along with any secret key it contains, will be copied intothe world-readable Nix store.",
+                "nixName": "settingsFile",
+                "type": "path",
+                "value": "\"/run/searx/settings.yml\""
+            },
+            {
+                "name": "uwsgiConfig",
+                "desc": "Additional configuration of the uWSGI vassal running searx. It shouldnotably specify on which interfaces and ports the vassal shouldlisten.",
+                "nixName": "uwsgiConfig",
+                "type": "Json value or lambda",
+                "value": "{\n  http = \":8080\";\n}"
+            }
+        ]
     }
 ]

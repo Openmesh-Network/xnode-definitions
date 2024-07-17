@@ -1,0 +1,125 @@
+{
+    "name": "lemmy",
+    "nixName": "lemmy",
+    "options": [
+        {
+            "name": "adminPasswordFile",
+            "desc": "File which contains the value of setup.admin_password .",
+            "nixName": "adminPasswordFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "caddy.enable",
+            "desc": "Whether to enable exposing lemmy with the caddy reverse proxy.",
+            "nixName": "caddy.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "database.createLocally",
+            "desc": "Whether to enable creation of database on the instance.",
+            "nixName": "database.createLocally",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "database.uri",
+            "desc": "The connection URI to use. Takes priority over the configuration fileif set.",
+            "nixName": "database.uri",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "database.uriFile",
+            "desc": "File which contains the database uri.",
+            "nixName": "database.uriFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable lemmy a federated alternative to reddit inrust.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "nginx.enable",
+            "desc": "Whether to enable exposing lemmy with the nginx reverse proxy.",
+            "nixName": "nginx.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "pictrsApiKeyFile",
+            "desc": "File which contains the value of  pictrs.api_key .",
+            "nixName": "pictrsApiKeyFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "server.package",
+            "desc": "The lemmy-server package to use.",
+            "nixName": "server.package",
+            "type": "package",
+            "value": "pkgs.lemmy-server"
+        },
+        {
+            "name": "settings",
+            "desc": "Lemmy configuration",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": "{ }"
+        },
+        {
+            "name": "settings.captcha.difficulty",
+            "desc": "The difficultly of the captcha to solve.",
+            "nixName": "settings.captcha.difficulty",
+            "type": "one of \"easy\", \"medium\", \"hard\"",
+            "value": "\"medium\""
+        },
+        {
+            "name": "settings.captcha.enabled",
+            "desc": "Enable Captcha.",
+            "nixName": "settings.captcha.enabled",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "settings.hostname",
+            "desc": "The domain name of your instance (eg \u2018lemmy.ml\u2019).",
+            "nixName": "settings.hostname",
+            "type": "string",
+            "value": "null"
+        },
+        {
+            "name": "settings.port",
+            "desc": "Port where lemmy should listen for incoming requests.",
+            "nixName": "settings.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8536"
+        },
+        {
+            "name": "smtpPasswordFile",
+            "desc": "File which contains the value of email.smtp_password .",
+            "nixName": "smtpPasswordFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "ui.package",
+            "desc": "The lemmy-ui package to use.",
+            "nixName": "ui.package",
+            "type": "package",
+            "value": "pkgs.lemmy-ui"
+        },
+        {
+            "name": "ui.port",
+            "desc": "Port where lemmy-ui should listen for incoming requests.",
+            "nixName": "ui.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "1234"
+        }
+    ]
+}

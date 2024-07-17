@@ -1,0 +1,132 @@
+{
+    "name": "jupyter",
+    "nixName": "jupyter",
+    "options": [
+        {
+            "name": "command",
+            "desc": "Which command the service runs. Note that not all jupyter packageshave all commands, e.g. jupyter-lab isn\u2019t present in the defaultpackage.",
+            "nixName": "command",
+            "type": "string",
+            "value": "\"jupyter-notebook\""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Jupyter development server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "group",
+            "desc": "Name of the group used to run the jupyter service. Use this if youwant to create a group of users that are able to view the notebookdirectory\u2019s content.",
+            "nixName": "group",
+            "type": "string",
+            "value": "\"jupyter\""
+        },
+        {
+            "name": "ip",
+            "desc": "IP address Jupyter will be listening on.",
+            "nixName": "ip",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "kernels",
+            "desc": "Declarative kernel config.  Kernels can be declared in any language that supports and has therequired dependencies to communicate with a jupyter server. In python\u2019scase, it means that ipykernel package must always be included in thelist of packages of the targeted environment.",
+            "nixName": "kernels",
+            "type": "null or (attribute set of (JSON value))",
+            "value": "null"
+        },
+        {
+            "name": "kernels.<name>.argv",
+            "desc": "Command and arguments to start the kernel.",
+            "nixName": "kernels.<name>.argv",
+            "type": "list of string",
+            "value": null
+        },
+        {
+            "name": "kernels.<name>.displayName",
+            "desc": "Name that will be shown to the user.",
+            "nixName": "kernels.<name>.displayName",
+            "type": "string",
+            "value": "\"\""
+        },
+        {
+            "name": "kernels.<name>.env",
+            "desc": "Environment variables to set for the kernel.",
+            "nixName": "kernels.<name>.env",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "kernels.<name>.extraPaths",
+            "desc": "Extra paths to link in kernel directory",
+            "nixName": "kernels.<name>.extraPaths",
+            "type": "attribute set of path",
+            "value": "{ }"
+        },
+        {
+            "name": "kernels.<name>.language",
+            "desc": "Language of the environment. Typically the name of the binary.",
+            "nixName": "kernels.<name>.language",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "kernels.<name>.logo32",
+            "desc": "Path to 32x32 logo png.",
+            "nixName": "kernels.<name>.logo32",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "kernels.<name>.logo64",
+            "desc": "Path to 64x64 logo png.",
+            "nixName": "kernels.<name>.logo64",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "notebookConfig",
+            "desc": "Raw jupyter config.",
+            "nixName": "notebookConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "notebookDir",
+            "desc": "Root directory for notebooks.",
+            "nixName": "notebookDir",
+            "type": "string",
+            "value": "\"~/\""
+        },
+        {
+            "name": "package",
+            "desc": "The notebook package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.python3.pkgs.notebook"
+        },
+        {
+            "name": "password",
+            "desc": "Password to use with notebook. Can be generated using: In [1]: fromnotebook.auth import passwd In [2]: passwd(\u2018test\u2019) Out[2]:\u2018sha1:1b961dc713fb:88483270a63e57d18d43cf337e629539de1436ba\u2019 NOTE: youneed to keep the single quote inside the nix string. Or you can use apython oneliner: \u201copen(\u2018/path/secret_file\u2019, \u2018r\u2019,encoding=\u2018utf8\u2019).read().strip()\u201d It will be interpreted at the end ofthe notebookConfig.",
+            "nixName": "password",
+            "type": "string",
+            "value": null
+        },
+        {
+            "name": "port",
+            "desc": "Port number Jupyter will be listening on.",
+            "nixName": "port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8888"
+        },
+        {
+            "name": "user",
+            "desc": "Name of the user used to run the jupyter service. For securityreason, jupyter should really not be run as root. If not set (jupyter),the service will create a jupyter user with appropriate settings.",
+            "nixName": "user",
+            "type": "string",
+            "value": "\"jupyter\""
+        }
+    ]
+}
