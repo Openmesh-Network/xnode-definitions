@@ -138,15 +138,18 @@ def add_extra_definitions(starting_services, extra_services, nix_data):
                         write_to_definition_file(nix_service)
                         found_missing = True
                         final_services_with_templates += 1
+                        
+                    elif nix_service["nixName"] in template_service:
+                        print("Found", nix_service["nixName"], "in", template_service)
 
                 if not found_missing:
                     still_missing.append(template_service)
 
     print("Included extra services: ", len(missing_services))
-    print("Unable to include services", len(still_missing), still_missing)
+    print("Unable to include services: ", len(still_missing), still_missing)
     
     final_services = starting_services.extend(missing_services)
-    print("Total services which have templates", final_services_with_templates)
+    print("Total services which have templates: ", final_services_with_templates)
 
     return final_services
 
