@@ -70,7 +70,8 @@ def start_up():
     parser.add_argument("--platform", help="Filter by platform", type=str, default=None)
     parser.add_argument("--info", help="Show detailed info about the package", action="store_true")
     parser.add_argument("--options", help="Show options of the package", action="store_true")
-    parser.add_argument("--output", help="Output the raw response to a file.", default='json_response.json')
+    parser.add_argument("--output", help="Output the hits to a file.", default='')
+    parser.add_argument("--debugging", help="Write the api response to a response.json file for debugging.", action="store_true")
     args = parser.parse_args()
     
     return sort_by_help_msg, args
@@ -87,12 +88,19 @@ def main():
             json_response = get_options(**kwargs)
 
         # If it hits any, write the response to json for debugging
-        with open(args.output, 'w') as f:
-            f.write(json.dumps(json_response, indent=4))
+        if args.debugging:
+            with open('response.json', 'w') as f:
+                f.write(json.dumps(json_response, indent=4))
 
         if (len(json_response.get('hits', {}).get('hits', [])) == 0):
             print(f"Error: Package \"{args.package}\" not found!")
             print(json_response)    
+
+        # The output option will write the response's hits to a file
+        hits = json_response['hits']
+        if args.output != "":
+            with open(args.output, 'w') as f:
+                f.write(json.dumps(hits, indent=4))
 
         for package in json_response.get('hits', {}).get('hits', []):
             package_info = package.get('_source')
@@ -146,9 +154,9 @@ def main():
             with console.status("[bold green]Making request...", spinner="clock"):
                 json_response = get_packages(**kwargs)
 
-            # If it hits any, write the response to json for debugging
-            with open('reponse.json', 'w') as f:
-                f.write(json.dumps(json_response, indent=4))
+            if args.debugging:
+                with open('response.json', 'w') as f:
+                    f.write(json.dumps(json_response, indent=4))
 
             if (len(json_response.get('hits', {}).get('hits', [])) == 0):
                 print(f"Error: Package \"{args.package}\" not found!")    

@@ -1,707 +1,697 @@
 {
-    "took": 8,
-    "timed_out": false,
-    "_shards": {
-        "total": 1,
-        "successful": 1,
-        "skipped": 0,
-        "failed": 0
+    "total": {
+        "value": 43,
+        "relation": "eq"
     },
-    "hits": {
-        "total": {
-            "value": 43,
-            "relation": "eq"
-        },
-        "max_score": 1.0,
-        "hits": [
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "4IDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
-                    "option_name": "services.yandex-disk.directory",
-                    "option_description": "<rendered-html><p>The directory to use for Yandex.Disk storage</p>\n</rendered-html>",
-                    "option_type": "path",
-                    "option_default": "\"/home/Yandex.Disk\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "4YDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
-                    "option_name": "services.yandex-disk.enable",
-                    "option_description": "<rendered-html><p>Whether to enable Yandex-disk client. See <a\nhref=\"https://disk.yandex.ru/\">https://disk.yandex.ru/</a></p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "4oDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
-                    "option_name": "services.yandex-disk.excludes",
-                    "option_description": "<rendered-html><p>Comma-separated list of directories which are excluded from\nsynchronization.</p>\n</rendered-html>",
-                    "option_type": "strings concatenated with \",\"",
-                    "option_default": "\"\"",
-                    "option_example": "\"data,backup\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "44DntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
-                    "option_name": "services.yandex-disk.password",
-                    "option_description": "<rendered-html><p>Your yandex.com password. Warning: it will be world-readable in\n/nix/store.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "5IDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
-                    "option_name": "services.yandex-disk.user",
-                    "option_description": "<rendered-html><p>The user the yandex-disk daemon should run as.</p>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "5YDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
-                    "option_name": "services.yandex-disk.username",
-                    "option_description": "<rendered-html><p>Your yandex.com login name.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "5oDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.configFile",
-                    "option_description": "<rendered-html><p>A file which contains JSON or HJSON configuration for yggdrasil. See\nthe <code class=\"interpreted-text\" role=\"option\">settings</code> option\nfor more information.</p>\n<p>Note: This file must not be larger than 1 MB because it is passed to\nthe yggdrasil process via systemd\u2018s LoadCredential mechanism. For\ndetails, see <a\nhref=\"https://systemd.io/CREDENTIALS/\">https://systemd.io/CREDENTIALS/</a>\nand <code>man 5 systemd.exec</code>.</p>\n</rendered-html>",
-                    "option_type": "null or path",
-                    "option_default": "null",
-                    "option_example": "\"/run/keys/yggdrasil.conf\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "54DntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.denyDhcpcdInterfaces",
-                    "option_description": "<rendered-html><p>Disable the DHCP client for any interface whose name matches any of\nthe shell glob patterns in this list. Use this option to prevent the\nDHCP client from broadcasting requests on the yggdrasil network. It is\nonly necessary to do so when yggdrasil is running in TAP mode, because\nTUN interfaces do not support broadcasting.</p>\n</rendered-html>",
-                    "option_type": "list of string",
-                    "option_default": "[ ]",
-                    "option_example": "[\n  \"tap*\"\n]",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "6IDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.enable",
-                    "option_description": "<rendered-html><p>Whether to enable the yggdrasil system service.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "6YDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.extraArgs",
-                    "option_description": "<rendered-html><p>Extra command line arguments.</p>\n</rendered-html>",
-                    "option_type": "list of string",
-                    "option_default": "[ ]",
-                    "option_example": "[\n  \"-loglevel\"\n  \"info\"\n]",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "6oDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.group",
-                    "option_description": "<rendered-html><p>Group to grant access to the Yggdrasil control socket. If\n<code>null</code>, only root can access the socket.</p>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": "\"wheel\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "64DntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.openMulticastPort",
-                    "option_description": "<rendered-html><p>Whether to open the UDP port used for multicast peer discovery. The\nNixOS firewall blocks link-local communication, so in order to make\nincoming local peering work you will also need to configure\n<code>MulticastInterfaces</code> in your Yggdrasil configuration (<code\nclass=\"interpreted-text\" role=\"option\">settings</code> or <code\nclass=\"interpreted-text\" role=\"option\">configFile</code>). You will then\nhave to add the ports that you configure there to your firewall\nconfiguration (<code class=\"interpreted-text\"\nrole=\"option\">networking.firewall.allowedTCPPorts</code> or <code\nclass=\"interpreted-text\"\nrole=\"option\">networking.firewall.interfaces.&lt;name&gt;.allowedTCPPorts</code>).</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "7IDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.package",
-                    "option_description": "<rendered-html><p>The yggdrasil package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": "pkgs.yggdrasil",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "7YDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.persistentKeys",
-                    "option_description": "<rendered-html><p>Whether to enable persistent keys. If enabled then keys will be\ngenerated once and Yggdrasil will retain the same IPv6 address when the\nservice is restarted. Keys are stored at /var/lib/yggdrasil/keys.json\n.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "7oDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/yggdrasil.nix",
-                    "option_name": "services.yggdrasil.settings",
-                    "option_description": "<rendered-html><p>Configuration for yggdrasil, as a Nix attribute set.</p>\n<p>Warning: this is stored in the WORLD-READABLE Nix store! Therefore,\nit is not appropriate for private keys. If you wish to specify the keys,\nuse <code class=\"interpreted-text\" role=\"option\">configFile</code>.</p>\n<p>If the <code class=\"interpreted-text\"\nrole=\"option\">persistentKeys</code> is enabled then the keys that are\ngenerated during activation will override those in <code\nclass=\"interpreted-text\" role=\"option\">settings</code> or <code\nclass=\"interpreted-text\" role=\"option\">configFile</code>.</p>\n<p>If no keys are specified then ephemeral keys are generated and the\nYggdrasil interface will have a random IPv6 address each time the\nservice is started. This is the default.</p>\n<p>If both <code class=\"interpreted-text\"\nrole=\"option\">configFile</code> and <code class=\"interpreted-text\"\nrole=\"option\">settings</code> are supplied, they will be combined, with\nvalues from <code class=\"interpreted-text\"\nrole=\"option\">configFile</code> taking precedence.</p>\n<p>You can use the command\n<code>nix-shell -p yggdrasil --run \"yggdrasil -genconf\"</code> to\ngenerate default configuration values with documentation.</p>\n</rendered-html>",
-                    "option_type": "JSON value",
-                    "option_default": "{ }",
-                    "option_example": "{\n  Listen = [\n    \"tcp://0.0.0.0:xxxxx\"\n  ];\n  Peers = [\n    \"tcp://aa.bb.cc.dd:eeeee\"\n    \"tcp://[aaaa:bbbb:cccc:dddd::eeee]:fffff\"\n  ];\n}",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "74DntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/audio/ympd.nix",
-                    "option_name": "services.ympd.enable",
-                    "option_description": "<rendered-html><p>Whether to enable ympd, the MPD Web GUI.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "8IDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/audio/ympd.nix",
-                    "option_name": "services.ympd.mpd.host",
-                    "option_description": "<rendered-html><p>The host where MPD is listening.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"localhost\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "8YDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/audio/ympd.nix",
-                    "option_name": "services.ympd.mpd.port",
-                    "option_description": "<rendered-html><p>The port where MPD is listening.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "config.services.mpd.network.port",
-                    "option_example": "6600",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "8oDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/audio/ympd.nix",
-                    "option_name": "services.ympd.webPort",
-                    "option_description": "<rendered-html><p>The port where ympd\u2019s web interface will be available.</p>\n</rendered-html>",
-                    "option_type": "string or 16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "\"8080\"",
-                    "option_example": "\"ssl://8080:/path/to/ssl-private-key.pem\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "84DntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.clientPackage",
-                    "option_description": "<rendered-html><p>Client package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": null,
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "9IDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.enable",
-                    "option_description": "<rendered-html><p>Whether to enable your_spotify.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "9YDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.enableLocalDB",
-                    "option_description": "<rendered-html><p>Whether to enable a local mongodb instance.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "9oDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.nginxVirtualHost",
-                    "option_description": "<rendered-html><p>If set creates an nginx virtual host for the client. In most cases\nthis should be the CLIENT_ENDPOINT without protocol prefix.</p>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "94DntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.package",
-                    "option_description": "<rendered-html><p>The your_spotify package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": "pkgs.your_spotify",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "-IDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.settings",
-                    "option_description": "<rendered-html><p>Your Spotify Configuration. Refer to <a\nhref=\"https://github.com/Yooooomi/your_spotify\">Your Spotify</a> for\ndefinitions and values.</p>\n</rendered-html>",
-                    "option_type": "attribute set of string",
-                    "option_default": null,
-                    "option_example": "{\n  CLIENT_ENDPOINT = \"https://example.com\";\n  API_ENDPOINT = \"https://api.example.com\";\n  SPOTIFY_PUBLIC = \"spotify_client_id\";\n}\n",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "-YDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.settings.API_ENDPOINT",
-                    "option_description": "<rendered-html><p>The endpoint of your server This api has to be reachable from the\ndevice you use the website from not from the server. This means that for\nexample you may need two nginx virtual hosts if you want to expose this\non the internet. Has to include a protocol Prefix (e.g.\n<code>http://</code>)</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": null,
-                    "option_example": "\"https://localhost:3000\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "-oDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.settings.CLIENT_ENDPOINT",
-                    "option_description": "<rendered-html><p>The endpoint of your web application. Has to include a protocol\nPrefix (e.g. <code>http://</code>)</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": null,
-                    "option_example": "\"https://your_spotify.example.org\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "-4DntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.settings.MONGO_ENDPOINT",
-                    "option_description": "<rendered-html><p>The endpoint of the Mongo database.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"mongodb://localhost:27017/your_spotify\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "_IDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.settings.PORT",
-                    "option_description": "<rendered-html><p>The port of the api server</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "3000",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "_YDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.settings.SPOTIFY_PUBLIC",
-                    "option_description": "<rendered-html><p>The public client ID of your Spotify application. Refer to: <a\nhref=\"https://github.com/Yooooomi/your_spotify#creating-the-spotify-application\">Creating\nthe Spotify Application</a></p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": null,
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "_oDntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
-                    "option_name": "services.your_spotify.spotifySecretFile",
-                    "option_description": "<rendered-html><p>A file containing the secret key of your Spotify application. Refer\nto: <a\nhref=\"https://github.com/Yooooomi/your_spotify#creating-the-spotify-application\">Creating\nthe Spotify Application</a>.</p>\n</rendered-html>",
-                    "option_type": "path",
-                    "option_default": null,
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "_4DntpABMU8RZ4DXSGxM",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.address",
-                    "option_description": "<rendered-html><p>The interface youtrack will listen on.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"127.0.0.1\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "AIDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.autoUpgrade",
-                    "option_description": "<rendered-html><p>Whether YouTrack should auto upgrade it without showing the upgrade\ndialog.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "true",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "AYDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.enable",
-                    "option_description": "<rendered-html><p>Whether to enable YouTrack service.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "AoDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.environmentalParameters",
-                    "option_description": "<rendered-html><p>Environmental configuration parameters, set imperatively. The values\ndoesn\u2019t get removed, when removed in Nix. Only has an effect for\nYouTrack 2023.x. See <a\nhref=\"https://www.jetbrains.com/help/youtrack/server/2023.3/youtrack-java-start-parameters.html#environmental-parameters\">https://www.jetbrains.com/help/youtrack/server/2023.3/youtrack-java-start-parameters.html#environmental-parameters</a>\nfor more information.</p>\n</rendered-html>",
-                    "option_type": "attribute set of (signed integer or string or 16 bit unsigned integer; between 0 and 65535 (both inclusive))",
-                    "option_default": "{ }",
-                    "option_example": "{\n  secure-mode = \"tls\";\n}\n",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "A4DntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.environmentalParameters.listen-address",
-                    "option_description": "<rendered-html><p>The interface YouTrack will listen on.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"0.0.0.0\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "BIDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.environmentalParameters.listen-port",
-                    "option_description": "<rendered-html><p>The port YouTrack will listen on.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "8080",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "BYDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.generalParameters",
-                    "option_description": "<rendered-html><p>General configuration parameters and other JVM options. Only has an\neffect for YouTrack 2023.x. See <a\nhref=\"https://www.jetbrains.com/help/youtrack/server/2023.3/youtrack-java-start-parameters.html#general-parameters\">https://www.jetbrains.com/help/youtrack/server/2023.3/youtrack-java-start-parameters.html#general-parameters</a>\nfor more information.</p>\n</rendered-html>",
-                    "option_type": "list of string",
-                    "option_default": "[ ]",
-                    "option_example": "[\n  \"-Djetbrains.youtrack.admin.restore=true\"\n  \"-Xmx1024m\"\n];\n",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "BoDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.package",
-                    "option_description": "<rendered-html><p>Package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "B4DntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.statePath",
-                    "option_description": "<rendered-html><p>Path were the YouTrack state is stored. To this path the base version\n(e.g. 2023_1) of the used package will be appended.</p>\n</rendered-html>",
-                    "option_type": "path",
-                    "option_default": "\"/var/lib/youtrack\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "CIDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/web-apps/youtrack.nix",
-                    "option_name": "services.youtrack.virtualHost",
-                    "option_description": "<rendered-html><p>Name of the nginx virtual host to use and setup. If null, do not\nsetup anything.</p>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "CYDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/security/yubikey-agent.nix",
-                    "option_name": "services.yubikey-agent.enable",
-                    "option_description": "<rendered-html><p>Whether to start yubikey-agent when you log in. Also sets\nSSH_AUTH_SOCK to point at yubikey-agent.</p>\n<p>Note that yubikey-agent will use whatever pinentry is specified in\nprograms.gnupg.agent.pinentryPackage.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "CoDntpABMU8RZ4DXSG1M",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/security/yubikey-agent.nix",
-                    "option_name": "services.yubikey-agent.package",
-                    "option_description": "<rendered-html><p>The yubikey-agent package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": "pkgs.yubikey-agent",
-                    "option_example": null,
-                    "option_flake": null
-                }
+    "max_score": 1.0,
+    "hits": [
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "4IDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
+                "option_name": "services.yandex-disk.directory",
+                "option_description": "<rendered-html><p>The directory to use for Yandex.Disk storage</p>\n</rendered-html>",
+                "option_type": "path",
+                "option_default": "\"/home/Yandex.Disk\"",
+                "option_example": null,
+                "option_flake": null
             }
-        ]
-    }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "4YDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
+                "option_name": "services.yandex-disk.enable",
+                "option_description": "<rendered-html><p>Whether to enable Yandex-disk client. See <a\nhref=\"https://disk.yandex.ru/\">https://disk.yandex.ru/</a></p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "4oDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
+                "option_name": "services.yandex-disk.excludes",
+                "option_description": "<rendered-html><p>Comma-separated list of directories which are excluded from\nsynchronization.</p>\n</rendered-html>",
+                "option_type": "strings concatenated with \",\"",
+                "option_default": "\"\"",
+                "option_example": "\"data,backup\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "44DntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
+                "option_name": "services.yandex-disk.password",
+                "option_description": "<rendered-html><p>Your yandex.com password. Warning: it will be world-readable in\n/nix/store.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "5IDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
+                "option_name": "services.yandex-disk.user",
+                "option_description": "<rendered-html><p>The user the yandex-disk daemon should run as.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "5YDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/network-filesystems/yandex-disk.nix",
+                "option_name": "services.yandex-disk.username",
+                "option_description": "<rendered-html><p>Your yandex.com login name.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "5oDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.configFile",
+                "option_description": "<rendered-html><p>A file which contains JSON or HJSON configuration for yggdrasil. See\nthe <code class=\"interpreted-text\" role=\"option\">settings</code> option\nfor more information.</p>\n<p>Note: This file must not be larger than 1 MB because it is passed to\nthe yggdrasil process via systemd\u2018s LoadCredential mechanism. For\ndetails, see <a\nhref=\"https://systemd.io/CREDENTIALS/\">https://systemd.io/CREDENTIALS/</a>\nand <code>man 5 systemd.exec</code>.</p>\n</rendered-html>",
+                "option_type": "null or path",
+                "option_default": "null",
+                "option_example": "\"/run/keys/yggdrasil.conf\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "54DntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.denyDhcpcdInterfaces",
+                "option_description": "<rendered-html><p>Disable the DHCP client for any interface whose name matches any of\nthe shell glob patterns in this list. Use this option to prevent the\nDHCP client from broadcasting requests on the yggdrasil network. It is\nonly necessary to do so when yggdrasil is running in TAP mode, because\nTUN interfaces do not support broadcasting.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": "[\n  \"tap*\"\n]",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "6IDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.enable",
+                "option_description": "<rendered-html><p>Whether to enable the yggdrasil system service.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "6YDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.extraArgs",
+                "option_description": "<rendered-html><p>Extra command line arguments.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": "[\n  \"-loglevel\"\n  \"info\"\n]",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "6oDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.group",
+                "option_description": "<rendered-html><p>Group to grant access to the Yggdrasil control socket. If\n<code>null</code>, only root can access the socket.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": "\"wheel\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "64DntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.openMulticastPort",
+                "option_description": "<rendered-html><p>Whether to open the UDP port used for multicast peer discovery. The\nNixOS firewall blocks link-local communication, so in order to make\nincoming local peering work you will also need to configure\n<code>MulticastInterfaces</code> in your Yggdrasil configuration (<code\nclass=\"interpreted-text\" role=\"option\">settings</code> or <code\nclass=\"interpreted-text\" role=\"option\">configFile</code>). You will then\nhave to add the ports that you configure there to your firewall\nconfiguration (<code class=\"interpreted-text\"\nrole=\"option\">networking.firewall.allowedTCPPorts</code> or <code\nclass=\"interpreted-text\"\nrole=\"option\">networking.firewall.interfaces.&lt;name&gt;.allowedTCPPorts</code>).</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "7IDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.package",
+                "option_description": "<rendered-html><p>The yggdrasil package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "pkgs.yggdrasil",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "7YDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.persistentKeys",
+                "option_description": "<rendered-html><p>Whether to enable persistent keys. If enabled then keys will be\ngenerated once and Yggdrasil will retain the same IPv6 address when the\nservice is restarted. Keys are stored at /var/lib/yggdrasil/keys.json\n.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "7oDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/yggdrasil.nix",
+                "option_name": "services.yggdrasil.settings",
+                "option_description": "<rendered-html><p>Configuration for yggdrasil, as a Nix attribute set.</p>\n<p>Warning: this is stored in the WORLD-READABLE Nix store! Therefore,\nit is not appropriate for private keys. If you wish to specify the keys,\nuse <code class=\"interpreted-text\" role=\"option\">configFile</code>.</p>\n<p>If the <code class=\"interpreted-text\"\nrole=\"option\">persistentKeys</code> is enabled then the keys that are\ngenerated during activation will override those in <code\nclass=\"interpreted-text\" role=\"option\">settings</code> or <code\nclass=\"interpreted-text\" role=\"option\">configFile</code>.</p>\n<p>If no keys are specified then ephemeral keys are generated and the\nYggdrasil interface will have a random IPv6 address each time the\nservice is started. This is the default.</p>\n<p>If both <code class=\"interpreted-text\"\nrole=\"option\">configFile</code> and <code class=\"interpreted-text\"\nrole=\"option\">settings</code> are supplied, they will be combined, with\nvalues from <code class=\"interpreted-text\"\nrole=\"option\">configFile</code> taking precedence.</p>\n<p>You can use the command\n<code>nix-shell -p yggdrasil --run \"yggdrasil -genconf\"</code> to\ngenerate default configuration values with documentation.</p>\n</rendered-html>",
+                "option_type": "JSON value",
+                "option_default": "{ }",
+                "option_example": "{\n  Listen = [\n    \"tcp://0.0.0.0:xxxxx\"\n  ];\n  Peers = [\n    \"tcp://aa.bb.cc.dd:eeeee\"\n    \"tcp://[aaaa:bbbb:cccc:dddd::eeee]:fffff\"\n  ];\n}",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "74DntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/audio/ympd.nix",
+                "option_name": "services.ympd.enable",
+                "option_description": "<rendered-html><p>Whether to enable ympd, the MPD Web GUI.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "8IDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/audio/ympd.nix",
+                "option_name": "services.ympd.mpd.host",
+                "option_description": "<rendered-html><p>The host where MPD is listening.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"localhost\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "8YDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/audio/ympd.nix",
+                "option_name": "services.ympd.mpd.port",
+                "option_description": "<rendered-html><p>The port where MPD is listening.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "config.services.mpd.network.port",
+                "option_example": "6600",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "8oDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/audio/ympd.nix",
+                "option_name": "services.ympd.webPort",
+                "option_description": "<rendered-html><p>The port where ympd\u2019s web interface will be available.</p>\n</rendered-html>",
+                "option_type": "string or 16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "\"8080\"",
+                "option_example": "\"ssl://8080:/path/to/ssl-private-key.pem\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "84DntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.clientPackage",
+                "option_description": "<rendered-html><p>Client package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": null,
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "9IDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.enable",
+                "option_description": "<rendered-html><p>Whether to enable your_spotify.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "9YDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.enableLocalDB",
+                "option_description": "<rendered-html><p>Whether to enable a local mongodb instance.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "9oDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.nginxVirtualHost",
+                "option_description": "<rendered-html><p>If set creates an nginx virtual host for the client. In most cases\nthis should be the CLIENT_ENDPOINT without protocol prefix.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "94DntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.package",
+                "option_description": "<rendered-html><p>The your_spotify package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "pkgs.your_spotify",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "-IDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.settings",
+                "option_description": "<rendered-html><p>Your Spotify Configuration. Refer to <a\nhref=\"https://github.com/Yooooomi/your_spotify\">Your Spotify</a> for\ndefinitions and values.</p>\n</rendered-html>",
+                "option_type": "attribute set of string",
+                "option_default": null,
+                "option_example": "{\n  CLIENT_ENDPOINT = \"https://example.com\";\n  API_ENDPOINT = \"https://api.example.com\";\n  SPOTIFY_PUBLIC = \"spotify_client_id\";\n}\n",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "-YDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.settings.API_ENDPOINT",
+                "option_description": "<rendered-html><p>The endpoint of your server This api has to be reachable from the\ndevice you use the website from not from the server. This means that for\nexample you may need two nginx virtual hosts if you want to expose this\non the internet. Has to include a protocol Prefix (e.g.\n<code>http://</code>)</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": null,
+                "option_example": "\"https://localhost:3000\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "-oDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.settings.CLIENT_ENDPOINT",
+                "option_description": "<rendered-html><p>The endpoint of your web application. Has to include a protocol\nPrefix (e.g. <code>http://</code>)</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": null,
+                "option_example": "\"https://your_spotify.example.org\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "-4DntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.settings.MONGO_ENDPOINT",
+                "option_description": "<rendered-html><p>The endpoint of the Mongo database.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"mongodb://localhost:27017/your_spotify\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "_IDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.settings.PORT",
+                "option_description": "<rendered-html><p>The port of the api server</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "3000",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "_YDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.settings.SPOTIFY_PUBLIC",
+                "option_description": "<rendered-html><p>The public client ID of your Spotify application. Refer to: <a\nhref=\"https://github.com/Yooooomi/your_spotify#creating-the-spotify-application\">Creating\nthe Spotify Application</a></p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": null,
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "_oDntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/your_spotify.nix",
+                "option_name": "services.your_spotify.spotifySecretFile",
+                "option_description": "<rendered-html><p>A file containing the secret key of your Spotify application. Refer\nto: <a\nhref=\"https://github.com/Yooooomi/your_spotify#creating-the-spotify-application\">Creating\nthe Spotify Application</a>.</p>\n</rendered-html>",
+                "option_type": "path",
+                "option_default": null,
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "_4DntpABMU8RZ4DXSGxM",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.address",
+                "option_description": "<rendered-html><p>The interface youtrack will listen on.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"127.0.0.1\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "AIDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.autoUpgrade",
+                "option_description": "<rendered-html><p>Whether YouTrack should auto upgrade it without showing the upgrade\ndialog.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "AYDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.enable",
+                "option_description": "<rendered-html><p>Whether to enable YouTrack service.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "AoDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.environmentalParameters",
+                "option_description": "<rendered-html><p>Environmental configuration parameters, set imperatively. The values\ndoesn\u2019t get removed, when removed in Nix. Only has an effect for\nYouTrack 2023.x. See <a\nhref=\"https://www.jetbrains.com/help/youtrack/server/2023.3/youtrack-java-start-parameters.html#environmental-parameters\">https://www.jetbrains.com/help/youtrack/server/2023.3/youtrack-java-start-parameters.html#environmental-parameters</a>\nfor more information.</p>\n</rendered-html>",
+                "option_type": "attribute set of (signed integer or string or 16 bit unsigned integer; between 0 and 65535 (both inclusive))",
+                "option_default": "{ }",
+                "option_example": "{\n  secure-mode = \"tls\";\n}\n",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "A4DntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.environmentalParameters.listen-address",
+                "option_description": "<rendered-html><p>The interface YouTrack will listen on.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"0.0.0.0\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "BIDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.environmentalParameters.listen-port",
+                "option_description": "<rendered-html><p>The port YouTrack will listen on.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "8080",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "BYDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.generalParameters",
+                "option_description": "<rendered-html><p>General configuration parameters and other JVM options. Only has an\neffect for YouTrack 2023.x. See <a\nhref=\"https://www.jetbrains.com/help/youtrack/server/2023.3/youtrack-java-start-parameters.html#general-parameters\">https://www.jetbrains.com/help/youtrack/server/2023.3/youtrack-java-start-parameters.html#general-parameters</a>\nfor more information.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": "[\n  \"-Djetbrains.youtrack.admin.restore=true\"\n  \"-Xmx1024m\"\n];\n",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "BoDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.package",
+                "option_description": "<rendered-html><p>Package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "B4DntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.statePath",
+                "option_description": "<rendered-html><p>Path were the YouTrack state is stored. To this path the base version\n(e.g. 2023_1) of the used package will be appended.</p>\n</rendered-html>",
+                "option_type": "path",
+                "option_default": "\"/var/lib/youtrack\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "CIDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/youtrack.nix",
+                "option_name": "services.youtrack.virtualHost",
+                "option_description": "<rendered-html><p>Name of the nginx virtual host to use and setup. If null, do not\nsetup anything.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "CYDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/security/yubikey-agent.nix",
+                "option_name": "services.yubikey-agent.enable",
+                "option_description": "<rendered-html><p>Whether to start yubikey-agent when you log in. Also sets\nSSH_AUTH_SOCK to point at yubikey-agent.</p>\n<p>Note that yubikey-agent will use whatever pinentry is specified in\nprograms.gnupg.agent.pinentryPackage.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "CoDntpABMU8RZ4DXSG1M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/security/yubikey-agent.nix",
+                "option_name": "services.yubikey-agent.package",
+                "option_description": "<rendered-html><p>The yubikey-agent package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "pkgs.yubikey-agent",
+                "option_example": null,
+                "option_flake": null
+            }
+        }
+    ]
 }

@@ -1,1043 +1,1033 @@
 {
-    "took": 8,
-    "timed_out": false,
-    "_shards": {
-        "total": 1,
-        "successful": 1,
-        "skipped": 0,
-        "failed": 0
+    "total": {
+        "value": 64,
+        "relation": "eq"
     },
-    "hits": {
-        "total": {
-            "value": 64,
-            "relation": "eq"
-        },
-        "max_score": 1.0,
-        "hits": [
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "koDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/qdrant.nix",
-                    "option_name": "services.qdrant.enable",
-                    "option_description": "<rendered-html><p>Whether to enable Vector Search Engine for the next generation of AI\napplications.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "k4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/qdrant.nix",
-                    "option_name": "services.qdrant.settings",
-                    "option_description": "<rendered-html><p>Configuration for Qdrant Refer to <a\nhref=\"https://github.com/qdrant/qdrant/blob/master/config/config.yaml\">https://github.com/qdrant/qdrant/blob/master/config/config.yaml</a>\nfor details on supported values.</p>\n</rendered-html>",
-                    "option_type": "YAML value",
-                    "option_default": "{\n  storage = {\n    storage_path = \"/var/lib/qdrant/storage\";\n    snapshots_path = \"/var/lib/qdrant/snapshots\";\n  };\n  hsnw_index = {\n    on_disk = true;\n  };\n  service = {\n    host = \"127.0.0.1\";\n    http_port = 6333;\n    grpc_port = 6334;\n  };\n  telemetry_disabled = true;\n}\n",
-                    "option_example": "{\n  hsnw_index = {\n    on_disk = true;\n  };\n  service = {\n    grpc_port = 6334;\n    host = \"127.0.0.1\";\n    http_port = 6333;\n  };\n  storage = {\n    snapshots_path = \"/var/lib/qdrant/snapshots\";\n    storage_path = \"/var/lib/qdrant/storage\";\n  };\n  telemetry_disabled = true;\n}",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "lIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/virtualisation/qemu-guest-agent.nix",
-                    "option_name": "services.qemuGuest.enable",
-                    "option_description": "<rendered-html><p>Whether to enable the qemu guest agent.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "lYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/virtualisation/qemu-guest-agent.nix",
-                    "option_name": "services.qemuGuest.package",
-                    "option_description": "<rendered-html><p>The ga package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": "pkgs.qemu_kvm.ga",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "loDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/games/quake3-server.nix",
-                    "option_name": "services.quake3-server.baseq3",
-                    "option_description": "<rendered-html><p>Path to the baseq3 files (pak*.pk3). If this is on the nix store\n(type = package) all .pk3 files should be saved in the top-level\ndirectory. If this is on another filesystem (e.g /var/lib/baseq3) the\n.pk3 files are searched in $baseq3/.q3a/baseq3/</p>\n</rendered-html>",
-                    "option_type": "package or path",
-                    "option_default": "<rendered-html><p>Manually downloaded Quake 3 installation directory.</p>\n</rendered-html>",
-                    "option_example": "\"/var/lib/q3ds\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "l4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/games/quake3-server.nix",
-                    "option_name": "services.quake3-server.enable",
-                    "option_description": "<rendered-html><p>Whether to enable Quake 3 dedicated server.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "mIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/games/quake3-server.nix",
-                    "option_name": "services.quake3-server.extraConfig",
-                    "option_description": "<rendered-html><p>Extra configuration options. Note that options changed via RCON will\nnot be persisted. To list all possible options, use \u201ccvarlist 1\u201d via\nRCON.</p>\n</rendered-html>",
-                    "option_type": "strings concatenated with \"\\n\"",
-                    "option_default": "\"\"",
-                    "option_example": "''\n  seta rconPassword \"superSecret\"      // sets RCON password for remote console\n  seta sv_hostname \"My Quake 3 server\"      // name that appears in server list\n''",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "mYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/games/quake3-server.nix",
-                    "option_name": "services.quake3-server.openFirewall",
-                    "option_description": "<rendered-html><p>Open the firewall.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "moDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/games/quake3-server.nix",
-                    "option_name": "services.quake3-server.package",
-                    "option_description": "<rendered-html><p>The ioquake3 package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": "pkgs.ioquake3",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "m4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/games/quake3-server.nix",
-                    "option_name": "services.quake3-server.port",
-                    "option_description": "<rendered-html><p>UDP Port the server should listen on.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "27960",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "nIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quassel.nix",
-                    "option_name": "services.quassel.certificateFile",
-                    "option_description": "<rendered-html><p>Path to the certificate used for SSL connections with clients.</p>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "nYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quassel.nix",
-                    "option_name": "services.quassel.dataDir",
-                    "option_description": "<rendered-html><p>The directory holding configuration files, the SQlite database and\nthe SSL Cert.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"/home/${config.services.quassel.user}/.config/quassel-irc.org\"\n",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "noDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quassel.nix",
-                    "option_name": "services.quassel.enable",
-                    "option_description": "<rendered-html><p>Whether to enable the Quassel IRC client daemon.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "n4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quassel.nix",
-                    "option_name": "services.quassel.interfaces",
-                    "option_description": "<rendered-html><p>The interfaces the Quassel daemon will be listening to. If\n<code>[ 127.0.0.1 ]</code>, only clients on the local host can connect\nto it; if <code>[ 0.0.0.0 ]</code>, clients can access it from any\nnetwork interface.</p>\n</rendered-html>",
-                    "option_type": "list of string",
-                    "option_default": "[\n  \"127.0.0.1\"\n]",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "oIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quassel.nix",
-                    "option_name": "services.quassel.package",
-                    "option_description": "<rendered-html><p>The quasselDaemon package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": "pkgs.quasselDaemon",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "oYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quassel.nix",
-                    "option_name": "services.quassel.portNumber",
-                    "option_description": "<rendered-html><p>The port number the Quassel daemon will be listening to.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "4242",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "ooDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quassel.nix",
-                    "option_name": "services.quassel.requireSSL",
-                    "option_description": "<rendered-html><p>Require SSL for connections from clients.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "o4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quassel.nix",
-                    "option_name": "services.quassel.user",
-                    "option_description": "<rendered-html><p>The existing user the Quassel daemon should run as. If left empty, a\ndefault \u201cquassel\u201d user will be created.</p>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "pIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun",
-                    "option_description": "<rendered-html><p>QuickTun tunnels.</p>\n<p>See <a\nhref=\"http://wiki.ucis.nl/QuickTun\">http://wiki.ucis.nl/QuickTun</a> for\nmore information about available options.</p>\n</rendered-html>",
-                    "option_type": "attribute set of (submodule)",
-                    "option_default": "{ }",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "pYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.localAddress",
-                    "option_description": "<rendered-html><p>IP address or hostname of the local end.</p>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": "\"0.0.0.0\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "poDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.localPort",
-                    "option_description": "<rendered-html><p>Local UDP port.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "2998",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "p4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.privateKey",
-                    "option_description": "<rendered-html><p>Local secret key in hexadecimal form.</p>\n<div class=\"warning\">\n<p>This option is deprecated. Please use <code class=\"interpreted-text\"\nrole=\"var\">services.quicktun.&lt;name&gt;.privateKeyFile</code>\ninstead.</p>\n</div>\n<div class=\"note\">\n<p>Not needed when <code class=\"interpreted-text\"\nrole=\"var\">services.quicktun.&lt;name&gt;.protocol</code> is set to\n<code>raw</code>.</p>\n</div>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "qIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.privateKeyFile",
-                    "option_description": "<rendered-html><p>Path to file containing local secret key in binary or hexadecimal\nform.</p>\n<div class=\"note\">\n<p>Not needed when <code class=\"interpreted-text\"\nrole=\"var\">services.quicktun.&lt;name&gt;.protocol</code> is set to\n<code>raw</code>.</p>\n</div>\n</rendered-html>",
-                    "option_type": "null or path",
-                    "option_default": "\"null\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "qYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.protocol",
-                    "option_description": "<rendered-html><p>Which protocol to use.</p>\n</rendered-html>",
-                    "option_type": "one of \"raw\", \"nacl0\", \"nacltai\", \"salty\"",
-                    "option_default": "\"nacltai\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "qoDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.publicKey",
-                    "option_description": "<rendered-html><p>Remote public key in hexadecimal form.</p>\n<div class=\"note\">\n<p>Not needed when <code class=\"interpreted-text\"\nrole=\"var\">services.quicktun.&lt;name&gt;.protocol</code> is set to\n<code>raw</code>.</p>\n</div>\n</rendered-html>",
-                    "option_type": "null or string",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "q4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.remoteAddress",
-                    "option_description": "<rendered-html><p>IP address or hostname of the remote end (use <code>0.0.0.0</code>\nfor a floating/dynamic remote endpoint).</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"0.0.0.0\"",
-                    "option_example": "\"tunnel.example.com\"",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "rIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.remoteFloat",
-                    "option_description": "<rendered-html><p>Whether to allow the remote address and port to change when properly\nencrypted packets are received.</p>\n</rendered-html>",
-                    "option_type": "integer between 0 and 1 (both inclusive) or boolean convertible to it",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "rYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.remotePort",
-                    "option_description": "<rendered-html><p>remote UDP port</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "config.services.quicktun.<name>.localPort",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "roDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.timeWindow",
-                    "option_description": "<rendered-html><p>Allowed time window for first received packet in seconds (positive\nnumber allows packets from history)</p>\n</rendered-html>",
-                    "option_type": "unsigned integer, meaning >=0",
-                    "option_default": "5",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "r4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.tunMode",
-                    "option_description": "<rendered-html><p>Whether to operate in tun (IP) or tap (Ethernet) mode.</p>\n</rendered-html>",
-                    "option_type": "integer between 0 and 1 (both inclusive) or boolean convertible to it",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "sIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quicktun.nix",
-                    "option_name": "services.quicktun.<name>.upScript",
-                    "option_description": "<rendered-html><p>Run specified command or script after the tunnel device has been\nopened.</p>\n</rendered-html>",
-                    "option_type": "null or strings concatenated with \"\\n\"",
-                    "option_default": "null",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "sYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.dataDir",
-                    "option_description": "<rendered-html><p>Data directory for Quickwit. If you change this, you need to manually\ncreate the directory. You also need to create the <code>quickwit</code>\nuser and group, or change <a\nhref=\"https://search.nixos.org/options?channel=unstable&amp;show=services.quickwit.user&amp;query=services.quickwit.user\">services.quickwit.user</a>\nand <a\nhref=\"https://search.nixos.org/options?channel=unstable&amp;show=services.quickwit.group&amp;query=services.quickwit.group\">services.quickwit.group</a>\nto existing ones with access to the directory.</p>\n</rendered-html>",
-                    "option_type": "path",
-                    "option_default": "\"/var/lib/quickwit\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "soDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.enable",
-                    "option_description": "<rendered-html><p>Whether to enable Quickwit.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "s4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.extraFlags",
-                    "option_description": "<rendered-html><p>Extra command line options to pass to Quickwit.</p>\n</rendered-html>",
-                    "option_type": "list of string",
-                    "option_default": "[ ]",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "tIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.group",
-                    "option_description": "<rendered-html><p>The group quickwit runs as. Should be left at default unless you have\nvery specific needs.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"quickwit\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "tYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.package",
-                    "option_description": "<rendered-html><p>The Quickwit package to use.</p>\n</rendered-html>",
-                    "option_type": "package",
-                    "option_default": "pkgs.quickwit",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "toDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.restartIfChanged",
-                    "option_description": "<rendered-html><p>Automatically restart the service on config change. This can be set\nto false to defer restarts on a server or cluster. Please consider the\nsecurity implications of inadvertently running an older version, and the\npossibility of unexpected behavior caused by inconsistent versions\nacross a cluster when disabling this option.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "true",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "t4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.settings",
-                    "option_description": "<rendered-html><p>Quickwit configuration.</p>\n</rendered-html>",
-                    "option_type": "YAML value",
-                    "option_default": "{ }",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "uIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.settings.grpc_listen_port",
-                    "option_description": "<rendered-html><p>The port to listen on for gRPC traffic.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "7281",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "uYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.settings.listen_address",
-                    "option_description": "<rendered-html><p>Listen address of Quickwit.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"127.0.0.1\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "uoDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.settings.rest",
-                    "option_description": "<rendered-html><p>Rest server configuration for Quickwit</p>\n</rendered-html>",
-                    "option_type": "YAML value",
-                    "option_default": "{ }",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "u4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.settings.rest.listen_port",
-                    "option_description": "<rendered-html><p>The port to listen on for HTTP REST traffic.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "7280",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "vIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.settings.version",
-                    "option_description": "<rendered-html><p>Configuration file version.</p>\n</rendered-html>",
-                    "option_type": "floating point number",
-                    "option_default": "0.7",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "vYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/search/quickwit.nix",
-                    "option_name": "services.quickwit.user",
-                    "option_description": "<rendered-html><p>The user Quickwit runs as. Should be left at default unless you have\nvery specific needs.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"quickwit\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "voDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.blockperiod",
-                    "option_description": "<rendered-html><p>Default minimum difference between two consecutive block\u2019s timestamps\nin seconds.</p>\n</rendered-html>",
-                    "option_type": "signed integer",
-                    "option_default": "5",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "v4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.enable",
-                    "option_description": "<rendered-html><p>Whether to enable Quorum blockchain daemon.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "false",
-                    "option_example": "true",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "wIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.genesis",
-                    "option_description": "<rendered-html><p>Blockchain genesis settings.</p>\n</rendered-html>",
-                    "option_type": "null or (attribute set)",
-                    "option_default": "null",
-                    "option_example": "{\n         alloc = {\n           a47385db68718bdcbddc2d2bb7c54018066ec111 = {\n             balance = \"1000000000000000000000000000\";\n           };\n         };\n         coinbase = \"0x0000000000000000000000000000000000000000\";\n         config = {\n           byzantiumBlock = 4;\n           chainId = 494702925;\n           eip150Block = 2;\n           eip155Block = 3;\n           eip158Block = 3;\n           homesteadBlock = 1;\n           isQuorum = true;\n           istanbul = {\n             epoch = 30000;\n             policy = 0;\n           };\n         };\n         difficulty = \"0x1\";\n         extraData = \"0x0000000000000000000000000000000000000000000000000000000000000000f85ad59438f0508111273d8e482f49410ca4078afc86a961b8410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0\";\n         gasLimit = \"0x2FEFD800\";\n         mixHash = \"0x63746963616c2062797a616e74696e65201111756c7420746f6c6572616e6365\";\n         nonce = \"0x0\";\n         parentHash = \"0x0000000000000000000000000000000000000000000000000000000000000000\";\n         timestamp = \"0x00\";\n         }",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "wYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.group",
-                    "option_description": "<rendered-html><p>The group as which to run quorum.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "config.services.quorum.user",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "woDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.nodekeyFile",
-                    "option_description": "<rendered-html><p>Path to the nodekey.</p>\n</rendered-html>",
-                    "option_type": "path",
-                    "option_default": "\"/var/lib/quorum/nodekey\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "w4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.permissioned",
-                    "option_description": "<rendered-html><p>Allow only a defined list of nodes to connect.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "true",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "xIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.port",
-                    "option_description": "<rendered-html><p>Override the default port on which to listen for connections.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "21000",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "xYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.privateconfig",
-                    "option_description": "<rendered-html><p>Configuration of privacy transaction manager.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"ignore\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "xoDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.rpc.address",
-                    "option_description": "<rendered-html><p>Listening address for RPC connections.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"0.0.0.0\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "x4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.rpc.api",
-                    "option_description": "<rendered-html><p>API\u2019s offered over the HTTP-RPC interface.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,istanbul\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "yIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.rpc.enable",
-                    "option_description": "<rendered-html><p>Enable RPC interface.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "true",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "yYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.rpc.port",
-                    "option_description": "<rendered-html><p>Override the default port on which to listen for RPC connections.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "22004",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "yoDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.staticNodes",
-                    "option_description": "<rendered-html><p>List of validator nodes.</p>\n</rendered-html>",
-                    "option_type": "list of string",
-                    "option_default": "[ ]",
-                    "option_example": "[\n  \"enode://dd333ec28f0a8910c92eb4d336461eea1c20803eed9cf2c056557f986e720f8e693605bba2f4e8f289b1162e5ac7c80c914c7178130711e393ca76abc1d92f57@0.0.0.0:30303?discport=0\"\n]",
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "y4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.syncmode",
-                    "option_description": "<rendered-html><p>Blockchain sync mode.</p>\n</rendered-html>",
-                    "option_type": "one of \"fast\", \"full\", \"light\"",
-                    "option_default": "\"full\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "zIDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.user",
-                    "option_description": "<rendered-html><p>The user as which to run quorum.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"quorum\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "zYDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.ws.address",
-                    "option_description": "<rendered-html><p>Listening address for WS-RPC connections.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"0.0.0.0\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "zoDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.ws.api",
-                    "option_description": "<rendered-html><p>API\u2019s offered over the WS-RPC interface.</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,istanbul\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "z4DntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.ws.enable",
-                    "option_description": "<rendered-html><p>Enable WS-RPC interface.</p>\n</rendered-html>",
-                    "option_type": "boolean",
-                    "option_default": "true",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "0IDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.ws.origins",
-                    "option_description": "<rendered-html><p>Origins from which to accept websockets requests</p>\n</rendered-html>",
-                    "option_type": "string",
-                    "option_default": "\"*\"",
-                    "option_example": null,
-                    "option_flake": null
-                }
-            },
-            {
-                "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
-                "_type": "_doc",
-                "_id": "0YDntpABMU8RZ4DXSF1D",
-                "_score": 1.0,
-                "_source": {
-                    "type": "option",
-                    "option_source": "nixos/modules/services/networking/quorum.nix",
-                    "option_name": "services.quorum.ws.port",
-                    "option_description": "<rendered-html><p>Override the default port on which to listen for WS-RPC\nconnections.</p>\n</rendered-html>",
-                    "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-                    "option_default": "8546",
-                    "option_example": null,
-                    "option_flake": null
-                }
+    "max_score": 1.0,
+    "hits": [
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "koDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/qdrant.nix",
+                "option_name": "services.qdrant.enable",
+                "option_description": "<rendered-html><p>Whether to enable Vector Search Engine for the next generation of AI\napplications.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
             }
-        ]
-    }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "k4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/qdrant.nix",
+                "option_name": "services.qdrant.settings",
+                "option_description": "<rendered-html><p>Configuration for Qdrant Refer to <a\nhref=\"https://github.com/qdrant/qdrant/blob/master/config/config.yaml\">https://github.com/qdrant/qdrant/blob/master/config/config.yaml</a>\nfor details on supported values.</p>\n</rendered-html>",
+                "option_type": "YAML value",
+                "option_default": "{\n  storage = {\n    storage_path = \"/var/lib/qdrant/storage\";\n    snapshots_path = \"/var/lib/qdrant/snapshots\";\n  };\n  hsnw_index = {\n    on_disk = true;\n  };\n  service = {\n    host = \"127.0.0.1\";\n    http_port = 6333;\n    grpc_port = 6334;\n  };\n  telemetry_disabled = true;\n}\n",
+                "option_example": "{\n  hsnw_index = {\n    on_disk = true;\n  };\n  service = {\n    grpc_port = 6334;\n    host = \"127.0.0.1\";\n    http_port = 6333;\n  };\n  storage = {\n    snapshots_path = \"/var/lib/qdrant/snapshots\";\n    storage_path = \"/var/lib/qdrant/storage\";\n  };\n  telemetry_disabled = true;\n}",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "lIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/virtualisation/qemu-guest-agent.nix",
+                "option_name": "services.qemuGuest.enable",
+                "option_description": "<rendered-html><p>Whether to enable the qemu guest agent.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "lYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/virtualisation/qemu-guest-agent.nix",
+                "option_name": "services.qemuGuest.package",
+                "option_description": "<rendered-html><p>The ga package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "pkgs.qemu_kvm.ga",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "loDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/games/quake3-server.nix",
+                "option_name": "services.quake3-server.baseq3",
+                "option_description": "<rendered-html><p>Path to the baseq3 files (pak*.pk3). If this is on the nix store\n(type = package) all .pk3 files should be saved in the top-level\ndirectory. If this is on another filesystem (e.g /var/lib/baseq3) the\n.pk3 files are searched in $baseq3/.q3a/baseq3/</p>\n</rendered-html>",
+                "option_type": "package or path",
+                "option_default": "<rendered-html><p>Manually downloaded Quake 3 installation directory.</p>\n</rendered-html>",
+                "option_example": "\"/var/lib/q3ds\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "l4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/games/quake3-server.nix",
+                "option_name": "services.quake3-server.enable",
+                "option_description": "<rendered-html><p>Whether to enable Quake 3 dedicated server.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "mIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/games/quake3-server.nix",
+                "option_name": "services.quake3-server.extraConfig",
+                "option_description": "<rendered-html><p>Extra configuration options. Note that options changed via RCON will\nnot be persisted. To list all possible options, use \u201ccvarlist 1\u201d via\nRCON.</p>\n</rendered-html>",
+                "option_type": "strings concatenated with \"\\n\"",
+                "option_default": "\"\"",
+                "option_example": "''\n  seta rconPassword \"superSecret\"      // sets RCON password for remote console\n  seta sv_hostname \"My Quake 3 server\"      // name that appears in server list\n''",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "mYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/games/quake3-server.nix",
+                "option_name": "services.quake3-server.openFirewall",
+                "option_description": "<rendered-html><p>Open the firewall.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "moDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/games/quake3-server.nix",
+                "option_name": "services.quake3-server.package",
+                "option_description": "<rendered-html><p>The ioquake3 package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "pkgs.ioquake3",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "m4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/games/quake3-server.nix",
+                "option_name": "services.quake3-server.port",
+                "option_description": "<rendered-html><p>UDP Port the server should listen on.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "27960",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "nIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quassel.nix",
+                "option_name": "services.quassel.certificateFile",
+                "option_description": "<rendered-html><p>Path to the certificate used for SSL connections with clients.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "nYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quassel.nix",
+                "option_name": "services.quassel.dataDir",
+                "option_description": "<rendered-html><p>The directory holding configuration files, the SQlite database and\nthe SSL Cert.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"/home/${config.services.quassel.user}/.config/quassel-irc.org\"\n",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "noDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quassel.nix",
+                "option_name": "services.quassel.enable",
+                "option_description": "<rendered-html><p>Whether to enable the Quassel IRC client daemon.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "n4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quassel.nix",
+                "option_name": "services.quassel.interfaces",
+                "option_description": "<rendered-html><p>The interfaces the Quassel daemon will be listening to. If\n<code>[ 127.0.0.1 ]</code>, only clients on the local host can connect\nto it; if <code>[ 0.0.0.0 ]</code>, clients can access it from any\nnetwork interface.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[\n  \"127.0.0.1\"\n]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "oIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quassel.nix",
+                "option_name": "services.quassel.package",
+                "option_description": "<rendered-html><p>The quasselDaemon package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "pkgs.quasselDaemon",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "oYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quassel.nix",
+                "option_name": "services.quassel.portNumber",
+                "option_description": "<rendered-html><p>The port number the Quassel daemon will be listening to.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "4242",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "ooDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quassel.nix",
+                "option_name": "services.quassel.requireSSL",
+                "option_description": "<rendered-html><p>Require SSL for connections from clients.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "o4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quassel.nix",
+                "option_name": "services.quassel.user",
+                "option_description": "<rendered-html><p>The existing user the Quassel daemon should run as. If left empty, a\ndefault \u201cquassel\u201d user will be created.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "pIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun",
+                "option_description": "<rendered-html><p>QuickTun tunnels.</p>\n<p>See <a\nhref=\"http://wiki.ucis.nl/QuickTun\">http://wiki.ucis.nl/QuickTun</a> for\nmore information about available options.</p>\n</rendered-html>",
+                "option_type": "attribute set of (submodule)",
+                "option_default": "{ }",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "pYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.localAddress",
+                "option_description": "<rendered-html><p>IP address or hostname of the local end.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": "\"0.0.0.0\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "poDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.localPort",
+                "option_description": "<rendered-html><p>Local UDP port.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "2998",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "p4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.privateKey",
+                "option_description": "<rendered-html><p>Local secret key in hexadecimal form.</p>\n<div class=\"warning\">\n<p>This option is deprecated. Please use <code class=\"interpreted-text\"\nrole=\"var\">services.quicktun.&lt;name&gt;.privateKeyFile</code>\ninstead.</p>\n</div>\n<div class=\"note\">\n<p>Not needed when <code class=\"interpreted-text\"\nrole=\"var\">services.quicktun.&lt;name&gt;.protocol</code> is set to\n<code>raw</code>.</p>\n</div>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "qIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.privateKeyFile",
+                "option_description": "<rendered-html><p>Path to file containing local secret key in binary or hexadecimal\nform.</p>\n<div class=\"note\">\n<p>Not needed when <code class=\"interpreted-text\"\nrole=\"var\">services.quicktun.&lt;name&gt;.protocol</code> is set to\n<code>raw</code>.</p>\n</div>\n</rendered-html>",
+                "option_type": "null or path",
+                "option_default": "\"null\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "qYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.protocol",
+                "option_description": "<rendered-html><p>Which protocol to use.</p>\n</rendered-html>",
+                "option_type": "one of \"raw\", \"nacl0\", \"nacltai\", \"salty\"",
+                "option_default": "\"nacltai\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "qoDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.publicKey",
+                "option_description": "<rendered-html><p>Remote public key in hexadecimal form.</p>\n<div class=\"note\">\n<p>Not needed when <code class=\"interpreted-text\"\nrole=\"var\">services.quicktun.&lt;name&gt;.protocol</code> is set to\n<code>raw</code>.</p>\n</div>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "q4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.remoteAddress",
+                "option_description": "<rendered-html><p>IP address or hostname of the remote end (use <code>0.0.0.0</code>\nfor a floating/dynamic remote endpoint).</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"0.0.0.0\"",
+                "option_example": "\"tunnel.example.com\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "rIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.remoteFloat",
+                "option_description": "<rendered-html><p>Whether to allow the remote address and port to change when properly\nencrypted packets are received.</p>\n</rendered-html>",
+                "option_type": "integer between 0 and 1 (both inclusive) or boolean convertible to it",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "rYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.remotePort",
+                "option_description": "<rendered-html><p>remote UDP port</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "config.services.quicktun.<name>.localPort",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "roDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.timeWindow",
+                "option_description": "<rendered-html><p>Allowed time window for first received packet in seconds (positive\nnumber allows packets from history)</p>\n</rendered-html>",
+                "option_type": "unsigned integer, meaning >=0",
+                "option_default": "5",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "r4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.tunMode",
+                "option_description": "<rendered-html><p>Whether to operate in tun (IP) or tap (Ethernet) mode.</p>\n</rendered-html>",
+                "option_type": "integer between 0 and 1 (both inclusive) or boolean convertible to it",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "sIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quicktun.nix",
+                "option_name": "services.quicktun.<name>.upScript",
+                "option_description": "<rendered-html><p>Run specified command or script after the tunnel device has been\nopened.</p>\n</rendered-html>",
+                "option_type": "null or strings concatenated with \"\\n\"",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "sYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.dataDir",
+                "option_description": "<rendered-html><p>Data directory for Quickwit. If you change this, you need to manually\ncreate the directory. You also need to create the <code>quickwit</code>\nuser and group, or change <a\nhref=\"https://search.nixos.org/options?channel=unstable&amp;show=services.quickwit.user&amp;query=services.quickwit.user\">services.quickwit.user</a>\nand <a\nhref=\"https://search.nixos.org/options?channel=unstable&amp;show=services.quickwit.group&amp;query=services.quickwit.group\">services.quickwit.group</a>\nto existing ones with access to the directory.</p>\n</rendered-html>",
+                "option_type": "path",
+                "option_default": "\"/var/lib/quickwit\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "soDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.enable",
+                "option_description": "<rendered-html><p>Whether to enable Quickwit.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "s4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.extraFlags",
+                "option_description": "<rendered-html><p>Extra command line options to pass to Quickwit.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "tIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.group",
+                "option_description": "<rendered-html><p>The group quickwit runs as. Should be left at default unless you have\nvery specific needs.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"quickwit\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "tYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.package",
+                "option_description": "<rendered-html><p>The Quickwit package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "pkgs.quickwit",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "toDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.restartIfChanged",
+                "option_description": "<rendered-html><p>Automatically restart the service on config change. This can be set\nto false to defer restarts on a server or cluster. Please consider the\nsecurity implications of inadvertently running an older version, and the\npossibility of unexpected behavior caused by inconsistent versions\nacross a cluster when disabling this option.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "t4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.settings",
+                "option_description": "<rendered-html><p>Quickwit configuration.</p>\n</rendered-html>",
+                "option_type": "YAML value",
+                "option_default": "{ }",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "uIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.settings.grpc_listen_port",
+                "option_description": "<rendered-html><p>The port to listen on for gRPC traffic.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "7281",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "uYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.settings.listen_address",
+                "option_description": "<rendered-html><p>Listen address of Quickwit.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"127.0.0.1\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "uoDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.settings.rest",
+                "option_description": "<rendered-html><p>Rest server configuration for Quickwit</p>\n</rendered-html>",
+                "option_type": "YAML value",
+                "option_default": "{ }",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "u4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.settings.rest.listen_port",
+                "option_description": "<rendered-html><p>The port to listen on for HTTP REST traffic.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "7280",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "vIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.settings.version",
+                "option_description": "<rendered-html><p>Configuration file version.</p>\n</rendered-html>",
+                "option_type": "floating point number",
+                "option_default": "0.7",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "vYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/search/quickwit.nix",
+                "option_name": "services.quickwit.user",
+                "option_description": "<rendered-html><p>The user Quickwit runs as. Should be left at default unless you have\nvery specific needs.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"quickwit\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "voDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.blockperiod",
+                "option_description": "<rendered-html><p>Default minimum difference between two consecutive block\u2019s timestamps\nin seconds.</p>\n</rendered-html>",
+                "option_type": "signed integer",
+                "option_default": "5",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "v4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.enable",
+                "option_description": "<rendered-html><p>Whether to enable Quorum blockchain daemon.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "wIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.genesis",
+                "option_description": "<rendered-html><p>Blockchain genesis settings.</p>\n</rendered-html>",
+                "option_type": "null or (attribute set)",
+                "option_default": "null",
+                "option_example": "{\n         alloc = {\n           a47385db68718bdcbddc2d2bb7c54018066ec111 = {\n             balance = \"1000000000000000000000000000\";\n           };\n         };\n         coinbase = \"0x0000000000000000000000000000000000000000\";\n         config = {\n           byzantiumBlock = 4;\n           chainId = 494702925;\n           eip150Block = 2;\n           eip155Block = 3;\n           eip158Block = 3;\n           homesteadBlock = 1;\n           isQuorum = true;\n           istanbul = {\n             epoch = 30000;\n             policy = 0;\n           };\n         };\n         difficulty = \"0x1\";\n         extraData = \"0x0000000000000000000000000000000000000000000000000000000000000000f85ad59438f0508111273d8e482f49410ca4078afc86a961b8410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0\";\n         gasLimit = \"0x2FEFD800\";\n         mixHash = \"0x63746963616c2062797a616e74696e65201111756c7420746f6c6572616e6365\";\n         nonce = \"0x0\";\n         parentHash = \"0x0000000000000000000000000000000000000000000000000000000000000000\";\n         timestamp = \"0x00\";\n         }",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "wYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.group",
+                "option_description": "<rendered-html><p>The group as which to run quorum.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "config.services.quorum.user",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "woDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.nodekeyFile",
+                "option_description": "<rendered-html><p>Path to the nodekey.</p>\n</rendered-html>",
+                "option_type": "path",
+                "option_default": "\"/var/lib/quorum/nodekey\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "w4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.permissioned",
+                "option_description": "<rendered-html><p>Allow only a defined list of nodes to connect.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "xIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.port",
+                "option_description": "<rendered-html><p>Override the default port on which to listen for connections.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "21000",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "xYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.privateconfig",
+                "option_description": "<rendered-html><p>Configuration of privacy transaction manager.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"ignore\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "xoDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.rpc.address",
+                "option_description": "<rendered-html><p>Listening address for RPC connections.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"0.0.0.0\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "x4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.rpc.api",
+                "option_description": "<rendered-html><p>API\u2019s offered over the HTTP-RPC interface.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,istanbul\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "yIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.rpc.enable",
+                "option_description": "<rendered-html><p>Enable RPC interface.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "yYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.rpc.port",
+                "option_description": "<rendered-html><p>Override the default port on which to listen for RPC connections.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "22004",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "yoDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.staticNodes",
+                "option_description": "<rendered-html><p>List of validator nodes.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": "[\n  \"enode://dd333ec28f0a8910c92eb4d336461eea1c20803eed9cf2c056557f986e720f8e693605bba2f4e8f289b1162e5ac7c80c914c7178130711e393ca76abc1d92f57@0.0.0.0:30303?discport=0\"\n]",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "y4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.syncmode",
+                "option_description": "<rendered-html><p>Blockchain sync mode.</p>\n</rendered-html>",
+                "option_type": "one of \"fast\", \"full\", \"light\"",
+                "option_default": "\"full\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "zIDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.user",
+                "option_description": "<rendered-html><p>The user as which to run quorum.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"quorum\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "zYDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.ws.address",
+                "option_description": "<rendered-html><p>Listening address for WS-RPC connections.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"0.0.0.0\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "zoDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.ws.api",
+                "option_description": "<rendered-html><p>API\u2019s offered over the WS-RPC interface.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,istanbul\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "z4DntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.ws.enable",
+                "option_description": "<rendered-html><p>Enable WS-RPC interface.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "0IDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.ws.origins",
+                "option_description": "<rendered-html><p>Origins from which to accept websockets requests</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"*\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "0YDntpABMU8RZ4DXSF1D",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/networking/quorum.nix",
+                "option_name": "services.quorum.ws.port",
+                "option_description": "<rendered-html><p>Override the default port on which to listen for WS-RPC\nconnections.</p>\n</rendered-html>",
+                "option_type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+                "option_default": "8546",
+                "option_example": null,
+                "option_flake": null
+            }
+        }
+    ]
 }

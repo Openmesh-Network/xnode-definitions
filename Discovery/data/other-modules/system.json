@@ -1,0 +1,889 @@
+{
+    "total": {
+        "value": 55,
+        "relation": "eq"
+    },
+    "max_score": 1.0,
+    "hits": [
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "kNPdtpABYW7nGSBMcqWn",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/engelsystem.nix",
+                "option_name": "services.engelsystem.config",
+                "option_description": "<rendered-html><p>Options to be added to config.php, as a nix attribute set. Options\ncontaining secret data should be set to an attribute set containing the\nattribute _secret - a string pointing to a file containing the value the\noption should be set to. See the example to get a better picture of\nthis: in the resulting config.php file, the email.password key will be\nset to the contents of the /var/keys/engelsystem/mail file.</p>\n<p>See <a\nhref=\"https://engelsystem.de/doc/admin/configuration/\">https://engelsystem.de/doc/admin/configuration/</a>\nfor available options.</p>\n<p>Note that the admin user login credentials cannot be set here - they\nalways default to admin:asdfasdf. Log in and change them\nimmediately.</p>\n</rendered-html>",
+                "option_type": "attribute set",
+                "option_default": "{\n  database = {\n    database = \"engelsystem\";\n    host = \"localhost\";\n    username = \"engelsystem\";\n  };\n}",
+                "option_example": "{\n  autoarrive = true;\n  database = {\n    database = \"engelsystem\";\n    host = \"database.example.com\";\n    password = {\n      _secret = \"/var/keys/engelsystem/database\";\n    };\n    username = \"engelsystem\";\n  };\n  default_locale = \"de_DE\";\n  email = {\n    driver = \"smtp\";\n    encryption = \"tls\";\n    from = {\n      address = \"engelsystem@example.com\";\n      name = \"example engelsystem\";\n    };\n    host = \"smtp.example.com\";\n    password = {\n      _secret = \"/var/keys/engelsystem/mail\";\n    };\n    port = 587;\n    username = \"engelsystem@example.com\";\n  };\n  maintenance = false;\n  min_password_length = 6;\n}",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "kdPdtpABYW7nGSBMcqWn",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/engelsystem.nix",
+                "option_name": "services.engelsystem.createDatabase",
+                "option_description": "<rendered-html><p>Whether to create a local database automatically. This will override\nevery database setting in <code class=\"interpreted-text\"\nrole=\"option\">services.engelsystem.config</code>.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "ktPdtpABYW7nGSBMcqWn",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/engelsystem.nix",
+                "option_name": "services.engelsystem.domain",
+                "option_description": "<rendered-html><p>Domain to serve on.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": null,
+                "option_example": "\"engelsystem.example.com\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "k9PdtpABYW7nGSBMcqWn",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/engelsystem.nix",
+                "option_name": "services.engelsystem.enable",
+                "option_description": "<rendered-html><p>Whether to enable engelsystem, an online tool for coordinating\nvolunteers and shifts on large events.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "lNPdtpABYW7nGSBMcqWn",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/engelsystem.nix",
+                "option_name": "services.engelsystem.package",
+                "option_description": "<rendered-html><p>The engelsystem package to use.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": "pkgs.engelsystem",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "f9PdtpABYW7nGSBMcsC2",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/pretalx.nix",
+                "option_name": "services.pretalx.settings.filesystem.data",
+                "option_description": "<rendered-html><p>Base path for all other storage paths.</p>\n</rendered-html>",
+                "option_type": "path",
+                "option_default": "\"/var/lib/pretalx\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "gNPdtpABYW7nGSBMcsC2",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/pretalx.nix",
+                "option_name": "services.pretalx.settings.filesystem.logs",
+                "option_description": "<rendered-html><p>Path to the log directory, that pretalx logs message to.</p>\n</rendered-html>",
+                "option_type": "path",
+                "option_default": "\"/var/log/pretalx\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "gdPdtpABYW7nGSBMcsC2",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/services/web-apps/pretalx.nix",
+                "option_name": "services.pretalx.settings.filesystem.static",
+                "option_description": "<rendered-html><p>Path to the directory that contains static files.</p>\n</rendered-html>",
+                "option_type": "path",
+                "option_default": "${config.services.pretalx.package}.static}/",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "OIDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/activatable-system.nix",
+                "option_name": "system.activatable",
+                "option_description": "<rendered-html><p>Whether to add the activation script to the system profile.</p>\n<p>The default, to have the script available all the time, is what we\nnormally do, but for image based systems, this may not be needed or not\nbe desirable.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "OYDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/activation-script.nix",
+                "option_name": "system.activationScripts",
+                "option_description": "<rendered-html><p>A set of shell script fragments that are executed when a NixOS system\nconfiguration is activated. Examples are updating /etc, creating\naccounts, and so on. Since these are executed every time you boot the\nsystem or run <code class=\"interpreted-text\"\nrole=\"command\">nixos-rebuild</code>, it\u2019s important that they are\nidempotent and fast.</p>\n</rendered-html>",
+                "option_type": "attribute set of (string or (submodule))",
+                "option_default": "{ }",
+                "option_example": "{ stdio.text =\n  ''\n    # Needed by some programs.\n    ln -sfn /proc/self/fd /dev/fd\n    ln -sfn /proc/self/fd/0 /dev/stdin\n    ln -sfn /proc/self/fd/1 /dev/stdout\n    ln -sfn /proc/self/fd/2 /dev/stderr\n  '';\n}\n",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "OoDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.allowReboot",
+                "option_description": "<rendered-html><p>Reboot the system into the new generation instead of a switch if the\nnew generation uses a different kernel, kernel modules or initrd than\nthe booted system. See <code class=\"interpreted-text\"\nrole=\"option\">rebootWindow</code> for configuring the times at which a\nreboot is allowed.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "O4DntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.channel",
+                "option_description": "<rendered-html><p>The URI of the NixOS channel to use for automatic upgrades. By\ndefault, this is the channel set using <code class=\"interpreted-text\"\nrole=\"command\">nix-channel</code> (run <code>nix-channel --list</code>\nto see the current value).</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": "\"https://nixos.org/channels/nixos-14.12-small\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "PIDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.dates",
+                "option_description": "<rendered-html><p>How often or when upgrade occurs. For most desktop and server systems\na sufficient upgrade frequency is once a day.</p>\n<p>The format is described in <a\nhref=\"https://www.freedesktop.org/software/systemd/man/systemd.time.html\"><code\nclass=\"interpreted-text\" role=\"manpage\">systemd.time(7)</code></a>.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"04:40\"",
+                "option_example": "\"daily\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "PYDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.enable",
+                "option_description": "<rendered-html><p>Whether to periodically upgrade NixOS to the latest version. If\nenabled, a systemd timer will run\n<code>nixos-rebuild switch --upgrade</code> once a day.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "PoDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.fixedRandomDelay",
+                "option_description": "<rendered-html><p>Make the randomized delay consistent between runs. This reduces the\njitter between automatic upgrades. See <code class=\"interpreted-text\"\nrole=\"option\">randomizedDelaySec</code> for configuring the randomized\ndelay.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": "true",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "P4DntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.flags",
+                "option_description": "<rendered-html><p>Any additional flags passed to <code class=\"interpreted-text\"\nrole=\"command\">nixos-rebuild</code>.</p>\n<p>If you are using flakes and use a local repo you can add <code\nclass=\"interpreted-text\"\nrole=\"command\">[ \"--update-input\" \"nixpkgs\" \"--commit-lock-file\" ]</code>\nto update nixpkgs.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": "[\n  \"-I\"\n  \"stuff=/home/alice/nixos-stuff\"\n  \"--option\"\n  \"extra-binary-caches\"\n  \"http://my-cache.example.org/\"\n]",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "QIDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.flake",
+                "option_description": "<rendered-html><p>The Flake URI of the NixOS configuration to build. Disables the\noption <code class=\"interpreted-text\"\nrole=\"option\">system.autoUpgrade.channel</code>.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": "\"github:kloenk/nix\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "QYDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.operation",
+                "option_description": "<rendered-html><p>Whether to run <code>nixos-rebuild switch --upgrade</code> or run\n<code>nixos-rebuild boot --upgrade</code></p>\n</rendered-html>",
+                "option_type": "one of \"switch\", \"boot\"",
+                "option_default": "\"switch\"",
+                "option_example": "\"boot\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "QoDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.persistent",
+                "option_description": "<rendered-html><p>Takes a boolean argument. If true, the time when the service unit was\nlast triggered is stored on disk. When the timer is activated, the\nservice unit is triggered immediately if it would have been triggered at\nleast once during the time when the timer was inactive. Such triggering\nis nonetheless subject to the delay imposed by RandomizedDelaySec=. This\nis useful to catch up on missed runs of the service when the system was\npowered down.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": "false",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "Q4DntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.randomizedDelaySec",
+                "option_description": "<rendered-html><p>Add a randomized delay before each automatic upgrade. The delay will\nbe chosen between zero and this value. This value must be a time span in\nthe format specified by <a\nhref=\"https://www.freedesktop.org/software/systemd/man/systemd.time.html\"><code\nclass=\"interpreted-text\" role=\"manpage\">systemd.time(7)</code></a></p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"0\"",
+                "option_example": "\"45min\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "RIDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.rebootWindow",
+                "option_description": "<rendered-html><p>Define a lower and upper time value (in HH:MM format) which\nconstitute a time window during which reboots are allowed after an\nupgrade. This option only has an effect when <code\nclass=\"interpreted-text\" role=\"option\">allowReboot</code> is enabled.\nThe default value of <code>null</code> means that reboots are allowed at\nany time.</p>\n</rendered-html>",
+                "option_type": "null or (submodule)",
+                "option_default": "null",
+                "option_example": "{\n  lower = \"01:00\";\n  upper = \"05:00\";\n}",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "RYDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.rebootWindow.lower",
+                "option_description": "<rendered-html><p>Lower limit of the reboot window</p>\n</rendered-html>",
+                "option_type": "string matching the pattern [[:digit:]]{2}:[[:digit:]]{2}",
+                "option_default": null,
+                "option_example": "\"01:00\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "RoDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/tasks/auto-upgrade.nix",
+                "option_name": "system.autoUpgrade.rebootWindow.upper",
+                "option_description": "<rendered-html><p>Upper limit of the reboot window</p>\n</rendered-html>",
+                "option_type": "string matching the pattern [[:digit:]]{2}:[[:digit:]]{2}",
+                "option_default": null,
+                "option_example": "\"05:00\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "R4DntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/build.nix",
+                "option_name": "system.build",
+                "option_description": "<rendered-html><p>Attribute set of derivations used to set up the system.</p>\n</rendered-html>",
+                "option_type": "lazy attribute set of unspecified value",
+                "option_default": "{ }",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "SIDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/activatable-system.nix",
+                "option_name": "system.build.separateActivationScript",
+                "option_description": "<rendered-html><p>A separate activation script package that\u2019s not part of the system\nprofile.</p>\n<p>This is useful for configurations where\n<code>system.activatable</code> is <code>false</code>. Otherwise, you\ncan just use <code>system.build.toplevel</code>.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": null,
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "SYDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.build.toplevel",
+                "option_description": "<rendered-html><p>This option contains the store path that typically represents a NixOS\nsystem.</p>\n<p>You can read this path in a custom deployment tool for example.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": null,
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "SoDntpABMU8RZ4DXSG5M",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.checks",
+                "option_description": "<rendered-html><p>Packages that are added as dependencies of the system\u2019s build,\nusually for the purpose of validating some part of the\nconfiguration.</p>\n<p>Unlike <code>system.extraDependencies</code>, these store paths do\nnot become part of the built system configuration.</p>\n</rendered-html>",
+                "option_type": "list of package",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "S4DntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/version.nix",
+                "option_name": "system.configurationRevision",
+                "option_description": "<rendered-html><p>The Git revision of the top-level flake from which this configuration\nwas built.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "TIDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.copySystemConfiguration",
+                "option_description": "<rendered-html><p>If enabled, copies the NixOS configuration file (usually <code\nclass=\"interpreted-text\"\nrole=\"file\">/etc/nixos/configuration.nix</code>) and links it from the\nresulting system (getting to <code class=\"interpreted-text\"\nrole=\"file\">/run/current-system/configuration.nix</code>). Note that\nonly this single file is copied, even if it imports others.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "TYDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/etc/etc.nix",
+                "option_name": "system.etc.overlay.enable",
+                "option_description": "<rendered-html><p>Mount <code>/etc</code> as an overlayfs instead of generating it via\na perl script.</p>\n<p>Note: This is currently experimental. Only enable this option if\nyou\u2019re confident that you can recover your system if it breaks.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "ToDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/etc/etc.nix",
+                "option_name": "system.etc.overlay.mutable",
+                "option_description": "<rendered-html><p>Whether to mount <code>/etc</code> mutably (i.e. read-write) or\nimmutably (i.e. read-only).</p>\n<p>If this is false, only the immutable lowerdir is mounted. If it is\ntrue, a writable upperdir is mounted on top.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "T4DntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.extraDependencies",
+                "option_description": "<rendered-html><p>A list of paths that should be included in the system closure but\ngenerally not visible to users.</p>\n<p>This option has also been used for build-time checks, but the\n<code>system.checks</code> option is more appropriate for that purpose\nas checks should not leave a trace in the built system\nconfiguration.</p>\n</rendered-html>",
+                "option_type": "list of path in the Nix store",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "UIDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.forbiddenDependenciesRegexes",
+                "option_description": "<rendered-html><p>POSIX Extended Regular Expressions that match store paths that should\nnot appear in the system closure, with the exception of <code\nclass=\"interpreted-text\" role=\"option\">system.extraDependencies</code>,\nwhich is not checked.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": "[\n  \"-dev$\"\n]",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "UYDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/version.nix",
+                "option_name": "system.image.id",
+                "option_description": "<rendered-html><p>Image identifier.</p>\n<p>This corresponds to the IMAGE_ID field in os-release. See the\nupstream docs for more details on valid characters for this field: <a\nhref=\"https://www.freedesktop.org/software/systemd/man/latest/os-release.html#IMAGE_ID=\">https://www.freedesktop.org/software/systemd/man/latest/os-release.html#IMAGE_ID=</a></p>\n<p>You would only want to set this option if you\u2019re build NixOS\nappliance images.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "UoDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/version.nix",
+                "option_name": "system.image.version",
+                "option_description": "<rendered-html><p>Image version.</p>\n<p>This corresponds to the IMAGE_VERSION field in os-release. See the\nupstream docs for more details on valid characters for this field: <a\nhref=\"https://www.freedesktop.org/software/systemd/man/latest/os-release.html#IMAGE_VERSION=\">https://www.freedesktop.org/software/systemd/man/latest/os-release.html#IMAGE_VERSION=</a></p>\n<p>You would only want to set this option if you\u2019re build NixOS\nappliance images.</p>\n</rendered-html>",
+                "option_type": "null or string",
+                "option_default": "null",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "U4DntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.includeBuildDependencies",
+                "option_description": "<rendered-html><p>Whether to include the build closure of the whole system in its\nruntime closure. This can be useful for making changes fully offline, as\nit includes all sources, patches, and intermediate outputs required to\nbuild all the derivations that the system depends on.</p>\n<p>Note that this includes <em>all</em> the derivations, down from the\nincluded applications to their sources, the compilers used to build\nthem, and even the bootstrap compiler used to compile the compilers.\nThis increases the size of the system and the time needed to download\nits dependencies drastically: a minimal configuration with no extra\nservices enabled grows from ~670MiB in size to 13.5GiB, and takes\nproportionally longer to download.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "VIDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.name",
+                "option_description": "<rendered-html><p>The name of the system used in the <code class=\"interpreted-text\"\nrole=\"option\">system.build.toplevel</code> derivation.</p>\n<p>That derivation has the following name:\n<code>\"nixos-system-${config.system.name}-${config.system.nixos.label}\"</code></p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "if config.networking.hostName == \"\"\nthen \"unnamed\"\nelse config.networking.hostName;\n",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "VYDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/version.nix",
+                "option_name": "system.nixos.codeName",
+                "option_description": "<rendered-html><p>The NixOS release code name (e.g. <code>Emu</code>).</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"Vicuna\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "VoDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/label.nix",
+                "option_name": "system.nixos.label",
+                "option_description": "<rendered-html><p>NixOS version name to be used in the names of generated outputs and\nboot labels.</p>\n<p>If you ever wanted to influence the labels in your GRUB menu, this is\nthe option for you.</p>\n<p>It can only contain letters, numbers and the following symbols:\n<code>:</code>, <code>_</code>, <code>.</code> and <code>-</code>.</p>\n<p>The default is <code class=\"interpreted-text\"\nrole=\"option\">system.nixos.tags</code> separated by \u201c-\u201d + \u201c-\u201d + <code\nclass=\"interpreted-text\" role=\"env\">NIXOS_LABEL_VERSION</code>\nenvironment variable (defaults to the value of <code\nclass=\"interpreted-text\" role=\"option\">system.nixos.version</code>).</p>\n<p>Can be overridden by setting <code class=\"interpreted-text\"\nrole=\"env\">NIXOS_LABEL</code>.</p>\n<p>Useful for not loosing track of configurations built from different\nnixos branches/revisions, e.g.:</p>\n<pre><code>#!/bin/sh\ntoday=`date +%Y%m%d`\nbranch=`(cd nixpkgs ; git branch 2&gt;/dev/null | sed -n &#39;/^\\* / { s|^\\* ||; p; }&#39;)`\nrevision=`(cd nixpkgs ; git rev-parse HEAD)`\nexport NIXOS_LABEL_VERSION=&quot;$today.$branch-${revision:0:7}&quot;\nnixos-rebuild switch</code></pre>\n</rendered-html>",
+                "option_type": "string matching the pattern [a-zA-Z0-9:_\\.-]*",
+                "option_default": null,
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "V4DntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/version.nix",
+                "option_name": "system.nixos.release",
+                "option_description": "<rendered-html><p>The NixOS release (e.g. <code>16.03</code>).</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "\"24.11\"",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "WIDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/label.nix",
+                "option_name": "system.nixos.tags",
+                "option_description": "<rendered-html><p>Strings to prefix to the default <code class=\"interpreted-text\"\nrole=\"option\">system.nixos.label</code>.</p>\n<p>Useful for not loosing track of configurations built with different\noptions, e.g.:</p>\n<pre><code>{\n  system.nixos.tags = [ &quot;with-xen&quot; ];\n  virtualisation.xen.enable = true;\n}</code></pre>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": "[\n  \"with-xen\"\n]",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "WYDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/version.nix",
+                "option_name": "system.nixos.variant_id",
+                "option_description": "<rendered-html><p>A lower-case string identifying a specific variant or edition of the\noperating system</p>\n</rendered-html>",
+                "option_type": "null or string matching the pattern ^[a-z0-9._-]+$",
+                "option_default": "null",
+                "option_example": "\"installer\"",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "WoDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/config/nsswitch.nix",
+                "option_name": "system.nssDatabases.group",
+                "option_description": "<rendered-html><p>List of group entries to configure in <code class=\"interpreted-text\"\nrole=\"file\">/etc/nsswitch.conf</code>.</p>\n<p>Note that \u201cfiles\u201d is always prepended while \u201csystemd\u201d is appended if\nnscd is enabled.</p>\n<p>This option only takes effect if nscd is enabled.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "W4DntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/config/nsswitch.nix",
+                "option_name": "system.nssDatabases.hosts",
+                "option_description": "<rendered-html><p>List of hosts entries to configure in <code class=\"interpreted-text\"\nrole=\"file\">/etc/nsswitch.conf</code>.</p>\n<p>Note that \u201cfiles\u201d is always prepended, and \u201cdns\u201d and \u201cmyhostname\u201d are\nalways appended.</p>\n<p>This option only takes effect if nscd is enabled.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "XIDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/config/nsswitch.nix",
+                "option_name": "system.nssDatabases.passwd",
+                "option_description": "<rendered-html><p>List of passwd entries to configure in <code class=\"interpreted-text\"\nrole=\"file\">/etc/nsswitch.conf</code>.</p>\n<p>Note that \u201cfiles\u201d is always prepended while \u201csystemd\u201d is appended if\nnscd is enabled.</p>\n<p>This option only takes effect if nscd is enabled.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "XYDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/config/nsswitch.nix",
+                "option_name": "system.nssDatabases.services",
+                "option_description": "<rendered-html><p>List of services entries to configure in <code\nclass=\"interpreted-text\" role=\"file\">/etc/nsswitch.conf</code>.</p>\n<p>Note that \u201cfiles\u201d is always prepended.</p>\n<p>This option only takes effect if nscd is enabled.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "XoDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/config/nsswitch.nix",
+                "option_name": "system.nssDatabases.shadow",
+                "option_description": "<rendered-html><p>List of shadow entries to configure in <code class=\"interpreted-text\"\nrole=\"file\">/etc/nsswitch.conf</code>.</p>\n<p>Note that \u201cfiles\u201d is always prepended.</p>\n<p>This option only takes effect if nscd is enabled.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "X4DntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/config/nsswitch.nix",
+                "option_name": "system.nssDatabases.sudoers",
+                "option_description": "<rendered-html><p>List of sudoers entries to configure in <code\nclass=\"interpreted-text\" role=\"file\">/etc/nsswitch.conf</code>.</p>\n<p>Note that \u201cfiles\u201d is always prepended.</p>\n<p>This option only takes effect if nscd is enabled.</p>\n</rendered-html>",
+                "option_type": "list of string",
+                "option_default": "[ ]",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "YIDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.replaceRuntimeDependencies",
+                "option_description": "<rendered-html><p>List of packages to override without doing a full rebuild. The\noriginal derivation and replacement derivation must have the same name\nlength, and ideally should have close-to-identical directory layout.</p>\n</rendered-html>",
+                "option_type": "list of (submodule)",
+                "option_default": "[ ]",
+                "option_example": "[ ({ original = pkgs.openssl; replacement = pkgs.callPackage /path/to/openssl { }; }) ]",
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "YYDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.replaceRuntimeDependencies.*.original",
+                "option_description": "<rendered-html><p>The original package to override.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": null,
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "YoDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/top-level.nix",
+                "option_name": "system.replaceRuntimeDependencies.*.replacement",
+                "option_description": "<rendered-html><p>The replacement package.</p>\n</rendered-html>",
+                "option_type": "package",
+                "option_default": null,
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "Y4DntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/misc/version.nix",
+                "option_name": "system.stateVersion",
+                "option_description": "<rendered-html><p>This option defines the first version of NixOS you have installed on\nthis particular machine, and is used to maintain compatibility with\napplication data (e.g. databases) created on older NixOS versions.</p>\n<p>For example, if NixOS version XX.YY ships with AwesomeDB version N by\ndefault, and is then upgraded to version XX.YY+1, which ships AwesomeDB\nversion N+1, the existing databases may no longer be compatible, causing\napplications to fail, or even leading to data loss.</p>\n<p>The <code>stateVersion</code> mechanism avoids this situation by\nmaking the default version of such packages conditional on the first\nversion of NixOS you\u2019ve installed (encoded in\n<code>stateVersion</code>), instead of simply always using the latest\none.</p>\n<p>Note that this generally only affects applications that can\u2019t upgrade\ntheir data automatically - applications and services supporting\nautomatic migrations will remain on latest versions when you\nupgrade.</p>\n<p>Most users should <strong>never</strong> change this value after the\ninitial install, for any reason, even if you\u2019ve upgraded your system to\na new NixOS release.</p>\n<p>This value does <strong>not</strong> affect the Nixpkgs version your\npackages and OS are pulled from, so changing it will\n<strong>not</strong> upgrade your system.</p>\n<p>This value being lower than the current NixOS release does\n<strong>not</strong> mean your system is out of date, out of support, or\nvulnerable.</p>\n<p>Do <strong>not</strong> change this value unless you have manually\ninspected all the changes it would make to your configuration, and\nmigrated your data accordingly.</p>\n</rendered-html>",
+                "option_type": "string",
+                "option_default": "config.system.nixos.release",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "ZIDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/switchable-system.nix",
+                "option_name": "system.switch.enable",
+                "option_description": "<rendered-html><p>Whether to include the capability to switch configurations.</p>\n<p>Disabling this makes the system unable to be reconfigured via\n<code>nixos-rebuild</code>.</p>\n<p>This is good for image based appliances where updates are handled\noutside the image. Reducing features makes the image lighter and\nslightly more secure.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "true",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "ZYDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/switchable-system.nix",
+                "option_name": "system.switch.enableNg",
+                "option_description": "<rendered-html><p>Whether to include the capability to switch configurations.</p>\n<p>Disabling this makes the system unable to be reconfigured via\n<code>nixos-rebuild</code>.</p>\n<p>Whether to use <code>switch-to-configuration-ng</code>, an\nexperimental re-implementation of <code>switch-to-configuration</code>\nwith the goal of replacing the original.</p>\n</rendered-html>",
+                "option_type": "boolean",
+                "option_default": "false",
+                "option_example": null,
+                "option_flake": null
+            }
+        },
+        {
+            "_index": "nixos-42-unstable-693bc46d169f5af9c992095736e82c3488bf7dbb",
+            "_type": "_doc",
+            "_id": "ZoDntpABMU8RZ4DXSG5N",
+            "_score": 1.0,
+            "_source": {
+                "type": "option",
+                "option_source": "nixos/modules/system/activation/activation-script.nix",
+                "option_name": "system.userActivationScripts",
+                "option_description": "<rendered-html><p>A set of shell script fragments that are executed by a systemd user\nservice when a NixOS system configuration is activated. Examples are\nrebuilding the .desktop file cache for showing applications in the menu.\nSince these are executed every time you run <code\nclass=\"interpreted-text\" role=\"command\">nixos-rebuild</code>, it\u2019s\nimportant that they are idempotent and fast.</p>\n</rendered-html>",
+                "option_type": "attribute set of (string or (submodule))",
+                "option_default": "{ }",
+                "option_example": "{ plasmaSetup = {\n    text = ''\n      ${pkgs.libsForQt5.kservice}/bin/kbuildsycoca5\"\n    '';\n    deps = [];\n  };\n}\n",
+                "option_flake": null
+            }
+        }
+    ]
+}
