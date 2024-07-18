@@ -1,7 +1,7 @@
 import json
 from Formatting.enumerate_template_services import find_services_from_templates_without_definition
 
-def runall():
+def runall(service_definitions_array):
     # remnant of the main function
     with open('Nix-Searcher/data/service-definitions.json', 'r') as nixdata:
         nix_option_data = json.loads(nixdata.read())['services']
