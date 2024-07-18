@@ -7,5 +7,5 @@ do
   output_file="${module}.json"
   
   # Call the Python program with the current letter and output file
-  python src/main.py --channel unstable --options --size 10000 "${module}." --output "data/other-modules/${output_file}"
+  python Discovery/src/main.py --channel unstable --options --size 10000 "${module}." --output "Discovery/data/other-modules/${output_file}"
 done
