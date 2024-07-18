@@ -1,8 +1,10 @@
 import os
 import argparse
 import subprocess
+import json
 
 from Formatting import formatter, definitions, options
+from Discovery.src.find_template_info import make_templates
 
 
 def main():
@@ -23,14 +25,23 @@ def main():
     if data_exists():
         # Get the list of services in an array
         service_definitions = definitions.make_service_definitions()['services']
+        templates = make_templates(service_definitions)
 
-        print(service_definitions)
-    #formatter.runall()
+    with open('sample-template-output.json', 'w') as output:
+        output.write(json.dumps(templates, indent=4))
+    #formatter.runall(service_definitions)
+
 
 
 def data_exists():
     # Find if the dependent data exists
-    if os.path.exists('Discovery/data/services/a.json'): # and os.path.exists(...):
+    all_data_exists = True
+    for letter in 'abcdefghijklmnopqrstuvwxyz':
+        # TODO: Parameterize the path by services directory
+        if not os.path.exists(f'Discovery/data/services/{letter}.json'):
+            all_data_exists = False
+
+    if all_data_exists:
         return True
     else:
         return False 

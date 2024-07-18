@@ -2,14 +2,11 @@ import json
 from Formatting.enumerate_template_services import find_services_from_templates_without_definition
 
 def runall(service_definitions_array):
-    # remnant of the main function
-    with open('Nix-Searcher/data/service-definitions.json', 'r') as nixdata:
-        nix_option_data = json.loads(nixdata.read())['services']
 
     reduce_spec_overrides()
-    service_definitions = make_definitions_from_scraper(nix_option_data)
+    service_definitions = make_definitions_from_scraper(service_definitions_array)
     #extra_services = find_services_from_templates_without_definition(make_definition_from_service)
-    final_services = make_definition_from_templates(service_definitions, nix_option_data)
+    final_services = make_definition_from_templates(service_definitions, service_definitions_array)
     #print("Potential final services:", final_services)
 
     with open('service-definitions.json', 'w') as output:
@@ -18,7 +15,7 @@ def runall(service_definitions_array):
 
 def make_definitions_from_scraper(nix_option_data):
     # Create the required definitions for the frontend to push to the backend to be read by the xnode
-    with open('nix-scraper/outputs/servicesWithOptions.json', 'r') as metadata:
+    with open('inputs/servicesWithOptions.json', 'r') as metadata:
         services_with_metadata = json.loads(metadata.read())['services']
 
     services_with_scraperdata = make_definitions(services_with_metadata, nix_option_data)
@@ -98,7 +95,7 @@ def write_to_definition_file(service):
             output.write(json.dumps(service, indent=4))    
 
 def reduce_spec_overrides():
-    with open('manual-spec-overrides.json', 'r') as specs:
+    with open('inputs/manual-spec-overrides.json', 'r') as specs:
         spec_overrides = json.loads(specs.read())
 
     reduced_spec_overrides = []

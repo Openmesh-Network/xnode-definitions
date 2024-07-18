@@ -3,7 +3,7 @@
 import requests
 import argparse
 import json
-from request_builder import build_packages_request, build_options_request
+from Discovery.src.request_builder import build_packages_request, build_options_request
 from rich.tree import Tree
 from rich.console import Console
 from rich.spinner import Spinner
