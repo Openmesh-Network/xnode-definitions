@@ -1,0 +1,911 @@
+Name,Category,Going live on Xnode,Found > NIX,Description from awesome list,Description from NIX Search,Link to the GitHub (Awesome list),Specs,Specs ref,Link from NIX search,Source,License
+GNUnet,Communication - Custom Communication Systems,,Yes,"Free software framework for decentralized, peer-to-peer networking.","GNU's decentralized anonymous and censorship-resistant P2P framework
+",https://gnunet.org/git/,,,https://search.nixos.org/packages?channel=23.11&show=gnunet&from=0&size=50&sort=relevance&type=packages&query=GNUnet+,https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/applications/networking/p2p/gnunet/default.nix#L52,GNU Affero General Public License v3.0 or later
+AWStats ,Analytics,,Yes,"Free software framework for decentralized, peer-to-peer networking.",Real-time logfile analyzer to get advanced statistics,https://github.com/eldy/awstats,"AWStats Official Website:
+
+Requirements:
+Perl 5.007003 or higher
+Web server capable of logging access and running CGI scripts
+""Encode"" Perl module available
+
+
+GitHub - AWStats Repository:
+
+Version: 7.9
+Release Date: January 2023
+License: GNU General Public License v3.0 or later
+Supported Platforms: All major operating systems including Linux, Windows, BSD, Solaris, and more.
+Supported Log File Types: Apache (NCSA combined/XLF/ELF or common/CLF), IIS (W3C log format), WebStar, proxy, WAP, streaming media, FTP, and mail servers.
+Programming Language: Perl",https://www.awstats.org/docs/awstats_setup.html,https://search.nixos.org/packages?channel=23.11&show=awstats&from=0&size=50&sort=relevance&type=packages&query=AWStats+,https://www.awstats.org/,GNU General Public License v3.0 or later
+Metabase ,Analytics,,Yes,"Easy, open-source way for everyone in your company to ask questions and learn from data.","The easy, open source way for everyone in your company to ask questions and learn from data",https://github.com/metabase/metabase,"Java: Install Java 11.
+Application: Download and run the Metabase JAR file or use the Docker image.
+Database: Use PostgreSQL or MySQL/MariaDB for the application database. Avoid using the default H2 database for production.
+Memory & CPU: Allocate 1 CPU core and 1 GB RAM per 20 concurrent users for the application server. Allocate 1 CPU core and 2 GB RAM for the database server, scaling as needed.
+Storage: Allocate at least 10 GB for the application database.
+OS: Metabase runs on Linux, macOS, and Windows (using Docker).",https://www.metabase.com/docs/latest/installation-and-operation/installing-metabase,https://search.nixos.org/packages?channel=23.11&show=metabase&from=0&size=50&sort=relevance&type=packages&query=Metabase+,https://www.metabase.com/,GNU Affero General Public License v3.0 only
+PostHog ,Analytics,,Yes,"Product analytics, session recording, feature flagging and a/b testing that you can self-host (alternative to Mixpanel/Amplitude/Heap/HotJar/Optimizely).",Official PostHog python library,https://github.com/posthog/posthog,"OS: Linux Ubuntu Virtual Machine.
+RAM: Minimum 4 GB.",https://posthog.com/docs/getting-started/start-here,https://search.nixos.org/packages?channel=23.11&show=python311Packages.posthog&from=0&size=50&sort=relevance&type=packages&query=PostHog+,https://github.com/PostHog/posthog-python,MIT License
+GoAccess ,Analytics,,Yes,Real-time web log analyzer and interactive viewer that runs in a terminal.,Real-time web log analyzer and interactive viewer that runs in a terminal in *nix systems,https://github.com/allinurl/goaccess,"Device Requirements to Run GoAccess (Based on Official Sources)
+
+Device and Operating System:
+Device: Any server or computer running a Unix-like operating system.
+Operating System: Linux (Ubuntu, Debian, CentOS, etc.), macOS, or any other Unix-like OS.
+Software Requirements (from GoAccess FAQ):
+Required Package:
+ncurses
+Optional Package:
+GeoIP (for geolocation from MaxMind)",https://goaccess.io/faq,https://search.nixos.org/packages?channel=23.11&show=goaccess&from=0&size=50&sort=relevance&type=packages&query=GoAccess+,https://goaccess.io/,MIT License
+Matomo,Analytics,,Yes,Google Analytics alternative that protects your data and your customers' privacy. ,A real-time web analytics application,https://github.com/matomo-org/matomo,"Matomo System Requirements
+
+Software Requirements:
+
+Operating System: Linux (Ubuntu, RedHat, CentOS, Raspberry Pi OS), Windows, macOS Server, FreeBSD
+
+Web Server: Apache, Nginx, IIS, LiteSpeed
+
+PHP: Version 7.2.5 or greater; recommended PHP 8.x
+
+Database: MySQL 5.5 or greater, MariaDB, PostgreSQL
+
+PHP Extensions: pdo, pdo_mysql, mysqli, gd, xml, json, mbstring, iconv, curl, openssl, zlib, tokenizer, session, simplexml, spl, ctype, dom, hash, fileinfo
+
+Hardware Requirements:
+
+CPU: Multi-core processor recommended
+
+RAM: Minimum 512 MB; recommended 2 GB or more
+
+Storage: Minimum 500 MB; recommended 20 GB or more",https://matomo.org/faq/on-premise/matomo-requirements/,https://search.nixos.org/packages?channel=23.11&show=matomo&from=0&size=50&sort=relevance&type=packages&query=Matomo,https://matomo.org/,GNU General Public License v3.0 or later
+Metabase,Analytics,,Yes,"Easy, open-source way for everyone in your company to ask questions and learn from data.","The easy, open source way for everyone in your company to ask questions and learn from data",https://github.com/metabase/metabase,"System Requirements
+
+Hardware:
+
+CPU: Dual-core processor
+Memory: Minimum 2GB of RAM (4GB or more recommended for better performance)
+Storage: At least 250MB of available disk space (additional space needed for database storage)
+
+Software:
+
+Operating System: Compatible with Windows, macOS, and Linux.
+Java: Java Development Kit (JDK) version 11 or later is required.",https://www.metabase.com/docs/latest/installation-and-operation/start,https://search.nixos.org/packages?channel=23.11&show=metabase&from=0&size=50&sort=relevance&type=packages&query=Metabase,https://www.metabase.com/,GNU Affero General Public License v3.0 only
+Plausible Analytics,Analytics,,Yes,"Simple, open-source, lightweight (< 1 KB) and privacy-friendly web analytics. ","Simple, open-source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics",https://github.com/plausible/analytics/,"Plausible Analytics Self-Hosting Requirements
+
+Server Requirements:
+
+Architecture: CPU with x86_64 or arm64 architecture.
+Support: SSE 4.2 or equivalent NEON instructions.
+Memory: Minimum 4 GB of RAM (more may be needed based on site traffic).
+Docker: Must be installed on the server.",https://github.com/plausible/community-edition/?tab=readme-ov-file#requirements,https://search.nixos.org/packages?channel=23.11&show=plausible&from=0&size=50&sort=relevance&type=packages&query=Plausible+Analytics,https://plausible.io/,GNU Affero General Public License v3.0 or later
+Ollama,Analytics,Yes,,"Run large language models on Xnode Unit (GPU-enabled), this will provide maximum wow factor. Access to prompting via command line or REST API.",Get up and running with large language models locally,https://github.com/ollama/ollama,"GPU or CPU                                                                               Server Requirements vary depending on the model, see all available models  in the model library: https://ollama.com/library ",https://ollama.com/library,https://search.nixos.org/packages?channel=23.11&show=ollama&from=0&size=50&sort=relevance&type=packages&query=ollama,https://github.com/ollama/ollama,MIT License
+ArchiveBox,Archiving and Digital Preservation (DP),,Yes,"Self-hosted wayback machine that creates HTML & screenshot archives of sites from your bookmarks, browsing history, RSS feeds, or other sources.",Open source self-hosted web archiving,https://github.com/ArchiveBox/ArchiveBox,"Supported Systems
+
+
+macOS: Version 10.12 and above, using Homebrew.
+Linux: Distributions like Ubuntu and Debian, using apt.
+BSD: FreeBSD, OpenBSD, NetBSD, using pkg.
+
+Other systems like Windows (via Docker, Docker in WSL2, or directly with pip) and various other Linux distributions (Fedora, SUSE, Arch, CentOS) are not officially supported but are likely to work with some adjustments.
+
+Hardware Requirements
+
+RAM: Minimum 500MB (bare minimum), 2GB or more recommended.
+Storage: Use a filesystem with compression and/or deduplication abilities (e.g., ZFS or BTRFS) for maximum archive storage efficiency.
+
+Software Dependencies
+Python: Version 3.7 or higher.
+Chromium: Version 59 or higher (Google Chrome version 59 or higher also works).
+wget: Version 1.16 or higher.
+curl
+git
+youtube-dl
+Node.js: Version 18 or higher if using certain optional features.",https://docs.archivebox.io/en/latest/Install.html,https://search.nixos.org/packages?channel=23.11&show=archivebox&from=0&size=50&sort=relevance&type=packages&query=ArchiveBox,https://archivebox.io/,MIT License
+ArchiveBox,Archiving and Digital Preservation (DP),,Yes,"A self-hosted BitTorrent indexer, DHT crawler, content classifier and torrent search engine with web UI, GraphQL API and Servarr stack integration.","A self-hosted BitTorrent indexer, DHT crawler, and torrent search engine",https://github.com/bitmagnet-io/bitmagnet,"BitMagnet System Requirements
+
+RAM:
+
+BitMagnet: ~300MB
+Postgres database: At least 1GB
+
+Disk Space:
+
+~50GB per 10 million torrents
+Plan for several months of crawling with no upper limit to the number of torrents
+
+Performance:
+
+The database will perform best with:
+Plenty of RAM
+Fast disk, preferably an SSD",https://bitmagnet.io/faq.html#what-are-the-system-requirements-for-bitmagnet,https://search.nixos.org/packages?channel=23.11&show=bitmagnet&from=0&size=50&sort=relevance&type=packages&query=bitmagnet,https://bitmagnet.io/,MIT License
+CKAN,Archiving and Digital Preservation (DP),,Yes,CKAN is a tool for making open data websites.,Mod manager for Kerbal Space Program,https://github.com/ckan/ckan,"Hardware Requirements
+
+CPU: At least 2 cores (more cores recommended for better performance)
+Memory: Minimum 4 GB RAM (8 GB recommended)
+Disk Space: Minimum 20 GB (additional space may be needed depending on the amount of data managed)
+
+Software Requirements
+
+Operating System: CKAN can be installed on various OS platforms, including:
+
+Ubuntu: Versions 18.04, 20.04, and 22.04 (64-bit)
+Other OS: RHEL, CentOS, OS X (source installation needed)
+Python:
+
+CKAN 2.9 supports Python 3.6 or higher and Python 2.7
+CKAN 2.10 and later support Python 3.7 to Python 3.10
+Database: PostgreSQL (version 9.6 or later recommended)
+
+",https://docs.ckan.org/en/2.10/maintaining/installing/index.html,https://search.nixos.org/packages?channel=23.11&show=ckan&from=0&size=50&sort=relevance&type=packages&query=CKAN,https://ckan.org/,MIT License
+Ganymede,Archiving and Digital Preservation (DP),,Yes,Twitch VOD and Live Stream archiving platform. Includes a rendered chat for each archive. ,An Io interpreter in Haskell,https://github.com/Zibbp/ganymede,"Requirements
+
+Linux environment with Docker.
+Optional network mounted storage.
+50gb+ free storage.
+A Twitch Application","https://github.com/Zibbp/ganymede?tab=readme-ov-file#requirements
+
+
+
+https://github.com/Zibbp/ganymede/wiki/Storage-Requirements",https://search.nixos.org/packages?channel=23.11&show=haskellPackages.Ganymede&from=0&size=50&sort=relevance&type=packages&query=Ganymede,https://hackage.haskell.org/package/Ganymede,"BSD 3-clause ""New"" or ""Revised"" License"
+Wallabag,Archiving and Digital Preservation (DP),,Yes,"Wallabag, formerly Poche, is a web application allowing you to save articles to read them later with improved readability.",wallabag is a self hostable application for saving web pages,https://github.com/wallabag/wallabag,"Specifications / Requirements
+
+Server Requirements:
+
+Web Server: Apache or Nginx
+Database: MySQL, PostgreSQL, or SQLite
+PHP Version: PHP 7.4 or higher
+PHP Extensions:
+cURL
+FileInfo
+JSON
+Mbstring
+OpenSSL
+pdo_mysql (if using MySQL)
+pdo_pgsql (if using PostgreSQL)
+pdo_sqlite (if using SQLite)
+XML
+Zip
+Additional Requirements:
+
+Composer: Dependency manager for PHP to install required PHP packages.",https://doc.wallabag.org/en/admin/installation/requirements#requirements,https://search.nixos.org/packages?channel=23.11&show=wallabag&from=0&size=50&sort=relevance&type=packages&query=Wallabag,https://wallabag.org/,MIT License
+Apache Airflow,Automation,,Yes,"Airflow is a platform to programmatically author, schedule, and monitor workflows.","Programmatically author, schedule and monitor data pipelines",https://github.com/apache/airflow,"Python: 3.8, 3.9, 3.10, 3.11, 3.12
+
+Databases:
+
+PostgreSQL: 12, 13, 14, 15, 16
+
+MySQL: 8.0, Innovation
+
+SQLite: 3.15.0+
+
+Kubernetes: 1.26, 1.27, 1.28, 1.29
+
+4GB MINIMUM MEMORY",https://airflow.apache.org/docs/apache-airflow/stable/installation/prerequisites.html,https://search.nixos.org/packages?channel=23.11&show=apache-airflow&from=0&size=50&sort=relevance&type=packages&query=Apache+Airflow+,https://github.com/apache/airflow,Apache License 2.0
+changedetection.io,Automation,,Yes,Self-hosted tool for staying up-to-date with web-site content changes.,"Self-hosted free open source website change detection tracking, monitoring and notification service
+",https://github.com/dgtlmoon/changedetection.io,"Requirements: Docker, Python 3.8+, SQLite.",https://github.com/dgtlmoon/changedetection.io,https://search.nixos.org/packages?channel=23.11&show=changedetection-io&from=0&size=50&sort=relevance&type=packages&query=changedetection.io,https://changedetection.io/,Apache License 2.0
+Lidarr is a music collection manager for Usenet and BitTorrent users.,Automation,,Yes,Lidarr is a music collection manager for Usenet and BitTorrent users.,A Usenet/BitTorrent music downloader,https://github.com/Lidarr/Lidarr,"System Requirements:
+
+Operating System:
+
+Windows 7 or newer
+macOS 10.13 or newer
+Linux (various distributions, such as Ubuntu, Debian, CentOS)
+Processor:
+
+x86/x64 architecture CPU
+Memory:
+
+At least 2 GB of RAM
+Storage:
+
+A minimum of 20 GB of available storage space is recommended for Lidarr installation and operation.
+Additional storage will be required based on the size of your music library.
+Software Dependencies:
+
+.NET Framework 4.6.2 or later (for Windows)
+Mono 5.20 or later (for macOS and Linux)",https://wiki.servarr.com/lidarr/installation/windows,https://search.nixos.org/packages?channel=23.11&show=lidarr&from=0&size=50&sort=relevance&type=packages&query=Lidarr,https://lidarr.audio/,GNU General Public License v3.0 or later
+Headphones,Automation,,Yes,"Automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent, Deluge, and Blackhole.",Automatic music downloader for SABnzbd,https://github.com/rembo10/headphones,"Requirements: Python 2.7, Python 3.x.",https://search.nixos.org/packages?channel=23.11&show=headphones&from=0&size=50&sort=relevance&type=packages&query=Headphones,https://search.nixos.org/packages?channel=23.11&show=headphones&from=0&size=50&sort=relevance&type=packages&query=Headphones,https://github.com/rembo10/headphones,GNU General Public License v3.0 or later
+pyLoad ,Automation,,Yes,"Lightweight, customizable and remotely manageable downloader for 1-click-hosting sites like rapidshare.com or uploaded.to.",Free and open-source download manager with support for 1-click-hosting sites,https://github.com/pyload/pyload,"You need at least Python 2.5 or at most Python 2.7 to run pyLoad and its required software dependencies.
+
+Dependencies
+
+Required
+
+Beaker
+Getch
+MultipartPostHandler
+SafeEval
+bottle
+colorama
+jinja2
+markupsafe
+pycurl (python-curl)
+rename_process
+setuptools
+thrift
+wsgiserver",https://pyload.net/,https://search.nixos.org/packages?channel=23.11&show=pyload-ng&from=0&size=50&sort=relevance&type=packages&query=pyLoad+,https://pyload.net/,GNU Affero General Public License v3.0 or later
+Sonarr ,Automation,,Yes,"Automatic TV Shows downloader and manager for Usenet and BitTorrent. It can grab, sort and rename new episodes and automatically upgrade the quality of files already downloaded when a better quality format becomes available.",Smart PVR for newsgroup and bittorrent users,https://github.com/Sonarr/Sonarr,"System Requirements:
+
+Operating System: Windows, macOS, Linux
+Processor: x64 architecture, capable of running .NET 5+
+Memory: Minimum of 2 GB RAM
+Storage:
+Application: Approx. 50 MB
+Database and logs: Variable, depending on the number of series and activity (recommend at least 2 GB free space)
+Software Requirements:
+",https://wiki.servarr.com/sonarr/installation,https://search.nixos.org/packages?channel=23.11&show=sonarr&from=0&size=50&sort=relevance&type=packages&query=Sonarr+,https://sonarr.tv/,GNU General Public License v3.0 only
+Radarr,Automation,,Yes,"Radarr is an independent fork of Sonarr reworked for automatically downloading movies via Usenet and BitTorrent, à la Couchpotato.",A Usenet/BitTorrent movie downloader,https://github.com/Radarr/Radarr,"Operating System: Windows, macOS, Linux, or Docker.
+Hardware:
+Minimum: 1 GHz processor, 512 MB RAM.
+Recommended: 2 GHz processor, 2 GB RAM.
+Storage: Adequate disk space for your media files, database, and Radarr binaries.
+Dependencies: .NET 6.0 runtime for Windows, mono for macOS/Linux.",Radarr Installation | Servarr Wiki,https://search.nixos.org/packages?channel=23.11&show=radarr&from=0&size=50&sort=relevance&type=packages&query=Radarr,Radarr,GNU General Public License v3.0 only
+Healthchecks,Automation,,Yes,Django app which listens for pings and sends alerts when pings are late.,A cron monitoring tool written in Python & Django,https://github.com/healthchecks/healthchecks,"Requirements: Docker, Python 3.6+, PostgreSQL, Redis.",https://github.com/healthchecks/healthchecks,https://search.nixos.org/packages?channel=23.11&show=healthchecks&from=0&size=50&sort=relevance&type=packages&query=Healthchecks,https://github.com/healthchecks/healthchecks,"BSD 3-clause ""New"" or ""Revised"" License"
+Syncthing,File Transfer & Synchronization,Yes,Yes,Syncthing is an open source peer-to-peer file synchronisation tool. ,Open Source Continuous File Synchronization,https://search.nixos.org/packages?channel=23.11&show=syncthing&from=0&size=50&sort=relevance&type=packages&query=Syncthing,"Requirements: Go, Docker.",https://github.com/syncthing/syncthing ,https://search.nixos.org/packages?channel=unstable&show=syncthing&from=0&size=50&sort=relevance&type=packages&query=syncthing,https://github.com/syncthing/syncthing,Mozilla Public License 2.0
+Wayback,Archiving and Digital Preservation (DP),,Yes,"A self-hosted toolkit for archiving webpages to the Internet Archive, archive.today, IPFS, and local file systems. ",An archiving tool with an IM-style interface,https://github.com/wabarc/wayback,"512 of memory
+Chromium, Tor, youtube-dl or You-Get, libwebp",https://docs.wabarc.eu.org/installation/,https://search.nixos.org/packages?channel=23.11&show=wayback&from=0&size=50&sort=relevance&type=packages&query=Wayback,https://docs.wabarc.eu.org/,GNU General Public License v3.0 or later
+Stalwart JMAP,Communication - Email - Mail Delivery Agents,,,An open-source JMAP (JSON Meta Application Protocol) server.,"Secure & Modern All-in-One Mail Server (IMAP, JMAP, SMTP)",https://github.com/stalwartlabs/jmap-server,"Requirements: Rust, Docker.",https://github.com/stalwartlabs/jmap-server ,https://search.nixos.org/packages?channel=23.11&show=stalwart-mail&from=0&size=50&sort=relevance&type=packages&query=Stalwart+JMAP,https://github.com/stalwartlabs/jmap-server,GNU Affero General Public License v3.0 only
+Dovecot,Communication - Email - Mail Delivery Agents,,Yes,IMAP and POP3 server written primarily with security in mind.,Open source IMAP and POP3 email server written with security primarily in mind,https://github.com/dovecot/core,"Operating System:
+
+Supported Distributions:
+CentOS 7
+Debian 10 (Buster)
+Debian 11 (Bullseye)
+RHEL 8
+Ubuntu 20
+Amazon Linux 2
+BSD derivatives (e.g., FreeBSD, OpenBSD, macOS) are supported on a best-effort basis.
+
+Standard Library:
+Minimum Requirement: glibc 2.17
+Compiler: C99/C11 compatible compiler with GNU extensions.",https://github.com/dovecot/core ,https://search.nixos.org/packages?channel=23.11&show=dovecot&from=0&size=50&sort=relevance&type=packages&query=Dovecot,https://github.com/dovecot/core,"GNU Lesser General Public License v2.1 only ▪ BSD 3-clause ""New"" or ""Revised"" License ▪ BSD 4-clause ""Original"" or ""Old"" License"
+Discourse,Communication - Social Networks and Forums,,Yes,Advanced forum / community solution based on Ruby and JS.,Discourse is an open source discussion platform,https://github.com/discourse/discourse,"Hardware Requirements
+
+modern single core CPU, dual core recommended
+1 GB RAM minimum (with swap)
+64 bit Linux compatible with Docker
+10 GB disk space minimum
+
+Software Requirements
+Postgres 13
+Redis 7
+Ruby 3.2+",https://github.com/discourse/discourse/blob/main/docs/INSTALL.md,https://search.nixos.org/packages?channel=23.11&show=discourse&from=0&size=50&sort=relevance&type=packages&query=Discourse,https://www.discourse.org/,GNU General Public License v2.0 or later
+Mastodon,Communication - Social Networks and Forums,,Yes,Federated microblogging server.,"Self-hosted, globally interconnected microblogging software based on ActivityPub",https://github.com/mastodon/mastodon,"Requirements
+PostgreSQL 12+
+Redis 4+
+Ruby 3.1+
+Node.js 18+",https://github.com/mastodon/mastodon,https://search.nixos.org/packages?channel=23.11&show=mastodon&from=0&size=50&sort=relevance&type=packages&query=Mastodon,https://joinmastodon.org/,GNU Affero General Public License v3.0 or later
+Jitsi Meet,Communication - Video Conferencing,,Yes,"Jitsi Meet is an OpenSource (MIT) WebRTC Javascript application that uses Jitsi Videobridge to provide high quality, scalable video conferences.","Secure, Simple and Scalable Video Conferences",https://github.com/jitsi/jitsi-meet,"Desktop Browsers:
+
+Chrome: Version 72 and above, best results with version 96+.
+Firefox: Version 68 and above, best results with version 101+.
+Safari: Version 14 and above, best results with version 15+, output device selection unsupported.
+Edge: Version 79 and above, Edge Legacy is unsupported.
+Internet Explorer: Not supported.
+
+Mobile Browsers:
+Android: Chrome and Firefox, same support as desktop versions.
+iOS: Chrome, Firefox, Safari, and Edge, all with Safari's engine limitations.",https://github.com/jitsi/jitsi-meet ,https://search.nixos.org/packages?channel=23.11&show=jitsi-meet&from=0&size=50&sort=relevance&type=packages&query=Jitsi+Meet,https://jitsi.github.io/handbook/docs/user-guide/supported-browsers, Apache License 2.0
+Barman ,Backup,,Yes,Backup and Recovery Manager for PostgreSQL.,Backup and Recovery Manager for PostgreSQL,https://github.com/EnterpriseDB/barman,"System requirements
+Linux/Unix
+Python >= 3.6
+Python modules:
+argcomplete
+psycopg2 >= 2.4.2
+python-dateutil
+setuptools
+PostgreSQL >= 10 (next version will require PostgreSQL >= 11)
+rsync >= 3.1.0 (optional)",https://docs.pgbarman.org/release/3.10.0/,https://search.nixos.org/packages?channel=23.11&show=barman&from=0&size=50&sort=relevance&type=packages&query=Barman+,https://pgbarman.org/,GNU General Public License v3.0 or later
+BorgBackup,Backup,Yes,Yes,Deduplicating archiver with compression and authenticated encryption.,Deduplicating archiver with compression and encryption,https://github.com/borgbackup/borg,"Operating System: Linux, macOS, FreeBSD, or any Unix-like system.
+Python: Python 3.5 or newer.
+Storage: Adequate storage for backups, which depends on the amount of data and the level of deduplication achieved.
+Dependencies: FUSE (Filesystem in Userspace) if you want to mount backups as filesystems.",https://www.borgbackup.org/,https://search.nixos.org/packages?channel=23.11&show=borgbackup&from=0&size=50&sort=relevance&type=packages&query=BorgBackup,https://www.borgbackup.org/,"BSD 3-clause ""New"" or ""Revised"" License"
+Burp,Backup,,Yes,Network backup and restore program.,BURP - BackUp and Restore Program,https://github.com/grke/burp,"Operating System:
+
+Server: Linux-style OS (Debian recommended).
+Client: Linux, Windows, or Mac.
+Dependencies:
+
+librsync
+openssl
+zlib (>=1.2.5 recommended)
+uthash
+File System:
+
+Ext4 is recommended, with sufficient inodes to avoid running out.
+Storage:
+
+Ensure enough storage for backups and inodes on the server.",https://burp.grke.org/faq.html,https://search.nixos.org/packages?channel=23.11&show=burp&from=0&size=50&sort=relevance&type=packages&query=Burp,https://burp.grke.org/,GNU Affero General Public License v3.0
+Dar ,Backup,,Yes," Which stands for Disk ARchive, is a robust and rich featured archiving and backup software of the tar style.","Disk ARchiver, allows backing up files into indexed archives",https://github.com/Edrusb/DAR,"System Requirements:
+
+Operating System:
+
+Linux or Unix-like systems (e.g., BSD, macOS)
+Dependencies:
+
+C++ Compiler: GCC recommended.
+GNU Make
+Libraries:
+Required: zlib
+Optional: bzip2, liblzo2, libxz
+Disk Space:
+
+Installation: ~10 MB
+Archives: Depends on data size
+Memory:
+
+Sufficient RAM for compression/decompression processes",http://dar.linux.free.fr/doc/,https://search.nixos.org/packages?channel=23.11&show=dar&from=0&size=50&sort=relevance&type=packages&query=Dar+,http://dar.linux.free.fr/,GNU General Public License v2.0 only
+Duplicati,Backup,,Yes,"Backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers.","A free backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers",https://github.com/duplicati/duplicati,"Operating Systems:
+
+Windows: Windows 32-bit and 64-bit versions available.
+macOS: Version 2.0.8.1.
+Linux: Debian/Ubuntu and Fedora/Redhat.
+Storage:
+
+Adequate storage space for both the software installation and the backup data, which will depend on the size of the data being backed up.
+Protocols and Services:
+
+Compatible with standard protocols like FTP, SSH, and WebDAV, and various popular services such as Google Drive, OneDrive, and Amazon S3.",https://duplicati.com/download,https://search.nixos.org/packages?channel=23.11&show=duplicati&from=0&size=50&sort=relevance&type=packages&query=Duplicati,https://duplicati.com/,GNU Lesser General Public License v2.
+Duplicity,Backup,,Yes,Encrypted bandwidth-efficient backup using the rsync algorithm.,Encrypted bandwidth-efficient backup using the rsync algorithm,https://gitlab.com/duplicity/duplicity,"Operating Systems:
+
+Linux, macOS, and Windows (via Cygwin).
+Dependencies:
+
+Python 3.x.
+Required libraries: librsync, GnuPG, and other Python dependencies listed in the requirements.txt.
+Storage:
+
+Adequate storage for the software installation.
+Additional storage for backup data, which depends on the size of the data being backed up.",https://gitlab.com/duplicity/duplicity,https://search.nixos.org/packages?channel=23.11&show=duplicity&from=0&size=50&sort=relevance&type=packages&query=Duplicity,https://duplicity.gitlab.io/,GNU General Public License v2.0 or later
+Proxmox Backup Server,Backup,,Yes,"Proxmox Backup Server is an enterprise-class, client-server backup solution thatis capable of backing up virtual machines, containers, and physical hosts.",The command line client for Proxmox Backup Server,https://git.proxmox.com/?p=proxmox-backup.git;a=tree,"Proxmox Virtual Environment Requirements
+
+Recommended Hardware:
+
+CPU: Intel EMT64 or AMD64 with Intel VT/AMD-V.
+Memory: Minimum 2 GB for OS and Proxmox VE services; additional for guests (1 GB per TB for Ceph/ZFS).
+Storage:
+OS Storage: Hardware RAID with BBU or non-RAID with ZFS and SSD cache.
+VM Storage: Hardware RAID with BBU or non-RAID for ZFS. SSDs recommended.
+Network: Redundant Gbit NICs; 10 Gbit and higher supported.
+PCI(e) Passthrough: CPU with VT-d/AMD-d flag.
+
+Minimum Hardware (for Testing):
+
+CPU: 64bit (Intel EMT64 or AMD64).
+Memory: Minimum 1 GB RAM.
+Storage: Hard drive.
+Network: One NIC.
+Storage Options: Local (DAS), SAN, NAS, shared, and distributed storage (Ceph).",https://www.proxmox.com/en/proxmox-virtual-environment/requirements,https://search.nixos.org/packages?channel=23.11&show=proxmox-backup-client&from=0&size=50&sort=relevance&type=packages&query=Proxmox+Backup+Server,https://www.proxmox.com/en/,GNU Affero General Public License v3.0 only
+rclone,Backup,,Yes,Command-line program to sync files and directories to and from different cloud storage providers..,Command line program to sync files and directories to and from major cloud storage,https://github.com/rclone/rclone,"Operating System: Linux, macOS, Windows, FreeBSD, NetBSD, OpenBSD, Plan 9, Solaris, or Termux.
+Storage: Enough storage to download and install Rclone (approx. 40 MB for the binary file) plus additional space for temporary files and logs.
+Permissions: Administrative privileges for installing the binary and configuring the system.",https://rclone.org/install/,https://search.nixos.org/packages?channel=23.11&show=rclone&from=0&size=50&sort=relevance&type=packages&query=rclone,https://rclone.org/,MIT License
+Rdiff-backup,Backup,,Yes,"Reverse differential backup tool, over a network or locally.",Backup system trying to combine best a mirror and an incremental backup system,https://github.com/rdiff-backup/rdiff-backup,"Python: Version 3.9 or higher
+Python pip: Or pip3
+librsync: Version 2.0.0 or higher
+libacl: Optional, for ACL support
+SSH: Optional, for remote operations",https://github.com/rdiff-backup/rdiff-backup,https://search.nixos.org/packages?channel=23.11&show=rdiff-backup&from=0&size=50&sort=relevance&type=packages&query=Rdiff-backup,https://rdiff-backup.net/,GNU General Public License v2.0 only
+Restic,Backup,,Yes,"Easy, fast, verifiable, secure and efficient remote backup tool.","A backup program that is fast, efficient and secure",https://github.com/restic/restic,"A compatible operating system (Linux, macOS, Windows, etc.).
+Go programming language (at least version 1.19).
+For storage, any mounted filesystem or cloud service supported by Restic.
+Installation of Restic via package managers (e.g., apt, dnf, brew, etc.) or downloading the binary from the official release page.",https://restic.readthedocs.io/en/stable/020_installation.html,https://search.nixos.org/packages?channel=23.11&show=restic&from=0&size=50&sort=relevance&type=packages&query=Restic,https://restic.net/,"BSD 2-clause ""Simplified"" License"
+Rsnapshot ,Backup,,Yes,Filesystem snapshot utility based on rsync.,A filesystem snapshot utility for making backups of local and remote systems,https://github.com/rsnapshot/rsnapshot,"Perl: Required.
+rsync: Required.
+SSH: Required for network backups.
+cron: Required for scheduling automated backups.
+Storage: Sufficient space on the backup destination to store multiple snapshots. The exact amount depends on the data size and number of snapshots.",https://github.com/rsnapshot/rsnapshot/blob/master/INSTALL.md,https://search.nixos.org/packages?channel=23.11&show=rsnapshot&from=0&size=50&sort=relevance&type=packages&query=Rsnapshot+,https://rsnapshot.org/,GNU General Public License v2.0 or later
+UrBackup,Backup,,Yes,"Client/Server Open Source Network Backup for Windows, MacOS and Linux",An easy to setup Open Source client/server backup system,https://github.com/uroni/urbackup_backend,"Requirements:
+Operating Systems: Windows, Linux, FreeBSD, macOS.
+Hardware: Varies by installation type (e.g., x86/x64, ARMv6+, ARM64).
+Storage: Adequate storage for backups, typically allocated in /backups for Docker setups.",https://www.urbackup.org/download.html,https://search.nixos.org/packages?channel=23.11&show=urbackup-client&from=0&size=50&sort=relevance&type=packages&query=UrBackup,https://www.urbackup.org/index.html,GNU Affero General Public License v3.0
+Akkoma ,Communication - Social Networks and Forums,,Yes,"Federated microblogging server with Mastodon, GNU social, and ActivityPub compatibility.",ActivityPub microblogging server,https://akkoma.dev/AkkomaGang/akkoma,"Hardware Requirements:
+
+CPU: Minimum 2 cores
+RAM: Minimum 2 GB
+Storage: Minimum 10 GB of disk space for the application and dependencies, additional space for media files.
+
+Software Requirements:
+
+OS: Linux (glibc or musl)
+Dependencies: Elixir, Erlang, PostgreSQL, and other dependencies as specified in the documentation.",https://akkoma.dev/AkkomaGang/akkoma,NixOS Search - Packages - Akkoma,https://akkoma.social/,GNU Affero General Public License v3.0 only
+GoToSocial,Communication - Social Networks and Forums,,Yes,ActivityPub federated social network server implementing the Mastodon client API.,"Fast, fun, ActivityPub server, powered by Go",https://github.com/superseriousbusiness/gotosocial,"CPU: Lower-powered machines like Raspberry Pi, old laptops, or $5/month VPS.
+
+A database (PostgreSQL recommended, SQLite also works).",https://github.com/superseriousbusiness/gotosocial#easy-to-run,https://search.nixos.org/packages?channel=23.11&show=gotosocial&from=0&size=50&sort=relevance&type=packages&query=GoToSocial,https://gotosocial.org/,GNU Affero General Public License v3.0 only
+Isso,Communication - Social Networks and Forums,,Yes,Lightweight commenting server written in Python and Javascript. It aims to be a drop-in replacement for Disqus. ,A commenting server similar to Disqus,https://github.com/isso-comments/isso,"Requirements
+Python 3.8+ (+ devel headers)
+SQLite 3.3.8 or later
+a working C compiler",https://github.com/isso-comments/isso,https://search.nixos.org/packages?channel=23.11&show=isso&from=0&size=50&sort=relevance&type=packages&query=Isso,https://isso-comments.de/,MIT License
+Lemmy,Communication - Social Networks and Forums,,Yes,A link aggregator / reddit clone for the fediverse (alternative to Reddit). ,Building a federated alternative to reddit in rust,https://github.com/LemmyNet/lemmy,"RAM: Approximately 150 MB (default Docker installation)
+CPU: Minimal usage",https://join-lemmy.org/docs/administration/administration.html,https://search.nixos.org/packages?channel=23.11&show=lemmy-ui&from=0&size=50&sort=relevance&type=packages&query=Lemmy,https://join-lemmy.org/,GNU Affero General Public License v3.0 only
+Libreddit ,Communication - Social Networks and Forums,,Yes,Private front-end for Reddit written in Rust.,Private front-end for Reddit,https://github.com/libreddit/libreddit,Docker: Ensure Docker is installed on your system.,https://github.com/libreddit/libreddit,https://search.nixos.org/packages?channel=23.11&show=libreddit&from=0&size=50&sort=relevance&type=packages&query=Libreddit+,https://github.com/libreddit/libreddit,GNU Affero General Public License v3.0 only
+Nitter ,Communication - Social Networks and Forums,,Yes,An alternative front end to twitter.,Alternative Twitter front-end,https://github.com/zedeus/nitter,"Dependencies:
+
+libpcre
+libsass
+Redis",https://github.com/zedeus/nitter,https://search.nixos.org/packages?channel=23.11&show=nitter&from=0&size=50&sort=relevance&type=packages&query=Nitter+,https://github.com/zedeus/nitter,GNU Affero General Public License v3.0 only
+Pleroma,Communication - Social Networks and Forums,,Yes,"Federated microblogging server, Mastodon, GNU social, & ActivityPub compatible.",ActivityPub microblogging server,https://git.pleroma.social/pleroma/pleroma,"A Debian-based or Alpine system with x86_64, aarch64, or armv7l CPU.
+Required packages: curl, unzip, ncurses, PostgreSQL (with postgresql-contrib), nginx, certbot, libmagic/file.
+Storage: Main directories include /opt/pleroma, /var/lib/pleroma/uploads, /var/lib/pleroma/static, /etc/pleroma.",https://docs-develop.pleroma.social/backend/installation/otp_en/,https://search.nixos.org/packages?channel=23.11&show=pleroma&from=0&size=50&sort=relevance&type=packages&query=Pleroma,https://pleroma.social/,GNU Affero General Public License v3.0
+Galene,Communication - Video Conferencing,,Yes,Galène (or Galene) is a videoconference server (an “SFU”) that is easy to deploy and that requires moderate server resources.,"Videoconferencing server that is easy to deploy, written in Go",https://github.com/jech/galene,Go: Version 1.17 or later.,https://github.com/jech/galene,https://search.nixos.org/packages?channel=23.11&show=galene&from=0&size=50&sort=relevance&type=packages&query=Galene,https://galene.org/,MIT License
+Janus,Communication - Video Conferencing,,Yes,"General-purpose, lightweight, minimalist WebRTC Server.",General purpose WebRTC server,https://github.com/meetecho/janus-gateway,"Requirements for Janus Gateway
+
+Libraries:
+
+glib-2.0 >= 2.34
+libconfig
+libnice
+jansson >= 2.5
+libssl >= 1.0.1
+libcrypto
+zlib
+libsrtp >= 1.5.x (2.x recommended)
+libcurl (development version)
+libwebsockets (for WebSockets support)
+usrsctp (for Data Channels support)
+Eclipse Paho MQTT C client library (for MQTT support)
+rabbitmq-c (for RabbitMQ support)
+BoringSSL (optional, for DTLS support)
+
+Build Tools:
+
+Python 3
+Meson
+Ninja
+Storage Requirements
+Ensure at least 1 GB of free space",https://github.com/meetecho/janus-gateway,https://search.nixos.org/packages?channel=23.11&show=janus-gateway&from=0&size=50&sort=relevance&type=packages&query=Janus,https://janus.conf.meetecho.com/,GNU General Public License v3.0 only
+Baserow,Database Management,,Yes,Create your own database without technical experience (alternative to Airtable).,No-code database and Airtable alternative,https://gitlab.com/baserow/baserow,"System Requirements
+
+Operating System: Ubuntu 20.04.4 LTS (or any system that supports Docker)
+Docker: Install Docker to run Baserow using the official Docker images.
+Memory: At least 2 GB of RAM.
+Storage: Minimum 10 GB of free disk space to ensure smooth operation.","https://baserow.io/docs/installation/configuration
+
+https://baserow.io/user-docs/how-to-get-started-with-baserow
+
+https://baserow.io/docs/installation%2Finstall-on-ubuntu
+
+https://baserow.io/docs/installation%2Finstall-with-docker",https://search.nixos.org/packages?channel=23.11&show=baserow&from=0&size=50&sort=relevance&type=packages&query=Baserow,https://baserow.io/,MIT License
+Datasette ,Database Management,,Yes,"An open source multi-tool for exploring and publishing data, easy import and export and database management.",Multi-tool for exploring and publishing data,https://github.com/simonw/datasette,"System Requirements
+
+Operating System: Compatible with any system that supports Python 3.7 or higher.
+Python: Version 3.7 or higher.
+Memory: At least 1 GB of RAM is recommended.
+Storage: Minimum of 5 GB of free disk space to ensure smooth operation, depending on the size of your SQLite databases.",https://docs.datasette.io/en/stable/installation.html,https://search.nixos.org/packages?channel=23.11&show=python310Packages.datasette&from=0&size=50&sort=relevance&type=packages&query=Datasette+,https://datasette.io/,Apache License 2.0
+Nextcloud ,File Transfer & Synchronization,,Yes,"Access and share your files, calendars, contacts, mail and more from any device, on your terms.",Nextcloud themed desktop client,https://github.com/nextcloud/server,"Nextcloud System Requirements
+
+Operating System:
+
+Ubuntu 20.04 LTS (recommended)
+Red Hat Enterprise Linux 8
+Debian 10 (Buster)
+SUSE Linux Enterprise Server 15
+openSUSE Leap 42.1+
+CentOS 8
+CPU:
+
+64-bit CPU required
+Memory:
+
+Minimum: 128MB RAM per process
+Recommended: 512MB RAM per process
+Storage:
+
+Minimum: 5 GB of free disk space
+Database:
+
+MySQL 8.0+ or MariaDB 10.2/10.3/10.4/10.5/10.6 (recommended)
+PostgreSQL 9.6/10/11/12/13
+SQLite (for testing and minimal instances)
+Web Server:
+
+Apache 2.4 with mod_php or php-fpm (recommended)
+nginx with php-fpm
+PHP Runtime:
+
+Supported versions: 7.3, 7.4, 8.0 (recommended)",https://nextcloud.com/install/#install-clients,https://search.nixos.org/packages?channel=23.11&show=nextcloud-client&from=0&size=50&sort=relevance&type=packages&query=Nextcloud+,https://nextcloud.com/,GNU General Public License v2.0 or later
+Samba ,File Transfer & Synchronization,,Yes,"Samba is the standard Windows interoperability suite of programs for Linux and Unix. It provides secure, stable and fast file and print services for all clients using the SMB/CIFS protocol. ",The standard Windows interoperability suite of programs for Linux and Unix,https://git.samba.org/samba.git/,"Operating System: A Unix-like OS such as a Linux distribution.
+Dependencies: Essential packages include autoconf, automake, gcc, krb5-devel, libacl-devel, and others.
+File System Support: Compatible with ext4, XFS, or Btrfs.
+Kerberos: Configure either Heimdal or MIT Kerberos in /etc/krb5.conf.
+Time Synchronization: Use an NTP client for synchronized time.
+Host Name Resolution: Proper DNS setup or correct /etc/hosts entries.",https://wiki.samba.org/index.php/Installing_Samba,https://search.nixos.org/packages?channel=23.11&show=samba4Full&from=0&size=50&sort=relevance&type=packages&query=Samba+,https://www.samba.org/,GNU General Public License v3.0
+Seafile ,File Transfer & Synchronization,,Yes,File hosting and sharing solution primary for teams and organizations. ,"Shared components of Seafile: seafile-daemon, libseafile, libseafile python bindings, manuals, and icons",https://github.com/haiwen/seafile,"Operating System:
+
+Linux: Ubuntu, Debian, CentOS, or Fedora.
+Raspberry Pi: Specific version available.
+Docker: Option available for Docker-based installation.
+Storage Requirements:
+
+Minimum: 2GB for installation and testing.
+Recommended: Depends on the number of users and the amount of data stored, typically tens to hundreds of GB.
+Additional Requirements:
+
+64-bit architecture for generic Linux installation.
+.NET Framework 4.7.2 for Outlook add-on.",https://www.seafile.com/en/download/,https://search.nixos.org/packages?channel=23.11&show=seafile-shared&from=0&size=50&sort=relevance&type=packages&query=Seafile+,https://www.seafile.com/en/home/,GNU General Public License v2.0 or later
+Unison,File Transfer & Synchronization,,Yes,"Unison is a file-synchronization tool for OSX, Unix, and Windows.",Bidirectional file synchronizer,https://github.com/bcpierce00/unison,"Requirements for Running Unison
+
+Operating System:
+
+Unix (OSX, Solaris, Linux, etc.)
+Windows (95, 98, NT, 2k, XP)
+Remote Execution:
+
+SSH for remote commands.
+Permissions:
+
+Run with user ID of file owner, not setuid.
+Storage:
+
+Archive Files:
+Unix: $HOME/.unison
+Windows: $USERPROFILE\.unison, $HOME\.unison, or C:\.unison
+OS X: $HOME/.unison or $HOME/Library/Application Support/Unison
+Backups: Stored locally near original files or in a central directory specified by backupdir.","file:///C:/Users/user/Downloads/unison-manual.pdf
+
+
+
+https://github.com/bcpierce00/unison/wiki/",https://search.nixos.org/packages?channel=23.11&show=unison&from=0&size=50&sort=relevance&type=packages&query=Unison,https://www.cis.upenn.edu/~bcpierce/unison/,GNU General Public License v3.0 or later
+Ceph,File Transfer - Distributed Filesystems,,Yes,"Distributed object, block, and file storage platform.",Tools needed to mount Ceph's RADOS Block Devices/Cephfs,https://github.com/ceph/ceph,"Hardware
+
+Servers:
+
+Monitor nodes: Minimum 3 servers.
+OSD nodes: Dedicated disks for each OSD (preferably SSDs).
+Disks:
+
+OSD: Dedicated disks (use SSDs for performance).
+OS: Separate SSD for the operating system.
+Network:
+
+Minimum two 1Gbps NICs per host; 10Gbps recommended.
+
+Software
+
+OS: CentOS, Ubuntu, Debian.
+Installation Tools: cephadm, Rook.
+Dependencies: Docker/Podman, Python 3.",https://docs.ceph.com/en/latest/install/,https://search.nixos.org/packages?channel=23.11&show=ceph-client&from=0&size=50&sort=relevance&type=packages&query=Ceph,https://ceph.io/en/,"GNU Lesser General Public License v2.1 ▪ GNU General Public License v2.0 ▪ BSD 3-clause ""New"" or ""Revised"" License ▪ MIT License"
+DRBD,File Transfer - Distributed Filesystems,,Yes,"Distributed replicated storage system, implemented as a Linux kernel driver.","Distributed Replicated Block Device, a distributed storage system for Linux (userspace utilities)",https://github.com/LINBIT/drbd,"DRBD Requirements
+
+Operating System: Linux with kernel version 3.10 or newer.
+Kernel Modules: Load the DRBD kernel module.
+Network Configuration: Sufficient bandwidth and low-latency network; RDMA recommended for high performance.
+Storage:
+Local storage devices for data mirroring.
+Peer nodes for data replication.
+Implement buffering and compression for disaster recovery.",https://github.com/LINBIT/drbd,https://search.nixos.org/packages?channel=23.11&show=drbd&from=0&size=50&sort=relevance&type=packages&query=DRBD,https://linbit.com/drbd/,GNU General Public License v2.0 or later
+GlusterFS,File Transfer - Distributed Filesystems,,Yes,"Software-defined distributed storage that can scale to several petabytes, with interfaces for object, block and file storage.",Distributed storage system,https://github.com/gluster/glusterfs,"Hardware Requirements:
+
+CPU: At least a dual-core processor.
+Memory: Minimum of 1 GB of RAM per brick.
+Storage:
+Disks or partitions on each node that will be used for Gluster storage.
+For optimal performance, it is recommended to use separate disks or partitions for the operating system and the Gluster storage.
+Ensure sufficient disk space based on your storage needs.",https://docs.gluster.org/en/latest/Install-Guide/Overview/,https://search.nixos.org/packages?channel=23.11&show=glusterfs&from=0&size=50&sort=relevance&type=packages&query=GlusterFS,https://www.gluster.org/,GNU Lesser General Public License v3.0 or later
+JuiceFS,File Transfer - Distributed Filesystems,,Yes,Distributed POSIX file system built on top of Redis and S3. ,A distributed POSIX file system built on top of Redis and S3,https://github.com/juicedata/juicefs,"JuiceFS Client: Install and configure the JuiceFS client.
+Metadata Engine: Set up one of the supported engines (Redis, MySQL, SQLite, or TiKV).
+Object Storage: Use a supported service like Amazon S3, Google Cloud Storage, Azure Blob Storage, or Alibaba Cloud OSS.",https://juicefs.com/docs/community/getting-started/standalone/,https://search.nixos.org/packages?channel=23.11&show=juicefs&from=0&size=50&sort=relevance&type=packages&query=JuiceFS,https://juicefs.com/en/,Apache License 2.0
+Kubo,File Transfer - Distributed Filesystems,Yes,Yes,"Implementation of IPFS, a global, versioned, peer-to-peer filesystem that seeks to connect all computing devices with the same system of files.",An IPFS implementation in Go,https://github.com/ipfs/kubo,"kubo's build system requires Go and some standard POSIX build tools:
+
+GNU make
+Git
+GCC (or some other go compatible C Compiler) (optional)
+To build without GCC, build with CGO_ENABLED=0 (e.g., make build CGO_ENABLED=0).",https://github.com/ipfs/kubo#install,https://search.nixos.org/packages?channel=23.11&show=kubo&from=0&size=50&sort=relevance&type=packages&query=Kubo,https://ipfs.tech/,MIT License
+Minio,File Transfer - Distributed Filesystems,,Yes,"High-performance, S3 compatible object store built for large scale AI/ML, data lake and database workloads.",An S3-compatible object storage server,https://github.com/minio/minio,"To run MinIO with erasure coding, you need:
+
+Minimum Setup: At least 4 nodes with 4 drives each.
+Exclusive Access: Drives should be exclusively used by MinIO without interference from other processes.
+Storage Requirements: Depending on your chosen parity, you need sufficient storage. For example:
+EC:4 (12 TiB usable from 16 TiB)
+EC:6 (10 TiB usable from 16 TiB)
+EC:8 (8 TiB usable from 16 TiB)",https://min.io/docs/minio/linux/operations/concepts/erasure-coding.html,https://search.nixos.org/packages?channel=23.11&show=minio_legacy_fs&from=0&size=50&sort=relevance&type=packages&query=Minio,https://min.io/,GNU Affero General Public License v3.0 or later
+MooseFS,File Transfer - Distributed Filesystems,,Yes,"Fault tolerant, network distributed file system.","Open Source, Petabyte, Fault-Tolerant, Highly Performing, Scalable Network Distributed File System",https://github.com/moosefs/moosefs,"MooseFS can be installed on any POSIX compliant operating system including various Linux distributions, FreeBSD and macOS:
+
+Ubuntu
+Debian
+RHEL / CentOS
+OpenSUSE
+FreeBSD
+macOS",https://github.com/moosefs/moosefs,https://search.nixos.org/packages?channel=23.11&show=moosefs&from=0&size=50&sort=relevance&type=packages&query=MooseFS,https://moosefs.com/,GNU General Public License v2.0
+OpenAFS,File Transfer - Distributed Filesystems,,Yes,Distributed network file system with read-only replicas and multi-OS support.,Open AFS client,https://git.openafs.org/?p=openafs.git;a=summary,"macOS
+Operating System: macOS 10.15 or later.
+Storage: Several gigabytes of free space.
+Network: Stable connection.
+
+
+Windows
+Operating System: Windows 7, 8, 8.1, or 10 (32-bit/64-bit).
+Storage: Several gigabytes of free space.
+Network: Stable connection.","https://www.openafs.org/macos.html
+
+https://www.openafs.org/windows.html",https://search.nixos.org/packages?channel=23.11&show=openafs&from=0&size=50&sort=relevance&type=packages&query=OpenAFS,https://www.openafs.org/,IBM Public License v1.0
+Openstack Swift ,File Transfer - Distributed Filesystems,,Yes,"A highly available, distributed, eventually consistent object/blob store. ",Python bindings to the OpenStack Object Storage API,https://opendev.org/openstack/swift,"Hardware Requirements:
+Controller Node:
+CPU: Dual-core or more
+RAM: 8 GB minimum
+Disk: 100 GB minimum
+Compute Node:
+CPU: Dual-core or more
+RAM: 8 GB minimum
+Disk: 100 GB minimum
+Storage Node (if used):
+CPU: Dual-core or more
+RAM: 8 GB minimum
+Disk: 1 TB or more (based on use case)
+Network Requirements:
+At least two NICs per node (management and data traffic)
+Software Requirements:
+Operating System:
+Ubuntu 20.04 LTS, CentOS 8, Debian 10, RHEL 8, openSUSE Leap 15.2, or Fedora 32
+Database:
+MariaDB or MySQL
+Message Broker:
+RabbitMQ
+Identity Service:
+Keystone
+Block Storage:
+Cinder
+Object Storage:
+Swift
+Shared Storage:
+NFS or similar",https://docs.openstack.org/install-guide/overview.html,https://search.nixos.org/packages?channel=23.11&show=swiftclient&from=0&size=50&sort=relevance&type=packages&query=Openstack+Swift+,https://www.openstack.org/,Apache License 2.0
+Perkeep ,File Transfer - Distributed Filesystems,,Yes,"A set of open source formats, protocols, and software for modeling, storing, searching, sharing and synchronizing data (previously Camlistore).","A way of storing, syncing, sharing, modelling and backing up content (née Camlistore)",https://github.com/perkeep/perkeep,"To run Perkeep, you need to:
+
+Install Go: Version 1.19 or newer.
+Clone the Repository: Use git clone https://github.com/perkeep/perkeep.git.
+Build Perkeep: Navigate to the cloned directory and run go run make.go.
+Run the Server: Start the server with ./bin/perkeepd, which creates necessary configuration and keys.",https://perkeep.org/download,https://search.nixos.org/packages?channel=23.11&show=perkeep&from=0&size=50&sort=relevance&type=packages&query=Perkeep+,https://perkeep.org/, Apache License 2.0
+Minio,File Transfer - Object Storage & File Servers,,Yes,Minio is an open source object storage server compatible with Amazon S3 APIs,An S3-compatible object storage server,https://github.com/minio/minio,"To run MinIO:
+
+System Requirements: 64-bit operating system (Linux, macOS, Windows), 1 GB RAM, modern processor.
+Storage: At least one disk. For production, MinIO recommends using Erasure Coding with a minimum of 4 drives per server.",https://github.com/minio/minio,https://search.nixos.org/packages?channel=23.11&show=minio_legacy_fs&from=0&size=50&sort=relevance&type=packages&query=Minio,https://min.io/,GNU Affero General Public License v3.0 or later
+SeaweedFS ,File Transfer - Object Storage & File Servers,,Yes,"SeaweedFS is an open source distributed file system supporting WebDAV, S3 API, FUSE mount, HDFS, etc, optimized for lots of small files, and easy to add capacity.",Simple and highly scalable distributed file system,https://github.com/seaweedfs/seaweedfs,"Operating System: Linux, macOS, Windows.
+Hardware:
+CPU: Modern multi-core processor.
+Memory: At least 1GB of RAM.
+Storage: Sufficient disk space for your files.
+Dependencies: None required.",https://github.com/seaweedfs/seaweedfs,https://search.nixos.org/packages?channel=23.11&show=seaweedfs&from=0&size=50&sort=relevance&type=packages&query=SeaweedFS+,https://github.com/seaweedfs/seaweedfs,Apache License 2.0
+SFTPGo ,File Transfer - Object Storage & File Servers,,Yes,"Flexible, fully featured and highly configurable SFTP server with optional FTP/S and WebDAV support.",Fully featured and highly configurable SFTP server,https://github.com/drakkan/sftpgo,"Requirements
+
+The only (optional) requirement is a suitable SQL server to use as data provider:
+
+upstream supported versions of PostgreSQL, MySQL and MariaDB.
+CockroachDB stable.
+You can remove this requirement by using an embedded SQLite, bolt or in memory data provider.",https://sftpgo.github.io/latest/installation/,https://search.nixos.org/packages?channel=23.11&show=sftpgo&from=0&size=50&sort=relevance&type=packages&query=SFTPGo+,https://sftpgo.com/,GNU Affero General Public License v3.0 only
+Deluge ,File Transfer - Peer-to-peer Filesharing,,Yes,"Lightweight, cross-platform BitTorrent client.",Torrent client,https://git.deluge-torrent.org/deluge/tree/?h=develop,"Linux: Available for multiple distributions like Ubuntu, Debian, Fedora, OpenSUSE, Arch, Gentoo, and via Flatpak.
+Windows: Installer available for versions 7, 8, and 10.
+macOS: Deluge 2.0 packages are not yet available, but older versions can be used.
+BSD Unix: Available for FreeBSD.
+Docker: Available via LinuxServer.",https://dev.deluge-torrent.org/wiki/Download,https://search.nixos.org/packages?channel=23.11&show=deluged&from=0&size=50&sort=relevance&type=packages&query=Deluge+,https://deluge-torrent.org/,GNU General Public License v3.0 or later
+qBittorrent ,File Transfer - Peer-to-peer Filesharing,,Yes, Free cross-platform bittorrent client with a feature rich Web UI for remote access.,Featureful free software BitTorrent client,https://github.com/qbittorrent/qBittorrent,"Operating System:
+
+Windows 10 / 11
+macOS Catalina / Big Sur / Monterey
+Linux
+Storage Requirements:
+
+Minimum of 100MB for installation.
+Additional storage based on the number and size of torrent files.",https://www.qbittorrent.org/download,https://search.nixos.org/packages?channel=23.11&show=qbittorrent-qt5&from=0&size=50&sort=relevance&type=packages&query=qBittorrent+,https://www.qbittorrent.org/,GNU General Public License v2.0 or later
+Transmission ,File Transfer - Peer-to-peer Filesharing,,Yes,"Fast, easy, free Bittorrent client. ","A fast, easy and free BitTorrent client",https://github.com/transmission/transmission,"macOS:
+
+macOS 10.13 or later
+Windows:
+
+Windows 10 or later (standard build)
+Windows 7 or later (Qt5 build)
+Linux & Unix:
+
+Supported on various distributions (specific instructions provided on the website)
+Storage:
+
+Minimal storage for installation; additional space needed for torrent data.",https://transmissionbt.com/download,https://search.nixos.org/packages?channel=23.11&show=transmission&from=0&size=50&sort=relevance&type=packages&query=Transmission+,https://transmissionbt.com/,GNU General Public License v2.0 or later
+,File Transfer - Web-based File Managers,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,Yes,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Audiobookshelf,"Media Streaming - Audio Streaming",,Yes,"Fully open-source self-hosted audiobook and podcast server. It streams all audio formats, keeps and syncs progress across devices. Comes with open-source apps for Android and iOS.","Self-hosted audiobook and podcast server",https://github.com/advplyr/audiobookshelf,"CPU: 1GHz dual-core, RAM: 512MB, Storage: 200MB",https://www.audiobookshelf.org/docs,https://search.nixos.org/packages?channel=23.11&show=audiobookshelf&from=0&size=50&sort=relevance&type=packages&query=Audiobookshelf,https://www.audiobookshelf.org/,GNU General Public License v3.0
+Beets,"Media Streaming - Audio Streaming",,Yes,Music library manager and MusicBrainz tagger (command-line and Web interface).,"Music tagger and library organizer",https://github.com/beetbox/beets,"CPU: 1GHz, RAM: 512MB, Storage: 100MB",https://beets.io/,https://search.nixos.org/packages?channel=23.11&show=beets&from=0&size=50&sort=relevance&type=packages&query=Beets,https://beets.io/,MIT License
+gonic,"Media Streaming - Audio Streaming",,Yes,Lightweight music streaming server. Subsonic compatible.,"Music streaming server / subsonic server API implementation",https://github.com/sentriz/gonic,"A modern CPU, 512 MB RAM, and 50 MB storage.",https://github.com/sentriz/gonic,https://search.nixos.org/packages?channel=23.11&show=gonic&from=0&size=50&sort=relevance&type=packages&query=gonic,https://github.com/sentriz/gonic,GNU General Public License v3.0
+Mopidy,"Media Streaming - Audio Streaming",,Yes,"Extensible music server. Offers a superset of the mpd API, as well as integration with 3rd party services like Spotify, SoundCloud etc.","An extensible music server that plays music from local disk, Spotify, SoundCloud, and more",https://github.com/mopidy/mopidy,"1 GHz CPU, 512 MB RAM, 300 MB storage, Python 3.11+, and GStreamer 1.22.0+.",https://docs.mopidy.com/latest/installation/index.html,https://search.nixos.org/packages?channel=23.11&show=mopidy&from=0&size=50&sort=relevance&type=packages&query=Mopidy,https://www.mopidy.com/,Apache License 2.0
+mpd,"Media Streaming - Audio Streaming",,Yes,"Daemon to remotely play music, stream music, handle and organize playlists. Many clients available.","A flexible, powerful daemon for playing music",https://github.com/MusicPlayerDaemon/MPD,"A server with a Unix-like OS, 128 MB RAM, and 50 MB storage.	",https://www.musicpd.org/download.html,https://search.nixos.org/packages?channel=23.11&show=mpd-small&from=0&size=50&sort=relevance&type=packages&query=mpd,https://www.musicpd.org/,GNU General Public License v2.0
+Navidrome Music Server,"Media Streaming - Audio Streaming",,Yes,"Modern Music Server and Streamer, compatible with Subsonic/Airsonic.",Navidrome Music Server and Streamer compatible with Subsonic/Airsonic,https://github.com/navidrome/navidrome,"1 GHz CPU, 512 MB RAM, and 10 GB Disk Space.",https://www.navidrome.org/demo/,https://search.nixos.org/packages?channel=23.11&show=navidrome&from=0&size=50&sort=relevance&type=packages&query=Navidrome+Music+Server,https://www.navidrome.org/,GNU General Public License v3.0
+Snapcast,"Media Streaming - Audio Streaming",,Yes,Synchronous multiroom audio server.,Synchronous multi-room audio player,https://github.com/badaix/snapcast,"Dual-core CPU, 512MB RAM, minimal storage for Snapcast server and client	",https://github.com/badaix/snapcast,https://search.nixos.org/packages?channel=23.11&show=snapcast&from=0&size=50&sort=relevance&type=packages&query=Snapcast,https://github.com/badaix/snapcast, GNU General Public License v3.0
+Gerbera,Media Streaming - Multimedia Streaming,,Yes,Gerbera is an UPnP Media Server. It allows you to stream your digital media throughout your home network and listen to/watch it on a variety of UPnP compatible devices.,"UPnP Media Server for 2020",https://github.com/gerbera/gerbera,"Any modern CPU, 512MB RAM, minimal storage for configuration and media files	",https://docs.gerbera.io/,https://search.nixos.org/packages?channel=23.11&show=gerbera&from=0&size=50&sort=relevance&type=packages&query=Gerbera,https://docs.gerbera.io/, GNU General Public License v2.0
+Jellyfin,Media Streaming - Multimedia Streaming,,Yes,"Media server for audio, video, books, comics, and photos with a sleek interface and robust transcoding capabilities. Almost all modern platforms have clients, including Roku, Android TV, iOS, and Kodi.","The Free Software Media System",https://github.com/jellyfin/jellyfin,"Requires a dual-core 64-bit processor, 2 GB RAM, and 20 GB of storage.	",https://docs.jellyfin.org/,https://search.nixos.org/packages?channel=23.11&show=jellyfin&from=0&size=50&sort=relevance&type=packages&query=Jellyfin,https://jellyfin.org/, GNU General Public License v2.0
+Kodi,Media Streaming - Multimedia Streaming,,Yes,Multimedia/Entertainment center for various platforms.,"Media center",https://github.com/xbmc/xbmc,"Need a standard computer or device with a modern CPU, at least 2 GB of RAM, and sufficient storage space for media files and application usage.",https://kodi.tv/,https://search.nixos.org/packages?channel=23.11&show=kodi&from=0&size=50&sort=relevance&type=packages&query=Kodi,https://kodi.tv/,GPL-2.0
+LBRY,Media Streaming - Multimedia Streaming,,Yes,"Secure, open, and community-run digital marketplace to replace Youtube and Amazon.","A browser and wallet for LBRY, the decentralized, user-controlled content marketplace",https://github.com/lbryio/lbry.com,"Need a standard computer with a modern CPU, at least 2 GB of RAM, and ample storage space for downloaded content.",https://lbry.com/,https://search.nixos.org/packages?channel=23.11&show=lbry&from=0&size=50&sort=relevance&type=packages&query=LBRY,https://lbry.com/,MIT License
+Rygel,Media Streaming - Multimedia Streaming,,Yes,"UPnP AV MediaServer to share audio, video, and pictures.","A home media solution (UPnP AV MediaServer) that allows you to easily share audio, video and pictures to other devices",https://gitlab.gnome.org/GNOME/rygel/,"Need a modern CPU, at least 2 GB of RAM, and enough storage space for your media files.",https://wiki.gnome.org/action/show/Projects/Rygel,https://search.nixos.org/packages?channel=23.11&show=gnome.rygel&from=0&size=50&sort=relevance&type=packages&query=Rygel,https://wiki.gnome.org/Projects/Rygel,GNU Lesser General Public License v2.1
+µStreamer,Media Streaming - Multimedia Streaming,,Yes,Lightweight server to stream MJPEG video from V4L2 devices to the net.,"Lightweight and fast MJPG-HTTP streamer",https://github.com/pikvm/ustreamer,"Raspberry Pi 3 or higher, at least 1 GB of RAM, and sufficient storage space for the operating system and software.",,https://search.nixos.org/packages?channel=23.11&show=ustreamer&from=0&size=50&sort=relevance&type=packages&query=%C2%B5Streamer,https://github.com/pikvm/ustreamer, GNU General Public License v3.0
+Invidious,Media Streaming - Video Streaming,,Yes,Alternative YouTube front-end.,An open source alternative front-end to YouTube,https://github.com/iv-org/invidious,"Modern multi-core CPU, at least 1GB of RAM, and 1GB of storage space.",https://invidious.io/,https://search.nixos.org/packages?channel=23.11&show=invidious&from=0&size=50&sort=relevance&type=packages&query=Invidious,https://invidious.io/,AGPL-3.0
+Owncast,Media Streaming - Video Streaming,,Yes,Decentralized single-user live video streaming and chat server for running your own live streams.,"self-hosted video live streaming solution",https://github.com/owncast/owncast,"Atleast a dual-core CPU, 2 GB of RAM, and 20 GB of storage",https://owncast.online/quickstart/installation/,https://search.nixos.org/packages?channel=23.11&show=owncast&from=0&size=50&sort=relevance&type=packages&query=Owncast,https://owncast.online/,MIT License
+Alerta,Monitoring,,Yes,"Distributed, scalable and flexible monitoring system.","Alerta Monitoring System command-line interface",https://github.com/alerta/alerta,"Requires 1 CPU core, 512 MB RAM, and 1 GB storage.",https://alerta.io/,https://search.nixos.org/packages?channel=23.11&show=alerta&from=0&size=50&sort=relevance&type=packages&query=Alerta,https://alerta.io/,Apache-2.0
+cadvisor,Monitoring,,Yes,Analyzes resource usage and performance characteristics of running containers.,"Analyzes resource usage and performance characteristics of running docker containers",https://github.com/google/cadvisor,"Requires 1 CPU core, 256 MB RAM, and 50 MB storage.	",https://github.com/google/cadvisor,https://search.nixos.org/packages?channel=23.11&show=cadvisor&from=0&size=50&sort=relevance&type=packages&query=cadvisor,https://github.com/google/cadvisor,Apache License 2.0
+glances,Monitoring,,Yes,"Open-source, cross-platform real-time monitoring tool with CLI and web dashboard interfaces and many exporting options.","Cross-platform curses-based monitoring tool",https://github.com/nicolargo/glances,"Requires 1 CPU core, 512 MB RAM, and 100 MB storage.	",https://nicolargo.github.io/glances/,https://search.nixos.org/packages?channel=23.11&show=glances&from=0&size=50&sort=relevance&type=packages&query=glances,https://nicolargo.github.io/glances/,GNU Lesser General Public License v3.0
+Healthchecks,Monitoring,,Yes,"Monitoring for cron jobs, background services and scheduled tasks.","A cron monitoring tool written in Python & Django
+",https://github.com/healthchecks/healthchecks,"Requires 1 CPU core, 256 MB RAM, and 500 MB storage.	",https://github.com/healthchecks/healthchecks,https://search.nixos.org/packages?channel=23.11&show=healthchecks&from=0&size=50&sort=relevance&type=packages&query=Healthchecks,https://github.com/healthchecks/healthchecks,"BSD 3-clause ""New"""
+Munin,Monitoring,,Yes,Networked resource monitoring tool.,"Networked resource monitoring tool",https://github.com/munin-monitoring/munin,"Requires 1 CPU core, 512 MB RAM, and 500 MB storage.	",https://munin-monitoring.org/,https://search.nixos.org/packages?channel=23.11&show=munin&from=0&size=50&sort=relevance&type=packages&query=Munin,https://munin-monitoring.org/,GNU General Public License v2.0
+Netdata,Monitoring,,Yes,"Distributed, real-time, performance and health monitoring for systems and applications. Runs on Linux, FreeBSD, and MacOS.",Real-time performance monitoring tool,https://github.com/netdata/netdata,"Requires 1 CPU core, 1 GB RAM, and 1 GB storage.	",https://www.netdata.cloud/,https://search.nixos.org/packages?channel=23.11&show=netdata&from=0&size=50&sort=relevance&type=packages&query=Netdata,https://www.netdata.cloud/,GNU General Public License v3.0
+Prometheus,Monitoring,Yes,Yes,Service monitoring system and time series database.,Service monitoring system and time series database,https://github.com/prometheus/prometheus,"Requires 1 CPU core, 2 GB RAM, and 10 GB storage.	",https://prometheus.io/,https://search.nixos.org/packages?channel=23.11&show=prometheus&from=0&size=50&sort=relevance&type=packages&query=Prometheus,https://prometheus.io/,Apache License 2.0
+Sensu,Monitoring,,Yes,Monitoring tool for ephemeral infrastructure and distributed applications.,"Open source monitoring tool for ephemeral infrastructure & distributed applications",https://github.com/sensu/sensu-go,"Requires 1 CPU core, 512 MB RAM, and 1 GB storage.	",https://sensu.io/,https://search.nixos.org/packages?channel=23.11&show=sensu-go-cli&from=0&size=50&sort=relevance&type=packages&query=Sensu,https://sensu.io/,MIT License
+Zabbix,Monitoring,,Yes,Enterprise-class software for monitoring of networks and applications.,"An enterprise-class open source distributed monitoring solution (web frontend)",https://git.zabbix.com/projects/ZBX/repos/zabbix/browse,"Requires 1 CPU core, 1 GB RAM, and 5 GB storage.	",https://www.zabbix.com/,https://search.nixos.org/packages?channel=23.11&show=zabbix.web&from=0&size=50&sort=relevance&type=packages&query=Zabbix,https://www.zabbix.com/,GNU General Public License v2.0
+Bitwarden,"Password Managers",,Yes,"Password manager with webapp, browser extension, and mobile app.","A secure and free password manager for all of your devices",https://github.com/bitwarden/server,"Need a basic CPU, about 1GB of RAM, and a small amount of storage space.",https://bitwarden.com/,https://search.nixos.org/packages?channel=23.11&show=bitwarden&from=0&size=50&sort=relevance&type=packages&query=Bitwarden,https://bitwarden.com/,AGPL-3.0
+Passky,"Password Managers",,Yes,"Simple, modern and open source password manager with website, browser extension, android and desktop application.","A simple, modern, lightweight, open source and secure password manager",https://github.com/Rabbit-Company/Passky-Server,Computer with at least 1GB of RAM and a modern processor to run smoothly.,https://passky.org/,https://search.nixos.org/packages?channel=23.11&show=passky-desktop&from=0&size=50&sort=relevance&type=packages&query=Passky,https://passky.org/, GNU General Public License v3.0
+Vaultwarden,"Password Managers",,Yes,Lightweight Bitwarden server API implementation written in Rust.,"Unofficial Bitwarden compatible server written in Rust",https://github.com/dani-garcia/vaultwarden,"At least 512MB of RAM, a modern CPU (such as an Intel Core i3 or equivalent), and a minimum of 100MB of available storage space to operate.",https://github.com/dani-garcia/vaultwarden,https://search.nixos.org/packages?channel=23.11&show=vaultwarden-postgresql&from=0&size=50&sort=relevance&type=packages&query=Vaultwarden,https://github.com/dani-garcia/vaultwarden,GNU Affero General Public License v3.0
+imgproxy,Proxy,,Yes,Fast and secure standalone server for resizing and converting remote images. It works great when you need to resize multiple images on the fly without preparing a ton of cached resized images or re-doing it every time the design changes.,Fast and secure on-the-fly image processing server written in Go,https://github.com/imgproxy/imgproxy,"At least a dual-core CPU, 4 GB or more RAM is recommended, have enough storage to handle your anticipated workload comfortably.",https://github.com/imgproxy/imgproxy,https://search.nixos.org/packages?channel=23.11&show=imgproxy&from=0&size=50&sort=relevance&type=packages&query=imgproxy,https://imgproxy.net/,MIT License
+iodine,Proxy,,Yes,"IPv4 over DNS tunnel solution, enabling you to start up a socks5 proxy listener.","Tool to tunnel IPv4 data through a DNS server",https://github.com/yarrick/iodine,"CPU: Low, typically does not require much processing power.
+RAM: Minimal, around 32MB to 64MB.
+Storage: Minimal disk space required, usually less than 10MB.",http://code.kryo.se/iodine/,https://search.nixos.org/packages?channel=23.11&show=iodine&from=0&size=50&sort=relevance&type=packages&query=iodine,http://code.kryo.se/iodine/,ISC License
+Pomerium,Proxy,,Yes,"An identity-aware reverse proxy, successor to now obsolete oauth_proxy. It inserts an OAuth step before proxying your request to the backend, so that you can safely expose your self-hosted websites to public Internet.","Authenticating reverse proxy",https://github.com/pomerium/pomerium,"CPU: Moderate, depends on the workload and traffic volume.
+RAM: At least 512MB to 1GB.
+Storage: Minimal, around 100MB for installation and logs.",https://pomerium.io/,https://search.nixos.org/packages?channel=23.11&show=pomerium&from=0&size=50&sort=relevance&type=packages&query=Pomerium,https://pomerium.io/,Apache License 2.0
+Privoxy,Proxy,,Yes,"Non-caching web proxy with advanced filtering capabilities for enhancing privacy, modifying web page data and HTTP headers, controlling access, and removing ads and other obnoxious Internet junk.","Non-caching web proxy with advanced filtering capabilities",https://github.com/NixOS/nixpkgs/blob/nixos-23.11/pkgs/tools/networking/privoxy/default.nix#L39,"CPU: Low to moderate, depending on the traffic and filtering rules.
+RAM: Typically around 128MB to 256MB.
+Storage: Minimal, less than 50MB for installation and configuration.",https://www.privoxy.org/,https://search.nixos.org/packages?channel=23.11&show=privoxy&from=0&size=50&sort=relevance&type=packages&query=Privoxy,https://www.privoxy.org/,GNU General Public License v2.0
+sish,Proxy,,Yes,HTTP(S)/WS(S)/TCP tunnels to localhost using only SSH (serveo/ngrok alternative).,"HTTP(S)/WS(S)/TCP Tunnels to localhost",https://github.com/antoniomika/sish,"CPU: Low, suitable for lightweight usage.
+RAM: Minimal, around 64MB to 128MB.
+Storage: Minimal, less than 50MB.",https://github.com/antoniomika/sish,https://search.nixos.org/packages?channel=23.11&show=sish&from=0&size=50&sort=relevance&type=packages&query=sish,https://github.com/antoniomika/sish,MIT License
+Squid,Proxy,,Yes,"Caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages.","A caching proxy for the Web supporting HTTP, HTTPS, FTP, and more",https://code.launchpad.net/squid,"CPU: Moderate to high, depending on the number of clients and traffic.
+RAM: At least 1GB, recommended 2GB or more for better performance.
+Storage: Variable, typically needs several hundred MBs to GBs for cache storage depending on configuration and usage.",http://www.squid-cache.org/,https://search.nixos.org/packages?channel=23.11&show=squid&from=0&size=50&sort=relevance&type=packages&query=Squid,http://www.squid-cache.org/,GNU General Public License v2.0
+Tinyproxy,Proxy,,Yes,Light-weight HTTP/HTTPS proxy daemon.,A light-weight HTTP/HTTPS proxy daemon for POSIX operating systems,https://github.com/tinyproxy/tinyproxy,"CPU: Low, suitable for light to moderate usage.
+RAM: Minimal, around 64MB to 128MB.
+Storage: Minimal, less than 50MB.",https://tinyproxy.github.io/,https://search.nixos.org/packages?channel=23.11&show=tinyproxy&from=0&size=50&sort=relevance&type=packages&query=Tinyproxy,https://tinyproxy.github.io/,GNU General Public License v2.0
+Guacamole,"Remote Access",,Yes,Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC and RDP.,"Clientless remote desktop gateway",https://github.com/apache/guacamole-server,"Requires at least a 1 GHz CPU, 1 GB of RAM, and 100 MB of available disk space.",https://guacamole.apache.org/,https://search.nixos.org/packages?channel=23.11&show=guacamole-server&from=0&size=50&sort=relevance&type=packages&query=Guacamole,https://guacamole.apache.org/,Apache-2.0
+MeshCentral,"Remote Access",,Yes,"A full computer management website. With MeshCentral, you can run your own web server to remotely manage and control computers on a local network or anywhere on the internet.","Computer management web app",https://github.com/Ylianst/MeshCentral,"Needs a minimum of a 1 GHz CPU, 1 GB of RAM, and 200 MB of available disk space.",https://meshcentral.com/,https://search.nixos.org/packages?channel=23.11&show=meshcentral&from=0&size=50&sort=relevance&type=packages&query=MeshCentral,https://meshcentral.com/,Apache License 2.0
+RustDesk,"Remote Access",,Yes,Remote Desktop Access software that works out-of-the-box (alternative to TeamViewer).,Virtual / remote desktop infrastructure for everyone! Open source TeamViewer / Citrix alternative,https://github.com/rustdesk/rustdesk-server,"Recommends a 1 GHz dual-core processor, 2 GB of RAM, and 100 MB of available disk space.",https://rustdesk.com/,https://search.nixos.org/packages?channel=23.11&show=rustdesk&from=0&size=50&sort=relevance&type=packages&query=RustDesk,https://rustdesk.com/,GNU Affero General Public License v3.0
+ShellHub,"Remote Access",,Yes,"ShellHub is a modern SSH server for remotely accessing linux devices via command line (using any SSH client) or web-based user interface, designed as an alternative to sshd.",Enables easy access any Linux device behind firewall and NAT,https://github.com/shellhub-io/shellhub,"Requires a 1 GHz CPU, 512 MB of RAM, and 100 MB of available disk space.",https://shellhub.io/,https://search.nixos.org/packages?channel=23.11&show=shellhub-agent&from=0&size=50&sort=relevance&type=packages&query=ShellHub,https://shellhub.io/,Apache License 2.0
+Hound,"Search Engines",,Yes,Lightning fast code searching made easy.,"Lightning fast code searching made easy",https://github.com/hound-search/hound,"Needs at least a 1 GHz CPU, 1 GB of RAM, and 100 MB of available disk space.",https://github.com/hound-search/hound,https://search.nixos.org/packages?channel=23.11&show=hound&from=0&size=50&sort=relevance&type=packages&query=Hound,https://github.com/hound-search/hound,MIT License
+Manticore Search,"Search Engines",,Yes,"Full-text search and data analytics, with fast response time for small, medium and big data (alternative to Elasticsearch).",Easy to use open source fast database for search,https://github.com/manticoresoftware/manticoresearch/,"Requires a 1 GHz CPU, 1 GB of RAM (2 GB recommended for better performance), and sufficient disk space depending on indexed data size.",https://manticoresearch.com/,https://search.nixos.org/packages?channel=23.11&show=manticoresearch&from=0&size=50&sort=relevance&type=packages&query=Manticore+Search,https://manticoresearch.com/,GNU General Public License v2.0
+OpenSearch,"Search Engines",,Yes,Open source distributed and RESTful search engine.,"Open Source, Distributed, RESTful Search Engine",https://github.com/opensearch-project/OpenSearch,"Needs a 1 GHz CPU, 2 GB of RAM, and 500 MB of available disk space.",https://github.com/opensearch-project/OpenSearch,https://search.nixos.org/packages?channel=23.11&show=opensearch&from=0&size=50&sort=relevance&type=packages&query=OpenSearch,https://github.com/opensearch-project/OpenSearch,Apache License 2.0
+SearXNG,"Search Engines",,Yes,Internet metasearch engine which aggregates results from various search services and databases (Fork of Searx).,"A fork of Searx, a privacy-respecting, hackable metasearch engine",https://github.com/searxng/searxng/,"Requires a 1 GHz CPU, 512 MB of RAM (1 GB recommended), and 50 MB of available disk space.",https://github.com/searxng/searxng,https://search.nixos.org/packages?channel=23.11&show=searxng&from=0&size=50&sort=relevance&type=packages&query=SearXNG,https://github.com/searxng/searxng,GNU Affero General Public License v3.0
+Typesense,"Search Engines",,Yes,"Blazing fast, typo-tolerant open source search engine optimized for developer happiness and ease of use.","Typesense is a fast, typo-tolerant search engine for building delightful search experiences.",https://github.com/typesense/typesense,"Requires a 1 GHz CPU, 1 GB of RAM, and 100 MB of available disk space.",https://typesense.org/,https://search.nixos.org/packages?channel=23.11&show=typesense&from=0&size=50&sort=relevance&type=packages&query=Typesense,https://typesense.org/,GNU General Public License v3.0
+ZincSearch,"Search Engines",,Yes,Search engine that requires minimal resources (alternative to Elasticsearch).,"A lightweight alternative to elasticsearch that requires minimal resources, written in Go",https://github.com/zincsearch/zincsearch,"Needs at least a 1 GHz CPU, 1 GB of RAM, and 100 MB of available disk space.",https://zinc.dev/,https://search.nixos.org/packages?channel=23.11&show=zincsearch&from=0&size=50&sort=relevance&type=packages&query=ZincSearch,https://zinc.dev/,Apache License 2.0
+DockSTARTer,"Self-hosting Solutions",,Yes,DockSTARTer helps you get started with home server apps running in Docker.,"DockSTARTer helps you get started with running apps in Docker.",https://github.com/GhostWriters/DockSTARTer,"The requirements vary based on container usage, typically needing a 1 GHz CPU, 1 GB of RAM, and sufficient disk space (at least 10 GB recommended).",https://dockstarter.com/,https://search.nixos.org/packages?channel=23.11&show=dockstarter&from=0&size=50&sort=relevance&type=packages&query=DockSTARTer,https://dockstarter.com/,MIT License
+Svix,"Software Development - API Management",,Yes,Open-source webhooks as a service that makes it super easy for API providers to send webhooks.,"The enterprise-ready webhooks service",https://github.com/svix/svix-webhooks,"Requires 2 cores, 2 GB RAM, and 10 GB storage.	",https://docs.svix.com,https://search.nixos.org/packages?channel=23.11&show=svix-server&from=0&size=50&sort=relevance&type=packages&query=Svix,https://github.com/svix/svix-webhooks,MIT License
+Buildbot,Software Development - Continuous Integration & Continuous Deployment,,Yes,Python-based toolkit for continuous integration.,"An open-source continuous integration framework for automating software build, test, and release processes",https://github.com/buildbot/buildbot,"Requiring a modern CPU, sufficient RAM (usually at least 2GB), and adequate storage space for logs and configurations.",https://buildbot.net/,https://search.nixos.org/packages?channel=23.11&show=buildbot&from=0&size=50&sort=relevance&type=packages&query=Buildbot,https://buildbot.net/,GNU General Public License v2.0
+drone,Software Development - Continuous Integration & Continuous Deployment,,Yes,"Drone is a Continuous Delivery platform built on Docker, written in Go.",Continuous Integration platform built on container technology,https://github.com/drone/drone,"Harness requires Docker, a minimum of 4GB RAM (8GB recommended for complex setups), adequate CPU cores, 10GB storage, and a reliable network connection for CI/CD pipelines.",https://github.com/harness/drone,https://search.nixos.org/packages?channel=23.11&show=drone-oss&from=0&size=50&sort=relevance&type=packages&query=drone,https://github.com/harness/drone,Apache License 2.0
+GitLab CI,Software Development - Continuous Integration & Continuous Deployment,,Yes,"Gitlab's built-in, full-featured CI/CD solution.",GitLab Community Edition,https://gitlab.com/gitlab-org/gitlab-foss,"System requirements generally include a modern multi-core CPU, at least 4GB of RAM, and sufficient disk space for repositories and database storage.",http://www.gitlab.com/,https://search.nixos.org/packages?channel=23.11&show=gitlab&from=0&size=50&sort=relevance&type=packages&query=GitLab+CI,http://www.gitlab.com/,MIT License
+GoCD,Software Development - Continuous Integration & Continuous Deployment,,Yes,Continuous delivery server.,"A continuous delivery server specializing in advanced workflow modeling and visualization",https://github.com/gocd/gocd,"The minimum system requirements for GoCD are at least 2 CPU cores, 2 GB of RAM, and 1 GB of disk space.",https://docs.gocd.org/current/installation/system_requirements.html,https://search.nixos.org/packages?channel=23.11&show=gocd-server&from=0&size=50&sort=relevance&type=packages&query=GoCD,https://github.com/gocd/gocd,Apache License 2.0
+Jenkins,Software Development - Continuous Integration & Continuous Deployment,,Yes,Continuous Integration Server.,An extendable open source continuous integration server,https://github.com/jenkinsci/jenkins/,Requiring around 256 MB of RAM and 1 GB of drive space for a small installation with a few plugins.,https://www.jenkins.io/doc/book/installing/#hardware-recommendations,https://search.nixos.org/packages?channel=23.11&show=jenkins&from=0&size=50&sort=relevance&type=packages&query=Jenkins,https://jenkins.io/,MIT License
+Laminar,Software Development - Continuous Integration & Continuous Deployment,,Yes,"Fast, lightweight, simple and flexible Continuous Integration.","Lightweight and modular continuous integration service",https://github.com/ohwgiles/laminar,"CPU: Usually a modern multi-core processor should suffice.
+RAM: Minimum of 2GB RAM, but this can vary depending on the size and complexity of your projects.
+Storage: Generally, a few GBs of disk space for the application and its data.",https://github.com/ohwgiles/laminar,https://search.nixos.org/packages?channel=23.11&show=laminar&from=0&size=50&sort=relevance&type=packages&query=Laminar,https://laminar.ohwg.net/,GNU General Public License v3.0
+werf,Software Development - Continuous Integration & Continuous Deployment,,Yes,Open Source CI/CD tool for building Docker images and deploying to Kubernetes via GitOps.,"GitOps delivery tool",https://github.com/werf/werf,"Requires a Unix-like OS (Linux/macOS), Docker, Git, Helm, and Kubernetes. It recommends a multi-core CPU, at least 4GB of RAM, and enough disk space for Docker images and build artifacts.",https://werf.io/docs/v2/usage/project_configuration/overview.html,https://search.nixos.org/packages?channel=23.11&show=werf&from=0&size=50&sort=relevance&type=packages&query=werf,https://werf.io/,Apache License 2.0
+Woodpecker,Software Development - Continuous Integration & Continuous Deployment,,Yes,Community fork of Drone that uses Docker containers.,"Command line client for the Woodpecker Continuous Integration server",https://github.com/woodpecker-ci/woodpecker,"Docker: Woodpecker CI relies on Docker for running its jobs. Ensure Docker is installed and properly configured on your system.
+Server Specifications: While there are no explicit hardware requirements, it is recommended to have a server with at least:
+CPU: Multi-core processor.
+RAM: 4GB or more, depending on the load and number of concurrent jobs.
+Storage: Sufficient storage to handle Docker images and build artifacts, typically starting from 20GB.",https://woodpecker-ci.org/,https://search.nixos.org/packages?channel=23.11&show=woodpecker-cli&from=0&size=50&sort=relevance&type=packages&query=Woodpecker,https://woodpecker-ci.org/,Apache License 2.0
+code-server,"Software Development - IDE & Tools",,Yes,"VS Code in the browser, hosted on a remote server.",Run VS Code on a remote machine,https://github.com/coder/code-server,"To run code-server, which allows using VS Code in the browser on a remote server, you need a machine with at least 2 CPU cores, 1 GB of RAM (2 GB recommended), and 32 GB of SSD storage, with WebSockets enabled​ ",https://coder.com/docs/code-server/latest/requirements,https://search.nixos.org/packages?channel=23.11&show=openvscode-server&from=0&size=50&sort=relevance&type=packages&query=code-server,https://github.com/gitpod-io/openvscode-server,MIT License
+RStudio Server,"Software Development - IDE & Tools",,Yes,Web browser based IDE for R.,Set of integrated tools for the R language,https://github.com/rstudio/rstudio,"CPU: 2 cores minimum
+RAM: 2 GB minimum, 8 GB recommended
+Storage: 200 MB for installation, additional space for R packages and user data
+OS: Most modern Linux distributions (e.g., Ubuntu, RHEL, CentOS)",https://support.posit.co/hc/en-us/articles/115002344588-Configuration-and-sizing-recommendations,https://search.nixos.org/packages?channel=23.11&show=rstudio-server&from=0&size=50&sort=relevance&type=packages&query=RStudio+Server,https://www.rstudio.com/,GNU Affero General Public License v3.0
+Wakapi,"Software Development - IDE & Tools",,Yes,"Tracking tool for coding statistics, compatible with WakaTime.",A minimalist self-hosted WakaTime-compatible backend for coding statistics,https://github.com/muety/wakapi,"CPU: Minimal, as it is a lightweight application
+RAM: Minimal, suitable for small servers
+Storage: Low, primarily for database and logs
+OS: Linux or any system with Docker support",https://github.com/muety/wakapi,https://search.nixos.org/packages?channel=23.11&show=wakapi&from=0&size=50&sort=relevance&type=packages&query=Wakapi,https://wakapi.dev/,GNU General Public License v3.0
+PocketBase,"Software Development - Low Code",,Yes,Open Source backend for your next SaaS and Mobile app in 1 file.,"Open Source realtime backend in 1 file",https://github.com/pocketbase/pocketbase,"CPU: 1 core minimum
+RAM: 512 MB minimum
+Storage: Low, dependent on data stored
+OS: Cross-platform, compatible with Windows, macOS, and Linux",https://pocketbase.io/docs,https://search.nixos.org/packages?channel=23.11&show=pocketbase&from=0&size=50&sort=relevance&type=packages&query=PocketBase,https://github.com/pocketbase/pocketbase,MIT License
+SQLPage,"Software Development - Low Code",,Yes,SQL-only dynamic website builder.,"SQL-only webapp builder, empowering data analysts to build websites and applications quickly",https://github.com/lovasoa/SQLPage,"CPU: Low, sufficient for running SQL queries
+RAM: 512 MB minimum
+Storage: Minimal, depends on the size of the SQL database
+OS: Cross-platform",https://github.com/lovasoa/SQLpage,https://search.nixos.org/packages?channel=23.11&show=sqlpage&from=0&size=50&sort=relevance&type=packages&query=SQLPage,https://github.com/lovasoa/SQLpage,MIT License
+Cgit,"Software Development - Project Management",,Yes,A fast lightweight web interface for git repositories.,"Web frontend for git repositories",https://git.zx2c4.com/cgit/tree/,"CPU: Low, suitable for lightweight web servers
+RAM: 128 MB minimum
+Storage: Depends on the size of Git repositories
+OS: Linux",https://git.zx2c4.com/cgit/,https://search.nixos.org/packages?channel=23.11&show=cgit&from=0&size=50&sort=relevance&type=packages&query=Cgit,https://git.zx2c4.com/cgit/about/,GNU General Public License v2.0
+Forgejo,"Software Development - Project Management",,Yes,"A lightweight software forge focused on scaling, federation, and privacy (fork of Gitea).","A self-hosted lightweight software forge",https://codeberg.org/forgejo/forgejo/,"CPU: 2 cores minimum
+RAM: 1 GB minimum
+Storage: Depends on repository size
+OS: Linux, Windows, macOS",https://forgejo.org/docs/latest/,https://search.nixos.org/packages?channel=23.11&show=forgejo&from=0&size=50&sort=relevance&type=packages&query=Forgejo,https://forgejo.org/,MIT License
+Gerrit,"Software Development - Project Management",,Yes,A code review and project management tool for Git based projects.,"A web based code review and repository management for the git version control system",https://github.com/GerritCodeReview/gerrit,"CPU: 2 cores minimum
+RAM: 2 GB minimum, 8 GB recommended
+Storage: Varies based on repositories and metadata
+OS: Linux, Windows",https://www.gerritcodereview.com/,https://search.nixos.org/packages?channel=23.11&show=gerrit&from=0&size=50&sort=relevance&type=packages&query=Gerrit,https://www.gerritcodereview.com/index.md,Apache License 2.0
+Gitolite,"Software Development - Project Management",,Yes,"Gitolite allows you to setup git hosting on a central server, with fine-grained access control and many more powerful features.",Finely-grained git repository hosting,https://github.com/sitaramc/gitolite,"CPU: Low, suitable for lightweight hosting
+RAM: 128 MB minimum
+Storage: Dependent on Git repository size
+OS: Linux",https://gitolite.com/gitolite/index.html,https://search.nixos.org/packages?channel=23.11&show=gitolite&from=0&size=50&sort=relevance&type=packages&query=Gitolite,https://gitolite.com/gitolite/index.html,GNU General Public License v2.0
+Gogs,"Software Development - Project Management",,Yes,Painless self-hosted Git Service written in Go.,"A painless self-hosted Git service",https://github.com/gogs/gogs,"CPU: 1 core minimum
+RAM: 512 MB minimum
+Storage: Dependent on repository size
+OS: Cross-platform",https://github.com/gogs/docs,https://search.nixos.org/packages?channel=23.11&show=gogs&from=0&size=50&sort=relevance&type=packages&query=Gogs,https://gogs.io/,MIT License
+Klaus,"Software Development - Project Management",,Yes,"Simple, easy-to-set-up Git web viewer that Just Works.","The first Git web viewer that Just Works",https://github.com/jonashaag/klaus,"CPU: Low, suitable for basic web servers
+RAM: 128 MB minimum
+Storage: Minimal, depending on repositories
+OS: Linux",https://github.com/jonashaag/klaus,https://search.nixos.org/packages?channel=23.11&show=klaus&from=0&size=50&sort=relevance&type=packages&query=Klaus,https://github.com/jonashaag/klaus,ISC License
+AppFlowy,"Task Management & To-do Lists",,Yes,"With AppFlowy, you can build detailed lists of to-do’s for different projects while tracking the status of each one. Open Source Notion Alternative.","An open-source alternative to Notion",https://github.com/AppFlowy-IO/appflowy,"CPU: 1 core minimum
+RAM: 512 MB minimum
+Storage: Dependent on data stored
+OS: Cross-platform",https://github.com/AppFlowy-IO/AppFlowy-Docs/blob/main/essential-documentation/start-here/welcome-to-appflowy.md,https://search.nixos.org/packages?channel=23.11&show=appflowy&from=0&size=50&sort=relevance&type=packages&query=AppFlowy,https://www.appflowy.io/,GNU Affero General Public License v3.0
+Taskwarrior,"Task Management & To-do Lists",,Yes,"Taskwarrior is Free and Open Source Software that manages your TODO list from your command line. It is flexible, fast, efficient, and unobtrusive. It does its job then gets out of your way.","Highly flexible command-line tool to manage TODO lists",https://taskwarrior.org/download/#git,"CPU: Minimal, CLI-based tool
+RAM: Minimal
+Storage: Minimal, text file-based storage
+OS: Cross-platform",https://taskwarrior.org/docs/,https://search.nixos.org/packages?channel=23.11&show=taskwarrior&from=0&size=50&sort=relevance&type=packages&query=Taskwarrior,https://taskwarrior.org/,MIT License
+Vikunja,"Task Management & To-do Lists",,Yes,The to-do app to organize your life.,"API of the Vikunja to-do list app",https://kolaente.dev/vikunja/,"CPU: 1 core minimum
+RAM: 512 MB minimum
+Storage: Depends on task data stored
+OS: Cross-platform",https://vikunja.io/docs/docs/,https://search.nixos.org/packages?channel=23.11&show=vikunja-api&from=0&size=50&sort=relevance&type=packages&query=Vikunja,https://vikunja.io/,GNU Affero General Public License v3.0
+Zammad,"Ticketing",,Yes,Easy to use but powerful open-source support and ticketing system.,"Zammad, a web-based, open source user support/ticketing solution.",https://github.com/zammad/zammad,"CPU: 2 cores minimum
+RAM: 4 GB minimum
+Storage: Dependent on ticket volume
+OS: Linux, Docker",https://docs.zammad.org/,https://search.nixos.org/packages?channel=23.11&show=zammad&from=0&size=50&sort=relevance&type=packages&query=Zammad,https://zammad.org/,GNU Affero General Public License v3.0
+Frigate,"Video Surveillance",,Yes,Monitor your security cameras with locally processed AI.,"NVR with realtime local object detection for IP cameras",https://github.com/blakeblackshear/frigate,"CPU: 64-bit 2-core CPU
+RAM: 2 GB
+Storage: 10 GB (for OS and Frigate), additional storage for camera recordings
+GPU: Optional, recommended for better performance (e.g., Coral USB Accelerator)",https://docs.frigate.video/,https://search.nixos.org/packages?channel=23.11&from=0&size=50&sort=relevance&type=packages&query=Frigate,https://github.com/blakeblackshear/frigate,MIT License
+Zoneminder,"Video Surveillance",,Yes,"Closed-circuit television (CCTV) software application which supports IP, USB and Analog cameras.","Video surveillance software system",https://github.com/ZoneMinder/ZoneMinder,"CPU: Multi-core CPU (Intel i5 or better recommended)
+RAM: 4 GB minimum (8 GB recommended)
+Storage: 100 GB minimum (depends on number of cameras and recording quality)
+Operating System: Linux (Ubuntu recommended)",https://zoneminder.com/,https://search.nixos.org/packages?channel=23.11&show=zoneminder&from=0&size=50&sort=relevance&type=packages&query=Zoneminder,https://zoneminder.com/,GNU General Public License v3.0
+Headscale,VPN,,Yes,"Self-hostable fork of Tailscale, cross-platform clients, simple to use, built-in (currently experimental) monitoring tools.","An open source, self-hosted implementation of the Tailscale control server",https://github.com/juanfont/headscale,"A server with at least 2 CPU cores, 4 GB of RAM, and sufficient storage should suffice, but for larger deployments, more resources may be necessary. It's best to monitor performance during initial deployment to adjust resources as needed.",https://github.com/juanfont/headscale,https://search.nixos.org/packages?channel=23.11&show=headscale&from=0&size=50&sort=relevance&type=packages&query=Headscale,https://github.com/juanfont/headscale,"BSD 3-clause ""New"" or ""Revised"" License"
+Nebula,VPN,,Yes,"A scalable p2p VPN with a focus on performance, simplicity and security.","Overlay networking tool with a focus on performance, simplicity and security",https://github.com/slackhq/nebula,"Nebula typically requires a modern dual-core processor, 512MB to 1GB of RAM, and minimal disk space, suitable for various operating systems including Linux, Windows, macOS, and FreeBSD.",https://github.com/slackhq/nebula,https://search.nixos.org/packages?channel=23.11&show=nebula&from=0&size=50&sort=relevance&type=packages&query=Nebula,https://github.com/slackhq/nebula,MIT License
+ocserv,VPN,,Yes,Cisco AnyConnect-compatible VPN server.,"OpenConnect VPN server (ocserv), a server for the OpenConnect VPN client",https://gitlab.com/ocserv/ocserv,"CPU: Modern dual-core processor or better.
+RAM: Minimum of 512MB to 1GB RAM.
+Storage: Several hundred megabytes for the application and logs.
+Operating System: Linux (various distributions), FreeBSD",https://github.com/openconnect/ocserv,https://search.nixos.org/packages?channel=23.11&show=ocserv&from=0&size=50&sort=relevance&type=packages&query=ocserv,https://gitlab.com/openconnect/ocserv,GNU General Public License v2.0
+SoftEther,VPN,,Yes,Multi-protocol software VPN with advanced features.,"An Open-Source Free Cross-platform Multi-protocol VPN Program",https://github.com/SoftEtherVPN/SoftEtherVPN/,"CPU: Modern dual-core processor.
+RAM: Minimum 512MB to 1GB RAM.
+Storage: Several hundred megabytes for installation and logs.
+Operating System: Windows, Linux (various distributions), macOS, FreeBSD",https://www.softether.org/,https://search.nixos.org/packages?channel=23.11&show=softether&from=0&size=50&sort=relevance&type=packages&query=SoftEther,https://www.softether.org/,Apache License 2.0
+sshuttle,VPN,,Yes,Poor man's VPN.,"Transparent proxy server that works as a poor man's VPN",https://github.com/sshuttle/sshuttle,"CPU: Minimal requirements; runs on low-resource systems.
+RAM: Very lightweight; minimal RAM usage.
+Storage: Minimal disk space needed.
+Operating System: Linux, macOS",https://github.com/sshuttle/sshuttle,https://search.nixos.org/packages?channel=23.11&show=sshuttle&from=0&size=50&sort=relevance&type=packages&query=sshuttle,https://github.com/sshuttle/sshuttle,GNU Lesser General Public License v2.1
+strongSwan,VPN,,Yes,Complete IPsec implementation for Linux.,"OpenSource IPsec-based VPN Solution",https://github.com/strongswan/strongswan,"CPU: Modern dual-core processor.
+RAM: Minimum 512MB to 1GB RAM.
+Storage: Several hundred megabytes for installation and configuration.
+Operating System: Linux (various distributions)",https://www.strongswan.org/,https://search.nixos.org/packages?channel=23.11&show=strongswan&from=0&size=50&sort=relevance&type=packages&query=strongSwan,https://www.strongswan.org/,GNU General Public License v2.0
+Apache HTTP Server,Web Servers,,Yes,"Secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards.","Apache HTTPD, the world's most popular web server",https://svn.apache.org/viewvc/httpd/httpd/branches/2.4.x/,"CPU: Depends on traffic load; typically moderate CPU usage.
+RAM: Minimum 512MB RAM; varies with configuration and traffic.
+Storage: Several hundred megabytes for installation and logs.
+Operating System: Linux, Windows, macOS, FreeBSD, others",https://httpd.apache.org/,https://search.nixos.org/packages?channel=23.11&show=apacheHttpd&from=0&size=50&sort=relevance&type=packages&query=Apache+HTTP+Server,https://httpd.apache.org/,Apache License 2.0
+Caddy,Web Servers,,Yes,"Powerful, enterprise-ready, open source web server with automatic HTTPS.","Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",https://github.com/caddyserver/caddy,"CPU: Moderate CPU usage.
+RAM: Minimum 512MB RAM.
+Storage: Several hundred megabytes for installation and configuration.
+Operating System: Linux, Windows, macOS",https://github.com/caddyserver/caddy,https://search.nixos.org/packages?channel=23.11&show=caddy&from=0&size=50&sort=relevance&type=packages&query=Caddy,https://caddyserver.com/,Apache License 2.0
+HAProxy,Web Servers,,Yes,"Very fast and reliable reverse-proxy offering high availability, load balancing, and proxying for TCP and HTTP-based applications.","Reliable, high performance TCP/HTTP load balancer",https://git.haproxy.org/?p=haproxy.git;a=tree,"CPU: Modern multi-core processor recommended.
+RAM: Minimum 512MB RAM; scales with connections and traffic.
+Storage: Minimal disk space; depends on configuration and logs.
+Operating System: Linux (various distributions), FreeBSD",https://github.com/haproxy/haproxy,https://search.nixos.org/packages?channel=23.11&show=haproxy&from=0&size=50&sort=relevance&type=packages&query=HAProxy,https://haproxy.org/,GNU Lesser General Public License v2.1
+Hiawatha,Web Servers,,Yes,An advanced and secure webserver for Unix.,"An advanced and secure webserver",https://gitlab.com/hsleisink/hiawatha,"CPU: Moderate CPU usage.
+RAM: Minimum 512MB RAM.
+Storage: Several hundred megabytes for installation and logs.
+Operating System: Linux (various distributions), FreeBSD",https://www.hiawatha-webserver.org/,https://search.nixos.org/packages?channel=23.11&show=hiawatha&from=0&size=50&sort=relevance&type=packages&query=Hiawatha,https://www.hiawatha-webserver.org/,GNU General Public License v2.0
+Lighttpd,Web Servers,,Yes,"Secure, fast, compliant, and very flexible web server that has been optimized for high-performance environments.","Lightweight high-performance web server",https://git.lighttpd.net/lighttpd/lighttpd1.4,"CPU: Moderate CPU usage.
+RAM: Minimum 512MB RAM.
+Storage: Several hundred megabytes for installation and logs.
+Operating System: Linux (various distributions), FreeBSD, Windows",https://github.com/lighttpd/lighttpd2,https://search.nixos.org/packages?channel=23.11&show=lighttpd&from=0&size=50&sort=relevance&type=packages&query=Lighttpd,http://www.lighttpd.net/,"BSD 3-clause ""New"" or ""Revised"" License"
+Static Web Server,Web Servers,,Yes,"A cross-platform, high-performance, and asynchronous web server for static file serving.","An asynchronous web server for static files-serving",https://github.com/static-web-server/static-web-server,"Requiring minimal resources: a modern OS (Windows 7+, modern Linux, macOS 10.12+), any modern x86 or ARM CPU, at least 512 MB RAM (1 GB recommended), minimal storage for the server binary and static files, and a network interface for HTTP/HTTPS traffic.",https://static-web-server.net/,https://search.nixos.org/packages?channel=23.11&show=static-web-server&from=0&size=50&sort=relevance&type=packages&query=Static+Web+Server,https://static-web-server.net/,MIT License/Apache License 2.0
+Traefik,Web Servers,,Yes,HTTP reverse proxy and load balancer that makes deploying microservices easy.,"A modern reverse proxy",https://github.com/traefik/traefik,"CPU: Modern multi-core processor.
+RAM: Minimum 512MB RAM; scales with connections.
+Storage: Minimal disk space; depends on configuration and logs.
+Operating System: Linux (various distributions), Windows, macOS",https://github.com/traefik/traefik,https://search.nixos.org/packages?channel=23.11&show=traefik&from=0&size=50&sort=relevance&type=packages&query=Traefik,https://traefik.io/,MIT License
+Varnish,Web Servers,,Yes,Web application accelerator/caching HTTP reverse proxy.,"Web application accelerator also known as a caching HTTP reverse proxy",https://github.com/varnishcache/varnish-cache,"CPU: Moderate CPU usage; multi-core recommended.
+RAM: Minimum 512MB RAM; scales with cache size.
+Storage: Several hundred megabytes for installation and cache storage.
+Operating System: Linux (various distributions)",https://varnish-cache.org/,https://search.nixos.org/packages?channel=23.11&show=varnish&from=0&size=50&sort=relevance&type=packages&query=Varnish,https://www.varnish-cache.org/,"BSD 2-clause ""Simplified"" License"

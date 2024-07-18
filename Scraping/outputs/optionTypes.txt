@@ -1,0 +1,114 @@
+boolean
+package
+16 bit unsigned integer; between 0 and 65535 (both inclusive)
+signed integer
+strings concatenated with "\n"
+path
+string
+attribute set of string
+null or string
+one of "mail", "web"
+list of string
+attribute set of (submodule)
+null or path
+null or (submodule)
+integer between 300 and 399 (both inclusive)
+null or string or signed integer
+attribute set of (string or path)
+null or 16 bit unsigned integer; between 0 and 65535 (both inclusive)
+list of (submodule)
+one of true, false, "invite_only"
+path or string
+unsigned integer, meaning >=0
+null or string or path
+string or path
+null or one of false, "rocm", "cuda"
+null or strings concatenated with "\n"
+one of "sqlite", "postgres", "mysql"
+null or signed integer
+attribute set of (JSON value)
+null or (JSON value)
+JSON value
+null or boolean
+one of "external", "simple", "staggered", "trashcan"
+string starting with / or ~/
+null or (list of string)
+null or (positive integer, meaning >0)
+TOML value
+list of package
+attribute set of (string or package)
+attribute set of path
+list of path
+null or one of "All", "Archive", "Drafts", "Flagged", "Junk", "Sent", "Trash"
+string matching the pattern [^"]+
+one of "no", "create", "subscribe"
+(attribute set of (submodule)) or (list of unspecified value) convertible to it
+submodule
+attribute set of (null or string or signed integer or boolean or floating point number)
+null or one of "plain", "login", "cram_md5"
+attribute set
+positive integer, meaning >0
+list of (one of "default", "push", "pull", "mailers", "scheduler", "ingress")
+one of "single_node_cluster", "small_cluster", "large_cluster"
+string or list of string
+null or string matching the pattern [[:digit:].]+[KMGTP]?
+attribute set of (signed integer or string matching the pattern [[:digit:]]+[Hdwmy])
+null or ((list of string) or string convertible to it)
+string or (list of string) convertible to it
+one of "repokey", "keyfile", "repokey-blake2", "keyfile-blake2", "authenticated", "authenticated-blake2", "none"
+string matching the pattern none|(auto,)?(lz4|zstd|zlib|lzma)(,[[:digit:]]{1,2})?
+null or string matching the pattern [^/{}]+
+An evaluation of Nixpkgs; the top level attribute set of packages
+null or one of "cpu", "rocm", "cuda", "metal"
+attribute set of anything
+null or (attribute set of (string or boolean))
+attribute set of (string or boolean)
+null or (attribute set of (systemd option))
+YAML value
+attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))
+non-empty string
+secret value
+absolute path or IPv4 or IPv6 address
+Elixir value
+null or non-empty string
+absolute path
+one of "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL", "TRACE", "NONE"
+one of "control-group", "process", "mixed", "none"
+one of "online", "offline", "norouting"
+attribute set of (Flat key-value file)
+string matching the pattern compat|md5
+integer between 0 and 30 (both inclusive)
+list of (JSON value)
+one of 0, 1, 2
+signed integer or string
+integer between 0 and 6 (both inclusive)
+one of "tabrmd", "device"
+attribute set of (systemd option)
+attribute set of (atom (null, bool, int, float or string) or a list of them for duplicate keys)
+attribute set of (attribute set)
+function that evaluates to a(n) list of package
+privoxy configuration type. The format consists of an attribute
+set of settings. Each setting can be either a value (integer, string,
+boolean or path) or a list of such values.
+
+tmpfiles.d(5) age format
+attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string) or a non-empty list of them)
+string or signed integer
+list of (attribute set)
+null or (attribute set of package)
+null or one of "off", "crash", "error", "all"
+attribute set of (boolean or signed integer or string)
+attribute set of attribute set of (boolean or signed integer or string)
+one of "http", "https", "fcgi", "http+unix", "fcgi+unix"
+one of "Trace", "Debug", "Info", "Warn", "Error", "Critical"
+one of "zip", "tar", "tar.sz", "tar.gz", "tar.xz", "tar.bz2", "tar.br", "tar.lz4", "tar.zst"
+one of "sqlite3", "mysql", "postgres"
+lazy attribute set of lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer) or lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer)))
+list of (one of "codemirror-editor", "commit-message-length-validator", "delete-project", "download-commands", "gitiles", "hooks", "plugin-manager", "replication", "reviewnotes", "singleusergroup", "webhooks")
+one of "PostgreSQL", "MySQL"
+one of "nginx", "none"
+one of "TLS-ALPN-01", "HTTP-01"
+one of "sqlite3", "postgres"
+attribute set of list of string
+null or one of "clear", "trap", "restart"
+one of "nginx", "caddy"
