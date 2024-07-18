@@ -7,5 +7,5 @@ do
   output_file="${letter}.json"
   
   # Call the Python program with the current letter and output file
-  python src/main.py --channel unstable --options --size 10000 "services.${letter}" --output "data/services/${output_file}"
+  python Discovery/src/main.py --channel unstable --options --size 10000 "services.${letter}" --output "Discovery/data/services/${output_file}"
 done

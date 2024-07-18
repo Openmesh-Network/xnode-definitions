@@ -1,5 +1,5 @@
 import json
-from options import get_options, get_service_options
+from Discovery.src.options import get_options, get_service_options
 
 
 def create_module_definitions(option_list):
@@ -60,4 +60,4 @@ def make_service_definitions():
 
     write_svc_defs()
 
-make_service_definitions()
+#make_service_definitions()

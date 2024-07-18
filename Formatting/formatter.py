@@ -1,5 +1,5 @@
 import json
-from enumerate_template_services import find_services_from_templates_without_definition
+from Formatting.enumerate_template_services import find_services_from_templates_without_definition
 
 def runall():
     # remnant of the main function
