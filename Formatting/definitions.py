@@ -10,7 +10,8 @@ def create_module_definitions(option_list):
     for option in option_list:
         option_split = option["nixName"].split('.')
         if len(option_split) <= 2:
-            print(option_split)
+            print("Option was split into:",option_split)
+            print(option["nixName"])
             continue
         module_type = option_split[0]
         module_name = option_split[1]
