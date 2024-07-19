@@ -1,4 +1,51 @@
 from Discovery.src.main import get_packages
+import json
+
+class xnode_definer:
+    def __init__(self, path_to_spec_overrides):
+        with open(path_to_spec_overrides, 'r') as specs:
+            self.spec_overrides = json.loads(specs.read())
+
+    def find_spec_overrides(self, nixName):
+        # Add manual spec overrides   
+        for svc in self.spec_overrides:
+            if svc['nixName'] == nixName and svc['specs']:
+                return svc['specs']
+        return []
+
+    def make_services(self, service_definitions):
+        services = []
+        for service in service_definitions:
+            package_info = find_package_info(service['nixName']) # XXX: NEED TO AVOID RUNNING THIS EVERY TIME!
+            if package_info:
+                new_service = self.extend_service_definition(package_info, service)
+                services.append(new_service)
+            else:
+                print("Unable to find package info for", service["nixName"])
+
+        return services
+
+    def extend_service_definition(self, closest_match_response, service_definition):
+        # Make template definition from closest_match_response
+        package_name = closest_match_response.get('package_pname')
+        if closest_match_response.get('package_longDescription'):
+            service_description = closest_match_response.get('package_longDescription')
+        else:
+            service_description = closest_match_response.get('package_description')
+
+        nixName = service_definition['nixName']
+
+        new_service_definition = {
+            'name': package_name,
+            'desc': service_description,
+            'nixName': nixName,
+            'specs': self.find_spec_overrides(nixName),
+            'tags': generate_tags_from_desc(service_description),
+            'website': closest_match_response.get('package_homepage'),
+            'options': service_definition['options']
+        }
+
+        return new_service_definition
 
 def find_package_info(package_name):
     # Find info to populate template-definitions.json
@@ -17,16 +64,15 @@ def find_package_info(package_name):
 def make_template_definition(closest_match_response):
     # Make template definition from closest_match_response
     template = {}
-    nixName = closest_match_response.get('package_pname')
-    template['name'] = nixName
-    template['serviceNames'] = [nixName]
+    package_name = closest_match_response.get('package_pname')
+    template['name'] = package_name
     if closest_match_response.get('package_longDescription'):
         template['desc'] = closest_match_response.get('package_longDescription')
     else:
         template['desc'] = closest_match_response.get('package_description')
     
-    template['homepage'] = closest_match_response.get('package_homepage')
     return template
+
 
 def make_templates(service_definitions):
     templates = []
@@ -34,8 +80,25 @@ def make_templates(service_definitions):
         package_info = find_package_info(service['nixName'])
         if package_info:
             template = make_template_definition(package_info)
+            template['serviceNames'] = [service['nixName']]
             templates.append(template)
         else:
             print("Unable to find package info for", service["nixName"])
 
     return templates
+
+def generate_tags_from_desc(desc) -> list:
+    # Find tags that are in the description
+    if desc is None:
+        return []
+
+    # Hardcoded selection of keywords
+    possible_tags = ['Communication - Custom Communication Systems', 'Analytics', 'Automation', 'Monitoring', 'File Transfer & Synchronization', 'Communication - Email - Mail Delivery Agents', 'Communication - Social Networks and Forums', 'Communication - Video Conferencing', 'Backup', 'File Transfer - Distributed Filesystems', 'File Transfer - Object Storage & File Servers', 'File Transfer - Peer-to-peer Filesharing', 'Media Streaming - Audio Streaming\r', 'Media Streaming - Multimedia Streaming', 'Media Streaming - Video Streaming', 'Proxy', 'Remote Access\r', 'Search Engines\r', 'Software Development - Continuous Integration & Continuous Deployment', 'Software Development - IDE & Tools\r', 'Software Development - Project Management\r', 'Ticketing\r', 'Video Surveillance\r', 'VPN', 'Web Servers', 'Game', 'Server', 'Proprietary', 'Administration', 'Access-control', 'AI', 'LLM', 'GPU', 'Open-source', 'Web Application']
+    generated_tags = []
+
+    for tag in possible_tags:
+        if tag in desc:
+            generated_tags.append(tag)
+
+    return generated_tags
+    
