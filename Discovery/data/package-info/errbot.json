@@ -1,0 +1,57 @@
+{
+    "type": "package",
+    "package_attr_name": "errbot",
+    "package_attr_set": "No package set",
+    "package_pname": "errbot",
+    "package_pversion": "6.2.0",
+    "package_platforms": [
+        "m68k-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "i686-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "errbot"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Chatbot designed to be simple to extend with plugins written in Python",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://errbot.io/"
+    ],
+    "package_position": "pkgs/applications/networking/errbot/default.nix:62"
+}

@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "nix-serve",
+    "package_attr_set": "No package set",
+    "package_pname": "nix-serve",
+    "package_pversion": "0.2-e4675e3",
+    "package_platforms": [
+        "riscv32-netbsd",
+        "aarch64-darwin",
+        "x86_64-freebsd",
+        "aarch64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "x86_64-solaris",
+        "i686-freebsd",
+        "mips64-linux",
+        "i686-darwin",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "x86_64-netbsd",
+        "riscv64-netbsd",
+        "powerpc-netbsd",
+        "armv5tel-linux",
+        "i686-openbsd",
+        "s390-linux",
+        "x86_64-redox",
+        "x86_64-darwin",
+        "riscv64-linux",
+        "aarch64-netbsd",
+        "i686-linux",
+        "x86_64-linux",
+        "armv7l-netbsd",
+        "mipsel-linux",
+        "i686-netbsd",
+        "x86_64-openbsd",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "x86_64-cygwin",
+        "s390x-linux",
+        "armv7a-netbsd",
+        "riscv32-linux",
+        "armv7a-linux",
+        "i686-cygwin",
+        "powerpc64le-linux",
+        "armv6l-netbsd",
+        "microblaze-linux",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nix-serve"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1.html",
+            "fullName": "GNU Lesser General Public License v2.1"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v2.1"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Eelco Dolstra",
+            "github": "edolstra",
+            "email": "edolstra+nixpkgs@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Eelco Dolstra"
+    ],
+    "package_description": "Utility for sharing a Nix store as a binary cache",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/edolstra/nix-serve"
+    ],
+    "package_position": "pkgs/tools/package-management/nix-serve/default.nix:45"
+}

@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "openarena",
+    "package_attr_set": "No package set",
+    "package_pname": "openarena-unstable",
+    "package_pversion": "2023-03-02",
+    "package_platforms": [
+        "armv7l-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "oa_ded",
+        "openarena"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pol Dellaiera",
+            "github": "drupol",
+            "email": "pol.dellaiera@protonmail.com"
+        },
+        {
+            "name": "Elijah Rum",
+            "github": "alicerum",
+            "email": "elijahrum@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pol Dellaiera",
+        "Elijah Rum"
+    ],
+    "package_description": "Fast-paced 3D first-person shooter, similar to id Software Inc.'s Quake III Arena",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://openarena.ws/"
+    ],
+    "package_position": "pkgs/games/openarena/default.nix:106"
+}

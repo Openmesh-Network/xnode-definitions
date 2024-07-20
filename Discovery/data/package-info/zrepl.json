@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "zrepl",
+    "package_attr_set": "No package set",
+    "package_pname": "zrepl",
+    "package_pversion": "0.6.1",
+    "package_platforms": [
+        "microblazeel-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "x86_64-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "zrepl"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Cole Helbling",
+            "github": "cole-h",
+            "email": "cole.e.helbling@outlook.com"
+        },
+        {
+            "name": "Matt Layher",
+            "github": "mdlayher",
+            "email": "mdlayher@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Cole Helbling",
+        "Matt Layher"
+    ],
+    "package_description": "One-stop, integrated solution for ZFS replication",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://zrepl.github.io/"
+    ],
+    "package_position": "pkgs/tools/backup/zrepl/default.nix:44"
+}

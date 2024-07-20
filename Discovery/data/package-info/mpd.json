@@ -1,0 +1,95 @@
+{
+    "type": "package",
+    "package_attr_name": "mpd",
+    "package_attr_set": "No package set",
+    "package_pname": "mpd",
+    "package_pversion": "0.23.15",
+    "package_platforms": [
+        "microblazeel-linux",
+        "armv6l-netbsd",
+        "x86_64-openbsd",
+        "x86_64-netbsd",
+        "i686-freebsd",
+        "x86_64-freebsd",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "armv7a-darwin",
+        "riscv32-linux",
+        "x86_64-cygwin",
+        "mipsel-linux",
+        "armv7a-netbsd",
+        "mips64-linux",
+        "s390-linux",
+        "aarch64-netbsd",
+        "armv7l-linux",
+        "armv6l-linux",
+        "x86_64-solaris",
+        "m68k-netbsd",
+        "mips-linux",
+        "i686-darwin",
+        "m68k-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "i686-openbsd",
+        "armv7l-netbsd",
+        "aarch64-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-cygwin",
+        "x86_64-redox",
+        "i686-linux",
+        "aarch64-darwin",
+        "riscv64-linux",
+        "mips64el-linux",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "riscv32-netbsd",
+        "powerpc-netbsd",
+        "s390x-linux",
+        "riscv64-netbsd"
+    ],
+    "package_outputs": [
+        "out",
+        "doc",
+        "man"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mpd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alexander Tsamutali",
+            "github": "astsmtl",
+            "email": "astsmtl@yandex.ru"
+        },
+        {
+            "name": "Tobias Mayer",
+            "github": "tobim",
+            "email": "nix@tobim.fastmail.fm"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alexander Tsamutali",
+        "Tobias Mayer"
+    ],
+    "package_description": "Flexible, powerful daemon for playing music",
+    "package_longDescription": "<rendered-html><p>Music Player Daemon (MPD) is a flexible, powerful daemon for playing\nmusic. Through plugins and libraries it can play a variety of sound\nfiles while being controlled by its network protocol.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.musicpd.org/"
+    ],
+    "package_position": "pkgs/servers/mpd/default.nix:188"
+}

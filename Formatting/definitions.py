@@ -11,7 +11,7 @@ def create_module_definitions(option_list):
         option_split = option["nixName"].split('.')
         if len(option_split) <= 2:
             print("Option was split into:",option_split)
-            print(option["nixName"])
+            print(option["nixName"]) # Really need to split this whole function into logical steps, weird behaviour here (sample case: geth)
             continue
         module_type = option_split[0]
         module_name = option_split[1]

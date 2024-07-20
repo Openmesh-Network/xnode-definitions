@@ -1,0 +1,106 @@
+{
+    "type": "package",
+    "package_attr_name": "avahi",
+    "package_attr_set": "No package set",
+    "package_pname": "avahi",
+    "package_pversion": "0.8",
+    "package_platforms": [
+        "armv7a-linux",
+        "aarch64-linux",
+        "i686-openbsd",
+        "armv7l-netbsd",
+        "i686-darwin",
+        "armv7a-darwin",
+        "powerpc64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "riscv64-netbsd",
+        "riscv32-netbsd",
+        "x86_64-linux",
+        "x86_64-openbsd",
+        "mipsel-netbsd",
+        "microblazeel-linux",
+        "armv6l-netbsd",
+        "armv6l-linux",
+        "x86_64-darwin",
+        "mips64-linux",
+        "i686-cygwin",
+        "powerpc-netbsd",
+        "m68k-netbsd",
+        "mipsel-linux",
+        "x86_64-freebsd",
+        "x86_64-cygwin",
+        "i686-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "aarch64-darwin",
+        "m68k-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "i686-freebsd",
+        "aarch64-netbsd",
+        "powerpc64le-linux",
+        "x86_64-netbsd",
+        "mips64el-linux",
+        "armv7l-linux",
+        "x86_64-redox",
+        "mips-linux",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "x86_64-solaris"
+    ],
+    "package_outputs": [
+        "man",
+        "out",
+        "dev"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "avahi-resolve",
+        "avahi-publish",
+        "avahi-autoipd",
+        "avahi-set-host-name",
+        "avahi-resolve-address",
+        "avahi-publish-address",
+        "avahi-browse",
+        "avahi-publish-service",
+        "avahi-resolve-host-name",
+        "avahi-dnsconfd",
+        "avahi-browse-domains",
+        "avahi-daemon"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.0-or-later.html",
+            "fullName": "GNU Library General Public License v2 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Library General Public License v2 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jason O'Conal",
+            "github": "lovek323",
+            "email": "jason@oconal.id.au"
+        },
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jason O'Conal",
+        "Robin Gloster"
+    ],
+    "package_description": "mDNS/DNS-SD implementation",
+    "package_longDescription": "<rendered-html><p>Avahi is a system which facilitates service discovery on a local\nnetwork. It is an implementation of the mDNS (for \u201cMulticast DNS\u201d) and\nDNS-SD (for \u201cDNS-Based Service Discovery\u201d) protocols.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://avahi.org"
+    ],
+    "package_position": "pkgs/development/libraries/avahi/default.nix:200"
+}

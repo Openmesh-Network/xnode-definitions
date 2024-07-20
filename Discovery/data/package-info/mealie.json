@@ -1,0 +1,79 @@
+{
+    "type": "package",
+    "package_attr_name": "mealie",
+    "package_attr_set": "No package set",
+    "package_pname": "python3.12-mealie",
+    "package_pversion": "1.9.0",
+    "package_platforms": [
+        "riscv32-linux",
+        "x86_64-darwin",
+        "i686-freebsd",
+        "aarch64-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "mips-linux",
+        "s390-linux",
+        "armv7a-darwin",
+        "microblaze-linux",
+        "x86_64-freebsd",
+        "mips64-linux",
+        "x86_64-windows",
+        "armv7a-linux",
+        "i686-darwin",
+        "riscv64-linux",
+        "x86_64-cygwin",
+        "i686-windows",
+        "m68k-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "mipsel-linux",
+        "i686-cygwin",
+        "powerpc64-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Litchi Pi",
+            "github": "litchipi",
+            "email": "litchi.pi@proton.me"
+        },
+        {
+            "name": "Andrew Morgan",
+            "github": "anoadragon453",
+            "email": "andrew@amorgan.xyz"
+        }
+    ],
+    "package_maintainers_set": [
+        "Litchi Pi",
+        "Andrew Morgan"
+    ],
+    "package_description": "Self hosted recipe manager and meal planner",
+    "package_longDescription": "<rendered-html><p>Mealie is a self hosted recipe manager and meal planner with a REST\nAPI and a reactive frontend application built in NuxtJS for a pleasant\nuser experience for the whole family. Easily add recipes into your\ndatabase by providing the URL and Mealie will automatically import the\nrelevant data or add a family recipe with the UI editor.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://mealie.io"
+    ],
+    "package_position": "pkgs/by-name/me/mealie/package.nix:126"
+}

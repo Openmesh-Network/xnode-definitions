@@ -1,0 +1,83 @@
+{
+    "type": "package",
+    "package_attr_name": "gitea",
+    "package_attr_set": "No package set",
+    "package_pname": "gitea",
+    "package_pversion": "1.22.1",
+    "package_platforms": [
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "aarch64-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "wasm32-wasi",
+        "mips64el-linux",
+        "mips-linux",
+        "i686-darwin",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "wasm64-wasi",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "data",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gitea"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Maximilian Bosch",
+            "github": "Ma27",
+            "email": "maximilian@mbosch.me"
+        },
+        {
+            "name": "techknowlogick",
+            "github": "techknowlogick",
+            "email": "techknowlogick@gitea.com"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Maximilian Bosch",
+        "techknowlogick",
+        "Sandro J\u00e4ckel"
+    ],
+    "package_description": "Git with a cup of tea",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://about.gitea.com"
+    ],
+    "package_position": "pkgs/by-name/gi/gitea/package.nix:111"
+}

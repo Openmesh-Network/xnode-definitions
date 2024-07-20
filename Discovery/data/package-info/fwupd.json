@@ -1,0 +1,72 @@
+{
+    "type": "package",
+    "package_attr_name": "fwupd",
+    "package_attr_set": "No package set",
+    "package_pname": "fwupd",
+    "package_pversion": "1.9.21",
+    "package_platforms": [
+        "mips64-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "debug",
+        "dev",
+        "lib",
+        "man",
+        "devdoc",
+        "out",
+        "installedTests"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "fwupdtool",
+        "fwupdmgr",
+        "dbxtool"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-or-later.html",
+            "fullName": "GNU Lesser General Public License v2.1 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v2.1 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ramses",
+            "github": "R-VdP",
+            "email": "ramses@well-founded.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ramses"
+    ],
+    "package_description": null,
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://fwupd.org/"
+    ],
+    "package_position": "pkgs/by-name/fw/fwupd/package.nix:123"
+}

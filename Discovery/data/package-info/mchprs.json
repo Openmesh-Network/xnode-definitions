@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "mchprs",
+    "package_attr_set": "No package set",
+    "package_pname": "mchprs",
+    "package_pversion": "0.4.1",
+    "package_platforms": [
+        "armv7a-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "armv7a-darwin",
+        "i686-linux",
+        "s390x-linux",
+        "x86_64-openbsd",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-netbsd",
+        "mipsel-linux",
+        "mipsel-netbsd",
+        "armv7l-netbsd",
+        "m68k-linux",
+        "mips64el-linux",
+        "x86_64-freebsd",
+        "i686-openbsd",
+        "powerpc64-linux",
+        "armv6l-netbsd",
+        "armv5tel-linux",
+        "x86_64-solaris",
+        "aarch64-darwin",
+        "riscv64-netbsd",
+        "loongarch64-linux",
+        "mips-linux",
+        "x86_64-windows",
+        "i686-freebsd",
+        "armv6l-linux",
+        "x86_64-redox",
+        "wasm32-wasi",
+        "armv7l-linux",
+        "powerpc-netbsd",
+        "i686-netbsd",
+        "x86_64-netbsd",
+        "i686-windows",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mchprs"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Gabriel Doriath D\u00f6hler",
+            "github": "gabriel-doriath-dohler",
+            "email": "gabriel.doriath.dohler@ens.fr"
+        }
+    ],
+    "package_maintainers_set": [
+        "Gabriel Doriath D\u00f6hler"
+    ],
+    "package_description": "Multithreaded Minecraft server built for redstone",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/MCHPR/MCHPRS"
+    ],
+    "package_position": "pkgs/games/mchprs/default.nix:46"
+}

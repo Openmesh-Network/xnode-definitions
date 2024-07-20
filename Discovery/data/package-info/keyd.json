@@ -1,0 +1,63 @@
+{
+    "type": "package",
+    "package_attr_name": "keyd",
+    "package_attr_set": "No package set",
+    "package_pname": "keyd",
+    "package_pversion": "2.4.3",
+    "package_platforms": [
+        "i686-linux",
+        "aarch64-linux",
+        "mipsel-linux",
+        "mips64-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "s390-linux",
+        "m68k-linux",
+        "riscv64-linux",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "keyd-application-mapper",
+        "keyd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Peter Hoeg",
+            "github": "peterhoeg",
+            "email": "peter@hoeg.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Peter Hoeg"
+    ],
+    "package_description": "Key remapping daemon for Linux",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/tools/inputmethods/keyd/default.nix:73"
+}

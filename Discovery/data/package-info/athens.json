@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "athens",
+    "package_attr_set": "No package set",
+    "package_pname": "athens",
+    "package_pversion": "0.14.1",
+    "package_platforms": [
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "mips64el-linux",
+        "i686-netbsd",
+        "x86_64-freebsd",
+        "armv6l-netbsd",
+        "i686-cygwin",
+        "i686-freebsd",
+        "mipsel-linux",
+        "x86_64-netbsd",
+        "x86_64-redox",
+        "aarch64-netbsd",
+        "riscv32-netbsd",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "i686-openbsd",
+        "armv7l-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "armv7a-netbsd",
+        "aarch64-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "x86_64-openbsd",
+        "mips64-linux",
+        "armv7a-darwin",
+        "armv7l-netbsd",
+        "powerpc-netbsd",
+        "armv5tel-linux",
+        "mips-linux",
+        "riscv64-netbsd",
+        "x86_64-solaris",
+        "i686-darwin",
+        "x86_64-cygwin",
+        "i686-linux",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "athens"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Paul Meyer",
+            "github": "katexochen",
+            "email": null
+        },
+        {
+            "name": "Malte Poll",
+            "github": "malt3",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "Paul Meyer",
+        "Malte Poll"
+    ],
+    "package_description": "Go module datastore and proxy",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/gomods/athens"
+    ],
+    "package_position": "pkgs/by-name/at/athens/package.nix:36"
+}

@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "clatd",
+    "package_attr_set": "No package set",
+    "package_pname": "clatd",
+    "package_pversion": "1.6",
+    "package_platforms": [
+        "riscv64-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "clatd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jared Baur",
+            "github": "jmbaur",
+            "email": "jaredbaur@fastmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jared Baur"
+    ],
+    "package_description": "464XLAT CLAT implementation for Linux",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/toreanderson/clatd"
+    ],
+    "package_position": "pkgs/by-name/cl/clatd/package.nix:59"
+}

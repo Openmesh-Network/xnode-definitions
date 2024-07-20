@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "pacemaker",
+    "package_attr_set": "No package set",
+    "package_pname": "pacemaker",
+    "package_pversion": "2.1.7",
+    "package_platforms": [
+        "loongarch64-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pacemaker-remoted",
+        "crm_failcount",
+        "crm_standby",
+        "crm_error",
+        "pacemakerd",
+        "pacemaker_remoted",
+        "stonith_admin",
+        "crmadmin",
+        "crm_simulate",
+        "crm_verify",
+        "crm_report",
+        "iso8601",
+        "fence_watchdog",
+        "crm_resource",
+        "crm_node",
+        "crm_rule",
+        "crm_mon",
+        "crm_master",
+        "crm_diff",
+        "crm_attribute",
+        "crm_ticket",
+        "crm_shadow",
+        "attrd_updater",
+        "cibadmin"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ryan Mulligan",
+            "github": "ryantm",
+            "email": "ryan@ryantm.com"
+        },
+        {
+            "name": "Astro",
+            "github": "astro",
+            "email": "astro@spaceboyz.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ryan Mulligan",
+        "Astro"
+    ],
+    "package_description": "Pacemaker is an open source, high availability resource manager suitable for both small and large clusters",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://clusterlabs.org/pacemaker/"
+    ],
+    "package_position": "pkgs/misc/logging/pacemaker/default.nix:97"
+}

@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "icecast",
+    "package_attr_set": "No package set",
+    "package_pname": "icecast",
+    "package_pversion": "2.4.4",
+    "package_platforms": [
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "s390-linux",
+        "mips64-linux",
+        "m68k-netbsd",
+        "x86_64-openbsd",
+        "x86_64-darwin",
+        "mipsel-linux",
+        "loongarch64-linux",
+        "armv7l-netbsd",
+        "x86_64-solaris",
+        "i686-netbsd",
+        "aarch64-linux",
+        "armv7a-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "x86_64-redox",
+        "i686-darwin",
+        "armv6l-netbsd",
+        "aarch64-netbsd",
+        "m68k-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "mipsel-netbsd",
+        "mips-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "x86_64-netbsd",
+        "i686-cygwin",
+        "i686-openbsd",
+        "powerpc-netbsd",
+        "riscv64-netbsd",
+        "riscv64-linux",
+        "x86_64-cygwin",
+        "x86_64-freebsd",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "armv7a-netbsd",
+        "x86_64-linux",
+        "i686-freebsd",
+        "riscv32-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "icecast"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jack Cummings",
+            "github": "jcumming",
+            "email": "jack@mudshark.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jack Cummings"
+    ],
+    "package_description": "Server software for streaming multimedia",
+    "package_longDescription": "<rendered-html><p>Icecast is a streaming media server which currently supports Ogg\n(Vorbis and Theora), Opus, WebM and MP3 audio streams. It can be used to\ncreate an Internet radio station or a privately running jukebox and many\nthings in between. It is very versatile in that new formats can be added\nrelatively easily and supports open standards for commuincation and\ninteraction.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.icecast.org"
+    ],
+    "package_position": "pkgs/servers/icecast/default.nix:19"
+}

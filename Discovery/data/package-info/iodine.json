@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "iodine",
+    "package_attr_set": "No package set",
+    "package_pname": "iodine",
+    "package_pversion": "0.8.0",
+    "package_platforms": [
+        "m68k-netbsd",
+        "powerpc64le-linux",
+        "x86_64-redox",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "armv7l-netbsd",
+        "x86_64-darwin",
+        "x86_64-linux",
+        "riscv64-netbsd",
+        "x86_64-netbsd",
+        "riscv64-linux",
+        "armv6l-netbsd",
+        "s390-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "riscv32-linux",
+        "i686-cygwin",
+        "i686-freebsd",
+        "x86_64-cygwin",
+        "microblazeel-linux",
+        "armv7a-netbsd",
+        "armv7l-linux",
+        "armv7a-darwin",
+        "i686-linux",
+        "m68k-linux",
+        "aarch64-netbsd",
+        "i686-darwin",
+        "microblaze-linux",
+        "i686-netbsd",
+        "armv6l-linux",
+        "powerpc-netbsd",
+        "riscv32-netbsd",
+        "mips64-linux",
+        "i686-openbsd",
+        "x86_64-openbsd",
+        "mipsel-netbsd",
+        "mipsel-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "x86_64-solaris",
+        "mips-linux",
+        "x86_64-freebsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "iodine",
+        "iodined"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        }
+    ],
+    "package_license_set": [
+        "ISC License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Tool to tunnel IPv4 data through a DNS server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://code.kryo.se/iodine/"
+    ],
+    "package_position": "pkgs/tools/networking/iodine/default.nix:34"
+}

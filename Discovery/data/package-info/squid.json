@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "squid",
+    "package_attr_set": "No package set",
+    "package_pname": "squid",
+    "package_pversion": "6.8",
+    "package_platforms": [
+        "riscv32-linux",
+        "m68k-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michael Raskin",
+            "github": "7c6f434c",
+            "email": "7c6f434c@mail.ru"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michael Raskin"
+    ],
+    "package_description": "Caching proxy for the Web supporting HTTP, HTTPS, FTP, and more",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.squid-cache.org"
+    ],
+    "package_position": "pkgs/servers/squid/default.nix:53"
+}

@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "nar-serve",
+    "package_attr_set": "No package set",
+    "package_pname": "nar-serve",
+    "package_pversion": "0.6.1",
+    "package_platforms": [
+        "riscv32-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "aarch64-linux",
+        "s390x-linux",
+        "wasm64-wasi",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "mips64-linux",
+        "x86_64-darwin",
+        "x86_64-linux",
+        "wasm32-wasi",
+        "armv6l-linux",
+        "m68k-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nar-serve"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Andika Demas Riyandi",
+            "github": "Rizary",
+            "email": "andika@numtide.com"
+        },
+        {
+            "name": "zimbatm",
+            "github": "zimbatm",
+            "email": "zimbatm@zimbatm.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Andika Demas Riyandi",
+        "zimbatm"
+    ],
+    "package_description": "Serve NAR file contents via HTTP",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/numtide/nar-serve"
+    ],
+    "package_position": "pkgs/tools/nix/nar-serve/default.nix:21"
+}

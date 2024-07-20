@@ -1,0 +1,44 @@
+{
+    "type": "package",
+    "package_attr_name": "linuxKernel.packages.linux_6_1.system76-scheduler",
+    "package_attr_set": "linuxKernel",
+    "package_pname": "system76-scheduler",
+    "package_pversion": "2.0.1",
+    "package_platforms": [
+        "x86_64-linux",
+        "x86-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michael Livshin",
+            "github": "cmm",
+            "email": "repo@cmm.kakpryg.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michael Livshin"
+    ],
+    "package_description": "System76 Scheduler",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/pop-os/system76-scheduler"
+    ],
+    "package_position": "pkgs/os-specific/linux/system76-scheduler/default.nix:37"
+}

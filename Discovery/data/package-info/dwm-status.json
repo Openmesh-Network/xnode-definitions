@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "dwm-status",
+    "package_attr_set": "No package set",
+    "package_pname": "dwm-status",
+    "package_pversion": "1.8.1",
+    "package_platforms": [
+        "mips64el-linux",
+        "microblaze-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "mips-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dwm-status"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Tobias Happ",
+            "github": "Gerschtli",
+            "email": "tobias.happ@gmx.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Tobias Happ"
+    ],
+    "package_description": "Highly performant and configurable DWM status service",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Gerschtli/dwm-status"
+    ],
+    "package_position": "pkgs/applications/window-managers/dwm/dwm-status.nix:31"
+}

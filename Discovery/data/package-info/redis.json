@@ -1,0 +1,129 @@
+{
+    "type": "package",
+    "package_attr_name": "redis",
+    "package_attr_set": "No package set",
+    "package_pname": "redis",
+    "package_pversion": "7.2.5",
+    "package_platforms": [
+        "riscv32-netbsd",
+        "i686-netbsd",
+        "armv7a-linux",
+        "m68k-none",
+        "armv6l-linux",
+        "aarch64-netbsd",
+        "rx-none",
+        "riscv64-netbsd",
+        "arm-none",
+        "x86_64-freebsd",
+        "mips64-none",
+        "riscv32-linux",
+        "x86_64-darwin",
+        "riscv64-linux",
+        "armv6l-none",
+        "microblaze-none",
+        "or1k-none",
+        "x86_64-windows",
+        "armv7a-netbsd",
+        "mips-none",
+        "powerpc-netbsd",
+        "microblazeel-none",
+        "vc4-none",
+        "s390-linux",
+        "x86_64-none",
+        "aarch64-none",
+        "loongarch64-linux",
+        "javascript-ghcjs",
+        "i686-cygwin",
+        "armv7l-linux",
+        "armv6l-netbsd",
+        "mipsel-linux",
+        "i686-darwin",
+        "powerpc64-linux",
+        "wasm64-wasi",
+        "mipsel-netbsd",
+        "powerpc-none",
+        "wasm32-wasi",
+        "avr-none",
+        "aarch64-linux",
+        "armv7a-darwin",
+        "mips64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "x86_64-netbsd",
+        "powerpcle-none",
+        "s390-none",
+        "x86_64-openbsd",
+        "x86_64-solaris",
+        "x86_64-genode",
+        "armv5tel-linux",
+        "i686-genode",
+        "mips-linux",
+        "armv7l-netbsd",
+        "i686-none",
+        "microblaze-linux",
+        "i686-openbsd",
+        "mips64el-linux",
+        "mmix-mmixware",
+        "powerpc64le-linux",
+        "i686-freebsd",
+        "s390x-linux",
+        "s390x-none",
+        "i686-linux",
+        "i686-windows",
+        "aarch64-genode",
+        "riscv32-none",
+        "aarch64-darwin",
+        "x86_64-cygwin",
+        "msp430-none",
+        "m68k-netbsd",
+        "riscv64-none",
+        "aarch64_be-none",
+        "x86_64-redox",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "redis-check-aof",
+        "redis-sentinel",
+        "redis-benchmark",
+        "redis-cli",
+        "redis-server",
+        "redis-check-rdb"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Dario Bertini",
+            "github": "berdario",
+            "email": "berdario@gmail.com"
+        },
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        }
+    ],
+    "package_maintainers_set": [
+        "Dario Bertini",
+        "Robin Gloster"
+    ],
+    "package_description": "Open source, advanced key-value store",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://redis.io"
+    ],
+    "package_position": "pkgs/servers/nosql/redis/default.nix:92"
+}

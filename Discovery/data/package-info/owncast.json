@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "owncast",
+    "package_attr_set": "No package set",
+    "package_pname": "owncast",
+    "package_pversion": "0.1.3",
+    "package_platforms": [
+        "armv7l-netbsd",
+        "armv6l-netbsd",
+        "aarch64-linux",
+        "mips64el-linux",
+        "powerpc-netbsd",
+        "i686-darwin",
+        "m68k-netbsd",
+        "x86_64-linux",
+        "x86_64-netbsd",
+        "i686-openbsd",
+        "riscv64-linux",
+        "x86_64-darwin",
+        "riscv64-netbsd",
+        "i686-cygwin",
+        "riscv32-linux",
+        "x86_64-freebsd",
+        "i686-freebsd",
+        "riscv32-netbsd",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "armv7a-netbsd",
+        "x86_64-redox",
+        "x86_64-openbsd",
+        "m68k-linux",
+        "microblaze-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "mipsel-netbsd",
+        "x86_64-solaris",
+        "s390x-linux",
+        "x86_64-cygwin",
+        "mips64-linux",
+        "aarch64-netbsd",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "i686-netbsd",
+        "armv7a-darwin",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "owncast"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Niklas Steffen",
+            "github": "MayNiklas",
+            "email": "info@niklas-steffen.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Niklas Steffen"
+    ],
+    "package_description": "self-hosted video live streaming solution",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://owncast.online"
+    ],
+    "package_position": "pkgs/servers/owncast/default.nix:42"
+}

@@ -1,0 +1,110 @@
+{
+    "type": "package",
+    "package_attr_name": "tor",
+    "package_attr_set": "No package set",
+    "package_pname": "tor",
+    "package_pversion": "0.4.8.12",
+    "package_platforms": [
+        "s390x-linux",
+        "armv7a-darwin",
+        "aarch64-netbsd",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "mipsel-linux",
+        "armv6l-netbsd",
+        "riscv32-netbsd",
+        "i686-freebsd",
+        "microblaze-linux",
+        "i686-netbsd",
+        "mips64el-linux",
+        "s390-linux",
+        "armv7l-linux",
+        "x86_64-linux",
+        "riscv64-netbsd",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "i686-darwin",
+        "armv6l-linux",
+        "x86_64-redox",
+        "riscv64-linux",
+        "mipsel-netbsd",
+        "loongarch64-linux",
+        "x86_64-solaris",
+        "powerpc64-linux",
+        "armv7a-netbsd",
+        "armv7l-netbsd",
+        "x86_64-cygwin",
+        "m68k-netbsd",
+        "mips64-linux",
+        "x86_64-netbsd",
+        "x86_64-darwin",
+        "powerpc-netbsd",
+        "x86_64-openbsd",
+        "i686-cygwin",
+        "m68k-linux",
+        "i686-linux",
+        "i686-openbsd",
+        "mips-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "x86_64-freebsd"
+    ],
+    "package_outputs": [
+        "out",
+        "geoip"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tor-gencert",
+        "tor-resolve",
+        "tor-client-auth-gen",
+        "torify",
+        "tor",
+        "tor-print-ed-signing-cert"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        },
+        {
+            "name": "Joachim Fasting",
+            "github": "joachifm",
+            "email": "joachifm@fastmail.fm"
+        },
+        {
+            "name": "Pavol Rusnak",
+            "github": "prusnak",
+            "email": "pavol@rusnak.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Austin Seipp",
+        "Joachim Fasting",
+        "Pavol Rusnak"
+    ],
+    "package_description": "Anonymizing overlay network",
+    "package_longDescription": "<rendered-html><p>Tor helps improve your privacy by bouncing your communications around\na network of relays run by volunteers all around the world: it makes it\nharder for somebody watching your Internet connection to learn what\nsites you visit, and makes it harder for the sites you visit to track\nyou. Tor works with many of your existing applications, including web\nbrowsers, instant messaging clients, remote login, and other\napplications based on the TCP protocol.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.torproject.org/"
+    ],
+    "package_position": "pkgs/tools/security/tor/default.nix:104"
+}

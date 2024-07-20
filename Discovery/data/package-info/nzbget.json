@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "nzbget",
+    "package_attr_set": "No package set",
+    "package_pname": "nzbget",
+    "package_pversion": "24.1",
+    "package_platforms": [
+        "mips64el-linux",
+        "powerpc-netbsd",
+        "mips-linux",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "microblazeel-linux",
+        "x86_64-redox",
+        "i686-darwin",
+        "aarch64-netbsd",
+        "aarch64-darwin",
+        "m68k-linux",
+        "x86_64-freebsd",
+        "s390x-linux",
+        "i686-netbsd",
+        "x86_64-openbsd",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "i686-cygwin",
+        "riscv32-netbsd",
+        "armv7a-netbsd",
+        "mipsel-netbsd",
+        "armv6l-linux",
+        "x86_64-netbsd",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "i686-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "i686-freebsd",
+        "mips64-linux",
+        "riscv32-linux",
+        "armv7l-netbsd",
+        "armv7a-darwin",
+        "x86_64-cygwin",
+        "x86_64-solaris",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "m68k-netbsd",
+        "riscv64-linux",
+        "s390-linux",
+        "armv7l-linux",
+        "i686-openbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nzbget"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pascal Wittmann",
+            "github": "pSub",
+            "email": "mail@pascal-wittmann.de"
+        },
+        {
+            "name": "Morgan Helton",
+            "github": "devusb",
+            "email": "mhelton@devusb.us"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pascal Wittmann",
+        "Morgan Helton"
+    ],
+    "package_description": "Command line tool for downloading files from news servers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://nzbget.com/"
+    ],
+    "package_position": "pkgs/tools/networking/nzbget/default.nix:57"
+}

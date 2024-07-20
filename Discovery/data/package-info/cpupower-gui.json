@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "cpupower-gui",
+    "package_attr_set": "No package set",
+    "package_pname": "cpupower-gui",
+    "package_pversion": "1.0.0",
+    "package_platforms": [
+        "armv7a-darwin",
+        "microblazeel-linux",
+        "mips64-linux",
+        "x86_64-windows",
+        "i686-cygwin",
+        "aarch64-darwin",
+        "riscv32-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "x86_64-darwin",
+        "s390-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "x86_64-cygwin",
+        "m68k-linux",
+        "i686-windows",
+        "i686-freebsd",
+        "x86_64-freebsd",
+        "i686-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "i686-darwin",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cpupower-gui"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Renato Alves",
+            "github": "unode",
+            "email": "alves.rjc@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Renato Alves"
+    ],
+    "package_description": "Change the frequency limits of your cpu and its governor",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/vagnum08/cpupower-gui/"
+    ],
+    "package_position": "pkgs/os-specific/linux/cpupower-gui/default.nix:97"
+}

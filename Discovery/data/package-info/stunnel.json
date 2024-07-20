@@ -1,0 +1,89 @@
+{
+    "type": "package",
+    "package_attr_name": "stunnel",
+    "package_attr_set": "No package set",
+    "package_pname": "stunnel",
+    "package_pversion": "5.72",
+    "package_platforms": [
+        "x86_64-cygwin",
+        "aarch64-linux",
+        "x86_64-netbsd",
+        "x86_64-linux",
+        "powerpc-netbsd",
+        "i686-cygwin",
+        "aarch64-darwin",
+        "i686-linux",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "x86_64-freebsd",
+        "x86_64-solaris",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "riscv32-linux",
+        "aarch64-netbsd",
+        "armv6l-netbsd",
+        "mips64-linux",
+        "m68k-netbsd",
+        "riscv64-netbsd",
+        "x86_64-darwin",
+        "i686-freebsd",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "mips-linux",
+        "riscv32-netbsd",
+        "riscv64-linux",
+        "mips64el-linux",
+        "x86_64-openbsd",
+        "armv5tel-linux",
+        "x86_64-redox",
+        "i686-openbsd",
+        "i686-netbsd",
+        "armv7l-linux",
+        "armv7l-netbsd",
+        "armv7a-netbsd",
+        "m68k-linux",
+        "mipsel-netbsd",
+        "loongarch64-linux",
+        "i686-darwin",
+        "microblazeel-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "man",
+        "doc"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "stunnel"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Austin Seipp"
+    ],
+    "package_description": "Universal tls/ssl wrapper",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.stunnel.org/"
+    ],
+    "package_position": "pkgs/tools/networking/stunnel/default.nix:54"
+}

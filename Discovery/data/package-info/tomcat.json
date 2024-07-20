@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "apachetomcatscanner",
+    "package_attr_set": "No package set",
+    "package_pname": "apachetomcatscanner",
+    "package_pversion": "3.5",
+    "package_platforms": [
+        "i686-darwin",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "i686-cygwin",
+        "x86_64-windows",
+        "loongarch64-linux",
+        "m68k-linux",
+        "x86_64-darwin",
+        "mips64-linux",
+        "i686-linux",
+        "x86_64-cygwin",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "i686-windows",
+        "s390-linux",
+        "x86_64-freebsd",
+        "armv7a-darwin",
+        "aarch64-darwin",
+        "s390x-linux",
+        "i686-freebsd"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ApacheTomcatScanner"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Fabian Affolter",
+            "github": "fabaff",
+            "email": "mail@fabian-affolter.ch"
+        }
+    ],
+    "package_maintainers_set": [
+        "Fabian Affolter"
+    ],
+    "package_description": "Tool to scan for Apache Tomcat server vulnerabilities",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/p0dalirius/ApacheTomcatScanner"
+    ],
+    "package_position": "pkgs/tools/security/apachetomcatscanner/default.nix:38"
+}

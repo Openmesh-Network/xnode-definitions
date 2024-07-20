@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "guix",
+    "package_attr_set": "No package set",
+    "package_pname": "guix",
+    "package_pversion": "1.4.0",
+    "package_platforms": [
+        "mips-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "powerpc64-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "microblaze-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "guix-daemon",
+        "guix"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Christina S\u00f8rensen",
+            "github": "cafkafk",
+            "email": "christina@cafkafk.com"
+        },
+        {
+            "name": "Gabriel Arazas",
+            "github": "foo-dogsquared",
+            "email": "foodogsquared@foodogsquared.one"
+        }
+    ],
+    "package_maintainers_set": [
+        "Christina S\u00f8rensen",
+        "Gabriel Arazas"
+    ],
+    "package_description": "Functional package manager with a Scheme interface",
+    "package_longDescription": "<rendered-html><p>GNU Guix is a purely functional package manager for the GNU system,\nand a distribution thereof. In addition to standard package management\nfeatures, Guix supports transactional upgrades and roll-backs,\nunprivileged package management, per-user profiles, and garbage\ncollection. It provides Guile Scheme APIs, including high-level embedded\ndomain-specific languages (EDSLs), to describe how packages are built\nand composed. A user-land free software distribution for GNU/Linux comes\nas part of Guix. Guix is based on the Nix package manager.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.gnu.org/software/guix"
+    ],
+    "package_position": "pkgs/by-name/gu/guix/package.nix:138"
+}

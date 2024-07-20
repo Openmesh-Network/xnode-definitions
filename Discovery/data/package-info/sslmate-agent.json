@@ -1,0 +1,32 @@
+{
+    "type": "package",
+    "package_attr_name": "sslmate-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "sslmate-agent",
+    "package_pversion": "1.99.11",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Daemon for managing SSL/TLS certificates on a server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://sslmate.com/"
+    ],
+    "package_position": "pkgs/development/tools/sslmate-agent/default.nix:35"
+}

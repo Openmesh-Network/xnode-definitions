@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "filebeat",
+    "package_attr_set": "No package set",
+    "package_pname": "filebeat",
+    "package_pversion": "7.17.16",
+    "package_platforms": [
+        "i686-linux",
+        "m68k-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "s390-linux",
+        "s390x-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "filebeat"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Tristan Helmich",
+            "github": "fadenb",
+            "email": "tristan.helmich+nixos@gmail.com"
+        },
+        {
+            "name": "Bas van Dijk",
+            "github": "basvandijk",
+            "email": "v.dijk.bas@gmail.com"
+        },
+        {
+            "name": "Daniel Fithian",
+            "github": "dfithian",
+            "email": "daniel.m.fithian@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Tristan Helmich",
+        "Bas van Dijk",
+        "Daniel Fithian"
+    ],
+    "package_description": "Lightweight shipper for logfiles",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.elastic.co/products/beats"
+    ],
+    "package_position": null
+}

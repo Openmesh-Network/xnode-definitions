@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "jitsi-videobridge",
+    "package_attr_set": "No package set",
+    "package_pname": "jitsi-videobridge2",
+    "package_pversion": "2.3-149-g793df5a9",
+    "package_platforms": [
+        "loongarch64-linux",
+        "armv6l-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "mips-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "jitsi-videobridge"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Cleeyv",
+            "github": "cleeyv",
+            "email": "cleeyv@riseup.net"
+        },
+        {
+            "name": "Ryan Mulligan",
+            "github": "ryantm",
+            "email": "ryan@ryantm.com"
+        },
+        {
+            "name": "Lassulus",
+            "github": "Lassulus",
+            "email": "lassulus@gmail.com"
+        },
+        {
+            "name": "Yaya",
+            "github": "yayayayaka",
+            "email": "github@uwu.is"
+        },
+        {
+            "name": "Lorenzo Manacorda",
+            "github": "asymmetric",
+            "email": "lorenzo@mailbox.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Cleeyv",
+        "Ryan Mulligan",
+        "Lassulus",
+        "Yaya",
+        "Lorenzo Manacorda"
+    ],
+    "package_description": "WebRTC compatible video router",
+    "package_longDescription": "<rendered-html><p>Jitsi Videobridge is an XMPP server component that allows for\nmultiuser video communication. Unlike the expensive dedicated hardware\nvideobridges, Jitsi Videobridge does not mix the video channels into a\ncomposite video stream, but only relays the received video channels to\nall call participants. Therefore, while it does need to run on a server\nwith good network bandwidth, CPU horsepower is not that critical for\nperformance.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jitsi/jitsi-videobridge"
+    ],
+    "package_position": "pkgs/servers/jitsi-videobridge/default.nix:46"
+}

@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "autossh",
+    "package_attr_set": "No package set",
+    "package_pname": "autossh",
+    "package_pversion": "1.4g",
+    "package_platforms": [
+        "riscv32-linux",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "riscv64-netbsd",
+        "powerpc64le-linux",
+        "i686-openbsd",
+        "x86_64-linux",
+        "powerpc-netbsd",
+        "s390-linux",
+        "armv5tel-linux",
+        "x86_64-netbsd",
+        "m68k-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "x86_64-openbsd",
+        "mips-linux",
+        "armv7l-netbsd",
+        "x86_64-cygwin",
+        "riscv64-linux",
+        "mipsel-netbsd",
+        "armv6l-netbsd",
+        "x86_64-freebsd",
+        "s390x-linux",
+        "i686-darwin",
+        "armv7a-linux",
+        "x86_64-redox",
+        "armv7a-netbsd",
+        "armv6l-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "x86_64-darwin",
+        "m68k-netbsd",
+        "mips64-linux",
+        "riscv32-netbsd",
+        "x86_64-solaris",
+        "i686-cygwin",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "aarch64-linux",
+        "mipsel-linux",
+        "aarch64-netbsd",
+        "i686-netbsd",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "autossh"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-1-Clause.html",
+            "fullName": "BSD 1-Clause License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 1-Clause License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pascal Wittmann",
+            "github": "pSub",
+            "email": "mail@pascal-wittmann.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pascal Wittmann"
+    ],
+    "package_description": "Automatically restart SSH sessions and tunnels",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.harding.motd.ca/autossh/"
+    ],
+    "package_position": "pkgs/tools/networking/autossh/default.nix:30"
+}

@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "mpdscribble",
+    "package_attr_set": "No package set",
+    "package_pname": "mpdscribble",
+    "package_pversion": "0.24",
+    "package_platforms": [
+        "mips64el-linux",
+        "x86_64-cygwin",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "x86_64-redox",
+        "x86_64-solaris",
+        "m68k-linux",
+        "x86_64-darwin",
+        "microblaze-linux",
+        "s390-linux",
+        "i686-netbsd",
+        "x86_64-freebsd",
+        "i686-freebsd",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "i686-cygwin",
+        "m68k-netbsd",
+        "x86_64-netbsd",
+        "loongarch64-linux",
+        "riscv32-netbsd",
+        "i686-openbsd",
+        "i686-linux",
+        "aarch64-linux",
+        "i686-darwin",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "armv6l-netbsd",
+        "riscv64-linux",
+        "armv7a-netbsd",
+        "armv7l-linux",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "armv7l-netbsd",
+        "mips-linux",
+        "riscv64-netbsd",
+        "mips64-linux",
+        "x86_64-openbsd",
+        "aarch64-netbsd",
+        "mipsel-netbsd",
+        "powerpc-netbsd",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mpdscribble"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "sohalt",
+            "github": "Sohalt",
+            "email": "nixos@sohalt.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "sohalt"
+    ],
+    "package_description": "MPD client which submits info about tracks being played to a scrobbler",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.musicpd.org/clients/mpdscribble/"
+    ],
+    "package_position": "pkgs/tools/misc/mpdscribble/default.nix:44"
+}

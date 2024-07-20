@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "go-shadowsocks2",
+    "package_attr_set": "No package set",
+    "package_pname": "go-shadowsocks2",
+    "package_pversion": "0.1.5",
+    "package_platforms": [
+        "armv7l-linux",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "wasm64-wasi",
+        "aarch64-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "wasm32-wasi",
+        "i686-darwin",
+        "microblazeel-linux",
+        "s390x-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "go-shadowsocks2"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alvar Penning",
+            "github": "oxzi",
+            "email": "post@0x21.biz"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alvar Penning"
+    ],
+    "package_description": "Fresh implementation of Shadowsocks in Go",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/shadowsocks/go-shadowsocks2/"
+    ],
+    "package_position": "pkgs/tools/networking/go-shadowsocks2/default.nix:17"
+}

@@ -1,0 +1,96 @@
+{
+    "type": "package",
+    "package_attr_name": "headscale",
+    "package_attr_set": "No package set",
+    "package_pname": "headscale",
+    "package_pversion": "0.22.3",
+    "package_platforms": [
+        "riscv32-linux",
+        "mips64el-linux",
+        "x86_64-darwin",
+        "mipsel-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "mips-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "armv7a-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "i686-darwin",
+        "loongarch64-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "headscale",
+        "build-docker-img",
+        "gh-action-integration-generator"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Niels Kristian Lysh\u00f8j Jensen",
+            "github": "NKJe",
+            "email": "n@nk.je"
+        },
+        {
+            "name": "Jack",
+            "github": "06kellyjac",
+            "email": "hello+nixpkgs@j-k.io"
+        },
+        {
+            "name": "Kristoffer Dalby",
+            "github": "kradalby",
+            "email": "kristoffer@dalby.cc"
+        },
+        {
+            "name": "Gabriel Fontes",
+            "github": "Misterio77",
+            "email": "eu@misterio.me"
+        },
+        {
+            "name": "Geoffrey Huntley",
+            "github": "ghuntley",
+            "email": "ghuntley@ghuntley.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Niels Kristian Lysh\u00f8j Jensen",
+        "Jack",
+        "Kristoffer Dalby",
+        "Gabriel Fontes",
+        "Geoffrey Huntley"
+    ],
+    "package_description": "Open source, self-hosted implementation of the Tailscale control server",
+    "package_longDescription": "<rendered-html><p>Tailscale is a modern VPN built on top of Wireguard. It works like an\noverlay network between the computers of your networks - using all kinds\nof NAT traversal sorcery.</p>\n<p>Everything in Tailscale is Open Source, except the GUI clients for\nproprietary OS (Windows and macOS/iOS), and the \u2018coordination/control\nserver\u2019.</p>\n<p>The control server works as an exchange point of Wireguard public\nkeys for the nodes in the Tailscale network. It also assigns the IP\naddresses of the clients, creates the boundaries between each user,\nenables sharing machines between users, and exposes the advertised\nroutes of your nodes.</p>\n<p>Headscale implements this coordination server.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/juanfont/headscale"
+    ],
+    "package_position": "pkgs/servers/headscale/default.nix:44"
+}

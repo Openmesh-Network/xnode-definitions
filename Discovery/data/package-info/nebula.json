@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "nebula",
+    "package_attr_set": "No package set",
+    "package_pname": "nebula",
+    "package_pversion": "1.9.3",
+    "package_platforms": [
+        "i686-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "wasm32-wasi",
+        "microblaze-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "mips-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "mips64el-linux",
+        "wasm64-wasi",
+        "aarch64-linux",
+        "riscv64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nebula-cert",
+        "nebula"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Oleksii Filonenko",
+            "github": "Br1ght0ne",
+            "email": "brightone@protonmail.com"
+        },
+        {
+            "name": "Morgan Jones",
+            "github": "numinit",
+            "email": "me@numin.it"
+        }
+    ],
+    "package_maintainers_set": [
+        "Oleksii Filonenko",
+        "Morgan Jones"
+    ],
+    "package_description": "Overlay networking tool with a focus on performance, simplicity and security",
+    "package_longDescription": "<rendered-html><p>Nebula is a scalable overlay networking tool with a focus on\nperformance, simplicity and security. It lets you seamlessly connect\ncomputers anywhere in the world. Nebula is portable, and runs on Linux,\nOSX, and Windows. (Also: keep this quiet, but we have an early prototype\nrunning on iOS). It can be used to connect a small number of computers,\nbut is also able to connect tens of thousands of computers.</p>\n<p>Nebula incorporates a number of existing concepts like encryption,\nsecurity groups, certificates, and tunneling, and each of those\nindividual pieces existed before Nebula in various forms. What makes\nNebula different to existing offerings is that it brings all of these\nideas together, resulting in a sum that is greater than its individual\nparts.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/slackhq/nebula"
+    ],
+    "package_position": "pkgs/tools/networking/nebula/default.nix:29"
+}

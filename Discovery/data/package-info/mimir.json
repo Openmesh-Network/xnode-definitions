@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "mimir",
+    "package_attr_set": "No package set",
+    "package_pname": "mimir",
+    "package_pversion": "2.13.0",
+    "package_platforms": [
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "wasm64-wasi",
+        "x86_64-darwin",
+        "armv7l-linux",
+        "i686-darwin",
+        "wasm32-wasi",
+        "i686-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "m68k-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "armv7a-darwin",
+        "aarch64-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mimir",
+        "mimirtool"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Raphael Megzari",
+            "github": "happysalada",
+            "email": "raphael@megzari.com"
+        },
+        {
+            "name": "Bryan Honof",
+            "github": "bryanhonof",
+            "email": "bryanhonof@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Raphael Megzari",
+        "Bryan Honof"
+    ],
+    "package_description": "Grafana Mimir provides horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus. ",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/grafana/mimir"
+    ],
+    "package_position": "pkgs/servers/monitoring/mimir/default.nix:41"
+}

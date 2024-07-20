@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "ndppd",
+    "package_attr_set": "No package set",
+    "package_pname": "ndppd",
+    "package_pversion": "0.2.5",
+    "package_platforms": [
+        "microblazeel-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "mipsel-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ndppd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Tristan Helmich",
+            "github": "fadenb",
+            "email": "tristan.helmich+nixos@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Tristan Helmich"
+    ],
+    "package_description": "Daemon that proxies NDP (Neighbor Discovery Protocol) messages between interfaces",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/DanielAdolfsson/ndppd"
+    ],
+    "package_position": "pkgs/applications/networking/ndppd/default.nix:30"
+}

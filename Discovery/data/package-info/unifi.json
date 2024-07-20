@@ -1,0 +1,91 @@
+{
+    "type": "package",
+    "package_attr_name": "unifi",
+    "package_attr_set": "No package set",
+    "package_pname": "unifi-controller",
+    "package_pversion": "7.5.187",
+    "package_platforms": [
+        "loongarch64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "armv6l-netbsd",
+        "aarch64-darwin",
+        "m68k-netbsd",
+        "x86_64-redox",
+        "s390x-linux",
+        "armv6l-linux",
+        "x86_64-darwin",
+        "i686-linux",
+        "armv7l-netbsd",
+        "riscv32-netbsd",
+        "x86_64-freebsd",
+        "riscv64-linux",
+        "s390-linux",
+        "aarch64-linux",
+        "riscv32-linux",
+        "powerpc-netbsd",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "mipsel-linux",
+        "i686-openbsd",
+        "x86_64-netbsd",
+        "mips64el-linux",
+        "mips-linux",
+        "x86_64-solaris",
+        "microblaze-linux",
+        "i686-freebsd",
+        "armv7a-linux",
+        "aarch64-netbsd",
+        "armv7a-netbsd",
+        "mipsel-netbsd",
+        "riscv64-netbsd",
+        "x86_64-openbsd",
+        "powerpc64le-linux",
+        "x86_64-cygwin",
+        "armv5tel-linux",
+        "i686-darwin",
+        "i686-cygwin",
+        "mips64-linux",
+        "i686-netbsd",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        },
+        {
+            "name": "Patryk Wychowaniec",
+            "github": "Patryk27",
+            "email": "pwychowaniec@pm.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robin Gloster",
+        "Patryk Wychowaniec"
+    ],
+    "package_description": "Controller for Ubiquiti UniFi access points",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.ubnt.com/"
+    ],
+    "package_position": "pkgs/servers/unifi/default.nix:37"
+}

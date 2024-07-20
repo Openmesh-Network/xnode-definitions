@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "mautrix-whatsapp",
+    "package_attr_set": "No package set",
+    "package_pname": "mautrix-whatsapp",
+    "package_pversion": "0.10.7",
+    "package_platforms": [
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "mips-linux",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "x86_64-darwin",
+        "m68k-linux",
+        "i686-darwin",
+        "mips64el-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "microblazeel-linux",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mautrix-whatsapp"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Victor SENE",
+            "github": "Vskilet",
+            "email": "victor@sene.ovh"
+        },
+        {
+            "name": "Maximilian Bosch",
+            "github": "Ma27",
+            "email": "maximilian@mbosch.me"
+        },
+        {
+            "name": "Charlotte Van Petegem",
+            "github": "chvp",
+            "email": "nixpkgs@cvpetegem.be"
+        }
+    ],
+    "package_maintainers_set": [
+        "Victor SENE",
+        "Maximilian Bosch",
+        "Charlotte Van Petegem"
+    ],
+    "package_description": "Matrix <-> Whatsapp hybrid puppeting/relaybot bridge",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/tulir/mautrix-whatsapp"
+    ],
+    "package_position": "pkgs/servers/mautrix-whatsapp/default.nix:22"
+}

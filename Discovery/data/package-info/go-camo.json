@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "go-camo",
+    "package_attr_set": "No package set",
+    "package_pname": "go-camo",
+    "package_pversion": "2.5.1",
+    "package_platforms": [
+        "mips64el-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "wasm32-wasi",
+        "armv6l-linux",
+        "x86_64-darwin",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "i686-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "armv7l-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "go-camo",
+        "url-tool"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Stanis\u0142aw Pitucha",
+            "github": "viraptor",
+            "email": "nix@viraptor.info"
+        }
+    ],
+    "package_maintainers_set": [
+        "Stanis\u0142aw Pitucha"
+    ],
+    "package_description": "Camo server is a special type of image proxy that proxies non-secure images over SSL/TLS",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/cactus/go-camo"
+    ],
+    "package_position": "pkgs/by-name/go/go-camo/package.nix:24"
+}

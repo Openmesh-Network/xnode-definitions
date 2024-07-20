@@ -1,0 +1,67 @@
+{
+    "type": "package",
+    "package_attr_name": "interception-tools",
+    "package_attr_set": "No package set",
+    "package_pname": "interception-tools",
+    "package_pversion": "0.6.8",
+    "package_platforms": [
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "i686-linux",
+        "armv5tel-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "s390-linux",
+        "s390x-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "udevmon",
+        "intercept",
+        "mux",
+        "uinput"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "vyp",
+            "github": "vyp",
+            "email": "elisp.vim@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "vyp"
+    ],
+    "package_description": "Minimal composable infrastructure on top of libudev and libevdev",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitlab.com/interception/linux/tools"
+    ],
+    "package_position": "pkgs/tools/inputmethods/interception-tools/default.nix:18"
+}

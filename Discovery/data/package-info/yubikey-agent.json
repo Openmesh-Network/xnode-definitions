@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "yubikey-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "yubikey-agent",
+    "package_pversion": "0.1.6",
+    "package_platforms": [
+        "mips64el-linux",
+        "armv5tel-linux",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "armv7l-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "mipsel-linux",
+        "i686-linux",
+        "i686-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "riscv64-linux",
+        "x86_64-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "m68k-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "yubikey-agent"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Philip Potter",
+            "github": "philandstuff",
+            "email": "philip.g.potter@gmail.com"
+        },
+        {
+            "name": "David McKay",
+            "github": "rawkode",
+            "email": "david.andrew.mckay@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Philip Potter",
+        "David McKay"
+    ],
+    "package_description": "Seamless ssh-agent for YubiKeys",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://filippo.io/yubikey-agent"
+    ],
+    "package_position": "pkgs/tools/security/yubikey-agent/default.nix:39"
+}

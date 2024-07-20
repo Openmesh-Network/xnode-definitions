@@ -1,0 +1,81 @@
+{
+    "type": "package",
+    "package_attr_name": "awstats",
+    "package_attr_set": "No package set",
+    "package_pname": "perl5.38.2-awstats",
+    "package_pversion": "7.9",
+    "package_platforms": [
+        "riscv64-linux",
+        "armv7a-netbsd",
+        "armv7l-netbsd",
+        "mips-linux",
+        "aarch64-darwin",
+        "x86_64-redox",
+        "armv6l-netbsd",
+        "powerpc64le-linux",
+        "i686-linux",
+        "s390-linux",
+        "x86_64-cygwin",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "armv7a-darwin",
+        "powerpc64-linux",
+        "powerpc-netbsd",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "m68k-netbsd",
+        "x86_64-openbsd",
+        "armv7a-linux",
+        "i686-cygwin",
+        "aarch64-linux",
+        "mipsel-linux",
+        "i686-darwin",
+        "aarch64-netbsd",
+        "i686-netbsd",
+        "x86_64-netbsd",
+        "i686-freebsd",
+        "mipsel-netbsd",
+        "mips64el-linux",
+        "riscv64-netbsd",
+        "mips64-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "x86_64-solaris",
+        "loongarch64-linux",
+        "m68k-linux",
+        "x86_64-freebsd",
+        "x86_64-linux",
+        "riscv32-netbsd",
+        "armv7l-linux",
+        "i686-openbsd"
+    ],
+    "package_outputs": [
+        "out",
+        "doc",
+        "bin"
+    ],
+    "package_default_output": "bin",
+    "package_programs": [
+        "awstats"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Real-time logfile analyzer to get advanced statistics",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://awstats.org"
+    ],
+    "package_position": "pkgs/tools/system/awstats/default.nix:62"
+}

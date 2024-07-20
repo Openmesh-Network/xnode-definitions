@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "quicktun",
+    "package_attr_set": "No package set",
+    "package_pname": "quicktun",
+    "package_pversion": "2.2.5",
+    "package_platforms": [
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "x86_64-freebsd",
+        "riscv32-linux",
+        "microblaze-linux",
+        "i686-netbsd",
+        "aarch64-darwin",
+        "riscv64-linux",
+        "i686-darwin",
+        "powerpc-netbsd",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "i686-freebsd",
+        "x86_64-darwin",
+        "mips-linux",
+        "mipsel-linux",
+        "armv7a-netbsd",
+        "armv7a-darwin",
+        "armv7l-netbsd",
+        "riscv64-netbsd",
+        "x86_64-redox",
+        "s390x-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "riscv32-netbsd",
+        "x86_64-cygwin",
+        "x86_64-solaris",
+        "m68k-netbsd",
+        "m68k-linux",
+        "i686-openbsd",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "aarch64-netbsd",
+        "s390-linux",
+        "i686-cygwin",
+        "mipsel-netbsd",
+        "x86_64-netbsd",
+        "armv7a-linux",
+        "armv6l-netbsd",
+        "x86_64-openbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "quicktun.keypair",
+        "quicktun.nacltai",
+        "quicktun.combined",
+        "quicktun.raw",
+        "quicktun.salty",
+        "quicktun",
+        "quicktun.nacl0"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "h7x4",
+            "github": "h7x4",
+            "email": "h7x4@nani.wtf"
+        }
+    ],
+    "package_maintainers_set": [
+        "h7x4"
+    ],
+    "package_description": "Very simple, yet secure VPN software",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://wiki.ucis.nl/QuickTun"
+    ],
+    "package_position": "pkgs/tools/networking/quicktun/default.nix:40"
+}

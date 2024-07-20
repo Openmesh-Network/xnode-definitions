@@ -1,0 +1,105 @@
+{
+    "type": "package",
+    "package_attr_name": "ollama",
+    "package_attr_set": "No package set",
+    "package_pname": "ollama",
+    "package_pversion": "0.2.5",
+    "package_platforms": [
+        "s390-linux",
+        "x86_64-netbsd",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "i686-cygwin",
+        "armv7a-netbsd",
+        "i686-freebsd",
+        "mipsel-netbsd",
+        "armv6l-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "aarch64-netbsd",
+        "m68k-netbsd",
+        "x86_64-openbsd",
+        "x86_64-solaris",
+        "loongarch64-linux",
+        "mips-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "x86_64-darwin",
+        "powerpc64-linux",
+        "s390x-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "i686-darwin",
+        "i686-netbsd",
+        "m68k-linux",
+        "riscv32-netbsd",
+        "riscv64-netbsd",
+        "x86_64-cygwin",
+        "armv6l-netbsd",
+        "armv7l-netbsd",
+        "x86_64-freebsd",
+        "x86_64-redox",
+        "powerpc-netbsd",
+        "mips64-linux",
+        "i686-openbsd",
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "aarch64-darwin",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ollama"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "abysssol",
+            "github": "abysssol",
+            "email": "abysssol@pm.me"
+        },
+        {
+            "name": "Mostly Void",
+            "github": "dit7ya",
+            "email": "7rat13@gmail.com"
+        },
+        {
+            "name": "Enno Lohmeier",
+            "github": "elohmeier",
+            "email": "elo-nixos@nerdworks.de"
+        },
+        {
+            "name": "Roy Davison",
+            "github": "RoyDubnium",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "abysssol",
+        "Mostly Void",
+        "Enno Lohmeier",
+        "Roy Davison"
+    ],
+    "package_description": "Get up and running with large language models locally",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ollama/ollama"
+    ],
+    "package_position": "pkgs/by-name/ol/ollama/package.nix:222"
+}

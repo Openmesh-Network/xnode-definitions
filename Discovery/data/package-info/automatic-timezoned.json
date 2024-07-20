@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "automatic-timezoned",
+    "package_attr_set": "No package set",
+    "package_pname": "automatic-timezoned",
+    "package_pversion": "2.0.22",
+    "package_platforms": [
+        "armv6l-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "mips-linux",
+        "i686-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "automatic-timezoned"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Maxime Brunet",
+            "github": "maxbrunet",
+            "email": "max@brnt.mx"
+        }
+    ],
+    "package_maintainers_set": [
+        "Maxime Brunet"
+    ],
+    "package_description": "Automatically update system timezone based on location",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/maxbrunet/automatic-timezoned"
+    ],
+    "package_position": "pkgs/tools/system/automatic-timezoned/default.nix:20"
+}

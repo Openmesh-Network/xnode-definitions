@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "ebusd",
+    "package_attr_set": "No package set",
+    "package_pname": "ebusd",
+    "package_pversion": "23.3",
+    "package_platforms": [
+        "armv7l-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "mips-linux",
+        "i686-linux",
+        "mips64-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ebusctl",
+        "ebuspicloader",
+        "ebusd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nathan Bijnens",
+            "github": "nathan-gs",
+            "email": "nathan@nathan.gs"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nathan Bijnens"
+    ],
+    "package_description": "ebusd",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/john30/ebusd"
+    ],
+    "package_position": "pkgs/servers/ebusd/default.nix:50"
+}

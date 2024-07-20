@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "tinyproxy",
+    "package_attr_set": "No package set",
+    "package_pname": "tinyproxy",
+    "package_pversion": "1.11.2",
+    "package_platforms": [
+        "armv6l-linux",
+        "i686-netbsd",
+        "arm-none",
+        "powerpc-none",
+        "x86_64-solaris",
+        "armv6l-netbsd",
+        "powerpc-netbsd",
+        "x86_64-genode",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "msp430-none",
+        "wasm64-wasi",
+        "i686-darwin",
+        "i686-windows",
+        "i686-none",
+        "x86_64-cygwin",
+        "s390-none",
+        "s390x-linux",
+        "mips-none",
+        "aarch64-none",
+        "riscv64-none",
+        "vc4-none",
+        "aarch64-darwin",
+        "microblaze-none",
+        "m68k-none",
+        "loongarch64-linux",
+        "i686-linux",
+        "riscv32-none",
+        "mips64-none",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "aarch64-genode",
+        "microblaze-linux",
+        "riscv32-netbsd",
+        "riscv32-linux",
+        "or1k-none",
+        "x86_64-openbsd",
+        "mips-linux",
+        "i686-openbsd",
+        "powerpc64-linux",
+        "rx-none",
+        "mipsel-netbsd",
+        "avr-none",
+        "i686-cygwin",
+        "s390x-none",
+        "armv7a-linux",
+        "m68k-linux",
+        "riscv64-netbsd",
+        "microblazeel-none",
+        "powerpcle-none",
+        "mips64el-linux",
+        "armv6l-none",
+        "x86_64-redox",
+        "wasm32-wasi",
+        "x86_64-windows",
+        "microblazeel-linux",
+        "s390-linux",
+        "armv7a-netbsd",
+        "x86_64-freebsd",
+        "armv7l-netbsd",
+        "x86_64-netbsd",
+        "x86_64-none",
+        "aarch64-linux",
+        "javascript-ghcjs",
+        "mmix-mmixware",
+        "i686-genode",
+        "mips64-linux",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "powerpc64le-linux",
+        "aarch64-netbsd",
+        "aarch64_be-none",
+        "mipsel-linux",
+        "riscv64-linux",
+        "m68k-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tinyproxy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Carlos D'Agostino",
+            "github": "carlosdagos",
+            "email": "m@cdagostino.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Carlos D'Agostino"
+    ],
+    "package_description": "Light-weight HTTP/HTTPS proxy daemon for POSIX operating systems",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tinyproxy.github.io/"
+    ],
+    "package_position": "pkgs/tools/networking/tinyproxy/default.nix:29"
+}

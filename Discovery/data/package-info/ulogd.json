@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "ulogd",
+    "package_attr_set": "No package set",
+    "package_pname": "ulogd",
+    "package_pversion": "2.0.8",
+    "package_platforms": [
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "i686-linux",
+        "s390-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "doc",
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ulogd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Philippe H\u00fcrlimann",
+            "github": "p-h",
+            "email": "p@hurlimann.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Philippe H\u00fcrlimann"
+    ],
+    "package_description": "Userspace logging daemon for netfilter/iptables",
+    "package_longDescription": "<rendered-html><p>Logging daemon that reads event messages coming from the Netfilter\nconnection tracking, the Netfilter packet logging subsystem and from the\nNetfilter accounting subsystem. You have to enable support for\nconnection tracking event delivery; ctnetlink and the NFLOG target in\nyour Linux kernel 2.6.x or load their respective modules. The deprecated\nULOG target (which has been superseded by NFLOG) is also supported.</p>\n<p>The received messages can be logged into files or into a MySQL,\nSQLite3 or PostgreSQL database. IPFIX and Graphite output are also\nsupported.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.netfilter.org/projects/ulogd/index.html"
+    ],
+    "package_position": "pkgs/os-specific/linux/ulogd/default.nix:59"
+}

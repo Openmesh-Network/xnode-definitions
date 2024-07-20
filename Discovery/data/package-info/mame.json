@@ -1,0 +1,109 @@
+{
+    "type": "package",
+    "package_attr_name": "mame",
+    "package_attr_set": "No package set",
+    "package_pname": "mame",
+    "package_pversion": "0.267",
+    "package_platforms": [
+        "i686-cygwin",
+        "x86_64-redox",
+        "armv6l-netbsd",
+        "mipsel-netbsd",
+        "x86_64-netbsd",
+        "s390x-linux",
+        "riscv64-netbsd",
+        "mips64el-linux",
+        "m68k-netbsd",
+        "x86_64-openbsd",
+        "x86_64-freebsd",
+        "aarch64-linux",
+        "mips64-linux",
+        "i686-freebsd",
+        "powerpc64le-linux",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "s390-linux",
+        "armv7l-netbsd",
+        "armv7a-netbsd",
+        "i686-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "x86_64-solaris",
+        "powerpc-netbsd",
+        "aarch64-darwin",
+        "i686-netbsd",
+        "x86_64-cygwin",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "i686-openbsd",
+        "i686-darwin",
+        "riscv32-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "aarch64-netbsd",
+        "microblaze-linux",
+        "riscv32-netbsd"
+    ],
+    "package_outputs": [
+        "tools",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "testkeys",
+        "mame-split",
+        "imgtool",
+        "mame",
+        "jedutil",
+        "pngcmp",
+        "ldresample",
+        "nltool",
+        "floptool",
+        "regrep",
+        "nlwav",
+        "romcmp",
+        "chdman",
+        "srcclean",
+        "unidasm",
+        "ldverify",
+        "castool"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Thiago K. Okada",
+            "github": "thiagokokada",
+            "email": "thiagokokada@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Thiago K. Okada"
+    ],
+    "package_description": "Multi-purpose emulation framework",
+    "package_longDescription": "<rendered-html><p>MAME\u2019s purpose is to preserve decades of software history. As\nelectronic technology continues to rush forward, MAME prevents this\nimportant \u201cvintage\u201d software from being lost and forgotten. This is\nachieved by documenting the hardware and how it functions. The source\ncode to MAME serves as this documentation. The fact that the software is\nusable serves primarily to validate the accuracy of the documentation\n(how else can you prove that you have recreated the hardware\nfaithfully?). Over time, MAME (originally stood for Multiple Arcade\nMachine Emulator) absorbed the sister-project MESS (Multi Emulator Super\nSystem), so MAME now documents a wide variety of (mostly vintage)\ncomputers, video game consoles and calculators, in addition to the\narcade video games that were its initial focus.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.mamedev.org/"
+    ],
+    "package_position": "pkgs/applications/emulators/mame/default.nix:179"
+}

@@ -1,0 +1,79 @@
+{
+    "type": "package",
+    "package_attr_name": "drbd",
+    "package_attr_set": "No package set",
+    "package_pname": "drbd",
+    "package_pversion": "9.27.0",
+    "package_platforms": [
+        "m68k-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "mips64el-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "i686-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "s390x-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "drbdadm",
+        "drbdmon",
+        "drbdmeta",
+        "drbdsetup"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ryan Mulligan",
+            "github": "ryantm",
+            "email": "ryan@ryantm.com"
+        },
+        {
+            "name": "Astro",
+            "github": "astro",
+            "email": "astro@spaceboyz.net"
+        },
+        {
+            "name": "Birk Bohne",
+            "github": "birkb",
+            "email": "birk@batchworks.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ryan Mulligan",
+        "Astro",
+        "Birk Bohne"
+    ],
+    "package_description": "Distributed Replicated Block Device, a distributed storage system for Linux (userspace utilities)",
+    "package_longDescription": "<rendered-html><p>DRBD is a software-based, shared-nothing, replicated storage solution\nmirroring the content of block devices (hard disks, partitions, logical\nvolumes, and so on) between hosts.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://linbit.com/drbd/"
+    ],
+    "package_position": "pkgs/os-specific/linux/drbd/utils.nix:126"
+}

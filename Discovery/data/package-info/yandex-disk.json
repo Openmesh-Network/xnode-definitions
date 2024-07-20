@@ -1,0 +1,49 @@
+{
+    "type": "package",
+    "package_attr_name": "yandex-disk",
+    "package_attr_set": "No package set",
+    "package_pname": "yandex-disk",
+    "package_pversion": "0.1.6.1080",
+    "package_platforms": [
+        "i686-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Sergey Mironov",
+            "github": "grwlf",
+            "email": "grrwlf@gmail.com"
+        },
+        {
+            "name": "Arseniy Seroka",
+            "github": "jagajaga",
+            "email": "ars.seroka@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Sergey Mironov",
+        "Arseniy Seroka"
+    ],
+    "package_description": "Free cloud file storage service",
+    "package_longDescription": "<rendered-html><p>Yandex.Disk console client for Linux lets you manage files on Disk\nwithout using a window interface or programs that support WebDAV. The\nadvantages of the console client compared to a WebDAV connection:</p>\n<ul>\n<li>low system resource requirements;</li>\n<li>faster file reading and writing speeds;</li>\n<li>faster syncing with Disk\u2019s server;</li>\n<li>no need to be constantly connected to work with files.</li>\n</ul>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://help.yandex.com/disk/cli-clients.xml"
+    ],
+    "package_position": "pkgs/tools/filesystems/yandex-disk/default.nix:56"
+}

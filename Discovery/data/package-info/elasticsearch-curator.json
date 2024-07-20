@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "elasticsearch-curator",
+    "package_attr_set": "No package set",
+    "package_pname": "elasticsearch-curator",
+    "package_pversion": "8.0.15",
+    "package_platforms": [
+        "microblaze-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "i686-darwin",
+        "i686-windows",
+        "mips-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "x86_64-freebsd",
+        "m68k-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "i686-freebsd",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "x86_64-windows",
+        "aarch64-linux",
+        "riscv32-linux",
+        "armv7a-darwin",
+        "i686-cygwin",
+        "x86_64-cygwin",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bas van Dijk",
+            "github": "basvandijk",
+            "email": "v.dijk.bas@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bas van Dijk"
+    ],
+    "package_description": "Curate, or manage, your Elasticsearch indices and snapshots",
+    "package_longDescription": "<rendered-html><p>Elasticsearch Curator helps you curate, or manage, your Elasticsearch\nindices and snapshots by:</p>\n<ul>\n<li><p>Obtaining the full list of indices (or snapshots) from the\ncluster, as the actionable list</p></li>\n<li><p>Iterate through a list of user-defined filters to progressively\nremove indices (or snapshots) from this actionable list as\nneeded.</p></li>\n<li><p>Perform various actions on the items which remain in the\nactionable list.</p></li>\n</ul>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/elastic/curator"
+    ],
+    "package_position": "pkgs/by-name/el/elasticsearch-curator/package.nix:80"
+}

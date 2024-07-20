@@ -1,0 +1,98 @@
+{
+    "type": "package",
+    "package_attr_name": "bitcoind",
+    "package_attr_set": "No package set",
+    "package_pname": "bitcoind",
+    "package_pversion": "27.1",
+    "package_platforms": [
+        "armv7l-netbsd",
+        "i686-cygwin",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "armv7a-darwin",
+        "x86_64-solaris",
+        "microblaze-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "aarch64-netbsd",
+        "x86_64-netbsd",
+        "i686-openbsd",
+        "riscv64-linux",
+        "x86_64-cygwin",
+        "riscv32-linux",
+        "powerpc-netbsd",
+        "x86_64-linux",
+        "s390-linux",
+        "mips64-linux",
+        "armv6l-linux",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "x86_64-openbsd",
+        "i686-freebsd",
+        "i686-netbsd",
+        "armv6l-netbsd",
+        "x86_64-redox",
+        "armv7a-linux",
+        "i686-linux",
+        "riscv64-netbsd",
+        "loongarch64-linux",
+        "i686-darwin",
+        "x86_64-freebsd",
+        "powerpc64le-linux",
+        "riscv32-netbsd",
+        "m68k-linux",
+        "x86_64-darwin",
+        "s390x-linux",
+        "armv7a-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "test_bitcoin",
+        "bitcoin-util",
+        "bitcoind",
+        "bitcoin-tx",
+        "bitcoin-cli",
+        "bitcoin-wallet"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pavol Rusnak",
+            "github": "prusnak",
+            "email": "pavol@rusnak.io"
+        },
+        {
+            "name": "Russell O'Connor",
+            "github": "roconnor",
+            "email": "roconnor@r6.ca"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pavol Rusnak",
+        "Russell O'Connor"
+    ],
+    "package_description": "Peer-to-peer electronic cash system",
+    "package_longDescription": "<rendered-html><p>Bitcoin is a free open source peer-to-peer electronic cash system\nthat is completely decentralized, without the need for a central server\nor trusted parties. Users hold the crypto keys to their own money and\ntransact directly with each other, with the help of a P2P network to\ncheck for double-spending.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://bitcoin.org/en/"
+    ],
+    "package_position": "pkgs/applications/blockchains/bitcoin/default.nix:120"
+}

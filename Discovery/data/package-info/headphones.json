@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "headphones",
+    "package_attr_set": "No package set",
+    "package_pname": "headphones",
+    "package_pversion": "0.6.3",
+    "package_platforms": [
+        "armv7a-linux",
+        "x86_64-windows",
+        "armv6l-linux",
+        "x86_64-cygwin",
+        "aarch64-darwin",
+        "m68k-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "i686-windows",
+        "i686-darwin",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "i686-cygwin",
+        "microblaze-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "x86_64-freebsd",
+        "x86_64-darwin",
+        "i686-linux",
+        "s390-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "headphones"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "rembo10",
+            "github": "rembo10",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "rembo10"
+    ],
+    "package_description": "Automatic music downloader for SABnzbd",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/rembo10/headphones"
+    ],
+    "package_position": "pkgs/servers/headphones/default.nix:34"
+}

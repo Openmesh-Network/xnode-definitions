@@ -1,0 +1,78 @@
+{
+    "type": "package",
+    "package_attr_name": "colord",
+    "package_attr_set": "No package set",
+    "package_pname": "colord",
+    "package_pversion": "1.4.6",
+    "package_platforms": [
+        "armv7a-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "installedTests",
+        "dev",
+        "devdoc",
+        "out",
+        "man"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cd-fix-profile",
+        "cd-it8",
+        "cd-create-profile",
+        "cd-iccdump",
+        "colormgr"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.0-or-later.html",
+            "fullName": "GNU Library General Public License v2 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Library General Public License v2 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Marc Weber",
+            "github": "MarcWeber",
+            "email": "marco-oweber@gmx.de"
+        },
+        {
+            "name": "Jan Tojnar",
+            "github": "jtojnar",
+            "email": "jtojnar@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Marc Weber",
+        "Jan Tojnar"
+    ],
+    "package_description": "System service to manage, install and generate color profiles to accurately color manage input and output devices",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.freedesktop.org/software/colord/"
+    ],
+    "package_position": "pkgs/tools/misc/colord/default.nix:115"
+}

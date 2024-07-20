@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "goxlr-utility",
+    "package_attr_set": "No package set",
+    "package_pname": "goxlr-utility",
+    "package_pversion": "1.1.1",
+    "package_platforms": [
+        "aarch64-linux",
+        "loongarch64-linux",
+        "aarch64-netbsd",
+        "wasm32-wasi",
+        "s390x-linux",
+        "armv7a-linux",
+        "i686-darwin",
+        "mipsel-netbsd",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "armv7l-netbsd",
+        "mips64-linux",
+        "x86_64-solaris",
+        "powerpc64le-linux",
+        "powerpc-netbsd",
+        "aarch64-darwin",
+        "riscv64-netbsd",
+        "i686-openbsd",
+        "x86_64-openbsd",
+        "x86_64-windows",
+        "x86_64-netbsd",
+        "armv5tel-linux",
+        "i686-freebsd",
+        "i686-linux",
+        "x86_64-freebsd",
+        "i686-netbsd",
+        "x86_64-darwin",
+        "mips-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "i686-windows",
+        "armv6l-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "armv6l-netbsd",
+        "armv7l-linux",
+        "x86_64-redox"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "goxlr-launcher",
+        "goxlr-defaults",
+        "goxlr-client",
+        "goxlr-client-quiet",
+        "goxlr-initialiser",
+        "goxlr-daemon"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Erno Hopearuoho",
+            "github": "errnoh",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "Erno Hopearuoho"
+    ],
+    "package_description": "Unofficial GoXLR App replacement for Linux, Windows and MacOS",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/GoXLR-on-Linux/goxlr-utility"
+    ],
+    "package_position": "pkgs/tools/audio/goxlr-utility/default.nix:68"
+}

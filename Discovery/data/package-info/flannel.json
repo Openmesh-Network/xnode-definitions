@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "flannel",
+    "package_attr_set": "No package set",
+    "package_pname": "flannel",
+    "package_pversion": "0.25.4",
+    "package_platforms": [
+        "armv5tel-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "mips-linux",
+        "riscv64-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "flannel"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Johan Thomsen",
+            "github": "johanot",
+            "email": "write@ownrisk.dk"
+        },
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Johan Thomsen",
+        "Jaka Hudoklin"
+    ],
+    "package_description": "Network fabric for containers, designed for Kubernetes",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/flannel-io/flannel"
+    ],
+    "package_position": "pkgs/tools/networking/flannel/default.nix:25"
+}

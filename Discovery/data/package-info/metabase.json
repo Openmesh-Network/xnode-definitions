@@ -1,0 +1,130 @@
+{
+    "type": "package",
+    "package_attr_name": "metabase",
+    "package_attr_set": "No package set",
+    "package_pname": "metabase",
+    "package_pversion": "0.50.10",
+    "package_platforms": [
+        "s390-none",
+        "i686-darwin",
+        "i686-windows",
+        "riscv32-none",
+        "vc4-none",
+        "aarch64-netbsd",
+        "javascript-ghcjs",
+        "i686-freebsd",
+        "x86_64-solaris",
+        "mips64-none",
+        "x86_64-genode",
+        "riscv32-linux",
+        "microblazeel-none",
+        "i686-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "m68k-netbsd",
+        "x86_64-freebsd",
+        "mmix-mmixware",
+        "powerpcle-none",
+        "x86_64-openbsd",
+        "i686-none",
+        "x86_64-darwin",
+        "aarch64-none",
+        "x86_64-windows",
+        "powerpc64le-linux",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "x86_64-cygwin",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "m68k-none",
+        "x86_64-none",
+        "powerpc-netbsd",
+        "x86_64-redox",
+        "arm-none",
+        "powerpc64-linux",
+        "armv7a-netbsd",
+        "s390-linux",
+        "riscv64-linux",
+        "riscv32-netbsd",
+        "x86_64-linux",
+        "x86_64-netbsd",
+        "msp430-none",
+        "rx-none",
+        "i686-openbsd",
+        "armv6l-none",
+        "mipsel-netbsd",
+        "avr-none",
+        "wasm64-wasi",
+        "i686-cygwin",
+        "m68k-linux",
+        "wasm32-wasi",
+        "aarch64-genode",
+        "s390x-linux",
+        "riscv64-none",
+        "armv6l-linux",
+        "riscv64-netbsd",
+        "armv7l-linux",
+        "aarch64-linux",
+        "mips-none",
+        "armv7l-netbsd",
+        "s390x-none",
+        "microblaze-none",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "aarch64_be-none",
+        "or1k-none",
+        "i686-netbsd",
+        "powerpc-none",
+        "i686-genode",
+        "armv6l-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "metabase"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "schneefux",
+            "github": "schneefux",
+            "email": "schneefux+nixos_pkg@schneefux.xyz"
+        },
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        },
+        {
+            "name": "Marek Mahut",
+            "github": "mmahut",
+            "email": "marek.mahut@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "schneefux",
+        "Austin Seipp",
+        "Marek Mahut"
+    ],
+    "package_description": "Easy, open source way for everyone in your company to ask questions and learn from data",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://metabase.com"
+    ],
+    "package_position": "pkgs/servers/metabase/default.nix:23"
+}

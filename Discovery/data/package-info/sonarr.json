@@ -1,0 +1,60 @@
+{
+    "type": "package",
+    "package_attr_name": "sonarr",
+    "package_attr_set": "No package set",
+    "package_pname": "sonarr",
+    "package_pversion": "4.0.7.1863",
+    "package_platforms": [
+        "aarch64-linux",
+        "aarch64-darwin",
+        "x86_64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "Sonarr",
+        "NzbDrone"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Tristan Helmich",
+            "github": "fadenb",
+            "email": "tristan.helmich+nixos@gmail.com"
+        },
+        {
+            "name": "Steve Purcell",
+            "github": "purcell",
+            "email": "steve@sanityinc.com"
+        },
+        {
+            "name": "Ivan Trubach",
+            "github": "tie",
+            "email": "mr.trubach@icloud.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Tristan Helmich",
+        "Steve Purcell",
+        "Ivan Trubach"
+    ],
+    "package_description": "Smart PVR for newsgroup and bittorrent users",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://sonarr.tv"
+    ],
+    "package_position": "pkgs/by-name/so/sonarr/package.nix:154"
+}

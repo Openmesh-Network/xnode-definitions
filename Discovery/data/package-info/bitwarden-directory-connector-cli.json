@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "bitwarden-directory-connector-cli",
+    "package_attr_set": "No package set",
+    "package_pname": "bitwarden-directory-connector-cli",
+    "package_pversion": "2024.3.2",
+    "package_platforms": [
+        "riscv32-linux",
+        "m68k-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "bitwarden-directory-connector-cli"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Brendan Golden",
+            "github": "Silver-Golden",
+            "email": "github+nixpkgs@brendan.ie"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Brendan Golden",
+        "Sandro J\u00e4ckel"
+    ],
+    "package_description": "LDAP connector for Bitwarden",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/bitwarden/directory-connector"
+    ],
+    "package_position": "pkgs/tools/security/bitwarden-directory-connector/default.nix:52"
+}

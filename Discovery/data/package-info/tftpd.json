@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "rs-tftpd",
+    "package_attr_set": "No package set",
+    "package_pname": "rs-tftpd",
+    "package_pversion": "0.3.0",
+    "package_platforms": [
+        "riscv32-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "x86_64-freebsd",
+        "i686-darwin",
+        "mipsel-linux",
+        "powerpc-netbsd",
+        "i686-openbsd",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "x86_64-solaris",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "x86_64-netbsd",
+        "mips64-linux",
+        "wasm32-wasi",
+        "i686-netbsd",
+        "x86_64-windows",
+        "s390x-linux",
+        "mips64el-linux",
+        "armv6l-netbsd",
+        "m68k-linux",
+        "i686-windows",
+        "riscv64-netbsd",
+        "armv6l-linux",
+        "aarch64-netbsd",
+        "armv7a-linux",
+        "x86_64-darwin",
+        "x86_64-openbsd",
+        "mipsel-netbsd",
+        "x86_64-redox",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "armv7l-netbsd",
+        "x86_64-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tftpd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Matthew Croughan",
+            "github": "MatthewCroughan",
+            "email": "matt@croughan.sh"
+        }
+    ],
+    "package_maintainers_set": [
+        "Matthew Croughan"
+    ],
+    "package_description": "TFTP Server Daemon implemented in Rust",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/altugbakan/rs-tftpd"
+    ],
+    "package_position": "pkgs/by-name/rs/rs-tftpd/package.nix:23"
+}

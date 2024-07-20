@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "tlp",
+    "package_attr_set": "No package set",
+    "package_pname": "tlp",
+    "package_pversion": "1.6.1",
+    "package_platforms": [
+        "aarch64-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "i686-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "s390-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "mips-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "wwan",
+        "tlp-stat",
+        "nfc",
+        "bluetooth",
+        "run-on-bat",
+        "tlp",
+        "run-on-ac",
+        "wifi"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Amiantov",
+            "github": "abbradar",
+            "email": "ab@fmap.me"
+        },
+        {
+            "name": "Bernardo Meurer",
+            "github": "lovesegfault",
+            "email": "meurerbernardo@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Amiantov",
+        "Bernardo Meurer"
+    ],
+    "package_description": "Advanced Power Management for Linux",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html"
+    ],
+    "package_position": "pkgs/tools/misc/tlp/default.nix:127"
+}

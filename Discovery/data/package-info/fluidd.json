@@ -1,0 +1,40 @@
+{
+    "type": "package",
+    "package_attr_name": "fluidd",
+    "package_attr_set": "No package set",
+    "package_pname": "fluidd",
+    "package_pversion": "1.30.1",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Zhaofeng Li",
+            "github": "zhaofengli",
+            "email": "hello@zhaofeng.li"
+        }
+    ],
+    "package_maintainers_set": [
+        "Zhaofeng Li"
+    ],
+    "package_description": "Klipper web interface",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://docs.fluidd.xyz"
+    ],
+    "package_position": "pkgs/applications/misc/fluidd/default.nix:29"
+}

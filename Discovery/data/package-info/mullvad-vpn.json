@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "mullvad-vpn",
+    "package_attr_set": "No package set",
+    "package_pname": "mullvad-vpn",
+    "package_pversion": "2024.3",
+    "package_platforms": [
+        "aarch64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mullvad-exclude",
+        "mullvad-daemon",
+        "mullvad-vpn",
+        "mullvad-gui",
+        "mullvad",
+        "mullvad-problem-report"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Oleksii Filonenko",
+            "github": "Br1ght0ne",
+            "email": "brightone@protonmail.com"
+        },
+        {
+            "name": "Yannick Markus",
+            "github": "ymarkus",
+            "email": "nixpkgs@ymarkus.dev"
+        },
+        {
+            "name": "Dmitriy",
+            "github": "AtaraxiaSjel",
+            "email": "nix@ataraxiadev.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Oleksii Filonenko",
+        "Yannick Markus",
+        "Dmitriy"
+    ],
+    "package_description": "Client for Mullvad VPN",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mullvad/mullvadvpn-app"
+    ],
+    "package_position": "pkgs/applications/networking/mullvad-vpn/default.nix:137"
+}

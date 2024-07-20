@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "python311Packages.python-matter-server",
+    "package_attr_set": "python311Packages",
+    "package_pname": "python3.11-python-matter-server",
+    "package_pversion": "6.2.2",
+    "package_platforms": [
+        "mipsel-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "m68k-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "mips-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "x86_64-darwin",
+        "i686-windows",
+        "riscv64-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "i686-freebsd",
+        "i686-cygwin",
+        "x86_64-freebsd",
+        "i686-linux",
+        "powerpc64-linux",
+        "x86_64-cygwin",
+        "armv5tel-linux",
+        "armv7a-darwin",
+        "s390-linux",
+        "x86_64-windows",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "i686-darwin"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "matter-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Fabian Affolter",
+            "github": "fabaff",
+            "email": "mail@fabian-affolter.ch"
+        },
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        },
+        {
+            "name": "J\u00f6rg Thalheim",
+            "github": "Mic92",
+            "email": "joerg@thalheim.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Fabian Affolter",
+        "Martin Weinelt",
+        "J\u00f6rg Thalheim"
+    ],
+    "package_description": "Python server to interact with Matter",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/home-assistant-libs/python-matter-server"
+    ],
+    "package_position": "pkgs/development/python-modules/python-matter-server/default.nix:128"
+}

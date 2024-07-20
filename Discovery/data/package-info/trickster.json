@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "trickster",
+    "package_attr_set": "No package set",
+    "package_pname": "trickster",
+    "package_pversion": "1.1.5",
+    "package_platforms": [
+        "mips64-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "trickster"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jan Hrnko",
+            "github": "1000101",
+            "email": "b1000101@pm.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jan Hrnko"
+    ],
+    "package_description": "Reverse proxy cache and time series dashboard accelerator",
+    "package_longDescription": "<rendered-html><p>Trickster is a fully-featured HTTP Reverse Proxy Cache for HTTP\napplications like static file servers and web APIs.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://trickstercache.org/"
+    ],
+    "package_position": "pkgs/servers/trickster/trickster.nix:36"
+}

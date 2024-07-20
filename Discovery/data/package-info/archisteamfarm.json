@@ -1,0 +1,47 @@
+{
+    "type": "package",
+    "package_attr_name": "ArchiSteamFarm",
+    "package_attr_set": "No package set",
+    "package_pname": "ArchiSteamFarm",
+    "package_pversion": "6.0.3.4",
+    "package_platforms": [
+        "aarch64-darwin",
+        "x86_64-linux",
+        "aarch64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ArchiSteamFarm"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Sandro J\u00e4ckel"
+    ],
+    "package_description": "Application with primary purpose of idling Steam cards from multiple accounts simultaneously",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/JustArchiNET/ArchiSteamFarm"
+    ],
+    "package_position": "pkgs/applications/misc/ArchiSteamFarm/default.nix:79"
+}

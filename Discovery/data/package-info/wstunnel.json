@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "wstunnel",
+    "package_attr_set": "No package set",
+    "package_pname": "wstunnel",
+    "package_pversion": "9.7.2",
+    "package_platforms": [
+        "s390x-linux",
+        "mips64el-linux",
+        "x86_64-redox",
+        "i686-netbsd",
+        "riscv32-linux",
+        "armv7a-darwin",
+        "mipsel-netbsd",
+        "i686-freebsd",
+        "i686-openbsd",
+        "mips-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "x86_64-freebsd",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "armv7l-netbsd",
+        "x86_64-netbsd",
+        "wasm32-wasi",
+        "i686-darwin",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "mips64-linux",
+        "aarch64-darwin",
+        "riscv64-netbsd",
+        "armv6l-netbsd",
+        "aarch64-netbsd",
+        "i686-windows",
+        "x86_64-windows",
+        "x86_64-solaris",
+        "m68k-linux",
+        "powerpc-netbsd",
+        "x86_64-openbsd",
+        "armv7l-linux",
+        "riscv64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "wstunnel"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ramses",
+            "github": "R-VdP",
+            "email": "ramses@well-founded.dev"
+        },
+        {
+            "name": "Xinhao Luo",
+            "github": "NeverBehave",
+            "email": "i@never.pet"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ramses",
+        "Xinhao Luo"
+    ],
+    "package_description": "Tunnel all your traffic over Websocket or HTTP2 - Bypass firewalls/DPI",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/erebe/wstunnel"
+    ],
+    "package_position": "pkgs/by-name/ws/wstunnel/package.nix:37"
+}

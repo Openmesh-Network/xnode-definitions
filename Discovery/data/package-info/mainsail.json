@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "mainsail",
+    "package_attr_set": "No package set",
+    "package_pname": "mainsail",
+    "package_pversion": "2.12.0",
+    "package_platforms": [
+        "armv5tel-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "shhht",
+            "github": "shhht",
+            "email": "stp.tjeerd@gmail.com"
+        },
+        {
+            "name": "Bernardo Meurer",
+            "github": "lovesegfault",
+            "email": "meurerbernardo@gmail.com"
+        },
+        {
+            "name": "Wulfsta",
+            "github": "Wulfsta",
+            "email": "wulfstawulfsta@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "shhht",
+        "Bernardo Meurer",
+        "Wulfsta"
+    ],
+    "package_description": "Web interface for managing and controlling 3D printers with Klipper",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://docs.mainsail.xyz"
+    ],
+    "package_position": "pkgs/applications/misc/mainsail/default.nix:37"
+}

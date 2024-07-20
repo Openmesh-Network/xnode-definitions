@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "matrix-sliding-sync",
+    "package_attr_set": "No package set",
+    "package_pname": "matrix-sliding-sync",
+    "package_pversion": "0.99.19",
+    "package_platforms": [
+        "wasm64-wasi",
+        "microblaze-linux",
+        "wasm32-wasi",
+        "mips64-linux",
+        "loongarch64-linux",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "s390-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "m68k-linux",
+        "mips-linux",
+        "x86_64-darwin",
+        "mips64el-linux",
+        "riscv64-linux",
+        "armv7a-darwin",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "syncv3"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Emily Lange",
+            "github": "emilylange",
+            "email": "nix@emilylange.de"
+        },
+        {
+            "name": "Yaya",
+            "github": "yayayayaka",
+            "email": "github@uwu.is"
+        }
+    ],
+    "package_maintainers_set": [
+        "Emily Lange",
+        "Yaya"
+    ],
+    "package_description": "Sliding sync implementation of MSC3575 for matrix",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/matrix-org/sliding-sync"
+    ],
+    "package_position": "pkgs/servers/matrix-synapse/sliding-sync/default.nix:31"
+}

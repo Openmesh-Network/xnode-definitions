@@ -1,0 +1,81 @@
+{
+    "type": "package",
+    "package_attr_name": "seatd",
+    "package_attr_set": "No package set",
+    "package_pname": "seatd",
+    "package_pversion": "0.8.0",
+    "package_platforms": [
+        "x86_64-freebsd",
+        "powerpc64-linux",
+        "microblaze-linux",
+        "riscv32-netbsd",
+        "riscv32-linux",
+        "mips64el-linux",
+        "armv7a-netbsd",
+        "mips64-linux",
+        "x86_64-linux",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "powerpc64le-linux",
+        "aarch64-netbsd",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "armv6l-netbsd",
+        "armv7l-netbsd",
+        "i686-freebsd",
+        "armv6l-linux",
+        "s390-linux",
+        "x86_64-netbsd",
+        "s390x-linux",
+        "m68k-netbsd",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "riscv64-netbsd",
+        "i686-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "powerpc-netbsd",
+        "loongarch64-linux",
+        "m68k-linux",
+        "aarch64-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "bin",
+        "man",
+        "dev"
+    ],
+    "package_default_output": "bin",
+    "package_programs": [
+        "seatd-launch",
+        "seatd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Rouven Czerwinski",
+            "github": "Emantor",
+            "email": "rouven+nixos@czerwinskis.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Rouven Czerwinski"
+    ],
+    "package_description": "Minimal seat management daemon, and a universal seat management library",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://sr.ht/~kennylevinsen/seatd/"
+    ],
+    "package_position": "pkgs/applications/misc/seatd/default.nix:47"
+}

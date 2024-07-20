@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "hostapd",
+    "package_attr_set": "No package set",
+    "package_pname": "hostapd",
+    "package_pversion": "2.10",
+    "package_platforms": [
+        "x86_64-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "s390-linux",
+        "s390x-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "hostapd",
+        "hostapd_cli"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "oddlama",
+            "github": "oddlama",
+            "email": "oddlama@oddlama.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "oddlama"
+    ],
+    "package_description": "User space daemon for access point and authentication servers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://w1.fi/hostapd/"
+    ],
+    "package_position": "pkgs/os-specific/linux/hostapd/default.nix:167"
+}

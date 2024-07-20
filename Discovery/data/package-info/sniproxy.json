@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "sniproxy",
+    "package_attr_set": "No package set",
+    "package_pname": "sniproxy",
+    "package_pversion": "0.6.1",
+    "package_platforms": [
+        "microblaze-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "riscv64-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "sniproxy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Kranium Gikos Mendoza",
+            "github": "womfoo",
+            "email": "kranium@gikos.net"
+        },
+        {
+            "name": "Ryan Lahfa",
+            "github": "RaitoBezarius",
+            "email": "ryan@lahfa.xyz"
+        }
+    ],
+    "package_maintainers_set": [
+        "Kranium Gikos Mendoza",
+        "Ryan Lahfa"
+    ],
+    "package_description": "Transparent TLS and HTTP layer 4 proxy with SNI support",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/dlundquist/sniproxy"
+    ],
+    "package_position": "pkgs/applications/networking/sniproxy/default.nix:19"
+}

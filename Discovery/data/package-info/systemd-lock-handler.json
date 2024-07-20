@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "systemd-lock-handler",
+    "package_attr_set": "No package set",
+    "package_pname": "systemd-lock-handler",
+    "package_pversion": "2.4.2",
+    "package_platforms": [
+        "mipsel-linux",
+        "microblaze-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "i686-linux",
+        "x86_64-linux",
+        "s390x-linux",
+        "powerpc64-linux",
+        "mips-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "s390-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        }
+    ],
+    "package_license_set": [
+        "ISC License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Olli Helenius",
+            "github": "liff",
+            "email": "liff@iki.fi"
+        }
+    ],
+    "package_maintainers_set": [
+        "Olli Helenius"
+    ],
+    "package_description": "Translates systemd-system lock/sleep signals into systemd-user target activations",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://git.sr.ht/~whynothugo/systemd-lock-handler"
+    ],
+    "package_position": "pkgs/by-name/sy/systemd-lock-handler/package.nix:46"
+}

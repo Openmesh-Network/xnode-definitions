@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "mollysocket",
+    "package_attr_set": "No package set",
+    "package_pname": "mollysocket",
+    "package_pversion": "1.4.0",
+    "package_platforms": [
+        "i686-darwin",
+        "x86_64-netbsd",
+        "x86_64-solaris",
+        "riscv32-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "powerpc-netbsd",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "i686-openbsd",
+        "mips64-linux",
+        "x86_64-openbsd",
+        "armv6l-netbsd",
+        "x86_64-darwin",
+        "mipsel-netbsd",
+        "aarch64-linux",
+        "aarch64-netbsd",
+        "mips64el-linux",
+        "riscv64-netbsd",
+        "loongarch64-linux",
+        "x86_64-redox",
+        "i686-netbsd",
+        "i686-windows",
+        "i686-linux",
+        "m68k-linux",
+        "armv7l-netbsd",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "wasm32-wasi",
+        "x86_64-freebsd",
+        "mips-linux",
+        "s390x-linux",
+        "x86_64-windows",
+        "i686-freebsd",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mollysocket"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robert Sch\u00fctz",
+            "github": "dotlambda",
+            "email": "rschuetz17@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robert Sch\u00fctz"
+    ],
+    "package_description": "Get Signal notifications via UnifiedPush",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mollyim/mollysocket"
+    ],
+    "package_position": "pkgs/by-name/mo/mollysocket/package.nix:52"
+}

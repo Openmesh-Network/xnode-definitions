@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "centrifugo",
+    "package_attr_set": "No package set",
+    "package_pname": "centrifugo",
+    "package_pversion": "5.4.1",
+    "package_platforms": [
+        "aarch64-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "x86_64-darwin",
+        "i686-linux",
+        "armv5tel-linux",
+        "i686-darwin",
+        "m68k-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "mips-linux",
+        "armv6l-linux",
+        "wasm64-wasi",
+        "armv7a-linux",
+        "mips64-linux",
+        "wasm32-wasi",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "centrifugo"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ivan Trubach",
+            "github": "tie",
+            "email": "mr.trubach@icloud.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ivan Trubach"
+    ],
+    "package_description": "Scalable real-time messaging server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://centrifugal.dev"
+    ],
+    "package_position": "pkgs/by-name/ce/centrifugo/package.nix:53"
+}

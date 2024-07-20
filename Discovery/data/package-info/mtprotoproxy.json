@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "mtprotoproxy",
+    "package_attr_set": "No package set",
+    "package_pname": "mtprotoproxy",
+    "package_pversion": "1.1.1",
+    "package_platforms": [
+        "armv6l-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "i686-darwin",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "x86_64-freebsd",
+        "mips-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-windows",
+        "i686-cygwin",
+        "i686-freebsd",
+        "m68k-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "powerpc64le-linux",
+        "x86_64-cygwin",
+        "i686-windows"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mtprotoproxy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Amiantov",
+            "github": "abbradar",
+            "email": "ab@fmap.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Amiantov"
+    ],
+    "package_description": "Async MTProto proxy for Telegram",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/alexbers/mtprotoproxy"
+    ],
+    "package_position": "pkgs/servers/mtprotoproxy/default.nix:23"
+}

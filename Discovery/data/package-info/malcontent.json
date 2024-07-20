@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "malcontent",
+    "package_attr_set": "No package set",
+    "package_pname": "malcontent",
+    "package_pversion": "0.12.0",
+    "package_platforms": [
+        "i686-darwin",
+        "i686-cygwin",
+        "i686-freebsd",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "armv6l-netbsd",
+        "microblaze-linux",
+        "m68k-netbsd",
+        "riscv32-netbsd",
+        "x86_64-linux",
+        "x86_64-netbsd",
+        "riscv64-netbsd",
+        "x86_64-freebsd",
+        "i686-netbsd",
+        "s390x-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "x86_64-solaris",
+        "i686-linux",
+        "armv6l-linux",
+        "powerpc-netbsd",
+        "x86_64-openbsd",
+        "riscv64-linux",
+        "i686-openbsd",
+        "x86_64-redox",
+        "mipsel-netbsd",
+        "aarch64-netbsd",
+        "x86_64-cygwin",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "powerpc64-linux",
+        "m68k-linux",
+        "armv7l-netbsd",
+        "mips-linux",
+        "armv7a-netbsd",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "pam",
+        "out",
+        "lib",
+        "dev",
+        "installedTests",
+        "bin",
+        "man"
+    ],
+    "package_default_output": "bin",
+    "package_programs": [
+        "malcontent-client"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-or-later.html",
+            "fullName": "GNU Lesser General Public License v2.1 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v2.1 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jan Tojnar",
+            "github": "jtojnar",
+            "email": "jtojnar@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jan Tojnar"
+    ],
+    "package_description": "Parental controls library",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitlab.freedesktop.org/pwithnall/malcontent"
+    ],
+    "package_position": "pkgs/development/libraries/malcontent/default.nix:97"
+}

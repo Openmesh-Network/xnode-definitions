@@ -1,0 +1,127 @@
+{
+    "type": "package",
+    "package_attr_name": "borgmatic",
+    "package_attr_set": "No package set",
+    "package_pname": "borgmatic",
+    "package_pversion": "1.8.13",
+    "package_platforms": [
+        "microblaze-none",
+        "s390-linux",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "riscv64-linux",
+        "riscv32-netbsd",
+        "powerpc-none",
+        "i686-cygwin",
+        "i686-darwin",
+        "mips-linux",
+        "x86_64-redox",
+        "aarch64-netbsd",
+        "armv6l-linux",
+        "wasm64-wasi",
+        "i686-freebsd",
+        "wasm32-wasi",
+        "x86_64-freebsd",
+        "aarch64-darwin",
+        "powerpcle-none",
+        "x86_64-openbsd",
+        "vc4-none",
+        "x86_64-netbsd",
+        "i686-netbsd",
+        "armv7a-netbsd",
+        "powerpc-netbsd",
+        "aarch64-none",
+        "msp430-none",
+        "x86_64-darwin",
+        "m68k-none",
+        "avr-none",
+        "s390-none",
+        "armv6l-netbsd",
+        "armv7l-netbsd",
+        "aarch64_be-none",
+        "mips64-none",
+        "powerpc64le-linux",
+        "mmix-mmixware",
+        "riscv64-netbsd",
+        "microblazeel-none",
+        "or1k-none",
+        "x86_64-windows",
+        "x86_64-genode",
+        "m68k-netbsd",
+        "s390x-linux",
+        "i686-genode",
+        "x86_64-cygwin",
+        "powerpc64-linux",
+        "riscv64-none",
+        "mipsel-netbsd",
+        "aarch64-linux",
+        "x86_64-solaris",
+        "aarch64-genode",
+        "i686-linux",
+        "i686-none",
+        "s390x-none",
+        "riscv32-none",
+        "rx-none",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "x86_64-none",
+        "i686-windows",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "mips-none",
+        "i686-openbsd",
+        "armv5tel-linux",
+        "arm-none",
+        "mipsel-linux",
+        "javascript-ghcjs",
+        "microblaze-linux",
+        "armv6l-none"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "borgmatic",
+        "generate-borgmatic-config",
+        "validate-borgmatic-config"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Hao Long",
+            "github": "imlonghao",
+            "email": "nixos@esd.cc"
+        },
+        {
+            "name": "x123",
+            "github": "x123",
+            "email": "nix@boxchop.city"
+        }
+    ],
+    "package_maintainers_set": [
+        "Hao Long",
+        "x123"
+    ],
+    "package_description": "Simple, configuration-driven backup software for servers and workstations",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://torsion.org/borgmatic/"
+    ],
+    "package_position": "pkgs/tools/backup/borgmatic/default.nix:68"
+}

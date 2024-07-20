@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "deepin.deepin-shortcut-viewer",
+    "package_attr_set": "deepin",
+    "package_pname": "deepin-shortcut-viewer",
+    "package_pversion": "5.0.9",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "s390-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "mips64el-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "deepin-shortcut-viewer"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Lu Hongxu",
+            "github": "wineee",
+            "email": "lhongxu@outlook.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Lu Hongxu"
+    ],
+    "package_description": "Deepin Shortcut Viewer",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/linuxdeepin/deepin-shortcut-viewer"
+    ],
+    "package_position": "pkgs/desktops/deepin/apps/deepin-shortcut-viewer/default.nix:45"
+}

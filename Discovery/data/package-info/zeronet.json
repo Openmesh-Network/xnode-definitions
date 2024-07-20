@@ -1,0 +1,72 @@
+{
+    "type": "package",
+    "package_attr_name": "zeronet",
+    "package_attr_set": "No package set",
+    "package_pname": "zeronet",
+    "package_pversion": "0.7.1",
+    "package_platforms": [
+        "s390x-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "x86_64-windows",
+        "x86_64-linux",
+        "mips-linux",
+        "armv7a-darwin",
+        "aarch64-darwin",
+        "riscv64-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "x86_64-cygwin",
+        "i686-freebsd",
+        "armv7a-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "i686-windows",
+        "mipsel-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "x86_64-freebsd",
+        "loongarch64-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0.html",
+            "fullName": "GNU General Public License v2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Francesco Gazzetta",
+            "github": "fgaz",
+            "email": "fgaz@fgaz.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Francesco Gazzetta"
+    ],
+    "package_description": "Decentralized websites using Bitcoin crypto and BitTorrent network",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://zeronet.io/"
+    ],
+    "package_position": "pkgs/applications/networking/p2p/zeronet/default.nix:36"
+}

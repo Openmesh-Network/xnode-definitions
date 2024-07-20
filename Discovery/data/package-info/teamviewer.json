@@ -1,0 +1,55 @@
+{
+    "type": "package",
+    "package_attr_name": "teamviewer",
+    "package_attr_set": "No package set",
+    "package_pname": "teamviewer",
+    "package_pversion": "15.54.3",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dev"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Arseniy Seroka",
+            "github": "jagajaga",
+            "email": "ars.seroka@gmail.com"
+        },
+        {
+            "name": "Raymond Gauthier",
+            "github": "jraygauthier",
+            "email": "jraygauthier@gmail.com"
+        },
+        {
+            "name": "Florian Brandes",
+            "github": "gador",
+            "email": "florian.brandes@posteo.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Arseniy Seroka",
+        "Raymond Gauthier",
+        "Florian Brandes"
+    ],
+    "package_description": "Desktop sharing application, providing remote support and online meetings",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.teamviewer.com"
+    ],
+    "package_position": "pkgs/applications/networking/remote/teamviewer/default.nix:129"
+}

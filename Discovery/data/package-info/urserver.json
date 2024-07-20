@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "urserver",
+    "package_attr_set": "No package set",
+    "package_pname": "urserver",
+    "package_pversion": "3.13.0.2505",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Stefan Frijters",
+            "github": "SFrijters",
+            "email": "sfrijters@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Stefan Frijters"
+    ],
+    "package_description": "One-and-only remote for your computer",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.unifiedremote.com/"
+    ],
+    "package_position": "pkgs/servers/urserver/default.nix:40"
+}

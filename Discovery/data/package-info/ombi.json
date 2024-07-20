@@ -1,0 +1,46 @@
+{
+    "type": "package",
+    "package_attr_name": "ombi",
+    "package_attr_set": "No package set",
+    "package_pname": "ombi",
+    "package_pversion": "4.43.5",
+    "package_platforms": [
+        "aarch64-linux",
+        "x86_64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "Ombi"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Andrei Pampu",
+            "github": "andreisergiu98",
+            "email": "pampu.andrei@pm.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Andrei Pampu"
+    ],
+    "package_description": "Self-hosted web application that automatically gives your shared Plex or Emby users the ability to request content by themselves",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://ombi.io/"
+    ],
+    "package_position": "pkgs/servers/ombi/default.nix:50"
+}

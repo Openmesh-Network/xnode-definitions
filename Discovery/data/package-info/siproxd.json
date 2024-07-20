@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "siproxd",
+    "package_attr_set": "No package set",
+    "package_pname": "siproxd",
+    "package_pversion": "0.8.3",
+    "package_platforms": [
+        "s390x-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "s390-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "siproxd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Llu\u00eds Batlle i Rossell",
+            "github": "viric",
+            "email": "viric@viric.name"
+        }
+    ],
+    "package_maintainers_set": [
+        "Llu\u00eds Batlle i Rossell"
+    ],
+    "package_description": "Masquerading SIP Proxy Server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://siproxd.sourceforge.net/"
+    ],
+    "package_position": "pkgs/applications/networking/siproxd/default.nix:18"
+}

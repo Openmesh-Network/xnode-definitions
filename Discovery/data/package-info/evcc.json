@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "evcc",
+    "package_attr_set": "No package set",
+    "package_pname": "evcc",
+    "package_pversion": "0.128.2",
+    "package_platforms": [
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "mips64-linux",
+        "armv7a-darwin",
+        "i686-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "wasm64-wasi",
+        "s390-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "mips64el-linux",
+        "aarch64-darwin",
+        "wasm32-wasi",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "riscv32-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tools",
+        "soc",
+        "packaging",
+        "generate",
+        "ocpp",
+        "evcc"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt"
+    ],
+    "package_description": "EV Charge Controller",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://evcc.io"
+    ],
+    "package_position": "pkgs/servers/home-automation/evcc/default.nix:107"
+}

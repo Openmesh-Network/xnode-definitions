@@ -1,0 +1,85 @@
+{
+    "type": "package",
+    "package_attr_name": "picom",
+    "package_attr_set": "No package set",
+    "package_pname": "picom",
+    "package_pversion": "11.2",
+    "package_platforms": [
+        "mips-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "picom",
+        "picom-trans",
+        "compton",
+        "compton-trans"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ertugrul S\u00f6ylemez",
+            "github": "ertes",
+            "email": "esz@posteo.de"
+        },
+        {
+            "name": "Gutyina Gerg\u0151",
+            "github": "gepbird",
+            "email": "gutyina.gergo.2@gmail.com"
+        },
+        {
+            "name": "James \u2018Twey\u2019 Kay",
+            "github": "Twey",
+            "email": "twey@twey.co.uk"
+        },
+        {
+            "name": "Thiago K. Okada",
+            "github": "thiagokokada",
+            "email": "thiagokokada@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ertugrul S\u00f6ylemez",
+        "Gutyina Gerg\u0151",
+        "James \u2018Twey\u2019 Kay",
+        "Thiago K. Okada"
+    ],
+    "package_description": "Fork of XCompMgr, a sample compositing manager for X servers",
+    "package_longDescription": "<rendered-html><p>A fork of XCompMgr, which is a sample compositing manager for X\nservers supporting the XFIXES, DAMAGE, RENDER, and COMPOSITE extensions.\nIt enables basic eye-candy effects. This fork adds additional features,\nsuch as additional effects, and a fork at a well-defined and proper\nplace.</p>\n<p>The package can be installed in debug mode as:</p>\n<p>picom.override { withDebug = true; }</p>\n<p>For gdb to find the source files, you need to run gdb in the bin\ndirectory of picom package in the nix store.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/yshui/picom"
+    ],
+    "package_position": "pkgs/by-name/pi/picom/package.nix:99"
+}

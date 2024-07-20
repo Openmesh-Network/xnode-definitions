@@ -1,0 +1,81 @@
+{
+    "type": "package",
+    "package_attr_name": "shibboleth-sp",
+    "package_attr_set": "No package set",
+    "package_pname": "shibboleth-sp",
+    "package_pversion": "3.0.4.1",
+    "package_platforms": [
+        "m68k-netbsd",
+        "riscv32-netbsd",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "i686-openbsd",
+        "x86_64-openbsd",
+        "x86_64-redox",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "i686-cygwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "powerpc-netbsd",
+        "x86_64-freebsd",
+        "x86_64-solaris",
+        "microblaze-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "mipsel-netbsd",
+        "riscv32-linux",
+        "i686-freebsd",
+        "x86_64-netbsd",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "i686-netbsd",
+        "m68k-linux",
+        "armv7l-netbsd",
+        "mips64-linux",
+        "armv7a-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "x86_64-cygwin",
+        "x86_64-linux",
+        "aarch64-netbsd",
+        "armv7a-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "shibd",
+        "mdquery",
+        "resolvertest"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Enables SSO and Federation web applications written with any programming language or framework",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://shibboleth.net/products/service-provider.html"
+    ],
+    "package_position": "pkgs/development/libraries/shibboleth-sp/default.nix:32"
+}

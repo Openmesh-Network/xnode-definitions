@@ -1,0 +1,106 @@
+{
+    "type": "package",
+    "package_attr_name": "i2p",
+    "package_attr_set": "No package set",
+    "package_pname": "i2p",
+    "package_pversion": "2.5.2",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "i2prouter"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSL-1.0.html",
+            "fullName": "Boost Software License 1.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/CC-BY-3.0.html",
+            "fullName": "Creative Commons Attribution 3.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/CC0-1.0.html",
+            "fullName": "Creative Commons Zero v1.0 Universal"
+        },
+        {
+            "url": "https://spdx.org/licenses/EPL-1.0.html",
+            "fullName": "Eclipse Public License 1.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0.html",
+            "fullName": "GNU General Public License v2.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-only.html",
+            "fullName": "GNU Lesser General Public License v2.1 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/LGPL-3.0-only.html",
+            "fullName": "GNU Lesser General Public License v3.0 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        },
+        {
+            "url": null,
+            "fullName": "Public Domain"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0",
+        "Boost Software License 1.0",
+        "BSD 2-clause \"Simplified\" License",
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "Creative Commons Attribution 3.0",
+        "Creative Commons Zero v1.0 Universal",
+        "Eclipse Public License 1.0",
+        "GNU General Public License v2.0",
+        "GNU General Public License v3.0",
+        "GNU Lesser General Public License v2.1 only",
+        "GNU Lesser General Public License v3.0 only",
+        "MIT License",
+        "Public Domain"
+    ],
+    "package_maintainers": [
+        {
+            "name": "linsui",
+            "github": "linsui",
+            "email": "linsui555@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "linsui"
+    ],
+    "package_description": "Applications and router for I2P, anonymity over the Internet",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://geti2p.net"
+    ],
+    "package_position": "pkgs/by-name/i2/i2p/package.nix:98"
+}

@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "rshim-user-space",
+    "package_attr_set": "No package set",
+    "package_pname": "rshim-user-space",
+    "package_pversion": "2.0.32",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "mips64el-linux",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rshim",
+        "bfb-install"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "nikstur",
+            "github": "nikstur",
+            "email": "nikstur@outlook.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "nikstur"
+    ],
+    "package_description": "user-space rshim driver for the BlueField SoC",
+    "package_longDescription": "<rendered-html><p>The rshim driver provides a way to access the rshim resources on the\nBlueField target from external host machine. The current version\nimplements device files for boot image push and virtual console access.\nIt also creates virtual network interface to connect to the BlueField\ntarget and provides a way to access the internal rshim registers.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Mellanox/rshim-user-space"
+    ],
+    "package_position": "pkgs/tools/misc/rshim-user-space/default.nix:60"
+}

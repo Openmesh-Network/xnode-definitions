@@ -1,0 +1,55 @@
+{
+    "type": "package",
+    "package_attr_name": "sbclPackages.epmd-test",
+    "package_attr_set": "sbclPackages",
+    "package_pname": "sbcl-epmd-test",
+    "package_pversion": "20140211-git",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [],
+    "package_license_set": [],
+    "package_maintainers": [
+        {
+            "name": "Michael Raskin",
+            "github": "7c6f434c",
+            "email": "7c6f434c@mail.ru"
+        },
+        {
+            "name": "Luke Gorrie",
+            "github": "lukego",
+            "email": "luke@snabb.co"
+        },
+        {
+            "name": "Daniel Nagy",
+            "github": "nagy",
+            "email": "danielnagy@posteo.de"
+        },
+        {
+            "name": "Kasper Ga\u0142kowski",
+            "github": "Uthar",
+            "email": "galkowskikasper@gmail.com"
+        },
+        {
+            "name": "Hraban Luyat",
+            "github": "hraban",
+            "email": "hraban@0brg.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michael Raskin",
+        "Luke Gorrie",
+        "Daniel Nagy",
+        "Kasper Ga\u0142kowski",
+        "Hraban Luyat"
+    ],
+    "package_description": null,
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/development/lisp-modules/imported.nix:34952"
+}

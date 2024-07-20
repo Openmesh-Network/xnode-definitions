@@ -1,0 +1,137 @@
+{
+    "type": "package",
+    "package_attr_name": "nexus",
+    "package_attr_set": "No package set",
+    "package_pname": "nexus",
+    "package_pversion": "3.69.0-02",
+    "package_platforms": [
+        "m68k-linux",
+        "riscv32-netbsd",
+        "aarch64_be-none",
+        "mips64-none",
+        "rx-none",
+        "m68k-none",
+        "armv7l-netbsd",
+        "x86_64-openbsd",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "s390-none",
+        "avr-none",
+        "i686-openbsd",
+        "i686-genode",
+        "wasm32-wasi",
+        "armv5tel-linux",
+        "mips64-linux",
+        "riscv32-none",
+        "microblaze-linux",
+        "s390x-none",
+        "i686-cygwin",
+        "x86_64-darwin",
+        "x86_64-solaris",
+        "powerpcle-none",
+        "x86_64-none",
+        "aarch64-netbsd",
+        "armv7a-netbsd",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "s390-linux",
+        "x86_64-cygwin",
+        "riscv64-netbsd",
+        "aarch64-genode",
+        "armv6l-netbsd",
+        "i686-netbsd",
+        "x86_64-redox",
+        "i686-linux",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "i686-none",
+        "aarch64-none",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "mipsel-netbsd",
+        "microblaze-none",
+        "wasm64-wasi",
+        "mips64el-linux",
+        "microblazeel-none",
+        "i686-windows",
+        "arm-none",
+        "or1k-none",
+        "loongarch64-linux",
+        "armv6l-none",
+        "x86_64-freebsd",
+        "x86_64-linux",
+        "armv7a-linux",
+        "x86_64-netbsd",
+        "i686-darwin",
+        "powerpc-none",
+        "mips-linux",
+        "m68k-netbsd",
+        "riscv64-none",
+        "armv7l-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "mmix-mmixware",
+        "x86_64-windows",
+        "javascript-ghcjs",
+        "msp430-none",
+        "mips-none",
+        "powerpc-netbsd",
+        "x86_64-genode",
+        "mipsel-linux",
+        "vc4-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nexus.orig",
+        "nexus"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/EPL-1.0.html",
+            "fullName": "Eclipse Public License 1.0"
+        }
+    ],
+    "package_license_set": [
+        "Eclipse Public License 1.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Allan Espinosa",
+            "github": "aespinosa",
+            "email": "allan.espinosa@outlook.com"
+        },
+        {
+            "name": "Michele Catalano",
+            "github": "ironpinguin",
+            "email": "michele@catalano.de"
+        },
+        {
+            "name": "Valentino Bocchetti",
+            "github": "luftmensch-luftmensch",
+            "email": "valentinobocchetti59@gmail.com"
+        },
+        {
+            "name": "Francesco Zanini",
+            "github": "zaninime",
+            "email": "francesco@zanini.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Allan Espinosa",
+        "Michele Catalano",
+        "Valentino Bocchetti",
+        "Francesco Zanini"
+    ],
+    "package_description": "Repository manager for binary software components",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.sonatype.com/products/sonatype-nexus-oss"
+    ],
+    "package_position": "pkgs/by-name/ne/nexus/package.nix:53"
+}

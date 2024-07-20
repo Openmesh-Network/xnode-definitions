@@ -1,0 +1,119 @@
+{
+    "type": "package",
+    "package_attr_name": "tuptime",
+    "package_attr_set": "No package set",
+    "package_pname": "tuptime",
+    "package_pversion": "5.2.3",
+    "package_platforms": [
+        "x86_64-linux",
+        "mips64el-linux",
+        "x86_64-windows",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "x86_64-redox",
+        "microblaze-linux",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "mipsel-netbsd",
+        "aarch64-none",
+        "armv6l-linux",
+        "riscv32-netbsd",
+        "riscv64-netbsd",
+        "i686-none",
+        "or1k-none",
+        "riscv64-linux",
+        "s390x-none",
+        "vc4-none",
+        "s390x-linux",
+        "x86_64-netbsd",
+        "i686-openbsd",
+        "mips-none",
+        "m68k-netbsd",
+        "mmix-mmixware",
+        "i686-genode",
+        "i686-cygwin",
+        "armv7a-darwin",
+        "x86_64-freebsd",
+        "microblaze-none",
+        "riscv32-none",
+        "i686-darwin",
+        "powerpc-none",
+        "msp430-none",
+        "rx-none",
+        "aarch64-genode",
+        "aarch64_be-none",
+        "riscv64-none",
+        "mips64-linux",
+        "riscv32-linux",
+        "x86_64-openbsd",
+        "armv7a-netbsd",
+        "wasm32-wasi",
+        "x86_64-genode",
+        "loongarch64-linux",
+        "armv6l-none",
+        "aarch64-netbsd",
+        "i686-netbsd",
+        "mips64-none",
+        "s390-none",
+        "x86_64-none",
+        "armv5tel-linux",
+        "javascript-ghcjs",
+        "m68k-none",
+        "wasm64-wasi",
+        "s390-linux",
+        "x86_64-solaris",
+        "mipsel-linux",
+        "x86_64-cygwin",
+        "mips-linux",
+        "microblazeel-linux",
+        "powerpcle-none",
+        "microblazeel-none",
+        "armv7l-netbsd",
+        "i686-freebsd",
+        "armv6l-netbsd",
+        "i686-windows",
+        "aarch64-linux",
+        "armv7l-linux",
+        "arm-none",
+        "avr-none",
+        "powerpc-netbsd",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tuptime"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Evils",
+            "github": "evils",
+            "email": "evils.devils@protonmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Evils"
+    ],
+    "package_description": "Total uptime & downtime statistics utility",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/rfrail3/tuptime"
+    ],
+    "package_position": "pkgs/tools/system/tuptime/default.nix:42"
+}

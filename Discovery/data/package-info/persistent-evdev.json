@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "persistent-evdev",
+    "package_attr_set": "No package set",
+    "package_pname": "python3.12-persistent-evdev-unstable",
+    "package_pversion": "2022-05-07",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "mips-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "persistent-evdev.py"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Anthony Lodi",
+            "github": "lodi",
+            "email": "anthony.lodi@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Anthony Lodi"
+    ],
+    "package_description": "Persistent virtual input devices for qemu/libvirt/evdev hotplug support",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/aiberia/persistent-evdev"
+    ],
+    "package_position": "pkgs/servers/persistent-evdev/default.nix:38"
+}

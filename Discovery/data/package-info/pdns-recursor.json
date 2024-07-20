@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "pdns-recursor",
+    "package_attr_set": "No package set",
+    "package_pname": "pdns-recursor",
+    "package_pversion": "5.0.6",
+    "package_platforms": [
+        "mips-linux",
+        "microblaze-linux",
+        "armv5tel-linux",
+        "s390-linux",
+        "s390x-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rec_control",
+        "pdns_recursor"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michele Guerini Rocco",
+            "github": "rnhmjoj",
+            "email": "rnhmjoj@inventati.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michele Guerini Rocco"
+    ],
+    "package_description": "Recursive DNS server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.powerdns.com/"
+    ],
+    "package_position": "pkgs/by-name/pd/pdns-recursor/package.nix:56"
+}

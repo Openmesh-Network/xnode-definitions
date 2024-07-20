@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "step-ca",
+    "package_attr_set": "No package set",
+    "package_pname": "step-ca",
+    "package_pversion": "0.26.2",
+    "package_platforms": [
+        "microblaze-linux",
+        "aarch64-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "s390x-linux",
+        "m68k-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "riscv64-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "mips64-linux",
+        "s390-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "step-ca",
+        "badger-migration"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Roger Qiu",
+            "github": "CMCDragonkai",
+            "email": "roger.qiu@matrix.ai"
+        },
+        {
+            "name": "techknowlogick",
+            "github": "techknowlogick",
+            "email": "techknowlogick@gitea.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Roger Qiu",
+        "techknowlogick"
+    ],
+    "package_description": "Private certificate authority (X.509 & SSH) & ACME server for secure automated certificate management, so you can use TLS everywhere & SSO for SSH",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://smallstep.com/certificates/"
+    ],
+    "package_position": "pkgs/tools/security/step-ca/default.nix:65"
+}

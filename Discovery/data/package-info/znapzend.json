@@ -1,0 +1,120 @@
+{
+    "type": "package",
+    "package_attr_name": "znapzend",
+    "package_attr_set": "No package set",
+    "package_pname": "znapzend",
+    "package_pversion": "0.21.0",
+    "package_platforms": [
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "x86_64-none",
+        "riscv32-linux",
+        "x86_64-redox",
+        "s390x-linux",
+        "aarch64-darwin",
+        "m68k-linux",
+        "armv5tel-linux",
+        "mmix-mmixware",
+        "x86_64-cygwin",
+        "mipsel-linux",
+        "aarch64-genode",
+        "i686-openbsd",
+        "x86_64-solaris",
+        "aarch64-linux",
+        "i686-genode",
+        "mips64-none",
+        "riscv64-netbsd",
+        "armv7a-linux",
+        "x86_64-linux",
+        "or1k-none",
+        "powerpc64le-linux",
+        "riscv64-none",
+        "microblaze-linux",
+        "mips-linux",
+        "x86_64-freebsd",
+        "x86_64-genode",
+        "armv6l-linux",
+        "riscv32-netbsd",
+        "microblazeel-none",
+        "armv7a-darwin",
+        "m68k-none",
+        "vc4-none",
+        "powerpc-none",
+        "armv7a-netbsd",
+        "s390-linux",
+        "microblaze-none",
+        "riscv64-linux",
+        "i686-windows",
+        "powerpc-netbsd",
+        "riscv32-none",
+        "aarch64_be-none",
+        "i686-none",
+        "javascript-ghcjs",
+        "armv6l-netbsd",
+        "aarch64-none",
+        "x86_64-openbsd",
+        "wasm64-wasi",
+        "avr-none",
+        "mips64-linux",
+        "s390-none",
+        "arm-none",
+        "armv7l-linux",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "i686-cygwin",
+        "i686-freebsd",
+        "x86_64-netbsd",
+        "mips-none",
+        "aarch64-netbsd",
+        "mipsel-netbsd",
+        "powerpcle-none",
+        "mips64el-linux",
+        "wasm32-wasi",
+        "rx-none",
+        "i686-linux",
+        "s390x-none",
+        "armv7l-netbsd",
+        "i686-darwin",
+        "x86_64-darwin",
+        "msp430-none",
+        "x86_64-windows",
+        "loongarch64-linux",
+        "armv6l-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "znapzendzetup",
+        "znapzend",
+        "znapzendztatz"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Slawomir Gonet",
+            "github": "otwieracz",
+            "email": "slawek@otwiera.cz"
+        }
+    ],
+    "package_maintainers_set": [
+        "Slawomir Gonet"
+    ],
+    "package_description": "High performance open source ZFS backup with mbuffer and ssh support",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.znapzend.org"
+    ],
+    "package_position": "pkgs/tools/backup/znapzend/default.nix:62"
+}

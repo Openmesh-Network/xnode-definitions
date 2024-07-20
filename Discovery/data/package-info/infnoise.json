@@ -1,0 +1,78 @@
+{
+    "type": "package",
+    "package_attr_name": "infnoise",
+    "package_attr_set": "No package set",
+    "package_pname": "infnoise",
+    "package_pversion": "0.3.2",
+    "package_platforms": [
+        "mips64el-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "mips-linux",
+        "powerpc64-linux",
+        "mipsel-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "infnoise-dice",
+        "infnoise-bin2hex",
+        "infnoise-entcheck",
+        "infnoise-findlongest",
+        "infnoise-flipbits",
+        "infnoise-healthcheck",
+        "infnoise-hex2bin",
+        "infnoise",
+        "infnoise-passgen"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/CC0-1.0.html",
+            "fullName": "Creative Commons Zero v1.0 Universal"
+        }
+    ],
+    "package_license_set": [
+        "Creative Commons Zero v1.0 Universal"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Stijn DW",
+            "github": "Stekke",
+            "email": "nixdev@rinsa.eu"
+        },
+        {
+            "name": "Zhaofeng Li",
+            "github": "zhaofengli",
+            "email": "hello@zhaofeng.li"
+        }
+    ],
+    "package_maintainers_set": [
+        "Stijn DW",
+        "Zhaofeng Li"
+    ],
+    "package_description": "Driver for the Infinite Noise TRNG",
+    "package_longDescription": "<rendered-html><p>The Infinite Noise TRNG is a USB key hardware true random number\ngenerator. It can either provide rng for userland applications, or\nprovide rng for the OS entropy.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/leetronics/infnoise"
+    ],
+    "package_position": "pkgs/misc/drivers/infnoise/default.nix:51"
+}

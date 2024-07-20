@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "riemann-dash",
+    "package_attr_set": "No package set",
+    "package_pname": "riemann-dash",
+    "package_pversion": "0.2.14",
+    "package_platforms": [
+        "powerpc64-linux",
+        "x86_64-freebsd",
+        "armv6l-netbsd",
+        "armv7l-netbsd",
+        "x86_64-cygwin",
+        "m68k-netbsd",
+        "i686-darwin",
+        "microblazeel-linux",
+        "x86_64-openbsd",
+        "armv7a-netbsd",
+        "x86_64-redox",
+        "armv5tel-linux",
+        "mipsel-netbsd",
+        "i686-netbsd",
+        "aarch64-darwin",
+        "riscv64-netbsd",
+        "microblaze-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "s390x-linux",
+        "powerpc-netbsd",
+        "riscv32-netbsd",
+        "x86_64-solaris",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "x86_64-netbsd",
+        "riscv32-linux",
+        "x86_64-darwin",
+        "mips64-linux",
+        "s390-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "i686-freebsd",
+        "i686-openbsd",
+        "i686-cygwin",
+        "riscv64-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "aarch64-netbsd",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "riemann-dash"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michael Fellinger",
+            "github": "manveru",
+            "email": "m.fellinger@gmail.com"
+        },
+        {
+            "name": "Nick Novitski",
+            "github": "nicknovitski",
+            "email": "nixpkgs@nicknovitski.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michael Fellinger",
+        "Nick Novitski"
+    ],
+    "package_description": "Javascript, websockets-powered dashboard for Riemann",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/riemann/riemann-dash"
+    ],
+    "package_position": "pkgs/servers/monitoring/riemann-dash/default.nix:11"
+}

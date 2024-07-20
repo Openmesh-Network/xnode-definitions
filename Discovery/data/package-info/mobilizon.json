@@ -1,0 +1,49 @@
+{
+    "type": "package",
+    "package_attr_name": "mobilizon",
+    "package_attr_set": "No package set",
+    "package_pname": "mobilizon",
+    "package_pversion": "4.1.0",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mobilizon_ctl",
+        "mobilizon"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "R\u00e9mi Nicole",
+            "github": "minijackson",
+            "email": "minijackson@riseup.net"
+        },
+        {
+            "name": "Kerstin Humm",
+            "github": "erictapen",
+            "email": "kerstin@erictapen.name"
+        }
+    ],
+    "package_maintainers_set": [
+        "R\u00e9mi Nicole",
+        "Kerstin Humm"
+    ],
+    "package_description": "Mobilizon is an online tool to help manage your events, your profiles and your groups",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://joinmobilizon.org/"
+    ],
+    "package_position": "pkgs/servers/mobilizon/default.nix:124"
+}

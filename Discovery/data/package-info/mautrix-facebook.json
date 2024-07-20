@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "mautrix-facebook",
+    "package_attr_set": "No package set",
+    "package_pname": "python3.12-mautrix-facebook",
+    "package_pversion": "0.5.1",
+    "package_platforms": [
+        "x86_64-freebsd",
+        "powerpc64le-linux",
+        "s390-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "i686-windows",
+        "aarch64-linux",
+        "mips64-linux",
+        "armv6l-linux",
+        "i686-freebsd",
+        "s390x-linux",
+        "x86_64-cygwin",
+        "x86_64-windows",
+        "x86_64-darwin",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "i686-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "armv7l-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mautrix-facebook"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Kevin Cox",
+            "github": "kevincox",
+            "email": "kevincox@kevincox.ca"
+        }
+    ],
+    "package_maintainers_set": [
+        "Kevin Cox"
+    ],
+    "package_description": "Matrix-Facebook Messenger puppeting bridge",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mautrix/facebook"
+    ],
+    "package_position": "pkgs/servers/mautrix-facebook/default.nix:59"
+}

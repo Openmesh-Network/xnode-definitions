@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "dnscrypt-wrapper",
+    "package_attr_set": "No package set",
+    "package_pname": "dnscrypt-wrapper",
+    "package_pversion": "0.4.2",
+    "package_platforms": [
+        "mips-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "m68k-linux",
+        "i686-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dnscrypt-wrapper"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        }
+    ],
+    "package_license_set": [
+        "ISC License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Joachim Fasting",
+            "github": "joachifm",
+            "email": "joachifm@fastmail.fm"
+        }
+    ],
+    "package_maintainers_set": [
+        "Joachim Fasting"
+    ],
+    "package_description": "Tool for adding dnscrypt support to any name resolver",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://dnscrypt.info/"
+    ],
+    "package_position": "pkgs/tools/networking/dnscrypt-wrapper/default.nix:27"
+}

@@ -1,0 +1,69 @@
+{
+    "type": "package",
+    "package_attr_name": "lldpd",
+    "package_attr_set": "No package set",
+    "package_pname": "lldpd",
+    "package_pversion": "1.0.18",
+    "package_platforms": [
+        "riscv64-linux",
+        "s390x-linux",
+        "i686-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "armv5tel-linux",
+        "x86_64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out",
+        "dev",
+        "doc"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "lldpctl",
+        "lldpd",
+        "lldpcli"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        }
+    ],
+    "package_license_set": [
+        "ISC License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Franz Pletz",
+            "github": "fpletz",
+            "email": "fpletz@fnordicwalking.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Franz Pletz"
+    ],
+    "package_description": "802.1ab implementation (LLDP) to help you locate neighbors of all your equipments",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://lldpd.github.io/"
+    ],
+    "package_position": "pkgs/tools/networking/lldpd/default.nix:33"
+}

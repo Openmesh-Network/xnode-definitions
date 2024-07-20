@@ -1,0 +1,110 @@
+{
+    "type": "package",
+    "package_attr_name": "amazon-ssm-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "amazon-ssm-agent",
+    "package_pversion": "3.3.551.0",
+    "package_platforms": [
+        "m68k-netbsd",
+        "riscv32-netbsd",
+        "riscv64-linux",
+        "i686-cygwin",
+        "x86_64-linux",
+        "mipsel-linux",
+        "aarch64-netbsd",
+        "powerpc-netbsd",
+        "x86_64-darwin",
+        "x86_64-cygwin",
+        "i686-openbsd",
+        "armv7a-darwin",
+        "armv6l-netbsd",
+        "x86_64-netbsd",
+        "armv7a-netbsd",
+        "x86_64-freebsd",
+        "armv7a-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "armv7l-netbsd",
+        "i686-netbsd",
+        "armv5tel-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "x86_64-openbsd",
+        "i686-freebsd",
+        "microblazeel-linux",
+        "riscv64-netbsd",
+        "aarch64-darwin",
+        "m68k-linux",
+        "i686-darwin",
+        "mips64-linux",
+        "x86_64-solaris",
+        "mipsel-netbsd",
+        "riscv32-linux",
+        "x86_64-redox",
+        "armv6l-linux",
+        "s390-linux",
+        "mips-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ssm-document-worker",
+        "ssm-session-worker",
+        "amazon-ssm-agent",
+        "ssm-cli",
+        "ssm-agent-worker",
+        "ssm-session-logger"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Dan Peebles",
+            "github": "copumpkin",
+            "email": "pumpkingod@gmail.com"
+        },
+        {
+            "name": "Michael Fellinger",
+            "github": "manveru",
+            "email": "m.fellinger@gmail.com"
+        },
+        {
+            "name": "Anthony Roussel",
+            "github": "anthonyroussel",
+            "email": "anthony@roussel.dev"
+        },
+        {
+            "name": "Arian van Putten",
+            "github": "arianvp",
+            "email": "arian.vanputten@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Dan Peebles",
+        "Michael Fellinger",
+        "Anthony Roussel",
+        "Arian van Putten"
+    ],
+    "package_description": "Agent to enable remote management of your Amazon EC2 instance configuration",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/aws/amazon-ssm-agent"
+    ],
+    "package_position": "pkgs/by-name/am/amazon-ssm-agent/package.nix:160"
+}

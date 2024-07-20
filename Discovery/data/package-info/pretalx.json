@@ -1,0 +1,90 @@
+{
+    "type": "package",
+    "package_attr_name": "pretalx",
+    "package_attr_set": "No package set",
+    "package_pname": "pretalx",
+    "package_pversion": "2024.1.0",
+    "package_platforms": [
+        "armv7a-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "s390-linux",
+        "microblaze-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "static",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pretalx-manage"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        },
+        {
+            "name": "Astro",
+            "github": "astro",
+            "email": "astro@spaceboyz.net"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        },
+        {
+            "name": "Tassilo Tanneberger",
+            "github": "tanneberger",
+            "email": "revol-xut@protonmail.com"
+        },
+        {
+            "name": "Grigory Shipunov",
+            "github": "oxapentane",
+            "email": "blame@oxapentane.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt",
+        "Astro",
+        "Sandro J\u00e4ckel",
+        "Tassilo Tanneberger",
+        "Grigory Shipunov"
+    ],
+    "package_description": "Conference planning tool: CfP, scheduling, speaker management",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/pretalx/pretalx"
+    ],
+    "package_position": "pkgs/by-name/pr/pretalx/package.nix:42"
+}

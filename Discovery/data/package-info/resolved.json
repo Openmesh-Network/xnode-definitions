@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "ocamlPackages.dns-stub",
+    "package_attr_set": "ocamlPackages",
+    "package_pname": "ocaml5.1.1-dns-stub",
+    "package_pversion": "7.0.1",
+    "package_platforms": [
+        "i686-darwin",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "riscv32-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "x86_64-linux",
+        "s390x-linux",
+        "s390-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Vincent Laporte",
+            "github": "vbgl",
+            "email": "Vincent.Laporte@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Vincent Laporte"
+    ],
+    "package_description": "DNS stub resolver",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mirage/ocaml-dns"
+    ],
+    "package_position": "pkgs/development/ocaml-modules/dns/stub.nix:32"
+}

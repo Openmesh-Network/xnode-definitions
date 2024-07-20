@@ -1,0 +1,67 @@
+{
+    "type": "package",
+    "package_attr_name": "zfs",
+    "package_attr_set": "No package set",
+    "package_pname": "zfs-user",
+    "package_pversion": "2.2.4",
+    "package_platforms": [],
+    "package_outputs": [
+        "dev",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "zhack",
+        "fsck.zfs",
+        "zstreamdump",
+        "zilstat",
+        "raidz_test",
+        "mount.zfs",
+        "zstream",
+        "arcstat",
+        "zed",
+        "zvol_wait",
+        "dbufstat",
+        "zdb",
+        "zpool",
+        "arc_summary",
+        "zfs_ids_to_path",
+        "zinject",
+        "zfs",
+        "ztest",
+        "zgenhostid"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/CDDL-1.0.html",
+            "fullName": "Common Development and Distribution License 1.0"
+        }
+    ],
+    "package_license_set": [
+        "Common Development and Distribution License 1.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Andrew Marshall",
+            "github": "amarshall",
+            "email": "andrew@johnandrewmarshall.com"
+        },
+        {
+            "name": "Adam C. Stephens",
+            "github": "adamcstephens",
+            "email": "happy.plan4249@valkor.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Andrew Marshall",
+        "Adam C. Stephens"
+    ],
+    "package_description": "ZFS Filesystem Linux Userspace Tools",
+    "package_longDescription": "<rendered-html><p>ZFS is a filesystem that combines a logical volume manager with a\nCopy-On-Write filesystem with data integrity detection and repair,\nsnapshotting, cloning, block devices, deduplication, and more.</p>\n<p>This is the userspace tools package.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/openzfs/zfs"
+    ],
+    "package_position": "pkgs/os-specific/linux/zfs/generic.nix:213"
+}

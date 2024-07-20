@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "woodpecker-server",
+    "package_attr_set": "No package set",
+    "package_pname": "woodpecker-server",
+    "package_pversion": "2.7.0",
+    "package_platforms": [
+        "i686-darwin",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "wasm64-wasi",
+        "mipsel-linux",
+        "armv6l-linux",
+        "armv7a-darwin",
+        "wasm32-wasi",
+        "microblaze-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "woodpecker-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bruno BELANYI",
+            "github": "ambroisie",
+            "email": "bruno.nixpkgs@belanyi.fr"
+        },
+        {
+            "name": "techknowlogick",
+            "github": "techknowlogick",
+            "email": "techknowlogick@gitea.com"
+        },
+        {
+            "name": "Adam C. Stephens",
+            "github": "adamcstephens",
+            "email": "happy.plan4249@valkor.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bruno BELANYI",
+        "techknowlogick",
+        "Adam C. Stephens"
+    ],
+    "package_description": "Woodpecker Continuous Integration server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://woodpecker-ci.org/"
+    ],
+    "package_position": "pkgs/development/tools/continuous-integration/woodpecker/server.nix:18"
+}

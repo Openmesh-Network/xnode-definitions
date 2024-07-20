@@ -1,0 +1,47 @@
+{
+    "type": "package",
+    "package_attr_name": "torrentstream",
+    "package_attr_set": "No package set",
+    "package_pname": "torrentstream",
+    "package_pversion": "1.0.1.11",
+    "package_platforms": [
+        "aarch64-darwin",
+        "x86_64-linux",
+        "aarch64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "TorrentStream"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "3JlOy-PYCCKUi",
+            "github": "3JlOy-PYCCKUi",
+            "email": "3jl0y_pycckui@riseup.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "3JlOy-PYCCKUi"
+    ],
+    "package_description": "Simple web server for streaming torrent files in video players",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/trueromanus/TorrentStream"
+    ],
+    "package_position": "pkgs/by-name/to/torrentstream/package.nix:40"
+}

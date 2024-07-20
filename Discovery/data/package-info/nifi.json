@@ -1,0 +1,47 @@
+{
+    "type": "package",
+    "package_attr_name": "nifi",
+    "package_attr_set": "No package set",
+    "package_pname": "nifi",
+    "package_pversion": "1.27.0",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nifi.sh",
+        "nifi-env.sh",
+        "nifi-env.cmd",
+        "nifi.cmd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Yurii Izorkin",
+            "github": "Izorkin",
+            "email": "Izorkin@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Yurii Izorkin"
+    ],
+    "package_description": "Easy to use, powerful, and reliable system to process and distribute data",
+    "package_longDescription": "<rendered-html><p>Apache NiFi supports powerful and scalable directed graphs of data\nrouting, transformation, and system mediation logic.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://nifi.apache.org"
+    ],
+    "package_position": "pkgs/servers/web-apps/nifi/default.nix:35"
+}

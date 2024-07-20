@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "traefik",
+    "package_attr_set": "No package set",
+    "package_pname": "traefik",
+    "package_pversion": "3.1.0",
+    "package_platforms": [
+        "mips64-linux",
+        "mips64el-linux",
+        "wasm32-wasi",
+        "m68k-linux",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "armv6l-linux",
+        "i686-darwin",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "s390-linux",
+        "s390x-linux",
+        "wasm64-wasi",
+        "riscv32-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "traefik"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Vincent Demeester",
+            "github": "vdemeester",
+            "email": "vincent@sbr.pm"
+        }
+    ],
+    "package_maintainers_set": [
+        "Vincent Demeester"
+    ],
+    "package_description": "Modern reverse proxy",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://traefik.io"
+    ],
+    "package_position": "pkgs/servers/traefik/default.nix:35"
+}

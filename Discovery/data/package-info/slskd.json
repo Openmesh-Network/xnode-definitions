@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "slskd",
+    "package_attr_set": "No package set",
+    "package_pname": "slskd",
+    "package_pversion": "0.21.1",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "CodeCoverage.config",
+        "libInstrumentationEngine.dylib",
+        "libInstrumentationEngine.so",
+        "ThirdPartyNotices.txt",
+        "e_sqlite3.a",
+        "libCoverageInstrumentationMethod.dylib",
+        "VanguardInstrumentationProfiler_x86.config",
+        "CodeCoverage.exe",
+        "VanguardInstrumentationProfiler_arm64.config",
+        "VanguardInstrumentationProfiler_x64.config",
+        "slskd.Tests.Unit",
+        "libCoverageInstrumentationMethod.so",
+        "Microsoft.CodeCoverage.props",
+        "libe_sqlite3.so",
+        "libe_sqlite3.dylib",
+        "slskd.Tests.Integration",
+        "slskd",
+        "Microsoft.CodeCoverage.targets"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "ppom",
+            "github": "ppom0",
+            "email": "ppom@ecomail.fr"
+        },
+        {
+            "name": "melvyn",
+            "github": "melvyn2",
+            "email": "melvyn2@dnsense.pub"
+        }
+    ],
+    "package_maintainers_set": [
+        "ppom",
+        "melvyn"
+    ],
+    "package_description": "Modern client-server application for the Soulseek file sharing network",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/slskd/slskd"
+    ],
+    "package_position": "pkgs/servers/web-apps/slskd/default.nix:21"
+}

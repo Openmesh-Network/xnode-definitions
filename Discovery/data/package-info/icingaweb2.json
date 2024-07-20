@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "icingaweb2",
+    "package_attr_set": "No package set",
+    "package_pname": "icingaweb2",
+    "package_pversion": "2.12.1",
+    "package_platforms": [
+        "riscv64-none",
+        "mmix-mmixware",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "s390x-none",
+        "i686-openbsd",
+        "riscv32-linux",
+        "x86_64-linux",
+        "microblazeel-none",
+        "i686-netbsd",
+        "mips-linux",
+        "x86_64-netbsd",
+        "riscv32-none",
+        "x86_64-redox",
+        "mips64-none",
+        "mips-none",
+        "mips64-linux",
+        "x86_64-cygwin",
+        "armv7l-linux",
+        "x86_64-none",
+        "riscv64-netbsd",
+        "i686-windows",
+        "i686-genode",
+        "s390-none",
+        "mipsel-netbsd",
+        "x86_64-freebsd",
+        "i686-none",
+        "msp430-none",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "armv6l-netbsd",
+        "riscv32-netbsd",
+        "arm-none",
+        "wasm32-wasi",
+        "i686-linux",
+        "microblazeel-linux",
+        "i686-cygwin",
+        "aarch64-none",
+        "m68k-none",
+        "avr-none",
+        "s390-linux",
+        "x86_64-openbsd",
+        "microblaze-linux",
+        "i686-darwin",
+        "i686-freebsd",
+        "mips64el-linux",
+        "aarch64-netbsd",
+        "rx-none",
+        "m68k-linux",
+        "mipsel-linux",
+        "or1k-none",
+        "powerpc64-linux",
+        "powerpc-none",
+        "aarch64-darwin",
+        "vc4-none",
+        "x86_64-genode",
+        "s390x-linux",
+        "m68k-netbsd",
+        "wasm64-wasi",
+        "x86_64-windows",
+        "javascript-ghcjs",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "armv6l-none",
+        "riscv64-linux",
+        "microblaze-none",
+        "x86_64-solaris",
+        "armv7l-netbsd",
+        "powerpc-netbsd",
+        "aarch64-linux",
+        "armv6l-linux",
+        "aarch64_be-none",
+        "aarch64-genode",
+        "armv7a-netbsd",
+        "powerpcle-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "icingacli"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Janne He\u00df",
+            "github": "dasJ",
+            "email": "janne@hess.ooo"
+        }
+    ],
+    "package_maintainers_set": [
+        "Janne He\u00df"
+    ],
+    "package_description": "Webinterface for Icinga 2",
+    "package_longDescription": "<rendered-html><p>A lightweight and extensible web interface to keep an eye on your\nenvironment. Analyse problems and act on them.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.icinga.com/products/icinga-web-2/"
+    ],
+    "package_position": "pkgs/servers/icingaweb2/default.nix:25"
+}

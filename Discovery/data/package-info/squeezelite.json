@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "squeezelite",
+    "package_attr_set": "No package set",
+    "package_pname": "squeezelite",
+    "package_pversion": "2.0.0.1488",
+    "package_platforms": [
+        "microblaze-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "i686-darwin",
+        "armv7a-darwin",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "squeezelite"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later",
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Adam C. Stephens",
+            "github": "adamcstephens",
+            "email": "happy.plan4249@valkor.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Adam C. Stephens"
+    ],
+    "package_description": "Lightweight headless squeezebox client emulator",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ralph-irving/squeezelite"
+    ],
+    "package_position": "pkgs/by-name/sq/squeezelite/package.nix:121"
+}

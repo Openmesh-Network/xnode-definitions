@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "python311Packages.sphinxcontrib-confluencebuilder",
+    "package_attr_set": "python311Packages",
+    "package_pname": "python3.11-sphinxcontrib-confluencebuilder",
+    "package_pversion": "2.5.2",
+    "package_platforms": [
+        "aarch64-linux",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "i686-windows",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "x86_64-windows",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "i686-cygwin",
+        "mips-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "armv7a-darwin",
+        "s390-linux",
+        "x86_64-cygwin",
+        "i686-darwin",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "x86_64-darwin",
+        "i686-freebsd",
+        "mips64-linux",
+        "x86_64-freebsd"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "sphinx-build-confluence"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-1-Clause.html",
+            "fullName": "BSD 1-Clause License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 1-Clause License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Grayson Head",
+            "github": "graysonhead",
+            "email": "grayson@graysonhead.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Grayson Head"
+    ],
+    "package_description": "Confluence builder for sphinx",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/sphinx-contrib/confluencebuilder"
+    ],
+    "package_position": "pkgs/development/python-modules/sphinxcontrib-confluencebuilder/default.nix:40"
+}

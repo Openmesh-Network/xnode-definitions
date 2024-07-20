@@ -1,0 +1,43 @@
+{
+    "type": "package",
+    "package_attr_name": "lokinet",
+    "package_attr_set": "No package set",
+    "package_pname": "lokinet",
+    "package_pversion": "0.9.11",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "lokinet",
+        "lokinet-vpn"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "wyndon",
+            "github": "wyndon",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "wyndon"
+    ],
+    "package_description": "Anonymous, decentralized and IP based overlay network for the internet",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://lokinet.org/"
+    ],
+    "package_position": "pkgs/applications/networking/p2p/lokinet/default.nix:70"
+}

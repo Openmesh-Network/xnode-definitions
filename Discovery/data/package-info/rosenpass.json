@@ -1,0 +1,52 @@
+{
+    "type": "package",
+    "package_attr_name": "rosenpass",
+    "package_attr_set": "No package set",
+    "package_pname": "rosenpass",
+    "package_pversion": "0.2.2",
+    "package_platforms": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rosenpass"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        },
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "MIT License",
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Wucke",
+            "github": "wucke13",
+            "email": "wucke13@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Wucke"
+    ],
+    "package_description": "Build post-quantum-secure VPNs with WireGuard",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://rosenpass.eu/"
+    ],
+    "package_position": "pkgs/tools/networking/rosenpass/default.nix:46"
+}

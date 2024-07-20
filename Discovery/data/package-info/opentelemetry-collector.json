@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "opentelemetry-collector",
+    "package_attr_set": "No package set",
+    "package_pname": "opentelemetry-collector",
+    "package_pversion": "0.103.0",
+    "package_platforms": [
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "microblazeel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "x86_64-darwin",
+        "mips-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "wasm32-wasi",
+        "i686-linux",
+        "i686-darwin",
+        "riscv64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "aarch64-darwin",
+        "wasm64-wasi",
+        "armv6l-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "otelcorecol"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Uri Baghin",
+            "github": "uri-canva",
+            "email": "uri@canva.com"
+        },
+        {
+            "name": "Jack",
+            "github": "06kellyjac",
+            "email": "hello+nixpkgs@j-k.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Uri Baghin",
+        "Jack"
+    ],
+    "package_description": "Vendor-agnostic implementation on how to receive, process and export telemetry data",
+    "package_longDescription": "<rendered-html><p>The OpenTelemetry Collector offers a vendor-agnostic implementation\non how to receive, process and export telemetry data. In addition, it\nremoves the need to run, operate and maintain multiple agents/collectors\nin order to support open-source telemetry data formats (e.g. Jaeger,\nPrometheus, etc.) sending to multiple open-source or commercial\nback-ends.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/open-telemetry/opentelemetry-collector"
+    ],
+    "package_position": "pkgs/tools/misc/opentelemetry-collector/default.nix:53"
+}

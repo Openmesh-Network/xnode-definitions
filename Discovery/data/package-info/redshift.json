@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "redshift",
+    "package_attr_set": "No package set",
+    "package_pname": "redshift",
+    "package_pversion": "1.12",
+    "package_platforms": [
+        "armv6l-netbsd",
+        "riscv32-netbsd",
+        "riscv64-netbsd",
+        "m68k-linux",
+        "mips64el-linux",
+        "x86_64-redox",
+        "aarch64-netbsd",
+        "x86_64-openbsd",
+        "i686-freebsd",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "x86_64-cygwin",
+        "riscv64-linux",
+        "powerpc-netbsd",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "mips64-linux",
+        "mipsel-netbsd",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "i686-openbsd",
+        "mips-linux",
+        "x86_64-netbsd",
+        "x86_64-freebsd",
+        "i686-cygwin",
+        "i686-darwin",
+        "s390x-linux",
+        "armv7l-netbsd",
+        "loongarch64-linux",
+        "x86_64-solaris",
+        "s390-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "m68k-netbsd",
+        "i686-netbsd",
+        "microblaze-linux",
+        "i686-linux",
+        "armv7a-netbsd",
+        "armv7a-darwin",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "redshift",
+        "redshift-gtk"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Yana Timoshenko",
+            "github": "yanateras",
+            "email": "yana@riseup.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Yana Timoshenko"
+    ],
+    "package_description": "Screen color temperature manager",
+    "package_longDescription": "<rendered-html><p>Redshift adjusts the color temperature according to the position of\nthe sun. A different color temperature is set during night and daytime.\nDuring twilight and early morning, the color temperature transitions\nsmoothly from night to daytime temperature to allow your eyes to slowly\nadapt. At night the color temperature should be set to match the lamps\nin your room.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://jonls.dk/redshift"
+    ],
+    "package_position": "pkgs/applications/misc/redshift/default.nix:110"
+}

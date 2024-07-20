@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "dae",
+    "package_attr_set": "No package set",
+    "package_pname": "dae",
+    "package_pversion": "0.6.0",
+    "package_platforms": [
+        "powerpc64-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dae"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "oluceps",
+            "github": "oluceps",
+            "email": "nixos@oluceps.uk"
+        },
+        {
+            "name": "Bu Kun",
+            "github": "pokon548",
+            "email": "nix@bukn.uk"
+        }
+    ],
+    "package_maintainers_set": [
+        "oluceps",
+        "Bu Kun"
+    ],
+    "package_description": "Linux high-performance transparent proxy solution based on eBPF",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/daeuniverse/dae"
+    ],
+    "package_position": "pkgs/tools/networking/dae/default.nix:50"
+}

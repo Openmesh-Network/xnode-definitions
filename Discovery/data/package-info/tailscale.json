@@ -1,0 +1,89 @@
+{
+    "type": "package",
+    "package_attr_name": "tailscale",
+    "package_attr_set": "No package set",
+    "package_pname": "tailscale",
+    "package_pversion": "1.70.0",
+    "package_platforms": [
+        "i686-darwin",
+        "s390-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "riscv32-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "i686-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "armv7a-darwin",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "mips-linux",
+        "wasm64-wasi",
+        "wasm32-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tailscale",
+        "tailscaled"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Baillie",
+            "github": "martinbaillie",
+            "email": "martin@baillie.id"
+        },
+        {
+            "name": "Jack",
+            "github": "06kellyjac",
+            "email": "hello+nixpkgs@j-k.io"
+        },
+        {
+            "name": "Muhammad Falak R Wani",
+            "github": "mfrw",
+            "email": "falakreyaz@gmail.com"
+        },
+        {
+            "name": "Pyrox",
+            "github": "pyrox0",
+            "email": "pyrox@pyrox.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Baillie",
+        "Jack",
+        "Muhammad Falak R Wani",
+        "Pyrox"
+    ],
+    "package_description": "Node agent for Tailscale, a mesh VPN built on WireGuard",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tailscale.com"
+    ],
+    "package_position": "pkgs/servers/tailscale/default.nix:85"
+}

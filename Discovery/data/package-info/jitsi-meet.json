@@ -1,0 +1,140 @@
+{
+    "type": "package",
+    "package_attr_name": "jitsi-meet",
+    "package_attr_set": "No package set",
+    "package_pname": "jitsi-meet",
+    "package_pversion": "1.0.8043",
+    "package_platforms": [
+        "armv7l-netbsd",
+        "mips-linux",
+        "armv6l-netbsd",
+        "x86_64-genode",
+        "i686-windows",
+        "armv7a-netbsd",
+        "powerpc64-linux",
+        "microblazeel-none",
+        "m68k-none",
+        "x86_64-cygwin",
+        "x86_64-netbsd",
+        "armv6l-none",
+        "aarch64-genode",
+        "riscv32-linux",
+        "i686-netbsd",
+        "armv5tel-linux",
+        "m68k-netbsd",
+        "wasm64-wasi",
+        "i686-darwin",
+        "mips64el-linux",
+        "mipsel-netbsd",
+        "x86_64-none",
+        "mmix-mmixware",
+        "mipsel-linux",
+        "x86_64-linux",
+        "x86_64-openbsd",
+        "x86_64-windows",
+        "wasm32-wasi",
+        "m68k-linux",
+        "powerpc-netbsd",
+        "aarch64-linux",
+        "msp430-none",
+        "rx-none",
+        "x86_64-darwin",
+        "i686-openbsd",
+        "s390x-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "javascript-ghcjs",
+        "microblazeel-linux",
+        "mips64-linux",
+        "i686-cygwin",
+        "aarch64-netbsd",
+        "s390-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "x86_64-solaris",
+        "microblaze-none",
+        "avr-none",
+        "arm-none",
+        "mips64-none",
+        "x86_64-redox",
+        "riscv32-none",
+        "armv6l-linux",
+        "riscv64-linux",
+        "aarch64-none",
+        "i686-none",
+        "mips-none",
+        "riscv32-netbsd",
+        "i686-freebsd",
+        "powerpcle-none",
+        "microblaze-linux",
+        "riscv64-none",
+        "s390-none",
+        "riscv64-netbsd",
+        "x86_64-freebsd",
+        "powerpc-none",
+        "aarch64_be-none",
+        "i686-genode",
+        "vc4-none",
+        "i686-linux",
+        "or1k-none",
+        "s390x-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Cleeyv",
+            "github": "cleeyv",
+            "email": "cleeyv@riseup.net"
+        },
+        {
+            "name": "Ryan Mulligan",
+            "github": "ryantm",
+            "email": "ryan@ryantm.com"
+        },
+        {
+            "name": "Lassulus",
+            "github": "Lassulus",
+            "email": "lassulus@gmail.com"
+        },
+        {
+            "name": "Yaya",
+            "github": "yayayayaka",
+            "email": "github@uwu.is"
+        },
+        {
+            "name": "Lorenzo Manacorda",
+            "github": "asymmetric",
+            "email": "lorenzo@mailbox.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Cleeyv",
+        "Ryan Mulligan",
+        "Lassulus",
+        "Yaya",
+        "Lorenzo Manacorda"
+    ],
+    "package_description": "Secure, Simple and Scalable Video Conferences",
+    "package_longDescription": "<rendered-html><p>Jitsi Meet is an open-source (Apache) WebRTC JavaScript application\nthat uses Jitsi Videobridge to provide high quality, secure and scalable\nvideo conferences.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jitsi/jitsi-meet"
+    ],
+    "package_position": "pkgs/servers/web-apps/jitsi-meet/default.nix:28"
+}

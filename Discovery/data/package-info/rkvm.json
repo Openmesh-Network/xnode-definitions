@@ -1,0 +1,58 @@
+{
+    "type": "package",
+    "package_attr_name": "rkvm",
+    "package_attr_set": "No package set",
+    "package_pname": "rkvm",
+    "package_pversion": "0.6.1",
+    "package_platforms": [
+        "microblaze-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "riscv32-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rkvm-server",
+        "rkvm-certificate-gen",
+        "rkvm-client"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Virtual KVM switch for Linux machines",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/htrefil/rkvm"
+    ],
+    "package_position": "pkgs/tools/misc/rkvm/default.nix:40"
+}

@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "hitch",
+    "package_attr_set": "No package set",
+    "package_pname": "hitch",
+    "package_pversion": "1.8.0",
+    "package_platforms": [
+        "mipsel-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "doc",
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "hitch"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Julien Langlois",
+            "github": "jflanglois",
+            "email": "yourstruly@julienlanglois.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Julien Langlois"
+    ],
+    "package_description": "Libev-based high performance SSL/TLS proxy by Varnish Software",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://hitch-tls.org/"
+    ],
+    "package_position": "pkgs/servers/hitch/default.nix:19"
+}

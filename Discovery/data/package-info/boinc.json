@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "boinc",
+    "package_attr_set": "No package set",
+    "package_pname": "boinc",
+    "package_pversion": "8.0.2",
+    "package_platforms": [
+        "microblazeel-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "armv7a-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "s390-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "boinc_client",
+        "boincmgr",
+        "boinc",
+        "boincscr",
+        "boinccmd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.0-or-later.html",
+            "fullName": "GNU Library General Public License v2 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Library General Public License v2 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Luflosi",
+            "github": "Luflosi",
+            "email": "luflosi@luflosi.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Luflosi"
+    ],
+    "package_description": "Free software for distributed and grid computing",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://boinc.berkeley.edu/"
+    ],
+    "package_position": "pkgs/applications/science/misc/boinc/default.nix:78"
+}

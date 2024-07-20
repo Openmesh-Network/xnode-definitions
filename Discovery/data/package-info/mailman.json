@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "mailman",
+    "package_attr_set": "No package set",
+    "package_pname": "python3.11-mailman",
+    "package_pversion": "3.3.9",
+    "package_platforms": [
+        "armv7a-darwin",
+        "x86_64-freebsd",
+        "armv7a-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "i686-windows",
+        "loongarch64-linux",
+        "x86_64-cygwin",
+        "mips-linux",
+        "powerpc64le-linux",
+        "x86_64-windows",
+        "s390x-linux",
+        "i686-darwin",
+        "armv6l-linux",
+        "riscv64-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "i686-freebsd",
+        "i686-cygwin",
+        "mips64-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mailman",
+        "master",
+        "runner"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alyssa Ross",
+            "github": "alyssais",
+            "email": "hi@alyssa.is"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alyssa Ross"
+    ],
+    "package_description": "Free software for managing electronic mail discussion and newsletter lists",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.gnu.org/software/mailman/"
+    ],
+    "package_position": "pkgs/servers/mail/mailman/package.nix:78"
+}

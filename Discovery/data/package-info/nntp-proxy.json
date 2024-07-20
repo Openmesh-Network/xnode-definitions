@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "nntp-proxy",
+    "package_attr_set": "No package set",
+    "package_pname": "nntp-proxy",
+    "package_pversion": "2014-01-06",
+    "package_platforms": [
+        "armv7a-netbsd",
+        "s390x-none",
+        "wasm64-wasi",
+        "x86_64-linux",
+        "aarch64-netbsd",
+        "javascript-ghcjs",
+        "aarch64-linux",
+        "powerpc-netbsd",
+        "s390x-linux",
+        "i686-netbsd",
+        "armv6l-netbsd",
+        "i686-none",
+        "mips64-none",
+        "rx-none",
+        "x86_64-none",
+        "x86_64-openbsd",
+        "x86_64-windows",
+        "x86_64-solaris",
+        "powerpc64le-linux",
+        "riscv64-netbsd",
+        "microblazeel-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "riscv32-netbsd",
+        "microblaze-none",
+        "powerpcle-none",
+        "x86_64-redox",
+        "m68k-linux",
+        "wasm32-wasi",
+        "powerpc64-linux",
+        "microblaze-linux",
+        "x86_64-netbsd",
+        "aarch64_be-none",
+        "i686-cygwin",
+        "m68k-netbsd",
+        "mmix-mmixware",
+        "m68k-none",
+        "i686-windows",
+        "msp430-none",
+        "i686-darwin",
+        "riscv32-linux",
+        "s390-linux",
+        "x86_64-freebsd",
+        "armv5tel-linux",
+        "arm-none",
+        "loongarch64-linux",
+        "mips-none",
+        "x86_64-darwin",
+        "mipsel-netbsd",
+        "mips64-linux",
+        "x86_64-cygwin",
+        "vc4-none",
+        "or1k-none",
+        "armv7a-linux",
+        "i686-linux",
+        "armv7l-netbsd",
+        "aarch64-none",
+        "microblazeel-none",
+        "i686-openbsd",
+        "aarch64-darwin",
+        "armv6l-none",
+        "powerpc-none",
+        "aarch64-genode",
+        "mipsel-linux",
+        "x86_64-genode",
+        "armv7l-linux",
+        "riscv64-linux",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "riscv32-none",
+        "avr-none",
+        "i686-genode",
+        "armv6l-linux",
+        "riscv64-none",
+        "s390-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nntp-proxy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Tristan Helmich",
+            "github": "fadenb",
+            "email": "tristan.helmich+nixos@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Tristan Helmich"
+    ],
+    "package_description": "Simple NNTP proxy with SSL support",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/nieluj/nntp-proxy"
+    ],
+    "package_position": "pkgs/applications/networking/nntp-proxy/default.nix:27"
+}

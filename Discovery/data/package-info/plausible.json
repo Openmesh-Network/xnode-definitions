@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "plausible",
+    "package_attr_set": "No package set",
+    "package_pname": "plausible",
+    "package_pversion": "2.0.0",
+    "package_platforms": [
+        "x86_64-netbsd",
+        "mipsel-linux",
+        "x86_64-freebsd",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-netbsd",
+        "m68k-linux",
+        "aarch64-linux",
+        "aarch64-darwin",
+        "x86_64-cygwin",
+        "microblaze-linux",
+        "aarch64-netbsd",
+        "s390x-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "x86_64-openbsd",
+        "armv7a-linux",
+        "armv6l-linux",
+        "powerpc-netbsd",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "i686-cygwin",
+        "x86_64-solaris",
+        "i686-freebsd",
+        "loongarch64-linux",
+        "armv7l-netbsd",
+        "i686-darwin",
+        "i686-linux",
+        "microblazeel-linux",
+        "x86_64-redox",
+        "s390-linux",
+        "mips64el-linux",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "i686-openbsd",
+        "mips-linux",
+        "m68k-netbsd",
+        "riscv64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "plausible"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alexander Sieg",
+            "github": "xanderio",
+            "email": "alex@xanderio.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alexander Sieg"
+    ],
+    "package_description": " Simple, open-source, lightweight (< 1 KB) and privacy-friendly web analytics alternative to Google Analytics",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://plausible.io/"
+    ],
+    "package_position": "pkgs/servers/web-apps/plausible/default.nix:90"
+}

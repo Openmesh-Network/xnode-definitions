@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "cfssl",
+    "package_attr_set": "No package set",
+    "package_pname": "cfssl",
+    "package_pversion": "1.6.5",
+    "package_platforms": [
+        "m68k-linux",
+        "wasm32-wasi",
+        "riscv32-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "wasm64-wasi",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "i686-darwin",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "armv7a-darwin",
+        "microblaze-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cfssl-newkey",
+        "cfssl-scan",
+        "cfssljson",
+        "cfssl-certinfo",
+        "mkbundle",
+        "cfssl-bundle",
+        "multirootca",
+        "cfssl"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Marius Bergmann",
+            "github": "mbrgm",
+            "email": "marius@yeai.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Marius Bergmann"
+    ],
+    "package_description": "Cloudflare's PKI and TLS toolkit",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://cfssl.org/"
+    ],
+    "package_position": "pkgs/tools/security/cfssl/default.nix:38"
+}

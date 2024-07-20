@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "nixops-dns",
+    "package_attr_set": "No package set",
+    "package_pname": "nixops-dns",
+    "package_pversion": "1.0.1",
+    "package_platforms": [
+        "mips-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "x86_64-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "wasm64-wasi",
+        "armv7a-darwin",
+        "wasm32-wasi",
+        "riscv64-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "x86_64-darwin",
+        "s390x-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "aarch64-darwin",
+        "m68k-linux",
+        "armv5tel-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nixops-dns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Kamil Chmielewski",
+            "github": "kamilchm",
+            "email": "kamil.chm@gmail.com"
+        },
+        {
+            "name": "Richard Marko",
+            "github": "sorki",
+            "email": "srk@48.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Kamil Chmielewski",
+        "Richard Marko"
+    ],
+    "package_description": "DNS server for resolving NixOps machines",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/museoa/nixops-dns"
+    ],
+    "package_position": "pkgs/by-name/ni/nixops-dns/package.nix:22"
+}

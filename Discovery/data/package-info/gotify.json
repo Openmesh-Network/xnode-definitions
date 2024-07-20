@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "gotify-cli",
+    "package_attr_set": "No package set",
+    "package_pname": "gotify-cli",
+    "package_pversion": "2.2.4",
+    "package_platforms": [
+        "armv7a-darwin",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "i686-darwin",
+        "i686-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "aarch64-darwin",
+        "mips64-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "wasm32-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gotify"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Command line interface for pushing messages to gotify/server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/gotify/cli"
+    ],
+    "package_position": "pkgs/tools/misc/gotify-cli/default.nix:27"
+}

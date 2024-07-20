@@ -1,0 +1,50 @@
+{
+    "type": "package",
+    "package_attr_name": "trilium-server",
+    "package_attr_set": "No package set",
+    "package_pname": "trilium-server",
+    "package_pversion": "0.63.6",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "trilium-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Arne Keller",
+            "github": "FliegendeWurst",
+            "email": "arne.keller@posteo.de"
+        },
+        {
+            "name": "Elian Doran",
+            "github": "eliandoran",
+            "email": "contact@eliandoran.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Arne Keller",
+        "Elian Doran"
+    ],
+    "package_description": "Hierarchical note taking application with focus on building large personal knowledge bases",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/zadam/trilium"
+    ],
+    "package_position": "pkgs/applications/office/trilium/default.nix:5"
+}

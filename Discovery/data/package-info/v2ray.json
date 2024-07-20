@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "v2ray",
+    "package_attr_set": "No package set",
+    "package_pname": "v2ray-core",
+    "package_pversion": "5.16.1",
+    "package_platforms": [
+        "loongarch64-linux",
+        "s390x-linux",
+        "armv7a-linux",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "x86_64-darwin",
+        "m68k-linux",
+        "aarch64-linux",
+        "wasm32-wasi",
+        "armv7l-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "mips64-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "mips-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "v2ray"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Serval",
+            "github": "servalcatty",
+            "email": "servalcat@pm.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Serval"
+    ],
+    "package_description": "Platform for building proxies to bypass network restrictions",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.v2fly.org/en_US/"
+    ],
+    "package_position": "pkgs/tools/networking/v2ray/default.nix:57"
+}

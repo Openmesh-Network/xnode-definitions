@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "kapacitor",
+    "package_attr_set": "No package set",
+    "package_pname": "kapacitor",
+    "package_pversion": "1.7.0",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "x86_64-darwin",
+        "mips64el-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "microblazeel-linux",
+        "aarch64-linux",
+        "s390x-linux",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "wasm32-wasi",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        },
+        {
+            "name": "Matthias Thym",
+            "github": "totoroot",
+            "email": "git@thym.at"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jaka Hudoklin",
+        "Matthias Thym"
+    ],
+    "package_description": "Open source framework for processing, monitoring, and alerting on time series data",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://influxdata.com/time-series-platform/kapacitor/"
+    ],
+    "package_position": "pkgs/servers/monitoring/kapacitor/default.nix:102"
+}

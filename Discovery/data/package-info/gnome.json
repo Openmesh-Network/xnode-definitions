@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "gnome.gnome-flashback",
+    "package_attr_set": "gnome",
+    "package_pname": "gnome-flashback",
+    "package_pversion": "3.52.1",
+    "package_platforms": [
+        "aarch64-linux",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gnome-flashback"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0.html",
+            "fullName": "GNU General Public License v2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bobby Rong",
+            "github": "bobby285271",
+            "email": "rjl931189261@126.com"
+        },
+        {
+            "name": "Tor Hedin Br\u00f8nner",
+            "github": "hedning",
+            "email": "torhedinbronner@gmail.com"
+        },
+        {
+            "name": "Jan Tojnar",
+            "github": "jtojnar",
+            "email": "jtojnar@gmail.com"
+        },
+        {
+            "name": "Daniel \u0218erb\u0103nescu",
+            "github": "dasj19",
+            "email": "daniel@serbanescu.dk"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bobby Rong",
+        "Tor Hedin Br\u00f8nner",
+        "Jan Tojnar",
+        "Daniel \u0218erb\u0103nescu"
+    ],
+    "package_description": "GNOME 2.x-like session for GNOME 3",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitlab.gnome.org/GNOME/gnome-flashback"
+    ],
+    "package_position": "pkgs/desktops/gnome/misc/gnome-flashback/default.nix:186"
+}

@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "factorio",
+    "package_attr_set": "No package set",
+    "package_pname": "factorio-alpha",
+    "package_pversion": "1.1.109",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Svein Ove Aas",
+            "github": "Baughn",
+            "email": "sveina@gmail.com"
+        },
+        {
+            "name": "Eric Litak",
+            "github": "elitak",
+            "email": "elitak@gmail.com"
+        },
+        {
+            "name": "Kerstin Humm",
+            "github": "erictapen",
+            "email": "kerstin@erictapen.name"
+        },
+        {
+            "name": "Philipp Riegger",
+            "github": "priegger",
+            "email": "philipp@riegger.name"
+        },
+        {
+            "name": "Luke Granger-Brown",
+            "github": "lukegb",
+            "email": "nix@lukegb.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Svein Ove Aas",
+        "Eric Litak",
+        "Kerstin Humm",
+        "Philipp Riegger",
+        "Luke Granger-Brown"
+    ],
+    "package_description": "Game in which you build and maintain factories",
+    "package_longDescription": "<rendered-html><p>Factorio is a game in which you build and maintain factories.</p>\n<p>You will be mining resources, researching technologies, building\ninfrastructure, automating production and fighting enemies. Use your\nimagination to design your factory, combine simple elements into\ningenious structures, apply management skills to keep it working and\nfinally protect it from the creatures who don\u2019t really like you.</p>\n<p>Factorio has been in development since spring of 2012, and reached\nversion 1.0 in mid 2020.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.factorio.com/"
+    ],
+    "package_position": "pkgs/games/factorio/default.nix:184"
+}

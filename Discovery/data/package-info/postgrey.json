@@ -1,0 +1,57 @@
+{
+    "type": "package",
+    "package_attr_name": "postgrey",
+    "package_attr_set": "No package set",
+    "package_pname": "postgrey",
+    "package_pversion": "1.37",
+    "package_platforms": [
+        "powerpc64-linux",
+        "x86_64-linux",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "policy-test",
+        "postgrey"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Postfix policy server to provide greylisting",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://postgrey.schweikert.ch/"
+    ],
+    "package_position": "pkgs/servers/mail/postgrey/default.nix:19"
+}

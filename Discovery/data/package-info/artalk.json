@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "artalk",
+    "package_attr_set": "No package set",
+    "package_pname": "artalk",
+    "package_pversion": "2.8.7",
+    "package_platforms": [
+        "armv6l-linux",
+        "aarch64-linux",
+        "i686-darwin",
+        "armv7l-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "wasm32-wasi",
+        "m68k-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "x86_64-darwin",
+        "mips-linux",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "mipsel-linux",
+        "i686-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "wasm64-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "artalk",
+        "gen"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Moraxyc Xu",
+            "github": "Moraxyc",
+            "email": "nix@qaq.li"
+        }
+    ],
+    "package_maintainers_set": [
+        "Moraxyc Xu"
+    ],
+    "package_description": "Self-hosted comment system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ArtalkJS/Artalk"
+    ],
+    "package_position": "pkgs/by-name/ar/artalk/package.nix:62"
+}

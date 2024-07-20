@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "meme-bingo-web",
+    "package_attr_set": "No package set",
+    "package_pname": "meme-bingo-web",
+    "package_pversion": "0.2.0",
+    "package_platforms": [
+        "armv7a-darwin",
+        "x86_64-solaris",
+        "mips-linux",
+        "i686-darwin",
+        "x86_64-netbsd",
+        "mips64-linux",
+        "i686-netbsd",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "wasm32-wasi",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "aarch64-netbsd",
+        "i686-windows",
+        "x86_64-windows",
+        "riscv64-netbsd",
+        "s390x-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "powerpc-netbsd",
+        "x86_64-openbsd",
+        "x86_64-darwin",
+        "x86_64-redox",
+        "x86_64-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "x86_64-freebsd",
+        "i686-linux",
+        "m68k-linux",
+        "riscv32-linux",
+        "i686-freebsd",
+        "armv7l-netbsd",
+        "armv6l-linux",
+        "i686-openbsd",
+        "armv6l-netbsd",
+        "mipsel-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "meme-bingo-web"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Unlicense.html",
+            "fullName": "The Unlicense"
+        }
+    ],
+    "package_license_set": [
+        "The Unlicense"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Anna Aurora",
+            "github": "auroraanna",
+            "email": "anna@annaaurora.eu"
+        }
+    ],
+    "package_maintainers_set": [
+        "Anna Aurora"
+    ],
+    "package_description": "Play meme bingo using this neat web app",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://codeberg.org/annaaurora/meme-bingo-web"
+    ],
+    "package_position": "pkgs/servers/web-apps/meme-bingo-web/default.nix:29"
+}

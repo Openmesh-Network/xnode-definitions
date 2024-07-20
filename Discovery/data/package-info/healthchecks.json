@@ -1,0 +1,72 @@
+{
+    "type": "package",
+    "package_attr_name": "healthchecks",
+    "package_attr_set": "No package set",
+    "package_pname": "healthchecks",
+    "package_pversion": "3.4",
+    "package_platforms": [
+        "mips64-linux",
+        "powerpc64le-linux",
+        "i686-darwin",
+        "x86_64-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "i686-cygwin",
+        "i686-windows",
+        "armv7l-linux",
+        "x86_64-darwin",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "armv7a-darwin",
+        "x86_64-freebsd",
+        "x86_64-cygwin",
+        "aarch64-darwin",
+        "x86_64-windows",
+        "microblaze-linux",
+        "mipsel-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "m68k-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "i686-freebsd",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Paul Haerle",
+            "github": "phaer",
+            "email": "nix@phaer.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Paul Haerle"
+    ],
+    "package_description": "Cron monitoring tool written in Python & Django ",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/healthchecks/healthchecks"
+    ],
+    "package_position": "pkgs/servers/web-apps/healthchecks/default.nix:95"
+}

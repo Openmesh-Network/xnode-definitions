@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "goeland",
+    "package_attr_set": "No package set",
+    "package_pname": "goeland",
+    "package_pversion": "0.18.3",
+    "package_platforms": [
+        "s390-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "m68k-linux",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "mips64-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "wasm64-wasi",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "wasm32-wasi",
+        "i686-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "goeland"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "sweenu",
+            "github": "sweenu",
+            "email": "contact@sweenu.xyz"
+        }
+    ],
+    "package_maintainers_set": [
+        "sweenu"
+    ],
+    "package_description": "Alternative to rss2email written in golang with many filters",
+    "package_longDescription": "<rendered-html><p>Goeland excels at creating beautiful emails from RSS feeds, tailored\nfor daily or weekly digest. It includes a number of filters that can\ntransform the RSS content along the way. It can also consume other\nsources, such as Imgur tags.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/slurdge/goeland"
+    ],
+    "package_position": "pkgs/applications/networking/feedreaders/goeland/default.nix:26"
+}

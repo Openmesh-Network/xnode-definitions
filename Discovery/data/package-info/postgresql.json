@@ -1,0 +1,155 @@
+{
+    "type": "package",
+    "package_attr_name": "postgresql",
+    "package_attr_set": "No package set",
+    "package_pname": "postgresql",
+    "package_pversion": "15.7",
+    "package_platforms": [
+        "armv7a-linux",
+        "riscv64-netbsd",
+        "x86_64-redox",
+        "aarch64-netbsd",
+        "x86_64-netbsd",
+        "x86_64-linux",
+        "aarch64-darwin",
+        "riscv64-linux",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "microblaze-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "armv7l-netbsd",
+        "i686-freebsd",
+        "aarch64-linux",
+        "m68k-linux",
+        "armv7a-darwin",
+        "s390x-linux",
+        "m68k-netbsd",
+        "armv5tel-linux",
+        "s390-linux",
+        "i686-cygwin",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "x86_64-solaris",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "powerpc-netbsd",
+        "i686-openbsd",
+        "mipsel-linux",
+        "armv7a-netbsd",
+        "mips64-linux",
+        "x86_64-cygwin",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "riscv32-netbsd",
+        "armv6l-netbsd",
+        "i686-linux",
+        "x86_64-freebsd",
+        "x86_64-openbsd",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out",
+        "debug",
+        "doc",
+        "lib"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pg_isready",
+        "pg_restore",
+        "pg_dump",
+        "reindexdb",
+        "vacuumlo",
+        "pgbench",
+        "pg_controldata",
+        "postgres",
+        "pg_resetwal",
+        "pg_receivewal",
+        "createdb",
+        "initdb",
+        "ecpg",
+        "clusterdb",
+        "dropuser",
+        "oid2name",
+        "pg_basebackup",
+        "postmaster",
+        "psql",
+        "vacuumdb",
+        "pg_waldump",
+        "pg_config",
+        "pg_verifybackup",
+        "pg_dumpall",
+        "pg_recvlogical",
+        "pg_checksums",
+        "pg_archivecleanup",
+        "pg_test_fsync",
+        "pg_upgrade",
+        "pg_amcheck",
+        "createuser",
+        "pg_test_timing",
+        "dropdb",
+        "pg_rewind",
+        "pg_ctl"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/PostgreSQL.html",
+            "fullName": "PostgreSQL License"
+        }
+    ],
+    "package_license_set": [
+        "PostgreSQL License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        },
+        {
+            "name": "Danylo Hlynskyi",
+            "github": "danbst",
+            "email": "abcz2.uprola@gmail.com"
+        },
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        },
+        {
+            "name": "Ivan Kozik",
+            "github": "ivan",
+            "email": "ivan@ludios.org"
+        },
+        {
+            "name": "Maximilian Bosch",
+            "github": "Ma27",
+            "email": "maximilian@mbosch.me"
+        },
+        {
+            "name": "Wolfgang Walther",
+            "github": "wolfgangwalther",
+            "email": "walther@technowledgy.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Austin Seipp",
+        "Danylo Hlynskyi",
+        "Robin Gloster",
+        "Ivan Kozik",
+        "Maximilian Bosch",
+        "Wolfgang Walther"
+    ],
+    "package_description": "Powerful, open source object-relational database system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.postgresql.org"
+    ],
+    "package_position": "pkgs/servers/sql/postgresql/generic.nix:252"
+}

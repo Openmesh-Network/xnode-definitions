@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "xbanish",
+    "package_attr_set": "No package set",
+    "package_pname": "xbanish",
+    "package_pversion": "1.8",
+    "package_platforms": [
+        "armv7a-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "x86_64-linux",
+        "s390x-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "s390-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "riscv32-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "xbanish"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Hurshal Patel",
+            "github": "choochootrain",
+            "email": "hurshal@imap.cc"
+        }
+    ],
+    "package_maintainers_set": [
+        "Hurshal Patel"
+    ],
+    "package_description": "Hides mouse pointer while not in use",
+    "package_longDescription": "<rendered-html><p>xbanish hides the mouse cursor when you start typing, and shows it\nagain when the mouse cursor moves or a mouse button is pressed. This is\nsimilar to xterm\u2019s pointerMode setting, but xbanish works globally in\nthe X11 session.</p>\n<p>unclutter\u2019s -keystroke mode is supposed to do this, but it\u2019s\nbroken[0]. I looked into fixing it, but the unclutter source code is\nterrible, so I wrote xbanish.</p>\n<p>The name comes from ratpoison\u2019s \u201cbanish\u201d command that sends the\ncursor to the corner of the screen.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/tools/X11/xbanish/default.nix:25"
+}

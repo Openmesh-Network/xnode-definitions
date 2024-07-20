@@ -1,0 +1,97 @@
+{
+    "type": "package",
+    "package_attr_name": "dict",
+    "package_attr_set": "No package set",
+    "package_pname": "dictd",
+    "package_pversion": "1.13.1",
+    "package_platforms": [
+        "m68k-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "i686-cygwin",
+        "x86_64-solaris",
+        "microblazeel-linux",
+        "mips-linux",
+        "i686-linux",
+        "powerpc-netbsd",
+        "riscv32-netbsd",
+        "x86_64-redox",
+        "mipsel-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "armv6l-netbsd",
+        "aarch64-darwin",
+        "s390-linux",
+        "mips64-linux",
+        "armv7a-darwin",
+        "s390x-linux",
+        "x86_64-darwin",
+        "riscv64-netbsd",
+        "microblaze-linux",
+        "x86_64-linux",
+        "mipsel-netbsd",
+        "i686-openbsd",
+        "m68k-netbsd",
+        "mips64el-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "i686-freebsd",
+        "x86_64-cygwin",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "aarch64-netbsd",
+        "x86_64-netbsd",
+        "x86_64-openbsd",
+        "x86_64-freebsd",
+        "armv7l-netbsd",
+        "riscv64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dictfmt",
+        "dictunformat",
+        "dictd",
+        "dictzip",
+        "dictfmt_index2suffix",
+        "dictfmt_index2word",
+        "dictdplugin-config",
+        "dictl",
+        "dict",
+        "dict_lookup",
+        "colorit"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Korotkiy",
+            "github": "sikmir",
+            "email": "sikmir@disroot.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Korotkiy"
+    ],
+    "package_description": "Dict protocol server and client",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.dict.org"
+    ],
+    "package_position": "pkgs/servers/dict/default.nix:35"
+}

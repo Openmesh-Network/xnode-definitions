@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "hut",
+    "package_attr_set": "No package set",
+    "package_pname": "hut",
+    "package_pversion": "0.6.0",
+    "package_platforms": [
+        "aarch64-darwin",
+        "armv6l-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "wasm32-wasi",
+        "i686-darwin",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "hut"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Francesco Gazzetta",
+            "github": "fgaz",
+            "email": "fgaz@fgaz.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Francesco Gazzetta"
+    ],
+    "package_description": "CLI tool for Sourcehut / sr.ht",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://sr.ht/~xenrox/hut/"
+    ],
+    "package_position": "pkgs/applications/version-management/hut/default.nix:36"
+}

@@ -1,0 +1,85 @@
+{
+    "type": "package",
+    "package_attr_name": "limesurvey",
+    "package_attr_set": "No package set",
+    "package_pname": "limesurvey",
+    "package_pversion": "6.4.1+240108",
+    "package_platforms": [
+        "armv5tel-linux",
+        "riscv64-netbsd",
+        "s390x-linux",
+        "armv7l-netbsd",
+        "riscv64-linux",
+        "microblaze-linux",
+        "riscv32-linux",
+        "x86_64-redox",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "x86_64-cygwin",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "mipsel-netbsd",
+        "riscv32-netbsd",
+        "mips-linux",
+        "i686-cygwin",
+        "aarch64-darwin",
+        "m68k-netbsd",
+        "x86_64-linux",
+        "armv7a-linux",
+        "x86_64-solaris",
+        "powerpc64le-linux",
+        "armv6l-netbsd",
+        "aarch64-netbsd",
+        "x86_64-netbsd",
+        "x86_64-openbsd",
+        "i686-openbsd",
+        "i686-darwin",
+        "powerpc64-linux",
+        "x86_64-freebsd",
+        "mips64-linux",
+        "i686-freebsd",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "mips64el-linux",
+        "i686-netbsd",
+        "powerpc-netbsd",
+        "armv7a-netbsd",
+        "s390-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jaka Hudoklin"
+    ],
+    "package_description": "Open source survey application",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.limesurvey.org"
+    ],
+    "package_position": "pkgs/servers/limesurvey/default.nix:35"
+}

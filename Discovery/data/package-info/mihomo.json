@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "mihomo",
+    "package_attr_set": "No package set",
+    "package_pname": "mihomo",
+    "package_pversion": "1.18.6",
+    "package_platforms": [
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "mips-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "armv7a-linux",
+        "mipsel-linux",
+        "i686-darwin",
+        "s390-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "i686-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "wasm32-wasi",
+        "armv7a-darwin",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "wasm64-wasi",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mihomo"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "oluceps",
+            "github": "oluceps",
+            "email": "nixos@oluceps.uk"
+        }
+    ],
+    "package_maintainers_set": [
+        "oluceps"
+    ],
+    "package_description": "Rule-based tunnel in Go",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/MetaCubeX/mihomo/tree/Alpha"
+    ],
+    "package_position": "pkgs/by-name/mi/mihomo/package.nix:41"
+}

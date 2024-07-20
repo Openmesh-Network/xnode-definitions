@@ -1,0 +1,122 @@
+{
+    "type": "package",
+    "package_attr_name": "flarum",
+    "package_attr_set": "No package set",
+    "package_pname": "flarum",
+    "package_pversion": "1.8.1",
+    "package_platforms": [
+        "i686-linux",
+        "m68k-netbsd",
+        "m68k-none",
+        "s390-none",
+        "x86_64-genode",
+        "wasm32-wasi",
+        "x86_64-darwin",
+        "mips-linux",
+        "powerpc-none",
+        "armv7l-netbsd",
+        "mips64el-linux",
+        "vc4-none",
+        "aarch64-none",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "x86_64-windows",
+        "aarch64_be-none",
+        "x86_64-openbsd",
+        "mipsel-linux",
+        "x86_64-freebsd",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "mips-none",
+        "microblazeel-linux",
+        "x86_64-none",
+        "msp430-none",
+        "armv7a-darwin",
+        "i686-none",
+        "riscv32-netbsd",
+        "riscv64-none",
+        "riscv64-netbsd",
+        "s390x-none",
+        "s390-linux",
+        "rx-none",
+        "aarch64-linux",
+        "x86_64-linux",
+        "mipsel-netbsd",
+        "i686-windows",
+        "javascript-ghcjs",
+        "microblaze-none",
+        "aarch64-netbsd",
+        "mips64-linux",
+        "i686-genode",
+        "x86_64-netbsd",
+        "i686-freebsd",
+        "wasm64-wasi",
+        "x86_64-redox",
+        "i686-darwin",
+        "mmix-mmixware",
+        "or1k-none",
+        "powerpcle-none",
+        "x86_64-solaris",
+        "mips64-none",
+        "riscv32-none",
+        "s390x-linux",
+        "armv6l-none",
+        "aarch64-darwin",
+        "riscv64-linux",
+        "microblaze-linux",
+        "armv5tel-linux",
+        "microblazeel-none",
+        "aarch64-genode",
+        "armv7l-linux",
+        "i686-openbsd",
+        "arm-none",
+        "armv6l-netbsd",
+        "x86_64-cygwin",
+        "i686-cygwin",
+        "m68k-linux",
+        "avr-none",
+        "armv7a-linux",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "powerpc-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Florian Agbuya",
+            "github": "fsagbuya",
+            "email": "fa@m-labs.ph"
+        },
+        {
+            "name": "Jason Odoom",
+            "github": "jasonodoom",
+            "email": "jasonodoom@riseup.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Florian Agbuya",
+        "Jason Odoom"
+    ],
+    "package_description": "Flarum is a delightfully simple discussion platform for your website",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/flarum/flarum"
+    ],
+    "package_position": "pkgs/by-name/fl/flarum/package.nix:23"
+}

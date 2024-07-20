@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "gpsd",
+    "package_attr_set": "No package set",
+    "package_pname": "gpsd",
+    "package_pversion": "3.25",
+    "package_platforms": [
+        "mips64el-linux",
+        "powerpc-netbsd",
+        "aarch64-linux",
+        "armv6l-netbsd",
+        "microblaze-linux",
+        "m68k-linux",
+        "i686-darwin",
+        "riscv32-netbsd",
+        "i686-openbsd",
+        "i686-cygwin",
+        "armv7l-netbsd",
+        "armv7a-darwin",
+        "x86_64-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "x86_64-darwin",
+        "i686-freebsd",
+        "mips-linux",
+        "x86_64-netbsd",
+        "armv7l-linux",
+        "x86_64-solaris",
+        "m68k-netbsd",
+        "x86_64-openbsd",
+        "armv5tel-linux",
+        "s390x-linux",
+        "armv7a-netbsd",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "i686-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "mipsel-linux",
+        "x86_64-redox",
+        "x86_64-freebsd",
+        "armv6l-linux",
+        "x86_64-cygwin",
+        "riscv64-netbsd",
+        "mips64-linux",
+        "aarch64-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ntpshmmon",
+        "gpsdctl",
+        "lcdgps",
+        "gegps",
+        "zerk",
+        "xgpsspeed",
+        "ppscheck",
+        "gpspipe",
+        "gpsmon",
+        "gpsctl",
+        "gpscat",
+        "gpssnmp",
+        "gpsprof",
+        "gpsdebuginfo",
+        "gps2udp",
+        "gpssubframe",
+        "gpsrinex",
+        "gpsfake",
+        "gpsd",
+        "ubxtool",
+        "gpxlogger",
+        "gpsdecode",
+        "gpscsv",
+        "cgps",
+        "gpsplot",
+        "xgps"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bj\u00f8rn Forsman",
+            "github": "bjornfor",
+            "email": "bjorn.forsman@gmail.com"
+        },
+        {
+            "name": "Alexey Shmalko",
+            "github": "rasendubi",
+            "email": "rasen.dubi@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bj\u00f8rn Forsman",
+        "Alexey Shmalko"
+    ],
+    "package_description": "GPS service daemon",
+    "package_longDescription": "<rendered-html><p>gpsd is a service daemon that monitors one or more GPSes or AIS\nreceivers attached to a host computer through serial or USB ports,\nmaking all data on the location/course/velocity of the sensors available\nto be queried on TCP port 2947 of the host computer. With gpsd, multiple\nlocation-aware client applications (such as navigational and wardriving\nsoftware) can share access to receivers without contention or loss of\ndata. Also, gpsd responds to queries with a format that is substantially\neasier to parse than the NMEA 0183 emitted by most GPSes. The gpsd\ndistribution includes a linkable C service library, a C++ wrapper class,\nand a Python module that developers of gpsd-aware applications can use\nto encapsulate all communication with gpsd. Third-party client bindings\nfor Java and Perl also exist.</p>\n<p>Besides gpsd itself, the project provides auxiliary tools for\ndiagnostic monitoring and profiling of receivers and feeding\nlocation-aware applications GPS/AIS logs for diagnostic purposes.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gpsd.gitlab.io/gpsd/index.html"
+    ],
+    "package_position": "pkgs/servers/gpsd/default.nix:124"
+}

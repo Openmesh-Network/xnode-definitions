@@ -1,0 +1,105 @@
+{
+    "type": "package",
+    "package_attr_name": "cassandra",
+    "package_attr_set": "No package set",
+    "package_pname": "cassandra",
+    "package_pversion": "4.1.2",
+    "package_platforms": [
+        "powerpc64-linux",
+        "x86_64-openbsd",
+        "armv6l-netbsd",
+        "powerpc64le-linux",
+        "mipsel-netbsd",
+        "riscv64-linux",
+        "armv7l-netbsd",
+        "x86_64-cygwin",
+        "m68k-linux",
+        "m68k-netbsd",
+        "x86_64-linux",
+        "powerpc-netbsd",
+        "armv7l-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "x86_64-freebsd",
+        "s390-linux",
+        "aarch64-linux",
+        "aarch64-darwin",
+        "i686-freebsd",
+        "microblaze-linux",
+        "mips64-linux",
+        "i686-cygwin",
+        "x86_64-solaris",
+        "armv7a-netbsd",
+        "riscv64-netbsd",
+        "mips64el-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "x86_64-netbsd",
+        "i686-openbsd",
+        "i686-darwin",
+        "x86_64-redox",
+        "armv7a-darwin",
+        "riscv32-netbsd",
+        "aarch64-netbsd",
+        "riscv32-linux",
+        "mips-linux",
+        "x86_64-darwin",
+        "i686-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "sstableutil",
+        "sstableupgrade",
+        "sstablerepairedset",
+        "cqlsh",
+        "sstablesplit",
+        "cassandra",
+        "sstableexpiredblockers",
+        "stop-server",
+        "sstablescrub",
+        "sstableloader",
+        "cassandra-stress",
+        "sstableverify",
+        "sstableofflinerelevel",
+        "sstablemetadata",
+        "sstablelevelreset",
+        "debug-cql",
+        "nodetool",
+        "cqlsh.py",
+        "sstabledump"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robert Hensing",
+            "github": "roberth",
+            "email": "nixpkgs@roberthensing.nl"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robert Hensing"
+    ],
+    "package_description": "Massively scalable open source NoSQL database",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://cassandra.apache.org/"
+    ],
+    "package_position": "pkgs/servers/nosql/cassandra/generic.nix:122"
+}

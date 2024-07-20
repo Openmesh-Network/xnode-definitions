@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "mjpg-streamer",
+    "package_attr_set": "No package set",
+    "package_pname": "mjpg-streamer-unstable",
+    "package_pversion": "2019-05-24",
+    "package_platforms": [
+        "i686-linux",
+        "m68k-linux",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "mips64el-linux",
+        "mips64-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mjpg_streamer"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0.html",
+            "fullName": "GNU General Public License v2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Gabriel Ebner",
+            "github": "gebner",
+            "email": "gebner@gebner.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Gabriel Ebner"
+    ],
+    "package_description": "Takes JPGs from Linux-UVC compatible webcams, filesystem or other input plugins and streams them as M-JPEG via HTTP to webbrowsers, VLC and other software",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jacksonliam/mjpg-streamer"
+    ],
+    "package_position": "pkgs/applications/video/mjpg-streamer/default.nix:27"
+}

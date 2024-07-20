@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "navidrome",
+    "package_attr_set": "No package set",
+    "package_pname": "navidrome",
+    "package_pversion": "0.52.5",
+    "package_platforms": [
+        "i686-linux",
+        "armv6l-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "aarch64-linux",
+        "microblaze-linux",
+        "aarch64-darwin",
+        "mipsel-linux",
+        "i686-darwin",
+        "armv7a-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "s390-linux",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "navidrome"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Andrea Ciceri",
+            "github": "aciceri",
+            "email": "andrea.ciceri@autistici.org"
+        },
+        {
+            "name": "squalus",
+            "github": "squalus",
+            "email": "squalus@squalus.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Andrea Ciceri",
+        "squalus"
+    ],
+    "package_description": "Navidrome Music Server and Streamer compatible with Subsonic/Airsonic",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.navidrome.org/"
+    ],
+    "package_position": "pkgs/by-name/na/navidrome/package.nix:78"
+}

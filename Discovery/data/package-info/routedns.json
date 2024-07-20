@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "routedns",
+    "package_attr_set": "No package set",
+    "package_pname": "routedns",
+    "package_pversion": "0.1.51",
+    "package_platforms": [
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "i686-darwin",
+        "i686-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "armv7a-darwin",
+        "mips64-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "aarch64-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "x86_64-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "routedns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jeroen Simonetti",
+            "github": "jsimonetti",
+            "email": "jeroen+nixpkgs@simonetti.nl"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jeroen Simonetti"
+    ],
+    "package_description": "DNS stub resolver, proxy and router",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/folbricht/routedns"
+    ],
+    "package_position": "pkgs/tools/networking/routedns/default.nix:25"
+}

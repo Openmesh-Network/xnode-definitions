@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "openwebrx",
+    "package_attr_set": "No package set",
+    "package_pname": "openwebrx",
+    "package_pversion": "1.2.2",
+    "package_platforms": [
+        "armv7l-linux",
+        "i686-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "armv7a-darwin",
+        "x86_64-cygwin",
+        "x86_64-windows",
+        "x86_64-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "i686-darwin",
+        "i686-freebsd",
+        "s390x-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "x86_64-freebsd",
+        "i686-cygwin",
+        "armv6l-linux",
+        "armv7a-linux",
+        "i686-windows",
+        "s390-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "openwebrx"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Astro",
+            "github": "astro",
+            "email": "astro@spaceboyz.net"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        },
+        {
+            "name": "Tassilo Tanneberger",
+            "github": "tanneberger",
+            "email": "revol-xut@protonmail.com"
+        },
+        {
+            "name": "Grigory Shipunov",
+            "github": "oxapentane",
+            "email": "blame@oxapentane.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Astro",
+        "Sandro J\u00e4ckel",
+        "Tassilo Tanneberger",
+        "Grigory Shipunov"
+    ],
+    "package_description": "Simple DSP library and command-line tool for Software Defined Radio",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jketterl/openwebrx"
+    ],
+    "package_position": "pkgs/applications/radio/openwebrx/default.nix:96"
+}

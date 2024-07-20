@@ -1,0 +1,99 @@
+{
+    "type": "package",
+    "package_attr_name": "uwsgi",
+    "package_attr_set": "No package set",
+    "package_pname": "uwsgi",
+    "package_pversion": "2.0.26",
+    "package_platforms": [
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "m68k-linux",
+        "i686-linux",
+        "aarch64-netbsd",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "armv7a-netbsd",
+        "armv7l-netbsd",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "m68k-netbsd",
+        "i686-openbsd",
+        "mips64-linux",
+        "mips-linux",
+        "aarch64-darwin",
+        "s390x-linux",
+        "aarch64-linux",
+        "i686-cygwin",
+        "i686-freebsd",
+        "armv6l-linux",
+        "mips64el-linux",
+        "x86_64-cygwin",
+        "powerpc-netbsd",
+        "riscv64-netbsd",
+        "x86_64-netbsd",
+        "i686-netbsd",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "armv6l-netbsd",
+        "armv7a-darwin",
+        "x86_64-openbsd",
+        "riscv32-netbsd",
+        "mipsel-netbsd",
+        "armv7l-linux",
+        "i686-darwin",
+        "microblazeel-linux",
+        "x86_64-freebsd",
+        "x86_64-redox",
+        "x86_64-linux",
+        "x86_64-solaris"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "uwsgi"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Amiantov",
+            "github": "abbradar",
+            "email": "ab@fmap.me"
+        },
+        {
+            "name": "schneefux",
+            "github": "schneefux",
+            "email": "schneefux+nixos_pkg@schneefux.xyz"
+        },
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Amiantov",
+        "schneefux",
+        "Robin Gloster"
+    ],
+    "package_description": "Fast, self-healing and developer/sysadmin-friendly application container server coded in pure C",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://uwsgi-docs.readthedocs.org/en/latest/"
+    ],
+    "package_position": "pkgs/servers/uwsgi/default.nix:166"
+}

@@ -1,0 +1,59 @@
+{
+    "type": "package",
+    "package_attr_name": "mstpd",
+    "package_attr_set": "No package set",
+    "package_pname": "mstpd",
+    "package_pversion": "0.0.8",
+    "package_platforms": [
+        "riscv32-linux",
+        "m68k-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mstpd",
+        "bridge-stp",
+        "mstpctl",
+        "mstp_restart"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Multiple Spanning Tree Protocol daemon",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mstpd/mstpd"
+    ],
+    "package_position": "pkgs/os-specific/linux/mstpd/default.nix:32"
+}

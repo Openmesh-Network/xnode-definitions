@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "mjolnir",
+    "package_attr_set": "No package set",
+    "package_pname": "mjolnir",
+    "package_pversion": "1.6.5",
+    "package_platforms": [
+        "mips64-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "microblaze-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "mips-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "i686-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mjolnir"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Johannes Schleifenbaum",
+            "github": "jojosch",
+            "email": "johannes@js-webcoding.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Johannes Schleifenbaum"
+    ],
+    "package_description": "Moderation tool for Matrix",
+    "package_longDescription": "<rendered-html><p>As an all-in-one moderation tool, it can protect your server from\nmalicious invites, spam messages, and whatever else you don\u2019t want. In\naddition to server-level protection, Mjolnir is great for communities\nwanting to protect their rooms without having to use their personal\naccounts for moderation.</p>\n<p>The bot by default includes support for bans, redactions, anti-spam,\nserver ACLs, room directory changes, room alias transfers, account\ndeactivation, room shutdown, and more.</p>\n<p>A Synapse module is also available to apply the same rulesets the bot\nuses across an entire homeserver.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/matrix-org/mjolnir"
+    ],
+    "package_position": "pkgs/servers/mjolnir/default.nix:57"
+}

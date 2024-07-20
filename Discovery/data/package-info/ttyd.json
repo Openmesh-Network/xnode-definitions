@@ -1,0 +1,119 @@
+{
+    "type": "package",
+    "package_attr_name": "ttyd",
+    "package_attr_set": "No package set",
+    "package_pname": "ttyd",
+    "package_pversion": "1.7.7",
+    "package_platforms": [
+        "x86_64-genode",
+        "s390-linux",
+        "x86_64-openbsd",
+        "aarch64-netbsd",
+        "aarch64-none",
+        "s390x-linux",
+        "msp430-none",
+        "aarch64-linux",
+        "x86_64-solaris",
+        "i686-netbsd",
+        "armv7a-darwin",
+        "riscv64-netbsd",
+        "aarch64-darwin",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "aarch64-genode",
+        "m68k-linux",
+        "x86_64-freebsd",
+        "or1k-none",
+        "vc4-none",
+        "arm-none",
+        "i686-genode",
+        "mmix-mmixware",
+        "i686-freebsd",
+        "mips64-linux",
+        "riscv32-linux",
+        "mipsel-netbsd",
+        "riscv32-netbsd",
+        "armv7l-linux",
+        "aarch64_be-none",
+        "i686-darwin",
+        "i686-cygwin",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "powerpc-none",
+        "i686-openbsd",
+        "wasm64-wasi",
+        "x86_64-windows",
+        "riscv64-none",
+        "m68k-netbsd",
+        "mipsel-linux",
+        "armv7a-netbsd",
+        "x86_64-netbsd",
+        "armv6l-none",
+        "javascript-ghcjs",
+        "rx-none",
+        "armv5tel-linux",
+        "x86_64-none",
+        "powerpc-netbsd",
+        "x86_64-redox",
+        "microblaze-none",
+        "microblazeel-none",
+        "s390-none",
+        "armv6l-linux",
+        "s390x-none",
+        "riscv64-linux",
+        "x86_64-cygwin",
+        "armv7a-linux",
+        "avr-none",
+        "powerpc64le-linux",
+        "i686-none",
+        "m68k-none",
+        "x86_64-darwin",
+        "armv6l-netbsd",
+        "mips-none",
+        "wasm32-wasi",
+        "mips64-none",
+        "i686-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "i686-windows",
+        "riscv32-none",
+        "mips64el-linux",
+        "powerpcle-none",
+        "armv7l-netbsd"
+    ],
+    "package_outputs": [
+        "out",
+        "man"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ttyd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Austin Seipp"
+    ],
+    "package_description": "Share your terminal over the web",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/tsl0922/ttyd"
+    ],
+    "package_position": "pkgs/servers/ttyd/default.nix:29"
+}

@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "cadvisor",
+    "package_attr_set": "No package set",
+    "package_pname": "cadvisor-unstable",
+    "package_pversion": "2023-10-22",
+    "package_platforms": [
+        "s390x-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cadvisor"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jaka Hudoklin"
+    ],
+    "package_description": "Analyzes resource usage and performance characteristics of running docker containers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/google/cadvisor"
+    ],
+    "package_position": "pkgs/servers/monitoring/cadvisor/default.nix:26"
+}

@@ -1,0 +1,95 @@
+{
+    "type": "package",
+    "package_attr_name": "postfix",
+    "package_attr_set": "No package set",
+    "package_pname": "postfix",
+    "package_pversion": "3.9.0",
+    "package_platforms": [
+        "microblaze-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "i686-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "postmap",
+        "postfix",
+        "newaliases",
+        "postlog",
+        "postsuper",
+        "postqueue",
+        "postmulti",
+        "sendmail",
+        "postcat",
+        "postdrop",
+        "postkick",
+        "postalias",
+        "mailq",
+        "postlock",
+        "postconf"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/IPL-1.0.html",
+            "fullName": "IBM Public License v1.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/EPL-2.0.html",
+            "fullName": "Eclipse Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "IBM Public License v1.0",
+        "Eclipse Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        },
+        {
+            "name": "Robert Sch\u00fctz",
+            "github": "dotlambda",
+            "email": "rschuetz17@gmail.com"
+        },
+        {
+            "name": "Antoine Eiche",
+            "github": "nlewo",
+            "email": "lewo@abesis.fr"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robin Gloster",
+        "Robert Sch\u00fctz",
+        "Antoine Eiche"
+    ],
+    "package_description": "Fast, easy to administer, and secure mail server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.postfix.org/"
+    ],
+    "package_position": "pkgs/servers/mail/postfix/default.nix:120"
+}

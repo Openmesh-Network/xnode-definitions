@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "hebbot",
+    "package_attr_set": "No package set",
+    "package_pname": "hebbot",
+    "package_pversion": "2.1",
+    "package_platforms": [
+        "x86_64-darwin",
+        "i686-darwin",
+        "i686-linux",
+        "x86_64-freebsd",
+        "mips64el-linux",
+        "aarch64-linux",
+        "riscv64-netbsd",
+        "s390x-linux",
+        "i686-freebsd",
+        "mips-linux",
+        "i686-netbsd",
+        "m68k-linux",
+        "x86_64-linux",
+        "i686-openbsd",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "aarch64-darwin",
+        "x86_64-openbsd",
+        "x86_64-solaris",
+        "armv6l-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "powerpc-netbsd",
+        "mipsel-linux",
+        "x86_64-redox",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "mips64-linux",
+        "x86_64-windows",
+        "aarch64-netbsd",
+        "armv7a-darwin",
+        "mipsel-netbsd",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "armv7l-netbsd",
+        "x86_64-netbsd",
+        "wasm32-wasi",
+        "armv6l-netbsd",
+        "i686-windows"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alexander Kenji Berthold",
+            "github": "a-kenji",
+            "email": "aks.kenji@protonmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alexander Kenji Berthold"
+    ],
+    "package_description": "Matrix bot which can generate \"This Week in X\" like blog posts ",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/haecker-felix/hebbot"
+    ],
+    "package_position": "pkgs/servers/matrix-hebbot/default.nix:38"
+}

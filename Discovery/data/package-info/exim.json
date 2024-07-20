@@ -1,0 +1,101 @@
+{
+    "type": "package",
+    "package_attr_name": "exim",
+    "package_attr_set": "No package set",
+    "package_pname": "exim",
+    "package_pversion": "4.97.1",
+    "package_platforms": [
+        "microblazeel-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "exiwhat",
+        "exim_lock",
+        "rsmtp",
+        "exim_checkaccess",
+        "exim",
+        "exiqgrep",
+        "exim_dumpdb",
+        "newaliases",
+        "rmail",
+        "eximstats",
+        "exigrep",
+        "exipick",
+        "exicyclog",
+        "exim_fixdb",
+        "sendmail",
+        "exiqsumm",
+        "runq",
+        "exim_tidydb",
+        "exinext",
+        "mailq",
+        "exim_dbmbuild"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later",
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Tomislav Viljeti\u0107",
+            "github": "4z3",
+            "email": "tv@krebsco.de"
+        },
+        {
+            "name": "Janne He\u00df",
+            "github": "dasJ",
+            "email": "janne@hess.ooo"
+        },
+        {
+            "name": "Simon Hauser",
+            "github": "Conni2461",
+            "email": "simon.hauser@outlook.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Tomislav Viljeti\u0107",
+        "Janne He\u00df",
+        "Simon Hauser"
+    ],
+    "package_description": "Mail transfer agent (MTA)",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://exim.org/"
+    ],
+    "package_position": "pkgs/servers/mail/exim/default.nix:161"
+}

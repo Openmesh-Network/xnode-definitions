@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "armagetronad",
+    "package_attr_set": "No package set",
+    "package_pname": "armagetronad",
+    "package_pversion": "0.2.9.2.3",
+    "package_platforms": [
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "mipsel-linux",
+        "mips64-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Morgan Jones",
+            "github": "numinit",
+            "email": "me@numin.it"
+        }
+    ],
+    "package_maintainers_set": [
+        "Morgan Jones"
+    ],
+    "package_description": "Multiplayer networked arcade racing game in 3D similar to Tron",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.armagetronad.org"
+    ],
+    "package_position": "pkgs/games/armagetronad/default.nix:194"
+}

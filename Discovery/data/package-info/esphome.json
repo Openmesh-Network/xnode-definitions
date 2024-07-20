@@ -1,0 +1,86 @@
+{
+    "type": "package",
+    "package_attr_name": "esphome",
+    "package_attr_set": "No package set",
+    "package_pname": "esphome",
+    "package_pversion": "2024.7.0",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux",
+        "riscv32-linux",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "mips64-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "x86_64-freebsd",
+        "mips-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "i686-cygwin",
+        "i686-windows",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "i686-darwin",
+        "armv6l-linux",
+        "armv7l-linux",
+        "x86_64-cygwin",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "x86_64-windows",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "esphome"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        },
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "MIT License",
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        },
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robin Gloster",
+        "Martin Weinelt"
+    ],
+    "package_description": "Make creating custom firmwares for ESP32/ESP8266 super easy",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://esphome.io/"
+    ],
+    "package_position": "pkgs/tools/misc/esphome/default.nix:139"
+}

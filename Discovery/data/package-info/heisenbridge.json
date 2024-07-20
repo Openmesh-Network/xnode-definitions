@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "heisenbridge",
+    "package_attr_set": "No package set",
+    "package_pname": "heisenbridge",
+    "package_pversion": "1.14.6",
+    "package_platforms": [
+        "i686-freebsd",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "x86_64-windows",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "mips-linux",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "i686-windows",
+        "i686-darwin",
+        "mips64-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "x86_64-darwin",
+        "x86_64-freebsd",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "x86_64-cygwin",
+        "i686-cygwin",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "heisenbridge"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Sumner Evans",
+            "github": "sumnerevans",
+            "email": "me@sumnerevans.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Sumner Evans"
+    ],
+    "package_description": "Bouncer-style Matrix-IRC bridge",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/hifi/heisenbridge"
+    ],
+    "package_position": "pkgs/servers/heisenbridge/default.nix:30"
+}

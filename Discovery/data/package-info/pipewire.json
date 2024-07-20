@@ -1,0 +1,106 @@
+{
+    "type": "package",
+    "package_attr_name": "pipewire",
+    "package_attr_set": "No package set",
+    "package_pname": "pipewire",
+    "package_pversion": "1.2.0",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "mips64-linux",
+        "s390-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "armv7a-linux",
+        "mipsel-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dev",
+        "installedTests",
+        "jack",
+        "doc",
+        "man"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pw-top",
+        "spa-json-dump",
+        "pw-container",
+        "pipewire-vulkan",
+        "pipewire-aes67",
+        "pw-profiler",
+        "pw-dsdplay",
+        "pw-encplay",
+        "pw-cat",
+        "pw-dump",
+        "pw-mon",
+        "pw-dot",
+        "pipewire",
+        "pw-record",
+        "pw-cli",
+        "pw-jack",
+        "pw-loopback",
+        "spa-resample",
+        "pw-midiplay",
+        "pipewire-avb",
+        "pw-reserve",
+        "spa-inspect",
+        "spa-monitor",
+        "pw-mididump",
+        "pipewire-pulse",
+        "pw-midirecord",
+        "pw-metadata",
+        "pw-v4l2",
+        "pw-link",
+        "pw-config",
+        "spa-acp-tool",
+        "pw-play"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ilan Joselevich",
+            "github": "Kranzes",
+            "email": "personal@ilanjoselevich.com"
+        },
+        {
+            "name": "Ilya K.",
+            "github": "K900",
+            "email": "me@0upti.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ilan Joselevich",
+        "Ilya K."
+    ],
+    "package_description": "Server and user space API to deal with multimedia pipelines",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://pipewire.org/"
+    ],
+    "package_position": "pkgs/development/libraries/pipewire/default.nix:208"
+}

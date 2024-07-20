@@ -1,0 +1,142 @@
+{
+    "type": "package",
+    "package_attr_name": "jenkins",
+    "package_attr_set": "No package set",
+    "package_pname": "jenkins",
+    "package_pversion": "2.452.3",
+    "package_platforms": [
+        "s390-none",
+        "i686-windows",
+        "powerpc64le-linux",
+        "x86_64-redox",
+        "i686-darwin",
+        "s390-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "i686-netbsd",
+        "riscv64-netbsd",
+        "aarch64-none",
+        "x86_64-windows",
+        "armv7l-netbsd",
+        "aarch64_be-none",
+        "i686-none",
+        "rx-none",
+        "riscv64-linux",
+        "armv7a-linux",
+        "x86_64-none",
+        "powerpc-netbsd",
+        "armv6l-linux",
+        "microblaze-linux",
+        "mipsel-netbsd",
+        "microblazeel-none",
+        "riscv32-none",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "avr-none",
+        "aarch64-netbsd",
+        "aarch64-linux",
+        "riscv32-linux",
+        "microblaze-none",
+        "i686-linux",
+        "m68k-netbsd",
+        "x86_64-cygwin",
+        "riscv32-netbsd",
+        "arm-none",
+        "i686-freebsd",
+        "armv6l-netbsd",
+        "mips-none",
+        "mmix-mmixware",
+        "microblazeel-linux",
+        "msp430-none",
+        "aarch64-genode",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "x86_64-darwin",
+        "m68k-linux",
+        "x86_64-linux",
+        "or1k-none",
+        "riscv64-none",
+        "x86_64-netbsd",
+        "armv7l-linux",
+        "powerpc-none",
+        "x86_64-freebsd",
+        "s390x-none",
+        "mips64el-linux",
+        "armv6l-none",
+        "loongarch64-linux",
+        "m68k-none",
+        "armv7a-netbsd",
+        "mips64-none",
+        "javascript-ghcjs",
+        "i686-cygwin",
+        "vc4-none",
+        "i686-genode",
+        "i686-openbsd",
+        "powerpcle-none",
+        "x86_64-openbsd",
+        "x86_64-solaris",
+        "mips-linux",
+        "mips64-linux",
+        "x86_64-genode"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "jenkins-cli"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Corey O'Connor",
+            "github": "coreyoconnor",
+            "email": "coreyoconnor@gmail.com"
+        },
+        {
+            "name": "James Earl Douglas",
+            "github": "earldouglas",
+            "email": "james@earldouglas.com"
+        },
+        {
+            "name": "Tim Steinbach",
+            "github": "NeQuissimus",
+            "email": "tim@nequissimus.com"
+        },
+        {
+            "name": "Janne He\u00df",
+            "github": "dasJ",
+            "email": "janne@hess.ooo"
+        },
+        {
+            "name": "Simon Hauser",
+            "github": "Conni2461",
+            "email": "simon.hauser@outlook.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Corey O'Connor",
+        "James Earl Douglas",
+        "Tim Steinbach",
+        "Janne He\u00df",
+        "Simon Hauser"
+    ],
+    "package_description": "Extendable open source continuous integration server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://jenkins.io/"
+    ],
+    "package_position": "pkgs/development/tools/continuous-integration/jenkins/default.nix:68"
+}

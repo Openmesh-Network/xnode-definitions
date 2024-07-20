@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "clickhouse",
+    "package_attr_set": "No package set",
+    "package_pname": "clickhouse",
+    "package_pversion": "24.3.5.46",
+    "package_platforms": [
+        "mips64-linux",
+        "powerpc64le-linux",
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "mips64el-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "clickhouse-disks",
+        "clickhouse-keeper-client",
+        "clickhouse-git-import",
+        "clickhouse-server",
+        "clickhouse-extract-from-config",
+        "clickhouse-client",
+        "clickhouse-obfuscator",
+        "clickhouse-format",
+        "chl",
+        "clickhouse-benchmark",
+        "clickhouse",
+        "chc",
+        "clickhouse-keeper-converter",
+        "clickhouse-static-files-disk-uploader",
+        "clickhouse-keeper",
+        "clickhouse-library-bridge",
+        "clickhouse-su",
+        "clickhouse-local",
+        "clickhouse-compressor",
+        "clickhouse-odbc-bridge",
+        "ch"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Orivej Desh",
+            "github": "orivej",
+            "email": "orivej@gmx.fr"
+        },
+        {
+            "name": "Maksym Balatsko",
+            "github": "mbalatsko",
+            "email": "mbalatsko@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Orivej Desh",
+        "Maksym Balatsko"
+    ],
+    "package_description": "Column-oriented database management system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://clickhouse.com"
+    ],
+    "package_position": "pkgs/servers/clickhouse/default.nix:213"
+}

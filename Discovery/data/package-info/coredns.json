@@ -1,0 +1,83 @@
+{
+    "type": "package",
+    "package_attr_name": "coredns",
+    "package_attr_set": "No package set",
+    "package_pname": "coredns",
+    "package_pversion": "1.11.3",
+    "package_platforms": [
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "s390x-linux",
+        "wasm64-wasi",
+        "i686-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "m68k-linux",
+        "armv7a-darwin",
+        "armv6l-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "x86_64-linux",
+        "wasm32-wasi",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "coredns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Rushmore Mushambi",
+            "github": "rushmorem",
+            "email": "rushmore@webenchanter.com"
+        },
+        {
+            "name": "Rene Treffer",
+            "github": "rtreffer",
+            "email": "treffer+nixos@measite.de"
+        },
+        {
+            "name": "Duarte David",
+            "github": "DeltaEvo",
+            "email": "deltaduartedavid@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Rushmore Mushambi",
+        "Rene Treffer",
+        "Duarte David"
+    ],
+    "package_description": "DNS server that runs middleware",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://coredns.io"
+    ],
+    "package_position": "pkgs/servers/dns/coredns/default.nix:85"
+}

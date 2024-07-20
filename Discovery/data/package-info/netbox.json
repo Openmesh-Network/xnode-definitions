@@ -1,0 +1,86 @@
+{
+    "type": "package",
+    "package_attr_name": "netbox",
+    "package_attr_set": "No package set",
+    "package_pname": "netbox",
+    "package_pversion": "3.7.8",
+    "package_platforms": [
+        "s390-linux",
+        "i686-freebsd",
+        "powerpc64-linux",
+        "armv7a-linux",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "i686-cygwin",
+        "riscv32-linux",
+        "x86_64-cygwin",
+        "i686-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "x86_64-freebsd",
+        "i686-windows",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "s390x-linux",
+        "mips64-linux",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "m68k-linux",
+        "mips-linux",
+        "i686-darwin",
+        "x86_64-windows",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "netbox"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "R\u00e9mi Nicole",
+            "github": "minijackson",
+            "email": "minijackson@riseup.net"
+        },
+        {
+            "name": "Ember Keske",
+            "github": "n0emis",
+            "email": "nixpkgs@n0emis.network"
+        },
+        {
+            "name": "Ryan Lahfa",
+            "github": "RaitoBezarius",
+            "email": "ryan@lahfa.xyz"
+        }
+    ],
+    "package_maintainers_set": [
+        "R\u00e9mi Nicole",
+        "Ember Keske",
+        "Ryan Lahfa"
+    ],
+    "package_description": "IP address management (IPAM) and data center infrastructure management (DCIM) tool",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/netbox-community/netbox"
+    ],
+    "package_position": "pkgs/servers/web-apps/netbox/generic.nix:104"
+}

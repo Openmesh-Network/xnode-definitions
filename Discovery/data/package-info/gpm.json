@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "gpm",
+    "package_attr_set": "No package set",
+    "package_pname": "gpm-unstable",
+    "package_pversion": "2020-06-17",
+    "package_platforms": [
+        "powerpc64-linux",
+        "s390x-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "riscv32-linux",
+        "i686-cygwin",
+        "mips64-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "x86_64-cygwin",
+        "mips64el-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mouse-test",
+        "gpm-root",
+        "get-versions",
+        "mev",
+        "disable-paste",
+        "hltest",
+        "gpm",
+        "display-coords",
+        "display-buttons"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Eelco Dolstra",
+            "github": "edolstra",
+            "email": "edolstra+nixpkgs@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Eelco Dolstra"
+    ],
+    "package_description": "Daemon that provides mouse support on the Linux console",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.nico.schottelius.org/software/gpm/"
+    ],
+    "package_position": "pkgs/servers/gpm/default.nix:60"
+}

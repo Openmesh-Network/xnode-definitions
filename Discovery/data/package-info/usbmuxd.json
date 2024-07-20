@@ -1,0 +1,79 @@
+{
+    "type": "package",
+    "package_attr_name": "usbmuxd",
+    "package_attr_set": "No package set",
+    "package_pname": "usbmuxd",
+    "package_pversion": "1.1.1+date=2023-05-05",
+    "package_platforms": [
+        "riscv32-linux",
+        "microblazeel-linux",
+        "armv7a-darwin",
+        "armv6l-netbsd",
+        "armv5tel-linux",
+        "i686-darwin",
+        "x86_64-freebsd",
+        "i686-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "i686-openbsd",
+        "x86_64-openbsd",
+        "x86_64-redox",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "riscv32-netbsd",
+        "i686-cygwin",
+        "armv7a-netbsd",
+        "powerpc-netbsd",
+        "m68k-netbsd",
+        "riscv64-netbsd",
+        "i686-freebsd",
+        "loongarch64-linux",
+        "x86_64-solaris",
+        "s390-linux",
+        "x86_64-netbsd",
+        "mips64-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "armv7l-netbsd",
+        "x86_64-darwin",
+        "s390x-linux",
+        "aarch64-netbsd",
+        "x86_64-cygwin",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "mips-linux",
+        "i686-netbsd",
+        "x86_64-linux",
+        "aarch64-linux",
+        "mipsel-netbsd",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "usbmuxd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Socket daemon to multiplex connections from and to iOS devices",
+    "package_longDescription": "<rendered-html><p>usbmuxd stands for \u201cUSB multiplexing daemon\u201d. This daemon is in\ncharge of multiplexing connections over USB to an iOS device. To users,\nit means you can sync your music, contacts, photos, etc. over USB. To\ndevelopers, it means you can connect to any listening localhost socket\non the device. usbmuxd is not used for tethering data transfer which\nuses a dedicated USB interface as a virtual network device. Multiple\nconnections to different TCP ports can happen in parallel. The\nhigher-level layers are handled by libimobiledevice.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/libimobiledevice/usbmuxd"
+    ],
+    "package_position": "pkgs/tools/misc/usbmuxd/default.nix:42"
+}

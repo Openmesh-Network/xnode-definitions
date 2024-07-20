@@ -1,0 +1,97 @@
+{
+    "type": "package",
+    "package_attr_name": "xscreensaver",
+    "package_attr_set": "No package set",
+    "package_pname": "xscreensaver",
+    "package_pversion": "6.09",
+    "package_platforms": [
+        "mips64-linux",
+        "powerpc-netbsd",
+        "mipsel-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "riscv64-netbsd",
+        "x86_64-darwin",
+        "i686-darwin",
+        "armv7l-netbsd",
+        "armv7a-netbsd",
+        "microblaze-linux",
+        "i686-openbsd",
+        "armv6l-netbsd",
+        "riscv64-linux",
+        "i686-freebsd",
+        "i686-cygwin",
+        "armv7a-darwin",
+        "i686-linux",
+        "loongarch64-linux",
+        "x86_64-freebsd",
+        "m68k-linux",
+        "x86_64-linux",
+        "x86_64-solaris",
+        "mips64el-linux",
+        "aarch64-netbsd",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "s390x-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "x86_64-cygwin",
+        "armv7a-linux",
+        "s390-linux",
+        "riscv32-netbsd",
+        "powerpc64le-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "x86_64-openbsd",
+        "x86_64-redox",
+        "aarch64-linux",
+        "x86_64-netbsd",
+        "i686-netbsd"
+    ],
+    "package_outputs": [
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "xscreensaver-demo",
+        "xscreensaver-command",
+        "xscreensaver-settings",
+        "xscreensaver"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michael Raskin",
+            "github": "7c6f434c",
+            "email": "7c6f434c@mail.ru"
+        },
+        {
+            "name": "Anderson Torres",
+            "github": "AndersonTorres",
+            "email": "torres.anderson.85@protonmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michael Raskin",
+        "Anderson Torres"
+    ],
+    "package_description": "Set of screensavers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.jwz.org/xscreensaver/"
+    ],
+    "package_position": "pkgs/by-name/xs/xscreensaver/package.nix:125"
+}

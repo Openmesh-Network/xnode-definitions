@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "podgrab",
+    "package_attr_set": "No package set",
+    "package_pname": "podgrab-unstable",
+    "package_pversion": "2021-04-14",
+    "package_platforms": [
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "aarch64-darwin",
+        "riscv32-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "wasm64-wasi",
+        "mips-linux",
+        "powerpc64-linux",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "wasm32-wasi",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "mips64el-linux",
+        "microblaze-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "podgrab"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bruno BELANYI",
+            "github": "ambroisie",
+            "email": "bruno.nixpkgs@belanyi.fr"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bruno BELANYI"
+    ],
+    "package_description": "Self-hosted podcast manager to download episodes as soon as they become live",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/akhilrex/podgrab"
+    ],
+    "package_position": "pkgs/servers/misc/podgrab/default.nix:25"
+}

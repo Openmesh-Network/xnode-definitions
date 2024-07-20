@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "sing-box",
+    "package_attr_set": "No package set",
+    "package_pname": "sing-box",
+    "package_pversion": "1.9.3",
+    "package_platforms": [
+        "aarch64-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "armv7a-darwin",
+        "armv6l-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "i686-darwin",
+        "wasm32-wasi",
+        "wasm64-wasi",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "sing-box"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nick Cao",
+            "github": "NickCao",
+            "email": "nickcao@nichi.co"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nick Cao"
+    ],
+    "package_description": "Universal proxy platform",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://sing-box.sagernet.org"
+    ],
+    "package_position": "pkgs/tools/networking/sing-box/default.nix:66"
+}

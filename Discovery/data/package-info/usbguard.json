@@ -1,0 +1,45 @@
+{
+    "type": "package",
+    "package_attr_name": "usbguard",
+    "package_attr_set": "No package set",
+    "package_pname": "usbguard",
+    "package_pversion": "1.1.2",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "usbguard-dbus",
+        "usbguard-rule-parser",
+        "usbguard",
+        "usbguard-daemon"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Philipp Bartsch",
+            "github": "tnias",
+            "email": "phil@grmr.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Philipp Bartsch"
+    ],
+    "package_description": "USBGuard software framework helps to protect your computer against BadUSB",
+    "package_longDescription": "<rendered-html><p>USBGuard is a software framework for implementing USB device\nauthorization policies (what kind of USB devices are authorized) as well\nas method of use policies (how a USB device may interact with the\nsystem). Simply put, it is a USB device whitelisting tool.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://usbguard.github.io/"
+    ],
+    "package_position": "pkgs/os-specific/linux/usbguard/default.nix:88"
+}

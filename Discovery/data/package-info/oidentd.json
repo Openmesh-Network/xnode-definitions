@@ -1,0 +1,56 @@
+{
+    "type": "package",
+    "package_attr_name": "oidentd",
+    "package_attr_set": "No package set",
+    "package_pname": "oidentd",
+    "package_pversion": "3.1.0",
+    "package_platforms": [
+        "s390x-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "armv7a-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "oidentd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Configurable Ident protocol server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://oidentd.janikrabe.com/"
+    ],
+    "package_position": "pkgs/servers/identd/oidentd/default.nix:14"
+}

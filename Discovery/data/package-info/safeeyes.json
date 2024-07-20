@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "safeeyes",
+    "package_attr_set": "No package set",
+    "package_pname": "safeeyes",
+    "package_pversion": "2.1.9",
+    "package_platforms": [
+        "microblaze-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "mips64-linux",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "safeeyes"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Sergei Khoma",
+            "github": "srghma",
+            "email": "srghma@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Sergei Khoma"
+    ],
+    "package_description": "Protect your eyes from eye strain using this simple and beautiful, yet extensible break reminder. A Free and Open Source Linux alternative to EyeLeo",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://slgobinath.github.io/SafeEyes"
+    ],
+    "package_position": "pkgs/applications/misc/safeeyes/default.nix:72"
+}

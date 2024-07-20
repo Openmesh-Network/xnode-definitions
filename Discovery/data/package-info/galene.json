@@ -1,0 +1,72 @@
+{
+    "type": "package",
+    "package_attr_name": "galene",
+    "package_attr_set": "No package set",
+    "package_pname": "galene",
+    "package_pversion": "0.9",
+    "package_platforms": [
+        "powerpc64-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "static",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "galene-password-generator",
+        "galene"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "R\u00e9my Gr\u00fcnblatt",
+            "github": "rgrunbla",
+            "email": "remy@grunblatt.org"
+        },
+        {
+            "name": "Alexandre Iooss",
+            "github": "erdnaxe",
+            "email": "erdnaxe@crans.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "R\u00e9my Gr\u00fcnblatt",
+        "Alexandre Iooss"
+    ],
+    "package_description": "Videoconferencing server that is easy to deploy, written in Go",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jech/galene"
+    ],
+    "package_position": "pkgs/servers/web-apps/galene/default.nix:27"
+}

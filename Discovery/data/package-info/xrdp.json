@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "xrdp",
+    "package_attr_set": "No package set",
+    "package_pname": "xrdp",
+    "package_pversion": "0.9.25.1",
+    "package_platforms": [
+        "microblaze-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "mips-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "xrdp-sesrun",
+        "xrdp-chansrv",
+        "xrdp-sesadmin",
+        "xrdp-dis",
+        "xrdp-sesman",
+        "xrdp-keygen",
+        "xrdp-genkeymap",
+        "xrdp"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Charlotte Van Petegem",
+            "github": "chvp",
+            "email": "nixpkgs@cvpetegem.be"
+        },
+        {
+            "name": "Lucas Eduardo Wendt",
+            "github": "lucasew",
+            "email": "lucas59356@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Charlotte Van Petegem",
+        "Lucas Eduardo Wendt"
+    ],
+    "package_description": "Open source RDP server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/neutrinolabs/xrdp"
+    ],
+    "package_position": "pkgs/applications/networking/remote/xrdp/default.nix:165"
+}

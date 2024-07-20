@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "frp",
+    "package_attr_set": "No package set",
+    "package_pname": "frp",
+    "package_pversion": "0.59.0",
+    "package_platforms": [
+        "i686-linux",
+        "mips64el-linux",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "powerpc64le-linux",
+        "s390-linux",
+        "s390x-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "m68k-linux",
+        "microblazeel-linux",
+        "aarch64-linux",
+        "i686-darwin",
+        "mips-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "x86_64-darwin",
+        "armv7l-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "frpc",
+        "frps"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Oleksii Filonenko",
+            "github": "Br1ght0ne",
+            "email": "brightone@protonmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Oleksii Filonenko"
+    ],
+    "package_description": "Fast reverse proxy",
+    "package_longDescription": "<rendered-html><p>frp is a fast reverse proxy to help you expose a local server behind\na NAT or firewall to the Internet. As of now, it supports TCP and UDP,\nas well as HTTP and HTTPS protocols, where requests can be forwarded to\ninternal services by domain name. frp also has a P2P connect mode.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/fatedier/frp"
+    ],
+    "package_position": "pkgs/tools/networking/frp/default.nix:25"
+}

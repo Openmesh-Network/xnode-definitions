@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "dgraph",
+    "package_attr_set": "No package set",
+    "package_pname": "dgraph",
+    "package_pversion": "24.0.0",
+    "package_platforms": [
+        "microblazeel-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "i686-darwin",
+        "loongarch64-linux",
+        "wasm32-wasi",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "armv7a-darwin",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "x86_64-darwin",
+        "i686-linux",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dgraph"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Yann Hodique",
+            "github": "sigma",
+            "email": "yann.hodique@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Yann Hodique"
+    ],
+    "package_description": "Fast, Distributed Graph DB",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://dgraph.io/"
+    ],
+    "package_position": "pkgs/servers/dgraph/default.nix:43"
+}

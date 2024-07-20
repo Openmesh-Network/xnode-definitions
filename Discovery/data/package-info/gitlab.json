@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "gitlab",
+    "package_attr_set": "No package set",
+    "package_pname": "gitlab",
+    "package_pversion": "17.1.2",
+    "package_platforms": [
+        "riscv64-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "x86_64-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        },
+        {
+            "name": "Kristoffer Th\u00f8mt Ravneberg",
+            "github": "krav",
+            "email": "kristoffer@microdisko.no"
+        },
+        {
+            "name": "Kim Lindberger",
+            "github": "talyz",
+            "email": "kim.lindberger@gmail.com"
+        },
+        {
+            "name": "Yaya",
+            "github": "yayayayaka",
+            "email": "github@uwu.is"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robin Gloster",
+        "Kristoffer Th\u00f8mt Ravneberg",
+        "Kim Lindberger",
+        "Yaya"
+    ],
+    "package_description": "GitLab Community Edition",
+    "package_longDescription": "<rendered-html><p>GitLab Community Edition (CE) is an open source end-to-end software\ndevelopment platform with built-in version control, issue tracking, code\nreview, CI/CD, and more. Self-host GitLab CE on your own servers, in a\ncontainer, or on a cloud provider.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.gitlab.com/"
+    ],
+    "package_position": "pkgs/applications/version-management/gitlab/default.nix:290"
+}

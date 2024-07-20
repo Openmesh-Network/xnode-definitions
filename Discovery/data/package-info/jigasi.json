@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "jigasi",
+    "package_attr_set": "No package set",
+    "package_pname": "jigasi",
+    "package_pversion": "1.1-311-g3de47d0",
+    "package_platforms": [
+        "armv5tel-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "mips-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "s390-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "jigasi"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Cleeyv",
+            "github": "cleeyv",
+            "email": "cleeyv@riseup.net"
+        },
+        {
+            "name": "Ryan Mulligan",
+            "github": "ryantm",
+            "email": "ryan@ryantm.com"
+        },
+        {
+            "name": "Lassulus",
+            "github": "Lassulus",
+            "email": "lassulus@gmail.com"
+        },
+        {
+            "name": "Yaya",
+            "github": "yayayayaka",
+            "email": "github@uwu.is"
+        },
+        {
+            "name": "Lorenzo Manacorda",
+            "github": "asymmetric",
+            "email": "lorenzo@mailbox.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Cleeyv",
+        "Ryan Mulligan",
+        "Lassulus",
+        "Yaya",
+        "Lorenzo Manacorda"
+    ],
+    "package_description": "Server-side application that allows regular SIP clients to join Jitsi Meet conferences",
+    "package_longDescription": "<rendered-html><p>Jitsi Gateway to SIP: a server-side application that allows regular\nSIP clients to join Jitsi Meet conferences hosted by Jitsi\nVideobridge.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jitsi/jigasi"
+    ],
+    "package_position": "pkgs/servers/jigasi/default.nix:37"
+}

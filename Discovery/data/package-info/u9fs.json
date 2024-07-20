@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "u9fs",
+    "package_attr_set": "No package set",
+    "package_pname": "u9fs-unstable",
+    "package_pversion": "2021-01-25",
+    "package_platforms": [
+        "aarch64-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "m68k-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "mips64-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "armv7a-netbsd",
+        "m68k-netbsd",
+        "riscv64-netbsd",
+        "x86_64-freebsd",
+        "x86_64-netbsd",
+        "armv7l-linux",
+        "x86_64-cygwin",
+        "aarch64-netbsd",
+        "powerpc64le-linux",
+        "i686-openbsd",
+        "x86_64-redox",
+        "armv6l-linux",
+        "i686-freebsd",
+        "armv7a-linux",
+        "x86_64-darwin",
+        "x86_64-openbsd",
+        "powerpc-netbsd",
+        "i686-cygwin",
+        "armv5tel-linux",
+        "i686-netbsd",
+        "i686-darwin",
+        "mips64el-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "armv7l-netbsd",
+        "mipsel-netbsd",
+        "s390-linux",
+        "powerpc64-linux",
+        "riscv32-netbsd",
+        "loongarch64-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "armv6l-netbsd",
+        "x86_64-linux",
+        "x86_64-solaris"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "u9fs"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/dtoa.html",
+            "fullName": "dtoa License"
+        }
+    ],
+    "package_license_set": [
+        "dtoa License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Emery Hemingway",
+            "github": "ehmry",
+            "email": "ehmry@posteo.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Emery Hemingway"
+    ],
+    "package_description": "Serve 9P from Unix",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://p9f.org/magic/man2html?man=u9fs&sect=4"
+    ],
+    "package_position": "pkgs/servers/u9fs/default.nix:20"
+}

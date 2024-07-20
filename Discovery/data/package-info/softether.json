@@ -1,0 +1,47 @@
+{
+    "type": "package",
+    "package_attr_name": "softether",
+    "package_attr_set": "No package set",
+    "package_pname": "softether",
+    "package_pversion": "4.38",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "vpncmd",
+        "vpnbridge",
+        "vpnclient",
+        "vpnserver"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Wei-Ming Yang",
+            "github": "rick68",
+            "email": "rick68@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Wei-Ming Yang"
+    ],
+    "package_description": "Open-Source Free Cross-platform Multi-protocol VPN Program",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.softether.org/"
+    ],
+    "package_position": "pkgs/servers/softether/default.nix:32"
+}

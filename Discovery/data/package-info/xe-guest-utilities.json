@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "xe-guest-utilities",
+    "package_attr_set": "No package set",
+    "package_pname": "xe-guest-utilities",
+    "package_pversion": "8.4.0",
+    "package_platforms": [
+        "armv7a-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "riscv32-linux",
+        "mips-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "xenstore-watch",
+        "xenstore-read",
+        "xenstore-list",
+        "xe-daemon",
+        "xenstore-exists",
+        "xenstore-write",
+        "xenstore-ls",
+        "xenstore-rm",
+        "xenstore-chmod",
+        "xenstore",
+        "xe-linux-distribution"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "XenServer guest utilities",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/xenserver/xe-guest-utilities"
+    ],
+    "package_position": "pkgs/tools/virtualization/xe-guest-utilities/default.nix:44"
+}

@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "invidious",
+    "package_attr_set": "No package set",
+    "package_pname": "invidious",
+    "package_pversion": "2.20240427",
+    "package_platforms": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "invidious"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Sophie Tauchert",
+            "github": "999eagle",
+            "email": "github@999eagle.moe"
+        },
+        {
+            "name": "Gaetan Lepage",
+            "github": "GaetanLepage",
+            "email": "gaetan@glepage.com"
+        },
+        {
+            "name": "Simon Bruder",
+            "github": "sbruder",
+            "email": "nixos@sbruder.de"
+        },
+        {
+            "name": "Peder Bergebakken Sundt",
+            "github": "pbsds",
+            "email": "pbsds@hotmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Sophie Tauchert",
+        "Gaetan Lepage",
+        "Simon Bruder",
+        "Peder Bergebakken Sundt"
+    ],
+    "package_description": "Open source alternative front-end to YouTube",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://invidious.io/"
+    ],
+    "package_position": "pkgs/servers/invidious/default.nix:123"
+}

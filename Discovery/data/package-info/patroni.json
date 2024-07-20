@@ -1,0 +1,92 @@
+{
+    "type": "package",
+    "package_attr_name": "patroni",
+    "package_attr_set": "No package set",
+    "package_pname": "patroni",
+    "package_pversion": "3.3.1",
+    "package_platforms": [
+        "mipsel-linux",
+        "armv5tel-linux",
+        "aarch64-netbsd",
+        "m68k-linux",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "armv7l-netbsd",
+        "mips-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "x86_64-netbsd",
+        "s390x-linux",
+        "x86_64-linux",
+        "i686-netbsd",
+        "microblaze-linux",
+        "i686-openbsd",
+        "armv6l-netbsd",
+        "loongarch64-linux",
+        "x86_64-openbsd",
+        "i686-freebsd",
+        "mips64el-linux",
+        "x86_64-cygwin",
+        "aarch64-darwin",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "powerpc-netbsd",
+        "riscv32-netbsd",
+        "x86_64-freebsd",
+        "m68k-netbsd",
+        "armv7l-linux",
+        "mipsel-netbsd",
+        "s390-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "i686-cygwin",
+        "armv7a-netbsd",
+        "armv7a-darwin",
+        "i686-linux",
+        "riscv64-netbsd",
+        "mips64-linux",
+        "x86_64-solaris",
+        "x86_64-redox",
+        "i686-darwin"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Elliot Cameron",
+            "github": "de11n",
+            "email": "nixpkgs-commits@deshaw.com"
+        },
+        {
+            "name": "Souvik Sen",
+            "github": "invokes-su",
+            "email": "nixpkgs-commits@deshaw.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Elliot Cameron",
+        "Souvik Sen"
+    ],
+    "package_description": "Template for PostgreSQL HA with ZooKeeper, etcd or Consul",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://patroni.readthedocs.io/en/latest/"
+    ],
+    "package_position": "pkgs/servers/sql/patroni/default.nix:56"
+}

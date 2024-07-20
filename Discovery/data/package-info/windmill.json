@@ -1,0 +1,53 @@
+{
+    "type": "package",
+    "package_attr_name": "windmill",
+    "package_attr_set": "No package set",
+    "package_pname": "windmill",
+    "package_pversion": "1.333.2",
+    "package_platforms": [
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "x86_64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "windmill"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Mostly Void",
+            "github": "dit7ya",
+            "email": "7rat13@gmail.com"
+        },
+        {
+            "name": "Raphael Megzari",
+            "github": "happysalada",
+            "email": "raphael@megzari.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Mostly Void",
+        "Raphael Megzari"
+    ],
+    "package_description": "Open-source developer platform to turn scripts into workflows and UIs",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://windmill.dev"
+    ],
+    "package_position": "pkgs/by-name/wi/windmill/package.nix:164"
+}

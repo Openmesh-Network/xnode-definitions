@@ -1,0 +1,172 @@
+{
+    "type": "package",
+    "package_attr_name": "matomo",
+    "package_attr_set": "No package set",
+    "package_pname": "matomo",
+    "package_pversion": "4.16.1",
+    "package_platforms": [
+        "aarch64-linux",
+        "or1k-none",
+        "s390x-none",
+        "i686-none",
+        "x86_64-solaris",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "i686-windows",
+        "i686-netbsd",
+        "x86_64-darwin",
+        "mips64el-linux",
+        "mipsel-linux",
+        "riscv64-netbsd",
+        "microblaze-none",
+        "armv6l-linux",
+        "mips64-none",
+        "microblaze-linux",
+        "m68k-netbsd",
+        "powerpcle-none",
+        "riscv32-none",
+        "x86_64-redox",
+        "i686-freebsd",
+        "s390x-linux",
+        "wasm64-wasi",
+        "powerpc-none",
+        "x86_64-cygwin",
+        "i686-openbsd",
+        "x86_64-netbsd",
+        "riscv32-linux",
+        "rx-none",
+        "wasm32-wasi",
+        "mmix-mmixware",
+        "s390-linux",
+        "armv5tel-linux",
+        "x86_64-linux",
+        "mipsel-netbsd",
+        "mips-linux",
+        "armv6l-netbsd",
+        "i686-linux",
+        "m68k-linux",
+        "arm-none",
+        "riscv32-netbsd",
+        "javascript-ghcjs",
+        "vc4-none",
+        "armv7l-linux",
+        "i686-cygwin",
+        "aarch64-genode",
+        "microblazeel-linux",
+        "i686-darwin",
+        "mips-none",
+        "riscv64-none",
+        "armv6l-none",
+        "m68k-none",
+        "x86_64-none",
+        "x86_64-openbsd",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "aarch64_be-none",
+        "aarch64-none",
+        "msp430-none",
+        "aarch64-netbsd",
+        "x86_64-freebsd",
+        "i686-genode",
+        "mips64-linux",
+        "x86_64-windows",
+        "x86_64-genode",
+        "powerpc64-linux",
+        "armv7a-netbsd",
+        "powerpc-netbsd",
+        "microblazeel-none",
+        "armv7l-netbsd",
+        "s390-none",
+        "avr-none",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "matomo-console"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Florian Jacob",
+            "github": "florianjacob",
+            "email": "projects+nixos@florianjacob.de"
+        },
+        {
+            "name": "Sebastian Ball",
+            "github": "sebbel",
+            "email": "hej@sebastian-ball.de"
+        },
+        {
+            "name": "James \u2018Twey\u2019 Kay",
+            "github": "Twey",
+            "email": "twey@twey.co.uk"
+        },
+        {
+            "name": "David A. Buser",
+            "github": "boozedog",
+            "email": "code@booze.dog"
+        },
+        {
+            "name": "Christian Theune",
+            "github": "ctheune",
+            "email": "ct@flyingcircus.io"
+        },
+        {
+            "name": "Tobias Stenzel",
+            "github": "dpausp",
+            "email": "dpausp@posteo.de"
+        },
+        {
+            "name": "Frank Lanitz",
+            "github": "frlan",
+            "email": "frank@frank.uvena.de"
+        },
+        {
+            "name": "Leona Maroni",
+            "github": "leona-ya",
+            "email": "nix@leona.is"
+        },
+        {
+            "name": "Oliver Schmidt",
+            "github": "osnyx",
+            "email": "os@flyingcircus.io"
+        },
+        {
+            "name": "Maximilian Bosch",
+            "github": "Ma27",
+            "email": "maximilian@mbosch.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Florian Jacob",
+        "Sebastian Ball",
+        "James \u2018Twey\u2019 Kay",
+        "David A. Buser",
+        "Christian Theune",
+        "Tobias Stenzel",
+        "Frank Lanitz",
+        "Leona Maroni",
+        "Oliver Schmidt",
+        "Maximilian Bosch"
+    ],
+    "package_description": "Real-time web analytics application",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://matomo.org/"
+    ],
+    "package_position": "pkgs/servers/web-apps/matomo/default.nix:116"
+}

@@ -1,0 +1,45 @@
+{
+    "type": "package",
+    "package_attr_name": "logcheck",
+    "package_attr_set": "No package set",
+    "package_pname": "logcheck",
+    "package_pversion": "1.4.3",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "logtail",
+        "logcheck-test",
+        "logcheck",
+        "logtail2"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Mathijs Kwik",
+            "github": "bluescreen303",
+            "email": "mathijs@bluescreen303.nl"
+        }
+    ],
+    "package_maintainers_set": [
+        "Mathijs Kwik"
+    ],
+    "package_description": "Mails anomalies in the system logfiles to the administrator",
+    "package_longDescription": "<rendered-html><p>Mails anomalies in the system logfiles to the administrator.</p>\n<p>Logcheck helps spot problems and security violations in your logfiles\nautomatically and will send the results to you by e-mail. Logcheck was\npart of the Abacus Project of security tools, but this version has been\nrewritten.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://salsa.debian.org/debian/logcheck"
+    ],
+    "package_position": "pkgs/tools/system/logcheck/default.nix:37"
+}

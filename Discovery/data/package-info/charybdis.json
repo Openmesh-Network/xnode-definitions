@@ -1,0 +1,94 @@
+{
+    "type": "package",
+    "package_attr_name": "charybdis",
+    "package_attr_set": "No package set",
+    "package_pname": "charybdis",
+    "package_pversion": "4.1.2",
+    "package_platforms": [
+        "mips-linux",
+        "m68k-linux",
+        "armv7a-netbsd",
+        "riscv32-linux",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "m68k-netbsd",
+        "x86_64-netbsd",
+        "i686-openbsd",
+        "powerpc-netbsd",
+        "mipsel-netbsd",
+        "riscv64-netbsd",
+        "x86_64-openbsd",
+        "mips64el-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "x86_64-cygwin",
+        "armv6l-linux",
+        "i686-freebsd",
+        "s390-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "x86_64-solaris",
+        "armv5tel-linux",
+        "s390x-linux",
+        "aarch64-netbsd",
+        "armv6l-netbsd",
+        "i686-netbsd",
+        "riscv32-netbsd",
+        "x86_64-redox",
+        "powerpc64le-linux",
+        "x86_64-freebsd",
+        "x86_64-linux",
+        "armv7l-netbsd",
+        "mipsel-linux",
+        "i686-linux",
+        "armv7a-darwin",
+        "i686-darwin",
+        "riscv64-linux",
+        "i686-cygwin",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "wsockd",
+        "ssld",
+        "bandb",
+        "charybdis",
+        "bantool",
+        "charybdis-mkfingerprint",
+        "authd",
+        "charybdis-mkpasswd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Lassulus",
+            "github": "Lassulus",
+            "email": "lassulus@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Lassulus"
+    ],
+    "package_description": "IRCv3 server designed to be highly scalable",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/charybdis-ircd/charybdis"
+    ],
+    "package_position": "pkgs/servers/irc/charybdis/default.nix:32"
+}

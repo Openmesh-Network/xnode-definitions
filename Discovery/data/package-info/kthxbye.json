@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "kthxbye",
+    "package_attr_set": "No package set",
+    "package_pname": "kthxbye",
+    "package_pversion": "0.16",
+    "package_platforms": [
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "x86_64-darwin",
+        "riscv64-linux",
+        "mips-linux",
+        "i686-darwin",
+        "s390-linux",
+        "s390x-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "mipsel-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "armv6l-linux",
+        "armv7a-darwin",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "wasm32-wasi",
+        "aarch64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "m68k-linux",
+        "i686-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "kthxbye"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Kartik Gokte",
+            "github": "NukaDuka",
+            "email": "ksgokte@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Kartik Gokte"
+    ],
+    "package_description": "Prometheus Alertmanager alert acknowledgement management daemon",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/prymitive/kthxbye"
+    ],
+    "package_position": "pkgs/servers/monitoring/prometheus/kthxbye.nix:34"
+}

@@ -1,0 +1,56 @@
+{
+    "type": "package",
+    "package_attr_name": "inadyn",
+    "package_attr_set": "No package set",
+    "package_pname": "inadyn",
+    "package_pversion": "2.12.0",
+    "package_platforms": [
+        "armv5tel-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "inadyn"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Free dynamic DNS client",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://troglobit.com/projects/inadyn/"
+    ],
+    "package_position": "pkgs/tools/networking/inadyn/default.nix:28"
+}

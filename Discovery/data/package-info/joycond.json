@@ -1,0 +1,56 @@
+{
+    "type": "package",
+    "package_attr_name": "joycond",
+    "package_attr_set": "No package set",
+    "package_pname": "joycond-unstable",
+    "package_pversion": "2021-07-30",
+    "package_platforms": [
+        "i686-linux",
+        "mips64-linux",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "s390-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "joycond"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Userspace daemon to combine joy-cons from the hid-nintendo kernel driver",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/DanielOgorchock/joycond"
+    ],
+    "package_position": "pkgs/os-specific/linux/joycond/default.nix:35"
+}

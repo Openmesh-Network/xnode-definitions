@@ -1,0 +1,56 @@
+{
+    "type": "package",
+    "package_attr_name": "miniupnpd",
+    "package_attr_set": "No package set",
+    "package_pname": "miniupnpd",
+    "package_pversion": "2.3.7",
+    "package_platforms": [
+        "microblaze-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "miniupnpd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Daemon that implements the UPnP Internet Gateway Device (IGD) specification",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://miniupnp.tuxfamily.org/"
+    ],
+    "package_position": "pkgs/tools/networking/miniupnpd/default.nix:82"
+}

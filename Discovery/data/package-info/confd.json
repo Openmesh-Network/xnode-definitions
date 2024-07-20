@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "confd",
+    "package_attr_set": "No package set",
+    "package_pname": "confd",
+    "package_pversion": "0.16-unstable-2023-12-09",
+    "package_platforms": [
+        "x86_64-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "microblaze-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "s390x-linux",
+        "wasm64-wasi",
+        "mips-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "wasm32-wasi",
+        "mipsel-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "armv7a-darwin",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "confd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "zimbatm",
+            "github": "zimbatm",
+            "email": "zimbatm@zimbatm.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "zimbatm"
+    ],
+    "package_description": "Manage local application configuration files using templates and data from etcd or consul",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/kelseyhightower/confd"
+    ],
+    "package_position": "pkgs/tools/system/confd/default.nix:22"
+}

@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "libinfinity",
+    "package_attr_set": "No package set",
+    "package_pname": "libinfinity",
+    "package_pversion": "0.7.2",
+    "package_platforms": [
+        "i686-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "i686-darwin",
+        "armv7a-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "mips64el-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out",
+        "bin",
+        "dev",
+        "devdoc"
+    ],
+    "package_default_output": "bin",
+    "package_programs": [
+        "infinoted-0.7"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.0-or-later.html",
+            "fullName": "GNU Library General Public License v2 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Library General Public License v2 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Implementation of the Infinote protocol written in GObject-based C",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gobby.github.io/"
+    ],
+    "package_position": "pkgs/development/libraries/libinfinity/default.nix:45"
+}

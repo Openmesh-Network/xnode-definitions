@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "geoipupdate",
+    "package_attr_set": "No package set",
+    "package_pname": "geoipupdate",
+    "package_pversion": "7.0.1",
+    "package_platforms": [
+        "i686-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7a-darwin",
+        "x86_64-darwin",
+        "mips-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "wasm64-wasi",
+        "armv7l-linux",
+        "x86_64-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "wasm32-wasi",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "aarch64-darwin",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "geoipupdate"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Janne He\u00df",
+            "github": "dasJ",
+            "email": "janne@hess.ooo"
+        },
+        {
+            "name": "Simon Hauser",
+            "github": "Conni2461",
+            "email": "simon.hauser@outlook.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Janne He\u00df",
+        "Simon Hauser"
+    ],
+    "package_description": "Automatic GeoIP database updater",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/maxmind/geoipupdate"
+    ],
+    "package_position": "pkgs/applications/misc/geoipupdate/default.nix:21"
+}

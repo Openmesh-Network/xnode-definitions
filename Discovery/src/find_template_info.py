@@ -13,15 +13,35 @@ class xnode_definer:
                 return svc['specs']
         return []
 
-    def make_services(self, service_definitions):
+    def make_services(self, service_definitions, fetch_package_info=False):
         services = []
         for service in service_definitions:
-            package_info = find_package_info(service['nixName']) # XXX: NEED TO AVOID RUNNING THIS EVERY TIME!
-            if package_info:
-                new_service = self.extend_service_definition(package_info, service)
-                services.append(new_service)
+            # Fetch_package_info indicates that we want to call find_package_info, otherwise we look for local data
+            if fetch_package_info:
+                package_info = find_package_info(service['nixName'])
+                if package_info:
+                    new_service = self.extend_service_definition(package_info, service)
+                    services.append(new_service)
+
+                    # Write the response package-info directory
+                    with open(f'Discovery/data/package-info/{service["nixName"]}.json', 'w') as output:
+                        output.write(json.dumps(package_info, indent=4))
+                else:
+                    print("Unable to find package info for", service["nixName"])
+
             else:
-                print("Unable to find package info for", service["nixName"])
+                try:
+                    with open(f'Discovery/data/package-info/{service["nixName"]}.json', 'r') as package_info:
+                        package_info = json.loads(package_info.read())
+                        if package_info:
+                            new_service = self.extend_service_definition(package_info, service)
+                            services.append(new_service)
+                except Exception as e:
+                    print("ERROR:", e)
+
+        if fetch_package_info:
+            with open('Discovery/data/package-info.json', 'w') as output:
+                output.write(json.dumps(services, indent=4))
 
         return services
 
@@ -54,10 +74,11 @@ def find_package_info(package_name):
         'size': 1, 'begin': 0, 'channel': 'unstable', 'sort_by': '_score', 'sort_order': 'desc', 'package_set': None, 'license': None, 'maintainer': None, 
         'platform': None, 'info': False, 'options': False, 'output': '', 'debugging': False
     }
+    # TODO: Increase size of query and compare responses for similarity with search_term (might be able to do this in the opensearch query)
     result = get_packages(**default_kwargs)['hits']['hits']
     if len(result) > 0:
         closest_match = result[0]
-        return closest_match["_source"]
+        return closest_match["_source"] # XXX: Not always getting a correct match
     else:
         return None
 

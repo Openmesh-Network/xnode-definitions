@@ -1,0 +1,95 @@
+{
+    "type": "package",
+    "package_attr_name": "pretix",
+    "package_attr_set": "No package set",
+    "package_pname": "pretix",
+    "package_pversion": "2024.6.0",
+    "package_platforms": [
+        "aarch64-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "mipsel-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pretix-manage"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        },
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        },
+        {
+            "url": "https://spdx.org/licenses/OFL-1.1.html",
+            "fullName": "SIL Open Font License 1.1"
+        },
+        {
+            "url": "https://spdx.org/licenses/Unlicense.html",
+            "fullName": "The Unlicense"
+        },
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only",
+        "BSD 2-clause \"Simplified\" License",
+        "ISC License",
+        "MIT License",
+        "SIL Open Font License 1.1",
+        "The Unlicense",
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt"
+    ],
+    "package_description": "Ticketing software that cares about your event\u2014all the way",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/pretix/pretix"
+    ],
+    "package_position": "pkgs/by-name/pr/pretix/package.nix:262"
+}

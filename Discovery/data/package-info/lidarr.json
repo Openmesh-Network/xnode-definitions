@@ -1,0 +1,46 @@
+{
+    "type": "package",
+    "package_attr_name": "lidarr",
+    "package_attr_set": "No package set",
+    "package_pname": "lidarr",
+    "package_pversion": "2.3.3.4204",
+    "package_platforms": [
+        "aarch64-linux",
+        "x86_64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "Lidarr"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Elis Hirwing",
+            "github": "etu",
+            "email": "elis@hirwing.se"
+        }
+    ],
+    "package_maintainers_set": [
+        "Elis Hirwing"
+    ],
+    "package_description": "Usenet/BitTorrent music downloader",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://lidarr.audio/"
+    ],
+    "package_position": "pkgs/servers/lidarr/default.nix:46"
+}

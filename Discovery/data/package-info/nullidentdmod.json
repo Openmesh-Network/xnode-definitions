@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "nullidentdmod",
+    "package_attr_set": "No package set",
+    "package_pname": "nullidentdmod",
+    "package_pversion": "1.3",
+    "package_platforms": [
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "i686-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "s390x-linux",
+        "microblaze-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nullidentdmod"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Janne He\u00df",
+            "github": "dasJ",
+            "email": "janne@hess.ooo"
+        }
+    ],
+    "package_maintainers_set": [
+        "Janne He\u00df"
+    ],
+    "package_description": "Simple identd that just replies with a random string or customized userid",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://acidhub.click/NullidentdMod"
+    ],
+    "package_position": "pkgs/servers/identd/nullidentdmod/default.nix:21"
+}

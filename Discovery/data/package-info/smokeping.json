@@ -1,0 +1,121 @@
+{
+    "type": "package",
+    "package_attr_name": "smokeping",
+    "package_attr_set": "No package set",
+    "package_pname": "smokeping",
+    "package_pversion": "2.8.2",
+    "package_platforms": [
+        "m68k-none",
+        "aarch64-none",
+        "x86_64-openbsd",
+        "x86_64-redox",
+        "armv7a-linux",
+        "javascript-ghcjs",
+        "m68k-linux",
+        "aarch64-darwin",
+        "riscv32-linux",
+        "i686-none",
+        "i686-windows",
+        "x86_64-cygwin",
+        "riscv32-netbsd",
+        "avr-none",
+        "mmix-mmixware",
+        "microblaze-linux",
+        "armv6l-none",
+        "s390-linux",
+        "or1k-none",
+        "armv7a-darwin",
+        "armv7a-netbsd",
+        "riscv64-none",
+        "x86_64-solaris",
+        "i686-linux",
+        "x86_64-windows",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "armv6l-netbsd",
+        "x86_64-linux",
+        "mips64-linux",
+        "mips-linux",
+        "powerpc-netbsd",
+        "riscv64-linux",
+        "rx-none",
+        "x86_64-freebsd",
+        "x86_64-none",
+        "x86_64-genode",
+        "riscv32-none",
+        "wasm32-wasi",
+        "armv7l-linux",
+        "i686-netbsd",
+        "i686-freebsd",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "microblazeel-none",
+        "s390x-linux",
+        "powerpcle-none",
+        "s390x-none",
+        "arm-none",
+        "aarch64-genode",
+        "mipsel-netbsd",
+        "aarch64-netbsd",
+        "armv7l-netbsd",
+        "x86_64-netbsd",
+        "powerpc-none",
+        "s390-none",
+        "mipsel-linux",
+        "microblaze-none",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "i686-cygwin",
+        "i686-genode",
+        "i686-openbsd",
+        "wasm64-wasi",
+        "riscv64-netbsd",
+        "msp430-none",
+        "aarch64_be-none",
+        "m68k-netbsd",
+        "microblazeel-linux",
+        "mips64-none",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "vc4-none",
+        "mips-none",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "smokeping_cgi",
+        "smokeinfo",
+        "smokeping",
+        "tSmoke"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Kerstin Humm",
+            "github": "erictapen",
+            "email": "kerstin@erictapen.name"
+        }
+    ],
+    "package_maintainers_set": [
+        "Kerstin Humm"
+    ],
+    "package_description": "Network latency collector",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://oss.oetiker.ch/smokeping"
+    ],
+    "package_position": "pkgs/tools/networking/smokeping/default.nix:31"
+}

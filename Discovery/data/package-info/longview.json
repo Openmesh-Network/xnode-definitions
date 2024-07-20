@@ -1,0 +1,45 @@
+{
+    "type": "package",
+    "package_attr_name": "longview",
+    "package_attr_set": "No package set",
+    "package_pname": "longview",
+    "package_pversion": "1.1.5",
+    "package_platforms": [
+        "i686-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "longview"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Rodney Lorrimar",
+            "github": "rvl",
+            "email": "dev+nix@rodney.id.au"
+        }
+    ],
+    "package_maintainers_set": [
+        "Rodney Lorrimar"
+    ],
+    "package_description": "Collects all of your system-level metrics and sends them to Linode",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.linode.com/longview"
+    ],
+    "package_position": "pkgs/servers/monitoring/longview/default.nix:63"
+}

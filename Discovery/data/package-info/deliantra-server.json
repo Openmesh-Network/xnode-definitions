@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "deliantra-server",
+    "package_attr_set": "No package set",
+    "package_pname": "deliantra-server",
+    "package_pversion": "3.1",
+    "package_platforms": [
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "deliantra-server",
+        "cfutil",
+        "cfhq2xa"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later",
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Rebecca (Bex) Kelly",
+            "github": "ToxicFrog",
+            "email": "toxicfrog@ancilla.ca"
+        }
+    ],
+    "package_maintainers_set": [
+        "Rebecca (Bex) Kelly"
+    ],
+    "package_description": "Server for the Deliantra free MMORPG",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.deliantra.net/"
+    ],
+    "package_position": "pkgs/games/deliantra/server.nix:49"
+}

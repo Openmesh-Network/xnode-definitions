@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "cfdyndns",
+    "package_attr_set": "No package set",
+    "package_pname": "cfdyndns",
+    "package_pversion": "0.2.1",
+    "package_platforms": [
+        "armv7a-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "x86_64-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cfdyndns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Cole Mickens",
+            "github": "colemickens",
+            "email": "cole.mickens@gmail.com"
+        },
+        {
+            "name": "Tim DeHerrera",
+            "github": "nrdxp",
+            "email": "tim.deh@pm.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Cole Mickens",
+        "Tim DeHerrera"
+    ],
+    "package_description": "CloudFlare Dynamic DNS Client",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/nrdxp/cfdyndns"
+    ],
+    "package_position": "pkgs/applications/networking/dyndns/cfdyndns/default.nix:21"
+}

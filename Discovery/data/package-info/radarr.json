@@ -1,0 +1,53 @@
+{
+    "type": "package",
+    "package_attr_name": "radarr",
+    "package_attr_set": "No package set",
+    "package_pname": "radarr",
+    "package_pversion": "5.7.0.8882",
+    "package_platforms": [
+        "aarch64-darwin",
+        "x86_64-linux",
+        "aarch64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "Radarr"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Edward Tj\u00f6rnhammar",
+            "github": "edwtjo",
+            "email": "ed@cflags.cc"
+        },
+        {
+            "name": "Steve Purcell",
+            "github": "purcell",
+            "email": "steve@sanityinc.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Edward Tj\u00f6rnhammar",
+        "Steve Purcell"
+    ],
+    "package_description": "Usenet/BitTorrent movie downloader",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://radarr.video/"
+    ],
+    "package_position": "pkgs/servers/radarr/default.nix:50"
+}

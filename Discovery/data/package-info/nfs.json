@@ -1,0 +1,100 @@
+{
+    "type": "package",
+    "package_attr_name": "libnfs",
+    "package_attr_set": "No package set",
+    "package_pname": "libnfs",
+    "package_pversion": "5.0.2",
+    "package_platforms": [
+        "mips-linux",
+        "mips64-linux",
+        "x86_64-freebsd",
+        "armv7l-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "x86_64-cygwin",
+        "x86_64-solaris",
+        "s390-linux",
+        "riscv32-netbsd",
+        "x86_64-netbsd",
+        "m68k-linux",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "mipsel-linux",
+        "i686-cygwin",
+        "mipsel-netbsd",
+        "armv6l-netbsd",
+        "i686-darwin",
+        "armv6l-linux",
+        "riscv32-linux",
+        "i686-openbsd",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "armv7a-netbsd",
+        "powerpc-netbsd",
+        "x86_64-openbsd",
+        "x86_64-redox",
+        "x86_64-darwin",
+        "aarch64-netbsd",
+        "x86_64-linux",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "armv7a-linux",
+        "riscv64-netbsd",
+        "i686-freebsd",
+        "powerpc64le-linux",
+        "armv7l-netbsd",
+        "i686-linux",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nfs-ls",
+        "nfs-cp",
+        "nfs-cat",
+        "nfs-stat"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.0.html",
+            "fullName": "GNU Library General Public License v2"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU Library General Public License v2",
+        "BSD 2-clause \"Simplified\" License",
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Peter Hoeg",
+            "github": "peterhoeg",
+            "email": "peter@hoeg.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Peter Hoeg"
+    ],
+    "package_description": "NFS client library",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/sahlberg/libnfs"
+    ],
+    "package_position": "pkgs/development/libraries/libnfs/default.nix:36"
+}

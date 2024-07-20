@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "thinkfan",
+    "package_attr_set": "No package set",
+    "package_pname": "thinkfan",
+    "package_pversion": "1.3.1",
+    "package_platforms": [
+        "armv6l-linux",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "mips-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "mips64-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "thinkfan"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Domen Kozar",
+            "github": "domenkozar",
+            "email": "domen@dev.si"
+        },
+        {
+            "name": "Michele Guerini Rocco",
+            "github": "rnhmjoj",
+            "email": "rnhmjoj@inventati.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Domen Kozar",
+        "Michele Guerini Rocco"
+    ],
+    "package_description": "Simple, lightweight fan control program",
+    "package_longDescription": "<rendered-html><p>Thinkfan is a minimalist fan control program. Originally designed\nspecifically for IBM/Lenovo Thinkpads, it now supports any kind of\nsystem via the sysfs hwmon interface (/sys/class/hwmon).</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/vmatare/thinkfan"
+    ],
+    "package_position": "pkgs/tools/system/thinkfan/default.nix:48"
+}

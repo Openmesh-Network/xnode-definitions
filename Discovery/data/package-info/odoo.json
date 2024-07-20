@@ -1,0 +1,81 @@
+{
+    "type": "package",
+    "package_attr_name": "odoo",
+    "package_attr_set": "No package set",
+    "package_pname": "odoo",
+    "package_pversion": "17.0.20240610",
+    "package_platforms": [
+        "mips64-linux",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "x86_64-freebsd",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "i686-windows",
+        "microblaze-linux",
+        "mips64el-linux",
+        "x86_64-windows",
+        "x86_64-cygwin",
+        "s390-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "i686-freebsd",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "i686-cygwin",
+        "riscv64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "i686-darwin"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "odoo"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-3.0-only.html",
+            "fullName": "GNU Lesser General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Maciej Kr\u00fcger",
+            "github": "mkg20001",
+            "email": "mkg20001+nix@gmail.com"
+        },
+        {
+            "name": "Sirio Balmelli",
+            "github": "siriobalmelli",
+            "email": "sirio@b-ad.ch"
+        }
+    ],
+    "package_maintainers_set": [
+        "Maciej Kr\u00fcger",
+        "Sirio Balmelli"
+    ],
+    "package_description": "Open Source ERP and CRM",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.odoo.com/"
+    ],
+    "package_position": "pkgs/by-name/od/odoo/package.nix:105"
+}

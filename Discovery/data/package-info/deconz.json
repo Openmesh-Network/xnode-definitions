@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "deconz",
+    "package_attr_set": "No package set",
+    "package_pname": "deconz",
+    "package_pversion": "2.26.3",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bj\u00f8rn Forsman",
+            "github": "bjornfor",
+            "email": "bjorn.forsman@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bj\u00f8rn Forsman"
+    ],
+    "package_description": "Manage Zigbee network with ConBee, ConBee II or RaspBee hardware",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.dresden-elektronik.com/wireless/software/deconz.html"
+    ],
+    "package_position": "pkgs/servers/deconz/default.nix:75"
+}

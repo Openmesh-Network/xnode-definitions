@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "endlessh-go",
+    "package_attr_set": "No package set",
+    "package_pname": "endlessh-go",
+    "package_pversion": "2024.0119.1",
+    "package_platforms": [
+        "riscv64-linux",
+        "s390-linux",
+        "mips-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "x86_64-darwin",
+        "armv7a-darwin",
+        "aarch64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "i686-darwin",
+        "microblaze-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "endlessh-go"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Azat Bahawi",
+            "github": "azahi",
+            "email": "azat@bahawi.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Azat Bahawi"
+    ],
+    "package_description": "Implementation of endlessh exporting Prometheus metrics",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/shizunge/endlessh-go"
+    ],
+    "package_position": "pkgs/by-name/en/endlessh-go/package.nix:29"
+}

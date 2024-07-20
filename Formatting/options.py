@@ -34,10 +34,10 @@ def get_service_options(services_directory):
         else:
             print("Unable to find services for letter", letter)
     # List of lists for each letter, transform into single list
-    service_options_list = [item for sublist in service_options_list for item in sublist]
-    write_svc_opts(service_options_list)
+    service_options = [item for sublist in service_options_list for item in sublist]
+    write_svc_opts(service_options)
 
-    return service_options_list
+    return service_options
 
 def get_options(search_data_path):
     # Takes in search data, ie the raw response to a NixOS search query (opensearch response)

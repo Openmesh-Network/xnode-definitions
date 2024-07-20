@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "unit",
+    "package_attr_set": "No package set",
+    "package_pname": "unit",
+    "package_pversion": "1.32.1",
+    "package_platforms": [
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "riscv64-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "s390-linux",
+        "i686-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "unitd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Yurii Izorkin",
+            "github": "Izorkin",
+            "email": "Izorkin@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Yurii Izorkin"
+    ],
+    "package_description": "Dynamic web and application server, designed to run applications in multiple languages",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://unit.nginx.org/"
+    ],
+    "package_position": "pkgs/servers/http/unit/default.nix:78"
+}

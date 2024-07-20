@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "restic",
+    "package_attr_set": "No package set",
+    "package_pname": "restic",
+    "package_pversion": "0.16.5",
+    "package_platforms": [
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "mips64-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "i686-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "i686-darwin",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "restic"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Marius Bergmann",
+            "github": "mbrgm",
+            "email": "marius@yeai.de"
+        },
+        {
+            "name": "Robert Sch\u00fctz",
+            "github": "dotlambda",
+            "email": "rschuetz17@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Marius Bergmann",
+        "Robert Sch\u00fctz"
+    ],
+    "package_description": "Backup program that is fast, efficient and secure",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://restic.net"
+    ],
+    "package_position": "pkgs/tools/backup/restic/default.nix:47"
+}

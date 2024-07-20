@@ -1,0 +1,109 @@
+{
+    "type": "package",
+    "package_attr_name": "sysprof",
+    "package_attr_set": "No package set",
+    "package_pname": "sysprof",
+    "package_pversion": "46.0",
+    "package_platforms": [
+        "x86_64-linux",
+        "powerpc-netbsd",
+        "powerpc64-linux",
+        "x86_64-freebsd",
+        "aarch64-netbsd",
+        "riscv32-linux",
+        "i686-cygwin",
+        "armv7a-darwin",
+        "armv6l-linux",
+        "i686-netbsd",
+        "riscv64-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "riscv32-netbsd",
+        "armv7l-netbsd",
+        "x86_64-openbsd",
+        "x86_64-redox",
+        "mipsel-linux",
+        "microblaze-linux",
+        "armv6l-netbsd",
+        "microblazeel-linux",
+        "m68k-linux",
+        "m68k-netbsd",
+        "x86_64-netbsd",
+        "aarch64-linux",
+        "i686-openbsd",
+        "mips-linux",
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "armv7a-netbsd",
+        "i686-linux",
+        "mips64el-linux",
+        "x86_64-cygwin",
+        "armv7a-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "riscv64-netbsd",
+        "armv7l-linux",
+        "mipsel-netbsd",
+        "x86_64-solaris",
+        "mips64-linux",
+        "i686-freebsd"
+    ],
+    "package_outputs": [
+        "lib",
+        "dev",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "sysprof",
+        "sysprof-agent",
+        "sysprof-cli"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bobby Rong",
+            "github": "bobby285271",
+            "email": "rjl931189261@126.com"
+        },
+        {
+            "name": "Tor Hedin Br\u00f8nner",
+            "github": "hedning",
+            "email": "torhedinbronner@gmail.com"
+        },
+        {
+            "name": "Jan Tojnar",
+            "github": "jtojnar",
+            "email": "jtojnar@gmail.com"
+        },
+        {
+            "name": "Daniel \u0218erb\u0103nescu",
+            "github": "dasj19",
+            "email": "daniel@serbanescu.dk"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bobby Rong",
+        "Tor Hedin Br\u00f8nner",
+        "Jan Tojnar",
+        "Daniel \u0218erb\u0103nescu"
+    ],
+    "package_description": "System-wide profiler for Linux",
+    "package_longDescription": "<rendered-html><p>Sysprof is a sampling CPU profiler for Linux that uses the\nperf_event_open system call to profile the entire system, not just a\nsingle application. Sysprof handles shared libraries and applications do\nnot need to be recompiled. In fact they don\u2019t even have to be\nrestarted.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitlab.gnome.org/GNOME/sysprof"
+    ],
+    "package_position": "pkgs/development/tools/profiling/sysprof/default.nix:73"
+}

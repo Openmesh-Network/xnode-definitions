@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "nezha-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "nezha-agent",
+    "package_pversion": "0.18.0",
+    "package_platforms": [
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "wasm32-wasi",
+        "aarch64-linux",
+        "mips-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "i686-darwin",
+        "s390x-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "wasm64-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "agent"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Moraxyc Xu",
+            "github": "Moraxyc",
+            "email": "nix@qaq.li"
+        }
+    ],
+    "package_maintainers_set": [
+        "Moraxyc Xu"
+    ],
+    "package_description": "Agent of Nezha Monitoring",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/nezhahq/agent"
+    ],
+    "package_position": "pkgs/by-name/ne/nezha-agent/package.nix:40"
+}

@@ -1,0 +1,79 @@
+{
+    "type": "package",
+    "package_attr_name": "influxdb",
+    "package_attr_set": "No package set",
+    "package_pname": "influxdb",
+    "package_pversion": "1.10.7",
+    "package_platforms": [
+        "mips64el-linux",
+        "wasm32-wasi",
+        "x86_64-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "wasm64-wasi",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "armv7a-darwin",
+        "i686-linux",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "armv7a-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "microblazeel-linux",
+        "mips-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "influx",
+        "influx_tools",
+        "influx_inspect",
+        "influxd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        },
+        {
+            "name": "zimbatm",
+            "github": "zimbatm",
+            "email": "zimbatm@zimbatm.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jaka Hudoklin",
+        "zimbatm"
+    ],
+    "package_description": "Open-source distributed time series database",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://influxdata.com/"
+    ],
+    "package_position": "pkgs/servers/nosql/influxdb/default.nix:85"
+}

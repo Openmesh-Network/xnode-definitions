@@ -1,0 +1,102 @@
+{
+    "type": "package",
+    "package_attr_name": "gvfs",
+    "package_attr_set": "No package set",
+    "package_pname": "gvfs",
+    "package_pversion": "1.54.2",
+    "package_platforms": [
+        "mipsel-linux",
+        "microblaze-linux",
+        "mipsel-netbsd",
+        "m68k-linux",
+        "powerpc64-linux",
+        "x86_64-openbsd",
+        "i686-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "x86_64-redox",
+        "i686-darwin",
+        "armv7l-linux",
+        "i686-freebsd",
+        "s390x-linux",
+        "aarch64-darwin",
+        "i686-cygwin",
+        "mips64-linux",
+        "armv5tel-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "m68k-netbsd",
+        "riscv64-netbsd",
+        "armv6l-netbsd",
+        "i686-netbsd",
+        "x86_64-netbsd",
+        "x86_64-cygwin",
+        "armv7a-netbsd",
+        "mips-linux",
+        "aarch64-netbsd",
+        "riscv32-netbsd",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "armv7l-netbsd",
+        "x86_64-solaris",
+        "s390-linux",
+        "powerpc-netbsd",
+        "x86_64-freebsd",
+        "i686-openbsd",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "x86_64-darwin",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "debug"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.0-or-later.html",
+            "fullName": "GNU Library General Public License v2 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Library General Public License v2 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bobby Rong",
+            "github": "bobby285271",
+            "email": "rjl931189261@126.com"
+        },
+        {
+            "name": "Tor Hedin Br\u00f8nner",
+            "github": "hedning",
+            "email": "torhedinbronner@gmail.com"
+        },
+        {
+            "name": "Jan Tojnar",
+            "github": "jtojnar",
+            "email": "jtojnar@gmail.com"
+        },
+        {
+            "name": "Daniel \u0218erb\u0103nescu",
+            "github": "dasj19",
+            "email": "daniel@serbanescu.dk"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bobby Rong",
+        "Tor Hedin Br\u00f8nner",
+        "Jan Tojnar",
+        "Daniel \u0218erb\u0103nescu"
+    ],
+    "package_description": "Virtual Filesystem support library",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/development/libraries/gvfs/default.nix:152"
+}

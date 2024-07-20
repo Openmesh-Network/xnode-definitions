@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "pantheon.pantheon-agent-geoclue2",
+    "package_attr_set": "pantheon",
+    "package_pname": "pantheon-agent-geoclue2",
+    "package_pversion": "1.0.6",
+    "package_platforms": [
+        "armv6l-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "powerpc64-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "David Kleuker",
+            "github": "davidak",
+            "email": "post@davidak.de"
+        },
+        {
+            "name": "Bobby Rong",
+            "github": "bobby285271",
+            "email": "rjl931189261@126.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "David Kleuker",
+        "Bobby Rong"
+    ],
+    "package_description": "Pantheon Geoclue2 Agent",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/elementary/pantheon-agent-geoclue2"
+    ],
+    "package_position": "pkgs/desktops/pantheon/services/pantheon-agent-geoclue2/default.nix:55"
+}

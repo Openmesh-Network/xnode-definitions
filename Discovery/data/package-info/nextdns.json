@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "nextdns",
+    "package_attr_set": "No package set",
+    "package_pname": "nextdns",
+    "package_pversion": "1.43.5",
+    "package_platforms": [
+        "i686-linux",
+        "wasm32-wasi",
+        "m68k-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "i686-darwin",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "armv6l-linux",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "mips64-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "wasm64-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nextdns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Philip Nelson",
+            "github": "pnelson",
+            "email": "me@pnelson.ca"
+        }
+    ],
+    "package_maintainers_set": [
+        "Philip Nelson"
+    ],
+    "package_description": "NextDNS DNS/53 to DoH Proxy",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://nextdns.io"
+    ],
+    "package_position": "pkgs/applications/networking/nextdns/default.nix:19"
+}

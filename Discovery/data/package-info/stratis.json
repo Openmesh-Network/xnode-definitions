@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "stratis-cli",
+    "package_attr_set": "No package set",
+    "package_pname": "stratis-cli",
+    "package_pversion": "3.6.2",
+    "package_platforms": [
+        "i686-windows",
+        "mips-linux",
+        "i686-cygwin",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "x86_64-windows",
+        "i686-linux",
+        "i686-freebsd",
+        "m68k-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "x86_64-darwin",
+        "armv7a-darwin",
+        "x86_64-cygwin",
+        "microblazeel-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "x86_64-freebsd",
+        "riscv32-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "stratis"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nick Cao",
+            "github": "NickCao",
+            "email": "nickcao@nichi.co"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nick Cao"
+    ],
+    "package_description": "CLI for the Stratis project",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://stratis-storage.github.io"
+    ],
+    "package_position": "pkgs/tools/filesystems/stratis-cli/default.nix:47"
+}

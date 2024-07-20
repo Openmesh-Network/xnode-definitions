@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "hdapsd",
+    "package_attr_set": "No package set",
+    "package_pname": "hdapsd",
+    "package_pversion": "20141203",
+    "package_platforms": [
+        "armv7a-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "hdapsd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Emery Hemingway",
+            "github": "ehmry",
+            "email": "ehmry@posteo.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Emery Hemingway"
+    ],
+    "package_description": "Hard Drive Active Protection System Daemon",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://hdaps.sf.net/"
+    ],
+    "package_position": "pkgs/os-specific/linux/hdapsd/default.nix:15"
+}

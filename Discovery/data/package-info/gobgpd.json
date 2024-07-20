@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "gobgpd",
+    "package_attr_set": "No package set",
+    "package_pname": "gobgpd",
+    "package_pversion": "3.28.0",
+    "package_platforms": [
+        "mipsel-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "s390-linux",
+        "x86_64-darwin",
+        "riscv32-linux",
+        "s390x-linux",
+        "wasm32-wasi",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "wasm64-wasi",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gobgpd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Yuya Kusakabe",
+            "github": "higebu",
+            "email": "yuya.kusakabe@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Yuya Kusakabe"
+    ],
+    "package_description": "BGP implemented in Go",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://osrg.github.io/gobgp/"
+    ],
+    "package_position": "pkgs/servers/misc/gobgpd/default.nix:34"
+}

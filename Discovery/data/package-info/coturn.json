@@ -1,0 +1,130 @@
+{
+    "type": "package",
+    "package_attr_name": "coturn",
+    "package_attr_set": "No package set",
+    "package_pname": "coturn",
+    "package_pversion": "4.6.2",
+    "package_platforms": [
+        "x86_64-freebsd",
+        "powerpc64-linux",
+        "javascript-ghcjs",
+        "i686-genode",
+        "armv7l-netbsd",
+        "aarch64-genode",
+        "m68k-linux",
+        "riscv32-netbsd",
+        "arm-none",
+        "mips-none",
+        "i686-windows",
+        "i686-freebsd",
+        "armv5tel-linux",
+        "x86_64-netbsd",
+        "powerpcle-none",
+        "m68k-none",
+        "i686-darwin",
+        "armv6l-none",
+        "x86_64-darwin",
+        "riscv32-linux",
+        "msp430-none",
+        "i686-none",
+        "i686-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "i686-netbsd",
+        "powerpc-none",
+        "wasm32-wasi",
+        "riscv32-none",
+        "mips64-none",
+        "powerpc-netbsd",
+        "mmix-mmixware",
+        "s390x-none",
+        "microblaze-linux",
+        "x86_64-linux",
+        "aarch64_be-none",
+        "x86_64-solaris",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "m68k-netbsd",
+        "armv7a-darwin",
+        "i686-cygwin",
+        "armv6l-linux",
+        "mips64el-linux",
+        "aarch64-netbsd",
+        "mipsel-netbsd",
+        "aarch64-none",
+        "armv7a-netbsd",
+        "x86_64-windows",
+        "mips64-linux",
+        "microblazeel-none",
+        "x86_64-none",
+        "x86_64-openbsd",
+        "loongarch64-linux",
+        "aarch64-darwin",
+        "riscv64-netbsd",
+        "x86_64-genode",
+        "s390x-linux",
+        "s390-linux",
+        "avr-none",
+        "riscv64-none",
+        "vc4-none",
+        "i686-openbsd",
+        "armv7l-linux",
+        "microblaze-none",
+        "x86_64-cygwin",
+        "mipsel-linux",
+        "wasm64-wasi",
+        "riscv64-linux",
+        "armv6l-netbsd",
+        "or1k-none",
+        "rx-none",
+        "x86_64-redox",
+        "s390-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "turnserver",
+        "turnadmin",
+        "turnutils_natdiscovery",
+        "turnutils_uclient",
+        "turnutils_oauth",
+        "turnutils_peer",
+        "turnutils_stunclient"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Benjamin Saunders",
+            "github": "Ralith",
+            "email": "ben.e.saunders@gmail.com"
+        },
+        {
+            "name": "Joachim Ernst",
+            "github": "0x4A6F",
+            "email": "mail-maintainer@0x4A6F.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Benjamin Saunders",
+        "Joachim Ernst"
+    ],
+    "package_description": "TURN server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://coturn.net/"
+    ],
+    "package_position": "pkgs/servers/coturn/default.nix:52"
+}

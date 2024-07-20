@@ -1,0 +1,122 @@
+{
+    "type": "package",
+    "package_attr_name": "gocd-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "gocd-agent",
+    "package_pversion": "23.1.0",
+    "package_platforms": [
+        "msp430-none",
+        "riscv64-netbsd",
+        "aarch64_be-none",
+        "wasm32-wasi",
+        "powerpc64le-linux",
+        "armv7a-netbsd",
+        "powerpc-none",
+        "mips-linux",
+        "mips64-linux",
+        "s390-linux",
+        "microblazeel-none",
+        "x86_64-darwin",
+        "x86_64-linux",
+        "mips-none",
+        "vc4-none",
+        "mmix-mmixware",
+        "powerpc-netbsd",
+        "m68k-linux",
+        "x86_64-genode",
+        "loongarch64-linux",
+        "rx-none",
+        "javascript-ghcjs",
+        "armv7a-linux",
+        "aarch64-none",
+        "or1k-none",
+        "x86_64-netbsd",
+        "i686-cygwin",
+        "riscv32-netbsd",
+        "mips64-none",
+        "i686-genode",
+        "i686-darwin",
+        "i686-linux",
+        "armv7l-linux",
+        "i686-netbsd",
+        "x86_64-cygwin",
+        "microblazeel-linux",
+        "wasm64-wasi",
+        "arm-none",
+        "mipsel-linux",
+        "mipsel-netbsd",
+        "s390x-none",
+        "powerpc64-linux",
+        "x86_64-freebsd",
+        "x86_64-openbsd",
+        "riscv32-none",
+        "x86_64-redox",
+        "i686-none",
+        "s390x-linux",
+        "armv6l-none",
+        "powerpcle-none",
+        "aarch64-darwin",
+        "x86_64-none",
+        "s390-none",
+        "aarch64-genode",
+        "i686-openbsd",
+        "i686-freebsd",
+        "riscv64-none",
+        "x86_64-windows",
+        "armv7a-darwin",
+        "x86_64-solaris",
+        "microblaze-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "avr-none",
+        "armv5tel-linux",
+        "armv6l-netbsd",
+        "aarch64-netbsd",
+        "m68k-netbsd",
+        "microblaze-none",
+        "m68k-none",
+        "mips64el-linux",
+        "i686-windows",
+        "riscv32-linux",
+        "armv6l-linux",
+        "armv7l-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Graham Christensen",
+            "github": "grahamc",
+            "email": "graham@grahamc.com"
+        },
+        {
+            "name": "Shawn Warren",
+            "github": "swarren83",
+            "email": "shawn.w.warren@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Graham Christensen",
+        "Shawn Warren"
+    ],
+    "package_description": "Continuous delivery server specializing in advanced workflow modeling and visualization",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.go.cd"
+    ],
+    "package_position": "pkgs/development/tools/continuous-integration/gocd-agent/default.nix:13"
+}

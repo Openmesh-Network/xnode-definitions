@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "logmein-hamachi",
+    "package_attr_set": "No package set",
+    "package_pname": "logmein-hamachi",
+    "package_pversion": "2.1.0.203",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree redistributable"
+        }
+    ],
+    "package_license_set": [
+        "Unfree redistributable"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Amiantov",
+            "github": "abbradar",
+            "email": "ab@fmap.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Amiantov"
+    ],
+    "package_description": "Hosted VPN service that lets you securely extend LAN-like networks to distributed teams",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://secure.logmein.com/products/hamachi/"
+    ],
+    "package_position": "pkgs/tools/networking/logmein-hamachi/default.nix:37"
+}

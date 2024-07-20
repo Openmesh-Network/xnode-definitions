@@ -1,0 +1,69 @@
+{
+    "type": "package",
+    "package_attr_name": "jitterentropy-rngd",
+    "package_attr_set": "No package set",
+    "package_pname": "jitterentropy-rngd",
+    "package_pversion": "1.2.8",
+    "package_platforms": [
+        "loongarch64-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "jitterentropy-rngd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only",
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Markus Theil",
+            "github": "thillux",
+            "email": "theil.markus@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Markus Theil"
+    ],
+    "package_description": "A random number generator, which injects entropy to the kernel",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/smuellerDD/jitterentropy-rngd"
+    ],
+    "package_position": "pkgs/by-name/ji/jitterentropy-rngd/package.nix:26"
+}

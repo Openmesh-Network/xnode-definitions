@@ -1,0 +1,79 @@
+{
+    "type": "package",
+    "package_attr_name": "tinc",
+    "package_attr_set": "No package set",
+    "package_pname": "tinc",
+    "package_pversion": "1.0.36",
+    "package_platforms": [
+        "i686-netbsd",
+        "armv7a-darwin",
+        "microblaze-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "mipsel-netbsd",
+        "aarch64-netbsd",
+        "i686-openbsd",
+        "mips-linux",
+        "x86_64-redox",
+        "m68k-linux",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "powerpc64le-linux",
+        "riscv32-netbsd",
+        "i686-darwin",
+        "i686-freebsd",
+        "mips64el-linux",
+        "armv7l-netbsd",
+        "i686-cygwin",
+        "x86_64-darwin",
+        "powerpc-netbsd",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "armv7a-netbsd",
+        "x86_64-cygwin",
+        "armv6l-netbsd",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "x86_64-freebsd",
+        "armv7a-linux",
+        "riscv32-linux",
+        "m68k-netbsd",
+        "riscv64-netbsd",
+        "x86_64-netbsd",
+        "x86_64-openbsd",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "x86_64-solaris",
+        "s390-linux",
+        "aarch64-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tincd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "VPN daemon with full mesh routing",
+    "package_longDescription": "<rendered-html><p>tinc is a Virtual Private Network (VPN) daemon that uses tunnelling\nand encryption to create a secure private network between hosts on the\nInternet. It features full mesh routing, as well as encryption,\nauthentication, compression and ethernet bridging.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.tinc-vpn.org/"
+    ],
+    "package_position": "pkgs/tools/networking/tinc/default.nix:20"
+}

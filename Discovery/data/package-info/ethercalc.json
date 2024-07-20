@@ -1,0 +1,110 @@
+{
+    "type": "package",
+    "package_attr_name": "ethercalc",
+    "package_attr_set": "No package set",
+    "package_pname": "ethercalc",
+    "package_pversion": "0.20201228.1",
+    "package_platforms": [
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "powerpc-netbsd",
+        "riscv64-netbsd",
+        "i686-openbsd",
+        "x86_64-netbsd",
+        "armv7a-linux",
+        "aarch64-netbsd",
+        "i686-cygwin",
+        "x86_64-freebsd",
+        "s390-linux",
+        "mips64-linux",
+        "armv7a-darwin",
+        "x86_64-darwin",
+        "i686-darwin",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "armv6l-linux",
+        "m68k-netbsd",
+        "mipsel-linux",
+        "riscv32-linux",
+        "x86_64-openbsd",
+        "mips-linux",
+        "armv7a-netbsd",
+        "x86_64-redox",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "i686-linux",
+        "riscv32-netbsd",
+        "armv5tel-linux",
+        "x86_64-cygwin",
+        "armv6l-netbsd",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "x86_64-solaris",
+        "aarch64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "i686-freebsd",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7l-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/CPAL-1.0.html",
+            "fullName": "Common Public Attribution License 1.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/Artistic-2.0.html",
+            "fullName": "Artistic License 2.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        },
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/CC0-1.0.html",
+            "fullName": "Creative Commons Zero v1.0 Universal"
+        },
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Common Public Attribution License 1.0",
+        "Artistic License 2.0",
+        "MIT License",
+        "Apache License 2.0",
+        "Creative Commons Zero v1.0 Universal",
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ingo Blechschmidt",
+            "github": "iblech",
+            "email": "iblech@speicherleck.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ingo Blechschmidt"
+    ],
+    "package_description": "Online collaborative spreadsheet",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/audreyt/ethercalc"
+    ],
+    "package_position": "pkgs/servers/web-apps/ethercalc/default.nix:19"
+}

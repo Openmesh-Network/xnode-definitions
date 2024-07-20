@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "hddfancontrol",
+    "package_attr_set": "No package set",
+    "package_pname": "python3.12-hddfancontrol",
+    "package_pversion": "1.5.1",
+    "package_platforms": [
+        "s390-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "x86_64-windows",
+        "microblaze-linux",
+        "mips64-linux",
+        "i686-cygwin",
+        "i686-windows",
+        "i686-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "x86_64-cygwin",
+        "i686-darwin",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "x86_64-freebsd",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "i686-freebsd",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "hddfancontrol"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Benjamin Staffin",
+            "github": "benley",
+            "email": "benley@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Benjamin Staffin"
+    ],
+    "package_description": "Dynamically control fan speed according to hard drive temperature on Linux",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/desbma/hddfancontrol"
+    ],
+    "package_position": "pkgs/tools/system/hddfancontrol/default.nix:29"
+}

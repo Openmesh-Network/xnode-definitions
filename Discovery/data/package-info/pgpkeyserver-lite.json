@@ -1,0 +1,40 @@
+{
+    "type": "package",
+    "package_attr_name": "pgpkeyserver-lite",
+    "package_attr_set": "No package set",
+    "package_pname": "pgpkeyserver-lite",
+    "package_pversion": "2017-07-18",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Christian Albrecht",
+            "github": "calbrecht",
+            "email": "christian.albrecht@mayflower.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Christian Albrecht"
+    ],
+    "package_description": "Lightweight static front-end for a sks keyserver",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mattrude/pgpkeyserver-lite"
+    ],
+    "package_position": "pkgs/servers/web-apps/pgpkeyserver-lite/default.nix:21"
+}

@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "evdevremapkeys",
+    "package_attr_set": "No package set",
+    "package_pname": "python3.12-evdevremapkeys-unstable",
+    "package_pversion": "2021-05-04",
+    "package_platforms": [
+        "s390x-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "powerpc64-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "evdevremapkeys"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Serge Bazanski",
+            "github": "q3k",
+            "email": "q3k@q3k.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Serge Bazanski"
+    ],
+    "package_description": "Daemon to remap events on linux input devices",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/philipl/evdevremapkeys"
+    ],
+    "package_position": "pkgs/tools/inputmethods/evdevremapkeys/default.nix:29"
+}

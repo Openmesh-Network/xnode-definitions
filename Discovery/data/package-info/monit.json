@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "monit",
+    "package_attr_set": "No package set",
+    "package_pname": "monit",
+    "package_pversion": "5.34.0",
+    "package_platforms": [
+        "riscv32-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "i686-darwin",
+        "aarch64-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "aarch64-darwin",
+        "x86_64-darwin",
+        "i686-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "monit"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michael Raskin",
+            "github": "7c6f434c",
+            "email": "7c6f434c@mail.ru"
+        },
+        {
+            "name": "Wout Mertens",
+            "github": "wmertens",
+            "email": "Wout.Mertens@gmail.com"
+        },
+        {
+            "name": "Ryan Mulligan",
+            "github": "ryantm",
+            "email": "ryan@ryantm.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michael Raskin",
+        "Wout Mertens",
+        "Ryan Mulligan"
+    ],
+    "package_description": "Monitoring system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://mmonit.com/monit/"
+    ],
+    "package_position": "pkgs/tools/system/monit/default.nix:49"
+}

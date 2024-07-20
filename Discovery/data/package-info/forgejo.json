@@ -1,0 +1,90 @@
+{
+    "type": "package",
+    "package_attr_name": "forgejo",
+    "package_attr_set": "No package set",
+    "package_pname": "forgejo",
+    "package_pversion": "7.0.5",
+    "package_platforms": [
+        "armv7a-darwin",
+        "m68k-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "i686-linux",
+        "s390x-linux",
+        "aarch64-darwin",
+        "mipsel-linux",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "armv7a-linux",
+        "microblaze-linux",
+        "i686-darwin",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "data"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gitea",
+        "environment-to-ini"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Emily Lange",
+            "github": "emilylange",
+            "email": "nix@emilylange.de"
+        },
+        {
+            "name": "Colin Arnott",
+            "github": "urandom2",
+            "email": "colin@urandom.co.uk"
+        },
+        {
+            "name": "Herwig Hochleitner",
+            "github": "bendlas",
+            "email": "herwig@bendlas.net"
+        },
+        {
+            "name": "Adam C. Stephens",
+            "github": "adamcstephens",
+            "email": "happy.plan4249@valkor.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Emily Lange",
+        "Colin Arnott",
+        "Herwig Hochleitner",
+        "Adam C. Stephens"
+    ],
+    "package_description": "Self-hosted lightweight software forge",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://forgejo.org"
+    ],
+    "package_position": "pkgs/by-name/fo/forgejo/package.nix:150"
+}

@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "tox-node",
+    "package_attr_set": "No package set",
+    "package_pname": "tox-node",
+    "package_pversion": "0.2.0",
+    "package_platforms": [
+        "armv5tel-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "mips-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tox-node"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "\u0421\u0443\u0445\u0430\u0440\u0438\u043a",
+            "github": "suhr",
+            "email": "suhr@i2pmail.org"
+        },
+        {
+            "name": "Evgeny Kurnevsky",
+            "github": "kurnevsky",
+            "email": "kurnevsky@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "\u0421\u0443\u0445\u0430\u0440\u0438\u043a",
+        "Evgeny Kurnevsky"
+    ],
+    "package_description": "Server application to run tox node written in pure Rust",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/tox-rs/tox"
+    ],
+    "package_position": "pkgs/tools/networking/tox-node/default.nix:21"
+}

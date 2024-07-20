@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "uptimed",
+    "package_attr_set": "No package set",
+    "package_pname": "uptimed",
+    "package_pversion": "0.4.6",
+    "package_platforms": [
+        "mips-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "armv7l-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "uprecords",
+        "uptimed"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-or-later.html",
+            "fullName": "GNU Lesser General Public License v2.1 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only",
+        "GNU Lesser General Public License v2.1 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Uptime record daemon",
+    "package_longDescription": "<rendered-html><p>An uptime record daemon keeping track of the highest uptimes a\ncomputer system ever had. It uses the system boot time to keep sessions\napart from each other. Uptimed comes with a console front-end to parse\nthe records, which can also easily be used to show your records on a web\npage.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/rpodgorny/uptimed/"
+    ],
+    "package_position": "pkgs/tools/system/uptimed/default.nix:23"
+}

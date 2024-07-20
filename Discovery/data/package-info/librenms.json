@@ -1,0 +1,134 @@
+{
+    "type": "package",
+    "package_attr_name": "librenms",
+    "package_attr_set": "No package set",
+    "package_pname": "librenms",
+    "package_pversion": "23.9.1",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "mips-linux",
+        "mips64-none",
+        "wasm64-wasi",
+        "riscv32-none",
+        "x86_64-solaris",
+        "microblaze-linux",
+        "i686-netbsd",
+        "armv7l-linux",
+        "riscv64-netbsd",
+        "armv6l-none",
+        "powerpc-none",
+        "rx-none",
+        "aarch64-none",
+        "i686-none",
+        "mips64-linux",
+        "armv7a-linux",
+        "x86_64-freebsd",
+        "aarch64-darwin",
+        "mips-none",
+        "x86_64-windows",
+        "i686-freebsd",
+        "x86_64-linux",
+        "aarch64-linux",
+        "msp430-none",
+        "wasm32-wasi",
+        "s390-linux",
+        "m68k-none",
+        "arm-none",
+        "armv7a-netbsd",
+        "riscv32-linux",
+        "x86_64-openbsd",
+        "i686-linux",
+        "avr-none",
+        "x86_64-netbsd",
+        "x86_64-redox",
+        "armv6l-linux",
+        "i686-cygwin",
+        "aarch64-genode",
+        "riscv64-linux",
+        "or1k-none",
+        "microblaze-none",
+        "armv7a-darwin",
+        "powerpcle-none",
+        "x86_64-none",
+        "mips64el-linux",
+        "x86_64-genode",
+        "m68k-linux",
+        "aarch64-netbsd",
+        "powerpc64-linux",
+        "vc4-none",
+        "i686-genode",
+        "s390-none",
+        "mmix-mmixware",
+        "mipsel-netbsd",
+        "armv5tel-linux",
+        "x86_64-cygwin",
+        "s390x-linux",
+        "microblazeel-none",
+        "armv6l-netbsd",
+        "mipsel-linux",
+        "armv7l-netbsd",
+        "i686-darwin",
+        "s390x-none",
+        "i686-windows",
+        "powerpc-netbsd",
+        "loongarch64-linux",
+        "riscv32-netbsd",
+        "javascript-ghcjs",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "m68k-netbsd",
+        "riscv64-none",
+        "i686-openbsd",
+        "aarch64_be-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ember Keske",
+            "github": "n0emis",
+            "email": "nixpkgs@n0emis.network"
+        },
+        {
+            "name": "Fiona Weber",
+            "github": "vidister",
+            "email": "v@vidister.de"
+        },
+        {
+            "name": "Johann Wagner",
+            "github": "johannwagner",
+            "email": "nix@wagner.digital"
+        },
+        {
+            "name": "Yureka",
+            "github": "yu-re-ka",
+            "email": "yuka@yuka.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ember Keske",
+        "Fiona Weber",
+        "Johann Wagner",
+        "Yureka"
+    ],
+    "package_description": "Auto-discovering PHP/MySQL/SNMP based network monitoring",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.librenms.org/"
+    ],
+    "package_position": "pkgs/servers/monitoring/librenms/default.nix:109"
+}

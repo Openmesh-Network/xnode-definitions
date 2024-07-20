@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "icecream",
+    "package_attr_set": "No package set",
+    "package_pname": "icecream",
+    "package_pversion": "1.4",
+    "package_platforms": [
+        "mips64el-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "m68k-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "i686-darwin",
+        "i686-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "iceccd",
+        "icerun",
+        "icecc-create-env",
+        "icecc-scheduler",
+        "icecc",
+        "icecc-test-env"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Rouven Czerwinski",
+            "github": "Emantor",
+            "email": "rouven+nixos@czerwinskis.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Rouven Czerwinski"
+    ],
+    "package_description": "Distributed compiler with a central scheduler to share build load",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/icecc/icecream"
+    ],
+    "package_position": "pkgs/servers/icecream/default.nix:19"
+}

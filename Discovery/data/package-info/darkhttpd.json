@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "darkhttpd",
+    "package_attr_set": "No package set",
+    "package_pname": "darkhttpd",
+    "package_pversion": "1.16",
+    "package_platforms": [
+        "x86_64-darwin",
+        "aarch64-genode",
+        "microblazeel-none",
+        "armv7l-linux",
+        "s390x-none",
+        "x86_64-freebsd",
+        "x86_64-cygwin",
+        "microblaze-none",
+        "s390x-linux",
+        "i686-genode",
+        "or1k-none",
+        "armv7a-netbsd",
+        "armv6l-linux",
+        "i686-freebsd",
+        "mips-linux",
+        "powerpcle-none",
+        "wasm32-wasi",
+        "microblazeel-linux",
+        "m68k-none",
+        "armv7l-netbsd",
+        "microblaze-linux",
+        "i686-cygwin",
+        "riscv32-netbsd",
+        "armv6l-none",
+        "x86_64-windows",
+        "aarch64-none",
+        "armv6l-netbsd",
+        "i686-linux",
+        "avr-none",
+        "mips64el-linux",
+        "aarch64_be-none",
+        "arm-none",
+        "x86_64-none",
+        "aarch64-linux",
+        "riscv32-none",
+        "riscv64-linux",
+        "mips-none",
+        "riscv64-netbsd",
+        "mips64-none",
+        "x86_64-solaris",
+        "vc4-none",
+        "powerpc64-linux",
+        "msp430-none",
+        "riscv32-linux",
+        "x86_64-redox",
+        "powerpc-none",
+        "i686-darwin",
+        "wasm64-wasi",
+        "i686-netbsd",
+        "aarch64-darwin",
+        "x86_64-genode",
+        "mipsel-netbsd",
+        "i686-none",
+        "armv5tel-linux",
+        "x86_64-netbsd",
+        "powerpc-netbsd",
+        "s390-linux",
+        "m68k-linux",
+        "aarch64-netbsd",
+        "mips64-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "m68k-netbsd",
+        "armv7a-linux",
+        "riscv64-none",
+        "armv7a-darwin",
+        "i686-openbsd",
+        "i686-windows",
+        "javascript-ghcjs",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "s390-none",
+        "mmix-mmixware",
+        "rx-none",
+        "x86_64-openbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "darkhttpd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bob van der Linden",
+            "github": "bobvanderlinden",
+            "email": "bobvanderlinden@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bob van der Linden"
+    ],
+    "package_description": "Small and secure static webserver",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://unix4lyfe.org/darkhttpd/"
+    ],
+    "package_position": "pkgs/servers/http/darkhttpd/default.nix:28"
+}

@@ -1,0 +1,105 @@
+{
+    "type": "package",
+    "package_attr_name": "gollum",
+    "package_attr_set": "No package set",
+    "package_pname": "gollum",
+    "package_pversion": "5.3.3",
+    "package_platforms": [
+        "mipsel-linux",
+        "armv5tel-linux",
+        "i686-openbsd",
+        "armv7l-netbsd",
+        "microblazeel-linux",
+        "x86_64-openbsd",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "loongarch64-linux",
+        "mips64-linux",
+        "riscv64-netbsd",
+        "x86_64-darwin",
+        "microblaze-linux",
+        "s390x-linux",
+        "riscv32-netbsd",
+        "mips64el-linux",
+        "armv7l-linux",
+        "m68k-netbsd",
+        "powerpc-netbsd",
+        "i686-darwin",
+        "armv7a-darwin",
+        "x86_64-redox",
+        "i686-freebsd",
+        "m68k-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "aarch64-darwin",
+        "powerpc64le-linux",
+        "x86_64-cygwin",
+        "mips-linux",
+        "riscv64-linux",
+        "armv6l-netbsd",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "x86_64-netbsd",
+        "armv7a-linux",
+        "aarch64-netbsd",
+        "x86_64-freebsd",
+        "x86_64-solaris",
+        "aarch64-linux",
+        "armv7a-netbsd",
+        "s390-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gollum"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Kerstin Humm",
+            "github": "erictapen",
+            "email": "kerstin@erictapen.name"
+        },
+        {
+            "name": "Jakob Gillich",
+            "github": "jgillich",
+            "email": "jakob@gillich.me"
+        },
+        {
+            "name": "Nick Novitski",
+            "github": "nicknovitski",
+            "email": "nixpkgs@nicknovitski.com"
+        },
+        {
+            "name": "Benno Bielmeier",
+            "github": "bbenno",
+            "email": "nix@bbenno.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Kerstin Humm",
+        "Jakob Gillich",
+        "Nick Novitski",
+        "Benno Bielmeier"
+    ],
+    "package_description": "Simple, Git-powered wiki with a sweet API and local frontend",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/gollum/gollum"
+    ],
+    "package_position": "pkgs/applications/misc/gollum/default.nix:16"
+}

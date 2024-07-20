@@ -1,0 +1,96 @@
+{
+    "type": "package",
+    "package_attr_name": "kbfs",
+    "package_attr_set": "No package set",
+    "package_pname": "kbfs",
+    "package_pversion": "6.3.1",
+    "package_platforms": [
+        "powerpc64-linux",
+        "x86_64-linux",
+        "i686-linux",
+        "s390-linux",
+        "wasm32-wasi",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "m68k-linux",
+        "wasm64-wasi",
+        "i686-darwin",
+        "riscv32-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "redirector",
+        "git-remote-keybase",
+        "kbfsfuse"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Aldwin Vlasblom",
+            "github": "Avaq",
+            "email": "nixpkgs@account.avaq.it"
+        },
+        {
+            "name": "Roman Volosatovs",
+            "github": "rvolosatovs",
+            "email": "rvolosatovs@riseup.net"
+        },
+        {
+            "name": "Benno F\u00fcnfst\u00fcck",
+            "github": "bennofs",
+            "email": "benno.fuenfstueck@gmail.com"
+        },
+        {
+            "name": "Nicolas Pouillard",
+            "github": "np",
+            "email": "np.nix@nicolaspouillard.fr"
+        },
+        {
+            "name": "Sam Hofius",
+            "github": "kf5grd",
+            "email": "sam@samhofi.us"
+        }
+    ],
+    "package_maintainers_set": [
+        "Aldwin Vlasblom",
+        "Roman Volosatovs",
+        "Benno F\u00fcnfst\u00fcck",
+        "Nicolas Pouillard",
+        "Sam Hofius"
+    ],
+    "package_description": "Keybase filesystem",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://keybase.io/docs/kbfs"
+    ],
+    "package_position": "pkgs/tools/security/keybase/kbfs.nix:16"
+}

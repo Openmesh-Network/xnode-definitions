@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "goss",
+    "package_attr_set": "No package set",
+    "package_pname": "goss",
+    "package_pversion": "0.4.7",
+    "package_platforms": [
+        "microblaze-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "x86_64-darwin",
+        "mipsel-linux",
+        "m68k-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mips-linux",
+        "armv7a-darwin",
+        "aarch64-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "aarch64-darwin",
+        "s390x-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "goss"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Joris Masson",
+            "github": "Hyzual",
+            "email": "hyzual@gmail.com"
+        },
+        {
+            "name": "Jack",
+            "github": "06kellyjac",
+            "email": "hello+nixpkgs@j-k.io"
+        },
+        {
+            "name": "Anthony Roussel",
+            "github": "anthonyroussel",
+            "email": "anthony@roussel.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Joris Masson",
+        "Jack",
+        "Anthony Roussel"
+    ],
+    "package_description": "Quick and easy server validation",
+    "package_longDescription": "<rendered-html><p>Goss is a YAML based serverspec alternative tool for validating a\nserver\u2019s configuration. It eases the process of writing tests by\nallowing the user to generate tests from the current system state. Once\nthe test suite is written they can be executed, waited-on, or served as\na health endpoint.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/goss-org/goss/"
+    ],
+    "package_position": "pkgs/by-name/go/goss/package.nix:61"
+}

@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "uhub",
+    "package_attr_set": "No package set",
+    "package_pname": "uhub-unstable",
+    "package_pversion": "2019-12-13",
+    "package_platforms": [
+        "i686-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "x86_64-openbsd",
+        "riscv32-netbsd",
+        "aarch64-netbsd",
+        "i686-openbsd",
+        "armv7a-linux",
+        "riscv64-linux",
+        "armv7a-darwin",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "x86_64-freebsd",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "armv7l-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "i686-freebsd",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7l-netbsd",
+        "x86_64-redox",
+        "microblaze-linux",
+        "mips-linux",
+        "i686-darwin",
+        "s390x-linux",
+        "mipsel-netbsd",
+        "loongarch64-linux",
+        "i686-cygwin",
+        "x86_64-cygwin",
+        "powerpc64-linux",
+        "riscv64-netbsd",
+        "mipsel-linux",
+        "x86_64-solaris",
+        "x86_64-netbsd",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "armv6l-netbsd",
+        "armv7a-netbsd",
+        "s390-linux",
+        "powerpc-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "uhub-passwd",
+        "uhub"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Emery Hemingway",
+            "github": "ehmry",
+            "email": "ehmry@posteo.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Emery Hemingway"
+    ],
+    "package_description": "High performance peer-to-peer hub for the ADC network",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.uhub.org/"
+    ],
+    "package_position": "pkgs/servers/uhub/default.nix:32"
+}

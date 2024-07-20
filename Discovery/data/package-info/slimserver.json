@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "slimserver",
+    "package_attr_set": "No package set",
+    "package_pname": "perl5.38.2-slimserver",
+    "package_pversion": "8.5.2",
+    "package_platforms": [
+        "i686-openbsd",
+        "armv7a-netbsd",
+        "mips64-linux",
+        "aarch64-darwin",
+        "aarch64-netbsd",
+        "mips-linux",
+        "x86_64-darwin",
+        "s390x-linux",
+        "i686-netbsd",
+        "aarch64-linux",
+        "mipsel-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "i686-freebsd",
+        "x86_64-linux",
+        "armv6l-netbsd",
+        "mipsel-netbsd",
+        "powerpc-netbsd",
+        "powerpc64le-linux",
+        "armv7l-linux",
+        "x86_64-cygwin",
+        "i686-darwin",
+        "armv7a-darwin",
+        "x86_64-solaris",
+        "i686-cygwin",
+        "armv6l-linux",
+        "riscv64-linux",
+        "x86_64-freebsd",
+        "m68k-netbsd",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "s390-linux",
+        "armv7l-netbsd",
+        "x86_64-openbsd",
+        "x86_64-redox",
+        "powerpc64-linux",
+        "riscv64-netbsd",
+        "armv7a-linux",
+        "riscv32-netbsd",
+        "x86_64-netbsd",
+        "m68k-linux",
+        "microblaze-linux",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "slimserver"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Adam C. Stephens",
+            "github": "adamcstephens",
+            "email": "happy.plan4249@valkor.net"
+        },
+        {
+            "name": "Jean-Charles Quillet",
+            "github": "jecaro",
+            "email": "jeancharles.quillet@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Adam C. Stephens",
+        "Jean-Charles Quillet"
+    ],
+    "package_description": "Lyrion Music Server (formerly Logitech Media Server) is open-source server software which controls a wide range of Squeezebox audio players",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://lyrion.org/"
+    ],
+    "package_position": "pkgs/by-name/sl/slimserver/package.nix:171"
+}

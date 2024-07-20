@@ -1,0 +1,100 @@
+{
+    "type": "package",
+    "package_attr_name": "toxvpn",
+    "package_attr_set": "No package set",
+    "package_pname": "toxvpn-unstable",
+    "package_pversion": "2019-09-09",
+    "package_platforms": [
+        "mipsel-linux",
+        "armv5tel-linux",
+        "mipsel-netbsd",
+        "m68k-linux",
+        "mips64el-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "i686-cygwin",
+        "riscv64-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "x86_64-openbsd",
+        "x86_64-cygwin",
+        "x86_64-linux",
+        "armv6l-netbsd",
+        "x86_64-solaris",
+        "armv7a-netbsd",
+        "armv7l-netbsd",
+        "powerpc64-linux",
+        "x86_64-netbsd",
+        "aarch64-netbsd",
+        "x86_64-redox",
+        "armv7a-darwin",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "s390x-linux",
+        "powerpc-netbsd",
+        "aarch64-darwin",
+        "x86_64-freebsd",
+        "i686-openbsd",
+        "riscv32-netbsd",
+        "riscv64-netbsd",
+        "i686-freebsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "toxvpn-remote",
+        "toxvpn"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michael Bishop",
+            "github": "cleverca22",
+            "email": "cleverca22@gmail.com"
+        },
+        {
+            "name": "obadz",
+            "github": "obadz",
+            "email": "obadz-nixos@obadz.com"
+        },
+        {
+            "name": "Toon Nolten",
+            "github": "toonn",
+            "email": "nixpkgs@toonn.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michael Bishop",
+        "obadz",
+        "Toon Nolten"
+    ],
+    "package_description": "Powerful tool that allows one to make tunneled point to point connections over Tox",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/cleverca22/toxvpn"
+    ],
+    "package_position": "pkgs/tools/networking/toxvpn/default.nix:34"
+}

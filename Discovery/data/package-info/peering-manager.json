@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "peering-manager",
+    "package_attr_set": "No package set",
+    "package_pname": "peering-manager",
+    "package_pversion": "1.8.3",
+    "package_platforms": [
+        "armv6l-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "peering-manager"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ember Keske",
+            "github": "n0emis",
+            "email": "nixpkgs@n0emis.network"
+        },
+        {
+            "name": "Fiona Weber",
+            "github": "vidister",
+            "email": "v@vidister.de"
+        },
+        {
+            "name": "Johann Wagner",
+            "github": "johannwagner",
+            "email": "nix@wagner.digital"
+        },
+        {
+            "name": "Yureka",
+            "github": "yu-re-ka",
+            "email": "yuka@yuka.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ember Keske",
+        "Fiona Weber",
+        "Johann Wagner",
+        "Yureka"
+    ],
+    "package_description": "BGP sessions management tool",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://peering-manager.net/"
+    ],
+    "package_position": "pkgs/servers/web-apps/peering-manager/default.nix:78"
+}

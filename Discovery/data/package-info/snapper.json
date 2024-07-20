@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "snapper",
+    "package_attr_set": "No package set",
+    "package_pname": "snapper",
+    "package_pversion": "0.11.1",
+    "package_platforms": [
+        "s390x-linux",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "s390-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "riscv32-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "snapperd",
+        "snapper",
+        "mksubvolume"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Markus Kowalewski",
+            "github": "markuskowa",
+            "email": "markus.kowalewski@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Markus Kowalewski"
+    ],
+    "package_description": "Tool for Linux filesystem snapshot management",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://snapper.io"
+    ],
+    "package_position": "pkgs/tools/misc/snapper/default.nix:66"
+}

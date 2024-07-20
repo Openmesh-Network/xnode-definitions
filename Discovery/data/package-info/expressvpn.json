@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "expressvpn",
+    "package_attr_set": "No package set",
+    "package_pname": "expressvpn",
+    "package_pversion": "3.52.0.2",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Soham Sen",
+            "github": "Yureien",
+            "email": "contact@sohamsen.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Soham Sen"
+    ],
+    "package_description": "CLI client for ExpressVPN",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.expressvpn.com"
+    ],
+    "package_position": "pkgs/applications/networking/expressvpn/default.nix:92"
+}
