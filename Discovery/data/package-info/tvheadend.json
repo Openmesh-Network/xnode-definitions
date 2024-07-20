@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "tvheadend",
+    "package_attr_set": "No package set",
+    "package_pname": "tvheadend",
+    "package_pversion": "4.2.8",
+    "package_platforms": [
+        "x86_64-openbsd",
+        "armv7l-linux",
+        "mips64-linux",
+        "armv6l-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "armv7a-netbsd",
+        "i686-openbsd",
+        "i686-linux",
+        "armv7a-darwin",
+        "i686-cygwin",
+        "i686-darwin",
+        "x86_64-linux",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "x86_64-cygwin",
+        "loongarch64-linux",
+        "riscv32-netbsd",
+        "armv7a-linux",
+        "s390-linux",
+        "aarch64-netbsd",
+        "i686-freebsd",
+        "mips-linux",
+        "x86_64-freebsd",
+        "m68k-linux",
+        "armv5tel-linux",
+        "powerpc64le-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "armv7l-netbsd",
+        "riscv32-linux",
+        "riscv64-netbsd",
+        "x86_64-darwin",
+        "x86_64-redox",
+        "x86_64-solaris",
+        "x86_64-netbsd",
+        "aarch64-darwin",
+        "mipsel-netbsd",
+        "powerpc-netbsd",
+        "aarch64-linux",
+        "armv6l-netbsd",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tvheadend"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Simon Vandel Sillesen",
+            "github": "simonvandel",
+            "email": "simon.vandel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Simon Vandel Sillesen"
+    ],
+    "package_description": "TV streaming server and digital video recorder",
+    "package_longDescription": "<rendered-html><p>Tvheadend is a TV streaming server for Linux supporting DVB-S,\nDVB-S2, DVB-C, DVB-T, ATSC, IPTV,SAT&gt;IP and other formats through the\nunix pipe as input sources.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tvheadend.org"
+    ],
+    "package_position": "pkgs/servers/tvheadend/default.nix:122"
+}

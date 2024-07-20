@@ -1,0 +1,113 @@
+{
+    "type": "package",
+    "package_attr_name": "cloudflared",
+    "package_attr_set": "No package set",
+    "package_pname": "cloudflared",
+    "package_pversion": "2024.7.1",
+    "package_platforms": [
+        "m68k-linux",
+        "s390x-linux",
+        "i686-freebsd",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "x86_64-openbsd",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "x86_64-darwin",
+        "mips-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "powerpc64le-linux",
+        "aarch64-netbsd",
+        "armv7a-darwin",
+        "i686-openbsd",
+        "x86_64-freebsd",
+        "riscv32-linux",
+        "x86_64-windows",
+        "aarch64-linux",
+        "riscv64-linux",
+        "i686-darwin",
+        "armv7a-netbsd",
+        "i686-windows",
+        "m68k-netbsd",
+        "i686-cygwin",
+        "armv6l-netbsd",
+        "i686-netbsd",
+        "mips64el-linux",
+        "x86_64-cygwin",
+        "x86_64-solaris",
+        "x86_64-linux",
+        "mipsel-netbsd",
+        "riscv64-netbsd",
+        "x86_64-netbsd",
+        "x86_64-redox",
+        "armv7l-netbsd",
+        "powerpc-netbsd",
+        "riscv32-netbsd",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cloudflared"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bruno Bigras",
+            "github": "bbigras",
+            "email": "bigras.bruno@gmail.com"
+        },
+        {
+            "name": "Eric Norris",
+            "github": "ericnorris",
+            "email": "erictnorris@gmail.com"
+        },
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        },
+        {
+            "name": "Piper McCorkle",
+            "github": "piperswe",
+            "email": "contact@piperswe.me"
+        },
+        {
+            "name": "Quentin JOLY",
+            "github": "qjoly",
+            "email": "github@une-pause-cafe.fr"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bruno Bigras",
+        "Eric Norris",
+        "Austin Seipp",
+        "Piper McCorkle",
+        "Quentin JOLY"
+    ],
+    "package_description": "Cloudflare Tunnel daemon, Cloudflare Access toolkit, and DNS-over-HTTPS client",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.cloudflare.com/products/tunnel"
+    ],
+    "package_position": "pkgs/applications/networking/cloudflared/default.nix:76"
+}

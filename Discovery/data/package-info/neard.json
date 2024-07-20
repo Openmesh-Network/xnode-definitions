@@ -1,0 +1,78 @@
+{
+    "type": "package",
+    "package_attr_name": "neard",
+    "package_attr_set": "No package set",
+    "package_pname": "neard",
+    "package_pversion": "0.18",
+    "package_platforms": [
+        "x86_64-netbsd",
+        "microblaze-linux",
+        "riscv64-linux",
+        "x86_64-redox",
+        "i686-darwin",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "i686-freebsd",
+        "x86_64-darwin",
+        "riscv32-netbsd",
+        "riscv32-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "x86_64-cygwin",
+        "mips-linux",
+        "mipsel-linux",
+        "loongarch64-linux",
+        "mipsel-netbsd",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "i686-cygwin",
+        "aarch64-netbsd",
+        "s390x-linux",
+        "powerpc-netbsd",
+        "aarch64-darwin",
+        "armv7a-netbsd",
+        "armv7l-linux",
+        "m68k-netbsd",
+        "i686-openbsd",
+        "x86_64-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "armv7l-netbsd",
+        "armv7a-darwin",
+        "i686-linux",
+        "i686-netbsd",
+        "x86_64-openbsd",
+        "riscv64-netbsd",
+        "x86_64-freebsd",
+        "armv6l-netbsd",
+        "powerpc64le-linux",
+        "s390-linux",
+        "x86_64-solaris"
+    ],
+    "package_outputs": [
+        "out",
+        "dev"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Near Field Communication manager",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://01.org/linux-nfc"
+    ],
+    "package_position": "pkgs/servers/neard/default.nix:70"
+}

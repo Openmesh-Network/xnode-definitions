@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "changedetection-io",
+    "package_attr_set": "No package set",
+    "package_pname": "changedetection-io",
+    "package_pversion": "0.45.24",
+    "package_platforms": [
+        "s390x-linux",
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "armv7a-linux",
+        "armv7a-darwin",
+        "s390-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "i686-linux",
+        "i686-darwin",
+        "i686-cygwin",
+        "x86_64-windows",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "mips64-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "x86_64-cygwin",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "i686-freebsd",
+        "aarch64-darwin",
+        "x86_64-freebsd",
+        "mips-linux",
+        "i686-windows",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Mikael Fangel",
+            "github": "MikaelFangel",
+            "email": "nixpkgs.bottle597@passfwd.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Mikael Fangel"
+    ],
+    "package_description": "Self-hosted free open source website change detection tracking, monitoring and notification service",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/dgtlmoon/changedetection.io"
+    ],
+    "package_position": "pkgs/servers/web-apps/changedetection-io/default.nix:78"
+}

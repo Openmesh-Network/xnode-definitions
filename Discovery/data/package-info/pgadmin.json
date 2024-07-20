@@ -1,0 +1,89 @@
+{
+    "type": "package",
+    "package_attr_name": "pgadmin4-desktopmode",
+    "package_attr_set": "No package set",
+    "package_pname": "pgadmin",
+    "package_pversion": "8.9",
+    "package_platforms": [
+        "x86_64-darwin",
+        "riscv64-netbsd",
+        "x86_64-redox",
+        "armv7a-netbsd",
+        "riscv32-linux",
+        "armv6l-linux",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "x86_64-freebsd",
+        "m68k-netbsd",
+        "powerpc-netbsd",
+        "i686-cygwin",
+        "mips64-linux",
+        "s390x-linux",
+        "i686-openbsd",
+        "armv7l-netbsd",
+        "m68k-linux",
+        "x86_64-linux",
+        "aarch64-netbsd",
+        "powerpc64-linux",
+        "mipsel-linux",
+        "mipsel-netbsd",
+        "x86_64-openbsd",
+        "x86_64-solaris",
+        "armv7a-linux",
+        "i686-freebsd",
+        "s390-linux",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "armv6l-netbsd",
+        "x86_64-cygwin",
+        "i686-darwin",
+        "i686-netbsd",
+        "riscv32-netbsd",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "x86_64-netbsd"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pgadmin4-cli",
+        "pgadmin4"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Florian Brandes",
+            "github": "gador",
+            "email": "florian.brandes@posteo.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Florian Brandes"
+    ],
+    "package_description": "Administration and development platform for PostgreSQL. Desktop Mode",
+    "package_longDescription": "<rendered-html><p>pgAdmin 4 is designed to meet the needs of both novice and\nexperienced Postgres users alike, providing a powerful graphical\ninterface that simplifies the creation, maintenance and use of database\nobjects. This version is build with SERVER_MODE set to False. It will\nrequire access to <code>~/.pgadmin/</code>. This version is suitable for\nsingle-user deployment or where access to <code>/var/lib/pgadmin</code>\ncannot be granted or the NixOS module cannot be used (e.g. on MacOS).\nThis should NOT be used in combination with the NixOS module\n<code>pgadmin</code> as they will interfere.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.pgadmin.org/"
+    ],
+    "package_position": "pkgs/tools/admin/pgadmin/default.nix:245"
+}

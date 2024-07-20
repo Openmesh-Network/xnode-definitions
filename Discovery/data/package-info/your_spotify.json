@@ -1,0 +1,43 @@
+{
+    "type": "package",
+    "package_attr_name": "your_spotify",
+    "package_attr_set": "No package set",
+    "package_pname": "your_spotify_server",
+    "package_pversion": "1.10.1",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "your_spotify_migrate",
+        "your_spotify_server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Patrick",
+            "github": "PatrickDaG",
+            "email": "patrick-nixos@failmail.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Patrick"
+    ],
+    "package_description": "Self-hosted application that tracks what you listen and offers you a dashboard to explore statistics about it",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Yooooomi/your_spotify"
+    ],
+    "package_position": "pkgs/by-name/yo/your_spotify/package.nix:71"
+}

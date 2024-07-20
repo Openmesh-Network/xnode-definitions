@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "webdav-server-rs",
+    "package_attr_set": "No package set",
+    "package_pname": "webdav-server-rs-unstable",
+    "package_pversion": "2021-08-16",
+    "package_platforms": [
+        "aarch64-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "i686-windows",
+        "armv6l-netbsd",
+        "armv7l-netbsd",
+        "powerpc64le-linux",
+        "mipsel-netbsd",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "armv7a-darwin",
+        "powerpc-netbsd",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "i686-netbsd",
+        "s390x-linux",
+        "aarch64-netbsd",
+        "x86_64-redox",
+        "x86_64-darwin",
+        "x86_64-netbsd",
+        "riscv64-netbsd",
+        "i686-openbsd",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "x86_64-openbsd",
+        "wasm32-wasi",
+        "x86_64-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "x86_64-freebsd",
+        "i686-darwin",
+        "m68k-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "x86_64-windows",
+        "i686-freebsd",
+        "armv7a-linux",
+        "x86_64-solaris"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "webdav-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Peng Mei Yu",
+            "github": "pmeiyu",
+            "email": "pmy@xqzp.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Peng Mei Yu"
+    ],
+    "package_description": "Implementation of WebDAV server in Rust",
+    "package_longDescription": "<rendered-html><p>webdav-server-rs is an implementation of WebDAV with full support for\nRFC4918. It also supports local unix accounts, PAM authentication, and\nquota.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/miquels/webdav-server-rs"
+    ],
+    "package_position": "pkgs/servers/webdav-server-rs/default.nix:37"
+}

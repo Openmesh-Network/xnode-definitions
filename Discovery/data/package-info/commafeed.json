@@ -1,0 +1,49 @@
+{
+    "type": "package",
+    "package_attr_name": "commafeed",
+    "package_attr_set": "No package set",
+    "package_pname": "commafeed",
+    "package_pversion": "4.3.3",
+    "package_platforms": [
+        "aarch64-linux",
+        "i686-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "commafeed"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Raroh73",
+            "github": "Raroh73",
+            "email": "me@raroh73.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Raroh73"
+    ],
+    "package_description": "Google Reader inspired self-hosted RSS reader",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Athou/commafeed"
+    ],
+    "package_position": "pkgs/by-name/co/commafeed/package.nix:97"
+}

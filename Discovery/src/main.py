@@ -3,7 +3,13 @@
 import requests
 import argparse
 import json
-from Discovery.src.request_builder import build_packages_request, build_options_request
+try:
+    from Discovery.src.request_builder import build_packages_request, build_options_request
+except ModuleNotFoundError:
+    try:
+        from src.request_builder import build_packages_request, build_options_request
+    except ModuleNotFoundError:
+        from request_builder import build_packages_request, build_options_request
 from rich.tree import Tree
 from rich.console import Console
 from rich.spinner import Spinner

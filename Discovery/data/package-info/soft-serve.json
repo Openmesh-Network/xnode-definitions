@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "soft-serve",
+    "package_attr_set": "No package set",
+    "package_pname": "soft-serve",
+    "package_pversion": "0.7.4",
+    "package_platforms": [
+        "s390-linux",
+        "wasm64-wasi",
+        "powerpc64le-linux",
+        "mips-linux",
+        "wasm32-wasi",
+        "loongarch64-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "armv7a-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "x86_64-darwin",
+        "mips64-linux",
+        "x86_64-linux",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "soft"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nicolas Martin",
+            "github": "penguwin",
+            "email": "penguwin@penguwin.eu"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nicolas Martin"
+    ],
+    "package_description": "Tasty, self-hosted Git server for the command line",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/charmbracelet/soft-serve"
+    ],
+    "package_position": "pkgs/servers/soft-serve/default.nix:32"
+}

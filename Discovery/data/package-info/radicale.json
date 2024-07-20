@@ -1,0 +1,81 @@
+{
+    "type": "package",
+    "package_attr_name": "radicale",
+    "package_attr_set": "No package set",
+    "package_pname": "radicale",
+    "package_pversion": "3.2.2",
+    "package_platforms": [
+        "armv7l-linux",
+        "x86_64-darwin",
+        "riscv32-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "i686-windows",
+        "x86_64-cygwin",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "i686-darwin",
+        "riscv64-linux",
+        "x86_64-freebsd",
+        "i686-cygwin",
+        "armv7a-darwin",
+        "x86_64-windows",
+        "i686-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "i686-freebsd",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "radicale"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robert Sch\u00fctz",
+            "github": "dotlambda",
+            "email": "rschuetz17@gmail.com"
+        },
+        {
+            "name": "Kerstin Humm",
+            "github": "erictapen",
+            "email": "kerstin@erictapen.name"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robert Sch\u00fctz",
+        "Kerstin Humm"
+    ],
+    "package_description": "CalDAV and CardDAV server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://radicale.org/v3.html"
+    ],
+    "package_position": "pkgs/by-name/ra/radicale/package.nix:50"
+}

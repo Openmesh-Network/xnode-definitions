@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "vaultwarden",
+    "package_attr_set": "No package set",
+    "package_pname": "vaultwarden",
+    "package_pversion": "1.31.0",
+    "package_platforms": [
+        "x86_64-netbsd",
+        "armv7a-linux",
+        "aarch64-netbsd",
+        "x86_64-redox",
+        "m68k-linux",
+        "mips64-linux",
+        "powerpc-netbsd",
+        "armv7l-linux",
+        "riscv64-netbsd",
+        "x86_64-darwin",
+        "i686-darwin",
+        "i686-windows",
+        "x86_64-freebsd",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "i686-openbsd",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "mips64el-linux",
+        "x86_64-openbsd",
+        "aarch64-darwin",
+        "armv7l-netbsd",
+        "mips-linux",
+        "wasm32-wasi",
+        "aarch64-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "x86_64-windows",
+        "loongarch64-linux",
+        "armv6l-netbsd",
+        "i686-netbsd",
+        "x86_64-linux",
+        "x86_64-solaris",
+        "mipsel-netbsd",
+        "i686-freebsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "vaultwarden"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robert Sch\u00fctz",
+            "github": "dotlambda",
+            "email": "rschuetz17@gmail.com"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robert Sch\u00fctz",
+        "Sandro J\u00e4ckel"
+    ],
+    "package_description": "Unofficial Bitwarden compatible server written in Rust",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/dani-garcia/vaultwarden"
+    ],
+    "package_position": "pkgs/tools/security/vaultwarden/default.nix:41"
+}

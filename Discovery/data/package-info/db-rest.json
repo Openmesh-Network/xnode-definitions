@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "db-rest",
+    "package_attr_set": "No package set",
+    "package_pname": "db-rest",
+    "package_pversion": "6.0.5",
+    "package_platforms": [
+        "armv7a-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "x86_64-darwin",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "i686-darwin",
+        "i686-linux",
+        "loongarch64-linux",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "db-rest"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        }
+    ],
+    "package_license_set": [
+        "ISC License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Marie Ramlow",
+            "github": "nycodeghg",
+            "email": "tabmeier12+nix@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Marie Ramlow"
+    ],
+    "package_description": "Clean REST API wrapping around the Deutsche Bahn API",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://v6.db.transport.rest/"
+    ],
+    "package_position": "pkgs/servers/db-rest/default.nix:33"
+}

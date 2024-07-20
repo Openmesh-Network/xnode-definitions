@@ -1,0 +1,72 @@
+{
+    "type": "package",
+    "package_attr_name": "netbird",
+    "package_attr_set": "No package set",
+    "package_pname": "netbird",
+    "package_pversion": "0.28.4",
+    "package_platforms": [
+        "s390-linux",
+        "wasm32-wasi",
+        "m68k-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "x86_64-darwin",
+        "microblazeel-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "mips-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "wasm64-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "netbird-signal",
+        "netbird-mgmt",
+        "netbird"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "misuzu",
+            "github": "misuzu",
+            "email": "bakalolka@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "misuzu"
+    ],
+    "package_description": "Connect your devices into a single secure private WireGuard\u00ae-based mesh network with SSO/MFA and simple access controls",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://netbird.io"
+    ],
+    "package_position": "pkgs/tools/networking/netbird/default.nix:111"
+}

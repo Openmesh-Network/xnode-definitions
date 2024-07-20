@@ -1,0 +1,85 @@
+{
+    "type": "package",
+    "package_attr_name": "dleyna-server",
+    "package_attr_set": "No package set",
+    "package_pname": "dleyna-server",
+    "package_pversion": "0.7.2",
+    "package_platforms": [
+        "armv7l-netbsd",
+        "riscv32-netbsd",
+        "riscv64-linux",
+        "armv7a-linux",
+        "i686-darwin",
+        "s390x-linux",
+        "microblazeel-linux",
+        "i686-openbsd",
+        "x86_64-redox",
+        "armv7l-linux",
+        "i686-freebsd",
+        "x86_64-linux",
+        "s390-linux",
+        "mips64-linux",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "i686-cygwin",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "riscv64-netbsd",
+        "riscv32-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "x86_64-netbsd",
+        "armv7a-darwin",
+        "i686-linux",
+        "loongarch64-linux",
+        "x86_64-solaris",
+        "mips-linux",
+        "mipsel-linux",
+        "armv7a-netbsd",
+        "powerpc-netbsd",
+        "x86_64-darwin",
+        "m68k-linux",
+        "x86_64-cygwin",
+        "powerpc64le-linux",
+        "aarch64-netbsd",
+        "armv6l-netbsd",
+        "x86_64-freebsd",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "x86_64-openbsd",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-only.html",
+            "fullName": "GNU Lesser General Public License v2.1 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v2.1 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jan Tojnar",
+            "github": "jtojnar",
+            "email": "jtojnar@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jan Tojnar"
+    ],
+    "package_description": "Library to discover, browse and manipulate Digital Media Servers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/phako/dleyna-server"
+    ],
+    "package_position": "pkgs/development/libraries/dleyna-server/default.nix:63"
+}

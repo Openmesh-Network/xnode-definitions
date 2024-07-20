@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "workout-tracker",
+    "package_attr_set": "No package set",
+    "package_pname": "workout-tracker",
+    "package_pversion": "1.16.1",
+    "package_platforms": [
+        "aarch64-darwin",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "mips64el-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "armv7a-darwin",
+        "s390-linux",
+        "wasm64-wasi",
+        "armv6l-linux",
+        "riscv64-linux",
+        "wasm32-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "workout-tracker"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Payas Relekar",
+            "github": "bhankas",
+            "email": "payas@relekar.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Payas Relekar"
+    ],
+    "package_description": "Workout tracking web application for personal use",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jovandeginste/workout-tracker"
+    ],
+    "package_position": "pkgs/by-name/wo/workout-tracker/package.nix:26"
+}

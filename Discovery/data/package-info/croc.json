@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "croc",
+    "package_attr_set": "No package set",
+    "package_pname": "croc",
+    "package_pversion": "10.0.10",
+    "package_platforms": [
+        "aarch64-linux",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "armv7a-darwin",
+        "mips-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "m68k-linux",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "wasm32-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "croc"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Hugo Reeves",
+            "github": "HugoReeves",
+            "email": "hugo@hugoreeves.com"
+        },
+        {
+            "name": "Eduardo Quiros",
+            "github": "equirosa",
+            "email": "eduardo@eduardoquiros.com"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Hugo Reeves",
+        "Eduardo Quiros",
+        "Sandro J\u00e4ckel"
+    ],
+    "package_description": "Easily and securely send things from one computer to another",
+    "package_longDescription": "<rendered-html><p>Croc is a command line tool written in Go that allows any two\ncomputers to simply and securely transfer files and folders.</p>\n<p>Croc does all of the following:</p>\n<ul>\n<li>Allows any two computers to transfer data (using a relay)</li>\n<li>Provides end-to-end encryption (using PAKE)</li>\n<li>Enables easy cross-platform transfers (Windows, Linux, Mac)</li>\n<li>Allows multiple file transfers</li>\n<li>Allows resuming transfers that are interrupted</li>\n<li>Does not require a server or port-forwarding</li>\n</ul>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/schollz/croc"
+    ],
+    "package_position": "pkgs/tools/networking/croc/default.nix:25"
+}

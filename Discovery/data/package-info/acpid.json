@@ -1,0 +1,58 @@
+{
+    "type": "package",
+    "package_attr_name": "acpid",
+    "package_attr_set": "No package set",
+    "package_pname": "acpid",
+    "package_pversion": "2.0.34",
+    "package_platforms": [
+        "s390-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "microblazeel-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "acpi_listen",
+        "kacpimon",
+        "acpid"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Daemon for delivering ACPI events to userspace programs",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://sourceforge.net/projects/acpid2/"
+    ],
+    "package_position": "pkgs/os-specific/linux/acpid/default.nix:16"
+}

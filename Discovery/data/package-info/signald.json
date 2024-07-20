@@ -1,0 +1,48 @@
+{
+    "type": "package",
+    "package_attr_name": "signald",
+    "package_attr_set": "No package set",
+    "package_pname": "signald",
+    "package_pversion": "0.23.2",
+    "package_platforms": [
+        "x86_64-darwin",
+        "x86_64-linux",
+        "aarch64-darwin",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "signald.bat",
+        "signald"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ellie Hermaszewska",
+            "github": "expipiplus1",
+            "email": "nix@monoid.al"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ellie Hermaszewska"
+    ],
+    "package_description": "Unofficial daemon for interacting with Signal",
+    "package_longDescription": "<rendered-html><p>Signald is a daemon that facilitates communication over Signal. It is\nunofficial, unapproved, and not nearly as secure as the real Signal\nclients.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://signald.org"
+    ],
+    "package_position": "pkgs/applications/networking/instant-messengers/signald/default.nix:75"
+}

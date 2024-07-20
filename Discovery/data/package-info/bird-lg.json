@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "bird-lg",
+    "package_attr_set": "No package set",
+    "package_pname": "bird-lg",
+    "package_pversion": "1.3.5",
+    "package_platforms": [
+        "mips-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "wasm64-wasi",
+        "x86_64-linux",
+        "wasm32-wasi",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "i686-linux",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "i686-darwin",
+        "microblaze-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "frontend",
+        "proxy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "David Tchekachev",
+            "github": "Tchekda",
+            "email": "contact@tchekda.fr"
+        },
+        {
+            "name": "Moritz Fromm",
+            "github": "e1mo",
+            "email": "nixpkgs@e1mo.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "David Tchekachev",
+        "Moritz Fromm"
+    ],
+    "package_description": "Bird Looking Glass",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/xddxdd/bird-lg-go"
+    ],
+    "package_position": "pkgs/servers/bird-lg/default.nix:25"
+}

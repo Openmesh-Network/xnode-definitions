@@ -1,0 +1,126 @@
+{
+    "type": "package",
+    "package_attr_name": "stubby",
+    "package_attr_set": "No package set",
+    "package_pname": "stubby",
+    "package_pversion": "0.4.3",
+    "package_platforms": [
+        "i686-freebsd",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "i686-cygwin",
+        "avr-none",
+        "x86_64-netbsd",
+        "riscv64-none",
+        "powerpc64-linux",
+        "riscv64-netbsd",
+        "armv7a-netbsd",
+        "powerpc-none",
+        "x86_64-solaris",
+        "microblazeel-none",
+        "armv6l-netbsd",
+        "mipsel-netbsd",
+        "m68k-linux",
+        "x86_64-openbsd",
+        "aarch64-genode",
+        "riscv32-netbsd",
+        "x86_64-genode",
+        "msp430-none",
+        "vc4-none",
+        "mips64el-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "x86_64-cygwin",
+        "powerpc64le-linux",
+        "aarch64-netbsd",
+        "armv7a-darwin",
+        "i686-genode",
+        "mips-linux",
+        "aarch64-none",
+        "armv6l-none",
+        "mips64-none",
+        "mips-none",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "i686-openbsd",
+        "x86_64-windows",
+        "armv7l-linux",
+        "powerpc-netbsd",
+        "rx-none",
+        "wasm64-wasi",
+        "mmix-mmixware",
+        "i686-netbsd",
+        "or1k-none",
+        "aarch64_be-none",
+        "armv6l-linux",
+        "arm-none",
+        "powerpcle-none",
+        "x86_64-none",
+        "riscv64-linux",
+        "armv7a-linux",
+        "armv7l-netbsd",
+        "s390-none",
+        "m68k-netbsd",
+        "i686-none",
+        "x86_64-freebsd",
+        "s390-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "i686-windows",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "wasm32-wasi",
+        "s390x-none",
+        "microblaze-none",
+        "javascript-ghcjs",
+        "i686-darwin",
+        "m68k-none",
+        "x86_64-redox",
+        "riscv32-none",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "stubbyExampleJson",
+        "man"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "stubby"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michiel Leenaars",
+            "github": "leenaars",
+            "email": "ml.software@leenaa.rs"
+        },
+        {
+            "name": "Emery Hemingway",
+            "github": "ehmry",
+            "email": "ehmry@posteo.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michiel Leenaars",
+        "Emery Hemingway"
+    ],
+    "package_description": "Local DNS Privacy stub resolver (using DNS-over-TLS)",
+    "package_longDescription": "<rendered-html><p>Stubby is an application that acts as a local DNS Privacy stub\nresolver (using RFC 7858, aka DNS-over-TLS). Stubby encrypts DNS queries\nsent from a client machine (desktop or laptop) to a DNS Privacy resolver\nincreasing end user privacy. Stubby is developed by the getdns team.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://dnsprivacy.org/dns_privacy_daemon_-_stubby/"
+    ],
+    "package_position": "pkgs/development/libraries/getdns/default.nix:80"
+}

@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "unpoller",
+    "package_attr_set": "No package set",
+    "package_pname": "unpoller",
+    "package_pversion": "2.11.2",
+    "package_platforms": [
+        "i686-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "wasm32-wasi",
+        "armv6l-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "aarch64-linux",
+        "wasm64-wasi",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "mips64-linux",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "unpoller",
+        "mysqlunifi"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Sergei Lukianov",
+            "github": "Frostman",
+            "email": "me@slukjanov.name"
+        }
+    ],
+    "package_maintainers_set": [
+        "Sergei Lukianov"
+    ],
+    "package_description": "Collect ALL UniFi Controller, Site, Device & Client Data - Export to InfluxDB or Prometheus",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/unpoller/unpoller"
+    ],
+    "package_position": "pkgs/servers/monitoring/unpoller/default.nix:31"
+}

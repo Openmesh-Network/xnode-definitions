@@ -1,0 +1,57 @@
+{
+    "type": "package",
+    "package_attr_name": "shorewall",
+    "package_attr_set": "No package set",
+    "package_pname": "shorewall",
+    "package_pversion": "5.2.3.3",
+    "package_platforms": [
+        "riscv32-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "shorewall",
+        "shorewall6"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "IP gateway/firewall configuration tool for GNU/Linux",
+    "package_longDescription": "<rendered-html><p>Shorewall is a high-level tool for configuring Netfilter. You\ndescribe your firewall/gateway requirements using entries in a set of\nconfiguration files. Shorewall reads those configuration files and with\nthe help of the iptables, iptables-restore, ip and tc utilities,\nShorewall configures Netfilter and the Linux networking subsystem to\nmatch your requirements. Shorewall can be used on a dedicated firewall\nsystem, a multi-function gateway/router/server or on a standalone\nGNU/Linux system. Shorewall does not use Netfilter\u2019s ipchains\ncompatibility mode and can thus take advantage of Netfilter\u2019s connection\nstate tracking capabilities.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.shorewall.net/"
+    ],
+    "package_position": "pkgs/tools/networking/shorewall/default.nix:108"
+}

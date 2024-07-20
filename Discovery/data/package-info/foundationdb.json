@@ -1,0 +1,53 @@
+{
+    "type": "package",
+    "package_attr_name": "fdbPackages.foundationdb71",
+    "package_attr_set": "fdbPackages",
+    "package_pname": "foundationdb",
+    "package_pversion": "7.1.32",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "debug",
+        "dev",
+        "lib",
+        "out",
+        "pythonsrc"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        },
+        {
+            "name": "Will Young",
+            "github": "lostnet",
+            "email": "lost.networking@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Austin Seipp",
+        "Will Young"
+    ],
+    "package_description": "Open source, distributed, transactional key-value store",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.foundationdb.org"
+    ],
+    "package_position": "pkgs/servers/foundationdb/cmake.nix:125"
+}

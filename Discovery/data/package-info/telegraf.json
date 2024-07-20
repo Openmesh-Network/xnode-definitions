@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "telegraf",
+    "package_attr_set": "No package set",
+    "package_pname": "telegraf",
+    "package_pversion": "1.31.1",
+    "package_platforms": [
+        "powerpc64-linux",
+        "i686-darwin",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "wasm64-wasi",
+        "wasm32-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "telegraf"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "J\u00f6rg Thalheim",
+            "github": "Mic92",
+            "email": "joerg@thalheim.io"
+        },
+        {
+            "name": "Robin Lambertz",
+            "github": "roblabla",
+            "email": "robinlambertz+dev@gmail.com"
+        },
+        {
+            "name": "Timothy Stott",
+            "github": "timstott",
+            "email": "stott.timothy@gmail.com"
+        },
+        {
+            "name": "zowoq",
+            "github": "zowoq",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "J\u00f6rg Thalheim",
+        "Robin Lambertz",
+        "Timothy Stott",
+        "zowoq"
+    ],
+    "package_description": "Plugin-driven server agent for collecting & reporting metrics",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.influxdata.com/time-series-platform/telegraf/"
+    ],
+    "package_position": "pkgs/servers/monitoring/telegraf/default.nix:42"
+}

@@ -1,0 +1,99 @@
+{
+    "type": "package",
+    "package_attr_name": "transmission_4-qt",
+    "package_attr_set": "No package set",
+    "package_pname": "transmission",
+    "package_pversion": "4.0.6",
+    "package_platforms": [
+        "m68k-netbsd",
+        "x86_64-netbsd",
+        "x86_64-freebsd",
+        "armv7a-netbsd",
+        "mips64-linux",
+        "aarch64-linux",
+        "i686-openbsd",
+        "x86_64-cygwin",
+        "i686-linux",
+        "riscv32-netbsd",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "i686-darwin",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "i686-cygwin",
+        "x86_64-solaris",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "aarch64-netbsd",
+        "armv6l-netbsd",
+        "armv7l-netbsd",
+        "powerpc64-linux",
+        "i686-netbsd",
+        "mipsel-linux",
+        "riscv64-netbsd",
+        "riscv32-linux",
+        "i686-freebsd",
+        "s390x-linux",
+        "m68k-linux",
+        "mipsel-netbsd",
+        "x86_64-darwin",
+        "armv7l-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "powerpc-netbsd",
+        "mips-linux",
+        "x86_64-redox",
+        "armv7a-linux",
+        "x86_64-openbsd",
+        "x86_64-linux",
+        "armv5tel-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "apparmor"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "transmission-qt",
+        "transmission-daemon",
+        "transmission-show",
+        "transmission-create",
+        "transmission-cli",
+        "transmission-edit",
+        "transmission-remote"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later",
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alexander Tsamutali",
+            "github": "astsmtl",
+            "email": "astsmtl@yandex.ru"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alexander Tsamutali"
+    ],
+    "package_description": "Fast, easy and free BitTorrent client",
+    "package_longDescription": "<rendered-html><p>Transmission is a BitTorrent client which features a simple interface\non top of a cross-platform back-end. Feature spotlight:</p>\n<ul>\n<li>Uses fewer resources than other clients</li>\n<li>Native Mac, GTK and Qt GUI clients</li>\n<li>Daemon ideal for servers, embedded systems, and headless use</li>\n<li>All these can be remote controlled by Web and Terminal clients</li>\n<li>Bluetack (PeerGuardian) blocklists with automatic updates</li>\n<li>Full encryption, DHT, and PEX support</li>\n</ul>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.transmissionbt.com/"
+    ],
+    "package_position": "pkgs/applications/networking/p2p/transmission/4.nix:180"
+}

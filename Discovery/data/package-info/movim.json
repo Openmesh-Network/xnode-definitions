@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "movim",
+    "package_attr_set": "No package set",
+    "package_pname": "movim",
+    "package_pversion": "0.25.1",
+    "package_platforms": [
+        "powerpc-none",
+        "armv6l-netbsd",
+        "aarch64-linux",
+        "riscv64-netbsd",
+        "armv6l-none",
+        "aarch64-none",
+        "i686-none",
+        "m68k-linux",
+        "riscv32-linux",
+        "aarch64-netbsd",
+        "s390x-linux",
+        "armv6l-linux",
+        "msp430-none",
+        "riscv64-none",
+        "x86_64-freebsd",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "riscv32-none",
+        "i686-windows",
+        "riscv32-netbsd",
+        "microblazeel-none",
+        "armv7a-netbsd",
+        "mips-none",
+        "armv7l-netbsd",
+        "x86_64-genode",
+        "x86_64-redox",
+        "i686-darwin",
+        "s390x-none",
+        "i686-genode",
+        "x86_64-netbsd",
+        "s390-none",
+        "avr-none",
+        "powerpcle-none",
+        "mmix-mmixware",
+        "m68k-netbsd",
+        "wasm32-wasi",
+        "x86_64-windows",
+        "aarch64_be-none",
+        "s390-linux",
+        "x86_64-solaris",
+        "x86_64-openbsd",
+        "m68k-none",
+        "mips64-none",
+        "mips64-linux",
+        "mips64el-linux",
+        "javascript-ghcjs",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "i686-netbsd",
+        "i686-freebsd",
+        "microblaze-none",
+        "mipsel-linux",
+        "or1k-none",
+        "rx-none",
+        "mips-linux",
+        "x86_64-darwin",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "aarch64-genode",
+        "armv7a-linux",
+        "powerpc-netbsd",
+        "arm-none",
+        "vc4-none",
+        "wasm64-wasi",
+        "armv7l-linux",
+        "i686-cygwin",
+        "i686-linux",
+        "x86_64-none",
+        "x86_64-cygwin",
+        "mipsel-netbsd",
+        "i686-openbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "movim"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "toastal",
+            "github": "toastal",
+            "email": "toastal+nix@posteo.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "toastal"
+    ],
+    "package_description": "Federated blogging & chat platform that acts as a web front end for the XMPP protocol",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://movim.eu"
+    ],
+    "package_position": "pkgs/by-name/mo/movim/package.nix:139"
+}

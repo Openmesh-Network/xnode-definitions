@@ -1,0 +1,120 @@
+{
+    "type": "package",
+    "package_attr_name": "kdePackages.kjournald",
+    "package_attr_set": "kdePackages",
+    "package_pname": "kjournald",
+    "package_pversion": "24.05.2",
+    "package_platforms": [
+        "armv7l-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "i686-freebsd",
+        "m68k-linux",
+        "s390-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "x86_64-freebsd",
+        "aarch64-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "devtools",
+        "dev",
+        "debug"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "kjournaldbrowser"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/CC0-1.0.html",
+            "fullName": "Creative Commons Zero v1.0 Universal"
+        },
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-or-later.html",
+            "fullName": "GNU Lesser General Public License v2.1 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "Creative Commons Zero v1.0 Universal",
+        "GNU Lesser General Public License v2.1 or later",
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ilya Fedin",
+            "github": "ilya-fedin",
+            "email": "fedin-ilja2010@ya.ru"
+        },
+        {
+            "name": "Ilya K.",
+            "github": "K900",
+            "email": "me@0upti.me"
+        },
+        {
+            "name": "Luna Nova",
+            "github": "LunNova",
+            "email": "nixpkgs-maintainer@lunnova.dev"
+        },
+        {
+            "name": "Matt Moriarity",
+            "github": "mjm",
+            "email": "matt@mattmoriarity.com"
+        },
+        {
+            "name": "Nick Cao",
+            "github": "NickCao",
+            "email": "nickcao@nichi.co"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        },
+        {
+            "name": "Thomas Tuegel",
+            "github": "ttuegel",
+            "email": "ttuegel@mailbox.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ilya Fedin",
+        "Ilya K.",
+        "Luna Nova",
+        "Matt Moriarity",
+        "Nick Cao",
+        "Sandro J\u00e4ckel",
+        "Thomas Tuegel"
+    ],
+    "package_description": "Framework for interacting with systemd-journald",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://invent.kde.org/system/kjournald"
+    ],
+    "package_position": "pkgs/kde/gear/kjournald/default.nix:8"
+}

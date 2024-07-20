@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "mozillavpn",
+    "package_attr_set": "No package set",
+    "package_pname": "mozillavpn",
+    "package_pversion": "2.21.0",
+    "package_platforms": [
+        "mipsel-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "x86_64-linux",
+        "s390-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "powerpc64-linux",
+        "mips-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mozillavpn"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Anders Kaseorg",
+            "github": "andersk",
+            "email": "andersk@mit.edu"
+        }
+    ],
+    "package_maintainers_set": [
+        "Anders Kaseorg"
+    ],
+    "package_description": "Client for the Mozilla VPN service",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://vpn.mozilla.org/"
+    ],
+    "package_position": "pkgs/tools/networking/mozillavpn/default.nix:151"
+}

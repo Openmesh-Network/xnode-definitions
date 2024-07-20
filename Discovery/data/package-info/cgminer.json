@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "cgminer",
+    "package_attr_set": "No package set",
+    "package_pname": "cgminer",
+    "package_pversion": "4.11.1",
+    "package_platforms": [
+        "microblaze-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "m68k-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cgminer"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        },
+        {
+            "name": "Marek Mahut",
+            "github": "mmahut",
+            "email": "marek.mahut@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jaka Hudoklin",
+        "Marek Mahut"
+    ],
+    "package_description": "CPU/GPU miner in c for bitcoin",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ckolivas/cgminer"
+    ],
+    "package_position": "pkgs/applications/blockchains/cgminer/default.nix:50"
+}

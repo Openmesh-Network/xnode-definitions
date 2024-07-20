@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "jellyseerr",
+    "package_attr_set": "No package set",
+    "package_pname": "jellyseerr",
+    "package_pversion": "1.9.2",
+    "package_platforms": [
+        "s390x-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "mips-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "jellyseerr"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Camille M.",
+            "github": "camillemndn",
+            "email": "camillemondon@free.fr"
+        }
+    ],
+    "package_maintainers_set": [
+        "Camille M."
+    ],
+    "package_description": "Fork of overseerr for jellyfin support",
+    "package_longDescription": "<rendered-html><p>Jellyseerr is a free and open source software application for\nmanaging requests for your media library. It is a a fork of Overseerr\nbuilt to bring support for Jellyfin &amp; Emby media servers!</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Fallenbagel/jellyseerr"
+    ],
+    "package_position": "pkgs/servers/jellyseerr/default.nix:83"
+}

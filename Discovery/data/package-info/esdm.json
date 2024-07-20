@@ -1,0 +1,79 @@
+{
+    "type": "package",
+    "package_attr_name": "esdm",
+    "package_attr_set": "No package set",
+    "package_pname": "esdm",
+    "package_pversion": "1.1.0",
+    "package_platforms": [
+        "mips64el-linux",
+        "s390-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "riscv64-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "esdm-cuse-urandom",
+        "esdm-cuse-random",
+        "esdm-proc",
+        "esdm-server-signal-helper",
+        "esdm-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only",
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Oliver Richter",
+            "github": "ORichterSec",
+            "email": "richter-oliver@gmx.net"
+        },
+        {
+            "name": "Markus Theil",
+            "github": "thillux",
+            "email": "theil.markus@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Oliver Richter",
+        "Markus Theil"
+    ],
+    "package_description": "Entropy Source and DRNG Manager in user space",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.chronox.de/esdm.html"
+    ],
+    "package_position": "pkgs/os-specific/linux/esdm/default.nix:123"
+}

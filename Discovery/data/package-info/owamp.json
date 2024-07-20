@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "owamp",
+    "package_attr_set": "No package set",
+    "package_pname": "owamp",
+    "package_pversion": "4.4.6",
+    "package_platforms": [
+        "x86_64-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "owstats",
+        "owup",
+        "twampd",
+        "owfetch",
+        "twping",
+        "powstream",
+        "pfstore",
+        "aespasswd",
+        "owping",
+        "owampd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Matthieu Coudron",
+            "github": "teto",
+            "email": "mcoudron@hotmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Matthieu Coudron"
+    ],
+    "package_description": "Tool for performing one-way active measurements",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://software.internet2.edu/owamp/"
+    ],
+    "package_position": "pkgs/applications/networking/owamp/default.nix:26"
+}

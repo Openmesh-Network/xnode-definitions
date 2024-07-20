@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "parsedmarc",
+    "package_attr_set": "No package set",
+    "package_pname": "parsedmarc",
+    "package_pversion": "8.12.0",
+    "package_platforms": [
+        "armv5tel-linux",
+        "x86_64-windows",
+        "armv7a-darwin",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "i686-cygwin",
+        "i686-darwin",
+        "aarch64-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "x86_64-freebsd",
+        "riscv64-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "x86_64-cygwin",
+        "armv7a-linux",
+        "i686-windows",
+        "i686-freebsd",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "parsedmarc"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Kim Lindberger",
+            "github": "talyz",
+            "email": "kim.lindberger@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Kim Lindberger"
+    ],
+    "package_description": "Python module and CLI utility for parsing DMARC reports",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://domainaware.github.io/parsedmarc/"
+    ],
+    "package_position": "pkgs/development/python-modules/parsedmarc/default.nix:103"
+}

@@ -1,0 +1,89 @@
+{
+    "type": "package",
+    "package_attr_name": "oxidized",
+    "package_attr_set": "No package set",
+    "package_pname": "oxidized",
+    "package_pversion": "0.30.1",
+    "package_platforms": [
+        "s390x-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "oxs",
+        "oxidized"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nick Novitski",
+            "github": "nicknovitski",
+            "email": "nixpkgs@nicknovitski.com"
+        },
+        {
+            "name": "Ember Keske",
+            "github": "n0emis",
+            "email": "nixpkgs@n0emis.network"
+        },
+        {
+            "name": "Fiona Weber",
+            "github": "vidister",
+            "email": "v@vidister.de"
+        },
+        {
+            "name": "Johann Wagner",
+            "github": "johannwagner",
+            "email": "nix@wagner.digital"
+        },
+        {
+            "name": "Yureka",
+            "github": "yu-re-ka",
+            "email": "yuka@yuka.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nick Novitski",
+        "Ember Keske",
+        "Fiona Weber",
+        "Johann Wagner",
+        "Yureka"
+    ],
+    "package_description": "Network device configuration backup tool. It's a RANCID replacement",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ytti/oxidized"
+    ],
+    "package_position": "pkgs/tools/admin/oxidized/default.nix:14"
+}

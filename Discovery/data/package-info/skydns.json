@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "skydns",
+    "package_attr_set": "No package set",
+    "package_pname": "skydns-unstable",
+    "package_pversion": "2019-10-15",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "mips64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "riscv64-linux",
+        "wasm64-wasi",
+        "armv6l-linux",
+        "mips-linux",
+        "wasm32-wasi",
+        "armv7l-linux",
+        "armv7a-linux",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "riscv32-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "skydns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Distributed service for announcement and discovery of services",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/skynetservices/skydns"
+    ],
+    "package_position": "pkgs/servers/skydns/default.nix:29"
+}

@@ -1,0 +1,56 @@
+{
+    "type": "package",
+    "package_attr_name": "hans",
+    "package_attr_set": "No package set",
+    "package_pname": "hans",
+    "package_pversion": "1.1",
+    "package_platforms": [
+        "loongarch64-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "s390-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "hans"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Tunnel IPv4 over ICMP",
+    "package_longDescription": "<rendered-html><p>Hans makes it possible to tunnel IPv4 through ICMP echo packets, so\nyou could call it a ping tunnel. This can be useful when you find\nyourself in the situation that your Internet access is firewalled, but\npings are allowed.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://code.gerade.org/hans/"
+    ],
+    "package_position": "pkgs/tools/networking/hans/default.nix:27"
+}

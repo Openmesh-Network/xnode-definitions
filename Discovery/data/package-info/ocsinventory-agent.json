@@ -1,0 +1,95 @@
+{
+    "type": "package",
+    "package_attr_name": "ocsinventory-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "perl5.38.2-ocsinventory-agent",
+    "package_pversion": "2.10.1",
+    "package_platforms": [
+        "i686-darwin",
+        "armv7a-darwin",
+        "x86_64-netbsd",
+        "loongarch64-linux",
+        "mips-linux",
+        "x86_64-openbsd",
+        "i686-linux",
+        "mips64-linux",
+        "i686-cygwin",
+        "m68k-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "s390x-linux",
+        "aarch64-netbsd",
+        "riscv64-netbsd",
+        "x86_64-freebsd",
+        "i686-openbsd",
+        "armv7a-netbsd",
+        "riscv64-linux",
+        "mipsel-linux",
+        "i686-freebsd",
+        "x86_64-cygwin",
+        "armv7l-linux",
+        "armv6l-netbsd",
+        "microblaze-linux",
+        "i686-netbsd",
+        "x86_64-redox",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "m68k-netbsd",
+        "riscv32-netbsd",
+        "powerpc-netbsd",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "mipsel-netbsd",
+        "riscv32-linux",
+        "x86_64-linux",
+        "x86_64-solaris",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "armv7l-netbsd"
+    ],
+    "package_outputs": [
+        "out",
+        "devdoc"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ipdiscover",
+        "ocsinventory-agent"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Matthias Thym",
+            "github": "totoroot",
+            "email": "git@thym.at"
+        },
+        {
+            "name": "Anthony Roussel",
+            "github": "anthonyroussel",
+            "email": "anthony@roussel.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Matthias Thym",
+        "Anthony Roussel"
+    ],
+    "package_description": "OCS Inventory unified agent for Unix operating systems",
+    "package_longDescription": "<rendered-html><p>Open Computers and Software Inventory (OCS) is an application\ndesigned to help a network or system administrator to keep track of the\nhardware and software configurations of computers that are installed on\nthe network.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://ocsinventory-ng.org"
+    ],
+    "package_position": "pkgs/by-name/oc/ocsinventory-agent/package.nix:92"
+}

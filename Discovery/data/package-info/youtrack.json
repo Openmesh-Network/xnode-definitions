@@ -1,0 +1,44 @@
+{
+    "type": "package",
+    "package_attr_name": "youtrack",
+    "package_attr_set": "No package set",
+    "package_pname": "youtrack",
+    "package_pversion": "2024.2.35942",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alexander Bantyev",
+            "github": "balsoft",
+            "email": "balsoft75@gmail.com"
+        },
+        {
+            "name": "Leona Maroni",
+            "github": "leona-ya",
+            "email": "nix@leona.is"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alexander Bantyev",
+        "Leona Maroni"
+    ],
+    "package_description": "Issue tracking and project management tool for developers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/by-name/yo/youtrack/package.nix:37"
+}

@@ -1,0 +1,79 @@
+{
+    "type": "package",
+    "package_attr_name": "rmfakecloud",
+    "package_attr_set": "No package set",
+    "package_pname": "rmfakecloud",
+    "package_pversion": "0.0.18",
+    "package_platforms": [
+        "i686-darwin",
+        "mips-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "s390x-linux",
+        "wasm64-wasi",
+        "microblaze-linux",
+        "wasm32-wasi",
+        "armv7l-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "testclient",
+        "relinkfile15",
+        "history2git15",
+        "rmfakecloud"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pacien Tran-Girard",
+            "github": "pacien",
+            "email": "b4gx3q.nixpkgs@pacien.net"
+        },
+        {
+            "name": "Dominique Martinet",
+            "github": "martinetd",
+            "email": "f.ktfhrvnznqxacf@noclue.notk.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pacien Tran-Girard",
+        "Dominique Martinet"
+    ],
+    "package_description": "Host your own cloud for the Remarkable",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://ddvk.github.io/rmfakecloud/"
+    ],
+    "package_position": "pkgs/by-name/rm/rmfakecloud/package.nix:30"
+}

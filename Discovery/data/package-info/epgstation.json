@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "epgstation",
+    "package_attr_set": "No package set",
+    "package_pname": "epgstation",
+    "package_pversion": "2.6.20",
+    "package_platforms": [
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "i686-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "epgstation"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "midchildan",
+            "github": "midchildan",
+            "email": "git@midchildan.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "midchildan"
+    ],
+    "package_description": "DVR software compatible with Mirakurun.",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/l3tnun/EPGStation"
+    ],
+    "package_position": "pkgs/applications/video/epgstation/default.nix:118"
+}

@@ -1,0 +1,40 @@
+{
+    "type": "package",
+    "package_attr_name": "filesender",
+    "package_attr_set": "No package set",
+    "package_pname": "filesender",
+    "package_pversion": "2.48",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "nhnn",
+            "github": "thenhnn",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "nhnn"
+    ],
+    "package_description": "Web application for sending large files to other users",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://filesender.org/"
+    ],
+    "package_position": "pkgs/by-name/fi/filesender/package.nix:38"
+}

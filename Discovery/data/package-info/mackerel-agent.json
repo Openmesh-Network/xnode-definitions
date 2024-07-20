@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "mackerel-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "mackerel-agent",
+    "package_pversion": "0.82.0",
+    "package_platforms": [
+        "riscv32-linux",
+        "s390-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "i686-linux",
+        "wasm64-wasi",
+        "mips-linux",
+        "wasm32-wasi",
+        "mips64-linux",
+        "microblaze-linux",
+        "aarch64-darwin",
+        "i686-darwin",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "armv6l-linux",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mackerel-agent"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "midchildan",
+            "github": "midchildan",
+            "email": "git@midchildan.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "midchildan"
+    ],
+    "package_description": "System monitoring service for mackerel.io",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mackerelio/mackerel-agent"
+    ],
+    "package_position": "pkgs/servers/monitoring/mackerel-agent/default.nix:35"
+}

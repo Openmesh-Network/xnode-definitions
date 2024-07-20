@@ -1,0 +1,100 @@
+{
+    "type": "package",
+    "package_attr_name": "rtorrent",
+    "package_attr_set": "No package set",
+    "package_pname": "rakshasa-rtorrent",
+    "package_pversion": "0.9.8-unstable-2023-03-16",
+    "package_platforms": [
+        "i686-netbsd",
+        "x86_64-netbsd",
+        "x86_64-darwin",
+        "x86_64-openbsd",
+        "x86_64-cygwin",
+        "i686-linux",
+        "i686-openbsd",
+        "microblazeel-linux",
+        "i686-freebsd",
+        "m68k-netbsd",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "s390-linux",
+        "riscv32-netbsd",
+        "armv7a-darwin",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "i686-cygwin",
+        "armv7a-linux",
+        "armv7a-netbsd",
+        "mips-linux",
+        "mipsel-netbsd",
+        "s390x-linux",
+        "armv7l-linux",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "riscv64-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "x86_64-redox",
+        "aarch64-linux",
+        "armv7l-netbsd",
+        "x86_64-freebsd",
+        "powerpc-netbsd",
+        "x86_64-solaris",
+        "x86_64-linux",
+        "aarch64-netbsd",
+        "riscv32-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rtorrent"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Rommel Martinez",
+            "github": "ebzzry",
+            "email": "ebzzry@ebzzry.io"
+        },
+        {
+            "name": "Cody Opel",
+            "github": "codyopel",
+            "email": "codyopel@gmail.com"
+        },
+        {
+            "name": "Thiago K. Okada",
+            "github": "thiagokokada",
+            "email": "thiagokokada@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Rommel Martinez",
+        "Cody Opel",
+        "Thiago K. Okada"
+    ],
+    "package_description": "Ncurses client for libtorrent, ideal for use with screen, tmux, or dtach",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://rakshasa.github.io/rtorrent/"
+    ],
+    "package_position": "pkgs/by-name/rt/rtorrent/package.nix:78"
+}

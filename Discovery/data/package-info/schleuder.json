@@ -1,0 +1,119 @@
+{
+    "type": "package",
+    "package_attr_name": "schleuder",
+    "package_attr_set": "No package set",
+    "package_pname": "schleuder",
+    "package_pversion": "4.0.3",
+    "package_platforms": [
+        "aarch64-darwin",
+        "aarch64_be-none",
+        "m68k-linux",
+        "x86_64-linux",
+        "s390-none",
+        "x86_64-openbsd",
+        "i686-none",
+        "armv6l-linux",
+        "microblazeel-none",
+        "s390x-none",
+        "x86_64-none",
+        "armv6l-netbsd",
+        "x86_64-netbsd",
+        "m68k-none",
+        "microblazeel-linux",
+        "riscv64-none",
+        "s390x-linux",
+        "rx-none",
+        "armv6l-none",
+        "x86_64-genode",
+        "i686-darwin",
+        "x86_64-freebsd",
+        "vc4-none",
+        "armv7l-netbsd",
+        "x86_64-redox",
+        "arm-none",
+        "mips64el-linux",
+        "i686-genode",
+        "mmix-mmixware",
+        "riscv32-linux",
+        "armv7a-linux",
+        "powerpcle-none",
+        "armv7a-netbsd",
+        "i686-openbsd",
+        "aarch64-linux",
+        "riscv64-linux",
+        "i686-freebsd",
+        "mips64-none",
+        "avr-none",
+        "x86_64-darwin",
+        "riscv32-netbsd",
+        "mipsel-linux",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "aarch64-netbsd",
+        "aarch64-genode",
+        "loongarch64-linux",
+        "i686-cygwin",
+        "mipsel-netbsd",
+        "microblaze-none",
+        "powerpc-netbsd",
+        "i686-linux",
+        "riscv64-netbsd",
+        "x86_64-windows",
+        "i686-windows",
+        "aarch64-none",
+        "mips-linux",
+        "m68k-netbsd",
+        "msp430-none",
+        "riscv32-none",
+        "or1k-none",
+        "wasm32-wasi",
+        "mips-none",
+        "powerpc64le-linux",
+        "s390-linux",
+        "wasm64-wasi",
+        "javascript-ghcjs",
+        "i686-netbsd",
+        "mips64-linux",
+        "x86_64-solaris",
+        "armv5tel-linux",
+        "armv7a-darwin",
+        "powerpc-none",
+        "armv7l-linux",
+        "x86_64-cygwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "schleuder-api-daemon",
+        "schleuder"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt"
+    ],
+    "package_description": "Schleuder is an encrypting mailing list manager with remailing-capabilities",
+    "package_longDescription": "<rendered-html><p>Schleuder is a group\u2019s email-gateway: subscribers can exchange\nencrypted emails among themselves, receive emails from non-subscribers\nand send emails to non-subscribers via the list.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://schleuder.org"
+    ],
+    "package_position": "pkgs/tools/security/schleuder/default.nix:28"
+}

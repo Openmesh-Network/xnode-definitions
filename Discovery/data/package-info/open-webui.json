@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "open-webui",
+    "package_attr_set": "No package set",
+    "package_pname": "open-webui",
+    "package_pversion": "0.3.10",
+    "package_platforms": [
+        "i686-linux",
+        "mips64-linux",
+        "x86_64-cygwin",
+        "armv7l-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "aarch64-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "i686-darwin",
+        "x86_64-freebsd",
+        "riscv64-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "s390-linux",
+        "i686-cygwin",
+        "armv5tel-linux",
+        "x86_64-windows",
+        "microblazeel-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "microblaze-linux",
+        "mips-linux",
+        "i686-freebsd",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "i686-windows",
+        "armv6l-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "open-webui"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Shivaraj B H",
+            "github": "shivaraj-bh",
+            "email": "sbh69840@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Shivaraj B H"
+    ],
+    "package_description": "Full-stack of open-webui. open-webui is a user-friendly WebUI for LLMs (Formerly Ollama WebUI)",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/open-webui/open-webui"
+    ],
+    "package_position": "pkgs/by-name/op/open-webui/package.nix:138"
+}

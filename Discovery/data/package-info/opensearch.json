@@ -1,0 +1,94 @@
+{
+    "type": "package",
+    "package_attr_name": "opensearch",
+    "package_attr_set": "No package set",
+    "package_pname": "opensearch",
+    "package_pversion": "2.15.0",
+    "package_platforms": [
+        "aarch64-netbsd",
+        "armv7l-netbsd",
+        "x86_64-darwin",
+        "x86_64-cygwin",
+        "x86_64-solaris",
+        "powerpc64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "armv7a-netbsd",
+        "armv6l-netbsd",
+        "x86_64-openbsd",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "mipsel-linux",
+        "mipsel-netbsd",
+        "x86_64-netbsd",
+        "i686-freebsd",
+        "microblazeel-linux",
+        "riscv32-netbsd",
+        "x86_64-redox",
+        "mips64el-linux",
+        "i686-cygwin",
+        "mips-linux",
+        "m68k-linux",
+        "m68k-netbsd",
+        "riscv64-linux",
+        "riscv64-netbsd",
+        "i686-openbsd",
+        "i686-darwin",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "powerpc-netbsd",
+        "armv7l-linux",
+        "mips64-linux",
+        "i686-netbsd",
+        "x86_64-freebsd",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "opensearch-shard",
+        "opensearch-node",
+        "opensearch-plugin",
+        "opensearch-env",
+        "opensearch",
+        "opensearch-keystore",
+        "opensearch-upgrade",
+        "opensearch-env-from-file"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Soner Sayakci",
+            "github": "shyim",
+            "email": "s.sayakci@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Soner Sayakci"
+    ],
+    "package_description": "Open Source, Distributed, RESTful Search Engine",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/opensearch-project/OpenSearch"
+    ],
+    "package_position": "pkgs/servers/search/opensearch/default.nix:53"
+}

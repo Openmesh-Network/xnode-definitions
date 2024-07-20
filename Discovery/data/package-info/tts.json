@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "tts",
+    "package_attr_set": "No package set",
+    "package_pname": "tts",
+    "package_pversion": "0.20.2",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "i686-cygwin",
+        "x86_64-cygwin",
+        "x86_64-windows",
+        "s390-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "x86_64-freebsd",
+        "riscv64-linux",
+        "i686-linux",
+        "aarch64-darwin",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "i686-freebsd",
+        "mips64el-linux",
+        "m68k-linux",
+        "mips-linux",
+        "i686-windows",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "armv7a-darwin",
+        "s390x-linux",
+        "riscv32-linux",
+        "i686-darwin"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "J\u00f6rg Thalheim",
+            "github": "Mic92",
+            "email": "joerg@thalheim.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "J\u00f6rg Thalheim"
+    ],
+    "package_description": "Deep learning toolkit for Text-to-Speech, battle-tested in research and production",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/coqui-ai/TTS"
+    ],
+    "package_position": "pkgs/tools/audio/tts/default.nix:196"
+}

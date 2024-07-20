@@ -1,0 +1,58 @@
+{
+    "type": "package",
+    "package_attr_name": "gsignond",
+    "package_attr_set": "No package set",
+    "package_pname": "gsignond",
+    "package_pversion": "1.2.0",
+    "package_platforms": [
+        "microblaze-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "mips-linux",
+        "s390x-linux",
+        "armv7a-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "devdoc",
+        "out",
+        "dev"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gsignond"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-or-later.html",
+            "fullName": "GNU Lesser General Public License v2.1 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v2.1 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "D-Bus service which performs user authentication on behalf of its clients",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitlab.com/accounts-sso/gsignond"
+    ],
+    "package_position": "pkgs/development/libraries/gsignond/default.nix:54"
+}

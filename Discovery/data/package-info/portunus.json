@@ -1,0 +1,89 @@
+{
+    "type": "package",
+    "package_attr_name": "portunus",
+    "package_attr_set": "No package set",
+    "package_pname": "portunus",
+    "package_pversion": "2.1.1",
+    "package_platforms": [
+        "microblazeel-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "i686-linux",
+        "s390x-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "x86_64-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "portunus-server",
+        "portunus-orchestrator"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Stefan Majewsky",
+            "github": "majewsky",
+            "email": "majewsky@gmx.net"
+        },
+        {
+            "name": "Astro",
+            "github": "astro",
+            "email": "astro@spaceboyz.net"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        },
+        {
+            "name": "Tassilo Tanneberger",
+            "github": "tanneberger",
+            "email": "revol-xut@protonmail.com"
+        },
+        {
+            "name": "Grigory Shipunov",
+            "github": "oxapentane",
+            "email": "blame@oxapentane.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Stefan Majewsky",
+        "Astro",
+        "Sandro J\u00e4ckel",
+        "Tassilo Tanneberger",
+        "Grigory Shipunov"
+    ],
+    "package_description": "Self-contained user/group management and authentication service",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/majewsky/portunus"
+    ],
+    "package_position": "pkgs/servers/portunus/default.nix:23"
+}

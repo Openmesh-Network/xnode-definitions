@@ -1,0 +1,83 @@
+{
+    "type": "package",
+    "package_attr_name": "dnsmasq",
+    "package_attr_set": "No package set",
+    "package_pname": "dnsmasq",
+    "package_pversion": "2.90",
+    "package_platforms": [
+        "x86_64-linux",
+        "mips-linux",
+        "armv6l-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "i686-darwin",
+        "mips64-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dnsmasq",
+        "dhcp_release",
+        "dhcp_release6",
+        "dhcp_lease_time"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Eelco Dolstra",
+            "github": "edolstra",
+            "email": "edolstra+nixpkgs@gmail.com"
+        },
+        {
+            "name": "Franz Pletz",
+            "github": "fpletz",
+            "email": "fpletz@fnordicwalking.de"
+        },
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        }
+    ],
+    "package_maintainers_set": [
+        "Eelco Dolstra",
+        "Franz Pletz",
+        "Robin Gloster"
+    ],
+    "package_description": "Integrated DNS, DHCP and TFTP server for small networks",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.thekelleys.org.uk/dnsmasq/doc.html"
+    ],
+    "package_position": "pkgs/tools/networking/dnsmasq/default.nix:91"
+}

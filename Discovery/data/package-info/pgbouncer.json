@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "pgbouncer",
+    "package_attr_set": "No package set",
+    "package_pname": "pgbouncer",
+    "package_pversion": "1.23.0",
+    "package_platforms": [
+        "microblazeel-none",
+        "armv7l-linux",
+        "i686-none",
+        "msp430-none",
+        "i686-windows",
+        "x86_64-solaris",
+        "mips64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "mmix-mmixware",
+        "mips-none",
+        "armv7a-darwin",
+        "i686-darwin",
+        "javascript-ghcjs",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-netbsd",
+        "avr-none",
+        "armv7a-netbsd",
+        "x86_64-none",
+        "mips64el-linux",
+        "powerpc-netbsd",
+        "wasm64-wasi",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "riscv64-none",
+        "s390x-linux",
+        "armv7l-netbsd",
+        "riscv32-none",
+        "or1k-none",
+        "m68k-netbsd",
+        "armv6l-none",
+        "riscv32-linux",
+        "riscv64-linux",
+        "vc4-none",
+        "aarch64-netbsd",
+        "x86_64-openbsd",
+        "riscv32-netbsd",
+        "mipsel-netbsd",
+        "mipsel-linux",
+        "arm-none",
+        "i686-genode",
+        "i686-linux",
+        "aarch64-none",
+        "microblaze-none",
+        "microblaze-linux",
+        "x86_64-cygwin",
+        "i686-freebsd",
+        "x86_64-freebsd",
+        "armv6l-linux",
+        "x86_64-genode",
+        "powerpc64le-linux",
+        "armv6l-netbsd",
+        "powerpcle-none",
+        "s390-linux",
+        "powerpc-none",
+        "armv5tel-linux",
+        "rx-none",
+        "aarch64_be-none",
+        "s390-none",
+        "x86_64-redox",
+        "i686-netbsd",
+        "riscv64-netbsd",
+        "x86_64-linux",
+        "s390x-none",
+        "i686-cygwin",
+        "aarch64-genode",
+        "mips-linux",
+        "wasm32-wasi",
+        "x86_64-windows",
+        "i686-openbsd",
+        "mips64-none",
+        "m68k-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pgbouncer"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        }
+    ],
+    "package_license_set": [
+        "ISC License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jan Hrnko",
+            "github": "1000101",
+            "email": "b1000101@pm.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jan Hrnko"
+    ],
+    "package_description": "Lightweight connection pooler for PostgreSQL",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.pgbouncer.org/"
+    ],
+    "package_position": "pkgs/servers/sql/pgbouncer/default.nix:25"
+}

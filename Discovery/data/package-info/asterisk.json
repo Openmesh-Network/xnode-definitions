@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "asterisk",
+    "package_attr_set": "No package set",
+    "package_pname": "asterisk",
+    "package_pversion": "20.8.1",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "astversion",
+        "astdb2bdb",
+        "rasterisk",
+        "astdb2sqlite3",
+        "asterisk",
+        "safe_asterisk",
+        "astgenkey",
+        "autosupport",
+        "astcanary"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jonathan Glines",
+            "github": "auntieNeo",
+            "email": "auntieNeo@gmail.com"
+        },
+        {
+            "name": "Tim Digel",
+            "github": "DerTim1",
+            "email": "tim.digel@active-group.de"
+        },
+        {
+            "name": "Yorick van Pelt",
+            "github": "yorickvP",
+            "email": "yorickvanpelt@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jonathan Glines",
+        "Tim Digel",
+        "Yorick van Pelt"
+    ],
+    "package_description": "Software implementation of a telephone private branch exchange (PBX)",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.asterisk.org/"
+    ],
+    "package_position": "pkgs/servers/asterisk/default.nix:136"
+}

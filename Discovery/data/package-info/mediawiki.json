@@ -1,0 +1,134 @@
+{
+    "type": "package",
+    "package_attr_name": "mediawiki",
+    "package_attr_set": "No package set",
+    "package_pname": "mediawiki",
+    "package_pversion": "1.42.1",
+    "package_platforms": [
+        "x86_64-solaris",
+        "javascript-ghcjs",
+        "armv6l-netbsd",
+        "mipsel-linux",
+        "or1k-none",
+        "aarch64-netbsd",
+        "armv6l-none",
+        "riscv64-linux",
+        "i686-linux",
+        "riscv32-none",
+        "armv7l-linux",
+        "mipsel-netbsd",
+        "mips-linux",
+        "microblaze-none",
+        "microblazeel-none",
+        "i686-openbsd",
+        "x86_64-windows",
+        "powerpc64-linux",
+        "i686-none",
+        "microblaze-linux",
+        "s390x-none",
+        "armv7a-netbsd",
+        "x86_64-openbsd",
+        "x86_64-freebsd",
+        "loongarch64-linux",
+        "x86_64-redox",
+        "armv7a-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "powerpcle-none",
+        "wasm32-wasi",
+        "powerpc-netbsd",
+        "i686-windows",
+        "aarch64_be-none",
+        "powerpc64le-linux",
+        "i686-darwin",
+        "m68k-netbsd",
+        "s390-none",
+        "vc4-none",
+        "i686-freebsd",
+        "m68k-none",
+        "wasm64-wasi",
+        "x86_64-linux",
+        "i686-cygwin",
+        "x86_64-genode",
+        "s390-linux",
+        "x86_64-netbsd",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "x86_64-darwin",
+        "i686-genode",
+        "x86_64-none",
+        "s390x-linux",
+        "m68k-linux",
+        "rx-none",
+        "armv5tel-linux",
+        "avr-none",
+        "aarch64-genode",
+        "mmix-mmixware",
+        "riscv64-netbsd",
+        "mips64-none",
+        "riscv32-netbsd",
+        "arm-none",
+        "mips-none",
+        "riscv64-none",
+        "mips64el-linux",
+        "armv7a-darwin",
+        "riscv32-linux",
+        "x86_64-cygwin",
+        "aarch64-none",
+        "powerpc-none",
+        "i686-netbsd",
+        "armv7l-netbsd",
+        "msp430-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Astro",
+            "github": "astro",
+            "email": "astro@spaceboyz.net"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        },
+        {
+            "name": "Tassilo Tanneberger",
+            "github": "tanneberger",
+            "email": "revol-xut@protonmail.com"
+        },
+        {
+            "name": "Grigory Shipunov",
+            "github": "oxapentane",
+            "email": "blame@oxapentane.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Astro",
+        "Sandro J\u00e4ckel",
+        "Tassilo Tanneberger",
+        "Grigory Shipunov"
+    ],
+    "package_description": "Collaborative editing software that runs Wikipedia",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.mediawiki.org/"
+    ],
+    "package_position": "pkgs/servers/web-apps/mediawiki/default.nix:33"
+}

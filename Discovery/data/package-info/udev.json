@@ -1,0 +1,55 @@
+{
+    "type": "package",
+    "package_attr_name": "haskellPackages.udev",
+    "package_attr_set": "haskellPackages",
+    "package_pname": "udev",
+    "package_pversion": "0.1.1.0",
+    "package_platforms": [
+        "s390x-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "doc"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "libudev bindings",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://hackage.haskell.org/package/udev"
+    ],
+    "package_position": "pkgs/development/haskell-modules/hackage-packages.nix:315983"
+}

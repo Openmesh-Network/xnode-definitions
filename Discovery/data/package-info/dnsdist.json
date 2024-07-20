@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "dnsdist",
+    "package_attr_set": "No package set",
+    "package_pname": "dnsdist",
+    "package_pversion": "1.8.3",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dnsdist"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Johannes Schleifenbaum",
+            "github": "jojosch",
+            "email": "johannes@js-webcoding.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Johannes Schleifenbaum"
+    ],
+    "package_description": "DNS Loadbalancer",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://dnsdist.org"
+    ],
+    "package_position": "pkgs/servers/dns/dnsdist/default.nix:47"
+}

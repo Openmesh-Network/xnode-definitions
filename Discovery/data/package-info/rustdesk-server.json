@@ -1,0 +1,95 @@
+{
+    "type": "package",
+    "package_attr_name": "rustdesk-server",
+    "package_attr_set": "No package set",
+    "package_pname": "rustdesk-server",
+    "package_pversion": "1.1.11",
+    "package_platforms": [
+        "powerpc64-linux",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "s390-linux",
+        "s390x-linux",
+        "armv7a-netbsd",
+        "m68k-linux",
+        "x86_64-darwin",
+        "i686-netbsd",
+        "riscv64-netbsd",
+        "mips64-linux",
+        "i686-linux",
+        "i686-openbsd",
+        "m68k-netbsd",
+        "mips-linux",
+        "aarch64-netbsd",
+        "armv6l-netbsd",
+        "armv7l-linux",
+        "powerpc-netbsd",
+        "armv6l-linux",
+        "i686-darwin",
+        "armv7l-netbsd",
+        "mipsel-netbsd",
+        "x86_64-freebsd",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "x86_64-netbsd",
+        "riscv32-netbsd",
+        "x86_64-cygwin",
+        "microblaze-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "i686-freebsd",
+        "riscv32-linux",
+        "x86_64-openbsd",
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "x86_64-redox",
+        "x86_64-solaris",
+        "mipsel-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "i686-cygwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rustdesk-utils",
+        "hbbs",
+        "hbbr"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ga\u00ebl Reyrol",
+            "github": "gaelreyrol",
+            "email": "me@gaelreyrol.dev"
+        },
+        {
+            "name": "Theodore Ni",
+            "github": "tjni",
+            "email": "43ngvg@masqt.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ga\u00ebl Reyrol",
+        "Theodore Ni"
+    ],
+    "package_description": "RustDesk Server Program",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/rustdesk/rustdesk-server"
+    ],
+    "package_position": "pkgs/servers/rustdesk-server/default.nix:55"
+}

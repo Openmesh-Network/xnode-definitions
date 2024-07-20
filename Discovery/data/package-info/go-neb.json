@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "go-neb",
+    "package_attr_set": "No package set",
+    "package_pname": "go-neb-unstable",
+    "package_pversion": "2021-07-21",
+    "package_platforms": [
+        "i686-darwin",
+        "microblazeel-linux",
+        "mips64-linux",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "riscv64-linux",
+        "powerpc64-linux",
+        "wasm32-wasi",
+        "mipsel-linux",
+        "mips-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "x86_64-darwin",
+        "armv7a-darwin",
+        "aarch64-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "wasm64-wasi",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "m68k-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "go-neb"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        },
+        {
+            "name": "maralorn",
+            "github": "maralorn",
+            "email": "mail@maralorn.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt",
+        "maralorn"
+    ],
+    "package_description": "Extensible matrix bot written in Go",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/matrix-org/go-neb"
+    ],
+    "package_position": "pkgs/applications/networking/instant-messengers/go-neb/default.nix:25"
+}

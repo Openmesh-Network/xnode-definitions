@@ -1,0 +1,69 @@
+{
+    "type": "package",
+    "package_attr_name": "cgit",
+    "package_attr_set": "No package set",
+    "package_pname": "cgit",
+    "package_pversion": "1.2.3",
+    "package_platforms": [
+        "mips64el-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "s390x-linux",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "debug",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0.html",
+            "fullName": "GNU General Public License v2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bj\u00f8rn Forsman",
+            "github": "bjornfor",
+            "email": "bjorn.forsman@gmail.com"
+        },
+        {
+            "name": "Alyssa Ross",
+            "github": "alyssais",
+            "email": "hi@alyssa.is"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bj\u00f8rn Forsman",
+        "Alyssa Ross"
+    ],
+    "package_description": "Web frontend for git repositories",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://git.zx2c4.com/cgit/about/"
+    ],
+    "package_position": "pkgs/applications/version-management/cgit/common.nix:76"
+}

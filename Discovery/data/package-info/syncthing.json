@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "syncthing",
+    "package_attr_set": "No package set",
+    "package_pname": "syncthing",
+    "package_pversion": "1.27.9",
+    "package_platforms": [
+        "i686-cygwin",
+        "x86_64-solaris",
+        "powerpc-netbsd",
+        "x86_64-openbsd",
+        "x86_64-cygwin",
+        "aarch64-linux",
+        "x86_64-freebsd",
+        "mipsel-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "armv6l-netbsd",
+        "i686-openbsd",
+        "i686-freebsd",
+        "i686-linux",
+        "i686-darwin",
+        "mips64-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "m68k-linux",
+        "riscv32-linux",
+        "armv7l-netbsd",
+        "riscv32-netbsd",
+        "riscv64-netbsd",
+        "x86_64-redox",
+        "armv7a-darwin",
+        "powerpc64-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "aarch64-netbsd",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "x86_64-netbsd",
+        "x86_64-darwin",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "syncthing"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ioannis Koutras",
+            "github": "jokogr",
+            "email": "ioannis.koutras@gmail.com"
+        },
+        {
+            "name": "Peter Hoeg",
+            "github": "peterhoeg",
+            "email": "peter@hoeg.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ioannis Koutras",
+        "Peter Hoeg"
+    ],
+    "package_description": "Open Source Continuous File Synchronization",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://syncthing.net/"
+    ],
+    "package_position": "pkgs/applications/networking/syncthing/default.nix:66"
+}

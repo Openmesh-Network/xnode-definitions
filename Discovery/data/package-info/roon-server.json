@@ -1,0 +1,48 @@
+{
+    "type": "package",
+    "package_attr_name": "roon-server",
+    "package_attr_set": "No package set",
+    "package_pname": "roon-server",
+    "package_pversion": "2.0-1432",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bernardo Meurer",
+            "github": "lovesegfault",
+            "email": "meurerbernardo@gmail.com"
+        },
+        {
+            "name": "Steve Elliott",
+            "github": "Steell",
+            "email": "steve@steellworks.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bernardo Meurer",
+        "Steve Elliott"
+    ],
+    "package_description": "Music player for music lovers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://roonlabs.com"
+    ],
+    "package_position": "pkgs/servers/roon-server/default.nix:91"
+}

@@ -1,0 +1,84 @@
+{
+    "type": "package",
+    "package_attr_name": "erigon",
+    "package_attr_set": "No package set",
+    "package_pname": "erigon",
+    "package_pversion": "2.60.2",
+    "package_platforms": [
+        "s390-linux",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "armv7a-darwin",
+        "i686-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "mipsel-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rpcdaemon",
+        "rlpdump",
+        "erigon",
+        "evm"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-3.0-or-later.html",
+            "fullName": "GNU Lesser General Public License v3.0 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v3.0 or later",
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "David Terry",
+            "github": "d-xo",
+            "email": "hi@d-xo.org"
+        },
+        {
+            "name": "Raphael Megzari",
+            "github": "happysalada",
+            "email": "raphael@megzari.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "David Terry",
+        "Raphael Megzari"
+    ],
+    "package_description": "Ethereum node implementation focused on scalability and modularity",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ledgerwatch/erigon/"
+    ],
+    "package_position": "pkgs/applications/blockchains/erigon/default.nix:49"
+}

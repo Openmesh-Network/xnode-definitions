@@ -1,0 +1,58 @@
+{
+    "type": "package",
+    "package_attr_name": "nodePackages.shout",
+    "package_attr_set": "nodePackages",
+    "package_pname": "shout",
+    "package_pversion": "0.53.0",
+    "package_platforms": [
+        "i686-darwin",
+        "aarch64-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "x86_64-darwin",
+        "mips64-linux",
+        "aarch64-darwin",
+        "s390-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "mipsel-linux",
+        "i686-linux",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "MIT"
+        }
+    ],
+    "package_license_set": [
+        "MIT"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "The self-hosted Web IRC client",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/erming/shout#readme"
+    ],
+    "package_position": "pkgs/development/node-packages/node-packages.nix:84713"
+}

@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "bamf",
+    "package_attr_set": "No package set",
+    "package_pname": "bamf",
+    "package_pversion": "0.5.6",
+    "package_platforms": [
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "riscv32-linux"
+    ],
+    "package_outputs": [
+        "dev",
+        "out",
+        "devdoc"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-3.0.html",
+            "fullName": "GNU Lesser General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "David Kleuker",
+            "github": "davidak",
+            "email": "post@davidak.de"
+        },
+        {
+            "name": "David Kleuker",
+            "github": "davidak",
+            "email": "post@davidak.de"
+        },
+        {
+            "name": "Bobby Rong",
+            "github": "bobby285271",
+            "email": "rjl931189261@126.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "David Kleuker",
+        "David Kleuker",
+        "Bobby Rong"
+    ],
+    "package_description": "Application matching framework",
+    "package_longDescription": "<rendered-html><p>Removes the headache of applications matching into a simple DBus\ndaemon and c wrapper library.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://launchpad.net/bamf"
+    ],
+    "package_position": "pkgs/development/libraries/bamf/default.nix:86"
+}

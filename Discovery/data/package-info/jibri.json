@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "jibri",
+    "package_attr_set": "No package set",
+    "package_pname": "jibri",
+    "package_pversion": "8.0-169-g1258814",
+    "package_platforms": [
+        "mips-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "mips64-linux",
+        "m68k-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "jibri"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Cleeyv",
+            "github": "cleeyv",
+            "email": "cleeyv@riseup.net"
+        },
+        {
+            "name": "Ryan Mulligan",
+            "github": "ryantm",
+            "email": "ryan@ryantm.com"
+        },
+        {
+            "name": "Lassulus",
+            "github": "Lassulus",
+            "email": "lassulus@gmail.com"
+        },
+        {
+            "name": "Yaya",
+            "github": "yayayayaka",
+            "email": "github@uwu.is"
+        },
+        {
+            "name": "Lorenzo Manacorda",
+            "github": "asymmetric",
+            "email": "lorenzo@mailbox.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Cleeyv",
+        "Ryan Mulligan",
+        "Lassulus",
+        "Yaya",
+        "Lorenzo Manacorda"
+    ],
+    "package_description": "JItsi BRoadcasting Infrastructure",
+    "package_longDescription": "<rendered-html><p>Jibri provides services for recording or streaming a Jitsi Meet\nconference. It works by launching a Chrome instance rendered in a\nvirtual framebuffer and capturing and encoding the output with ffmpeg.\nIt is intended to be run on a separate machine (or a VM), with no other\napplications using the display or audio devices. Only one recording at a\ntime is supported on a single jibri.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jitsi/jibri"
+    ],
+    "package_position": "pkgs/servers/jibri/default.nix:42"
+}

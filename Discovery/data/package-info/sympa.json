@@ -1,0 +1,133 @@
+{
+    "type": "package",
+    "package_attr_name": "sympa",
+    "package_attr_set": "No package set",
+    "package_pname": "sympa",
+    "package_pversion": "6.2.72",
+    "package_platforms": [
+        "x86_64-netbsd",
+        "mipsel-netbsd",
+        "aarch64_be-none",
+        "x86_64-genode",
+        "m68k-linux",
+        "i686-cygwin",
+        "mips64-linux",
+        "wasm64-wasi",
+        "arm-none",
+        "mips64-none",
+        "armv7l-linux",
+        "i686-openbsd",
+        "s390x-linux",
+        "aarch64-darwin",
+        "i686-linux",
+        "mips64el-linux",
+        "x86_64-openbsd",
+        "aarch64-linux",
+        "s390-none",
+        "i686-none",
+        "microblazeel-linux",
+        "x86_64-none",
+        "mmix-mmixware",
+        "x86_64-cygwin",
+        "x86_64-solaris",
+        "avr-none",
+        "javascript-ghcjs",
+        "riscv32-netbsd",
+        "aarch64-none",
+        "armv5tel-linux",
+        "i686-darwin",
+        "or1k-none",
+        "powerpc64le-linux",
+        "armv7l-netbsd",
+        "armv6l-none",
+        "loongarch64-linux",
+        "microblaze-none",
+        "mips-none",
+        "m68k-none",
+        "microblaze-linux",
+        "armv7a-linux",
+        "riscv64-none",
+        "s390-linux",
+        "mipsel-linux",
+        "rx-none",
+        "riscv64-netbsd",
+        "powerpc-netbsd",
+        "s390x-none",
+        "riscv32-none",
+        "x86_64-darwin",
+        "vc4-none",
+        "x86_64-windows",
+        "i686-windows",
+        "powerpc-none",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "armv6l-netbsd",
+        "i686-netbsd",
+        "msp430-none",
+        "armv7a-darwin",
+        "x86_64-linux",
+        "microblazeel-none",
+        "aarch64-genode",
+        "i686-freebsd",
+        "i686-genode",
+        "riscv32-linux",
+        "aarch64-netbsd",
+        "m68k-netbsd",
+        "x86_64-redox",
+        "wasm32-wasi",
+        "armv6l-linux",
+        "mips-linux",
+        "x86_64-freebsd",
+        "armv7a-netbsd",
+        "powerpcle-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "archived.pl",
+        "sympa",
+        "bulk.pl",
+        "task_manager.pl",
+        "sympa_newaliases.pl",
+        "sympa_msg.pl",
+        "sympa.pl",
+        "bounced.pl",
+        "alias_manager.pl",
+        "sympa_automatic.pl"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Richard Marko",
+            "github": "sorki",
+            "email": "srk@48.io"
+        },
+        {
+            "name": "Martin Milata",
+            "github": "mmilata",
+            "email": "martin@martinmilata.cz"
+        }
+    ],
+    "package_maintainers_set": [
+        "Richard Marko",
+        "Martin Milata"
+    ],
+    "package_description": "Open source mailing list manager",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.sympa.org"
+    ],
+    "package_position": "pkgs/servers/mail/sympa/default.nix:112"
+}

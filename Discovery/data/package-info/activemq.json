@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "activemq",
+    "package_attr_set": "No package set",
+    "package_pname": "apache-activemq",
+    "package_pversion": "6.1.2",
+    "package_platforms": [
+        "armv6l-netbsd",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "i686-freebsd",
+        "armv7l-linux",
+        "i686-darwin",
+        "aarch64-darwin",
+        "i686-cygwin",
+        "armv5tel-linux",
+        "m68k-linux",
+        "i686-netbsd",
+        "powerpc-netbsd",
+        "riscv32-netbsd",
+        "i686-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "powerpc64-linux",
+        "aarch64-netbsd",
+        "mips64el-linux",
+        "x86_64-cygwin",
+        "armv7a-darwin",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "mips64-linux",
+        "armv7l-netbsd",
+        "mips-linux",
+        "mipsel-netbsd",
+        "m68k-netbsd",
+        "i686-openbsd",
+        "x86_64-redox",
+        "armv7a-netbsd",
+        "x86_64-netbsd",
+        "powerpc64le-linux",
+        "s390-linux",
+        "x86_64-solaris",
+        "riscv64-netbsd",
+        "x86_64-openbsd",
+        "x86_64-freebsd",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "activemq-diag",
+        "activemq"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Messaging and Integration Patterns server written in Java",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://activemq.apache.org/"
+    ],
+    "package_position": "pkgs/development/libraries/apache-activemq/default.nix:23"
+}

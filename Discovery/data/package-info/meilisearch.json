@@ -1,0 +1,47 @@
+{
+    "type": "package",
+    "package_attr_name": "meilisearch",
+    "package_attr_set": "No package set",
+    "package_pname": "meilisearch",
+    "package_pversion": "1.9.0",
+    "package_platforms": [
+        "x86_64-linux",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "meilisearch"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Raphael Megzari",
+            "github": "happysalada",
+            "email": "raphael@megzari.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Raphael Megzari"
+    ],
+    "package_description": "Powerful, fast, and an easy to use search engine",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://docs.meilisearch.com/"
+    ],
+    "package_position": "pkgs/servers/search/meilisearch/default.nix:57"
+}

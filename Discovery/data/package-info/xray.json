@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "xray",
+    "package_attr_set": "No package set",
+    "package_pname": "xray",
+    "package_pversion": "1.8.16",
+    "package_platforms": [
+        "armv7l-linux",
+        "mips-linux",
+        "riscv64-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "mips64-linux",
+        "i686-darwin",
+        "mipsel-linux",
+        "m68k-linux",
+        "s390-linux",
+        "armv7a-darwin",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "riscv32-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "xray"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Igor Polyakov",
+            "github": "iopq",
+            "email": "iop_jr@yahoo.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Igor Polyakov"
+    ],
+    "package_description": "Platform for building proxies to bypass network restrictions. A replacement for v2ray-core, with XTLS support and fully compatible configuration",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/XTLS/Xray-core"
+    ],
+    "package_position": "pkgs/tools/networking/xray/default.nix:54"
+}

@@ -1,0 +1,72 @@
+{
+    "type": "package",
+    "package_attr_name": "trust-dns",
+    "package_attr_set": "No package set",
+    "package_pname": "trust-dns",
+    "package_pversion": "0.24.1",
+    "package_platforms": [
+        "armv5tel-linux",
+        "mips-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "riscv32-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "recurse",
+        "resolve",
+        "hickory-dns",
+        "dns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0",
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Colin Sane",
+            "github": "uninsane",
+            "email": "colin@uninsane.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Colin Sane"
+    ],
+    "package_description": "Rust based DNS client, server, and resolver",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://trust-dns.org/"
+    ],
+    "package_position": "pkgs/servers/dns/trust-dns/default.nix:27"
+}

@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "rimgo",
+    "package_attr_set": "No package set",
+    "package_pname": "rimgo",
+    "package_pversion": "1.2.6",
+    "package_platforms": [
+        "m68k-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "i686-darwin",
+        "mips64-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "wasm64-wasi",
+        "i686-linux",
+        "powerpc64le-linux",
+        "wasm32-wasi",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "s390x-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rimgo"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "quantenzitrone",
+            "github": "quantenzitrone",
+            "email": "nix@dev.quantenzitrone.eu"
+        }
+    ],
+    "package_maintainers_set": [
+        "quantenzitrone"
+    ],
+    "package_description": "Alternative frontend for Imgur",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://codeberg.org/rimgo/rimgo"
+    ],
+    "package_position": "pkgs/by-name/ri/rimgo/package.nix:34"
+}

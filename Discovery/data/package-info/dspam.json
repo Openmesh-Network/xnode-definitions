@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "dspam",
+    "package_attr_set": "No package set",
+    "package_pname": "dspam",
+    "package_pversion": "3.10.2",
+    "package_platforms": [
+        "armv5tel-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "i686-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dspam_logrotate",
+        "cssclean",
+        "dspamc",
+        "cssstat",
+        "dspam_admin",
+        "cssconvert",
+        "dspam_crc",
+        "dspam_clean",
+        "dspam_dump",
+        "dspam_maintenance",
+        "dspam_stats",
+        "dspam",
+        "csscompress",
+        "dspam_notify",
+        "dspam_train",
+        "dspam_2sql",
+        "dspam_merge"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Amiantov",
+            "github": "abbradar",
+            "email": "ab@fmap.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Amiantov"
+    ],
+    "package_description": "Community Driven Antispam Filter",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://dspam.sourceforge.net/"
+    ],
+    "package_position": "pkgs/servers/mail/dspam/default.nix:121"
+}

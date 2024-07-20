@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "tautulli",
+    "package_attr_set": "No package set",
+    "package_pname": "Tautulli",
+    "package_pversion": "2.14.3",
+    "package_platforms": [
+        "armv7a-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips-linux",
+        "m68k-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "plexpy",
+        "tautulli"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ryan Horiguchi",
+            "github": "rhoriguchi",
+            "email": "ryan.horiguchi@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ryan Horiguchi"
+    ],
+    "package_description": "Python based monitoring and tracking tool for Plex Media Server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tautulli.com/"
+    ],
+    "package_position": "pkgs/servers/tautulli/default.nix:47"
+}

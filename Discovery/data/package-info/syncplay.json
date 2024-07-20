@@ -1,0 +1,69 @@
+{
+    "type": "package",
+    "package_attr_name": "syncplay",
+    "package_attr_set": "No package set",
+    "package_pname": "syncplay",
+    "package_pversion": "1.7.3",
+    "package_platforms": [
+        "i686-darwin",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "mips-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "m68k-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "armv7a-darwin",
+        "microblaze-linux",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "syncplay-server",
+        "syncplay"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Assistant Moetron",
+            "github": "Assistant",
+            "email": "assistant.moetron@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Assistant Moetron"
+    ],
+    "package_description": "Free software that synchronises media players",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://syncplay.pl/"
+    ],
+    "package_position": "pkgs/applications/networking/syncplay/default.nix:46"
+}

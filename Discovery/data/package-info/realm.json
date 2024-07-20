@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "realm",
+    "package_attr_set": "No package set",
+    "package_pname": "realm",
+    "package_pversion": "2.6.0",
+    "package_platforms": [
+        "armv6l-linux",
+        "mipsel-linux",
+        "aarch64-darwin",
+        "x86_64-solaris",
+        "wasm32-wasi",
+        "i686-freebsd",
+        "i686-linux",
+        "aarch64-netbsd",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "i686-windows",
+        "x86_64-windows",
+        "s390x-linux",
+        "mipsel-netbsd",
+        "riscv64-linux",
+        "armv6l-netbsd",
+        "x86_64-darwin",
+        "riscv64-netbsd",
+        "aarch64-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "x86_64-freebsd",
+        "x86_64-netbsd",
+        "loongarch64-linux",
+        "i686-darwin",
+        "armv7l-netbsd",
+        "i686-openbsd",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "m68k-linux",
+        "mips-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "powerpc-netbsd",
+        "x86_64-redox",
+        "armv7l-linux",
+        "i686-netbsd",
+        "x86_64-openbsd",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "realm"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "ocfox",
+            "github": "ocfox",
+            "email": "i@ocfox.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "ocfox"
+    ],
+    "package_description": "A simple, high performance relay server written in rust",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/zhboner/realm"
+    ],
+    "package_position": "pkgs/by-name/re/realm/package.nix:36"
+}

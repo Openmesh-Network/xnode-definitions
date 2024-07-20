@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "go2rtc",
+    "package_attr_set": "No package set",
+    "package_pname": "go2rtc",
+    "package_pversion": "1.9.4",
+    "package_platforms": [
+        "i686-linux",
+        "wasm64-wasi",
+        "s390-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "wasm32-wasi",
+        "i686-darwin",
+        "m68k-linux",
+        "armv7a-darwin",
+        "x86_64-darwin",
+        "mips-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "go2rtc"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt"
+    ],
+    "package_description": "Ultimate camera streaming application with support RTSP, RTMP, HTTP-FLV, WebRTC, MSE, HLS, MJPEG, HomeKit, FFmpeg, etc",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/AlexxIT/go2rtc"
+    ],
+    "package_position": "pkgs/tools/video/go2rtc/default.nix:29"
+}

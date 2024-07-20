@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "tetrd",
+    "package_attr_set": "No package set",
+    "package_pname": "tetrd",
+    "package_pversion": "1.0.4",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Madoura",
+            "github": "Madouura",
+            "email": "madouura@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Madoura"
+    ],
+    "package_description": "Share your internet connection from your device to your PC and vice versa through a USB cable",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tetrd.app"
+    ],
+    "package_position": "pkgs/applications/networking/tetrd/default.nix:79"
+}

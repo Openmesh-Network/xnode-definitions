@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "authelia",
+    "package_attr_set": "No package set",
+    "package_pname": "authelia",
+    "package_pversion": "4.38.9",
+    "package_platforms": [
+        "mips64el-linux",
+        "i686-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "wasm32-wasi",
+        "s390x-linux",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "armv7l-linux",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "mips64-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "i686-darwin",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "authelia"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jack",
+            "github": "06kellyjac",
+            "email": "hello+nixpkgs@j-k.io"
+        },
+        {
+            "name": "Mostly Void",
+            "github": "dit7ya",
+            "email": "7rat13@gmail.com"
+        },
+        {
+            "name": "Nicolas M\u00e9meint",
+            "github": "nicomem",
+            "email": "nix@nicomem.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jack",
+        "Mostly Void",
+        "Nicolas M\u00e9meint"
+    ],
+    "package_description": "Single Sign-On Multi-Factor portal for web apps",
+    "package_longDescription": "<rendered-html><p>Authelia is an open-source authentication and authorization server\nproviding two-factor authentication and single sign-on (SSO) for your\napplications via a web portal. It acts as a companion for reverse\nproxies like nginx, Traefik, caddy or HAProxy to let them know whether\nrequests should either be allowed or redirected to Authelia\u2019s portal for\nauthentication.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.authelia.com/"
+    ],
+    "package_position": "pkgs/servers/authelia/default.nix:67"
+}

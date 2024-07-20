@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "hound",
+    "package_attr_set": "No package set",
+    "package_pname": "hound",
+    "package_pversion": "0.7.1",
+    "package_platforms": [
+        "wasm64-wasi",
+        "x86_64-linux",
+        "armv7l-linux",
+        "armv7a-darwin",
+        "wasm32-wasi",
+        "microblazeel-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "mips-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "m68k-linux",
+        "riscv64-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "houndd",
+        "hound"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Graham Christensen",
+            "github": "grahamc",
+            "email": "graham@grahamc.com"
+        },
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Graham Christensen",
+        "Sandro J\u00e4ckel"
+    ],
+    "package_description": "Lightning fast code searching made easy",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/hound-search/hound"
+    ],
+    "package_position": "pkgs/development/tools/misc/hound/default.nix:50"
+}

@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "smartdns",
+    "package_attr_set": "No package set",
+    "package_pname": "smartdns",
+    "package_pversion": "46",
+    "package_platforms": [
+        "s390x-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "smartdns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Harry Ying",
+            "github": "LEXUGE",
+            "email": "lexugeyky@outlook.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Harry Ying"
+    ],
+    "package_description": "A local DNS server to obtain the fastest website IP for the best Internet experience",
+    "package_longDescription": "<rendered-html><p>SmartDNS is a local DNS server. SmartDNS accepts DNS query requests\nfrom local clients, obtains DNS query results from multiple upstream DNS\nservers, and returns the fastest access results to clients. Avoiding DNS\npollution and improving network access speed, supports high-performance\nad filtering. Unlike dnsmasq\u2019s all-servers, smartdns returns the fastest\naccess resolution.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/pymumu/smartdns"
+    ],
+    "package_position": "pkgs/tools/networking/smartdns/default.nix:34"
+}

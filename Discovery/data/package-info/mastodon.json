@@ -1,0 +1,121 @@
+{
+    "type": "package",
+    "package_attr_name": "mastodon",
+    "package_attr_set": "No package set",
+    "package_pname": "mastodon",
+    "package_pversion": "4.2.10",
+    "package_platforms": [
+        "aarch64-linux",
+        "i686-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "setup",
+        "brakeman",
+        "stackprof",
+        "webpack",
+        "rdf",
+        "sidekiq",
+        "ruby-prof-check-trace",
+        "rake",
+        "heroku-web",
+        "dotenv",
+        "haml-lint",
+        "webpack-dev-server",
+        "console",
+        "cap",
+        "elastic_ruby_console",
+        "htmldiff",
+        "annotate",
+        "stackprof-gprof2dot.py",
+        "ruby-prof",
+        "thor",
+        "bundle-audit",
+        "jsonld",
+        "uniquejobs",
+        "racc",
+        "jmespath.rb",
+        "yarn",
+        "stackprof-flamegraph.pl",
+        "rubocop",
+        "sidekiqmon",
+        "faker",
+        "tootctl",
+        "i18n-tasks",
+        "premailer",
+        "capify",
+        "redcarpet",
+        "sprockets",
+        "ruby-memory-profiler",
+        "bundler",
+        "rackup",
+        "bundle",
+        "retry",
+        "ruby-parse",
+        "rougify",
+        "tilt",
+        "rotp",
+        "haml",
+        "rails",
+        "bootsnap",
+        "httpclient",
+        "bundler-audit",
+        "ldiff",
+        "launchy",
+        "puma",
+        "ruby-rewrite",
+        "rspec",
+        "nokogiri",
+        "update",
+        "pumactl"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Happy River",
+            "github": "happy-river",
+            "email": "happyriver93@runbox.com"
+        },
+        {
+            "name": "Kerstin Humm",
+            "github": "erictapen",
+            "email": "kerstin@erictapen.name"
+        },
+        {
+            "name": "Yurii Izorkin",
+            "github": "Izorkin",
+            "email": "Izorkin@gmail.com"
+        },
+        {
+            "name": "Geoffrey Huntley",
+            "github": "ghuntley",
+            "email": "ghuntley@ghuntley.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Happy River",
+        "Kerstin Humm",
+        "Yurii Izorkin",
+        "Geoffrey Huntley"
+    ],
+    "package_description": "Self-hosted, globally interconnected microblogging software based on ActivityPub",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://joinmastodon.org"
+    ],
+    "package_position": "pkgs/servers/mastodon/default.nix:149"
+}

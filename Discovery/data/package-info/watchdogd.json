@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "watchdogd",
+    "package_attr_set": "No package set",
+    "package_pname": "watchdogd",
+    "package_pversion": "4.0",
+    "package_platforms": [
+        "riscv32-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "i686-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "watchdogctl",
+        "watchdogd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        }
+    ],
+    "package_license_set": [
+        "ISC License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Adrian Pistol",
+            "github": "vifino",
+            "email": "vifino@tty.sh"
+        }
+    ],
+    "package_maintainers_set": [
+        "Adrian Pistol"
+    ],
+    "package_description": "Advanced system & process supervisor for Linux",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://troglobit.com/watchdogd.html"
+    ],
+    "package_position": "pkgs/by-name/wa/watchdogd/package.nix:25"
+}

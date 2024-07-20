@@ -1,0 +1,106 @@
+{
+    "type": "package",
+    "package_attr_name": "iperf3d",
+    "package_attr_set": "No package set",
+    "package_pname": "iperf3d",
+    "package_pversion": "1.0.0",
+    "package_platforms": [
+        "x86_64-openbsd",
+        "x86_64-windows",
+        "x86_64-netbsd",
+        "i686-darwin",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "wasm32-wasi",
+        "mipsel-netbsd",
+        "armv6l-netbsd",
+        "x86_64-freebsd",
+        "i686-netbsd",
+        "aarch64-darwin",
+        "powerpc-netbsd",
+        "armv5tel-linux",
+        "i686-openbsd",
+        "aarch64-linux",
+        "riscv64-netbsd",
+        "i686-linux",
+        "mips-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "riscv32-linux",
+        "x86_64-redox",
+        "x86_64-darwin",
+        "x86_64-solaris",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "i686-freebsd",
+        "i686-windows",
+        "armv7l-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "armv7l-netbsd",
+        "aarch64-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "iperf3d"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jennifer Graul",
+            "github": "NetaliDev",
+            "email": "me@netali.de"
+        },
+        {
+            "name": "Ember Keske",
+            "github": "n0emis",
+            "email": "nixpkgs@n0emis.network"
+        },
+        {
+            "name": "Fiona Weber",
+            "github": "vidister",
+            "email": "v@vidister.de"
+        },
+        {
+            "name": "Johann Wagner",
+            "github": "johannwagner",
+            "email": "nix@wagner.digital"
+        },
+        {
+            "name": "Yureka",
+            "github": "yu-re-ka",
+            "email": "yuka@yuka.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jennifer Graul",
+        "Ember Keske",
+        "Fiona Weber",
+        "Johann Wagner",
+        "Yureka"
+    ],
+    "package_description": "Iperf3 client and server wrapper for dynamic server ports",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/wobcom/iperf3d"
+    ],
+    "package_position": "pkgs/tools/networking/iperf3d/default.nix:23"
+}

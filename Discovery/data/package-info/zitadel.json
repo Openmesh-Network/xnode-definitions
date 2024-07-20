@@ -1,0 +1,60 @@
+{
+    "type": "package",
+    "package_attr_name": "zitadel",
+    "package_attr_set": "No package set",
+    "package_pname": "zitadel",
+    "package_pversion": "",
+    "package_platforms": [
+        "m68k-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "powerpc64-linux",
+        "armv7a-darwin",
+        "s390-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "mips64-linux",
+        "i686-darwin",
+        "riscv32-linux",
+        "riscv64-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "zitadel"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Identity and access management platform",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://zitadel.com/"
+    ],
+    "package_position": "pkgs/by-name/zi/zitadel/package.nix:145"
+}

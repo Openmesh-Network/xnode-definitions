@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "doh-proxy-rust",
+    "package_attr_set": "No package set",
+    "package_pname": "doh-proxy-rust",
+    "package_pversion": "0.9.11",
+    "package_platforms": [
+        "i686-openbsd",
+        "mips64el-linux",
+        "x86_64-openbsd",
+        "mips-linux",
+        "i686-netbsd",
+        "armv7a-linux",
+        "mipsel-netbsd",
+        "armv6l-netbsd",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "s390x-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "powerpc-netbsd",
+        "aarch64-netbsd",
+        "i686-windows",
+        "mipsel-linux",
+        "riscv32-linux",
+        "m68k-linux",
+        "riscv64-netbsd",
+        "armv5tel-linux",
+        "x86_64-freebsd",
+        "powerpc64le-linux",
+        "armv7l-netbsd",
+        "x86_64-windows",
+        "x86_64-netbsd",
+        "x86_64-redox",
+        "wasm32-wasi",
+        "i686-freebsd",
+        "i686-linux",
+        "riscv64-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "x86_64-darwin",
+        "x86_64-solaris",
+        "x86_64-linux",
+        "i686-darwin",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "doh-proxy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "St\u00e9phan Kochen",
+            "github": "stephank",
+            "email": "nix@stephank.nl"
+        }
+    ],
+    "package_maintainers_set": [
+        "St\u00e9phan Kochen"
+    ],
+    "package_description": "Fast, mature, secure DoH server proxy written in Rust",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jedisct1/doh-server"
+    ],
+    "package_position": "pkgs/servers/dns/doh-proxy-rust/default.nix:21"
+}

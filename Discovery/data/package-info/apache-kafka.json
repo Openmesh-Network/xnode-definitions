@@ -1,0 +1,122 @@
+{
+    "type": "package",
+    "package_attr_name": "apacheKafka_3_6",
+    "package_attr_set": "No package set",
+    "package_pname": "apache-kafka",
+    "package_pversion": "2.13-3.6.2",
+    "package_platforms": [
+        "x86_64-freebsd",
+        "s390-linux",
+        "x86_64-openbsd",
+        "i686-linux",
+        "armv7a-netbsd",
+        "i686-openbsd",
+        "armv6l-netbsd",
+        "m68k-linux",
+        "armv5tel-linux",
+        "powerpc-netbsd",
+        "i686-freebsd",
+        "x86_64-cygwin",
+        "armv6l-linux",
+        "mips-linux",
+        "x86_64-darwin",
+        "x86_64-solaris",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "armv7l-netbsd",
+        "mipsel-netbsd",
+        "i686-darwin",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "x86_64-netbsd",
+        "x86_64-linux",
+        "s390x-linux",
+        "riscv64-netbsd",
+        "loongarch64-linux",
+        "m68k-netbsd",
+        "aarch64-linux",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "aarch64-netbsd",
+        "i686-netbsd",
+        "riscv64-linux",
+        "x86_64-redox",
+        "mips64el-linux",
+        "riscv32-netbsd",
+        "i686-cygwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "kafka-topics.sh",
+        "kafka-consumer-perf-test.sh",
+        "kafka-producer-perf-test.sh",
+        "kafka-log-dirs.sh",
+        "kafka-replica-verification.sh",
+        "kafka-broker-api-versions.sh",
+        "kafka-streams-application-reset.sh",
+        "kafka-configs.sh",
+        "connect-mirror-maker.sh",
+        "kafka-console-consumer.sh",
+        "kafka-e2e-latency.sh",
+        "kafka-acls.sh",
+        "connect-distributed.sh",
+        "kafka-metadata-shell.sh",
+        "kafka-jmx.sh",
+        "kafka-reassign-partitions.sh",
+        "kafka-leader-election.sh",
+        "kafka-get-offsets.sh",
+        "kafka-storage.sh",
+        "kafka-mirror-maker.sh",
+        "kafka-features.sh",
+        "kafka-cluster.sh",
+        "kafka-verifiable-producer.sh",
+        "kafka-dump-log.sh",
+        "connect-standalone.sh",
+        "kafka-server-start.sh",
+        "kafka-run-class.sh",
+        "kafka-verifiable-consumer.sh",
+        "kafka-console-producer.sh",
+        "kafka-delete-records.sh",
+        "kafka-transactions.sh",
+        "kafka-consumer-groups.sh",
+        "kafka-delegation-tokens.sh",
+        "kafka-metadata-quorum.sh",
+        "kafka-server-stop.sh",
+        "connect-plugin-path.sh"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ragnar Dahlen",
+            "github": "ragnard",
+            "email": "r.dahlen@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ragnar Dahlen"
+    ],
+    "package_description": "High-throughput distributed messaging system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://kafka.apache.org"
+    ],
+    "package_position": "pkgs/servers/apache-kafka/default.nix:61"
+}

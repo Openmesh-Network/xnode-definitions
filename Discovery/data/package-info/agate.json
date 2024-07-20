@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "agate",
+    "package_attr_set": "No package set",
+    "package_pname": "agate",
+    "package_pversion": "3.3.7",
+    "package_platforms": [
+        "powerpc-netbsd",
+        "i686-darwin",
+        "mipsel-netbsd",
+        "x86_64-openbsd",
+        "armv5tel-linux",
+        "powerpc64le-linux",
+        "wasm32-wasi",
+        "aarch64-darwin",
+        "x86_64-windows",
+        "x86_64-solaris",
+        "mipsel-linux",
+        "riscv64-netbsd",
+        "i686-netbsd",
+        "armv7l-linux",
+        "s390x-linux",
+        "x86_64-netbsd",
+        "m68k-linux",
+        "i686-windows",
+        "armv6l-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "aarch64-netbsd",
+        "mips64el-linux",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "mips64-linux",
+        "mips-linux",
+        "x86_64-freebsd",
+        "i686-openbsd",
+        "riscv32-linux",
+        "riscv64-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "armv7l-netbsd",
+        "armv6l-netbsd",
+        "x86_64-redox"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "agate"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        },
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0",
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jack",
+            "github": "06kellyjac",
+            "email": "hello+nixpkgs@j-k.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jack"
+    ],
+    "package_description": "Very simple server for the Gemini hypertext protocol",
+    "package_longDescription": "<rendered-html><p>Agate is a server for the Gemini network protocol, built with the\nRust programming language. Agate has very few features, and can only\nserve static files. It uses async I/O, and should be quite efficient\neven when running on low-end hardware and serving many concurrent\nrequests.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mbrubeck/agate"
+    ],
+    "package_position": "pkgs/servers/gemini/agate/default.nix:56"
+}

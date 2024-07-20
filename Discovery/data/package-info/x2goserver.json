@@ -1,0 +1,95 @@
+{
+    "type": "package",
+    "package_attr_name": "x2goserver",
+    "package_attr_set": "No package set",
+    "package_pname": "x2goserver",
+    "package_pversion": "4.1.0.3",
+    "package_platforms": [
+        "i686-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "x2gosuspend-desktopsharing",
+        "x2gopath",
+        "x2goversion",
+        "x2goterminate-desktopsharing",
+        "x2golistmounts",
+        "x2goruncommand",
+        "x2goagent",
+        "x2gosessionlimit",
+        "x2goserver-run-extensions",
+        "x2gogetservers",
+        "x2golistdesktops",
+        "x2gofeature",
+        "x2gosetkeyboard",
+        "x2goresume-desktopsharing",
+        "x2gocleansessions",
+        "x2gosuspend-session",
+        "x2goumount-session",
+        "x2gomountdirs",
+        "x2golistsessions_root",
+        "x2goprint",
+        "x2gofeaturelist",
+        "x2gogetapps",
+        "x2gobasepath",
+        "x2goshowblocks",
+        "x2goterminate-session",
+        "x2golistsessions",
+        "x2gostartagent",
+        "x2gofm",
+        "x2golistshadowsessions",
+        "x2gocmdexitmessage",
+        "x2godbadmin",
+        "x2goresume-session"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0.html",
+            "fullName": "GNU General Public License v2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "averelld",
+            "github": "averelld",
+            "email": "averell+nixos@rxd4.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "averelld"
+    ],
+    "package_description": "Remote desktop application, server component",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://x2go.org/"
+    ],
+    "package_position": "pkgs/applications/networking/remote/x2goserver/default.nix:87"
+}

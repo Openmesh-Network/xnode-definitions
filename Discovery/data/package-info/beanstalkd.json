@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "beanstalkd",
+    "package_attr_set": "No package set",
+    "package_pname": "beanstalkd",
+    "package_pversion": "1.13",
+    "package_platforms": [
+        "i686-cygwin",
+        "s390-linux",
+        "armv6l-none",
+        "i686-none",
+        "i686-linux",
+        "x86_64-linux",
+        "mipsel-netbsd",
+        "arm-none",
+        "powerpc-none",
+        "m68k-netbsd",
+        "microblazeel-linux",
+        "s390x-none",
+        "armv7l-linux",
+        "s390x-linux",
+        "javascript-ghcjs",
+        "powerpc-netbsd",
+        "aarch64-darwin",
+        "mips-linux",
+        "loongarch64-linux",
+        "mips-none",
+        "powerpc64le-linux",
+        "x86_64-genode",
+        "armv7a-linux",
+        "riscv64-linux",
+        "mmix-mmixware",
+        "riscv32-linux",
+        "rx-none",
+        "wasm32-wasi",
+        "i686-openbsd",
+        "or1k-none",
+        "riscv64-none",
+        "x86_64-redox",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "aarch64_be-none",
+        "x86_64-none",
+        "armv7a-darwin",
+        "m68k-linux",
+        "i686-genode",
+        "armv7l-netbsd",
+        "aarch64-linux",
+        "vc4-none",
+        "i686-freebsd",
+        "microblaze-linux",
+        "aarch64-none",
+        "armv6l-netbsd",
+        "riscv32-netbsd",
+        "mipsel-linux",
+        "riscv64-netbsd",
+        "microblaze-none",
+        "powerpcle-none",
+        "x86_64-freebsd",
+        "x86_64-netbsd",
+        "microblazeel-none",
+        "mips64-none",
+        "msp430-none",
+        "mips64el-linux",
+        "s390-none",
+        "aarch64-genode",
+        "mips64-linux",
+        "i686-darwin",
+        "powerpc64-linux",
+        "x86_64-solaris",
+        "x86_64-cygwin",
+        "armv6l-linux",
+        "aarch64-netbsd",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "m68k-none",
+        "x86_64-openbsd",
+        "x86_64-windows",
+        "i686-windows",
+        "riscv32-none",
+        "wasm64-wasi",
+        "avr-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "beanstalkd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "zimbatm",
+            "github": "zimbatm",
+            "email": "zimbatm@zimbatm.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "zimbatm"
+    ],
+    "package_description": "Simple, fast work queue",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://kr.github.io/beanstalkd/"
+    ],
+    "package_position": "pkgs/servers/beanstalkd/default.nix:30"
+}

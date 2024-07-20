@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "ostinato",
+    "package_attr_set": "No package set",
+    "package_pname": "ostinato",
+    "package_pversion": "1.3.0",
+    "package_platforms": [
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "s390x-linux",
+        "aarch64-darwin",
+        "i686-cygwin",
+        "aarch64-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "s390-linux",
+        "m68k-linux",
+        "i686-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "x86_64-cygwin",
+        "mips-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ostinato",
+        "drone"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Wei-Ming Yang",
+            "github": "rick68",
+            "email": "rick68@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Wei-Ming Yang"
+    ],
+    "package_description": "Packet traffic generator and analyzer",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://ostinato.org/"
+    ],
+    "package_position": "pkgs/applications/networking/ostinato/default.nix:68"
+}

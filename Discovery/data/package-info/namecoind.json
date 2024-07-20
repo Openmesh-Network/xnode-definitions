@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "namecoind",
+    "package_attr_set": "No package set",
+    "package_pname": "namecoind",
+    "package_pversion": "25.0",
+    "package_platforms": [
+        "mipsel-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "bench_namecoin",
+        "namecoin-cli",
+        "namecoin-wallet",
+        "namecoind",
+        "namecoin-tx",
+        "test_namecoin",
+        "namecoin-util"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Decentralized open source information registration and transfer system based on the Bitcoin cryptocurrency",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://namecoin.org"
+    ],
+    "package_position": "pkgs/applications/blockchains/namecoin/default.nix:44"
+}

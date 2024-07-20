@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "stargazer",
+    "package_attr_set": "No package set",
+    "package_pname": "stargazer",
+    "package_pversion": "1.2.1",
+    "package_platforms": [
+        "i686-openbsd",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "x86_64-freebsd",
+        "x86_64-netbsd",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "wasm32-wasi",
+        "aarch64-linux",
+        "i686-freebsd",
+        "riscv32-linux",
+        "armv7a-darwin",
+        "i686-linux",
+        "x86_64-windows",
+        "powerpc-netbsd",
+        "mips64-linux",
+        "mips64el-linux",
+        "armv7a-linux",
+        "x86_64-solaris",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "armv7l-netbsd",
+        "mipsel-linux",
+        "mips-linux",
+        "x86_64-redox",
+        "armv6l-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "x86_64-openbsd",
+        "mipsel-netbsd",
+        "i686-netbsd",
+        "armv7l-linux",
+        "aarch64-netbsd",
+        "powerpc64-linux",
+        "i686-windows",
+        "m68k-linux",
+        "i686-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "stargazer"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Kitty Pride",
+            "github": "gaykitty",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "Kitty Pride"
+    ],
+    "package_description": "Fast and easy to use Gemini server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://sr.ht/~zethra/stargazer/"
+    ],
+    "package_position": "pkgs/servers/gemini/stargazer/default.nix:43"
+}

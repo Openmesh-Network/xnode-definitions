@@ -1,0 +1,84 @@
+{
+    "type": "package",
+    "package_attr_name": "nomad",
+    "package_attr_set": "No package set",
+    "package_pname": "nomad",
+    "package_pversion": "1.7.7",
+    "package_platforms": [
+        "m68k-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "s390x-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "x86_64-darwin",
+        "microblaze-linux",
+        "mips-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "i686-darwin",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://mariadb.com/bsl11",
+            "fullName": "Business Source License 1.1"
+        }
+    ],
+    "package_license_set": [
+        "Business Source License 1.1"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Rushmore Mushambi",
+            "github": "rushmorem",
+            "email": "rushmore@webenchanter.com"
+        },
+        {
+            "name": "Pradeep Chhetri",
+            "github": "pradeepchhetri",
+            "email": "pradeep.chhetri89@gmail.com"
+        },
+        {
+            "name": "techknowlogick",
+            "github": "techknowlogick",
+            "email": "techknowlogick@gitea.com"
+        },
+        {
+            "name": "Nico D'Cotta",
+            "github": "cottand",
+            "email": "nico@dcotta.eu"
+        }
+    ],
+    "package_maintainers_set": [
+        "Rushmore Mushambi",
+        "Pradeep Chhetri",
+        "techknowlogick",
+        "Nico D'Cotta"
+    ],
+    "package_description": "Distributed, Highly Available, Datacenter-Aware Scheduler",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.nomadproject.io/"
+    ],
+    "package_position": "pkgs/applications/networking/cluster/nomad/default.nix:41"
+}

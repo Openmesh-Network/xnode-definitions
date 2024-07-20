@@ -1,0 +1,89 @@
+{
+    "type": "package",
+    "package_attr_name": "elasticsearch",
+    "package_attr_set": "No package set",
+    "package_pname": "elasticsearch",
+    "package_pversion": "7.17.16",
+    "package_platforms": [
+        "i686-freebsd",
+        "x86_64-redox",
+        "armv7l-netbsd",
+        "mips64el-linux",
+        "s390-linux",
+        "x86_64-freebsd",
+        "mipsel-netbsd",
+        "x86_64-linux",
+        "riscv32-netbsd",
+        "aarch64-netbsd",
+        "m68k-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "x86_64-cygwin",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "mips64-linux",
+        "aarch64-linux",
+        "powerpc-netbsd",
+        "x86_64-openbsd",
+        "riscv64-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "x86_64-solaris",
+        "i686-cygwin",
+        "i686-darwin",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "i686-openbsd",
+        "armv7l-linux",
+        "x86_64-netbsd",
+        "riscv32-linux",
+        "i686-netbsd",
+        "x86_64-darwin",
+        "m68k-netbsd",
+        "armv7a-darwin",
+        "aarch64-darwin",
+        "armv7a-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Elastic-2.0.html",
+            "fullName": "Elastic License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Elastic License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Albert Peschar",
+            "github": "apeschar",
+            "email": "albert@peschar.net"
+        },
+        {
+            "name": "Bas van Dijk",
+            "github": "basvandijk",
+            "email": "v.dijk.bas@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Albert Peschar",
+        "Bas van Dijk"
+    ],
+    "package_description": "Open Source, Distributed, RESTful Search Engine",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/servers/search/elasticsearch/7.x.nix:74"
+}

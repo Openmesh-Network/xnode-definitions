@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "oauth2-proxy",
+    "package_attr_set": "No package set",
+    "package_pname": "oauth2-proxy",
+    "package_pversion": "7.6.0",
+    "package_platforms": [
+        "armv7l-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "riscv32-linux",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "microblaze-linux",
+        "armv7a-darwin",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "i686-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "wasm64-wasi",
+        "loongarch64-linux",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "wasm32-wasi",
+        "x86_64-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "oauth2-proxy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alexander Bantyev",
+            "github": "balsoft",
+            "email": "balsoft75@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alexander Bantyev"
+    ],
+    "package_description": "Reverse proxy that provides authentication with Google, Github, or other providers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/oauth2-proxy/oauth2-proxy/"
+    ],
+    "package_position": "pkgs/servers/oauth2-proxy/default.nix:20"
+}

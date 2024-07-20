@@ -1,0 +1,85 @@
+{
+    "type": "package",
+    "package_attr_name": "sundtek",
+    "package_attr_set": "No package set",
+    "package_pname": "sundtek",
+    "package_pversion": "2016-01-26",
+    "package_platforms": [
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "armv7a-darwin",
+        "mips-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "powerpc-netbsd",
+        "x86_64-netbsd",
+        "i686-cygwin",
+        "riscv32-linux",
+        "x86_64-solaris",
+        "i686-linux",
+        "powerpc64le-linux",
+        "riscv32-netbsd",
+        "x86_64-openbsd",
+        "i686-openbsd",
+        "m68k-linux",
+        "armv7a-netbsd",
+        "x86_64-freebsd",
+        "mipsel-netbsd",
+        "mipsel-linux",
+        "i686-darwin",
+        "armv7a-linux",
+        "x86_64-linux",
+        "microblaze-linux",
+        "aarch64-darwin",
+        "mips64-linux",
+        "mips64el-linux",
+        "x86_64-cygwin",
+        "aarch64-netbsd",
+        "armv7l-netbsd",
+        "aarch64-linux",
+        "armv6l-linux",
+        "microblazeel-linux",
+        "armv6l-netbsd",
+        "s390-linux",
+        "i686-netbsd",
+        "riscv64-netbsd",
+        "x86_64-redox",
+        "s390x-linux",
+        "m68k-netbsd",
+        "i686-freebsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Simon Vandel Sillesen",
+            "github": "simonvandel",
+            "email": "simon.vandel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Simon Vandel Sillesen"
+    ],
+    "package_description": "Sundtek MediaTV driver",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://support.sundtek.com/index.php/topic,1573.0.html"
+    ],
+    "package_position": "pkgs/misc/drivers/sundtek/default.nix:46"
+}

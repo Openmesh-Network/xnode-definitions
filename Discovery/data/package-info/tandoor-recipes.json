@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "tandoor-recipes",
+    "package_attr_set": "No package set",
+    "package_pname": "python3.11-tandoor-recipes",
+    "package_pversion": "1.5.16",
+    "package_platforms": [
+        "i686-darwin",
+        "i686-freebsd",
+        "armv7a-linux",
+        "mips64-linux",
+        "x86_64-linux",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "i686-windows",
+        "x86_64-freebsd",
+        "aarch64-linux",
+        "x86_64-cygwin",
+        "mips64el-linux",
+        "armv6l-linux",
+        "x86_64-windows",
+        "armv7a-darwin",
+        "s390-linux",
+        "microblazeel-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "i686-cygwin",
+        "mipsel-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "mips-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tandoor-recipes"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bruno BELANYI",
+            "github": "ambroisie",
+            "email": "bruno.nixpkgs@belanyi.fr"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bruno BELANYI"
+    ],
+    "package_description": "Application for managing recipes, planning meals, building shopping lists\nand much much more!\n",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tandoor.dev/"
+    ],
+    "package_position": "pkgs/applications/misc/tandoor-recipes/default.nix:183"
+}

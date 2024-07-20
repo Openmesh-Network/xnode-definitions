@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "onedrive",
+    "package_attr_set": "No package set",
+    "package_pname": "onedrive",
+    "package_pversion": "2.4.25",
+    "package_platforms": [
+        "mips64el-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "s390-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "mips-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "loongarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "onedrive"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "SRGOM",
+            "github": "SRGOM",
+            "email": null
+        },
+        {
+            "name": "Peter Hoeg",
+            "github": "peterhoeg",
+            "email": "peter@hoeg.com"
+        },
+        {
+            "name": "Filippo Berto",
+            "github": "bertof",
+            "email": "berto.f@protonmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "SRGOM",
+        "Peter Hoeg",
+        "Filippo Berto"
+    ],
+    "package_description": "Complete tool to interact with OneDrive on Linux",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/abraunegg/onedrive"
+    ],
+    "package_position": "pkgs/applications/networking/sync/onedrive/default.nix:50"
+}

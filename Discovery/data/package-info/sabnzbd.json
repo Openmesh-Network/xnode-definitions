@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "sabnzbd",
+    "package_attr_set": "No package set",
+    "package_pname": "sabnzbd",
+    "package_pversion": "4.3.2",
+    "package_platforms": [
+        "aarch64-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Johannes Schleifenbaum",
+            "github": "jojosch",
+            "email": "johannes@js-webcoding.de"
+        },
+        {
+            "name": "Adam C. Stephens",
+            "github": "adamcstephens",
+            "email": "happy.plan4249@valkor.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Johannes Schleifenbaum",
+        "Adam C. Stephens"
+    ],
+    "package_description": "Usenet NZB downloader, par2 repairer and auto extracting server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://sabnzbd.org"
+    ],
+    "package_position": "pkgs/by-name/sa/sabnzbd/package.nix:107"
+}

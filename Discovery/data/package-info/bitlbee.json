@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "bitlbee",
+    "package_attr_set": "No package set",
+    "package_pname": "bitlbee",
+    "package_pversion": "3.6",
+    "package_platforms": [
+        "i686-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "bitlbee"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Lassulus",
+            "github": "Lassulus",
+            "email": "lassulus@gmail.com"
+        },
+        {
+            "name": "Pascal Wittmann",
+            "github": "pSub",
+            "email": "mail@pascal-wittmann.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Lassulus",
+        "Pascal Wittmann"
+    ],
+    "package_description": "IRC instant messaging gateway",
+    "package_longDescription": "<rendered-html><p>BitlBee brings IM (instant messaging) to IRC clients. It\u2019s a great\nsolution for people who have an IRC client running all the time and\ndon\u2019t want to run an additional MSN/AIM/whatever client.</p>\n<p>BitlBee currently supports the following IM networks/protocols:\nXMPP/Jabber (including Google Talk), MSN Messenger, Yahoo! Messenger,\nAIM and ICQ.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.bitlbee.org/"
+    ],
+    "package_position": "pkgs/applications/networking/instant-messengers/bitlbee/default.nix:49"
+}

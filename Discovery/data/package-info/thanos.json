@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "thanos",
+    "package_attr_set": "No package set",
+    "package_pname": "thanos",
+    "package_pversion": "0.35.1",
+    "package_platforms": [
+        "wasm32-wasi",
+        "armv6l-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "i686-darwin",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "mipsel-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "wasm64-wasi",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "thanos"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bas van Dijk",
+            "github": "basvandijk",
+            "email": "v.dijk.bas@gmail.com"
+        },
+        {
+            "name": "Anthony Roussel",
+            "github": "anthonyroussel",
+            "email": "anthony@roussel.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bas van Dijk",
+        "Anthony Roussel"
+    ],
+    "package_description": "Highly available Prometheus setup with long term storage capabilities",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/thanos-io/thanos"
+    ],
+    "package_position": "pkgs/servers/monitoring/thanos/default.nix:49"
+}

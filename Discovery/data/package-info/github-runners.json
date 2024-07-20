@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "github-runner",
+    "package_attr_set": "No package set",
+    "package_pname": "github-runner",
+    "package_pversion": "2.317.0",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux",
+        "aarch64-darwin",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "env.sh",
+        "config.sh",
+        "run.sh",
+        "Runner.Worker",
+        "Runner.Listener",
+        "runsvc.sh",
+        "Runner.PluginHost"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Vincent Haupert",
+            "github": "veehaitch",
+            "email": "mail@vincent-haupert.de"
+        },
+        {
+            "name": "Alex Martens",
+            "github": "newAM",
+            "email": "alex@thinglab.org"
+        },
+        {
+            "name": "Kristoffer K. F\u00f8llesdal",
+            "github": "kfollesdal",
+            "email": "kfollesdal@gmail.com"
+        },
+        {
+            "name": "Aaron Andersen",
+            "github": "aanderse",
+            "email": "aaron@fosslib.net"
+        },
+        {
+            "name": "zimbatm",
+            "github": "zimbatm",
+            "email": "zimbatm@zimbatm.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Vincent Haupert",
+        "Alex Martens",
+        "Kristoffer K. F\u00f8llesdal",
+        "Aaron Andersen",
+        "zimbatm"
+    ],
+    "package_description": "Self-hosted runner for GitHub Actions",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/actions/runner"
+    ],
+    "package_position": "pkgs/development/tools/continuous-integration/github-runner/default.nix:318"
+}

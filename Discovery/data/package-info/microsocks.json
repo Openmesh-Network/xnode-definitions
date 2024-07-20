@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "microsocks",
+    "package_attr_set": "No package set",
+    "package_pname": "microsocks",
+    "package_pversion": "1.0.4",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "microsocks"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Casey Link",
+            "github": "Ramblurr",
+            "email": "nix@caseylink.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Casey Link"
+    ],
+    "package_description": "Tiny, portable SOCKS5 server with very moderate resource usage",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/rofl0r/microsocks"
+    ],
+    "package_position": "pkgs/by-name/mi/microsocks/package.nix:27"
+}

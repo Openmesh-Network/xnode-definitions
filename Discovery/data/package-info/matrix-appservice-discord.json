@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "matrix-appservice-discord",
+    "package_attr_set": "No package set",
+    "package_pname": "matrix-appservice-discord",
+    "package_pversion": "4.0.0",
+    "package_platforms": [
+        "armv6l-linux",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "mipsel-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "s390-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "mips64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "matrix-appservice-discord-addRoomsToDirectory",
+        "matrix-appservice-discord-adminme",
+        "matrix-appservice-discord",
+        "matrix-appservice-discord-addbot",
+        "matrix-appservice-discord-ghostfix",
+        "matrix-appservice-discord-userClientTools",
+        "matrix-appservice-discord-chanfix",
+        "matrix-appservice-discord-toolshelper"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pacien Tran-Girard",
+            "github": "pacien",
+            "email": "b4gx3q.nixpkgs@pacien.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pacien Tran-Girard"
+    ],
+    "package_description": "Bridge between Matrix and Discord",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Half-Shot/matrix-appservice-discord"
+    ],
+    "package_position": "pkgs/servers/matrix-appservice-discord/default.nix:101"
+}

@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "bazarr",
+    "package_attr_set": "No package set",
+    "package_pname": "bazarr",
+    "package_pversion": "1.4.3",
+    "package_platforms": [
+        "x86_64-cygwin",
+        "armv7a-netbsd",
+        "x86_64-openbsd",
+        "microblazeel-none",
+        "wasm64-wasi",
+        "mips-linux",
+        "aarch64-linux",
+        "x86_64-genode",
+        "riscv64-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "i686-netbsd",
+        "s390x-linux",
+        "rx-none",
+        "mips64-none",
+        "mipsel-netbsd",
+        "m68k-linux",
+        "aarch64-netbsd",
+        "aarch64_be-none",
+        "i686-freebsd",
+        "powerpc-none",
+        "x86_64-windows",
+        "riscv32-netbsd",
+        "or1k-none",
+        "wasm32-wasi",
+        "riscv32-none",
+        "i686-cygwin",
+        "mips-none",
+        "armv5tel-linux",
+        "x86_64-redox",
+        "armv7l-netbsd",
+        "x86_64-none",
+        "x86_64-freebsd",
+        "microblazeel-linux",
+        "x86_64-solaris",
+        "powerpc64-linux",
+        "armv6l-none",
+        "mips64el-linux",
+        "aarch64-none",
+        "i686-windows",
+        "x86_64-darwin",
+        "armv7l-linux",
+        "powerpcle-none",
+        "mmix-mmixware",
+        "i686-genode",
+        "m68k-none",
+        "s390-linux",
+        "riscv32-linux",
+        "armv7a-darwin",
+        "armv6l-linux",
+        "avr-none",
+        "javascript-ghcjs",
+        "powerpc-netbsd",
+        "i686-linux",
+        "i686-none",
+        "microblaze-none",
+        "riscv64-none",
+        "riscv64-netbsd",
+        "s390-none",
+        "s390x-none",
+        "vc4-none",
+        "i686-openbsd",
+        "i686-darwin",
+        "x86_64-netbsd",
+        "arm-none",
+        "mips64-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "x86_64-linux",
+        "aarch64-darwin",
+        "armv6l-netbsd",
+        "m68k-netbsd",
+        "powerpc64le-linux",
+        "aarch64-genode",
+        "msp430-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "bazarr"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "David Terry",
+            "github": "d-xo",
+            "email": "hi@d-xo.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "David Terry"
+    ],
+    "package_description": "Subtitle manager for Sonarr and Radarr",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.bazarr.media/"
+    ],
+    "package_position": "pkgs/servers/bazarr/default.nix:56"
+}

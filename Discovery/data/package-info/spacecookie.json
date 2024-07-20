@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "spacecookie",
+    "package_attr_set": "No package set",
+    "package_pname": "spacecookie",
+    "package_pversion": "1.0.0.2",
+    "package_platforms": [
+        "microblaze-none",
+        "javascript-ghcjs",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "wasm64-wasi",
+        "i686-windows",
+        "mips-linux",
+        "x86_64-freebsd",
+        "s390-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "microblazeel-none",
+        "or1k-none",
+        "microblaze-linux",
+        "i686-cygwin",
+        "mmix-mmixware",
+        "powerpc-none",
+        "armv7a-linux",
+        "x86_64-cygwin",
+        "aarch64-genode",
+        "armv7l-linux",
+        "riscv64-none",
+        "s390-none",
+        "x86_64-genode",
+        "powerpc64le-linux",
+        "x86_64-solaris",
+        "arm-none",
+        "riscv32-linux",
+        "riscv32-none",
+        "armv7a-netbsd",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "i686-freebsd",
+        "i686-genode",
+        "riscv64-netbsd",
+        "x86_64-windows",
+        "mipsel-netbsd",
+        "aarch64-netbsd",
+        "s390x-linux",
+        "x86_64-openbsd",
+        "armv7l-netbsd",
+        "m68k-linux",
+        "riscv64-linux",
+        "aarch64-none",
+        "wasm32-wasi",
+        "mipsel-linux",
+        "m68k-none",
+        "i686-linux",
+        "armv6l-none",
+        "mips-none",
+        "x86_64-netbsd",
+        "x86_64-none",
+        "x86_64-redox",
+        "aarch64-darwin",
+        "mips64-linux",
+        "aarch64-linux",
+        "vc4-none",
+        "i686-openbsd",
+        "riscv32-netbsd",
+        "powerpcle-none",
+        "rx-none",
+        "armv6l-linux",
+        "x86_64-linux",
+        "mips64-none",
+        "msp430-none",
+        "x86_64-darwin",
+        "i686-darwin",
+        "i686-none",
+        "armv7a-darwin",
+        "armv6l-netbsd",
+        "s390x-none",
+        "avr-none",
+        "powerpc-netbsd",
+        "aarch64_be-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "spacecookie"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Lukas Epple",
+            "github": "sternenseemann",
+            "email": "sternenseemann@systemli.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Lukas Epple"
+    ],
+    "package_description": "Gopher server library and daemon",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://hackage.haskell.org/package/spacecookie"
+    ],
+    "package_position": "pkgs/development/haskell-modules/hackage-packages.nix:285411"
+}

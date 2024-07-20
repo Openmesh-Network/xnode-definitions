@@ -1,0 +1,45 @@
+{
+    "type": "package",
+    "package_attr_name": "hypridle",
+    "package_attr_set": "No package set",
+    "package_pname": "hypridle",
+    "package_pversion": "0.1.2",
+    "package_platforms": [
+        "aarch64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "hypridle"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "IogaMaster",
+            "github": "iogamaster",
+            "email": "iogamastercode+nixpkgs@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "IogaMaster"
+    ],
+    "package_description": "Hyprland's idle daemon",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/hyprwm/hypridle"
+    ],
+    "package_position": "pkgs/by-name/hy/hypridle/package.nix:38"
+}

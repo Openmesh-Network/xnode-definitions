@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "libreswan",
+    "package_attr_set": "No package set",
+    "package_pname": "libreswan",
+    "package_pversion": "5.0",
+    "package_platforms": [
+        "mips-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "i686-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "x86_64-freebsd",
+        "i686-freebsd",
+        "microblaze-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ipsec"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later",
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alex Franchuk",
+            "github": "afranchuk",
+            "email": "alex.franchuk@gmail.com"
+        },
+        {
+            "name": "Michele Guerini Rocco",
+            "github": "rnhmjoj",
+            "email": "rnhmjoj@inventati.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alex Franchuk",
+        "Michele Guerini Rocco"
+    ],
+    "package_description": "Free software implementation of the VPN protocol based on IPSec and the Internet Key Exchange",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://libreswan.org"
+    ],
+    "package_position": "pkgs/tools/networking/libreswan/default.nix:111"
+}

@@ -1,0 +1,49 @@
+{
+    "type": "package",
+    "package_attr_name": "suwayomi-server",
+    "package_attr_set": "No package set",
+    "package_pname": "suwayomi-server",
+    "package_pversion": "1.1.1",
+    "package_platforms": [
+        "armv6l-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tachidesk-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Balthazar Patiachvili",
+            "github": "RatCornu",
+            "email": "ratcornu@skaven.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Balthazar Patiachvili"
+    ],
+    "package_description": "Free and open source manga reader server that runs extensions built for Tachiyomi",
+    "package_longDescription": "<rendered-html><p>Suwayomi is an independent Tachiyomi compatible software and is not a\nFork of Tachiyomi.</p>\n<p>Suwayomi-Server is as multi-platform as you can get. Any platform\nthat runs java and/or has a modern browser can run it. This includes\nWindows, Linux, macOS, chrome OS, etc.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Suwayomi/Suwayomi-Server"
+    ],
+    "package_position": "pkgs/by-name/su/suwayomi-server/package.nix:44"
+}

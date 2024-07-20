@@ -1,0 +1,46 @@
+{
+    "type": "package",
+    "package_attr_name": "powerdns-admin",
+    "package_attr_set": "No package set",
+    "package_pname": "powerdns-admin",
+    "package_pversion": "0.4.2",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Sebastian Neubauer",
+            "github": "Flakebi",
+            "email": "flakebi@t-online.de"
+        },
+        {
+            "name": "Zhaofeng Li",
+            "github": "zhaofengli",
+            "email": "hello@zhaofeng.li"
+        }
+    ],
+    "package_maintainers_set": [
+        "Sebastian Neubauer",
+        "Zhaofeng Li"
+    ],
+    "package_description": "PowerDNS web interface with advanced features",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/PowerDNS-Admin/PowerDNS-Admin"
+    ],
+    "package_position": "pkgs/applications/networking/powerdns-admin/default.nix:119"
+}

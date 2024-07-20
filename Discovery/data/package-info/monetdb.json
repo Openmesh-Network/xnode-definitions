@@ -1,0 +1,101 @@
+{
+    "type": "package",
+    "package_attr_name": "monetdb",
+    "package_attr_set": "No package set",
+    "package_pname": "monetdb",
+    "package_pversion": "11.49.11",
+    "package_platforms": [
+        "aarch64-linux",
+        "microblaze-linux",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "x86_64-openbsd",
+        "armv6l-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "mips-linux",
+        "riscv64-netbsd",
+        "mips64el-linux",
+        "m68k-linux",
+        "i686-freebsd",
+        "i686-openbsd",
+        "aarch64-netbsd",
+        "armv6l-netbsd",
+        "riscv64-linux",
+        "armv7a-darwin",
+        "armv7l-netbsd",
+        "loongarch64-linux",
+        "x86_64-netbsd",
+        "i686-cygwin",
+        "x86_64-freebsd",
+        "s390x-linux",
+        "armv7a-linux",
+        "armv7a-netbsd",
+        "powerpc-netbsd",
+        "armv7l-linux",
+        "x86_64-solaris",
+        "i686-darwin",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "riscv32-netbsd",
+        "x86_64-cygwin",
+        "x86_64-redox",
+        "mips64-linux",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "smack00",
+        "sample1",
+        "streamcat",
+        "bincopydata",
+        "mserver5",
+        "sample0",
+        "mclient",
+        "shutdowntest",
+        "testcondvar",
+        "smack01",
+        "monetdbd",
+        "monetdb",
+        "msqldump",
+        "sample4",
+        "murltest"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Florian Engel",
+            "github": "StillerHarpo",
+            "email": "engelflorian@posteo.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Florian Engel"
+    ],
+    "package_description": "Open source database system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.monetdb.org/"
+    ],
+    "package_position": "pkgs/servers/sql/monetdb/default.nix:34"
+}

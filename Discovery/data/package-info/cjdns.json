@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "cjdns",
+    "package_attr_set": "No package set",
+    "package_pname": "cjdns",
+    "package_pversion": "21.4",
+    "package_platforms": [
+        "mips64-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "privatetopublic",
+        "publictoip6",
+        "sybilsim",
+        "randombytes",
+        "mkpasswd",
+        "testcjdroute",
+        "makekeys",
+        "cjdroute"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Emery Hemingway",
+            "github": "ehmry",
+            "email": "ehmry@posteo.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Emery Hemingway"
+    ],
+    "package_description": "Encrypted networking for regular people",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/cjdelisle/cjdns"
+    ],
+    "package_position": "pkgs/tools/networking/cjdns/default.nix:69"
+}

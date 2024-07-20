@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "netclient",
+    "package_attr_set": "No package set",
+    "package_pname": "netclient",
+    "package_pversion": "0.24.2",
+    "package_platforms": [
+        "powerpc64-linux",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "s390-linux",
+        "wasm64-wasi",
+        "mips-linux",
+        "wasm32-wasi",
+        "i686-darwin",
+        "i686-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "x86_64-darwin",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "netclient"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Vladim\u00edr Zahradn\u00edk",
+            "github": "wexder",
+            "email": "wexder19@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Vladim\u00edr Zahradn\u00edk"
+    ],
+    "package_description": "Automated WireGuard\u00ae Management Client",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://netmaker.io"
+    ],
+    "package_position": "pkgs/by-name/ne/netclient/package.nix:28"
+}

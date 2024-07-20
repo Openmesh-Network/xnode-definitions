@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "antennas",
+    "package_attr_set": "No package set",
+    "package_pname": "antennas",
+    "package_pversion": "4.2.0",
+    "package_platforms": [
+        "microblaze-linux",
+        "riscv64-linux",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "x86_64-darwin",
+        "mips64-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "antennas"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pascal Bach",
+            "github": "bachp",
+            "email": "pascal.bach@nextrem.ch"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pascal Bach"
+    ],
+    "package_description": "HDHomeRun emulator for Plex DVR to connect to Tvheadend",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jfarseneau/antennas"
+    ],
+    "package_position": "pkgs/servers/antennas/default.nix:32"
+}

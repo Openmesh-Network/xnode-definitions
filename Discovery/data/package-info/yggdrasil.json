@@ -1,0 +1,84 @@
+{
+    "type": "package",
+    "package_attr_name": "yggdrasil",
+    "package_attr_set": "No package set",
+    "package_pname": "yggdrasil",
+    "package_pversion": "0.5.6",
+    "package_platforms": [
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "wasm32-wasi",
+        "armv6l-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "s390x-linux",
+        "mips-linux",
+        "wasm64-wasi",
+        "aarch64-linux",
+        "i686-darwin",
+        "m68k-linux",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "yggdrasilctl",
+        "yggdrasil",
+        "genkeys"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-3.0.html",
+            "fullName": "GNU Lesser General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Emery Hemingway",
+            "github": "ehmry",
+            "email": "ehmry@posteo.net"
+        },
+        {
+            "name": "Gemini Lasswell",
+            "github": "gazally",
+            "email": "gazally@runbox.com"
+        },
+        {
+            "name": "Lassulus",
+            "github": "Lassulus",
+            "email": "lassulus@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Emery Hemingway",
+        "Gemini Lasswell",
+        "Lassulus"
+    ],
+    "package_description": "An experiment in scalable routing as an encrypted IPv6 overlay network",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://yggdrasil-network.github.io/"
+    ],
+    "package_position": "pkgs/by-name/yg/yggdrasil/package.nix:29"
+}

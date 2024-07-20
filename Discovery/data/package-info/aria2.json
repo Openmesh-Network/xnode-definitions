@@ -1,0 +1,103 @@
+{
+    "type": "package",
+    "package_attr_name": "aria2",
+    "package_attr_set": "No package set",
+    "package_pname": "aria2",
+    "package_pversion": "1.37.0",
+    "package_platforms": [
+        "microblaze-linux",
+        "armv6l-netbsd",
+        "armv7a-linux",
+        "armv7a-netbsd",
+        "s390x-linux",
+        "x86_64-solaris",
+        "mipsel-netbsd",
+        "m68k-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "i686-cygwin",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "mips64-linux",
+        "powerpc-netbsd",
+        "armv7l-netbsd",
+        "riscv32-netbsd",
+        "i686-openbsd",
+        "m68k-netbsd",
+        "x86_64-openbsd",
+        "x86_64-redox",
+        "i686-freebsd",
+        "i686-darwin",
+        "x86_64-freebsd",
+        "mipsel-linux",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "i686-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "armv7a-darwin",
+        "riscv64-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "aarch64-netbsd",
+        "i686-netbsd",
+        "riscv64-netbsd",
+        "x86_64-cygwin",
+        "x86_64-netbsd",
+        "riscv32-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "doc",
+        "dev",
+        "man",
+        "out",
+        "bin"
+    ],
+    "package_default_output": "bin",
+    "package_programs": [
+        "aria2c"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Oleksii Filonenko",
+            "github": "Br1ght0ne",
+            "email": "brightone@protonmail.com"
+        },
+        {
+            "name": "Koral",
+            "github": "k0ral",
+            "email": "koral@mailoo.org"
+        },
+        {
+            "name": "Tim H\u00e4ring",
+            "github": "timhae",
+            "email": "tim.haering@posteo.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Oleksii Filonenko",
+        "Koral",
+        "Tim H\u00e4ring"
+    ],
+    "package_description": "Lightweight, multi-protocol, multi-source, command-line download utility",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://aria2.github.io"
+    ],
+    "package_position": "pkgs/tools/networking/aria2/default.nix:47"
+}

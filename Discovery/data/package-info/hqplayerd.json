@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "hqplayerd",
+    "package_attr_set": "No package set",
+    "package_pname": "hqplayerd",
+    "package_pversion": "5.5.0-13",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bernardo Meurer",
+            "github": "lovesegfault",
+            "email": "meurerbernardo@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bernardo Meurer"
+    ],
+    "package_description": "High-end upsampling multichannel software embedded HD-audio player",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.signalyst.com/custom.html"
+    ],
+    "package_position": "pkgs/servers/hqplayerd/default.nix:111"
+}

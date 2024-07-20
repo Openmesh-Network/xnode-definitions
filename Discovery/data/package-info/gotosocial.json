@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "gotosocial",
+    "package_attr_set": "No package set",
+    "package_pname": "gotosocial",
+    "package_pversion": "0.16.0",
+    "package_platforms": [
+        "loongarch64-linux",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "i686-darwin",
+        "armv7a-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "i686-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "aarch64-linux",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "armv7a-darwin",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "s390x-linux",
+        "s390-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gen",
+        "gotosocial"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Blake Smith",
+            "github": "blakesmith",
+            "email": "blakesmith0@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Blake Smith"
+    ],
+    "package_description": "Fast, fun, ActivityPub server, powered by Go",
+    "package_longDescription": "<rendered-html><p>ActivityPub social network server, written in Golang. You can keep in\ntouch with your friends, post, read, and share images and articles. All\nwithout being tracked or advertised to! A light-weight alternative to\nMastodon and Pleroma, with support for clients!</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gotosocial.org"
+    ],
+    "package_position": "pkgs/servers/gotosocial/default.nix:62"
+}

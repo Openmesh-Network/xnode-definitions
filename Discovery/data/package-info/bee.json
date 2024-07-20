@@ -1,0 +1,63 @@
+{
+    "type": "package",
+    "package_attr_name": "bee",
+    "package_attr_set": "No package set",
+    "package_pname": "bee",
+    "package_pversion": "2.1.0",
+    "package_platforms": [
+        "microblazeel-linux",
+        "wasm32-wasi",
+        "mips-linux",
+        "armv7a-darwin",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "mips64-linux",
+        "armv5tel-linux",
+        "i686-darwin",
+        "armv6l-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "wasm64-wasi",
+        "loongarch64-linux",
+        "x86_64-darwin",
+        "i686-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "bee-get-addr",
+        "bee"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Ethereum Swarm Bee",
+    "package_longDescription": "<rendered-html><p>A decentralised storage and communication system for a sovereign\ndigital society.</p>\n<p>Swarm is a system of peer-to-peer networked nodes that create a\ndecentralised storage and communication service. The system is\neconomically self-sustaining due to a built-in incentive system enforced\nthrough smart contracts on the Ethereum blockchain.</p>\n<p>Bee is a Swarm node implementation, written in Go.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ethersphere/bee"
+    ],
+    "package_position": "pkgs/by-name/be/bee/package.nix:43"
+}

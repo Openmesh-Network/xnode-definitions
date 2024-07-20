@@ -1,0 +1,51 @@
+{
+    "type": "package",
+    "package_attr_name": "bloop",
+    "package_attr_set": "No package set",
+    "package_pname": "bloop",
+    "package_pversion": "1.6.0",
+    "package_platforms": [
+        "x86_64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "bloop"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jakub Koz\u0142owski",
+            "github": "kubukoz",
+            "email": "kubukoz@gmail.com"
+        },
+        {
+            "name": "Kevin Rauscher",
+            "github": "Tomahna",
+            "email": "kevin.rauscher@tomahna.fr"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jakub Koz\u0142owski",
+        "Kevin Rauscher"
+    ],
+    "package_description": "Scala build server and command-line tool to make the compile and test developer workflows fast and productive in a build-tool-agnostic way",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://scalacenter.github.io/bloop/"
+    ],
+    "package_position": "pkgs/development/tools/build-managers/bloop/default.nix:68"
+}

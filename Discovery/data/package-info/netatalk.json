@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "netatalk",
+    "package_attr_set": "No package set",
+    "package_pname": "netatalk",
+    "package_pversion": "3.1.18",
+    "package_platforms": [
+        "s390x-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "m68k-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cnid_metad",
+        "afpldaptest",
+        "ad",
+        "dbd",
+        "apple_dump",
+        "afpstats",
+        "macusers",
+        "netatalk-config",
+        "cnid_dbd",
+        "asip-status",
+        "afppasswd",
+        "netatalk",
+        "afpd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jack Cummings",
+            "github": "jcumming",
+            "email": "jack@mudshark.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jack Cummings"
+    ],
+    "package_description": "Apple Filing Protocol Server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://netatalk.sourceforge.net/"
+    ],
+    "package_position": "pkgs/tools/filesystems/netatalk/default.nix:67"
+}

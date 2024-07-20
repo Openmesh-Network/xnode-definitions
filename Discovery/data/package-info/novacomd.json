@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "webos.novacomd",
+    "package_attr_set": "webos",
+    "package_pname": "novacomd",
+    "package_pversion": "127",
+    "package_platforms": [
+        "s390-linux",
+        "armv7l-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "s390x-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "powerpc64le-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "novacomd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Will Dietz",
+            "github": "dtzWill",
+            "email": "w@wdtz.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Will Dietz"
+    ],
+    "package_description": "Daemon for communicating with WebOS devices",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/development/mobile/webos/novacomd.nix:40"
+}

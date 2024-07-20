@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "amule",
+    "package_attr_set": "No package set",
+    "package_pname": "amule",
+    "package_pversion": "2.3.3",
+    "package_platforms": [
+        "x86_64-netbsd",
+        "loongarch64-linux",
+        "riscv64-netbsd",
+        "armv7l-linux",
+        "riscv32-linux",
+        "mipsel-netbsd",
+        "powerpc-netbsd",
+        "x86_64-darwin",
+        "x86_64-linux",
+        "armv7l-netbsd",
+        "armv5tel-linux",
+        "x86_64-redox",
+        "armv7a-darwin",
+        "i686-netbsd",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "armv7a-linux",
+        "s390x-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "aarch64-netbsd",
+        "i686-cygwin",
+        "aarch64-darwin",
+        "x86_64-solaris",
+        "i686-freebsd",
+        "x86_64-freebsd",
+        "microblaze-linux",
+        "m68k-linux",
+        "armv7a-netbsd",
+        "armv6l-netbsd",
+        "i686-linux",
+        "s390-linux",
+        "m68k-netbsd",
+        "aarch64-linux",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "i686-openbsd",
+        "microblazeel-linux",
+        "riscv32-netbsd",
+        "x86_64-openbsd",
+        "mips-linux",
+        "x86_64-cygwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ed2k",
+        "amule"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Peer-to-peer client for the eD2K and Kademlia networks",
+    "package_longDescription": "<rendered-html><p>aMule is an eMule-like client for the eD2k and Kademlia networks,\nsupporting multiple platforms. Currently aMule (officially) supports a\nwide variety of platforms and operating systems, being compatible with\nmore than 60 different hardware+OS configurations. aMule is entirely\nfree, its sourcecode released under the GPL just like eMule, and\nincludes no adware or spyware as is often found in proprietary P2P\napplications.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/amule-project/amule"
+    ],
+    "package_position": "pkgs/tools/networking/p2p/amule/default.nix:84"
+}

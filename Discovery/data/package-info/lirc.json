@@ -1,0 +1,92 @@
+{
+    "type": "package",
+    "package_attr_name": "lirc",
+    "package_attr_set": "No package set",
+    "package_pname": "lirc",
+    "package_pversion": "0.10.2",
+    "package_platforms": [
+        "armv5tel-linux",
+        "m68k-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "s390-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "mips64el-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "irtext2udp",
+        "irsimsend",
+        "lircd-uinput",
+        "lirc-postinstall",
+        "irtestcase",
+        "lirc-setup",
+        "lirc-config-tool",
+        "lircmd",
+        "lirc-data2table",
+        "irw",
+        "irpty",
+        "lirc-lsremotes",
+        "mode2",
+        "lircd-setup",
+        "irexec",
+        "lirc-init-db",
+        "irsend",
+        "irxevent",
+        "irsimreceive",
+        "ircat",
+        "lirc-lsplugins",
+        "irdb-get",
+        "pronto2lirc",
+        "lircd",
+        "lircrcd",
+        "irrecord",
+        "xmode2",
+        "lirc-make-devinput",
+        "irpipe"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0.html",
+            "fullName": "GNU General Public License v2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pascal Wittmann",
+            "github": "pSub",
+            "email": "mail@pascal-wittmann.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pascal Wittmann"
+    ],
+    "package_description": "Allows to receive and send infrared signals",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.lirc.org/"
+    ],
+    "package_position": "pkgs/development/libraries/lirc/default.nix:91"
+}

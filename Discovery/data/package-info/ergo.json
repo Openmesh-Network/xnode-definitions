@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "ergo",
+    "package_attr_set": "No package set",
+    "package_pname": "ergo",
+    "package_pversion": "5.0.21",
+    "package_platforms": [
+        "mips-none",
+        "armv5tel-linux",
+        "i686-cygwin",
+        "armv7l-linux",
+        "i686-genode",
+        "x86_64-netbsd",
+        "i686-openbsd",
+        "avr-none",
+        "wasm64-wasi",
+        "powerpc-netbsd",
+        "i686-darwin",
+        "armv7a-darwin",
+        "aarch64-linux",
+        "riscv64-netbsd",
+        "x86_64-openbsd",
+        "s390-linux",
+        "armv7l-netbsd",
+        "arm-none",
+        "powerpc-none",
+        "aarch64-darwin",
+        "vc4-none",
+        "x86_64-genode",
+        "x86_64-cygwin",
+        "x86_64-windows",
+        "mmix-mmixware",
+        "i686-windows",
+        "armv7a-netbsd",
+        "mips64-none",
+        "armv7a-linux",
+        "riscv32-netbsd",
+        "mipsel-netbsd",
+        "s390x-none",
+        "armv6l-netbsd",
+        "aarch64_be-none",
+        "aarch64-netbsd",
+        "aarch64-genode",
+        "aarch64-none",
+        "i686-linux",
+        "x86_64-freebsd",
+        "armv6l-linux",
+        "microblaze-linux",
+        "or1k-none",
+        "s390-none",
+        "mips-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "i686-netbsd",
+        "i686-none",
+        "x86_64-redox",
+        "microblaze-none",
+        "mipsel-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "javascript-ghcjs",
+        "x86_64-solaris",
+        "armv6l-none",
+        "microblazeel-none",
+        "msp430-none",
+        "wasm32-wasi",
+        "powerpcle-none",
+        "microblazeel-linux",
+        "riscv32-none",
+        "m68k-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "m68k-none",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "x86_64-none",
+        "rx-none",
+        "riscv64-none",
+        "i686-freebsd",
+        "mips64el-linux",
+        "m68k-netbsd",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ergo"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/CC0-1.0.html",
+            "fullName": "Creative Commons Zero v1.0 Universal"
+        }
+    ],
+    "package_license_set": [
+        "Creative Commons Zero v1.0 Universal"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Marek Mahut",
+            "github": "mmahut",
+            "email": "marek.mahut@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Marek Mahut"
+    ],
+    "package_description": "Open protocol that implements modern scientific ideas in the blockchain area",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://ergoplatform.org/en/"
+    ],
+    "package_position": "pkgs/applications/blockchains/ergo/default.nix:21"
+}

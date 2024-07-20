@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "honk",
+    "package_attr_set": "No package set",
+    "package_pname": "honk",
+    "package_pversion": "1.3.1",
+    "package_platforms": [
+        "i686-linux",
+        "armv7a-darwin",
+        "mips64-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "wasm64-wasi",
+        "aarch64-linux",
+        "s390-linux",
+        "wasm32-wasi",
+        "i686-darwin",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "mipsel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "armv7a-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "honk"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/ISC.html",
+            "fullName": "ISC License"
+        }
+    ],
+    "package_license_set": [
+        "ISC License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ng\u00f4 Ng\u1ecdc \u0110\u1ee9c Huy",
+            "github": "Huy-Ngo",
+            "email": "huyngo@disroot.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ng\u00f4 Ng\u1ecdc \u0110\u1ee9c Huy"
+    ],
+    "package_description": "ActivityPub server with minimal setup and support costs",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://humungus.tedunangst.com/r/honk"
+    ],
+    "package_position": "pkgs/servers/honk/default.nix:59"
+}

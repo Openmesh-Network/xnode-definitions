@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "cockpit",
+    "package_attr_set": "No package set",
+    "package_pname": "cockpit",
+    "package_pversion": "318",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cockpit-bridge"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1.html",
+            "fullName": "GNU Lesser General Public License v2.1"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v2.1"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Lucas Eduardo Wendt",
+            "github": "lucasew",
+            "email": "lucas59356@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Lucas Eduardo Wendt"
+    ],
+    "package_description": "Web-based graphical interface for servers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://cockpit-project.org/"
+    ],
+    "package_position": "pkgs/by-name/co/cockpit/package.nix:219"
+}

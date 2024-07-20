@@ -1,0 +1,78 @@
+{
+    "type": "package",
+    "package_attr_name": "eternal-terminal",
+    "package_attr_set": "No package set",
+    "package_pname": "eternal-terminal",
+    "package_pversion": "6.2.9",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "s390x-linux",
+        "armv7a-darwin",
+        "m68k-linux",
+        "i686-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "etterminal",
+        "htmd",
+        "et",
+        "etserver",
+        "htm"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Tuomas Tynkkynen",
+            "github": "dezgeg",
+            "email": "tuomas.tynkkynen@iki.fi"
+        },
+        {
+            "name": "James Short",
+            "github": "jshort",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "Tuomas Tynkkynen",
+        "James Short"
+    ],
+    "package_description": "Remote shell that automatically reconnects without interrupting the session",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://eternalterminal.dev/"
+    ],
+    "package_position": "pkgs/tools/networking/eternal-terminal/default.nix:54"
+}

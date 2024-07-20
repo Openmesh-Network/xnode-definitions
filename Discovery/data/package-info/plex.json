@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "plex",
+    "package_attr_set": "No package set",
+    "package_pname": "plexmediaserver",
+    "package_pversion": "",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Badi' Abdul-Wahid",
+            "github": "badmutex",
+            "email": "github@badi.sh"
+        },
+        {
+            "name": "Andrew Okin",
+            "github": "Forkk",
+            "email": "forkk@forkk.net"
+        },
+        {
+            "name": "Daiderd Jordan",
+            "github": "LnL7",
+            "email": "daiderd@gmail.com"
+        },
+        {
+            "name": "Peter Jones",
+            "github": "pjones",
+            "email": "pjones@devalot.com"
+        },
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        },
+        {
+            "name": "Niklas Steffen",
+            "github": "MayNiklas",
+            "email": "info@niklas-steffen.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Badi' Abdul-Wahid",
+        "Andrew Okin",
+        "Daiderd Jordan",
+        "Peter Jones",
+        "Austin Seipp",
+        "Niklas Steffen"
+    ],
+    "package_description": "Media library streaming server",
+    "package_longDescription": "<rendered-html><p>Plex is a media server which allows you to store your media and play\nit back across many different devices.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://plex.tv/"
+    ],
+    "package_position": "pkgs/servers/plex/raw.nix:90"
+}

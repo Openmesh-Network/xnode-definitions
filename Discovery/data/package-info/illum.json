@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "illum",
+    "package_attr_set": "No package set",
+    "package_pname": "illum",
+    "package_pversion": "0.5",
+    "package_platforms": [
+        "m68k-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "s390-linux",
+        "riscv64-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "illum-d"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Hannu Hartikainen",
+            "github": "dancek",
+            "email": "hannu.hartikainen@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Hannu Hartikainen"
+    ],
+    "package_description": "Daemon that wires button presses to screen backlight level",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jmesmon/illum"
+    ],
+    "package_position": "pkgs/tools/system/illum/default.nix:37"
+}

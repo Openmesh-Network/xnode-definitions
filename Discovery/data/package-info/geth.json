@@ -1,0 +1,80 @@
+{
+    "type": "package",
+    "package_attr_name": "op-geth",
+    "package_attr_set": "No package set",
+    "package_pname": "op-geth",
+    "package_pversion": "1.101305.3",
+    "package_platforms": [
+        "armv7a-linux",
+        "i686-darwin",
+        "microblaze-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "wasm32-wasi",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "mips-linux",
+        "i686-linux",
+        "aarch64-darwin",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "wasm64-wasi",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "armv7l-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "bootnode",
+        "evm",
+        "geth",
+        "abidump",
+        "clef",
+        "devp2p",
+        "rlpdump",
+        "abigen",
+        "faucet",
+        "p2psim",
+        "ethkey"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Raphael Megzari",
+            "github": "happysalada",
+            "email": "raphael@megzari.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Raphael Megzari"
+    ],
+    "package_description": "",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ethereum-optimism/op-geth"
+    ],
+    "package_position": "pkgs/applications/blockchains/optimism/geth.nix:45"
+}

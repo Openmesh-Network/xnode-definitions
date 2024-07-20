@@ -1,0 +1,43 @@
+{
+    "type": "package",
+    "package_attr_name": "roon-bridge",
+    "package_attr_set": "No package set",
+    "package_pname": "roon-bridge",
+    "package_pversion": "1.8-1125",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bernardo Meurer",
+            "github": "lovesegfault",
+            "email": "meurerbernardo@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bernardo Meurer"
+    ],
+    "package_description": "Music player for music lovers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://roonlabs.com"
+    ],
+    "package_position": "pkgs/servers/roon-bridge/default.nix:74"
+}

@@ -1,0 +1,91 @@
+{
+    "type": "package",
+    "package_attr_name": "frr",
+    "package_attr_set": "No package set",
+    "package_pname": "frr",
+    "package_pversion": "10.0.1",
+    "package_platforms": [
+        "i686-netbsd",
+        "m68k-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "armv7l-netbsd",
+        "riscv64-linux",
+        "aarch64-netbsd",
+        "s390-linux",
+        "m68k-netbsd",
+        "i686-freebsd",
+        "armv7l-linux",
+        "mipsel-netbsd",
+        "mips-linux",
+        "powerpc64-linux",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "riscv32-netbsd",
+        "armv6l-linux",
+        "mips64el-linux",
+        "x86_64-netbsd",
+        "armv7a-netbsd",
+        "riscv32-linux",
+        "x86_64-linux",
+        "powerpc-netbsd",
+        "loongarch64-linux",
+        "i686-openbsd",
+        "x86_64-openbsd",
+        "armv7a-linux",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "x86_64-freebsd",
+        "aarch64-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "vtysh",
+        "mtracebis"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-or-later.html",
+            "fullName": "GNU Lesser General Public License v2.1 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later",
+        "GNU Lesser General Public License v2.1 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Frank Doepper",
+            "github": "woffs",
+            "email": "github@woffs.de"
+        },
+        {
+            "name": "Markus Theil",
+            "github": "thillux",
+            "email": "theil.markus@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Frank Doepper",
+        "Markus Theil"
+    ],
+    "package_description": "FRR BGP/OSPF/ISIS/RIP/RIPNG routing daemon suite",
+    "package_longDescription": "<rendered-html><p>FRRouting (FRR) is a free and open source Internet routing protocol\nsuite for Linux and Unix platforms. It implements BGP, OSPF, RIP, IS-IS,\nPIM, LDP, BFD, Babel, PBR, OpenFabric and VRRP, with alpha support for\nEIGRP and NHRP.</p>\n<p>FRR\u2019s seamless integration with native Linux/Unix IP networking\nstacks makes it a general purpose routing stack applicable to a wide\nvariety of use cases including connecting hosts/VMs/containers to the\nnetwork, advertising network services, LAN switching and routing,\nInternet access routers, and Internet peering.</p>\n<p>FRR has its roots in the Quagga project. In fact, it was started by\nmany long-time Quagga developers who combined their efforts to improve\non Quagga\u2019s well-established foundation in order to create the best\nrouting protocol stack available. We invite you to participate in the\nFRRouting community and help shape the future of networking.</p>\n<p>Join the ranks of network architects using FRR for ISPs, SaaS\ninfrastructure, web 2.0 businesses, hyperscale services, and Fortune 500\nprivate clouds.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://frrouting.org/"
+    ],
+    "package_position": "pkgs/servers/frr/default.nix:207"
+}

@@ -1,0 +1,121 @@
+{
+    "type": "package",
+    "package_attr_name": "merecat",
+    "package_attr_set": "No package set",
+    "package_pname": "merecat",
+    "package_pversion": "2.31",
+    "package_platforms": [
+        "x86_64-cygwin",
+        "x86_64-netbsd",
+        "mips64-none",
+        "i686-windows",
+        "armv7a-linux",
+        "powerpc-none",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "aarch64-genode",
+        "wasm32-wasi",
+        "armv7a-netbsd",
+        "i686-none",
+        "microblaze-none",
+        "s390x-linux",
+        "s390-linux",
+        "aarch64_be-none",
+        "x86_64-solaris",
+        "armv6l-netbsd",
+        "riscv32-none",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "m68k-netbsd",
+        "s390-none",
+        "javascript-ghcjs",
+        "mips64-linux",
+        "i686-darwin",
+        "x86_64-linux",
+        "powerpc-netbsd",
+        "armv6l-none",
+        "or1k-none",
+        "armv6l-linux",
+        "rx-none",
+        "x86_64-openbsd",
+        "x86_64-none",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "mmix-mmixware",
+        "arm-none",
+        "riscv64-linux",
+        "x86_64-genode",
+        "mipsel-linux",
+        "m68k-none",
+        "i686-freebsd",
+        "armv7l-linux",
+        "riscv64-none",
+        "mips-linux",
+        "wasm64-wasi",
+        "powerpcle-none",
+        "aarch64-netbsd",
+        "x86_64-redox",
+        "microblazeel-linux",
+        "mipsel-netbsd",
+        "mips-none",
+        "armv7a-darwin",
+        "i686-linux",
+        "i686-genode",
+        "aarch64-none",
+        "mips64el-linux",
+        "x86_64-windows",
+        "x86_64-freebsd",
+        "microblazeel-none",
+        "microblaze-linux",
+        "armv7l-netbsd",
+        "i686-netbsd",
+        "riscv32-netbsd",
+        "vc4-none",
+        "riscv64-netbsd",
+        "avr-none",
+        "i686-cygwin",
+        "s390x-none",
+        "aarch64-darwin",
+        "msp430-none",
+        "i686-openbsd",
+        "loongarch64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "in.httpd",
+        "merecat",
+        "httpd",
+        "htpasswd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Francesco Gazzetta",
+            "github": "fgaz",
+            "email": "fgaz@fgaz.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Francesco Gazzetta"
+    ],
+    "package_description": "Small and made-easy HTTP/HTTPS server based on Jef Poskanzer's thttpd",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://troglobit.com/projects/merecat/"
+    ],
+    "package_position": "pkgs/servers/http/merecat/default.nix:44"
+}

@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "geoclue2",
+    "package_attr_set": "No package set",
+    "package_pname": "geoclue",
+    "package_pversion": "2.7.0",
+    "package_platforms": [
+        "powerpc64-linux",
+        "riscv32-linux",
+        "mips-linux",
+        "x86_64-linux",
+        "i686-darwin",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "mips64-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "devdoc",
+        "out",
+        "dev"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.0-or-later.html",
+            "fullName": "GNU Library General Public License v2 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Library General Public License v2 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michael Raskin",
+            "github": "7c6f434c",
+            "email": "7c6f434c@mail.ru"
+        },
+        {
+            "name": "Miguel Madrid Menc\u00eda",
+            "github": "mimame",
+            "email": "miguel.madrid.mencia@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michael Raskin",
+        "Miguel Madrid Menc\u00eda"
+    ],
+    "package_description": "Geolocation framework and some data providers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitlab.freedesktop.org/geoclue/geoclue/wikis/home"
+    ],
+    "package_position": "pkgs/development/libraries/geoclue/default.nix:100"
+}

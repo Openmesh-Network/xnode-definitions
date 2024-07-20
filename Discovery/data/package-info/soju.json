@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "soju",
+    "package_attr_set": "No package set",
+    "package_pname": "soju",
+    "package_pversion": "0.8.0",
+    "package_platforms": [
+        "riscv32-linux",
+        "wasm64-wasi",
+        "s390-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "powerpc64-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "wasm32-wasi",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "i686-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "sojudb",
+        "sojuctl",
+        "znc-import",
+        "migrate-logs",
+        "migrate-db",
+        "soju"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Azat Bahawi",
+            "github": "azahi",
+            "email": "azat@bahawi.net"
+        },
+        {
+            "name": "Malte Voos",
+            "github": "malte-v",
+            "email": "nixpkgs@mal.tc"
+        },
+        {
+            "name": "Jeremy Baxter",
+            "github": "jtbx",
+            "email": "jeremy@baxters.nz"
+        }
+    ],
+    "package_maintainers_set": [
+        "Azat Bahawi",
+        "Malte Voos",
+        "Jeremy Baxter"
+    ],
+    "package_description": "User-friendly IRC bouncer",
+    "package_longDescription": "<rendered-html><p>soju is a user-friendly IRC bouncer. soju connects to upstream IRC\nservers on behalf of the user to provide extra functionality. soju\nsupports many features such as multiple users, numerous IRCv3\nextensions, chat history playback and detached channels. It is\nwell-suited for both small and large deployments.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://soju.im"
+    ],
+    "package_position": "pkgs/by-name/so/soju/package.nix:42"
+}

@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "gonic",
+    "package_attr_set": "No package set",
+    "package_pname": "gonic",
+    "package_pversion": "0.16.4",
+    "package_platforms": [
+        "mips-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "wasm32-wasi",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "riscv32-linux",
+        "x86_64-darwin",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "i686-darwin",
+        "wasm64-wasi",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gonic"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Michal Koutensk\u00fd",
+            "github": "autrimpo",
+            "email": "michal@koutensky.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Michal Koutensk\u00fd"
+    ],
+    "package_description": "Music streaming server / subsonic server API implementation",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/sentriz/gonic"
+    ],
+    "package_position": "pkgs/servers/gonic/default.nix:55"
+}

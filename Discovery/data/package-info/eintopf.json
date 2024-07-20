@@ -1,0 +1,85 @@
+{
+    "type": "package",
+    "package_attr_name": "eintopf",
+    "package_attr_set": "No package set",
+    "package_pname": "eintopf",
+    "package_pversion": "0.13.16",
+    "package_platforms": [
+        "armv7l-netbsd",
+        "i686-openbsd",
+        "i686-freebsd",
+        "armv7l-linux",
+        "aarch64-netbsd",
+        "riscv32-netbsd",
+        "powerpc-netbsd",
+        "x86_64-netbsd",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "x86_64-solaris",
+        "s390-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "x86_64-cygwin",
+        "m68k-linux",
+        "mips-linux",
+        "mips64-linux",
+        "i686-darwin",
+        "microblazeel-linux",
+        "armv7a-netbsd",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "riscv64-netbsd",
+        "x86_64-redox",
+        "powerpc64le-linux",
+        "x86_64-openbsd",
+        "armv6l-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "i686-netbsd",
+        "mipsel-linux",
+        "armv6l-netbsd",
+        "x86_64-freebsd",
+        "i686-cygwin",
+        "armv7a-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jonas Heinrich",
+            "github": "onny",
+            "email": "onny@project-insanity.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jonas Heinrich"
+    ],
+    "package_description": "A calendar for Stuttgart, showing events, groups and places",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://codeberg.org/Klasse-Methode/eintopf"
+    ],
+    "package_position": "pkgs/by-name/ei/eintopf/package.nix:48"
+}

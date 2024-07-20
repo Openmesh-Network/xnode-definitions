@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "das_watchdog",
+    "package_attr_set": "No package set",
+    "package_pname": "das_watchdog-unstable",
+    "package_pversion": "2015-09-12",
+    "package_platforms": [
+        "powerpc64le-linux",
+        "mips64-linux",
+        "i686-linux",
+        "s390x-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "m68k-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "armv6l-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "das_watchdog",
+        "test_rt"
+    ],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unspecified free software license"
+        }
+    ],
+    "package_license_set": [
+        "Unspecified free software license"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bart Brouns",
+            "github": "magnetophon",
+            "email": "bart@magnetophon.nl"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bart Brouns"
+    ],
+    "package_description": "General watchdog for the linux operating system",
+    "package_longDescription": "<rendered-html><p>It should run in the background at all times to ensure a realtime\nprocess won\u2019t hang the machine.\u201c;</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/kmatheussen/das_watchdog"
+    ],
+    "package_position": "pkgs/tools/system/das_watchdog/default.nix:25"
+}

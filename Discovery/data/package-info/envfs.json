@@ -1,0 +1,66 @@
+{
+    "type": "package",
+    "package_attr_name": "envfs",
+    "package_attr_set": "No package set",
+    "package_pname": "envfs",
+    "package_pversion": "1.0.6",
+    "package_platforms": [
+        "riscv32-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "armv7a-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "microblazeel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "envfs",
+        "mount.fuse.envfs",
+        "mount.envfs"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "J\u00f6rg Thalheim",
+            "github": "Mic92",
+            "email": "joerg@thalheim.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "J\u00f6rg Thalheim"
+    ],
+    "package_description": "Fuse filesystem that returns symlinks to executables based on the PATH of the requesting process",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Mic92/envfs"
+    ],
+    "package_position": "pkgs/tools/filesystems/envfs/default.nix:22"
+}

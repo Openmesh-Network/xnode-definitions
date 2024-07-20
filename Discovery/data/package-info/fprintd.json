@@ -1,0 +1,68 @@
+{
+    "type": "package",
+    "package_attr_name": "fprintd",
+    "package_attr_set": "No package set",
+    "package_pname": "fprintd",
+    "package_pversion": "1.94.3",
+    "package_platforms": [
+        "microblaze-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "m68k-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "s390-linux",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "devdoc",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "fprintd-enroll",
+        "fprintd-list",
+        "fprintd-verify",
+        "fprintd-delete"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Amiantov",
+            "github": "abbradar",
+            "email": "ab@fmap.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Amiantov"
+    ],
+    "package_description": "D-Bus daemon that offers libfprint functionality over the D-Bus interprocess communication bus",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://fprint.freedesktop.org/"
+    ],
+    "package_position": "pkgs/tools/security/fprintd/default.nix:106"
+}

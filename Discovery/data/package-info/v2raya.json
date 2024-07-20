@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "v2raya",
+    "package_attr_set": "No package set",
+    "package_pname": "v2raya",
+    "package_pversion": "2.2.5.6",
+    "package_platforms": [
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "v2rayA"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "ChaosAttractor",
+            "github": "LostAttractor",
+            "email": "lostattractor@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "ChaosAttractor"
+    ],
+    "package_description": "Linux web GUI client of Project V which supports V2Ray, Xray, SS, SSR, Trojan and Pingtunnel",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/v2rayA/v2rayA"
+    ],
+    "package_position": "pkgs/tools/networking/v2raya/default.nix:92"
+}

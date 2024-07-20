@@ -1,0 +1,48 @@
+{
+    "type": "package",
+    "package_attr_name": "bluemap",
+    "package_attr_set": "No package set",
+    "package_pname": "bluemap",
+    "package_pversion": "3.21",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "bluemap"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Daniel Olsen",
+            "github": "dali99",
+            "email": "daniel@dodsorf.as"
+        },
+        {
+            "name": "h7x4",
+            "github": "h7x4",
+            "email": "h7x4@nani.wtf"
+        }
+    ],
+    "package_maintainers_set": [
+        "Daniel Olsen",
+        "h7x4"
+    ],
+    "package_description": "3D minecraft map renderer",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://bluemap.bluecolored.de/"
+    ],
+    "package_position": "pkgs/by-name/bl/bluemap/package.nix:23"
+}

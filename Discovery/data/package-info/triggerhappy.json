@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "triggerhappy",
+    "package_attr_set": "No package set",
+    "package_pname": "triggerhappy",
+    "package_pversion": "0.5.0",
+    "package_platforms": [
+        "microblaze-linux",
+        "i686-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "th-cmd",
+        "thd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Taha Gharib",
+            "github": "tgharib",
+            "email": "xrcrod@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Taha Gharib"
+    ],
+    "package_description": "Lightweight hotkey daemon",
+    "package_longDescription": "<rendered-html><p>Triggerhappy is a hotkey daemon developed with small and embedded\nsystems in mind, e.g. linux based routers. It attaches to the input\ndevice files and interprets the event data received and executes scripts\nconfigured in its configuration.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/wertarbyte/triggerhappy/"
+    ],
+    "package_position": "pkgs/tools/inputmethods/triggerhappy/default.nix:24"
+}

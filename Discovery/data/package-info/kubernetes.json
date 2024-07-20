@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "kubernetes",
+    "package_attr_set": "No package set",
+    "package_pname": "kubernetes",
+    "package_pversion": "1.30.2",
+    "package_platforms": [
+        "mipsel-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "i686-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "m68k-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "mips64el-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "man",
+        "pause"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "kube-proxy",
+        "kube-controller-manager",
+        "kube-apiserver",
+        "kubelet",
+        "kubeadm",
+        "kube-scheduler",
+        "kube-addons",
+        "kubectl",
+        "kube-addons-lib.sh",
+        "pause"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Johan Thomsen",
+            "github": "johanot",
+            "email": "write@ownrisk.dk"
+        },
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        },
+        {
+            "name": "Sascha Grunert",
+            "github": "saschagrunert",
+            "email": "mail@saschagrunert.de"
+        },
+        {
+            "name": "Sarah Brofeldt",
+            "github": "srhb",
+            "email": "sbrofeldt@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Johan Thomsen",
+        "Jaka Hudoklin",
+        "Sascha Grunert",
+        "Sarah Brofeldt"
+    ],
+    "package_description": "Production-Grade Container Scheduling and Management",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://kubernetes.io"
+    ],
+    "package_position": "pkgs/applications/networking/cluster/kubernetes/default.nix:86"
+}

@@ -1,0 +1,94 @@
+{
+    "type": "package",
+    "package_attr_name": "trezord",
+    "package_attr_set": "No package set",
+    "package_pname": "trezord-go",
+    "package_pversion": "2.0.33",
+    "package_platforms": [
+        "i686-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "wasm32-wasi",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "aarch64-darwin",
+        "wasm64-wasi",
+        "x86_64-linux",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "mips64-linux",
+        "m68k-linux",
+        "i686-darwin",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "trezord-go"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-3.0-only.html",
+            "fullName": "GNU Lesser General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Andrew Cann",
+            "github": "canndrew",
+            "email": "shum@canndrew.org"
+        },
+        {
+            "name": "William Casarin",
+            "github": "jb55",
+            "email": "jb55@jb55.com"
+        },
+        {
+            "name": "Pavol Rusnak",
+            "github": "prusnak",
+            "email": "pavol@rusnak.io"
+        },
+        {
+            "name": "Marek Mahut",
+            "github": "mmahut",
+            "email": "marek.mahut@gmail.com"
+        },
+        {
+            "name": "Jan Hrnko",
+            "github": "1000101",
+            "email": "b1000101@pm.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Andrew Cann",
+        "William Casarin",
+        "Pavol Rusnak",
+        "Marek Mahut",
+        "Jan Hrnko"
+    ],
+    "package_description": "Trezor Communication Daemon aka Trezor Bridge",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://trezor.io"
+    ],
+    "package_position": "pkgs/servers/trezord/default.nix:41"
+}

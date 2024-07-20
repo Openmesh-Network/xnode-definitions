@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "wyoming-piper",
+    "package_attr_set": "No package set",
+    "package_pname": "wyoming-piper",
+    "package_pversion": "1.5.0",
+    "package_platforms": [
+        "aarch64-darwin",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "armv7a-darwin",
+        "x86_64-freebsd",
+        "riscv64-linux",
+        "riscv32-linux",
+        "mips64el-linux",
+        "i686-darwin",
+        "s390x-linux",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "i686-freebsd",
+        "x86_64-cygwin",
+        "aarch64-linux",
+        "mips64-linux",
+        "x86_64-windows",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "m68k-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "i686-windows",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "wyoming-piper"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt"
+    ],
+    "package_description": "Wyoming Server for Piper",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/rhasspy/wyoming-piper"
+    ],
+    "package_position": "pkgs/tools/audio/wyoming/piper.nix:38"
+}

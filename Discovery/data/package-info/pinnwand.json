@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "pinnwand",
+    "package_attr_set": "No package set",
+    "package_pname": "pinnwand",
+    "package_pversion": "1.5.0",
+    "package_platforms": [
+        "x86_64-darwin",
+        "s390-linux",
+        "powerpc64le-linux",
+        "i686-darwin",
+        "aarch64-darwin",
+        "i686-windows",
+        "armv6l-linux",
+        "riscv64-linux",
+        "powerpc64-linux",
+        "m68k-linux",
+        "i686-cygwin",
+        "i686-freebsd",
+        "mipsel-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "x86_64-cygwin",
+        "armv5tel-linux",
+        "x86_64-freebsd",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "armv7a-darwin",
+        "x86_64-windows",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt"
+    ],
+    "package_description": "Python pastebin that tries to keep it simple",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/supakeen/pinnwand"
+    ],
+    "package_position": "pkgs/servers/pinnwand/default.nix:59"
+}

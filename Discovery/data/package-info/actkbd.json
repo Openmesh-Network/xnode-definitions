@@ -1,0 +1,56 @@
+{
+    "type": "package",
+    "package_attr_name": "actkbd",
+    "package_attr_set": "No package set",
+    "package_pname": "actkbd",
+    "package_pversion": "0.2.8",
+    "package_platforms": [
+        "s390x-linux",
+        "riscv32-linux",
+        "powerpc64-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "powerpc64le-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "actkbd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Keyboard shortcut daemon",
+    "package_longDescription": "<rendered-html><p>actkbd is a simple daemon that binds actions to keyboard events\ndirectly on evdev interface (that is, no X11 required). It recognises\nkey combinations and can handle press, repeat and release events.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://users.softlab.ece.ntua.gr/~thkala/projects/actkbd/"
+    ],
+    "package_position": "pkgs/tools/system/actkbd/default.nix:24"
+}

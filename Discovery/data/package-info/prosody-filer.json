@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "prosody-filer",
+    "package_attr_set": "No package set",
+    "package_pname": "prosody-filer-unstable",
+    "package_pversion": "2021-05-24",
+    "package_platforms": [
+        "armv6l-linux",
+        "loongarch64-linux",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "mips64-linux",
+        "i686-linux",
+        "microblaze-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "prosody-filer"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Amiantov",
+            "github": "abbradar",
+            "email": "ab@fmap.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Amiantov"
+    ],
+    "package_description": "Simple file server for handling XMPP http_upload requests",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ThomasLeister/prosody-filer"
+    ],
+    "package_position": "pkgs/servers/xmpp/prosody-filer/default.nix:23"
+}

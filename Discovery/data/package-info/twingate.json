@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "twingate",
+    "package_attr_set": "No package set",
+    "package_pname": "twingate",
+    "package_pversion": "2024.98.119300",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Anton Shkurenko",
+            "github": "antonshkurenko",
+            "email": "support@twingate.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Anton Shkurenko"
+    ],
+    "package_description": "Twingate Client",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://twingate.com"
+    ],
+    "package_position": "pkgs/applications/networking/twingate/default.nix:56"
+}

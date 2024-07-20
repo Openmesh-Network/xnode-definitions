@@ -1,0 +1,79 @@
+{
+    "type": "package",
+    "package_attr_name": "grafana",
+    "package_attr_set": "No package set",
+    "package_pname": "grafana",
+    "package_pversion": "11.1.0",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "grafana-cli",
+        "grafana",
+        "grafana-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        },
+        {
+            "name": "Franz Pletz",
+            "github": "fpletz",
+            "email": "fpletz@fnordicwalking.de"
+        },
+        {
+            "name": "Willi Butz",
+            "github": "WilliButz",
+            "email": "willibutz@posteo.de"
+        },
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        },
+        {
+            "name": "Maximilian Bosch",
+            "github": "Ma27",
+            "email": "maximilian@mbosch.me"
+        },
+        {
+            "name": "Sergei Lukianov",
+            "github": "Frostman",
+            "email": "me@slukjanov.name"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jaka Hudoklin",
+        "Franz Pletz",
+        "Willi Butz",
+        "Robin Gloster",
+        "Maximilian Bosch",
+        "Sergei Lukianov"
+    ],
+    "package_description": "Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://grafana.com"
+    ],
+    "package_position": "pkgs/servers/monitoring/grafana/default.nix:152"
+}

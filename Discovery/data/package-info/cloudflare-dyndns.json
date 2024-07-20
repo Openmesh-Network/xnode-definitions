@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "cloudflare-dyndns",
+    "package_attr_set": "No package set",
+    "package_pname": "cloudflare-dyndns",
+    "package_pversion": "4.1",
+    "package_platforms": [
+        "i686-windows",
+        "i686-darwin",
+        "armv5tel-linux",
+        "x86_64-windows",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "x86_64-cygwin",
+        "mips64el-linux",
+        "mips-linux",
+        "x86_64-freebsd",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "i686-freebsd",
+        "riscv32-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "s390-linux",
+        "powerpc64le-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cloudflare-dyndns"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bernardo Meurer",
+            "github": "lovesegfault",
+            "email": "meurerbernardo@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bernardo Meurer"
+    ],
+    "package_description": "CloudFlare Dynamic DNS client",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/kissgyorgy/cloudflare-dyndns"
+    ],
+    "package_position": "pkgs/applications/networking/cloudflare-dyndns/default.nix:55"
+}

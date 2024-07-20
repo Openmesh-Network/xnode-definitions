@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "xfce.tumbler",
+    "package_attr_set": "xfce",
+    "package_pname": "tumbler",
+    "package_pversion": "4.18.2",
+    "package_platforms": [
+        "mips-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "s390x-linux",
+        "riscv64-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dev"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bobby Rong",
+            "github": "bobby285271",
+            "email": "rjl931189261@126.com"
+        },
+        {
+            "name": "Jos\u00e9 Romildo Malaquias",
+            "github": "romildo",
+            "email": "malaquias@gmail.com"
+        },
+        {
+            "name": "Mustafa \u00c7al\u0131\u015fkan",
+            "github": "muscaln",
+            "email": "muscaln@protonmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bobby Rong",
+        "Jos\u00e9 Romildo Malaquias",
+        "Mustafa \u00c7al\u0131\u015fkan"
+    ],
+    "package_description": "D-Bus thumbnailer service",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitlab.xfce.org/xfce/tumbler"
+    ],
+    "package_position": "pkgs/desktops/xfce/core/tumbler/default.nix:18"
+}

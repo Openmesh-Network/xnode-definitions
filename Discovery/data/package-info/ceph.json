@@ -1,0 +1,146 @@
+{
+    "type": "package",
+    "package_attr_name": "ceph",
+    "package_attr_set": "No package set",
+    "package_pname": "ceph",
+    "package_pversion": "18.2.1",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "lib",
+        "man",
+        "doc",
+        "dev",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ceph-authtool",
+        "rgw-gap-list-comparator",
+        "ceph-dencoder",
+        "ceph-volume",
+        "ceph-mgr",
+        "ceph-create-keys",
+        "cephfs-table-tool",
+        "osdmaptool",
+        "librados-config",
+        "ceph-mds",
+        "rbd-replay-many",
+        "ceph-volume-systemd",
+        "ceph-objectstore-tool",
+        "ceph-kvstore-tool",
+        "crushtool",
+        "radosgw",
+        "rbd-mirror",
+        "cephfs-data-scan",
+        "ceph-conf",
+        "ceph-bluestore-tool",
+        "ceph-monstore-tool",
+        "ceph-clsinfo",
+        "ceph",
+        "ceph-osdomap-tool",
+        "mount.ceph",
+        "crushdiff",
+        "monmaptool",
+        "rbd-replay-prep",
+        "cephfs-top",
+        "rgw-orphan-list",
+        "ceph-immutable-object-cache",
+        "rgw-gap-list",
+        "ceph-fuse",
+        "cephfs-shell",
+        "radosgw-token",
+        "ceph-diff-sorted",
+        "rbd-replay",
+        "ceph-exporter",
+        "ceph-crash",
+        "rbd",
+        "radosgw-object-expirer",
+        "radosgw-admin",
+        "ceph-osd",
+        "ceph-run",
+        "ceph-mon",
+        "rbd-nbd",
+        "rgw-policy-check",
+        "rbd-fuse",
+        "rbdmap",
+        "ceph-post-file",
+        "cephadm",
+        "ceph-syn",
+        "cephfs-mirror",
+        "cephfs-journal-tool",
+        "ceph-rbdnamer",
+        "rgw-restore-bucket-index",
+        "rados",
+        "ceph-erasure-code-tool",
+        "mount.fuse.ceph",
+        "radosgw-es"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1.html",
+            "fullName": "GNU Lesser General Public License v2.1"
+        },
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        },
+        {
+            "url": null,
+            "fullName": "Public Domain"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v2.1",
+        "GNU General Public License v2.0 only",
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "MIT License",
+        "Public Domain"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Adrien Devresse",
+            "github": "adevress",
+            "email": "adev@adev.name"
+        },
+        {
+            "name": "Alexander Kjeldaas",
+            "github": "alexanderkjeldaas",
+            "email": "ak@formalprivacy.com"
+        },
+        {
+            "name": "Johan Thomsen",
+            "github": "johanot",
+            "email": "write@ownrisk.dk"
+        },
+        {
+            "name": "Kristoffer Th\u00f8mt Ravneberg",
+            "github": "krav",
+            "email": "kristoffer@microdisko.no"
+        }
+    ],
+    "package_maintainers_set": [
+        "Adrien Devresse",
+        "Alexander Kjeldaas",
+        "Johan Thomsen",
+        "Kristoffer Th\u00f8mt Ravneberg"
+    ],
+    "package_description": "Distributed storage system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://ceph.io/en/"
+    ],
+    "package_position": "pkgs/tools/filesystems/ceph/default.nix:142"
+}

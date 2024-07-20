@@ -1,0 +1,44 @@
+{
+    "type": "package",
+    "package_attr_name": "onlyoffice-documentserver",
+    "package_attr_set": "No package set",
+    "package_pname": "onlyoffice-documentserver",
+    "package_pversion": "7.5.1",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "documentserver-prepare4shutdown.sh"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Sandro J\u00e4ckel",
+            "github": "SuperSandro2000",
+            "email": "sandro.jaeckel@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Sandro J\u00e4ckel"
+    ],
+    "package_description": "ONLYOFFICE Document Server is an online office suite comprising viewers and editors",
+    "package_longDescription": "<rendered-html><p>ONLYOFFICE Document Server is an online office suite comprising\nviewers and editors for texts, spreadsheets and presentations, fully\ncompatible with Office Open XML formats: .docx, .xlsx, .pptx and\nenabling collaborative editing in real time.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ONLYOFFICE/DocumentServer"
+    ],
+    "package_position": "pkgs/servers/onlyoffice-documentserver/default.nix:139"
+}

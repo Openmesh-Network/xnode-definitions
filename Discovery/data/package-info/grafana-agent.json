@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "grafana-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "grafana-agent",
+    "package_pversion": "0.41.1",
+    "package_platforms": [
+        "mips64el-linux",
+        "wasm64-wasi",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "mips-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "wasm32-wasi",
+        "aarch64-linux",
+        "s390-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "riscv32-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "i686-darwin",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "grafana-agentctl",
+        "grafana-agent"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Florian Klink",
+            "github": "flokli",
+            "email": "flokli@flokli.de"
+        },
+        {
+            "name": "Emily Lange",
+            "github": "emilylange",
+            "email": "nix@emilylange.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Florian Klink",
+        "Emily Lange"
+    ],
+    "package_description": "Lightweight subset of Prometheus and more, optimized for Grafana Cloud",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://grafana.com/products/cloud"
+    ],
+    "package_position": "pkgs/servers/monitoring/grafana-agent/default.nix:108"
+}

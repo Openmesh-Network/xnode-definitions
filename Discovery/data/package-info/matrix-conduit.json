@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "matrix-conduit",
+    "package_attr_set": "No package set",
+    "package_pname": "matrix-conduit",
+    "package_pversion": "0.8.0",
+    "package_platforms": [
+        "x86_64-openbsd",
+        "armv7l-netbsd",
+        "mips64el-linux",
+        "armv6l-linux",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "x86_64-solaris",
+        "riscv32-linux",
+        "i686-darwin",
+        "powerpc-netbsd",
+        "aarch64-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "mips64-linux",
+        "i686-netbsd",
+        "x86_64-netbsd",
+        "s390x-linux",
+        "armv7l-linux",
+        "aarch64-darwin",
+        "i686-openbsd",
+        "powerpc64le-linux",
+        "mipsel-netbsd",
+        "x86_64-redox",
+        "i686-windows",
+        "wasm32-wasi",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "x86_64-darwin",
+        "x86_64-freebsd",
+        "riscv64-linux",
+        "i686-freebsd",
+        "aarch64-netbsd",
+        "mips-linux",
+        "x86_64-windows",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "conduit"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Philipp Steinpa\u00df",
+            "github": "pstn",
+            "email": "philipp@xndr.de"
+        },
+        {
+            "name": "Julius de Bruijn",
+            "github": "pimeys",
+            "email": "julius@nauk.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Philipp Steinpa\u00df",
+        "Julius de Bruijn"
+    ],
+    "package_description": "Matrix homeserver written in Rust",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://conduit.rs/"
+    ],
+    "package_position": "pkgs/servers/matrix-conduit/default.nix:65"
+}

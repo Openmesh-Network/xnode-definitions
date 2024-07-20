@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "spiped",
+    "package_attr_set": "No package set",
+    "package_pname": "spiped",
+    "package_pversion": "1.6.2",
+    "package_platforms": [
+        "mips-linux",
+        "aarch64-darwin",
+        "riscv32-linux",
+        "riscv64-linux",
+        "armv6l-netbsd",
+        "x86_64-darwin",
+        "armv7a-darwin",
+        "microblazeel-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "m68k-netbsd",
+        "riscv32-netbsd",
+        "riscv64-netbsd",
+        "i686-darwin",
+        "armv6l-linux",
+        "i686-cygwin",
+        "powerpc64le-linux",
+        "x86_64-openbsd",
+        "i686-openbsd",
+        "powerpc64-linux",
+        "i686-netbsd",
+        "x86_64-linux",
+        "x86_64-freebsd",
+        "aarch64-linux",
+        "x86_64-redox",
+        "s390-linux",
+        "loongarch64-linux",
+        "armv7l-netbsd",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "mipsel-netbsd",
+        "x86_64-cygwin",
+        "x86_64-solaris",
+        "i686-freebsd",
+        "microblaze-linux",
+        "s390x-linux",
+        "powerpc-netbsd",
+        "x86_64-netbsd",
+        "mips64-linux",
+        "armv7l-linux",
+        "aarch64-netbsd",
+        "armv7a-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "spipe",
+        "spiped"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Austin Seipp"
+    ],
+    "package_description": "Utility for secure encrypted channels between sockets",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.tarsnap.com/spiped.html"
+    ],
+    "package_position": "pkgs/tools/networking/spiped/default.nix:32"
+}

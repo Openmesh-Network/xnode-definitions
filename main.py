@@ -37,11 +37,14 @@ def main():
                 output.write(json.dumps(templates, indent=4))
         else:
             definition_factory = xnode_definer('inputs/manual-spec-overrides.json')
-            services = definition_factory.make_services(service_definitions)
+            # Make service definitions
+            if args.clean or not package_info_data_exists():
+                services = definition_factory.make_services(service_definitions, fetch_package_info=True)
+            else:
+                services = definition_factory.make_services(service_definitions)
+
             with open('sample-service-output.json', 'w') as output:
                 output.write(json.dumps(services, indent=4))
-
-    
 
 
 def raw_service_data_exists(raw_services_responses):
@@ -57,6 +60,12 @@ def raw_service_data_exists(raw_services_responses):
     else:
         return False 
     
+def package_info_data_exists():
+    return False
+    if os.path.exists('Discovery/data/package-info.json'):
+        return True
+    else:
+        return False
 
 if __name__ == "__main__":
     main()

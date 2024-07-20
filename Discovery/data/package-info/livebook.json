@@ -1,0 +1,89 @@
+{
+    "type": "package",
+    "package_attr_name": "livebook",
+    "package_attr_set": "No package set",
+    "package_pname": "livebook",
+    "package_pversion": "0.13.3",
+    "package_platforms": [
+        "riscv32-linux",
+        "x86_64-cygwin",
+        "armv6l-netbsd",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "armv7l-netbsd",
+        "i686-darwin",
+        "s390-linux",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "mipsel-netbsd",
+        "i686-openbsd",
+        "x86_64-solaris",
+        "i686-freebsd",
+        "microblazeel-linux",
+        "x86_64-freebsd",
+        "riscv64-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "i686-cygwin",
+        "armv7a-linux",
+        "mips64-linux",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "s390x-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "x86_64-linux",
+        "riscv64-netbsd",
+        "mips-linux",
+        "x86_64-openbsd",
+        "x86_64-darwin",
+        "powerpc64le-linux",
+        "riscv32-netbsd",
+        "x86_64-netbsd",
+        "aarch64-linux",
+        "aarch64-netbsd",
+        "powerpc-netbsd",
+        "m68k-netbsd",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "x86_64-redox"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "server",
+        "warmup_apps",
+        "livebook"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Philip Munksgaard",
+            "github": "Munksgaard",
+            "email": "philip@munksgaard.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Philip Munksgaard"
+    ],
+    "package_description": "Automate code & data workflows with interactive Elixir notebooks",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://livebook.dev/"
+    ],
+    "package_position": "pkgs/servers/web-apps/livebook/default.nix:38"
+}

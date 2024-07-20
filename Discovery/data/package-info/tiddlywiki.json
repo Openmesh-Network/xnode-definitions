@@ -1,0 +1,58 @@
+{
+    "type": "package",
+    "package_attr_name": "nodePackages_latest.tiddlywiki",
+    "package_attr_set": "nodePackages_latest",
+    "package_pname": "tiddlywiki",
+    "package_pversion": "5.3.3",
+    "package_platforms": [
+        "aarch64-darwin",
+        "s390-linux",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "i686-darwin",
+        "microblazeel-linux",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "BSD"
+        }
+    ],
+    "package_license_set": [
+        "BSD"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "a non-linear personal web notebook",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Jermolene/TiddlyWiki5#readme"
+    ],
+    "package_position": "pkgs/development/node-packages/node-packages.nix:88020"
+}

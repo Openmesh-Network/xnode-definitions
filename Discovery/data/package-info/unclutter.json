@@ -1,0 +1,85 @@
+{
+    "type": "package",
+    "package_attr_name": "unclutter",
+    "package_attr_set": "No package set",
+    "package_pname": "unclutter",
+    "package_pversion": "8",
+    "package_platforms": [
+        "x86_64-cygwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "powerpc-netbsd",
+        "mipsel-linux",
+        "aarch64-netbsd",
+        "i686-freebsd",
+        "i686-cygwin",
+        "s390x-linux",
+        "mipsel-netbsd",
+        "x86_64-netbsd",
+        "x86_64-linux",
+        "riscv32-netbsd",
+        "aarch64-linux",
+        "m68k-netbsd",
+        "armv7a-darwin",
+        "m68k-linux",
+        "riscv64-netbsd",
+        "armv7a-netbsd",
+        "armv7l-netbsd",
+        "mips-linux",
+        "x86_64-darwin",
+        "mips64-linux",
+        "x86_64-redox",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "i686-netbsd",
+        "powerpc64le-linux",
+        "armv6l-netbsd",
+        "i686-openbsd",
+        "loongarch64-linux",
+        "x86_64-solaris",
+        "powerpc64-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "x86_64-openbsd",
+        "x86_64-freebsd",
+        "armv5tel-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "unclutter"
+    ],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Public Domain"
+        }
+    ],
+    "package_license_set": [
+        "Public Domain"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Domen Kozar",
+            "github": "domenkozar",
+            "email": "domen@dev.si"
+        }
+    ],
+    "package_maintainers_set": [
+        "Domen Kozar"
+    ],
+    "package_description": "Hides mouse pointer while not in use",
+    "package_longDescription": "<rendered-html><p>Unclutter hides your X mouse cursor when you do not need it, to\nprevent it from getting in the way. You have only to move the mouse to\nrestore the mouse cursor. Unclutter is very useful in tiling wm\u2019s where\nyou do not need the mouse often.</p>\n<p>Just run it from your .bash_profile like that:</p>\n<pre><code>unclutter -idle 1 &amp;</code></pre>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/tools/misc/unclutter/default.nix:27"
+}

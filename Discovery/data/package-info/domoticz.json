@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "domoticz",
+    "package_attr_set": "No package set",
+    "package_pname": "domoticz",
+    "package_pversion": "2024.4",
+    "package_platforms": [
+        "i686-linux",
+        "riscv32-none",
+        "i686-cygwin",
+        "armv7a-linux",
+        "powerpc-none",
+        "microblazeel-none",
+        "armv6l-linux",
+        "or1k-none",
+        "x86_64-netbsd",
+        "aarch64_be-none",
+        "rx-none",
+        "x86_64-cygwin",
+        "microblazeel-linux",
+        "mipsel-netbsd",
+        "armv6l-none",
+        "wasm32-wasi",
+        "armv7l-linux",
+        "microblaze-none",
+        "mmix-mmixware",
+        "armv7a-netbsd",
+        "x86_64-openbsd",
+        "mips64-none",
+        "riscv32-linux",
+        "m68k-linux",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "armv7l-netbsd",
+        "avr-none",
+        "i686-netbsd",
+        "x86_64-freebsd",
+        "microblaze-linux",
+        "mips64-linux",
+        "riscv64-netbsd",
+        "powerpcle-none",
+        "loongarch64-linux",
+        "riscv64-none",
+        "i686-openbsd",
+        "x86_64-redox",
+        "i686-none",
+        "javascript-ghcjs",
+        "riscv64-linux",
+        "mipsel-linux",
+        "x86_64-solaris",
+        "mips-none",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "aarch64-netbsd",
+        "x86_64-windows",
+        "i686-genode",
+        "x86_64-darwin",
+        "msp430-none",
+        "m68k-netbsd",
+        "s390x-none",
+        "x86_64-linux",
+        "s390-none",
+        "m68k-none",
+        "mips64el-linux",
+        "i686-windows",
+        "x86_64-none",
+        "aarch64-genode",
+        "mips-linux",
+        "s390x-linux",
+        "armv5tel-linux",
+        "powerpc-netbsd",
+        "powerpc64-linux",
+        "armv6l-netbsd",
+        "vc4-none",
+        "wasm64-wasi",
+        "armv7a-darwin",
+        "i686-freebsd",
+        "aarch64-none",
+        "s390-linux",
+        "x86_64-genode",
+        "arm-none",
+        "riscv32-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "domoticz"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ed Cragg",
+            "github": "nuxeh",
+            "email": "ed.cragg@eipi.xyz"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ed Cragg"
+    ],
+    "package_description": "Home automation system",
+    "package_longDescription": "<rendered-html><p>Domoticz is a home automation system that lets you monitor and\nconfigure various devices like: lights, switches, various sensors/meters\nlike temperature, rain, wind, UV, electra, gas, water and much more</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.domoticz.com/"
+    ],
+    "package_position": "pkgs/servers/domoticz/default.nix:77"
+}

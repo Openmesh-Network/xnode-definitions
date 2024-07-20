@@ -1,0 +1,103 @@
+{
+    "type": "package",
+    "package_attr_name": "varnish",
+    "package_attr_set": "No package set",
+    "package_pname": "varnish",
+    "package_pversion": "7.4.3",
+    "package_platforms": [
+        "i686-openbsd",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "x86_64-redox",
+        "i686-freebsd",
+        "x86_64-solaris",
+        "s390-linux",
+        "powerpc64-linux",
+        "m68k-netbsd",
+        "riscv32-linux",
+        "riscv32-netbsd",
+        "armv6l-netbsd",
+        "i686-linux",
+        "riscv64-netbsd",
+        "mipsel-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "i686-darwin",
+        "mips-linux",
+        "armv5tel-linux",
+        "armv7a-netbsd",
+        "x86_64-cygwin",
+        "x86_64-linux",
+        "powerpc-netbsd",
+        "x86_64-openbsd",
+        "aarch64-linux",
+        "s390x-linux",
+        "armv7l-netbsd",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "x86_64-netbsd",
+        "x86_64-freebsd",
+        "powerpc64le-linux",
+        "aarch64-netbsd",
+        "i686-netbsd",
+        "i686-cygwin",
+        "loongarch64-linux",
+        "mipsel-netbsd",
+        "armv6l-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out",
+        "dev"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "varnishstat_help_gen",
+        "varnishncsa",
+        "varnishlog",
+        "varnishd",
+        "varnishadm",
+        "varnishstat",
+        "varnishhist",
+        "varnishtop",
+        "varnishtest"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Janne He\u00df",
+            "github": "dasJ",
+            "email": "janne@hess.ooo"
+        },
+        {
+            "name": "Simon Hauser",
+            "github": "Conni2461",
+            "email": "simon.hauser@outlook.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Janne He\u00df",
+        "Simon Hauser"
+    ],
+    "package_description": "Web application accelerator also known as a caching HTTP reverse proxy",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.varnish-cache.org"
+    ],
+    "package_position": "pkgs/servers/varnish/default.nix:45"
+}

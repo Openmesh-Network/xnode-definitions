@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "listmonk",
+    "package_attr_set": "No package set",
+    "package_pname": "listmonk",
+    "package_pversion": "3.0.0",
+    "package_platforms": [
+        "mips64el-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "s390x-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "i686-darwin",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mips64-linux",
+        "i686-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "wasm32-wasi",
+        "microblazeel-linux",
+        "armv7a-darwin",
+        "wasm64-wasi",
+        "x86_64-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "aarch64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "listmonk"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ryan Lahfa",
+            "github": "RaitoBezarius",
+            "email": "ryan@lahfa.xyz"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ryan Lahfa"
+    ],
+    "package_description": "High performance, self-hosted, newsletter and mailing list manager with a modern dashboard",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/knadh/listmonk"
+    ],
+    "package_position": "pkgs/by-name/li/listmonk/package.nix:50"
+}

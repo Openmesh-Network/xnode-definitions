@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "whitebophir",
+    "package_attr_set": "No package set",
+    "package_pname": "whitebophir",
+    "package_pversion": "1.19.1",
+    "package_platforms": [
+        "x86_64-redox",
+        "x86_64-cygwin",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "aarch64-darwin",
+        "i686-darwin",
+        "armv7a-netbsd",
+        "i686-linux",
+        "riscv32-linux",
+        "aarch64-netbsd",
+        "riscv64-netbsd",
+        "x86_64-solaris",
+        "microblaze-linux",
+        "i686-openbsd",
+        "x86_64-openbsd",
+        "x86_64-netbsd",
+        "i686-cygwin",
+        "x86_64-freebsd",
+        "armv5tel-linux",
+        "armv6l-netbsd",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "powerpc-netbsd",
+        "m68k-linux",
+        "m68k-netbsd",
+        "riscv32-netbsd",
+        "armv6l-linux",
+        "mips64el-linux",
+        "i686-freebsd",
+        "armv7l-netbsd",
+        "armv7l-linux",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "armv7a-darwin",
+        "mips-linux",
+        "s390-linux",
+        "s390x-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "whitebophir"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ingo Blechschmidt",
+            "github": "iblech",
+            "email": "iblech@speicherleck.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ingo Blechschmidt"
+    ],
+    "package_description": "Online collaborative whiteboard that is simple, free, easy to use and to deploy",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/lovasoa/whitebophir"
+    ],
+    "package_position": "pkgs/servers/web-apps/whitebophir/default.nix:42"
+}

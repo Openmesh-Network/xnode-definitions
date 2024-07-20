@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "ipp-usb",
+    "package_attr_set": "No package set",
+    "package_pname": "ipp-usb",
+    "package_pversion": "0.9.25",
+    "package_platforms": [
+        "mips64el-linux",
+        "mipsel-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "s390x-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ipp-usb"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Guillaume Girol",
+            "github": "symphorien",
+            "email": "symphorien_nixpkgs@xlumurb.eu"
+        }
+    ],
+    "package_maintainers_set": [
+        "Guillaume Girol"
+    ],
+    "package_description": "Daemon to use the IPP everywhere protocol with USB printers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/OpenPrinting/ipp-usb"
+    ],
+    "package_position": "pkgs/os-specific/linux/ipp-usb/default.nix:36"
+}

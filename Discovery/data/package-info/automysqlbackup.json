@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "automysqlbackup",
+    "package_attr_set": "No package set",
+    "package_pname": "automysqlbackup",
+    "package_pversion": "3.0.7",
+    "package_platforms": [
+        "powerpc64-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "aarch64-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "m68k-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "automysqlbackup"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Aaron Andersen",
+            "github": "aanderse",
+            "email": "aaron@fosslib.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Aaron Andersen"
+    ],
+    "package_description": "Script to run daily, weekly and monthly backups for your MySQL database",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/sixhop/AutoMySQLBackup"
+    ],
+    "package_position": "pkgs/tools/backup/automysqlbackup/default.nix:26"
+}

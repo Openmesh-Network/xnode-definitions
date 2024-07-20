@@ -1,0 +1,43 @@
+{
+    "type": "package",
+    "package_attr_name": "tang",
+    "package_attr_set": "No package set",
+    "package_pname": "tang",
+    "package_pversion": "15",
+    "package_platforms": [],
+    "package_outputs": [
+        "out",
+        "man"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tang-show-keys"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Franz Pletz",
+            "github": "fpletz",
+            "email": "fpletz@fnordicwalking.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Franz Pletz"
+    ],
+    "package_description": "Server for binding data to network presence",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/latchset/tang"
+    ],
+    "package_position": "pkgs/servers/tang/default.nix:69"
+}

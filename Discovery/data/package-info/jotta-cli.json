@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "jotta-cli",
+    "package_attr_set": "No package set",
+    "package_pname": "jotta-cli",
+    "package_pversion": "0.15.107955",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Even Brenden",
+            "github": "evenbrenden",
+            "email": "packages@anythingexternal.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Even Brenden"
+    ],
+    "package_description": "Jottacloud CLI",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.jottacloud.com/"
+    ],
+    "package_position": "pkgs/applications/misc/jotta-cli/default.nix:27"
+}

@@ -1,0 +1,104 @@
+{
+    "type": "package",
+    "package_attr_name": "k3s",
+    "package_attr_set": "No package set",
+    "package_pname": "k3s",
+    "package_pversion": "1.30.2+k3s2",
+    "package_platforms": [
+        "i686-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "mips64-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "k3s-killall.sh",
+        "k3s",
+        "kubectl",
+        "ctr",
+        "crictl"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Euan Kemp",
+            "github": "euank",
+            "email": "euank-nixpkg@euank.com"
+        },
+        {
+            "name": "Marcus Ramberg",
+            "github": "marcusramberg",
+            "email": "marcus@means.no"
+        },
+        {
+            "name": "J\u00f6rg Thalheim",
+            "github": "Mic92",
+            "email": "joerg@thalheim.io"
+        },
+        {
+            "name": "Robert Rose",
+            "github": "rorosen",
+            "email": "robert.rose@mailbox.org"
+        },
+        {
+            "name": "S\u00e9rgio Marcelo",
+            "github": "superherointj",
+            "email": "sergiomarcelo@yandex.com"
+        },
+        {
+            "name": "Winston R. Milling",
+            "github": "wrmilling",
+            "email": "Winston@Milli.ng"
+        },
+        {
+            "name": "Jairo Llopis",
+            "github": "yajo",
+            "email": "yajo.sk8@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Euan Kemp",
+        "Marcus Ramberg",
+        "J\u00f6rg Thalheim",
+        "Robert Rose",
+        "S\u00e9rgio Marcelo",
+        "Winston R. Milling",
+        "Jairo Llopis"
+    ],
+    "package_description": "Lightweight Kubernetes distribution",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://k3s.io"
+    ],
+    "package_position": "pkgs/applications/networking/cluster/k3s/builder.nix:92"
+}

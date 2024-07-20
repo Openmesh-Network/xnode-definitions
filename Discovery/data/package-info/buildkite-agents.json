@@ -1,0 +1,78 @@
+{
+    "type": "package",
+    "package_attr_name": "buildkite-agent-metrics",
+    "package_attr_set": "No package set",
+    "package_pname": "buildkite-agent-metrics",
+    "package_pversion": "5.9.7",
+    "package_platforms": [
+        "mipsel-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "i686-linux",
+        "mips64el-linux",
+        "armv6l-linux",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "m68k-linux",
+        "armv5tel-linux",
+        "i686-darwin",
+        "mips64-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "wasm32-wasi",
+        "x86_64-linux",
+        "riscv64-linux",
+        "wasm64-wasi"
+    ],
+    "package_outputs": [
+        "out",
+        "lambda"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "lambda",
+        "buildkite-agent-metrics"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Cole Helbling",
+            "github": "cole-h",
+            "email": "cole.e.helbling@outlook.com"
+        },
+        {
+            "name": "Graham Christensen",
+            "github": "grahamc",
+            "email": "graham@grahamc.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Cole Helbling",
+        "Graham Christensen"
+    ],
+    "package_description": "Command-line tool (and Lambda) for collecting Buildkite agent metrics",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/buildkite/buildkite-agent-metrics"
+    ],
+    "package_position": "pkgs/servers/monitoring/buildkite-agent-metrics/default.nix:26"
+}

@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "serviio",
+    "package_attr_set": "No package set",
+    "package_pname": "serviio",
+    "package_pversion": "2.4",
+    "package_platforms": [
+        "s390-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "mipsel-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "powerpc64-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "powerpc64le-linux",
+        "armv6l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Thomas Pham",
+            "github": "thpham",
+            "email": "thomas.pham@ithings.ch"
+        }
+    ],
+    "package_maintainers_set": [
+        "Thomas Pham"
+    ],
+    "package_description": "UPnP Media Streaming Server",
+    "package_longDescription": "<rendered-html><p>Serviio is a free media server. It allows you to stream your media\nfiles (music, video or images) to any DLNA-certified renderer device\n(e.g. a TV set, Bluray player, games console) on your home network.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://serviio.org"
+    ],
+    "package_position": "pkgs/servers/serviio/default.nix:19"
+}

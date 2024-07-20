@@ -1,0 +1,45 @@
+{
+    "type": "package",
+    "package_attr_name": "photonvision",
+    "package_attr_set": "No package set",
+    "package_pname": "photonvision",
+    "package_pversion": "2024.3.1",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "photonvision"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Max Niederman",
+            "github": "max-niederman",
+            "email": "max@maxniederman.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Max Niederman"
+    ],
+    "package_description": "Free, fast, and easy-to-use computer vision solution for the FIRST Robotics Competition",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://photonvision.org/"
+    ],
+    "package_position": "pkgs/by-name/ph/photonvision/package.nix:48"
+}

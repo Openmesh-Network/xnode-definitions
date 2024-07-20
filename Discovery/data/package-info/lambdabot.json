@@ -1,0 +1,119 @@
+{
+    "type": "package",
+    "package_attr_name": "lambdabot",
+    "package_attr_set": "No package set",
+    "package_pname": "lambdabot",
+    "package_pversion": "5.3.1.2",
+    "package_platforms": [
+        "mipsel-netbsd",
+        "i686-linux",
+        "microblaze-none",
+        "m68k-none",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "m68k-linux",
+        "x86_64-netbsd",
+        "aarch64_be-none",
+        "s390x-linux",
+        "microblazeel-none",
+        "aarch64-genode",
+        "vc4-none",
+        "powerpc64le-linux",
+        "aarch64-netbsd",
+        "armv7l-linux",
+        "wasm64-wasi",
+        "armv7a-netbsd",
+        "wasm32-wasi",
+        "x86_64-windows",
+        "riscv32-none",
+        "x86_64-redox",
+        "rx-none",
+        "riscv64-netbsd",
+        "x86_64-freebsd",
+        "avr-none",
+        "x86_64-none",
+        "mipsel-linux",
+        "powerpcle-none",
+        "arm-none",
+        "riscv32-linux",
+        "msp430-none",
+        "armv6l-linux",
+        "s390-linux",
+        "javascript-ghcjs",
+        "x86_64-linux",
+        "i686-genode",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "riscv32-netbsd",
+        "i686-none",
+        "i686-freebsd",
+        "microblaze-linux",
+        "armv7a-darwin",
+        "armv6l-none",
+        "mips-none",
+        "x86_64-cygwin",
+        "x86_64-openbsd",
+        "x86_64-darwin",
+        "armv7l-netbsd",
+        "riscv64-linux",
+        "s390-none",
+        "powerpc-netbsd",
+        "aarch64-none",
+        "or1k-none",
+        "i686-openbsd",
+        "riscv64-none",
+        "x86_64-genode",
+        "armv6l-netbsd",
+        "i686-windows",
+        "mips-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "i686-netbsd",
+        "mips64-none",
+        "m68k-netbsd",
+        "mmix-mmixware",
+        "s390x-none",
+        "x86_64-solaris",
+        "armv5tel-linux",
+        "i686-darwin",
+        "powerpc-none"
+    ],
+    "package_outputs": [
+        "doc",
+        "out",
+        "data"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "lambdabot"
+    ],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "GPL"
+        }
+    ],
+    "package_license_set": [
+        "GPL"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Na\u00efm Favier",
+            "github": "ncfavier",
+            "email": "n@monade.li"
+        }
+    ],
+    "package_maintainers_set": [
+        "Na\u00efm Favier"
+    ],
+    "package_description": "Lambdabot is a development tool and advanced IRC bot",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://hackage.haskell.org/package/lambdabot"
+    ],
+    "package_position": "pkgs/development/haskell-modules/hackage-packages.nix:185372"
+}

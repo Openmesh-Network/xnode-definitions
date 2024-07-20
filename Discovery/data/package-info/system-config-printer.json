@@ -1,0 +1,59 @@
+{
+    "type": "package",
+    "package_attr_name": "system-config-printer",
+    "package_attr_set": "No package set",
+    "package_pname": "system-config-printer",
+    "package_pversion": "1.5.18",
+    "package_platforms": [
+        "m68k-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "riscv32-linux",
+        "mips-linux",
+        "riscv64-linux",
+        "armv5tel-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "system-config-printer",
+        "scp-dbus-service",
+        "system-config-printer-applet",
+        "install-printerdriver"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": null,
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/openprinting/system-config-printer"
+    ],
+    "package_position": "pkgs/tools/misc/system-config-printer/default.nix:11"
+}

@@ -1,0 +1,62 @@
+{
+    "type": "package",
+    "package_attr_name": "birdwatcher",
+    "package_attr_set": "No package set",
+    "package_pname": "birdwatcher",
+    "package_pversion": "2.2.5",
+    "package_platforms": [
+        "armv7a-linux",
+        "i686-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "wasm64-wasi",
+        "mips64-linux",
+        "powerpc64-linux",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "i686-darwin",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "x86_64-linux",
+        "riscv64-linux",
+        "wasm32-wasi",
+        "loongarch64-linux",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "birdwatcher"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Small HTTP server meant to provide an API defined by Barry O'Donovan's birds-eye to the BIRD internet routing daemon",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/alice-lg/birdwatcher"
+    ],
+    "package_position": "pkgs/servers/birdwatcher/default.nix:23"
+}

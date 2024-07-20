@@ -1,0 +1,59 @@
+{
+    "type": "package",
+    "package_attr_name": "sks",
+    "package_attr_set": "No package set",
+    "package_pname": "sks-unstable",
+    "package_pversion": "2021-02-04",
+    "package_platforms": [
+        "riscv64-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "webSamples",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "sks_add_mail",
+        "sks_build.sh",
+        "sks"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Easily deployable & decentralized OpenPGP keyserver",
+    "package_longDescription": "<rendered-html><p>SKS is an OpenPGP keyserver whose goal is to provide easy to deploy,\ndecentralized, and highly reliable synchronization. That means that a\nkey submitted to one SKS server will quickly be distributed to all key\nservers, and even wildly out-of-date servers, or servers that experience\nspotty connectivity, can fully synchronize with rest of the system.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/SKS-Keyserver/sks-keyserver"
+    ],
+    "package_position": "pkgs/servers/sks/default.nix:52"
+}

@@ -1,0 +1,50 @@
+{
+    "type": "package",
+    "package_attr_name": "tika",
+    "package_attr_set": "No package set",
+    "package_pname": "tika",
+    "package_pversion": "2.9.2",
+    "package_platforms": [
+        "armv6l-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tika-app",
+        "tika-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "TomaSajt",
+            "github": "TomaSajt",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "TomaSajt"
+    ],
+    "package_description": "A toolkit for extracting metadata and text from over a thousand different file types",
+    "package_longDescription": "<rendered-html><p>The Apache Tika\u2122 toolkit detects and extracts metadata and text from\nover a thousand different file types (such as PPT, XLS, and PDF). All of\nthese file types can be parsed through a single interface, making Tika\nuseful for search engine indexing, content analysis, translation, and\nmuch more.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tika.apache.org"
+    ],
+    "package_position": "pkgs/by-name/ti/tika/package.nix:82"
+}

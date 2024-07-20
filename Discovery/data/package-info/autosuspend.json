@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "autosuspend",
+    "package_attr_set": "No package set",
+    "package_pname": "autosuspend",
+    "package_pversion": "7.0.0",
+    "package_platforms": [
+        "mips-linux",
+        "s390-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "armv6l-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "riscv32-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "autosuspend"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bruno Bzeznik",
+            "github": "bzizou",
+            "email": "Bruno@bzizou.net"
+        },
+        {
+            "name": "Anthony Roussel",
+            "github": "anthonyroussel",
+            "email": "anthony@roussel.dev"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bruno Bzeznik",
+        "Anthony Roussel"
+    ],
+    "package_description": "Daemon to automatically suspend and wake up a system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://autosuspend.readthedocs.io"
+    ],
+    "package_position": "pkgs/by-name/au/autosuspend/package.nix:59"
+}

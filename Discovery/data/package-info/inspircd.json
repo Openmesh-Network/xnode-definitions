@@ -1,0 +1,148 @@
+{
+    "type": "package",
+    "package_attr_name": "inspircd",
+    "package_attr_set": "No package set",
+    "package_pname": "inspircd",
+    "package_pversion": "3.17.1",
+    "package_platforms": [
+        "powerpc-netbsd",
+        "mipsel-netbsd",
+        "microblazeel-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "riscv32-netbsd",
+        "armv6l-netbsd",
+        "i686-darwin",
+        "i686-openbsd",
+        "powerpc64le-linux",
+        "x86_64-cygwin",
+        "i686-cygwin",
+        "armv7a-linux",
+        "m68k-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "x86_64-darwin",
+        "aarch64-netbsd",
+        "armv7a-darwin",
+        "mips-linux",
+        "armv7l-netbsd",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "riscv64-netbsd",
+        "x86_64-openbsd",
+        "armv6l-linux",
+        "mips64el-linux",
+        "x86_64-solaris",
+        "aarch64-darwin",
+        "s390x-linux",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "x86_64-netbsd",
+        "microblaze-linux",
+        "x86_64-redox",
+        "x86_64-linux",
+        "mips64-linux",
+        "armv7a-netbsd",
+        "i686-freebsd",
+        "x86_64-freebsd"
+    ],
+    "package_outputs": [
+        "bin",
+        "man",
+        "lib",
+        "doc",
+        "out"
+    ],
+    "package_default_output": "bin",
+    "package_programs": [
+        "inspircd-testssl",
+        "inspircd-genssl",
+        "inspircd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/CC0-1.0.html",
+            "fullName": "Creative Commons Zero v1.0 Universal"
+        },
+        {
+            "url": "https://spdx.org/licenses/OLDAP-2.8.html",
+            "fullName": "Open LDAP Public License v2.8"
+        },
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-or-later.html",
+            "fullName": "GNU Lesser General Public License v2.1 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/PostgreSQL.html",
+            "fullName": "PostgreSQL License"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        },
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        },
+        {
+            "url": null,
+            "fullName": "Public Domain"
+        },
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1-or-later.html",
+            "fullName": "GNU Lesser General Public License v2.1 or later"
+        },
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.0-or-later.html",
+            "fullName": "GNU Library General Public License v2 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only",
+        "Creative Commons Zero v1.0 Universal",
+        "Open LDAP Public License v2.8",
+        "GNU Lesser General Public License v2.1 or later",
+        "PostgreSQL License",
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "BSD 3-clause \"New\" or \"Revised\" License",
+        "BSD 2-clause \"Simplified\" License",
+        "Public Domain",
+        "GNU Lesser General Public License v2.1 or later",
+        "GNU Library General Public License v2 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Lukas Epple",
+            "github": "sternenseemann",
+            "email": "sternenseemann@systemli.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Lukas Epple"
+    ],
+    "package_description": "Modular C++ IRC server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.inspircd.org/"
+    ],
+    "package_position": "pkgs/servers/irc/inspircd/default.nix:207"
+}

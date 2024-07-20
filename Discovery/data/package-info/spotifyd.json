@@ -1,0 +1,99 @@
+{
+    "type": "package",
+    "package_attr_name": "spotifyd",
+    "package_attr_set": "No package set",
+    "package_pname": "spotifyd",
+    "package_pversion": "0.3.5-unstable-2024-07-10",
+    "package_platforms": [
+        "x86_64-linux",
+        "riscv32-linux",
+        "aarch64-netbsd",
+        "i686-freebsd",
+        "i686-darwin",
+        "armv7a-darwin",
+        "x86_64-solaris",
+        "mips64el-linux",
+        "x86_64-cygwin",
+        "mipsel-linux",
+        "armv7l-netbsd",
+        "x86_64-openbsd",
+        "riscv64-netbsd",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "microblazeel-linux",
+        "powerpc-netbsd",
+        "i686-openbsd",
+        "riscv32-netbsd",
+        "powerpc64-linux",
+        "s390-linux",
+        "i686-cygwin",
+        "armv5tel-linux",
+        "mips64-linux",
+        "armv7a-netbsd",
+        "aarch64-linux",
+        "m68k-linux",
+        "i686-linux",
+        "aarch64-darwin",
+        "mipsel-netbsd",
+        "armv7a-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "armv6l-netbsd",
+        "m68k-netbsd",
+        "x86_64-netbsd",
+        "x86_64-redox",
+        "x86_64-darwin",
+        "s390x-linux",
+        "i686-netbsd",
+        "mips-linux",
+        "x86_64-freebsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "spotifyd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Anders Lundstedt",
+            "github": "anderslundstedt",
+            "email": "git@anderslundstedt.se"
+        },
+        {
+            "name": "Oleksii Filonenko",
+            "github": "Br1ght0ne",
+            "email": "brightone@protonmail.com"
+        },
+        {
+            "name": "Seth",
+            "github": "getchoo",
+            "email": "getchoo@tuta.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Anders Lundstedt",
+        "Oleksii Filonenko",
+        "Seth"
+    ],
+    "package_description": "Open source Spotify client running as a UNIX daemon",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://spotifyd.rs/"
+    ],
+    "package_position": "pkgs/by-name/sp/spotifyd/package.nix:70"
+}

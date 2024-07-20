@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "kmscon",
+    "package_attr_set": "No package set",
+    "package_pname": "kmscon",
+    "package_pversion": "9.0.0",
+    "package_platforms": [
+        "loongarch64-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "riscv32-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "armv7a-linux",
+        "riscv64-linux",
+        "mips-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "powerpc64le-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "aarch64-linux",
+        "s390-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "kmscon"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Masanori Ogino",
+            "github": "omasanori",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "Masanori Ogino"
+    ],
+    "package_description": "KMS/DRM based System Console",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.freedesktop.org/wiki/Software/kmscon/"
+    ],
+    "package_position": "pkgs/os-specific/linux/kmscon/default.nix:81"
+}

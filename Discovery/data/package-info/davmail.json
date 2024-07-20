@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "davmail",
+    "package_attr_set": "No package set",
+    "package_pname": "davmail",
+    "package_pversion": "6.2.2",
+    "package_platforms": [
+        "rx-none",
+        "javascript-ghcjs",
+        "armv6l-netbsd",
+        "armv7l-linux",
+        "mips64-none",
+        "microblazeel-linux",
+        "aarch64-linux",
+        "riscv32-linux",
+        "riscv32-netbsd",
+        "s390-none",
+        "x86_64-netbsd",
+        "mips64-linux",
+        "i686-none",
+        "x86_64-freebsd",
+        "mipsel-linux",
+        "armv7a-linux",
+        "x86_64-genode",
+        "mipsel-netbsd",
+        "microblaze-none",
+        "armv6l-linux",
+        "aarch64-none",
+        "aarch64-genode",
+        "armv7a-darwin",
+        "armv6l-none",
+        "avr-none",
+        "x86_64-windows",
+        "i686-windows",
+        "i686-genode",
+        "vc4-none",
+        "arm-none",
+        "i686-netbsd",
+        "s390-linux",
+        "aarch64-darwin",
+        "i686-linux",
+        "riscv64-netbsd",
+        "wasm32-wasi",
+        "s390x-linux",
+        "wasm64-wasi",
+        "powerpc-none",
+        "m68k-none",
+        "x86_64-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "mips-none",
+        "aarch64_be-none",
+        "powerpcle-none",
+        "riscv32-none",
+        "x86_64-none",
+        "x86_64-darwin",
+        "riscv64-linux",
+        "armv7a-netbsd",
+        "s390x-none",
+        "loongarch64-linux",
+        "x86_64-solaris",
+        "m68k-netbsd",
+        "m68k-linux",
+        "or1k-none",
+        "msp430-none",
+        "mmix-mmixware",
+        "microblaze-linux",
+        "x86_64-cygwin",
+        "riscv64-none",
+        "x86_64-openbsd",
+        "mips-linux",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "x86_64-redox",
+        "i686-openbsd",
+        "armv7l-netbsd",
+        "powerpc-netbsd",
+        "microblazeel-none",
+        "aarch64-netbsd",
+        "i686-freebsd",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "davmail"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Peter Hoeg",
+            "github": "peterhoeg",
+            "email": "peter@hoeg.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Peter Hoeg"
+    ],
+    "package_description": "Java application which presents a Microsoft Exchange server as local CALDAV, IMAP and SMTP servers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://davmail.sourceforge.net/"
+    ],
+    "package_position": "pkgs/applications/networking/davmail/default.nix:54"
+}

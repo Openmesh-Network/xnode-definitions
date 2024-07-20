@@ -1,0 +1,87 @@
+{
+    "type": "package",
+    "package_attr_name": "polaris",
+    "package_attr_set": "No package set",
+    "package_pname": "polaris",
+    "package_pversion": "0.14.2",
+    "package_platforms": [
+        "riscv64-linux",
+        "armv7a-linux",
+        "m68k-linux",
+        "x86_64-netbsd",
+        "mips64-linux",
+        "armv7a-darwin",
+        "microblazeel-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "powerpc-netbsd",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "x86_64-redox",
+        "x86_64-darwin",
+        "i686-cygwin",
+        "x86_64-cygwin",
+        "aarch64-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "armv6l-netbsd",
+        "aarch64-netbsd",
+        "i686-darwin",
+        "m68k-netbsd",
+        "riscv32-netbsd",
+        "i686-linux",
+        "i686-freebsd",
+        "x86_64-solaris",
+        "microblaze-linux",
+        "aarch64-darwin",
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "s390-linux",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "i686-openbsd",
+        "armv7l-netbsd",
+        "x86_64-openbsd",
+        "riscv64-netbsd",
+        "s390x-linux",
+        "x86_64-freebsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "polaris"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Peder Bergebakken Sundt",
+            "github": "pbsds",
+            "email": "pbsds@hotmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Peder Bergebakken Sundt"
+    ],
+    "package_description": "Self-host your music collection, and access it from any computer and mobile device",
+    "package_longDescription": "<rendered-html><p>Polaris is a FOSS music streaming application, designed to let you\nenjoy your music collection from any computer or mobile device. Polaris\nworks by streaming your music directly from your own computer, without\nuploading it to a third-party. There are no kind of premium version. The\nonly requirement is that your computer stays on while it streams your\nmusic!</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/agersant/polaris"
+    ],
+    "package_position": "pkgs/servers/polaris/default.nix:63"
+}

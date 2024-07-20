@@ -1,0 +1,94 @@
+{
+    "type": "package",
+    "package_attr_name": "freeswitch",
+    "package_attr_set": "No package set",
+    "package_pname": "freeswitch",
+    "package_pversion": "1.10.11",
+    "package_platforms": [
+        "armv7a-darwin",
+        "riscv32-linux",
+        "armv7l-netbsd",
+        "i686-linux",
+        "powerpc64-linux",
+        "x86_64-solaris",
+        "i686-cygwin",
+        "s390-linux",
+        "i686-netbsd",
+        "mipsel-netbsd",
+        "powerpc64le-linux",
+        "x86_64-darwin",
+        "loongarch64-linux",
+        "i686-darwin",
+        "armv7a-linux",
+        "mips64el-linux",
+        "armv7a-netbsd",
+        "riscv32-netbsd",
+        "i686-freebsd",
+        "i686-openbsd",
+        "s390x-linux",
+        "x86_64-freebsd",
+        "x86_64-linux",
+        "armv6l-netbsd",
+        "riscv64-netbsd",
+        "aarch64-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "x86_64-redox",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "aarch64-netbsd",
+        "mips64-linux",
+        "m68k-netbsd",
+        "m68k-linux",
+        "powerpc-netbsd",
+        "x86_64-cygwin",
+        "x86_64-netbsd",
+        "aarch64-darwin",
+        "x86_64-openbsd",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "fs_ivrd",
+        "fs_cli",
+        "freeswitch",
+        "gentls_cert",
+        "tone2wav",
+        "fs_tts",
+        "switch_eavesdrop",
+        "fs_encode"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-1.1.html",
+            "fullName": "Mozilla Public License 1.1"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 1.1"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Mikael Fangel",
+            "github": "MikaelFangel",
+            "email": "nixpkgs.bottle597@passfwd.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Mikael Fangel"
+    ],
+    "package_description": "Cross-Platform Scalable FREE Multi-Protocol Soft Switch",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://freeswitch.org/"
+    ],
+    "package_position": "pkgs/servers/sip/freeswitch/default.nix:166"
+}

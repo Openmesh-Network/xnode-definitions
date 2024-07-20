@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "invidious-router",
+    "package_attr_set": "No package set",
+    "package_pname": "invidious-router",
+    "package_pversion": "1.1",
+    "package_platforms": [
+        "s390-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "mips-linux",
+        "i686-darwin",
+        "mips64el-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "wasm64-wasi",
+        "microblaze-linux",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "wasm32-wasi",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "invidious-router"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Silas Sch\u00f6ffel",
+            "github": "s1ls",
+            "email": "sils@sils.li"
+        }
+    ],
+    "package_maintainers_set": [
+        "Silas Sch\u00f6ffel"
+    ],
+    "package_description": "Go application that routes requests to different Invidious instances based on their health status and (optional) response time",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitlab.com/gaincoder/invidious-router"
+    ],
+    "package_position": "pkgs/by-name/in/invidious-router/package.nix:25"
+}

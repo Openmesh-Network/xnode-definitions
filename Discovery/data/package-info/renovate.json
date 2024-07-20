@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "renovate",
+    "package_attr_set": "No package set",
+    "package_pname": "renovate",
+    "package_pversion": "37.431.7",
+    "package_platforms": [
+        "aarch64-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "i686-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "loongarch64-linux",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "mips-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "renovate-config-validator",
+        "renovate"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Marie Ramlow",
+            "github": "nycodeghg",
+            "email": "tabmeier12+nix@gmail.com"
+        },
+        {
+            "name": "Tomoya Otabi",
+            "github": "natsukium",
+            "email": "nixpkgs@natsukium.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Marie Ramlow",
+        "Tomoya Otabi"
+    ],
+    "package_description": "Cross-platform Dependency Automation by Mend.io",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/renovatebot/renovate"
+    ],
+    "package_position": "pkgs/by-name/re/renovate/package.nix:101"
+}

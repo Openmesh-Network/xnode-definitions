@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "lighthouse",
+    "package_attr_set": "No package set",
+    "package_pname": "lighthouse",
+    "package_pversion": "5.2.0",
+    "package_platforms": [
+        "aarch64-darwin",
+        "armv6l-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "armv7a-linux",
+        "armv6l-netbsd",
+        "x86_64-redox",
+        "armv7a-darwin",
+        "i686-linux",
+        "i686-openbsd",
+        "x86_64-darwin",
+        "i686-freebsd",
+        "i686-darwin",
+        "m68k-linux",
+        "i686-windows",
+        "powerpc-netbsd",
+        "armv7l-linux",
+        "mipsel-netbsd",
+        "mips64el-linux",
+        "wasm32-wasi",
+        "armv7l-netbsd",
+        "x86_64-windows",
+        "riscv64-linux",
+        "mipsel-linux",
+        "x86_64-freebsd",
+        "x86_64-solaris",
+        "s390x-linux",
+        "i686-netbsd",
+        "riscv64-netbsd",
+        "x86_64-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "x86_64-netbsd",
+        "x86_64-openbsd",
+        "mips64-linux",
+        "aarch64-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "lighthouse"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Alex Wied",
+            "github": "centromere",
+            "email": "nix@centromere.net"
+        },
+        {
+            "name": "Philip White",
+            "github": "philipmw",
+            "email": "philip@mailworks.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Alex Wied",
+        "Philip White"
+    ],
+    "package_description": "Ethereum consensus client in Rust",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://lighthouse.sigmaprime.io/"
+    ],
+    "package_position": "pkgs/applications/blockchains/lighthouse/default.nix:152"
+}

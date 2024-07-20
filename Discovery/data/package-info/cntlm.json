@@ -1,0 +1,74 @@
+{
+    "type": "package",
+    "package_attr_name": "cntlm",
+    "package_attr_set": "No package set",
+    "package_pname": "cntlm",
+    "package_pversion": "0.92.3",
+    "package_platforms": [
+        "armv6l-linux",
+        "microblaze-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "armv7a-darwin",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "mipsel-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "mips-linux",
+        "riscv32-linux",
+        "i686-darwin",
+        "m68k-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "cntlm"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Joachim Schiele",
+            "github": "qknight",
+            "email": "js@lastlog.de"
+        },
+        {
+            "name": "Carlos D'Agostino",
+            "github": "carlosdagos",
+            "email": "m@cdagostino.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Joachim Schiele",
+        "Carlos D'Agostino"
+    ],
+    "package_description": "NTLM/NTLMv2 authenticating HTTP proxy",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://cntlm.sourceforge.net/"
+    ],
+    "package_position": "pkgs/tools/networking/cntlm/default.nix:26"
+}

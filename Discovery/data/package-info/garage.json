@@ -1,0 +1,94 @@
+{
+    "type": "package",
+    "package_attr_name": "garage",
+    "package_attr_set": "No package set",
+    "package_pname": "garage",
+    "package_pversion": "1.0.0",
+    "package_platforms": [
+        "x86_64-freebsd",
+        "x86_64-solaris",
+        "x86_64-darwin",
+        "x86_64-redox",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "i686-openbsd",
+        "x86_64-openbsd",
+        "mipsel-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "x86_64-windows",
+        "riscv64-linux",
+        "i686-netbsd",
+        "riscv64-netbsd",
+        "x86_64-linux",
+        "armv6l-netbsd",
+        "armv6l-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "i686-windows",
+        "mips-linux",
+        "armv7l-netbsd",
+        "armv7a-linux",
+        "mips64el-linux",
+        "mipsel-netbsd",
+        "aarch64-darwin",
+        "wasm32-wasi",
+        "armv7l-linux",
+        "armv7a-darwin",
+        "x86_64-netbsd",
+        "aarch64-netbsd",
+        "powerpc-netbsd",
+        "i686-darwin",
+        "mips64-linux",
+        "i686-freebsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "garage"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nick Cao",
+            "github": "NickCao",
+            "email": "nickcao@nichi.co"
+        },
+        {
+            "name": "Joachim Ernst",
+            "github": "0x4A6F",
+            "email": "mail-maintainer@0x4A6F.dev"
+        },
+        {
+            "name": "teutat3s",
+            "github": "teutat3s",
+            "email": "teutates@mailbox.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nick Cao",
+        "Joachim Ernst",
+        "teutat3s"
+    ],
+    "package_description": "S3-compatible object store for small self-hosted geo-distributed deployments",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://garagehq.deuxfleurs.fr"
+    ],
+    "package_position": "pkgs/tools/filesystems/garage/default.nix:80"
+}

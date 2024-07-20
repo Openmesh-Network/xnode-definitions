@@ -1,0 +1,81 @@
+{
+    "type": "package",
+    "package_attr_name": "etebase-server",
+    "package_attr_set": "No package set",
+    "package_pname": "etebase-server",
+    "package_pversion": "0.13.1",
+    "package_platforms": [
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "i686-darwin",
+        "mipsel-linux",
+        "aarch64-darwin",
+        "mips64el-linux",
+        "armv7l-linux",
+        "x86_64-cygwin",
+        "microblaze-linux",
+        "s390-linux",
+        "i686-freebsd",
+        "mips64-linux",
+        "armv6l-linux",
+        "mips-linux",
+        "i686-windows",
+        "powerpc64le-linux",
+        "x86_64-windows",
+        "x86_64-freebsd",
+        "x86_64-darwin",
+        "i686-cygwin",
+        "m68k-linux",
+        "powerpc64-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "etebase-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Felix Schr\u00f6ter",
+            "github": "felschr",
+            "email": "dev@felschr.com"
+        },
+        {
+            "name": "Paul Haerle",
+            "github": "phaer",
+            "email": "nix@phaer.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Felix Schr\u00f6ter",
+        "Paul Haerle"
+    ],
+    "package_description": "Etebase (EteSync 2.0) server so you can run your own",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/etesync/server"
+    ],
+    "package_position": "pkgs/servers/etebase/default.nix:67"
+}

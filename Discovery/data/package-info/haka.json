@@ -1,0 +1,48 @@
+{
+    "type": "package",
+    "package_attr_name": "haka",
+    "package_attr_set": "No package set",
+    "package_pname": "haka",
+    "package_pversion": "0.3.0",
+    "package_platforms": [
+        "i686-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "hakactl",
+        "hakapcap",
+        "haka",
+        "hakabench"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MPL-2.0.html",
+            "fullName": "Mozilla Public License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Mozilla Public License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Tomas Vestelind",
+            "github": "tvestelind",
+            "email": "tomas.vestelind@fripost.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Tomas Vestelind"
+    ],
+    "package_description": "Collection of tools that allows capturing TCP/IP packets and filtering them based on Lua policy files",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.haka-security.org/"
+    ],
+    "package_position": "pkgs/tools/security/haka/default.nix:30"
+}

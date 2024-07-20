@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "mtr-exporter",
+    "package_attr_set": "No package set",
+    "package_pname": "mtr-exporter",
+    "package_pversion": "0.3.0",
+    "package_platforms": [
+        "armv7l-linux",
+        "armv6l-linux",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "powerpc64-linux",
+        "armv7a-darwin",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "mips64-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "aarch64-darwin",
+        "m68k-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "microblazeel-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mtr-exporter"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jakub Grzgorz Soko\u0142owski",
+            "github": "jakubgs",
+            "email": "jakub@gsokolowski.pl"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jakub Grzgorz Soko\u0142owski"
+    ],
+    "package_description": "Mtr-exporter periodically executes mtr to a given host and\nprovides the measured results as prometheus metrics.\n",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mgumz/mtr-exporter"
+    ],
+    "package_position": "pkgs/tools/networking/mtr-exporter/default.nix:17"
+}

@@ -1,0 +1,76 @@
+{
+    "type": "package",
+    "package_attr_name": "chrony",
+    "package_attr_set": "No package set",
+    "package_pname": "chrony",
+    "package_pversion": "4.5",
+    "package_platforms": [
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "i686-freebsd",
+        "aarch64-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "i686-openbsd",
+        "powerpc64le-linux",
+        "x86_64-freebsd",
+        "m68k-linux",
+        "x86_64-openbsd",
+        "s390x-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "i686-linux",
+        "armv7a-linux",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "riscv32-linux",
+        "mips64-linux"
+    ],
+    "package_outputs": [
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "chronyc",
+        "chronyd"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Franz Pletz",
+            "github": "fpletz",
+            "email": "fpletz@fnordicwalking.de"
+        },
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Franz Pletz",
+        "Austin Seipp"
+    ],
+    "package_description": "Sets your computer's clock from time servers on the Net",
+    "package_longDescription": "<rendered-html><p>Chronyd is a daemon which runs in background on the system. It\nobtains measurements via the network of the system clock\u2019s offset\nrelative to time servers on other systems and adjusts the system time\naccordingly. For isolated systems, the user can periodically enter the\ncorrect time by hand (using Chronyc). In either case, Chronyd determines\nthe rate at which the computer gains or loses time, and compensates for\nthis. Chronyd implements the NTP protocol and can act as either a client\nor a server.</p>\n<p>Chronyc provides a user interface to Chronyd for monitoring its\nperformance and configuring various settings. It can do so while running\non the same computer as the Chronyd instance it is controlling or a\ndifferent computer.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://chrony.tuxfamily.org/"
+    ],
+    "package_position": "pkgs/tools/networking/chrony/default.nix:43"
+}

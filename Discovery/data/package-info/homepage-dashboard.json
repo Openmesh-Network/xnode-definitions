@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "homepage-dashboard",
+    "package_attr_set": "No package set",
+    "package_pname": "homepage-dashboard",
+    "package_pversion": "0.9.5",
+    "package_platforms": [
+        "armv5tel-linux",
+        "javascript-ghcjs",
+        "i686-openbsd",
+        "powerpcle-none",
+        "powerpc64-linux",
+        "i686-none",
+        "mips64-linux",
+        "s390-none",
+        "x86_64-windows",
+        "x86_64-freebsd",
+        "armv7a-linux",
+        "riscv64-none",
+        "x86_64-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "i686-cygwin",
+        "s390x-linux",
+        "riscv32-netbsd",
+        "aarch64_be-none",
+        "wasm32-wasi",
+        "riscv64-netbsd",
+        "armv6l-none",
+        "aarch64-darwin",
+        "aarch64-none",
+        "mips-none",
+        "aarch64-genode",
+        "x86_64-solaris",
+        "armv7l-linux",
+        "powerpc-netbsd",
+        "microblaze-none",
+        "aarch64-linux",
+        "avr-none",
+        "mipsel-linux",
+        "arm-none",
+        "m68k-linux",
+        "riscv32-linux",
+        "or1k-none",
+        "microblazeel-none",
+        "powerpc-none",
+        "m68k-none",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "x86_64-netbsd",
+        "armv6l-linux",
+        "s390x-none",
+        "x86_64-darwin",
+        "aarch64-netbsd",
+        "vc4-none",
+        "m68k-netbsd",
+        "i686-genode",
+        "mips64el-linux",
+        "x86_64-openbsd",
+        "armv7a-netbsd",
+        "msp430-none",
+        "microblazeel-linux",
+        "armv7a-darwin",
+        "armv7l-netbsd",
+        "x86_64-genode",
+        "armv6l-netbsd",
+        "x86_64-none",
+        "wasm64-wasi",
+        "i686-darwin",
+        "mips64-none",
+        "mmix-mmixware",
+        "mips-linux",
+        "x86_64-redox",
+        "riscv64-linux",
+        "i686-netbsd",
+        "i686-freebsd",
+        "rx-none",
+        "i686-windows",
+        "x86_64-cygwin",
+        "mipsel-netbsd",
+        "riscv32-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "homepage"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jon Seager",
+            "github": "jnsgruk",
+            "email": "jon@sgrs.uk"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jon Seager"
+    ],
+    "package_description": "Highly customisable dashboard with Docker and service API integrations",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gethomepage.dev"
+    ],
+    "package_position": "pkgs/servers/homepage-dashboard/default.nix:95"
+}

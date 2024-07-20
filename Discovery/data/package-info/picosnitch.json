@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "picosnitch",
+    "package_attr_set": "No package set",
+    "package_pname": "picosnitch",
+    "package_pversion": "1.0.3",
+    "package_platforms": [
+        "armv6l-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "mips-linux",
+        "mips64-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "i686-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "picosnitch"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Eric Lesiuta",
+            "github": "elesiuta",
+            "email": "elesiuta@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Eric Lesiuta"
+    ],
+    "package_description": "Monitor network traffic per executable with hashing",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/elesiuta/picosnitch"
+    ],
+    "package_position": "pkgs/tools/networking/picosnitch/default.nix:35"
+}

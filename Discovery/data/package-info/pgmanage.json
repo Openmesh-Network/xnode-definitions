@@ -1,0 +1,42 @@
+{
+    "type": "package",
+    "package_attr_name": "pgmanage",
+    "package_attr_set": "No package set",
+    "package_pname": "pgmanage-unstable",
+    "package_pversion": "2022-05-11",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pgmanage"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/PostgreSQL.html",
+            "fullName": "PostgreSQL License"
+        }
+    ],
+    "package_license_set": [
+        "PostgreSQL License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Bas van Dijk",
+            "github": "basvandijk",
+            "email": "v.dijk.bas@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bas van Dijk"
+    ],
+    "package_description": "Fast replacement for PGAdmin",
+    "package_longDescription": "<rendered-html><p>At the heart of pgManage is a modern, fast, event-based C-binary,\nbuilt in the style of NGINX and Node.js. This heart makes pgManage as\nfast as any PostgreSQL interface can hope to be. (Note: pgManage\nreplaces Postage, which is no longer maintained.)</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/pgManage/pgManage"
+    ],
+    "package_position": "pkgs/applications/misc/pgmanage/default.nix:29"
+}

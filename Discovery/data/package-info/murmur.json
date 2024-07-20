@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "murmur",
+    "package_attr_set": "No package set",
+    "package_pname": "murmur",
+    "package_pversion": "1.5.634",
+    "package_platforms": [
+        "mips-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "mips64el-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "powerpc64-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "armv7l-linux",
+        "aarch64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mumble-server-user-wrapper",
+        "mumble-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Felix Singer",
+            "github": "felixsinger",
+            "email": "felixsinger@posteo.net"
+        },
+        {
+            "name": "Yuchen He",
+            "github": "Lilacious",
+            "email": "yuchenhe126@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Felix Singer",
+        "Yuchen He"
+    ],
+    "package_description": "Low-latency, high quality voice chat software",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://mumble.info"
+    ],
+    "package_position": "pkgs/applications/networking/mumble/default.nix:40"
+}

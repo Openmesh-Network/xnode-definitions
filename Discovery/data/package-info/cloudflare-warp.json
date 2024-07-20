@@ -1,0 +1,49 @@
+{
+    "type": "package",
+    "package_attr_name": "cloudflare-warp",
+    "package_attr_set": "No package set",
+    "package_pname": "cloudflare-warp",
+    "package_pversion": "2024.4.133",
+    "package_platforms": [
+        "aarch64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "Unfree"
+        }
+    ],
+    "package_license_set": [
+        "Unfree"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Andrei Hava",
+            "github": "devpikachu",
+            "email": "andrei.hava@proton.me"
+        },
+        {
+            "name": "Marcus Ramberg",
+            "github": "marcusramberg",
+            "email": "marcus@means.no"
+        }
+    ],
+    "package_maintainers_set": [
+        "Andrei Hava",
+        "Marcus Ramberg"
+    ],
+    "package_description": "Replaces the connection between your device and the Internet with a modern, optimized, protocol",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://pkg.cloudflareclient.com/packages/cloudflare-warp"
+    ],
+    "package_position": "pkgs/tools/networking/cloudflare-warp/default.nix:90"
+}

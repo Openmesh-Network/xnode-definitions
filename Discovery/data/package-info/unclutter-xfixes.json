@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "unclutter-xfixes",
+    "package_attr_set": "No package set",
+    "package_pname": "unclutter-xfixes",
+    "package_pversion": "1.6",
+    "package_platforms": [
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "aarch64-netbsd",
+        "armv6l-netbsd",
+        "armv7a-linux",
+        "m68k-netbsd",
+        "powerpc64-linux",
+        "i686-darwin",
+        "riscv32-linux",
+        "i686-netbsd",
+        "s390-linux",
+        "mipsel-netbsd",
+        "armv6l-linux",
+        "riscv64-netbsd",
+        "x86_64-netbsd",
+        "x86_64-solaris",
+        "armv7a-darwin",
+        "armv7l-netbsd",
+        "armv7a-netbsd",
+        "i686-openbsd",
+        "x86_64-redox",
+        "x86_64-cygwin",
+        "mips64el-linux",
+        "i686-linux",
+        "mips-linux",
+        "riscv32-netbsd",
+        "x86_64-darwin",
+        "i686-freebsd",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "x86_64-openbsd",
+        "m68k-linux",
+        "powerpc-netbsd",
+        "mips64-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "x86_64-freebsd",
+        "armv5tel-linux",
+        "i686-cygwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "unclutter"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Rewrite of unclutter using the X11 Xfixes extension",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/tools/misc/unclutter-xfixes/default.nix:27"
+}

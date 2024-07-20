@@ -1,0 +1,85 @@
+{
+    "type": "package",
+    "package_attr_name": "prometheus",
+    "package_attr_set": "No package set",
+    "package_pname": "prometheus",
+    "package_pversion": "2.53.1",
+    "package_platforms": [
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "powerpc64le-linux",
+        "powerpc64-linux",
+        "i686-darwin",
+        "s390x-linux",
+        "microblaze-linux",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "aarch64-darwin",
+        "mips-linux",
+        "aarch64-linux",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "mips64-linux",
+        "i686-linux",
+        "x86_64-darwin",
+        "armv7l-linux"
+    ],
+    "package_outputs": [
+        "cli",
+        "doc",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "prometheus",
+        "promtool"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Franz Pletz",
+            "github": "fpletz",
+            "email": "fpletz@fnordicwalking.de"
+        },
+        {
+            "name": "Willi Butz",
+            "github": "WilliButz",
+            "email": "willibutz@posteo.de"
+        },
+        {
+            "name": "Sergei Lukianov",
+            "github": "Frostman",
+            "email": "me@slukjanov.name"
+        }
+    ],
+    "package_maintainers_set": [
+        "Franz Pletz",
+        "Willi Butz",
+        "Sergei Lukianov"
+    ],
+    "package_description": "Service monitoring system and time series database",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://prometheus.io"
+    ],
+    "package_position": "pkgs/servers/monitoring/prometheus/default.nix:129"
+}

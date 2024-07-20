@@ -1,0 +1,100 @@
+{
+    "type": "package",
+    "package_attr_name": "gitolite",
+    "package_attr_set": "No package set",
+    "package_pname": "gitolite",
+    "package_pversion": "3.6.13",
+    "package_platforms": [
+        "m68k-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "i686-cygwin",
+        "x86_64-solaris",
+        "x86_64-openbsd",
+        "aarch64-netbsd",
+        "riscv64-linux",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "i686-netbsd",
+        "x86_64-cygwin",
+        "armv6l-netbsd",
+        "m68k-netbsd",
+        "mips64el-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "mipsel-netbsd",
+        "aarch64-linux",
+        "armv7l-netbsd",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "powerpc-netbsd",
+        "x86_64-redox",
+        "armv7a-darwin",
+        "i686-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "armv7a-netbsd",
+        "x86_64-freebsd",
+        "riscv32-netbsd",
+        "s390x-linux",
+        "i686-openbsd",
+        "x86_64-netbsd",
+        "x86_64-darwin",
+        "i686-freebsd",
+        "microblaze-linux",
+        "i686-darwin",
+        "armv5tel-linux",
+        "riscv64-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gitolite",
+        "gitolite-shell"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0.html",
+            "fullName": "GNU General Public License v2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        },
+        {
+            "name": "Lassulus",
+            "github": "Lassulus",
+            "email": "lassulus@gmail.com"
+        },
+        {
+            "name": "Thomas Bereknyei",
+            "github": "tomberek",
+            "email": "tomberek@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Austin Seipp",
+        "Lassulus",
+        "Thomas Bereknyei"
+    ],
+    "package_description": "Finely-grained git repository hosting",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://gitolite.com/gitolite/index.html"
+    ],
+    "package_position": "pkgs/applications/version-management/gitolite/default.nix:48"
+}

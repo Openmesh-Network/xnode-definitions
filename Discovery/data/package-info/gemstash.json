@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "gemstash",
+    "package_attr_set": "No package set",
+    "package_pname": "gemstash",
+    "package_pversion": "2.7.1",
+    "package_platforms": [
+        "s390-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "m68k-none",
+        "s390x-none",
+        "aarch64-netbsd",
+        "x86_64-openbsd",
+        "armv7a-darwin",
+        "mipsel-linux",
+        "x86_64-cygwin",
+        "riscv32-linux",
+        "microblaze-none",
+        "armv7l-linux",
+        "mips-linux",
+        "microblaze-linux",
+        "javascript-ghcjs",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "riscv32-netbsd",
+        "i686-netbsd",
+        "mmix-mmixware",
+        "arm-none",
+        "x86_64-solaris",
+        "mips64-none",
+        "aarch64-none",
+        "aarch64-linux",
+        "m68k-netbsd",
+        "aarch64_be-none",
+        "aarch64-genode",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "x86_64-netbsd",
+        "or1k-none",
+        "wasm64-wasi",
+        "armv6l-netbsd",
+        "wasm32-wasi",
+        "x86_64-windows",
+        "mips-none",
+        "mips64-linux",
+        "armv6l-linux",
+        "riscv64-none",
+        "riscv32-none",
+        "armv7l-netbsd",
+        "i686-none",
+        "x86_64-none",
+        "powerpc-netbsd",
+        "m68k-linux",
+        "mipsel-netbsd",
+        "microblazeel-linux",
+        "powerpc-none",
+        "x86_64-darwin",
+        "i686-genode",
+        "i686-freebsd",
+        "i686-darwin",
+        "x86_64-freebsd",
+        "x86_64-genode",
+        "mips64el-linux",
+        "i686-openbsd",
+        "msp430-none",
+        "armv7a-netbsd",
+        "riscv64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "i686-windows",
+        "rx-none",
+        "s390-none",
+        "aarch64-darwin",
+        "avr-none",
+        "powerpcle-none",
+        "vc4-none",
+        "x86_64-redox",
+        "i686-linux",
+        "riscv64-netbsd",
+        "armv6l-none",
+        "microblazeel-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "gemstash"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Stanis\u0142aw Pitucha",
+            "github": "viraptor",
+            "email": "nix@viraptor.info"
+        }
+    ],
+    "package_maintainers_set": [
+        "Stanis\u0142aw Pitucha"
+    ],
+    "package_description": "Cache for RubyGems.org and a private gem server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/rubygems/gemstash"
+    ],
+    "package_position": "pkgs/development/tools/gemstash/default.nix:14"
+}

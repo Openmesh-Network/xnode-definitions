@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "rustus",
+    "package_attr_set": "No package set",
+    "package_pname": "rustus",
+    "package_pversion": "0.7.6",
+    "package_platforms": [
+        "microblaze-none",
+        "or1k-none",
+        "i686-freebsd",
+        "riscv64-netbsd",
+        "aarch64_be-none",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "x86_64-darwin",
+        "m68k-netbsd",
+        "aarch64-netbsd",
+        "x86_64-none",
+        "mips64el-linux",
+        "armv7l-netbsd",
+        "armv7a-linux",
+        "x86_64-freebsd",
+        "i686-darwin",
+        "armv7a-darwin",
+        "armv6l-linux",
+        "mmix-mmixware",
+        "i686-none",
+        "rx-none",
+        "i686-cygwin",
+        "m68k-none",
+        "aarch64-genode",
+        "riscv64-linux",
+        "riscv32-none",
+        "armv6l-netbsd",
+        "aarch64-none",
+        "aarch64-linux",
+        "mips-none",
+        "x86_64-redox",
+        "riscv32-linux",
+        "x86_64-solaris",
+        "s390-linux",
+        "powerpc-netbsd",
+        "i686-linux",
+        "riscv64-none",
+        "s390x-none",
+        "microblaze-linux",
+        "mipsel-netbsd",
+        "x86_64-genode",
+        "loongarch64-linux",
+        "aarch64-darwin",
+        "mips-linux",
+        "powerpc64-linux",
+        "i686-genode",
+        "armv7l-linux",
+        "mips64-linux",
+        "mips64-none",
+        "microblazeel-linux",
+        "armv7a-netbsd",
+        "x86_64-linux",
+        "javascript-ghcjs",
+        "msp430-none",
+        "microblazeel-none",
+        "armv6l-none",
+        "wasm32-wasi",
+        "s390-none",
+        "riscv32-netbsd",
+        "i686-openbsd",
+        "wasm64-wasi",
+        "i686-windows",
+        "powerpcle-none",
+        "x86_64-windows",
+        "arm-none",
+        "mipsel-linux",
+        "powerpc-none",
+        "i686-netbsd",
+        "vc4-none",
+        "x86_64-cygwin",
+        "m68k-linux",
+        "x86_64-openbsd",
+        "armv5tel-linux",
+        "avr-none",
+        "x86_64-netbsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rustus"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Raphael Megzari",
+            "github": "happysalada",
+            "email": "raphael@megzari.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Raphael Megzari"
+    ],
+    "package_description": "TUS protocol implementation in Rust",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://s3rius.github.io/rustus/"
+    ],
+    "package_position": "pkgs/servers/networking/rustus/default.nix:65"
+}

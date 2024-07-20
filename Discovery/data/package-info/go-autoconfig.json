@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "go-autoconfig",
+    "package_attr_set": "No package set",
+    "package_pname": "go-autoconfig-unstable",
+    "package_pversion": "2022-08-03",
+    "package_platforms": [
+        "i686-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "aarch64-darwin",
+        "mipsel-linux",
+        "armv7l-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "powerpc64le-linux",
+        "microblaze-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "mips64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "mips-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "go-autoconfig"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jonas Heinrich",
+            "github": "onny",
+            "email": "onny@project-insanity.org"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jonas Heinrich"
+    ],
+    "package_description": "IMAP/SMTP autodiscover feature for Thunderbird, Apple Mail and Microsoft Outlook",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/L11R/go-autoconfig"
+    ],
+    "package_position": "pkgs/servers/go-autoconfig/default.nix:24"
+}

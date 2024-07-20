@@ -1,0 +1,100 @@
+{
+    "type": "package",
+    "package_attr_name": "dbus",
+    "package_attr_set": "No package set",
+    "package_pname": "dbus",
+    "package_pversion": "1.14.10",
+    "package_platforms": [
+        "i686-openbsd",
+        "powerpc64le-linux",
+        "aarch64-darwin",
+        "s390-linux",
+        "x86_64-redox",
+        "powerpc64-linux",
+        "powerpc-netbsd",
+        "x86_64-darwin",
+        "aarch64-netbsd",
+        "x86_64-solaris",
+        "armv5tel-linux",
+        "mipsel-netbsd",
+        "riscv64-linux",
+        "riscv32-netbsd",
+        "riscv32-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "i686-darwin",
+        "i686-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "x86_64-freebsd",
+        "mips-linux",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "m68k-netbsd",
+        "x86_64-cygwin",
+        "i686-cygwin",
+        "x86_64-netbsd",
+        "i686-freebsd",
+        "x86_64-openbsd",
+        "s390x-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "x86_64-linux",
+        "armv6l-netbsd",
+        "microblazeel-linux",
+        "armv7a-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "riscv64-netbsd",
+        "armv7l-netbsd",
+        "armv7a-darwin"
+    ],
+    "package_outputs": [
+        "lib",
+        "doc",
+        "debug",
+        "man",
+        "dev",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "dbus-test-tool",
+        "dbus-send",
+        "dbus-monitor",
+        "dbus-uuidgen",
+        "dbus-daemon",
+        "dbus-launch",
+        "dbus-run-session",
+        "dbus-cleanup-sockets",
+        "dbus-update-activation-environment"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jan Tojnar",
+            "github": "jtojnar",
+            "email": "jtojnar@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jan Tojnar"
+    ],
+    "package_description": "Simple interprocess messaging system",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.freedesktop.org/wiki/Software/dbus/"
+    ],
+    "package_position": "pkgs/development/libraries/dbus/default.nix:117"
+}

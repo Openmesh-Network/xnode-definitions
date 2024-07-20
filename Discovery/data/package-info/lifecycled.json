@@ -1,0 +1,77 @@
+{
+    "type": "package",
+    "package_attr_name": "lifecycled",
+    "package_attr_set": "No package set",
+    "package_pname": "lifecycled",
+    "package_pversion": "3.3.0",
+    "package_platforms": [
+        "m68k-linux",
+        "i686-linux",
+        "mips-linux",
+        "wasm64-wasi",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "mips64-linux",
+        "wasm32-wasi",
+        "i686-darwin",
+        "loongarch64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "riscv64-linux",
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "mipsel-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "lifecycled",
+        "lifecycled-queue-cleaner"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Cole Helbling",
+            "github": "cole-h",
+            "email": "cole.e.helbling@outlook.com"
+        },
+        {
+            "name": "Graham Christensen",
+            "github": "grahamc",
+            "email": "graham@grahamc.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Cole Helbling",
+        "Graham Christensen"
+    ],
+    "package_description": "Daemon for responding to AWS AutoScaling Lifecycle Hooks",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/buildkite/lifecycled/"
+    ],
+    "package_position": "pkgs/tools/misc/lifecycled/default.nix:25"
+}

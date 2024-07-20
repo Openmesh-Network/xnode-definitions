@@ -1,0 +1,67 @@
+{
+    "type": "package",
+    "package_attr_name": "auto-cpufreq",
+    "package_attr_set": "No package set",
+    "package_pname": "python3.12-auto-cpufreq",
+    "package_pversion": "2.3.0",
+    "package_platforms": [
+        "m68k-linux",
+        "mips-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "powerpc64le-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "riscv64-linux",
+        "armv7a-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "s390-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "dist"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "auto-cpufreq",
+        "cpufreqctl.auto-cpufreq",
+        "auto-cpufreq-gtk"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-3.0-or-later.html",
+            "fullName": "GNU Lesser General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robert James Hernandez",
+            "github": "sarcasticadmin",
+            "email": "rob@sarcasticadmin.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robert James Hernandez"
+    ],
+    "package_description": "Automatic CPU speed & power optimizer for Linux",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/AdnanHodzic/auto-cpufreq"
+    ],
+    "package_position": "pkgs/by-name/au/auto-cpufreq/package.nix:95"
+}

@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "mautrix-signal",
+    "package_attr_set": "No package set",
+    "package_pname": "mautrix-signal",
+    "package_pversion": "0.6.1",
+    "package_platforms": [
+        "mips-linux",
+        "riscv32-linux",
+        "wasm32-wasi",
+        "mipsel-linux",
+        "s390-linux",
+        "powerpc64le-linux",
+        "x86_64-darwin",
+        "armv5tel-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "aarch64-darwin",
+        "mips64-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "wasm64-wasi",
+        "mips64el-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "riscv64-linux",
+        "powerpc64-linux",
+        "armv7a-darwin",
+        "i686-darwin",
+        "s390x-linux",
+        "i686-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mautrix-signal"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ellie Hermaszewska",
+            "github": "expipiplus1",
+            "email": "nix@monoid.al"
+        },
+        {
+            "name": "Niklas Korz",
+            "github": "niklaskorz",
+            "email": "niklas@niklaskorz.de"
+        },
+        {
+            "name": "Maximilian Bosch",
+            "github": "Ma27",
+            "email": "maximilian@mbosch.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ellie Hermaszewska",
+        "Niklas Korz",
+        "Maximilian Bosch"
+    ],
+    "package_description": "Matrix-Signal puppeting bridge",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/mautrix/signal"
+    ],
+    "package_position": "pkgs/servers/mautrix-signal/default.nix:27"
+}

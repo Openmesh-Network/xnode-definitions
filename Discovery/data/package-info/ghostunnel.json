@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "ghostunnel",
+    "package_attr_set": "No package set",
+    "package_pname": "ghostunnel",
+    "package_pversion": "1.8.1",
+    "package_platforms": [
+        "riscv64-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv7a-darwin",
+        "aarch64-darwin",
+        "armv7l-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "powerpc64-linux",
+        "i686-linux",
+        "mips64-linux",
+        "i686-darwin",
+        "aarch64-linux",
+        "m68k-linux",
+        "loongarch64-linux",
+        "microblaze-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ghostunnel"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robert Hensing",
+            "github": "roberth",
+            "email": "nixpkgs@roberthensing.nl"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robert Hensing"
+    ],
+    "package_description": "TLS proxy with mutual authentication support for securing non-TLS backend applications",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/ghostunnel/ghostunnel#readme"
+    ],
+    "package_position": "pkgs/tools/networking/ghostunnel/default.nix:37"
+}

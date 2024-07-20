@@ -1,0 +1,82 @@
+{
+    "type": "package",
+    "package_attr_name": "caddy",
+    "package_attr_set": "No package set",
+    "package_pname": "caddy",
+    "package_pversion": "2.8.4",
+    "package_platforms": [
+        "aarch64-darwin",
+        "armv7a-darwin",
+        "i686-linux",
+        "powerpc64le-linux",
+        "powerpc64-linux",
+        "i686-darwin",
+        "aarch64-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "microblazeel-linux",
+        "x86_64-darwin",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "riscv32-linux",
+        "mips64-linux",
+        "wasm64-wasi",
+        "armv5tel-linux",
+        "m68k-linux",
+        "armv7a-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "wasm32-wasi"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "caddy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Oleksii Filonenko",
+            "github": "Br1ght0ne",
+            "email": "brightone@protonmail.com"
+        },
+        {
+            "name": "Emily Lange",
+            "github": "emilylange",
+            "email": "nix@emilylange.de"
+        },
+        {
+            "name": "techknowlogick",
+            "github": "techknowlogick",
+            "email": "techknowlogick@gitea.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Oleksii Filonenko",
+        "Emily Lange",
+        "techknowlogick"
+    ],
+    "package_description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://caddyserver.com"
+    ],
+    "package_position": "pkgs/by-name/ca/caddy/package.nix:74"
+}

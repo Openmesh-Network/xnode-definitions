@@ -1,0 +1,93 @@
+{
+    "type": "package",
+    "package_attr_name": "mattermost",
+    "package_attr_set": "No package set",
+    "package_pname": "mattermost",
+    "package_pversion": "9.5.6",
+    "package_platforms": [
+        "armv7l-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "aarch64-darwin",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "wasm32-wasi",
+        "mips-linux",
+        "x86_64-darwin",
+        "riscv32-linux",
+        "i686-darwin",
+        "wasm64-wasi",
+        "microblaze-linux",
+        "s390-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "x86_64-linux",
+        "aarch64-linux",
+        "armv7a-darwin",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "riscv64-linux",
+        "armv7a-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mattermost"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        },
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only",
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Ryan Mulligan",
+            "github": "ryantm",
+            "email": "ryan@ryantm.com"
+        },
+        {
+            "name": "Morgan Jones",
+            "github": "numinit",
+            "email": "me@numin.it"
+        },
+        {
+            "name": "Ilan Joselevich",
+            "github": "Kranzes",
+            "email": "personal@ilanjoselevich.com"
+        },
+        {
+            "name": "Miguel de la Cruz",
+            "github": "mgdelacroix",
+            "email": "mgdelacroix@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Ryan Mulligan",
+        "Morgan Jones",
+        "Ilan Joselevich",
+        "Miguel de la Cruz"
+    ],
+    "package_description": "Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.mattermost.org"
+    ],
+    "package_position": "pkgs/servers/mattermost/default.nix:82"
+}

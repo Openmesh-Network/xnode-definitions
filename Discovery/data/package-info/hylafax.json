@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "hylafaxplus",
+    "package_attr_set": "No package set",
+    "package_pname": "hylafaxplus",
+    "package_pversion": "7.0.8",
+    "package_platforms": [
+        "armv7l-linux",
+        "loongarch64-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "s390-linux",
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "riscv32-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "m68k-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "faxmail",
+        "sendpage",
+        "faxalter",
+        "faxcover",
+        "faxstat",
+        "sendfax",
+        "faxrm"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Yarny",
+            "github": "Yarny0",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "Yarny"
+    ],
+    "package_description": "enterprise-class system for sending and receiving facsimiles",
+    "package_longDescription": "<rendered-html><p>HylaFAX is a scalable and time-proven solution for sending and\nreceiving facsimiles via modem(s). It is based on a client-server\narchitecture, loosely comparable to CUPS: A client connects to a server\nto issue outbound jobs, the server then chooses a modem to connect to\nthe receiving fax machine. The server notifies users about their\noutbound jobs as well as about inbound jobs. HylaFAX+ is a fork of\nHylaFAX that \u2013 in general \u2013 contains a superset of the features of\nHylaFAX and produces releases more often. This package contains the\nclient and the server parts of HylaFAX+.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://hylafax.sourceforge.io"
+    ],
+    "package_position": "pkgs/servers/hylafaxplus/default.nix:104"
+}

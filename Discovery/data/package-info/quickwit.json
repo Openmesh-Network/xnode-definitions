@@ -1,0 +1,119 @@
+{
+    "type": "package",
+    "package_attr_name": "quickwit",
+    "package_attr_set": "No package set",
+    "package_pname": "quickwit",
+    "package_pversion": "0.8.2",
+    "package_platforms": [
+        "i686-genode",
+        "x86_64-cygwin",
+        "aarch64-none",
+        "rx-none",
+        "aarch64-linux",
+        "armv7l-netbsd",
+        "riscv32-netbsd",
+        "armv7l-linux",
+        "powerpcle-none",
+        "riscv64-netbsd",
+        "mips64-none",
+        "armv6l-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "wasm64-wasi",
+        "mipsel-linux",
+        "i686-none",
+        "i686-darwin",
+        "x86_64-darwin",
+        "riscv64-linux",
+        "vc4-none",
+        "mmix-mmixware",
+        "i686-openbsd",
+        "or1k-none",
+        "i686-cygwin",
+        "x86_64-solaris",
+        "x86_64-netbsd",
+        "powerpc64-linux",
+        "x86_64-redox",
+        "armv7a-darwin",
+        "loongarch64-linux",
+        "aarch64-genode",
+        "aarch64-darwin",
+        "mips-linux",
+        "powerpc-netbsd",
+        "avr-none",
+        "s390-linux",
+        "armv6l-netbsd",
+        "riscv32-linux",
+        "microblazeel-none",
+        "msp430-none",
+        "mips64-linux",
+        "armv7a-netbsd",
+        "arm-none",
+        "mips-none",
+        "powerpc-none",
+        "i686-linux",
+        "microblaze-linux",
+        "x86_64-genode",
+        "s390x-linux",
+        "mips64el-linux",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "riscv64-none",
+        "microblazeel-linux",
+        "s390x-none",
+        "x86_64-none",
+        "riscv32-none",
+        "i686-freebsd",
+        "aarch64_be-none",
+        "x86_64-freebsd",
+        "aarch64-netbsd",
+        "m68k-none",
+        "x86_64-openbsd",
+        "x86_64-windows",
+        "i686-windows",
+        "powerpc64le-linux",
+        "wasm32-wasi",
+        "x86_64-linux",
+        "microblaze-none",
+        "s390-none",
+        "javascript-ghcjs",
+        "i686-netbsd",
+        "armv6l-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "quickwit",
+        "generate_markdown"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-only.html",
+            "fullName": "GNU Affero General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Raphael Megzari",
+            "github": "happysalada",
+            "email": "raphael@megzari.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Raphael Megzari"
+    ],
+    "package_description": "Sub-second search & analytics engine on cloud storage",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://quickwit.io/"
+    ],
+    "package_position": "pkgs/servers/search/quickwit/default.nix:142"
+}

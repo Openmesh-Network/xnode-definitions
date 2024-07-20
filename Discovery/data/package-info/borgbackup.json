@@ -1,0 +1,97 @@
+{
+    "type": "package",
+    "package_attr_name": "borgbackup",
+    "package_attr_set": "No package set",
+    "package_pname": "borgbackup",
+    "package_pversion": "1.4.0",
+    "package_platforms": [
+        "i686-cygwin",
+        "powerpc-netbsd",
+        "armv7a-netbsd",
+        "s390-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "x86_64-cygwin",
+        "mipsel-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux",
+        "mipsel-netbsd",
+        "loongarch64-linux",
+        "i686-freebsd",
+        "i686-netbsd",
+        "mips-linux",
+        "i686-linux",
+        "i686-darwin",
+        "x86_64-solaris",
+        "armv6l-netbsd",
+        "m68k-netbsd",
+        "m68k-linux",
+        "x86_64-freebsd",
+        "aarch64-netbsd",
+        "riscv64-netbsd",
+        "microblaze-linux",
+        "riscv32-netbsd",
+        "x86_64-netbsd",
+        "armv7a-darwin",
+        "x86_64-darwin",
+        "armv7l-netbsd",
+        "x86_64-redox",
+        "riscv32-linux",
+        "x86_64-openbsd",
+        "mips64el-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "aarch64-darwin",
+        "riscv64-linux",
+        "s390x-linux",
+        "armv7a-linux",
+        "i686-openbsd"
+    ],
+    "package_outputs": [
+        "doc",
+        "out",
+        "dist",
+        "man"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "borg",
+        "borgfs"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robert Sch\u00fctz",
+            "github": "dotlambda",
+            "email": "rschuetz17@gmail.com"
+        },
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robert Sch\u00fctz",
+        "Robin Gloster"
+    ],
+    "package_description": "Deduplicating archiver with compression and encryption",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.borgbackup.org"
+    ],
+    "package_position": "pkgs/tools/backup/borgbackup/default.nix:127"
+}

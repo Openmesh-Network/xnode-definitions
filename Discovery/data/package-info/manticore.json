@@ -1,0 +1,27 @@
+{
+    "type": "package",
+    "package_attr_name": "manticore",
+    "package_attr_set": "No package set",
+    "package_pname": "manticore",
+    "package_pversion": "2019.12.03",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "pmlc"
+    ],
+    "package_license": [],
+    "package_license_set": [],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Parallel, pure variant of Standard ML",
+    "package_longDescription": "<rendered-html><p>Manticore is a high-level parallel programming language aimed at\ngeneral-purpose applications running on multi-core processors. Manticore\nsupports parallelism at multiple levels: explicit concurrency and\ncoarse-grain parallelism via CML-style constructs and fine-grain\nparallelism via various light-weight notations, such as parallel tuple\nexpressions and NESL/Nepal-style parallel array comprehensions.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://manticore.cs.uchicago.edu/"
+    ],
+    "package_position": "pkgs/development/compilers/manticore/default.nix:41"
+}

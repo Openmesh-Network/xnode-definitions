@@ -1,0 +1,119 @@
+{
+    "type": "package",
+    "package_attr_name": "duplicati",
+    "package_attr_set": "No package set",
+    "package_pname": "duplicati",
+    "package_pversion": "2.0.7.1",
+    "package_platforms": [
+        "wasm64-wasi",
+        "mips64el-linux",
+        "armv7a-linux",
+        "mips64-none",
+        "s390-none",
+        "armv5tel-linux",
+        "aarch64-darwin",
+        "i686-cygwin",
+        "powerpc64-linux",
+        "aarch64_be-none",
+        "riscv32-linux",
+        "mips-none",
+        "mipsel-linux",
+        "x86_64-solaris",
+        "msp430-none",
+        "powerpc-none",
+        "x86_64-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "m68k-none",
+        "microblazeel-none",
+        "s390x-linux",
+        "s390x-none",
+        "x86_64-cygwin",
+        "i686-none",
+        "x86_64-darwin",
+        "i686-linux",
+        "i686-netbsd",
+        "i686-openbsd",
+        "riscv64-netbsd",
+        "armv6l-none",
+        "i686-windows",
+        "x86_64-genode",
+        "microblaze-linux",
+        "riscv64-linux",
+        "wasm32-wasi",
+        "x86_64-none",
+        "avr-none",
+        "i686-freebsd",
+        "microblazeel-linux",
+        "m68k-netbsd",
+        "x86_64-openbsd",
+        "mips64-linux",
+        "armv6l-netbsd",
+        "microblaze-none",
+        "riscv64-none",
+        "mips-linux",
+        "i686-darwin",
+        "arm-none",
+        "x86_64-windows",
+        "armv6l-linux",
+        "x86_64-netbsd",
+        "armv7l-netbsd",
+        "or1k-none",
+        "riscv32-netbsd",
+        "aarch64-netbsd",
+        "i686-genode",
+        "mipsel-netbsd",
+        "armv7a-netbsd",
+        "armv7a-darwin",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "x86_64-freebsd",
+        "aarch64-genode",
+        "armv7l-linux",
+        "javascript-ghcjs",
+        "aarch64-none",
+        "vc4-none",
+        "powerpcle-none",
+        "rx-none",
+        "riscv32-none",
+        "powerpc-netbsd",
+        "x86_64-redox",
+        "mmix-mmixware",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "duplicati-cli",
+        "duplicati-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/LGPL-2.1.html",
+            "fullName": "GNU Lesser General Public License v2.1"
+        }
+    ],
+    "package_license_set": [
+        "GNU Lesser General Public License v2.1"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Paul Trehiou",
+            "github": "nyanloutre",
+            "email": "paul@nyanlout.re"
+        }
+    ],
+    "package_maintainers_set": [
+        "Paul Trehiou"
+    ],
+    "package_description": "Free backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.duplicati.com/"
+    ],
+    "package_position": "pkgs/tools/backup/duplicati/default.nix:31"
+}

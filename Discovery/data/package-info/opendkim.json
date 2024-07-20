@@ -1,0 +1,91 @@
+{
+    "type": "package",
+    "package_attr_name": "opendkim",
+    "package_attr_set": "No package set",
+    "package_pname": "opendkim",
+    "package_pversion": "2.11.0-Beta2",
+    "package_platforms": [
+        "armv7l-linux",
+        "aarch64-darwin",
+        "armv6l-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "riscv32-netbsd",
+        "riscv64-netbsd",
+        "i686-openbsd",
+        "x86_64-openbsd",
+        "powerpc-netbsd",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "i686-netbsd",
+        "i686-cygwin",
+        "aarch64-netbsd",
+        "i686-darwin",
+        "m68k-netbsd",
+        "microblaze-linux",
+        "armv7l-netbsd",
+        "armv7a-netbsd",
+        "s390-linux",
+        "x86_64-linux",
+        "x86_64-netbsd",
+        "x86_64-redox",
+        "mipsel-linux",
+        "x86_64-darwin",
+        "microblazeel-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "x86_64-freebsd",
+        "mips64el-linux",
+        "armv6l-netbsd",
+        "x86_64-solaris",
+        "mipsel-netbsd",
+        "mips-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "armv7a-darwin",
+        "x86_64-cygwin",
+        "armv7a-linux",
+        "i686-freebsd"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "opendkim-testmsg",
+        "opendkim-genzone",
+        "opendkim-genkey",
+        "opendkim-testkey",
+        "opendkim"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-3-Clause.html",
+            "fullName": "BSD 3-clause \"New\" or \"Revised\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 3-clause \"New\" or \"Revised\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Nikolay Amiantov",
+            "github": "abbradar",
+            "email": "ab@fmap.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Nikolay Amiantov"
+    ],
+    "package_description": "C library for producing DKIM-aware applications and an open source milter for providing DKIM service",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "http://www.opendkim.org/"
+    ],
+    "package_position": "pkgs/development/libraries/opendkim/default.nix:31"
+}

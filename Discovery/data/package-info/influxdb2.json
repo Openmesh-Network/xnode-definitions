@@ -1,0 +1,27 @@
+{
+    "type": "package",
+    "package_attr_name": "influxdb2",
+    "package_attr_set": "No package set",
+    "package_pname": "influxdb2",
+    "package_pversion": "",
+    "package_platforms": [],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "telemetryd",
+        "influxd",
+        "influx"
+    ],
+    "package_license": [],
+    "package_license_set": [],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": null,
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [],
+    "package_position": "pkgs/build-support/trivial-builders/default.nix:68"
+}

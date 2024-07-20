@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "shellhub-agent",
+    "package_attr_set": "No package set",
+    "package_pname": "shellhub-agent",
+    "package_pversion": "0.15.1",
+    "package_platforms": [
+        "loongarch64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
+        "mips64-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "s390x-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "s390-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "agent"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Otavio Salvador",
+            "github": "otavio",
+            "email": "otavio.salvador@ossystems.com.br"
+        }
+    ],
+    "package_maintainers_set": [
+        "Otavio Salvador"
+    ],
+    "package_description": "Enables easy access any Linux device behind firewall and NAT",
+    "package_longDescription": "<rendered-html><p>ShellHub is a modern SSH server for remotely accessing Linux devices\nvia command line (using any SSH client) or web-based user interface,\ndesigned as an alternative to <em>sshd</em>. Think ShellHub as\ncentralized SSH for the the edge and cloud computing.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://shellhub.io/"
+    ],
+    "package_position": "pkgs/applications/networking/shellhub-agent/default.nix:47"
+}

@@ -1,0 +1,71 @@
+{
+    "type": "package",
+    "package_attr_name": "rke2",
+    "package_attr_set": "No package set",
+    "package_pname": "rke2",
+    "package_pversion": "1.28.10+rke2r1",
+    "package_platforms": [
+        "m68k-linux",
+        "s390x-linux",
+        "mips64el-linux",
+        "microblazeel-linux",
+        "mips-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "i686-linux",
+        "powerpc64le-linux",
+        "armv7l-linux",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "mips64-linux",
+        "microblaze-linux",
+        "armv7a-linux",
+        "s390-linux",
+        "x86_64-linux",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "rke2",
+        "rke2-killall.sh"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "zimbatm",
+            "github": "zimbatm",
+            "email": "zimbatm@zimbatm.com"
+        },
+        {
+            "name": "Stefan Bordei",
+            "github": "stefan-bordei",
+            "email": "stefan.bordei13@gmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "zimbatm",
+        "Stefan Bordei"
+    ],
+    "package_description": "RKE2, also known as RKE Government, is Rancher's next-generation Kubernetes distribution",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/rancher/rke2"
+    ],
+    "package_position": "pkgs/applications/networking/cluster/rke2/builder.nix:100"
+}

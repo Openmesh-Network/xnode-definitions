@@ -1,0 +1,88 @@
+{
+    "type": "package",
+    "package_attr_name": "wastebin",
+    "package_attr_set": "No package set",
+    "package_pname": "wastebin",
+    "package_pversion": "2.4.3",
+    "package_platforms": [
+        "x86_64-netbsd",
+        "m68k-linux",
+        "mipsel-linux",
+        "aarch64-darwin",
+        "riscv64-netbsd",
+        "x86_64-solaris",
+        "wasm32-wasi",
+        "powerpc-netbsd",
+        "i686-windows",
+        "riscv32-linux",
+        "i686-openbsd",
+        "powerpc64-linux",
+        "mips64-linux",
+        "armv5tel-linux",
+        "i686-netbsd",
+        "aarch64-netbsd",
+        "x86_64-redox",
+        "s390x-linux",
+        "i686-linux",
+        "i686-darwin",
+        "x86_64-darwin",
+        "x86_64-linux",
+        "x86_64-freebsd",
+        "armv6l-netbsd",
+        "armv6l-linux",
+        "mips64el-linux",
+        "loongarch64-linux",
+        "aarch64-linux",
+        "x86_64-windows",
+        "mipsel-netbsd",
+        "mips-linux",
+        "powerpc64le-linux",
+        "x86_64-openbsd",
+        "armv7a-darwin",
+        "armv7a-linux",
+        "i686-freebsd",
+        "armv7l-linux",
+        "armv7l-netbsd",
+        "riscv64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "wastebin"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Pablo Ovelleiro Corral",
+            "github": "pinpox",
+            "email": "mail@pablo.tools"
+        },
+        {
+            "name": "Matthias Beyer",
+            "github": "matthiasbeyer",
+            "email": "mail@beyermatthias.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Pablo Ovelleiro Corral",
+        "Matthias Beyer"
+    ],
+    "package_description": "Wastebin is a pastebin",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/matze/wastebin"
+    ],
+    "package_position": "pkgs/by-name/wa/wastebin/package.nix:40"
+}

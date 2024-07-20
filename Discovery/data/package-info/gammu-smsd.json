@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "python312Packages.python-gammu",
+    "package_attr_set": "python312Packages",
+    "package_pname": "python3.12-python-gammu",
+    "package_pversion": "3.2.4",
+    "package_platforms": [
+        "mipsel-linux",
+        "x86_64-darwin",
+        "mips64el-linux",
+        "mips-linux",
+        "i686-freebsd",
+        "riscv32-linux",
+        "armv7a-linux",
+        "aarch64-linux",
+        "x86_64-freebsd",
+        "x86_64-windows",
+        "riscv64-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "i686-darwin",
+        "armv7a-darwin",
+        "s390-linux",
+        "aarch64-darwin",
+        "powerpc64-linux",
+        "i686-cygwin",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "x86_64-cygwin",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "x86_64-linux",
+        "i686-windows"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Fabian Affolter",
+            "github": "fabaff",
+            "email": "mail@fabian-affolter.ch"
+        }
+    ],
+    "package_maintainers_set": [
+        "Fabian Affolter"
+    ],
+    "package_description": "Python bindings for Gammu",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/gammu/python-gammu/"
+    ],
+    "package_position": "pkgs/development/python-modules/python-gammu/default.nix:37"
+}

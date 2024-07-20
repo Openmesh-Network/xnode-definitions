@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "audiobookshelf",
+    "package_attr_set": "No package set",
+    "package_pname": "audiobookshelf",
+    "package_pversion": "2.11.0",
+    "package_platforms": [
+        "loongarch64-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "armv5tel-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "riscv64-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "armv7a-linux",
+        "mips64el-linux",
+        "s390x-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "audiobookshelf"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0.html",
+            "fullName": "GNU General Public License v3.0"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jan van Br\u00fcgge",
+            "github": "jvanbruegge",
+            "email": "supermanitu@gmail.com"
+        },
+        {
+            "name": "Adam C. Stephens",
+            "github": "adamcstephens",
+            "email": "happy.plan4249@valkor.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jan van Br\u00fcgge",
+        "Adam C. Stephens"
+    ],
+    "package_description": "Self-hosted audiobook and podcast server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.audiobookshelf.org/"
+    ],
+    "package_position": "pkgs/by-name/au/audiobookshelf/package.nix:74"
+}

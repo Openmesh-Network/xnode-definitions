@@ -1,0 +1,58 @@
+{
+    "type": "package",
+    "package_attr_name": "nodePackages.parsoid",
+    "package_attr_set": "nodePackages",
+    "package_pname": "parsoid",
+    "package_pversion": "0.11.1",
+    "package_platforms": [
+        "aarch64-linux",
+        "m68k-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "s390x-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "aarch64-darwin",
+        "mips64-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "i686-darwin",
+        "mips-linux",
+        "loongarch64-linux",
+        "x86_64-darwin",
+        "riscv32-linux",
+        "mipsel-linux",
+        "armv7a-darwin",
+        "mips64el-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": null,
+            "fullName": "GPL-2.0+"
+        }
+    ],
+    "package_license_set": [
+        "GPL-2.0+"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "A bidirectional runtime wikitext parser. Converts back and forth between wikitext and HTML/XML DOM with RDFa.",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/wikimedia/parsoid#readme"
+    ],
+    "package_position": "pkgs/development/node-packages/node-packages.nix:82001"
+}

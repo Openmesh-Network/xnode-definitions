@@ -1,0 +1,116 @@
+{
+    "type": "package",
+    "package_attr_name": "zerotierone",
+    "package_attr_set": "No package set",
+    "package_pname": "zerotierone",
+    "package_pversion": "1.14.0",
+    "package_platforms": [
+        "i686-cygwin",
+        "aarch64-linux",
+        "powerpc64le-linux",
+        "armv6l-linux",
+        "loongarch64-linux",
+        "riscv64-netbsd",
+        "i686-linux",
+        "mipsel-linux",
+        "m68k-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "aarch64-netbsd",
+        "x86_64-openbsd",
+        "x86_64-solaris",
+        "microblazeel-linux",
+        "armv7l-netbsd",
+        "microblaze-linux",
+        "riscv64-linux",
+        "m68k-netbsd",
+        "mipsel-netbsd",
+        "i686-darwin",
+        "riscv32-linux",
+        "i686-freebsd",
+        "aarch64-darwin",
+        "i686-netbsd",
+        "riscv32-netbsd",
+        "armv6l-netbsd",
+        "mips64el-linux",
+        "powerpc-netbsd",
+        "armv7a-netbsd",
+        "x86_64-darwin",
+        "armv7a-linux",
+        "armv7l-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "mips64-linux",
+        "s390-linux",
+        "armv7a-darwin",
+        "x86_64-netbsd",
+        "x86_64-redox",
+        "x86_64-linux",
+        "i686-openbsd",
+        "x86_64-freebsd",
+        "x86_64-cygwin"
+    ],
+    "package_outputs": [
+        "man",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://mariadb.com/bsl11",
+            "fullName": "Business Source License 1.1"
+        }
+    ],
+    "package_license_set": [
+        "Business Source License 1.1"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Stewart Mackenzie",
+            "github": "sjmackenzie",
+            "email": "setori88@gmail.com"
+        },
+        {
+            "name": "zimbatm",
+            "github": "zimbatm",
+            "email": "zimbatm@zimbatm.com"
+        },
+        {
+            "name": "Emery Hemingway",
+            "github": "ehmry",
+            "email": "ehmry@posteo.net"
+        },
+        {
+            "name": "obadz",
+            "github": "obadz",
+            "email": "obadz-nixos@obadz.com"
+        },
+        {
+            "name": "Daniel Fullmer",
+            "github": "danielfullmer",
+            "email": "danielrf12@gmail.com"
+        },
+        {
+            "name": "J\u00f6rg Thalheim",
+            "github": "Mic92",
+            "email": "joerg@thalheim.io"
+        }
+    ],
+    "package_maintainers_set": [
+        "Stewart Mackenzie",
+        "zimbatm",
+        "Emery Hemingway",
+        "obadz",
+        "Daniel Fullmer",
+        "J\u00f6rg Thalheim"
+    ],
+    "package_description": "Create flat virtual Ethernet networks of almost unlimited size",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.zerotier.com"
+    ],
+    "package_position": "pkgs/tools/networking/zerotierone/default.nix:142"
+}

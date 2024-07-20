@@ -1,0 +1,121 @@
+{
+    "type": "package",
+    "package_attr_name": "teleport",
+    "package_attr_set": "No package set",
+    "package_pname": "teleport",
+    "package_pversion": "16.0.4",
+    "package_platforms": [
+        "armv7a-darwin",
+        "mipsel-netbsd",
+        "aarch64-linux",
+        "i686-linux",
+        "armv7l-netbsd",
+        "powerpc64-linux",
+        "armv7l-linux",
+        "aarch64-darwin",
+        "armv7a-linux",
+        "riscv32-linux",
+        "armv6l-netbsd",
+        "mips64-linux",
+        "x86_64-freebsd",
+        "m68k-netbsd",
+        "x86_64-netbsd",
+        "armv5tel-linux",
+        "x86_64-darwin",
+        "m68k-linux",
+        "armv7a-netbsd",
+        "riscv64-netbsd",
+        "loongarch64-linux",
+        "x86_64-openbsd",
+        "powerpc64le-linux",
+        "i686-freebsd",
+        "x86_64-solaris",
+        "mips64el-linux",
+        "riscv64-linux",
+        "aarch64-netbsd",
+        "s390x-linux",
+        "i686-cygwin",
+        "armv6l-linux",
+        "i686-darwin",
+        "microblazeel-linux",
+        "x86_64-cygwin",
+        "i686-netbsd",
+        "powerpc-netbsd",
+        "microblaze-linux",
+        "riscv32-netbsd",
+        "i686-openbsd",
+        "x86_64-redox",
+        "mipsel-linux",
+        "s390-linux",
+        "mips-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out",
+        "client"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "tctl",
+        "tsh",
+        "teleport",
+        "tbot"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/AGPL-3.0-or-later.html",
+            "fullName": "GNU Affero General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU Affero General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Arian van Putten",
+            "github": "arianvp",
+            "email": "arian.vanputten@gmail.com"
+        },
+        {
+            "name": "Justinas Stankevi\u010dius",
+            "github": "justinas",
+            "email": "justinas@justinas.org"
+        },
+        {
+            "name": "Yann Hodique",
+            "github": "sigma",
+            "email": "yann.hodique@gmail.com"
+        },
+        {
+            "name": "Thomas Bereknyei",
+            "github": "tomberek",
+            "email": "tomberek@gmail.com"
+        },
+        {
+            "name": "freezeboy",
+            "github": "freezeboy",
+            "email": null
+        },
+        {
+            "name": "techknowlogick",
+            "github": "techknowlogick",
+            "email": "techknowlogick@gitea.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Arian van Putten",
+        "Justinas Stankevi\u010dius",
+        "Yann Hodique",
+        "Thomas Bereknyei",
+        "freezeboy",
+        "techknowlogick"
+    ],
+    "package_description": "Certificate authority and access plane for SSH, Kubernetes, web applications, and databases",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://goteleport.com/"
+    ],
+    "package_position": "pkgs/servers/teleport/generic.nix:177"
+}

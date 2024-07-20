@@ -1,0 +1,73 @@
+{
+    "type": "package",
+    "package_attr_name": "connman",
+    "package_attr_set": "No package set",
+    "package_pname": "connman",
+    "package_pversion": "1.42",
+    "package_platforms": [
+        "riscv64-linux",
+        "mips-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "loongarch64-linux",
+        "s390-linux",
+        "armv7a-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "armv7l-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "i686-linux",
+        "microblazeel-linux",
+        "powerpc64le-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "connman-vpnd",
+        "connmand",
+        "connmanctl",
+        "connmand-wait-online"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-only.html",
+            "fullName": "GNU General Public License v2.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "\u00e9clairevoyant",
+            "github": "eclairevoyant",
+            "email": "contactmeongithubinstead@proton.me"
+        },
+        {
+            "name": "Anderson Torres",
+            "github": "AndersonTorres",
+            "email": "torres.anderson.85@protonmail.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "\u00e9clairevoyant",
+        "Anderson Torres"
+    ],
+    "package_description": "Daemon for managing internet connections",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://git.kernel.org/pub/scm/network/connman/connman.git/about/"
+    ],
+    "package_position": "pkgs/by-name/co/connman/package.nix:168"
+}

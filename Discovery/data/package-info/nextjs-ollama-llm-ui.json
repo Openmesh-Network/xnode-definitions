@@ -1,0 +1,118 @@
+{
+    "type": "package",
+    "package_attr_name": "nextjs-ollama-llm-ui",
+    "package_attr_set": "No package set",
+    "package_pname": "nextjs-ollama-llm-ui",
+    "package_pversion": "1.0.1",
+    "package_platforms": [
+        "x86_64-netbsd",
+        "s390-linux",
+        "powerpc-none",
+        "i686-linux",
+        "armv6l-none",
+        "powerpc64-linux",
+        "riscv32-linux",
+        "x86_64-genode",
+        "s390x-none",
+        "wasm32-wasi",
+        "x86_64-freebsd",
+        "mmix-mmixware",
+        "armv7a-darwin",
+        "s390x-linux",
+        "aarch64-netbsd",
+        "avr-none",
+        "x86_64-windows",
+        "loongarch64-linux",
+        "mips64-linux",
+        "riscv32-netbsd",
+        "aarch64-darwin",
+        "riscv64-linux",
+        "x86_64-redox",
+        "mips64el-linux",
+        "armv7l-netbsd",
+        "mipsel-netbsd",
+        "msp430-none",
+        "powerpcle-none",
+        "i686-none",
+        "armv7a-linux",
+        "x86_64-openbsd",
+        "mipsel-linux",
+        "x86_64-cygwin",
+        "armv7a-netbsd",
+        "i686-openbsd",
+        "i686-freebsd",
+        "x86_64-darwin",
+        "x86_64-linux",
+        "riscv64-netbsd",
+        "wasm64-wasi",
+        "riscv32-none",
+        "aarch64-genode",
+        "armv6l-netbsd",
+        "aarch64_be-none",
+        "aarch64-none",
+        "or1k-none",
+        "s390-none",
+        "microblazeel-linux",
+        "m68k-netbsd",
+        "armv7l-linux",
+        "m68k-none",
+        "mips64-none",
+        "microblaze-linux",
+        "i686-netbsd",
+        "riscv64-none",
+        "i686-cygwin",
+        "microblazeel-none",
+        "powerpc64le-linux",
+        "aarch64-linux",
+        "m68k-linux",
+        "i686-windows",
+        "arm-none",
+        "x86_64-none",
+        "mips-none",
+        "vc4-none",
+        "armv6l-linux",
+        "microblaze-none",
+        "i686-darwin",
+        "x86_64-solaris",
+        "mips-linux",
+        "i686-genode",
+        "javascript-ghcjs",
+        "powerpc-netbsd",
+        "armv5tel-linux",
+        "rx-none"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "nextjs-ollama-llm-ui"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Malte Neuss",
+            "github": "malteneuss",
+            "email": null
+        }
+    ],
+    "package_maintainers_set": [
+        "Malte Neuss"
+    ],
+    "package_description": "Simple chat web interface for Ollama LLMs",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/jakobhoeg/nextjs-ollama-llm-ui"
+    ],
+    "package_position": "pkgs/by-name/ne/nextjs-ollama-llm-ui/package.nix:93"
+}

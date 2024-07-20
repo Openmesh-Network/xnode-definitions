@@ -1,0 +1,65 @@
+{
+    "type": "package",
+    "package_attr_name": "davfs2",
+    "package_attr_set": "No package set",
+    "package_pname": "davfs2",
+    "package_pversion": "1.7.0",
+    "package_platforms": [
+        "armv5tel-linux",
+        "aarch64-linux",
+        "mipsel-linux",
+        "microblaze-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "loongarch64-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
+        "powerpc64-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "i686-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "umount.davfs",
+        "mount.davfs"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Francesco Gazzetta",
+            "github": "fgaz",
+            "email": "fgaz@fgaz.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Francesco Gazzetta"
+    ],
+    "package_description": "Mount WebDAV shares like a typical filesystem",
+    "package_longDescription": "<rendered-html><p>Web Distributed Authoring and Versioning (WebDAV), an extension to\nthe HTTP-protocol, allows authoring of resources on a remote web server.\ndavfs2 provides the ability to access such resources like a typical\nfilesystem, allowing for use by standard applications with no built-in\nsupport for WebDAV.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://savannah.nongnu.org/projects/davfs2"
+    ],
+    "package_position": "pkgs/tools/filesystems/davfs2/default.nix:48"
+}

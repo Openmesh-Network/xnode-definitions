@@ -1,0 +1,37 @@
+{
+    "type": "package",
+    "package_attr_name": "throttled",
+    "package_attr_set": "No package set",
+    "package_pname": "throttled",
+    "package_pversion": "0.10.0",
+    "package_platforms": [
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mmio.py",
+        "throttled.py"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
+    "package_description": "Fix for Intel CPU throttling issues",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/erpalma/throttled"
+    ],
+    "package_position": "pkgs/tools/system/throttled/default.nix:51"
+}

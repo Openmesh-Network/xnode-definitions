@@ -1,0 +1,64 @@
+{
+    "type": "package",
+    "package_attr_name": "ananicy",
+    "package_attr_set": "No package set",
+    "package_pname": "ananicy-unstable",
+    "package_pversion": "2023-03-21",
+    "package_platforms": [
+        "riscv32-linux",
+        "s390x-linux",
+        "loongarch64-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "mipsel-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "mips-linux",
+        "s390-linux",
+        "i686-linux",
+        "mips64el-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "ananicy"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-3.0-only.html",
+            "fullName": "GNU General Public License v3.0 only"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v3.0 only"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Artturi N",
+            "github": "Artturin",
+            "email": "artturin@artturin.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Artturi N"
+    ],
+    "package_description": "Another auto nice daemon, with community rules support",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/Nefelim4ag/Ananicy"
+    ],
+    "package_position": "pkgs/misc/ananicy/default.nix:47"
+}

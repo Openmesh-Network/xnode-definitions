@@ -1,0 +1,55 @@
+{
+    "type": "package",
+    "package_attr_name": "cockroachdb-bin",
+    "package_attr_set": "No package set",
+    "package_pname": "cockroachdb",
+    "package_pversion": "23.1.14",
+    "package_platforms": [
+        "aarch64-linux",
+        "x86_64-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://mariadb.com/bsl11",
+            "fullName": "Business Source License 1.1"
+        }
+    ],
+    "package_license_set": [
+        "Business Source License 1.1"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Rushmore Mushambi",
+            "github": "rushmorem",
+            "email": "rushmore@webenchanter.com"
+        },
+        {
+            "name": "Austin Seipp",
+            "github": "thoughtpolice",
+            "email": "aseipp@pobox.com"
+        },
+        {
+            "name": "Alexander Ben Nasrallah",
+            "github": "neosimsim",
+            "email": "me@abn.sh"
+        }
+    ],
+    "package_maintainers_set": [
+        "Rushmore Mushambi",
+        "Austin Seipp",
+        "Alexander Ben Nasrallah"
+    ],
+    "package_description": "Scalable, survivable, strongly-consistent SQL database",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://www.cockroachlabs.com"
+    ],
+    "package_position": "pkgs/servers/sql/cockroachdb/cockroachdb-bin.nix:41"
+}

@@ -1,0 +1,122 @@
+{
+    "type": "package",
+    "package_attr_name": "tt-rss",
+    "package_attr_set": "No package set",
+    "package_pname": "tt-rss-unstable",
+    "package_pversion": "2023-04-13",
+    "package_platforms": [
+        "mips-none",
+        "mipsel-linux",
+        "riscv64-netbsd",
+        "powerpc-none",
+        "vc4-none",
+        "or1k-none",
+        "mipsel-netbsd",
+        "powerpcle-none",
+        "x86_64-cygwin",
+        "armv7l-linux",
+        "mips64-none",
+        "mips64el-linux",
+        "powerpc-netbsd",
+        "i686-genode",
+        "powerpc64-linux",
+        "armv7l-netbsd",
+        "s390x-linux",
+        "i686-darwin",
+        "aarch64-netbsd",
+        "aarch64-genode",
+        "microblaze-linux",
+        "riscv64-none",
+        "powerpc64le-linux",
+        "microblazeel-none",
+        "microblazeel-linux",
+        "i686-cygwin",
+        "armv7a-darwin",
+        "microblaze-none",
+        "armv6l-none",
+        "aarch64-darwin",
+        "s390-linux",
+        "riscv32-netbsd",
+        "i686-openbsd",
+        "wasm64-wasi",
+        "mips-linux",
+        "riscv32-none",
+        "aarch64-none",
+        "rx-none",
+        "x86_64-redox",
+        "x86_64-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "aarch64_be-none",
+        "s390-none",
+        "m68k-linux",
+        "i686-freebsd",
+        "arm-none",
+        "wasm32-wasi",
+        "loongarch64-linux",
+        "avr-none",
+        "armv7a-linux",
+        "x86_64-netbsd",
+        "x86_64-genode",
+        "aarch64-linux",
+        "x86_64-solaris",
+        "x86_64-darwin",
+        "armv7a-netbsd",
+        "x86_64-openbsd",
+        "mmix-mmixware",
+        "s390x-none",
+        "armv6l-linux",
+        "riscv64-linux",
+        "m68k-none",
+        "m68k-netbsd",
+        "mips64-linux",
+        "i686-netbsd",
+        "armv6l-netbsd",
+        "i686-none",
+        "armv5tel-linux",
+        "x86_64-freebsd",
+        "msp430-none",
+        "x86_64-none",
+        "x86_64-windows",
+        "i686-windows",
+        "javascript-ghcjs"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html",
+            "fullName": "GNU General Public License v2.0 or later"
+        }
+    ],
+    "package_license_set": [
+        "GNU General Public License v2.0 or later"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Robin Gloster",
+            "github": "globin",
+            "email": "mail@glob.in"
+        },
+        {
+            "name": "Al Zohali",
+            "github": "zohl",
+            "email": "zohl@fmap.me"
+        }
+    ],
+    "package_maintainers_set": [
+        "Robin Gloster",
+        "Al Zohali"
+    ],
+    "package_description": "Web-based news feed (RSS/Atom) aggregator",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tt-rss.org"
+    ],
+    "package_position": "pkgs/servers/tt-rss/default.nix:27"
+}

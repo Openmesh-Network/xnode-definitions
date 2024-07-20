@@ -1,0 +1,58 @@
+{
+    "type": "package",
+    "package_attr_name": "code-server",
+    "package_attr_set": "No package set",
+    "package_pname": "code-server",
+    "package_pversion": "4.89.1",
+    "package_platforms": [
+        "x86_64-linux",
+        "aarch64-linux",
+        "x86_64-darwin"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "code-server"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/MIT.html",
+            "fullName": "MIT License"
+        }
+    ],
+    "package_license_set": [
+        "MIT License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Jaka Hudoklin",
+            "github": "offlinehacker",
+            "email": "jaka@x-truder.net"
+        },
+        {
+            "name": "Jim van Abkoude",
+            "github": "henkery",
+            "email": "jim@reupload.nl"
+        },
+        {
+            "name": "Asher",
+            "github": "code-asher",
+            "email": "ash@coder.com"
+        }
+    ],
+    "package_maintainers_set": [
+        "Jaka Hudoklin",
+        "Jim van Abkoude",
+        "Asher"
+    ],
+    "package_description": "Run VS Code on a remote server",
+    "package_longDescription": "<rendered-html><p>code-server is VS Code running on a remote server, accessible through\nthe browser.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/coder/code-server"
+    ],
+    "package_position": "pkgs/servers/code-server/default.nix:314"
+}

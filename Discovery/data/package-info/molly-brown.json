@@ -1,0 +1,70 @@
+{
+    "type": "package",
+    "package_attr_name": "molly-brown",
+    "package_attr_set": "No package set",
+    "package_pname": "molly-brown-unstable",
+    "package_pversion": "2023-02-10",
+    "package_platforms": [
+        "mips64el-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "microblaze-linux",
+        "riscv64-linux",
+        "aarch64-darwin",
+        "aarch64-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "powerpc64le-linux",
+        "loongarch64-linux",
+        "m68k-linux",
+        "armv5tel-linux",
+        "mips-linux",
+        "armv7a-darwin",
+        "armv7l-linux",
+        "i686-linux",
+        "powerpc64-linux",
+        "s390x-linux",
+        "wasm64-wasi",
+        "wasm32-wasi",
+        "i686-darwin",
+        "s390-linux",
+        "x86_64-darwin",
+        "mips64-linux",
+        "riscv32-linux"
+    ],
+    "package_outputs": [
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "molly-brown"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/BSD-2-Clause.html",
+            "fullName": "BSD 2-clause \"Simplified\" License"
+        }
+    ],
+    "package_license_set": [
+        "BSD 2-clause \"Simplified\" License"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Emery Hemingway",
+            "github": "ehmry",
+            "email": "ehmry@posteo.net"
+        }
+    ],
+    "package_maintainers_set": [
+        "Emery Hemingway"
+    ],
+    "package_description": "Full-featured Gemini server",
+    "package_longDescription": null,
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://tildegit.org/solderpunk/molly-brown"
+    ],
+    "package_position": "pkgs/servers/gemini/molly-brown/default.nix:20"
+}
