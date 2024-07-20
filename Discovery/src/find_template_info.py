@@ -28,16 +28,19 @@ class xnode_definer:
                         output.write(json.dumps(package_info, indent=4))
                 else:
                     print("Unable to find package info for", service["nixName"])
-
+                    
+            # Load the package info from local data.
             else:
                 try:
                     with open(f'Discovery/data/package-info/{service["nixName"]}.json', 'r') as package_info:
                         package_info = json.loads(package_info.read())
+
                         if package_info:
                             new_service = self.extend_service_definition(package_info, service)
                             services.append(new_service)
+
                 except Exception as e:
-                    print("ERROR:", e)
+                    print("Exception:", e)
 
         if fetch_package_info:
             with open('Discovery/data/package-info.json', 'w') as output:

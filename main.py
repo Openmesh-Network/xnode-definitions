@@ -32,19 +32,27 @@ def main():
         # Get the list of services in an array, nix options only.
         service_definitions = definitions.make_service_definitions()['services']
         if args.templates:
+            print("Making template definitions using package data.")
+
             templates = make_templates(service_definitions)
             with open('sample-template-output.json', 'w') as output:
                 output.write(json.dumps(templates, indent=4))
+                
         else:
+            print("Making service definitions using package data.")
+
             definition_factory = xnode_definer('inputs/manual-spec-overrides.json')
             # Make service definitions
             if args.clean or not package_info_data_exists():
                 services = definition_factory.make_services(service_definitions, fetch_package_info=True)
+
             else:
                 services = definition_factory.make_services(service_definitions)
 
             with open('sample-service-output.json', 'w') as output:
                 output.write(json.dumps(services, indent=4))
+    else:
+        print("Unable to find service data.")
 
 
 def raw_service_data_exists(raw_services_responses):
@@ -61,7 +69,6 @@ def raw_service_data_exists(raw_services_responses):
         return False 
     
 def package_info_data_exists():
-    return False
     if os.path.exists('Discovery/data/package-info.json'):
         return True
     else:
