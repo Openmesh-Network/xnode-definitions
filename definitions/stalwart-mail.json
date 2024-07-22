@@ -7,7 +7,8 @@
         "storage": 0
     },
     "tags": [
-        "Server"
+        "Server",
+        "Communication - Email - Mail Delivery Agents"
     ],
     "website": [
         "https://github.com/stalwartlabs/mail-server"

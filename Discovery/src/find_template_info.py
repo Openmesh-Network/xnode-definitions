@@ -40,6 +40,7 @@ class xnode_definer:
                             services.append(new_service)
 
                 except Exception as e:
+                    # Plenty of these
                     print("Exception:", e)
 
         if fetch_package_info:
@@ -124,6 +125,10 @@ def generate_tags_from_desc(desc) -> list:
         if tag in desc:
             generated_tags.append(tag)
 
+    # with open('inputs/tag-keywords.json', 'r') as tag_keywords:
+    #     keywords = json.loads(tag_keywords.read())
+    # XXX: This might be a good application of LLMs, to fill in the tags.
+
     return generated_tags
     
 def override_options(services, overrides):
@@ -134,7 +139,7 @@ def override_options(services, overrides):
             # Find service corresponding to the override
             if service['nixName'] == override['nixName']:
                 found_override = True
-                override_service = apply_overrides(override, service)               
+                override_service = update_options(override, service)               
 
         # Append all services back to the output
         if found_override:
@@ -142,9 +147,9 @@ def override_options(services, overrides):
         else:
             new_services.append(service)
 
-    return services
+    return new_services
 
-def apply_overrides(override, service):
+def update_options(override, service):
     # Find options already in the service (should be all possible options)
     for option in override['options']:
         found_in_service = False
@@ -160,3 +165,14 @@ def apply_overrides(override, service):
             service['options'].append(option)
             
     return service
+
+def override_tags(options_applied, scraped_services):
+    new_services = []
+    for service in options_applied:
+        nix_name = service['nixName']
+        if nix_name in scraped_services.keys():
+            scraped_service = scraped_services[nix_name]
+            service['tags'].extend(scraped_service['tags'])
+        new_services.append(service)
+
+    return new_services

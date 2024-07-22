@@ -6,7 +6,9 @@
         "ram": 8192,
         "storage": 12280
     },
-    "tags": [],
+    "tags": [
+        "Analytics"
+    ],
     "website": [
         "https://github.com/ollama/ollama"
     ],

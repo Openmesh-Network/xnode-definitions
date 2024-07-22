@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Search Engines\r"
+    ],
     "website": [
         "https://github.com/hound-search/hound"
     ],

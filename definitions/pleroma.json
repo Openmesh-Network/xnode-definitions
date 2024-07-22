@@ -6,7 +6,9 @@
         "ram": 2048,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Communication - Social Networks and Forums"
+    ],
     "website": [
         "https://git.pleroma.social/pleroma/pleroma"
     ],

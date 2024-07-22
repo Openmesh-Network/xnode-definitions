@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Automation"
+    ],
     "website": [
         "https://github.com/dgtlmoon/changedetection.io"
     ],

@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "File Transfer - Distributed Filesystems"
+    ],
     "website": [
         "https://ipfs.io/"
     ],

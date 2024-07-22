@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Proxy"
+    ],
     "website": [
         "https://www.privoxy.org/"
     ],

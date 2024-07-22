@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Monitoring"
+    ],
     "website": [
         "https://prometheus.io"
     ],

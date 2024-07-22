@@ -6,7 +6,9 @@
         "ram": 2048,
         "storage": 20480
     },
-    "tags": [],
+    "tags": [
+        "Automation"
+    ],
     "website": [
         "https://lidarr.audio/"
     ],

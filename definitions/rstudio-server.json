@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Software Development - IDE & Tools\r"
+    ],
     "website": [
         "https://www.rstudio.com/"
     ],

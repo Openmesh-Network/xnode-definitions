@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Web Servers"
+    ],
     "website": [
         "https://static-web-server.net/"
     ],

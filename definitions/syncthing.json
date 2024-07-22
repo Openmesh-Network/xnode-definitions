@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 10240
     },
-    "tags": [],
+    "tags": [
+        "File Transfer & Synchronization"
+    ],
     "website": [
         "https://syncthing.net/"
     ],

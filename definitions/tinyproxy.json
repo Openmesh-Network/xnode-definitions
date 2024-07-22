@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Proxy"
+    ],
     "website": [
         "https://tinyproxy.github.io/"
     ],

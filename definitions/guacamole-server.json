@@ -6,7 +6,9 @@
         "ram": 0,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Remote Access\r"
+    ],
     "website": [
         "https://guacamole.apache.org/"
     ],

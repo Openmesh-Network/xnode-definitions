@@ -6,7 +6,9 @@
         "ram": 1000,
         "storage": 10000
     },
-    "tags": [],
+    "tags": [
+        "Analytics"
+    ],
     "website": [
         "https://metabase.com"
     ],

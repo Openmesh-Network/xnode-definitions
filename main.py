@@ -4,7 +4,7 @@ import subprocess
 import json
 
 from Formatting import formatter, definitions
-from Discovery.src.find_template_info import make_templates, xnode_definer, override_options
+from Discovery.src.find_template_info import make_templates, xnode_definer, override_options, override_tags
 
 
 def main():
@@ -50,10 +50,7 @@ def main():
             else:
                 services = definition_factory.make_services(service_definitions)
 
-            # Add option overrides
-            with open('inputs/option-overrides.json', 'r') as option_overrides:
-                extra_options=json.loads(option_overrides.read())
-            final_services = override_options(services, extra_options)
+            final_services = apply_overrides(services)
 
             # Write output to definitions directory and sample-services
             if args.overwrite:
@@ -107,6 +104,19 @@ def write_definitions(services, overwrite=False, template_defs='inputs/manual-te
         # Write to definitions directory
         for service in services:
             formatter.write_to_definition_file(service)
+
+def apply_overrides(services):
+    # Add option overrides
+    with open('inputs/option-overrides.json', 'r') as option_overrides:
+        extra_options=json.loads(option_overrides.read())
+    options_applied = override_options(services, extra_options)
+
+    # Add tag overrides (from remnant servicesWithOptions)
+    # TODO: Integrate scraping module to regain this functionality in a more general way
+    with open('inputs/servicesWithOptions.json', 'r') as servicesWithOptions:
+        scraped_services = json.loads(servicesWithOptions.read())['services']
+    final_services = override_tags(options_applied, scraped_services)
+    return final_services
 
 if __name__ == "__main__":
     main()

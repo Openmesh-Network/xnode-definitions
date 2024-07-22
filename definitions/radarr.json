@@ -6,7 +6,9 @@
         "ram": 2048,
         "storage": 0
     },
-    "tags": [],
+    "tags": [
+        "Automation"
+    ],
     "website": [
         "https://radarr.video/"
     ],
