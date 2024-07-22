@@ -1,16 +1,15 @@
 {
-    "name": "Gitolite",
+    "name": "gitolite",
     "desc": "Finely-grained git repository hosting",
-    "tags": [
-        "Software Development - Project Management\r"
-    ],
-    "website": "https://gitolite.com/gitolite/index.html",
-    "logo": "https://gitolite.com/gitolite/img/favicon.ico",
+    "nixName": "gitolite",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "gitolite",
+    "tags": [],
+    "website": [
+        "https://gitolite.com/gitolite/index.html"
+    ],
     "options": [
         {
             "name": "adminPubkey",
@@ -75,7 +74,5 @@
             "type": "string",
             "value": "\"gitolite\""
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

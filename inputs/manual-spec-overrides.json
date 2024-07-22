@@ -2,8 +2,8 @@
     {
         "nixName": "gnunet",
         "specs": {
-            "ram": 0,
-            "storage": 0
+            "ram": 100,
+            "storage": 1024
         }
     },
     {
@@ -87,7 +87,7 @@
         "nixName": "syncthing",
         "specs": {
             "ram": 0,
-            "storage": 0
+            "storage": 10240
         }
     },
     {
@@ -129,7 +129,7 @@
         "nixName": "borgbackup",
         "specs": {
             "ram": 0,
-            "storage": 0
+            "storage": 10240
         }
     },
     {
@@ -143,14 +143,14 @@
         "nixName": "duplicati",
         "specs": {
             "ram": 0,
-            "storage": 0
+            "storage": 10240
         }
     },
     {
         "nixName": "duplicity",
         "specs": {
             "ram": 0,
-            "storage": 0
+            "storage": 10240
         }
     },
     {
@@ -192,7 +192,7 @@
         "nixName": "lemmy-ui",
         "specs": {
             "ram": 2048,
-            "storage": 0
+            "storage": 10240
         }
     },
     {
@@ -388,7 +388,7 @@
         "nixName": "bitwarden",
         "specs": {
             "ram": 0,
-            "storage": 0
+            "storage": 1024
         }
     },
     {
@@ -476,7 +476,7 @@
         }
     },
     {
-        "nixName": "searxng",
+        "nixName": "searx",
         "specs": {
             "ram": 0,
             "storage": 0

@@ -1,6 +1,12 @@
 {
     "name": "vaultwarden",
+    "desc": "Unofficial Bitwarden compatible server written in Rust",
     "nixName": "vaultwarden",
+    "specs": [],
+    "tags": [],
+    "website": [
+        "https://github.com/dani-garcia/vaultwarden"
+    ],
     "options": [
         {
             "name": "backupDir",

@@ -1,19 +1,17 @@
 {
-    "name": "Open WebUI",
-    "desc": "Play around with AI in a web-based GUI! Runs alongside Ollama.",
-    "logo": "https://docs.openwebui.com/img/favicon.png",
-    "tags": [
-        "AI",
-        "LLM",
-        "GPU",
-        "Open-source",
-        "Web Application"
-    ],
-    "specs": {
-        "ram": 512,
-        "storage": 1024
-    },
+    "name": "open-webui",
+    "desc": "Full-stack of open-webui. open-webui is a user-friendly WebUI for LLMs (Formerly Ollama WebUI)",
     "nixName": "open-webui",
+    "specs": {
+        "ram": 12000,
+        "storage": 12000
+    },
+    "tags": [
+        "LLM"
+    ],
+    "website": [
+        "https://github.com/open-webui/open-webui"
+    ],
     "options": [
         {
             "name": "enable",
@@ -64,7 +62,5 @@
             "type": "path",
             "value": "\"/var/lib/open-webui\""
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

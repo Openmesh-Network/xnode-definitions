@@ -1,16 +1,15 @@
 {
-    "name": "Prometheus",
+    "name": "prometheus",
     "desc": "Service monitoring system and time series database",
-    "tags": [
-        "Monitoring"
-    ],
-    "website": "https://prometheus.io",
-    "logo": "https://prometheus.io/assets/favicons/favicon.ico",
+    "nixName": "prometheus",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "prometheus",
+    "tags": [],
+    "website": [
+        "https://prometheus.io"
+    ],
     "options": [
         {
             "name": "alertmanager.checkConfig",
@@ -956,6 +955,111 @@
             "nixName": "exporters.collectd.user",
             "type": "string",
             "value": "\"collectd-exporter\""
+        },
+        {
+            "name": "exporters.deluge.delugeHost",
+            "desc": "Hostname where deluge server is running.",
+            "nixName": "exporters.deluge.delugeHost",
+            "type": "string",
+            "value": "\"localhost\""
+        },
+        {
+            "name": "exporters.deluge.delugePassword",
+            "desc": "Password to connect to deluge server.  This stores the password unencrypted in the nix store and is thusconsidered unsafe. Prefer using the delugePasswordFile option.",
+            "nixName": "exporters.deluge.delugePassword",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "exporters.deluge.delugePasswordFile",
+            "desc": "File containing the password to connect to deluge server.",
+            "nixName": "exporters.deluge.delugePasswordFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "exporters.deluge.delugePort",
+            "desc": "Port where deluge server is listening.",
+            "nixName": "exporters.deluge.delugePort",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "58846"
+        },
+        {
+            "name": "exporters.deluge.delugeUser",
+            "desc": "User to connect to deluge server.",
+            "nixName": "exporters.deluge.delugeUser",
+            "type": "string",
+            "value": "\"localclient\""
+        },
+        {
+            "name": "exporters.deluge.enable",
+            "desc": "Whether to enable the prometheus deluge exporter.",
+            "nixName": "exporters.deluge.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "exporters.deluge.exportPerTorrentMetrics",
+            "desc": "Enable per-torrent metrics.  This may significantly increase the number of time series dependingon the number of torrents in your Deluge instance.",
+            "nixName": "exporters.deluge.exportPerTorrentMetrics",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "exporters.deluge.extraFlags",
+            "desc": "Extra commandline options to pass to the deluge exporter.",
+            "nixName": "exporters.deluge.extraFlags",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "exporters.deluge.firewallFilter",
+            "desc": "Specify a filter for iptables to use when  services.prometheus.exporters.deluge.openFirewall is true. It is used as ip46tables -I nixos-fw firewallFilter -j nixos-fw-accept .",
+            "nixName": "exporters.deluge.firewallFilter",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "exporters.deluge.firewallRules",
+            "desc": "Specify rules for nftables to add to the input chain when  services.prometheus.exporters.deluge.openFirewall is true.",
+            "nixName": "exporters.deluge.firewallRules",
+            "type": "null or strings concatenated with \"\\n\"",
+            "value": "null"
+        },
+        {
+            "name": "exporters.deluge.group",
+            "desc": "Group under which the deluge exporter shall be run.",
+            "nixName": "exporters.deluge.group",
+            "type": "string",
+            "value": "\"deluge-exporter\""
+        },
+        {
+            "name": "exporters.deluge.listenAddress",
+            "desc": "Address to listen on.",
+            "nixName": "exporters.deluge.listenAddress",
+            "type": "string",
+            "value": "\"0.0.0.0\""
+        },
+        {
+            "name": "exporters.deluge.openFirewall",
+            "desc": "Open port in firewall for incoming connections.",
+            "nixName": "exporters.deluge.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "exporters.deluge.port",
+            "desc": "Port to listen on.",
+            "nixName": "exporters.deluge.port",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "9354"
+        },
+        {
+            "name": "exporters.deluge.user",
+            "desc": "User name under which the deluge exporter shall be run.",
+            "nixName": "exporters.deluge.user",
+            "type": "string",
+            "value": "\"deluge-exporter\""
         },
         {
             "name": "exporters.dmarc.debug",
@@ -11786,7 +11890,5 @@
             "type": "YAML value",
             "value": "{ }"
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

@@ -1,17 +1,17 @@
 {
-    "name": "Minecraft Server",
-    "desc": "Server for Minecraft java edition",
-    "logo": "<URL to image>",
-    "tags": [
-        "Game",
-        "Server",
-        "Proprietary"
-    ],
+    "name": "minecraft-server",
+    "desc": "Minecraft Server",
+    "nixName": "minecraft-server",
     "specs": {
         "ram": 1024,
         "storage": 1024
     },
-    "nixName": "minecraft-server",
+    "tags": [
+        "Server"
+    ],
+    "website": [
+        "https://minecraft.net"
+    ],
     "options": [
         {
             "name": "dataDir",
@@ -76,7 +76,5 @@
             "type": "attribute set of Minecraft UUID",
             "value": "{ }"
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

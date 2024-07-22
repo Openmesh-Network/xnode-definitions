@@ -1,16 +1,15 @@
 {
-    "name": "Squid",
-    "desc": "A caching proxy for the Web supporting HTTP, HTTPS, FTP, and more",
-    "tags": [
-        "Proxy"
-    ],
-    "website": "http://www.squid-cache.org",
-    "logo": "",
+    "name": "squid",
+    "desc": "Caching proxy for the Web supporting HTTP, HTTPS, FTP, and more",
+    "nixName": "squid",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "squid",
+    "tags": [],
+    "website": [
+        "http://www.squid-cache.org"
+    ],
     "options": [
         {
             "name": "configText",
@@ -54,7 +53,5 @@
             "type": "signed integer",
             "value": "3128"
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

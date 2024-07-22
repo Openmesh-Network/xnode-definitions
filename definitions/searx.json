@@ -1,6 +1,15 @@
 {
-    "name": "searx",
+    "name": "searxng",
+    "desc": "Fork of Searx, a privacy-respecting, hackable metasearch engine",
     "nixName": "searx",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "tags": [],
+    "website": [
+        "https://github.com/searxng/searxng"
+    ],
     "options": [
         {
             "name": "enable",

@@ -11,6 +11,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--clean', help='Whether to fetch brand new data from the NixOS search backend, this will find new options that were added since the last update.', action="store_true")
     parser.add_argument('-t','--templates',help='Whether to generate templates instead of service definitions.',action='store_true')
+    parser.add_argument('-ow', '--overwrite', help='Whether to overwrite existing definitions in the definitions directory.', action="store_true")
     args = parser.parse_args()
 
     services_directory = 'Discovery/data/services' # Directory with raw service responses from NixOS opensearch backend.
@@ -49,8 +50,10 @@ def main():
             else:
                 services = definition_factory.make_services(service_definitions)
 
-            with open('sample-service-output.json', 'w') as output:
-                output.write(json.dumps(services, indent=4))
+            if args.overwrite:
+                write_definitions(services, overwrite=True)
+            else:
+                write_definitions(services)
     else:
         print("Unable to find service data.")
 
@@ -73,6 +76,30 @@ def package_info_data_exists():
         return True
     else:
         return False
+
+def write_definitions(services, overwrite=False, template_defs='inputs/manual-templates.json'):
+    # Write output to definitions directory and the sample file.
+    with open('sample-service-output.json', 'w') as output:
+        output.write(json.dumps(services, indent=4))
+
+    if overwrite:
+        # Find what services to include
+        services_in_templates = []
+        with open(template_defs, 'r') as template_definitions:
+            templates = json.load(template_definitions)
+            for template in templates:
+                services_in_templates.extend(template['serviceNames'])
+        # Write only those that are included in existing templates
+        for service in services:
+            if service["nixName"] in services_in_templates:
+                formatter.write_to_definition_file(service)
+            else:
+                # Otherwise delete them the definition file
+                os.remove(f'definitions/{service["nixName"]}.json')
+    else:
+        # Write to definitions directory
+        for service in services:
+            formatter.write_to_definition_file(service)
 
 if __name__ == "__main__":
     main()

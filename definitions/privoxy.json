@@ -1,16 +1,15 @@
 {
-    "name": "Privoxy",
+    "name": "privoxy",
     "desc": "Non-caching web proxy with advanced filtering capabilities",
-    "tags": [
-        "Proxy"
-    ],
-    "website": "https://www.privoxy.org/",
-    "logo": "",
+    "nixName": "privoxy",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "privoxy",
+    "tags": [],
+    "website": [
+        "https://www.privoxy.org/"
+    ],
     "options": [
         {
             "name": "certsLifetime",
@@ -89,7 +88,5 @@
             "type": "strings concatenated with \"\\n\"",
             "value": "\"\""
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

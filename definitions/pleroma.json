@@ -1,16 +1,15 @@
 {
-    "name": "Pleroma",
+    "name": "pleroma",
     "desc": "ActivityPub microblogging server",
-    "tags": [
-        "Communication - Social Networks and Forums"
-    ],
-    "website": "https://git.pleroma.social/pleroma/pleroma",
-    "logo": "https://git.pleroma.social/uploads/-/system/appearance/favicon/1/favicon.png",
+    "nixName": "pleroma",
     "specs": {
         "ram": 2048,
         "storage": 0
     },
-    "nixName": "pleroma",
+    "tags": [],
+    "website": [
+        "https://git.pleroma.social/pleroma/pleroma"
+    ],
     "options": [
         {
             "name": "configs",
@@ -61,7 +60,5 @@
             "type": "string",
             "value": "\"pleroma\""
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

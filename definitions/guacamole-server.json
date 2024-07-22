@@ -1,16 +1,15 @@
 {
-    "name": "Guacamole",
+    "name": "guacamole-server",
     "desc": "Clientless remote desktop gateway",
-    "tags": [
-        "Remote Access\r"
-    ],
-    "website": "https://guacamole.apache.org/",
-    "logo": "https://guacamole.apache.org/images/logos/guac-classic-logo.svg",
+    "nixName": "guacamole-server",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "guacamole-server",
+    "tags": [],
+    "website": [
+        "https://guacamole.apache.org/"
+    ],
     "options": [
         {
             "name": "enable",
@@ -61,7 +60,5 @@
             "type": "null or path",
             "value": "null"
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

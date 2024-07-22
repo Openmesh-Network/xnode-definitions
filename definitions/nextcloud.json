@@ -1,6 +1,12 @@
 {
     "name": "nextcloud",
+    "desc": "Sharing solution for files, calendars, contacts and more",
     "nixName": "nextcloud",
+    "specs": [],
+    "tags": [],
+    "website": [
+        "https://nextcloud.com"
+    ],
     "options": [
         {
             "name": "appstoreEnable",

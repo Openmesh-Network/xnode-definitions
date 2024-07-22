@@ -1,16 +1,15 @@
 {
-    "name": "code-server",
-    "desc": "Run VS Code on a remote machine",
-    "tags": [
-        "Software Development - IDE & Tools\r"
-    ],
-    "website": "https://github.com/gitpod-io/openvscode-server",
-    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "name": "openvscode-server",
+    "desc": "<rendered-html><p>Run upstream VS Code on a remote machine with access through a modern\nweb browser from any device, anywhere.</p>\n</rendered-html>",
+    "nixName": "openvscode-server",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "openvscode-server",
+    "tags": [],
+    "website": [
+        "https://github.com/gitpod-io/openvscode-server"
+    ],
     "options": [
         {
             "name": "connectionToken",
@@ -138,7 +137,5 @@
             "type": "boolean",
             "value": "false"
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

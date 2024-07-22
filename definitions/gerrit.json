@@ -1,16 +1,15 @@
 {
-    "name": "Gerrit",
-    "desc": "A Kubernetes based CI/CD system",
-    "tags": [
-        "Software Development - Project Management\r"
-    ],
-    "website": "https://github.com/kubernetes/test-infra/tree/master/prow",
-    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "name": "gerrit",
+    "desc": "Web based code review and repository management for the git version control system",
+    "nixName": "gerrit",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "gerrit",
+    "tags": [],
+    "website": [
+        "https://www.gerritcodereview.com/index.md"
+    ],
     "options": [
         {
             "name": "builtinPlugins",
@@ -89,7 +88,5 @@
             "type": "lazy attribute set of lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer) or lazy attribute set of (string or boolean or signed integer or list of (string or boolean or signed integer)))",
             "value": "{ }"
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

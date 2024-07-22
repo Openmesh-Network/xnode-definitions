@@ -1,16 +1,15 @@
 {
-    "name": "RStudio Server",
+    "name": "RStudio",
     "desc": "Set of integrated tools for the R language",
-    "tags": [
-        "Software Development - IDE & Tools\r"
-    ],
-    "website": "https://www.rstudio.com/",
-    "logo": "https://posit.co/wp-content/themes/Posit/dist/images/favicon/favicon-32x32.png",
+    "nixName": "rstudio-server",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "rstudio-server",
+    "tags": [],
+    "website": [
+        "https://www.rstudio.com/"
+    ],
     "options": [
         {
             "name": "enable",
@@ -54,7 +53,5 @@
             "type": "string",
             "value": "\"/var/lib/rstudio-server\""
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

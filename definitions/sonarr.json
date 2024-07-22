@@ -1,16 +1,15 @@
 {
-    "name": "Sonarr ",
+    "name": "sonarr",
     "desc": "Smart PVR for newsgroup and bittorrent users",
-    "tags": [
-        "Automation"
-    ],
-    "website": "https://sonarr.tv/",
-    "logo": "https://sonarr.tv/img/favicon.ico",
+    "nixName": "sonarr",
     "specs": {
         "ram": 2048,
         "storage": 0
     },
-    "nixName": "sonarr",
+    "tags": [],
+    "website": [
+        "https://sonarr.tv"
+    ],
     "options": [
         {
             "name": "dataDir",
@@ -54,7 +53,5 @@
             "type": "string",
             "value": "\"sonarr\""
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

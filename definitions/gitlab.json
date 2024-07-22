@@ -1,16 +1,15 @@
 {
-    "name": "GitLab CI",
-    "desc": "Interact with GitLab API",
-    "tags": [
-        "Software Development - Continuous Integration & Continuous Deployment"
-    ],
-    "website": "https://github.com/python-gitlab/python-gitlab",
-    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "name": "gitlab",
+    "desc": "<rendered-html><p>GitLab Community Edition (CE) is an open source end-to-end software\ndevelopment platform with built-in version control, issue tracking, code\nreview, CI/CD, and more. Self-host GitLab CE on your own servers, in a\ncontainer, or on a cloud provider.</p>\n</rendered-html>",
+    "nixName": "gitlab",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "gitlab",
+    "tags": [],
+    "website": [
+        "http://www.gitlab.com/"
+    ],
     "options": [
         {
             "name": "backup.keepTime",
@@ -558,7 +557,5 @@
             "type": "TOML value",
             "value": "{ }"
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

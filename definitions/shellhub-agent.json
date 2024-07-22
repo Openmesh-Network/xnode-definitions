@@ -1,16 +1,15 @@
 {
-    "name": "ShellHub",
-    "desc": "Enables easy access any Linux device behind firewall and NAT",
-    "tags": [
-        "Remote Access\r"
-    ],
-    "website": "https://shellhub.io/",
-    "logo": "https://shellhub.io/favicon-32x32.png?v=b7691a4d022678a921902ece55ea2058",
+    "name": "shellhub-agent",
+    "desc": "<rendered-html><p>ShellHub is a modern SSH server for remotely accessing Linux devices\nvia command line (using any SSH client) or web-based user interface,\ndesigned as an alternative to <em>sshd</em>. Think ShellHub as\ncentralized SSH for the the edge and cloud computing.</p>\n</rendered-html>",
+    "nixName": "shellhub-agent",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "shellhub-agent",
+    "tags": [],
+    "website": [
+        "https://shellhub.io/"
+    ],
     "options": [
         {
             "name": "enable",
@@ -61,7 +60,5 @@
             "type": "string",
             "value": null
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

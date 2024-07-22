@@ -1,16 +1,15 @@
 {
-    "name": "Syncthing",
+    "name": "syncthing",
     "desc": "Open Source Continuous File Synchronization",
-    "tags": [
-        "File Transfer & Synchronization"
-    ],
-    "website": "https://syncthing.net/",
-    "logo": "https://syncthing.net/img/favicon.png",
+    "nixName": "syncthing",
     "specs": {
         "ram": 0,
-        "storage": 0
+        "storage": 10240
     },
-    "nixName": "syncthing",
+    "tags": [],
+    "website": [
+        "https://syncthing.net/"
+    ],
     "options": [
         {
             "name": "all_proxy",
@@ -265,6 +264,13 @@
             "value": "\"\u2039name\u203a\""
         },
         {
+            "name": "settings.folders.<name>.type",
+            "desc": "Controls how the folder is handled by Syncthing. See  https://docs.syncthing.net/users/config.html#config-option-folder.type .",
+            "nixName": "settings.folders.<name>.type",
+            "type": "one of \"sendreceive\", \"sendonly\", \"receiveonly\", \"receiveencrypted\"",
+            "value": "\"sendreceive\""
+        },
+        {
             "name": "settings.folders.<name>.versioning",
             "desc": "How to keep changed/deleted files with Syncthing. There are 4different types of versioning with different parameters. See  https://docs.syncthing.net/users/versioning.html .",
             "nixName": "settings.folders.<name>.versioning",
@@ -341,7 +347,5 @@
             "type": "string",
             "value": "\"syncthing\""
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }

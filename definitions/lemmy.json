@@ -1,6 +1,12 @@
 {
-    "name": "lemmy",
+    "name": "lemmy-ui",
+    "desc": "Building a federated alternative to reddit in rust",
     "nixName": "lemmy",
+    "specs": [],
+    "tags": [],
+    "website": [
+        "https://join-lemmy.org/"
+    ],
     "options": [
         {
             "name": "adminPasswordFile",

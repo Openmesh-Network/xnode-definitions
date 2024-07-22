@@ -1,6 +1,12 @@
 {
-    "name": "seafile",
+    "name": "seahub",
+    "desc": "Web end of seafile server",
     "nixName": "seafile",
+    "specs": [],
+    "tags": [],
+    "website": [
+        "https://github.com/haiwen/seahub"
+    ],
     "options": [
         {
             "name": "adminEmail",

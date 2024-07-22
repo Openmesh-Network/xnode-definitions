@@ -1,16 +1,15 @@
 {
-    "name": "changedetection.io",
+    "name": "changedetection-io",
     "desc": "Self-hosted free open source website change detection tracking, monitoring and notification service",
-    "tags": [
-        "Automation"
-    ],
-    "website": "https://github.com/dgtlmoon/changedetection.io",
-    "logo": "https://github.githubassets.com/favicons/favicon.png",
+    "nixName": "changedetection-io",
     "specs": {
         "ram": 0,
         "storage": 0
     },
-    "nixName": "changedetection-io",
+    "tags": [],
+    "website": [
+        "https://github.com/dgtlmoon/changedetection.io"
+    ],
     "options": [
         {
             "name": "baseURL",
@@ -96,7 +95,5 @@
             "type": "boolean",
             "value": "false"
         }
-    ],
-    "show": false,
-    "tested": false
+    ]
 }
