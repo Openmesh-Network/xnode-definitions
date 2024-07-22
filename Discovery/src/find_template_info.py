@@ -7,7 +7,7 @@ class xnode_definer:
             self.spec_overrides = json.loads(specs.read())
 
     def find_spec_overrides(self, nixName):
-        # Add manual spec overrides   
+        # Add manual spec overrides
         for svc in self.spec_overrides:
             if svc['nixName'] == nixName and svc['specs']:
                 return svc['specs']
@@ -126,3 +126,37 @@ def generate_tags_from_desc(desc) -> list:
 
     return generated_tags
     
+def override_options(services, overrides):
+    new_services = []
+    for service in services:
+        found_override = False
+        for override in overrides:
+            # Find service corresponding to the override
+            if service['nixName'] == override['nixName']:
+                found_override = True
+                override_service = apply_overrides(override, service)               
+
+        # Append all services back to the output
+        if found_override:
+            new_services.append(override_service)
+        else:
+            new_services.append(service)
+
+    return services
+
+def apply_overrides(override, service):
+    # Find options already in the service (should be all possible options)
+    for option in override['options']:
+        found_in_service = False
+        for existing_option in service['options']:
+            if option['nixName'] == existing_option['nixName']:
+                found_in_service = True
+                if 'value' in option.keys():
+                    existing_option['value'] = option['value']
+                elif 'options' in option.keys():
+                    existing_option['options'] = option['options']
+        if not found_in_service:
+            # Append to array if the option isn't found in the service
+            service['options'].append(option)
+            
+    return service

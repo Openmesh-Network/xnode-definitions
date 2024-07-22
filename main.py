@@ -3,8 +3,8 @@ import argparse
 import subprocess
 import json
 
-from Formatting import formatter, definitions, options
-from Discovery.src.find_template_info import make_templates, xnode_definer
+from Formatting import formatter, definitions
+from Discovery.src.find_template_info import make_templates, xnode_definer, override_options
 
 
 def main():
@@ -43,17 +43,23 @@ def main():
             print("Making service definitions using package data.")
 
             definition_factory = xnode_definer('inputs/manual-spec-overrides.json')
-            # Make service definitions
+            # Make service definitions using package information on NixOS Search
             if args.clean or not package_info_data_exists():
                 services = definition_factory.make_services(service_definitions, fetch_package_info=True)
 
             else:
                 services = definition_factory.make_services(service_definitions)
 
+            # Add option overrides
+            with open('inputs/option-overrides.json', 'r') as option_overrides:
+                extra_options=json.loads(option_overrides.read())
+            final_services = override_options(services, extra_options)
+
+            # Write output to definitions directory and sample-services
             if args.overwrite:
-                write_definitions(services, overwrite=True)
+                write_definitions(final_services, overwrite=True)
             else:
-                write_definitions(services)
+                write_definitions(final_services)
     else:
         print("Unable to find service data.")
 
@@ -93,8 +99,9 @@ def write_definitions(services, overwrite=False, template_defs='inputs/manual-te
         for service in services:
             if service["nixName"] in services_in_templates:
                 formatter.write_to_definition_file(service)
-            else:
-                # Otherwise delete them the definition file
+
+            elif os.path.exists(f'definitions/{service["nixName"]}.json'):
+                # Otherwise delete the definition file
                 os.remove(f'definitions/{service["nixName"]}.json')
     else:
         # Write to definitions directory

@@ -2,7 +2,7 @@
 Xnode definitions is a data collection program for data regard
 
 ## This definitions pipeline currently has about 15K nix options collected
-Total services: 82
+Total services: 111
 Total potential services: 1077
 
 ## Project breakdown
