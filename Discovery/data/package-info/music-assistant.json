@@ -1,0 +1,75 @@
+{
+    "type": "package",
+    "package_attr_name": "music-assistant",
+    "package_attr_set": "No package set",
+    "package_pname": "music-assistant",
+    "package_pversion": "2.0.7",
+    "package_platforms": [
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "i686-cygwin",
+        "s390x-linux",
+        "x86_64-linux",
+        "m68k-linux",
+        "x86_64-windows",
+        "armv7a-linux",
+        "mips64-linux",
+        "microblazeel-linux",
+        "microblaze-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "i686-darwin",
+        "aarch64-darwin",
+        "loongarch64-linux",
+        "armv7a-darwin",
+        "mips-linux",
+        "x86_64-cygwin",
+        "mipsel-linux",
+        "i686-windows",
+        "x86_64-freebsd",
+        "i686-freebsd",
+        "armv7l-linux",
+        "i686-linux",
+        "s390-linux"
+    ],
+    "package_outputs": [
+        "dist",
+        "out"
+    ],
+    "package_default_output": "out",
+    "package_programs": [
+        "mass"
+    ],
+    "package_license": [
+        {
+            "url": "https://spdx.org/licenses/Apache-2.0.html",
+            "fullName": "Apache License 2.0"
+        }
+    ],
+    "package_license_set": [
+        "Apache License 2.0"
+    ],
+    "package_maintainers": [
+        {
+            "name": "Martin Weinelt",
+            "github": "mweinelt",
+            "email": "hexa@darmstadt.ccc.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Martin Weinelt"
+    ],
+    "package_description": "Music Assistant is a music library manager for various music sources which can easily stream to a wide range of supported players",
+    "package_longDescription": "<rendered-html><p>Music Assistant is a free, opensource Media library manager that\nconnects to your streaming services and a wide range of connected\nspeakers. The server is the beating heart, the core of Music Assistant\nand must run on an always-on device like a Raspberry Pi, a NAS or an\nIntel NUC or alike.</p>\n</rendered-html>",
+    "package_hydra": null,
+    "package_system": "x86_64-linux",
+    "package_homepage": [
+        "https://github.com/music-assistant/server"
+    ],
+    "package_position": "pkgs/by-name/mu/music-assistant/package.nix:108"
+}
