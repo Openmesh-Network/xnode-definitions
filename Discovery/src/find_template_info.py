@@ -1,4 +1,5 @@
 from Discovery.src.main import get_packages
+from Discovery.src.metadata_scraper import build_query
 import json
 
 class xnode_definer:
@@ -66,6 +67,7 @@ class xnode_definer:
             'specs': self.find_spec_overrides(nixName),
             'tags': generate_tags_from_desc(service_description),
             'website': closest_match_response.get('package_homepage'),
+            'logo': '',
             'options': service_definition['options']
         }
 
@@ -75,16 +77,28 @@ def find_package_info(package_name):
     # Find info to populate template-definitions.json
     default_kwargs = {
         'package': package_name,
-        'size': 1, 'begin': 0, 'channel': 'unstable', 'sort_by': '_score', 'sort_order': 'desc', 'package_set': None, 'license': None, 'maintainer': None, 
+        'size': 50, 'begin': 0, 'channel': 'unstable', 'sort_by': '_score', 'sort_order': 'desc', 'package_set': None, 'license': None, 'maintainer': None, 
         'platform': None, 'info': False, 'options': False, 'output': '', 'debugging': False
     }
     # TODO: Increase size of query and compare responses for similarity with search_term (might be able to do this in the opensearch query)
     result = get_packages(**default_kwargs)['hits']['hits']
-    if len(result) > 0:
+    if len(result) > 0 and package_name in result[0]['_source']['package_pname']:
+        print(package_name, len(result))
+        for hit in result:
+            #print(hit["_source"].get("package_pname"))
+            outputs = hit["_source"].get("package_outputs")
+            for output in outputs:
+                if package_name in output:
+                    print("Found", output, "in program outputs")
+                    return hit["_source"]
+                
         closest_match = result[0]
         return closest_match["_source"] # XXX: Not always getting a correct match
     else:
         return None
+
+def find_package_info_scraper(service_name):
+    request = build_query(service_name)
 
 def make_template_definition(closest_match_response):
     # Make template definition from closest_match_response
@@ -172,7 +186,9 @@ def override_tags(options_applied, scraped_services):
         nix_name = service['nixName']
         if nix_name in scraped_services.keys():
             scraped_service = scraped_services[nix_name]
+            service['name'] = scraped_service['name']
             service['tags'].extend(scraped_service['tags'])
+            service['logo'] = scraped_service['logo']
         new_services.append(service)
 
     return new_services

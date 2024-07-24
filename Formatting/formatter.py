@@ -90,8 +90,8 @@ def make_definitions(starting_services, nix_option_data):
     print("Total potential services:", len(nix_option_data))
     return new_services
 
-def write_to_definition_file(service):
-    with open(f'definitions/{service["nixName"]}.json', 'w') as output:
+def write_to_definition_file(service, definitions_directory='definitions'):
+    with open(f'{definitions_directory}/{service["nixName"]}.json', 'w') as output:
             output.write(json.dumps(service, indent=4))    
 
 def reduce_spec_overrides():

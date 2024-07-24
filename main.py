@@ -5,15 +5,20 @@ import json
 
 from Formatting import formatter, definitions
 from Discovery.src.find_template_info import make_templates, xnode_definer, override_options, override_tags
+from Discovery.src.NixPackageMetaData import NixMetaScraper
 
-
-def main():
+def program_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--clean', help='Whether to fetch brand new data from the NixOS search backend, this will find new options that were added since the last update.', action="store_true")
+    parser.add_argument('-p', '--packages', help='Whether to generate service descriptions and info from package info.', action="store_true")
     parser.add_argument('-t','--templates',help='Whether to generate templates instead of service definitions.',action='store_true')
     parser.add_argument('-ow', '--overwrite', help='Whether to overwrite existing definitions in the definitions directory.', action="store_true")
-    args = parser.parse_args()
-
+    parser.add_argument('-es', '--backend', help='The elastic search host on the NixOS search backend as a url.', type=str, default="https://search.nixos.org/backend/")
+    parser.add_argument('-k','--key',help="The backend api key for NixOS Search", type=str, default="YVdWU0FMWHBadjpYOGdQSG56TDUyd0ZFZWt1eHNmUTljU2g=")
+    return parser.parse_args()
+    
+def main():
+    args = program_args()
     services_directory = 'Discovery/data/services' # Directory with raw service responses from NixOS opensearch backend.
 
     # Check if data exists and if not download it
@@ -44,13 +49,17 @@ def main():
 
             definition_factory = xnode_definer('inputs/manual-spec-overrides.json')
             # Make service definitions using package information on NixOS Search
-            if args.clean or not package_info_data_exists():
+            if args.clean or args.packages or not package_info_data_exists():
                 services = definition_factory.make_services(service_definitions, fetch_package_info=True)
-
             else:
                 services = definition_factory.make_services(service_definitions)
 
-            final_services = apply_overrides(services)
+            # Use nix scraper to find metadata
+            scraper = NixMetaScraper(args.backend)
+            services_with_metadata = scraper.find_metadata(services)
+            
+            # Apply manual field overrides such as specs and tag retention
+            final_services = apply_overrides(services_with_metadata)
 
             # Write output to definitions directory and sample-services
             if args.overwrite:
@@ -75,6 +84,7 @@ def raw_service_data_exists(raw_services_responses):
         return False 
     
 def package_info_data_exists():
+    # XXX: Doesn't check for existence of package-info directory and data inside.
     if os.path.exists('Discovery/data/package-info.json'):
         return True
     else:
@@ -89,6 +99,7 @@ def write_definitions(services, overwrite=False, template_defs='inputs/manual-te
         # Find what services to include
         services_in_templates = []
         with open(template_defs, 'r') as template_definitions:
+            # Only include what is in the templates
             templates = json.load(template_definitions)
             for template in templates:
                 services_in_templates.extend(template['serviceNames'])
@@ -101,7 +112,7 @@ def write_definitions(services, overwrite=False, template_defs='inputs/manual-te
                 # Otherwise delete the definition file
                 os.remove(f'definitions/{service["nixName"]}.json')
     else:
-        # Write to definitions directory
+        # Write all to definitions directory
         for service in services:
             formatter.write_to_definition_file(service)
 
