@@ -1,5 +1,5 @@
 {
-    "name": "squid",
+    "name": "Squid",
     "desc": "Caching proxy for the Web supporting HTTP, HTTPS, FTP, and more",
     "nixName": "squid",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "http://www.squid-cache.org"
     ],
+    "logo": "",
     "options": [
         {
             "name": "configText",

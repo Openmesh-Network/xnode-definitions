@@ -1,5 +1,5 @@
 {
-    "name": "sonarr",
+    "name": "Sonarr ",
     "desc": "Smart PVR for newsgroup and bittorrent users",
     "nixName": "sonarr",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://sonarr.tv"
     ],
+    "logo": "https://sonarr.tv/img/favicon.ico",
     "options": [
         {
             "name": "dataDir",

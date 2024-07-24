@@ -1,5 +1,5 @@
 {
-    "name": "meshcentral",
+    "name": "MeshCentral",
     "desc": "Computer management web app",
     "nixName": "meshcentral",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://meshcentral.com/"
     ],
+    "logo": "",
     "options": [
         {
             "name": "enable",

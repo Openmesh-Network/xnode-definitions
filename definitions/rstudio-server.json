@@ -1,5 +1,5 @@
 {
-    "name": "RStudio",
+    "name": "RStudio Server",
     "desc": "Set of integrated tools for the R language",
     "nixName": "rstudio-server",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://www.rstudio.com/"
     ],
+    "logo": "https://posit.co/wp-content/themes/Posit/dist/images/favicon/favicon-32x32.png",
     "options": [
         {
             "name": "enable",

@@ -1,5 +1,5 @@
 {
-    "name": "typesense",
+    "name": "Typesense",
     "desc": "Typesense is a fast, typo-tolerant search engine for building delightful search experiences",
     "nixName": "typesense",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://typesense.org"
     ],
+    "logo": "https://typesense.org/favicon.png",
     "options": [
         {
             "name": "apiKeyFile",

@@ -1,5 +1,5 @@
 {
-    "name": "gitlab",
+    "name": "GitLab CI",
     "desc": "<rendered-html><p>GitLab Community Edition (CE) is an open source end-to-end software\ndevelopment platform with built-in version control, issue tracking, code\nreview, CI/CD, and more. Self-host GitLab CE on your own servers, in a\ncontainer, or on a cloud provider.</p>\n</rendered-html>",
     "nixName": "gitlab",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "http://www.gitlab.com/"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "backup.keepTime",

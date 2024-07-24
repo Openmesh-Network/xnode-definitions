@@ -1,5 +1,5 @@
 {
-    "name": "gogs",
+    "name": "Gogs",
     "desc": "Painless self-hosted Git service",
     "nixName": "gogs",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://gogs.io"
     ],
+    "logo": "https://gogs.io/img/favicon.png",
     "options": [
         {
             "name": "appName",

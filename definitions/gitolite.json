@@ -1,5 +1,5 @@
 {
-    "name": "gitolite",
+    "name": "Gitolite",
     "desc": "Finely-grained git repository hosting",
     "nixName": "gitolite",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://gitolite.com/gitolite/index.html"
     ],
+    "logo": "https://gitolite.com/gitolite/img/favicon.ico",
     "options": [
         {
             "name": "adminPubkey",

@@ -1,5 +1,5 @@
 {
-    "name": "headphones",
+    "name": "Headphones",
     "desc": "Automatic music downloader for SABnzbd",
     "nixName": "headphones",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://github.com/rembo10/headphones"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "configFile",

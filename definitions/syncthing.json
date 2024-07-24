@@ -1,5 +1,5 @@
 {
-    "name": "syncthing",
+    "name": "Syncthing",
     "desc": "Open Source Continuous File Synchronization",
     "nixName": "syncthing",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://syncthing.net/"
     ],
+    "logo": "https://syncthing.net/img/favicon.png",
     "options": [
         {
             "name": "all_proxy",

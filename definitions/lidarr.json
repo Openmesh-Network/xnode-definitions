@@ -1,5 +1,5 @@
 {
-    "name": "lidarr",
+    "name": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
     "desc": "Usenet/BitTorrent music downloader",
     "nixName": "lidarr",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://lidarr.audio/"
     ],
+    "logo": "https://lidarr.audio/img/favicon.ico",
     "options": [
         {
             "name": "dataDir",

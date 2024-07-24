@@ -1,5 +1,5 @@
 {
-    "name": "tinyproxy",
+    "name": "Tinyproxy",
     "desc": "Light-weight HTTP/HTTPS proxy daemon for POSIX operating systems",
     "nixName": "tinyproxy",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://tinyproxy.github.io/"
     ],
+    "logo": "",
     "options": [
         {
             "name": "enable",

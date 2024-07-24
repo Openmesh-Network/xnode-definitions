@@ -1,5 +1,5 @@
 {
-    "name": "jenkins",
+    "name": "Jenkins",
     "desc": "Extendable open source continuous integration server",
     "nixName": "jenkins",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://jenkins.io/"
     ],
+    "logo": "https://jenkins.io/favicon.ico",
     "options": [
         {
             "name": "enable",

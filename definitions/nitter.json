@@ -1,5 +1,5 @@
 {
-    "name": "nitter",
+    "name": "Nitter ",
     "desc": "Alternative Twitter front-end",
     "nixName": "nitter",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://github.com/zedeus/nitter"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "cache.listMinutes",

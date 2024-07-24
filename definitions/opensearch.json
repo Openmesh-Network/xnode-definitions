@@ -1,5 +1,5 @@
 {
-    "name": "opensearch",
+    "name": "OpenSearch",
     "desc": "Open Source, Distributed, RESTful Search Engine",
     "nixName": "opensearch",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://github.com/opensearch-project/OpenSearch"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "dataDir",

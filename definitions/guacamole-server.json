@@ -1,5 +1,5 @@
 {
-    "name": "guacamole-server",
+    "name": "Guacamole",
     "desc": "Clientless remote desktop gateway",
     "nixName": "guacamole-server",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://guacamole.apache.org/"
     ],
+    "logo": "https://guacamole.apache.org/images/logos/guac-classic-logo.svg",
     "options": [
         {
             "name": "enable",

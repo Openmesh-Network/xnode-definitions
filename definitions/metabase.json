@@ -1,5 +1,5 @@
 {
-    "name": "metabase",
+    "name": "Metabase",
     "desc": "Easy, open source way for everyone in your company to ask questions and learn from data",
     "nixName": "metabase",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://metabase.com"
     ],
+    "logo": "https://metabase.com/images/favicon.ico",
     "options": [
         {
             "name": "enable",

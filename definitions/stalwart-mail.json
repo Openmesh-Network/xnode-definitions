@@ -1,5 +1,5 @@
 {
-    "name": "stalwart-mail",
+    "name": "Stalwart JMAP",
     "desc": "Secure & Modern All-in-One Mail Server (IMAP, JMAP, SMTP)",
     "nixName": "stalwart-mail",
     "specs": {
@@ -13,6 +13,7 @@
     "website": [
         "https://github.com/stalwartlabs/mail-server"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "enable",

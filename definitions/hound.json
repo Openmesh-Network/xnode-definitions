@@ -1,5 +1,5 @@
 {
-    "name": "hound",
+    "name": "Hound",
     "desc": "Lightning fast code searching made easy",
     "nixName": "hound",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://github.com/hound-search/hound"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "enable",

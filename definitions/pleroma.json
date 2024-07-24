@@ -1,5 +1,5 @@
 {
-    "name": "pleroma",
+    "name": "Pleroma",
     "desc": "ActivityPub microblogging server",
     "nixName": "pleroma",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://git.pleroma.social/pleroma/pleroma"
     ],
+    "logo": "https://git.pleroma.social/uploads/-/system/appearance/favicon/1/favicon.png",
     "options": [
         {
             "name": "configs",

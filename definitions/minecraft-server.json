@@ -12,6 +12,7 @@
     "website": [
         "https://minecraft.net"
     ],
+    "logo": "",
     "options": [
         {
             "name": "dataDir",

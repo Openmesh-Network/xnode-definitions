@@ -1,5 +1,5 @@
 {
-    "name": "prometheus",
+    "name": "Prometheus",
     "desc": "Service monitoring system and time series database",
     "nixName": "prometheus",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://prometheus.io"
     ],
+    "logo": "https://prometheus.io/assets/favicons/favicon.ico",
     "options": [
         {
             "name": "alertmanager.checkConfig",

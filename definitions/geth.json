@@ -1,6 +1,6 @@
 {
-    "name": "op-geth",
-    "desc": "",
+    "name": "go-ethereum",
+    "desc": "Official golang implementation of the Ethereum protocol",
     "nixName": "geth",
     "specs": {
         "ram": 16384,
@@ -8,8 +8,9 @@
     },
     "tags": [],
     "website": [
-        "https://github.com/ethereum-optimism/op-geth"
+        "https://geth.ethereum.org/"
     ],
+    "logo": "https://geth.ethereum.org/favicon.ico",
     "options": [
         {
             "name": "<name>.authrpc.address",

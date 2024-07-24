@@ -1,5 +1,5 @@
 {
-    "name": "radarr",
+    "name": "Radarr",
     "desc": "Usenet/BitTorrent movie downloader",
     "nixName": "radarr",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://radarr.video/"
     ],
+    "logo": "https://radarr.video/img/favicon.ico",
     "options": [
         {
             "name": "dataDir",

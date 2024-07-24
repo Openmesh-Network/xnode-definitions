@@ -1,5 +1,5 @@
 {
-    "name": "gocd-server",
+    "name": "GoCD",
     "desc": "Continuous delivery server specializing in advanced workflow modeling and visualization",
     "nixName": "gocd-server",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "http://www.go.cd"
     ],
+    "logo": "http://www.go.cd/assets/images/favicon.ico",
     "options": [
         {
             "name": "enable",

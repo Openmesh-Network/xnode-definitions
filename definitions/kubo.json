@@ -1,5 +1,5 @@
 {
-    "name": "kubo",
+    "name": "Kubo",
     "desc": "IPFS implementation in Go",
     "nixName": "kubo",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://ipfs.io/"
     ],
+    "logo": "https://ipfs.io/favicon.ico",
     "options": [
         {
             "name": "autoMigrate",

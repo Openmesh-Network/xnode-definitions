@@ -1,5 +1,5 @@
 {
-    "name": "forgejo",
+    "name": "Forgejo",
     "desc": "Self-hosted lightweight software forge",
     "nixName": "forgejo",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://forgejo.org"
     ],
+    "logo": "https://forgejo.org/favicon.ico",
     "options": [
         {
             "name": "customDir",

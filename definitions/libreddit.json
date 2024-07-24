@@ -1,6 +1,6 @@
 {
-    "name": "libreddit",
-    "desc": "Private front-end for Reddit",
+    "name": "Libreddit ",
+    "desc": "Private front-end for Reddit (Continued fork of Libreddit)",
     "nixName": "libreddit",
     "specs": {
         "ram": 0,
@@ -10,8 +10,9 @@
         "Communication - Social Networks and Forums"
     ],
     "website": [
-        "https://github.com/libreddit/libreddit"
+        "https://github.com/redlib-org/redlib"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "address",

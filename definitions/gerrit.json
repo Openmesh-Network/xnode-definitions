@@ -1,5 +1,5 @@
 {
-    "name": "gerrit",
+    "name": "Gerrit",
     "desc": "Web based code review and repository management for the git version control system",
     "nixName": "gerrit",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://www.gerritcodereview.com/index.md"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "builtinPlugins",

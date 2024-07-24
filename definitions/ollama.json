@@ -1,5 +1,5 @@
 {
-    "name": "ollama",
+    "name": "Ollama",
     "desc": "Get up and running with large language models locally",
     "nixName": "ollama",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://github.com/ollama/ollama"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "acceleration",

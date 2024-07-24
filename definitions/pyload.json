@@ -1,5 +1,5 @@
 {
-    "name": "python3.12-pyloadapi",
+    "name": "python3.11-pyloadapi",
     "desc": "Simple wrapper for pyLoad's API",
     "nixName": "pyload",
     "specs": [],
@@ -7,6 +7,7 @@
     "website": [
         "https://github.com/tr4nt0r/pyloadapi"
     ],
+    "logo": "",
     "options": [
         {
             "name": "credentialsFile",

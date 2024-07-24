@@ -1,5 +1,5 @@
 {
-    "name": "netdata",
+    "name": "Netdata",
     "desc": "Real-time performance monitoring tool",
     "nixName": "netdata",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://www.netdata.cloud/"
     ],
+    "logo": "https://www.netdata.cloud/favicon-32x32.png",
     "options": [
         {
             "name": "claimTokenFile",

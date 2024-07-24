@@ -1,5 +1,5 @@
 {
-    "name": "openvscode-server",
+    "name": "code-server",
     "desc": "<rendered-html><p>Run upstream VS Code on a remote machine with access through a modern\nweb browser from any device, anywhere.</p>\n</rendered-html>",
     "nixName": "openvscode-server",
     "specs": {
@@ -12,6 +12,7 @@
     "website": [
         "https://github.com/gitpod-io/openvscode-server"
     ],
+    "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {
             "name": "connectionToken",
