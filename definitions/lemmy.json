@@ -1,6 +1,6 @@
 {
     "name": "lemmy-help",
-    "desc": "<rendered-html><p><code>lemmy-help</code> is an emmylua parser as well as a CLI which\ntakes that parsed tree and converts it into vim help docs.</p>\n</rendered-html>",
+    "desc": "lemmy-help is an emmylua parser as well as a CLI which takes that parsed tree and converts it into vim help docs.",
     "nixName": "lemmy",
     "specs": {
         "ram": 0,

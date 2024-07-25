@@ -1,17 +1,6 @@
 import json
-from Formatting.enumerate_template_services import find_services_from_templates_without_definition
-
-def runall(service_definitions_array):
-
-    reduce_spec_overrides()
-    service_definitions = make_definitions_from_scraper(service_definitions_array)
-    #extra_services = find_services_from_templates_without_definition(make_definition_from_service)
-    final_services = make_definition_from_templates(service_definitions, service_definitions_array)
-    #print("Potential final services:", final_services)
-
-    with open('service-definitions.json', 'w') as output:
-        output.write(json.dumps(service_definitions, indent=4))
-
+import re
+import html
 
 def make_definitions_from_scraper(nix_option_data):
     # Create the required definitions for the frontend to push to the backend to be read by the xnode
@@ -150,3 +139,13 @@ def add_extra_definitions(starting_services, extra_services, nix_data):
     print("Total services which have templates: ", final_services_with_templates)
 
     return final_services
+
+def remove_html_tags(text):
+    if (text):
+      clean_text = re.sub(r'<[^>]+>', '', text)
+      clean_text = clean_text.replace('\"', '')
+      # Convert HTML entities to characters
+      clean_text = html.unescape(clean_text)
+      clean_text = clean_text.replace('\n', ' ')
+      return clean_text.strip()
+    return ""

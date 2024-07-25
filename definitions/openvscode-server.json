@@ -1,6 +1,6 @@
 {
     "name": "code-server",
-    "desc": "<rendered-html><p>Run upstream VS Code on a remote machine with access through a modern\nweb browser from any device, anywhere.</p>\n</rendered-html>",
+    "desc": "Run upstream VS Code on a remote machine with access through a modern web browser from any device, anywhere.",
     "nixName": "openvscode-server",
     "specs": {
         "ram": 0,

@@ -1,6 +1,6 @@
 {
     "name": "ShellHub",
-    "desc": "<rendered-html><p>ShellHub is a modern SSH server for remotely accessing Linux devices\nvia command line (using any SSH client) or web-based user interface,\ndesigned as an alternative to <em>sshd</em>. Think ShellHub as\ncentralized SSH for the the edge and cloud computing.</p>\n</rendered-html>",
+    "desc": "ShellHub is a modern SSH server for remotely accessing Linux devices via command line (using any SSH client) or web-based user interface, designed as an alternative to sshd. Think ShellHub as centralized SSH for the the edge and cloud computing.",
     "nixName": "shellhub-agent",
     "specs": {
         "ram": 0,

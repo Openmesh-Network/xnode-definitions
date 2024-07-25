@@ -11,7 +11,7 @@ def program_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--clean', help='Whether to fetch brand new data from the NixOS search backend, this will find new options that were added since the last update.', action="store_true")
     parser.add_argument('-p', '--packages', help='Whether to generate service descriptions and info from package info.', action="store_true")
-    parser.add_argument('-t','--templates',help='Whether to generate templates instead of service definitions.',action='store_true')
+    parser.add_argument('-t','--templates',help='Where to find templates to generate definitions only from services which are in a template.',type=str, default='inputs/manual-templates.json')
     parser.add_argument('-ow', '--overwrite', help='Whether to overwrite existing definitions in the definitions directory.', action="store_true")
     parser.add_argument('-es', '--backend', help='The elastic search host on the NixOS search backend as a url.', type=str, default="https://search.nixos.org/backend/")
     parser.add_argument('-k','--key',help="The backend api key for NixOS Search", type=str, default="YVdWU0FMWHBadjpYOGdQSG56TDUyd0ZFZWt1eHNmUTljU2g=")
@@ -34,43 +34,41 @@ def main():
 
     # Use collected opensearch responses to create definitions
     if raw_service_data_exists(services_directory):
+        # Find all services which in a template
+        with open(args.templates, 'r') as template_definitions:
+            templates = json.loads(template_definitions.read())
+
+        service_nix_names = find_services_in_templates(templates)
+
         print("Making service definitions with nix data.")
         # Get the list of services in an array, nix options only.
         service_definitions = definitions.make_service_definitions()['services']
-        if args.templates:
-            print("Making template definitions using package data.")
+        
+        print("Making service definitions using package data.")
 
-            templates = make_templates(service_definitions)
-            with open('sample-template-output.json', 'w') as output:
-                output.write(json.dumps(templates, indent=4))
-                
+        definition_factory = xnode_definer('inputs/manual-spec-overrides.json')
+        # Make service definitions using package information on NixOS Search
+        if args.clean or args.packages or not package_info_data_exists():
+            services = definition_factory.make_services(service_definitions, fetch_package_info=True)
         else:
-            print("Making service definitions using package data.")
+            services = definition_factory.make_services(service_definitions)
 
-            definition_factory = xnode_definer('inputs/manual-spec-overrides.json')
-            # Make service definitions using package information on NixOS Search
-            if args.clean or args.packages or not package_info_data_exists():
+        # Use nix scraper to find metadata
+        #print("Finding metadata using NixMetaScraper")
+        #scraper = NixMetaScraper(args.backend)
+        #services_with_metadata = scraper.find_metadata(services)
+        services_with_metadata = services
+        
+        # Apply manual field overrides such as specs and tag retention
+        print("Apply overrides for manual entries")
+        final_services = apply_overrides(services_with_metadata)
 
-                services = definition_factory.make_services(service_definitions, fetch_package_info=True)
-            else:
-                services = definition_factory.make_services(service_definitions)
-
-            # Use nix scraper to find metadata
-            #print("Finding metadata using NixMetaScraper")
-            #scraper = NixMetaScraper(args.backend)
-            #services_with_metadata = scraper.find_metadata(services)
-            services_with_metadata = services
-            
-            # Apply manual field overrides such as specs and tag retention
-            print("Apply overrides for manual entries")
-            final_services = apply_overrides(services_with_metadata)
-
-            # Write output to definitions directory and sample-services
-            print("Writing output to definitions directory")
-            if args.overwrite:
-                write_definitions(final_services, overwrite=True)
-            else:
-                write_definitions(final_services)
+        # Write output to definitions directory and sample-services
+        print("Writing output to definitions directory")
+        if args.overwrite:
+            write_definitions(final_services, overwrite=True)
+        else:
+            write_definitions(final_services)
     else:
         print("Unable to find service data.")
 
@@ -133,6 +131,12 @@ def apply_overrides(services):
         scraped_services = json.loads(servicesWithOptions.read())['services']
     final_services = override_tags(options_applied, scraped_services)
     return final_services
+
+def find_services_in_templates(templates):
+    service_nix_names = []
+    for template in templates:
+        service_nix_names.extend(template['serviceNames'])
+    return service_nix_names
 
 if __name__ == "__main__":
     main()

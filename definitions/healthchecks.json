@@ -1,6 +1,6 @@
 {
     "name": "Healthchecks",
-    "desc": "Cron monitoring tool written in Python & Django ",
+    "desc": "Cron monitoring tool written in Python & Django",
     "nixName": "healthchecks",
     "specs": {
         "ram": 0,

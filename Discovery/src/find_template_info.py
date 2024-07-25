@@ -1,5 +1,6 @@
 from Discovery.src.main import get_packages
-from Discovery.src.metadata_scraper import build_query#, remove_html_tags
+from Discovery.src.metadata_scraper import build_query
+from Formatting.formatter import remove_html_tags
 import json
 
 class xnode_definer:
@@ -189,6 +190,8 @@ def override_tags(options_applied, scraped_services):
         nix_name = service['nixName']
         if nix_name in scraped_services.keys():
             scraped_service = scraped_services[nix_name]
+            if service['name'] != scraped_service['name']:
+                print("Changing name from", service['name'], "to", scraped_service['name'])
             service['name'] = scraped_service['name']
             service['tags'].extend(scraped_service['tags'])
             service['logo'] = scraped_service['logo']
@@ -200,4 +203,4 @@ def filter_desc(desc):
     if desc is None:
         return ''
     else:
-        return desc#remove_html_tags(desc)
+        return remove_html_tags(desc)

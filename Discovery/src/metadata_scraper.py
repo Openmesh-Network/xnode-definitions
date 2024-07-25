@@ -8,15 +8,6 @@ from urllib.parse import urljoin
 class NixMetaScraper:
   def __init__(self, es_host):
     self.backend_url = es_host
-      
-  def remove_html_tags(self,text):
-    if (text):
-      clean_text = re.sub(r'<[^>]+>', '', text)
-      # Convert HTML entities to characters
-      clean_text = html.unescape(clean_text)
-      clean_text = clean_text.replace('\n', '')
-      return clean_text.strip()
-    return ""
 
   def search_metadata(self, search_term):
     query = build_query(search_term)
