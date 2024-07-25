@@ -12,7 +12,10 @@ class xnode_definer:
         for svc in self.spec_overrides:
             if svc['nixName'] == nixName and svc['specs']:
                 return svc['specs']
-        return []
+        return {
+            "ram":0,
+            "storage":0
+        }
 
     def make_services(self, service_definitions, fetch_package_info=False):
         services = []
