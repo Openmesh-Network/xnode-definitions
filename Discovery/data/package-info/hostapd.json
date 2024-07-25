@@ -5,27 +5,27 @@
     "package_pname": "hostapd",
     "package_pversion": "2.10",
     "package_platforms": [
-        "x86_64-linux",
-        "mipsel-linux",
-        "riscv64-linux",
-        "mips-linux",
-        "armv5tel-linux",
-        "m68k-linux",
-        "mips64-linux",
-        "armv6l-linux",
-        "armv7l-linux",
         "armv7a-linux",
-        "microblazeel-linux",
-        "mips64el-linux",
-        "riscv32-linux",
+        "mips-linux",
+        "armv6l-linux",
         "powerpc64le-linux",
-        "aarch64-linux",
         "i686-linux",
-        "s390-linux",
+        "m68k-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
         "s390x-linux",
+        "mipsel-linux",
+        "s390-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "x86_64-linux",
         "microblaze-linux",
+        "riscv64-linux",
         "loongarch64-linux",
-        "powerpc64-linux"
+        "aarch64-linux"
     ],
     "package_outputs": [
         "man",
@@ -33,8 +33,8 @@
     ],
     "package_default_output": "out",
     "package_programs": [
-        "hostapd",
-        "hostapd_cli"
+        "hostapd_cli",
+        "hostapd"
     ],
     "package_license": [
         {

@@ -5,37 +5,37 @@
     "package_pname": "crossfire-server",
     "package_pversion": "22111",
     "package_platforms": [
-        "powerpc64le-linux",
-        "armv6l-linux",
-        "riscv64-linux",
-        "armv7l-linux",
-        "mips-linux",
-        "aarch64-linux",
-        "powerpc64-linux",
-        "s390-linux",
         "i686-linux",
-        "microblaze-linux",
-        "riscv32-linux",
-        "s390x-linux",
         "mips64-linux",
-        "mips64el-linux",
+        "riscv32-linux",
         "mipsel-linux",
-        "x86_64-linux",
-        "armv7a-linux",
-        "armv5tel-linux",
-        "microblazeel-linux",
+        "riscv64-linux",
+        "s390x-linux",
+        "armv7l-linux",
+        "s390-linux",
+        "microblaze-linux",
         "loongarch64-linux",
-        "m68k-linux"
+        "armv5tel-linux",
+        "armv7a-linux",
+        "aarch64-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "mips-linux",
+        "m68k-linux",
+        "microblazeel-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "crossloop",
-        "cfdb_convert",
         "player_dl.pl",
-        "crossfire-server"
+        "crossloop",
+        "crossfire-server",
+        "cfdb_convert"
     ],
     "package_license": [
         {

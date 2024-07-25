@@ -5,32 +5,32 @@
     "package_pname": "slskd",
     "package_pversion": "0.21.1",
     "package_platforms": [
-        "x86_64-linux",
-        "aarch64-linux"
+        "aarch64-linux",
+        "x86_64-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "CodeCoverage.config",
-        "libInstrumentationEngine.dylib",
-        "libInstrumentationEngine.so",
-        "ThirdPartyNotices.txt",
-        "e_sqlite3.a",
-        "libCoverageInstrumentationMethod.dylib",
-        "VanguardInstrumentationProfiler_x86.config",
         "CodeCoverage.exe",
-        "VanguardInstrumentationProfiler_arm64.config",
-        "VanguardInstrumentationProfiler_x64.config",
-        "slskd.Tests.Unit",
-        "libCoverageInstrumentationMethod.so",
-        "Microsoft.CodeCoverage.props",
         "libe_sqlite3.so",
-        "libe_sqlite3.dylib",
+        "Microsoft.CodeCoverage.targets",
+        "VanguardInstrumentationProfiler_x64.config",
+        "libInstrumentationEngine.so",
         "slskd.Tests.Integration",
+        "Microsoft.CodeCoverage.props",
+        "VanguardInstrumentationProfiler_arm64.config",
+        "CodeCoverage.config",
+        "slskd.Tests.Unit",
+        "libCoverageInstrumentationMethod.dylib",
+        "libe_sqlite3.dylib",
+        "e_sqlite3.a",
         "slskd",
-        "Microsoft.CodeCoverage.targets"
+        "libCoverageInstrumentationMethod.so",
+        "libInstrumentationEngine.dylib",
+        "ThirdPartyNotices.txt",
+        "VanguardInstrumentationProfiler_x86.config"
     ],
     "package_license": [
         {

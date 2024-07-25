@@ -2,7 +2,10 @@
     "name": "python3.11-pyloadapi",
     "desc": "Simple wrapper for pyLoad's API",
     "nixName": "pyload",
-    "specs": [],
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
     "tags": [],
     "website": [
         "https://github.com/tr4nt0r/pyloadapi"

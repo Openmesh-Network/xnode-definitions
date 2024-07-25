@@ -13,8 +13,8 @@
     "package_default_output": "out",
     "package_programs": [
         "nifi.sh",
-        "nifi-env.sh",
         "nifi-env.cmd",
+        "nifi-env.sh",
         "nifi.cmd"
     ],
     "package_license": [

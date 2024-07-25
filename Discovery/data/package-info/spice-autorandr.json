@@ -5,7 +5,27 @@
     "package_pname": "spice-autorandr",
     "package_pversion": "0.0.2",
     "package_platforms": [
-        "x86_64-linux"
+        "powerpc64le-linux",
+        "mips64el-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "mips-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "aarch64-linux",
+        "microblaze-linux",
+        "microblazeel-linux",
+        "armv5tel-linux",
+        "s390-linux",
+        "mipsel-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "i686-linux",
+        "m68k-linux",
+        "s390x-linux"
     ],
     "package_outputs": [
         "out"

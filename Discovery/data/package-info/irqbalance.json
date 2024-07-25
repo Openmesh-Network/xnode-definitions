@@ -5,35 +5,35 @@
     "package_pname": "irqbalance",
     "package_pversion": "1.9.4",
     "package_platforms": [
-        "armv6l-linux",
+        "armv7a-linux",
         "s390x-linux",
-        "mipsel-linux",
-        "armv7l-linux",
-        "s390-linux",
-        "loongarch64-linux",
-        "m68k-linux",
-        "microblazeel-linux",
         "x86_64-linux",
-        "armv5tel-linux",
-        "powerpc64-linux",
-        "i686-linux",
-        "aarch64-linux",
+        "microblazeel-linux",
         "mips64-linux",
         "powerpc64le-linux",
-        "microblaze-linux",
-        "mips-linux",
-        "armv7a-linux",
-        "riscv64-linux",
+        "mips64el-linux",
+        "powerpc64-linux",
         "riscv32-linux",
-        "mips64el-linux"
+        "riscv64-linux",
+        "s390-linux",
+        "loongarch64-linux",
+        "i686-linux",
+        "aarch64-linux",
+        "armv5tel-linux",
+        "m68k-linux",
+        "armv6l-linux",
+        "mipsel-linux",
+        "armv7l-linux",
+        "microblaze-linux",
+        "mips-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "irqbalance",
-        "irqbalance-ui"
+        "irqbalance-ui",
+        "irqbalance"
     ],
     "package_license": [
         {

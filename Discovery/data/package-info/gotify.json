@@ -1,62 +1,88 @@
 {
     "type": "package",
-    "package_attr_name": "gotify-cli",
+    "package_attr_name": "gotify-desktop",
     "package_attr_set": "No package set",
-    "package_pname": "gotify-cli",
-    "package_pversion": "2.2.4",
+    "package_pname": "gotify-desktop",
+    "package_pversion": "1.3.7",
     "package_platforms": [
-        "armv7a-darwin",
-        "riscv32-linux",
-        "powerpc64-linux",
-        "i686-darwin",
-        "i686-linux",
-        "mips-linux",
-        "powerpc64le-linux",
-        "riscv64-linux",
-        "s390-linux",
-        "armv5tel-linux",
-        "m68k-linux",
-        "armv7l-linux",
-        "armv7a-linux",
         "armv6l-linux",
-        "microblazeel-linux",
+        "x86_64-netbsd",
+        "x86_64-solaris",
         "x86_64-darwin",
-        "aarch64-linux",
-        "aarch64-darwin",
-        "mips64-linux",
+        "i686-freebsd",
+        "loongarch64-linux",
+        "powerpc64le-linux",
         "mipsel-linux",
         "s390x-linux",
         "x86_64-linux",
-        "wasm64-wasi",
-        "loongarch64-linux",
-        "microblaze-linux",
+        "x86_64-openbsd",
+        "armv6l-netbsd",
+        "aarch64-netbsd",
+        "powerpc-netbsd",
+        "i686-openbsd",
+        "x86_64-redox",
+        "aarch64-darwin",
         "mips64el-linux",
-        "wasm32-wasi"
+        "riscv32-linux",
+        "powerpc64-linux",
+        "x86_64-windows",
+        "mipsel-netbsd",
+        "wasm32-wasi",
+        "i686-darwin",
+        "armv7a-darwin",
+        "mips64-linux",
+        "i686-linux",
+        "armv5tel-linux",
+        "riscv64-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "i686-windows",
+        "i686-netbsd",
+        "mips-linux",
+        "armv7l-netbsd",
+        "x86_64-freebsd",
+        "m68k-linux",
+        "armv7a-linux",
+        "riscv64-netbsd"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "gotify"
+        "gotify-desktop"
     ],
     "package_license": [
         {
-            "url": "https://spdx.org/licenses/MIT.html",
-            "fullName": "MIT License"
+            "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+            "fullName": "GNU General Public License v3.0 or later"
         }
     ],
     "package_license_set": [
-        "MIT License"
+        "GNU General Public License v3.0 or later"
     ],
-    "package_maintainers": [],
-    "package_maintainers_set": [],
-    "package_description": "Command line interface for pushing messages to gotify/server",
+    "package_maintainers": [
+        {
+            "name": "Bryan Albuquerque",
+            "github": "bryanasdev000",
+            "email": "bryanasdev000@gmail.com"
+        },
+        {
+            "name": "genofire",
+            "github": "genofire",
+            "email": "geno+dev@fireorbit.de"
+        }
+    ],
+    "package_maintainers_set": [
+        "Bryan Albuquerque",
+        "genofire"
+    ],
+    "package_description": "Small Gotify daemon to send messages as desktop notifications",
     "package_longDescription": null,
     "package_hydra": null,
     "package_system": "x86_64-linux",
     "package_homepage": [
-        "https://github.com/gotify/cli"
+        "https://github.com/desbma/gotify-desktop"
     ],
-    "package_position": "pkgs/tools/misc/gotify-cli/default.nix:27"
+    "package_position": "pkgs/tools/misc/gotify-desktop/default.nix:21"
 }

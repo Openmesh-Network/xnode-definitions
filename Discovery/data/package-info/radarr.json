@@ -5,10 +5,10 @@
     "package_pname": "radarr",
     "package_pversion": "5.7.0.8882",
     "package_platforms": [
-        "aarch64-darwin",
-        "x86_64-linux",
         "aarch64-linux",
-        "x86_64-darwin"
+        "x86_64-darwin",
+        "aarch64-darwin",
+        "x86_64-linux"
     ],
     "package_outputs": [
         "out"

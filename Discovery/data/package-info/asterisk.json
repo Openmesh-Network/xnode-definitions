@@ -10,15 +10,15 @@
     ],
     "package_default_output": "out",
     "package_programs": [
+        "rasterisk",
+        "astgenkey",
+        "astcanary",
+        "asterisk",
+        "autosupport",
+        "safe_asterisk",
         "astversion",
         "astdb2bdb",
-        "rasterisk",
-        "astdb2sqlite3",
-        "asterisk",
-        "safe_asterisk",
-        "astgenkey",
-        "autosupport",
-        "astcanary"
+        "astdb2sqlite3"
     ],
     "package_license": [
         {

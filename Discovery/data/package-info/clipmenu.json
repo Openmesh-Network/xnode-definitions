@@ -10,10 +10,10 @@
     ],
     "package_default_output": "out",
     "package_programs": [
-        "clipmenu",
-        "clipdel",
+        "clipctl",
         "clipmenud",
-        "clipctl"
+        "clipmenu",
+        "clipdel"
     ],
     "package_license": [
         {

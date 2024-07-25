@@ -12,10 +12,10 @@
     ],
     "package_default_output": "out",
     "package_programs": [
+        "vpnserver",
         "vpncmd",
-        "vpnbridge",
         "vpnclient",
-        "vpnserver"
+        "vpnbridge"
     ],
     "package_license": [
         {

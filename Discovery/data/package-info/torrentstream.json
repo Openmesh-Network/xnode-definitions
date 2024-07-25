@@ -5,10 +5,10 @@
     "package_pname": "torrentstream",
     "package_pversion": "1.0.1.11",
     "package_platforms": [
-        "aarch64-darwin",
+        "x86_64-darwin",
         "x86_64-linux",
         "aarch64-linux",
-        "x86_64-darwin"
+        "aarch64-darwin"
     ],
     "package_outputs": [
         "out"

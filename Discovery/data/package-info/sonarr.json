@@ -5,10 +5,10 @@
     "package_pname": "sonarr",
     "package_pversion": "4.0.7.1863",
     "package_platforms": [
-        "aarch64-linux",
         "aarch64-darwin",
-        "x86_64-linux",
-        "x86_64-darwin"
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
     ],
     "package_outputs": [
         "out"

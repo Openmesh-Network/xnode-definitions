@@ -16,8 +16,8 @@
     "package_default_output": "out",
     "package_programs": [
         "grafana-cli",
-        "grafana",
-        "grafana-server"
+        "grafana-server",
+        "grafana"
     ],
     "package_license": [
         {

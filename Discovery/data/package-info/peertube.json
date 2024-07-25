@@ -5,14 +5,14 @@
     "package_pname": "peertube",
     "package_pversion": "6.0.4",
     "package_platforms": [
-        "x86_64-darwin",
-        "aarch64-linux",
         "x86_64-linux",
-        "aarch64-darwin"
+        "aarch64-darwin",
+        "x86_64-darwin",
+        "aarch64-linux"
     ],
     "package_outputs": [
-        "runner",
         "cli",
+        "runner",
         "out"
     ],
     "package_default_output": "out",

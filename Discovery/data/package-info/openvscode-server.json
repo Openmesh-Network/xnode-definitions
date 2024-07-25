@@ -6,9 +6,9 @@
     "package_pversion": "1.88.1",
     "package_platforms": [
         "aarch64-linux",
+        "x86_64-linux",
         "x86_64-darwin",
-        "aarch64-darwin",
-        "x86_64-linux"
+        "aarch64-darwin"
     ],
     "package_outputs": [
         "out"

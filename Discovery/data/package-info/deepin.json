@@ -1,39 +1,60 @@
 {
     "type": "package",
-    "package_attr_name": "deepin.deepin-shortcut-viewer",
+    "package_attr_name": "deepin.deepin-gtk-theme",
     "package_attr_set": "deepin",
-    "package_pname": "deepin-shortcut-viewer",
-    "package_pversion": "5.0.9",
+    "package_pname": "deepin-gtk-theme",
+    "package_pversion": "23.11.23",
     "package_platforms": [
-        "powerpc64le-linux",
-        "microblaze-linux",
-        "aarch64-linux",
+        "x86_64-netbsd",
+        "x86_64-openbsd",
+        "armv7a-netbsd",
+        "i686-netbsd",
+        "armv7a-darwin",
+        "i686-openbsd",
+        "armv6l-netbsd",
+        "m68k-netbsd",
         "armv7l-linux",
-        "loongarch64-linux",
-        "microblazeel-linux",
-        "mips64-linux",
-        "s390-linux",
-        "mips-linux",
-        "x86_64-linux",
-        "mips64el-linux",
-        "armv7a-linux",
-        "powerpc64-linux",
-        "armv6l-linux",
-        "armv5tel-linux",
         "s390x-linux",
+        "powerpc64-linux",
+        "x86_64-cygwin",
         "mipsel-linux",
-        "m68k-linux",
+        "armv6l-linux",
+        "x86_64-freebsd",
+        "x86_64-redox",
+        "riscv32-netbsd",
+        "armv7a-linux",
+        "microblaze-linux",
+        "armv7l-netbsd",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "i686-darwin",
+        "powerpc64le-linux",
+        "aarch64-darwin",
+        "armv5tel-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "aarch64-netbsd",
+        "i686-freebsd",
         "riscv32-linux",
+        "m68k-linux",
+        "mips64-linux",
+        "mips64el-linux",
+        "s390-linux",
+        "mipsel-netbsd",
         "riscv64-linux",
-        "i686-linux"
+        "x86_64-linux",
+        "i686-cygwin",
+        "x86_64-solaris",
+        "powerpc-netbsd",
+        "microblazeel-linux",
+        "riscv64-netbsd"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
-    "package_programs": [
-        "deepin-shortcut-viewer"
-    ],
+    "package_programs": [],
     "package_license": [
         {
             "url": "https://spdx.org/licenses/GPL-3.0-or-later.html",
@@ -53,12 +74,12 @@
     "package_maintainers_set": [
         "Lu Hongxu"
     ],
-    "package_description": "Deepin Shortcut Viewer",
+    "package_description": "Deepin GTK Theme",
     "package_longDescription": null,
     "package_hydra": null,
     "package_system": "x86_64-linux",
     "package_homepage": [
-        "https://github.com/linuxdeepin/deepin-shortcut-viewer"
+        "https://github.com/linuxdeepin/deepin-gtk-theme"
     ],
-    "package_position": "pkgs/desktops/deepin/apps/deepin-shortcut-viewer/default.nix:45"
+    "package_position": "pkgs/desktops/deepin/artwork/deepin-gtk-theme/default.nix:25"
 }

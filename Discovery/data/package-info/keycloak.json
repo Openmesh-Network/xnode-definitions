@@ -3,14 +3,14 @@
     "package_attr_name": "keycloak",
     "package_attr_set": "No package set",
     "package_pname": "keycloak",
-    "package_pversion": "25.0.1",
+    "package_pversion": "25.0.2",
     "package_platforms": [
-        "powerpc64le-linux",
-        "aarch64-linux",
         "x86_64-linux",
-        "armv6l-linux",
+        "aarch64-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
         "i686-linux",
-        "armv7l-linux"
+        "armv6l-linux"
     ],
     "package_outputs": [
         "out"
@@ -19,9 +19,9 @@
     "package_programs": [
         "kcadm.sh",
         "kcreg.sh",
-        "federation-sssd-setup.sh",
         "kc.sh",
-        "kc.sh.orig"
+        "kc.sh.orig",
+        "federation-sssd-setup.sh"
     ],
     "package_license": [
         {

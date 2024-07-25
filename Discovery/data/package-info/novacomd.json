@@ -5,27 +5,27 @@
     "package_pname": "novacomd",
     "package_pversion": "127",
     "package_platforms": [
+        "m68k-linux",
         "s390-linux",
-        "armv7l-linux",
-        "riscv64-linux",
-        "mips-linux",
-        "s390x-linux",
-        "riscv32-linux",
-        "armv5tel-linux",
-        "mipsel-linux",
-        "mips64el-linux",
-        "loongarch64-linux",
-        "microblaze-linux",
         "mips64-linux",
         "armv7a-linux",
-        "m68k-linux",
-        "aarch64-linux",
-        "armv6l-linux",
-        "i686-linux",
-        "microblazeel-linux",
-        "x86_64-linux",
+        "mipsel-linux",
         "powerpc64le-linux",
-        "powerpc64-linux"
+        "i686-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "armv5tel-linux",
+        "microblaze-linux",
+        "x86_64-linux",
+        "armv6l-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "s390x-linux",
+        "aarch64-linux"
     ],
     "package_outputs": [
         "out"
@@ -43,16 +43,8 @@
     "package_license_set": [
         "Apache License 2.0"
     ],
-    "package_maintainers": [
-        {
-            "name": "Will Dietz",
-            "github": "dtzWill",
-            "email": "w@wdtz.org"
-        }
-    ],
-    "package_maintainers_set": [
-        "Will Dietz"
-    ],
+    "package_maintainers": [],
+    "package_maintainers_set": [],
     "package_description": "Daemon for communicating with WebOS devices",
     "package_longDescription": null,
     "package_hydra": null,

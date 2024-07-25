@@ -7,34 +7,34 @@
     "package_platforms": [
         "loongarch64-linux",
         "microblazeel-linux",
-        "aarch64-linux",
+        "x86_64-linux",
         "armv7l-linux",
         "microblaze-linux",
-        "mips-linux",
-        "x86_64-linux",
         "mips64el-linux",
-        "s390x-linux",
-        "riscv64-linux",
-        "mips64-linux",
         "mipsel-linux",
-        "armv7a-linux",
+        "armv6l-linux",
+        "aarch64-linux",
         "m68k-linux",
         "i686-linux",
-        "armv6l-linux",
+        "mips-linux",
+        "mips64-linux",
+        "armv5tel-linux",
+        "riscv32-linux",
+        "riscv64-linux",
         "powerpc64le-linux",
         "s390-linux",
         "powerpc64-linux",
-        "armv5tel-linux",
-        "riscv32-linux"
+        "s390x-linux",
+        "armv7a-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
+        "iptsd-find-hidraw",
         "iptsd",
         "iptsd-find-service",
-        "iptsd-find-hidraw",
         "iptsd-check-device"
     ],
     "package_license": [

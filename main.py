@@ -5,7 +5,7 @@ import json
 
 from Formatting import formatter, definitions
 from Discovery.src.find_template_info import make_templates, xnode_definer, override_options, override_tags
-from Discovery.src.NixPackageMetaData import NixMetaScraper
+from Discovery.src.metadata_scraper import NixMetaScraper
 
 def program_args():
     parser = argparse.ArgumentParser()
@@ -50,18 +50,23 @@ def main():
             definition_factory = xnode_definer('inputs/manual-spec-overrides.json')
             # Make service definitions using package information on NixOS Search
             if args.clean or args.packages or not package_info_data_exists():
+
                 services = definition_factory.make_services(service_definitions, fetch_package_info=True)
             else:
                 services = definition_factory.make_services(service_definitions)
 
             # Use nix scraper to find metadata
-            scraper = NixMetaScraper(args.backend)
-            services_with_metadata = scraper.find_metadata(services)
+            #print("Finding metadata using NixMetaScraper")
+            #scraper = NixMetaScraper(args.backend)
+            #services_with_metadata = scraper.find_metadata(services)
+            services_with_metadata = services
             
             # Apply manual field overrides such as specs and tag retention
+            print("Apply overrides for manual entries")
             final_services = apply_overrides(services_with_metadata)
 
             # Write output to definitions directory and sample-services
+            print("Writing output to definitions directory")
             if args.overwrite:
                 write_definitions(final_services, overwrite=True)
             else:

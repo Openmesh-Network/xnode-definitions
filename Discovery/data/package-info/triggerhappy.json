@@ -5,35 +5,35 @@
     "package_pname": "triggerhappy",
     "package_pversion": "0.5.0",
     "package_platforms": [
-        "microblaze-linux",
-        "i686-linux",
-        "mips64-linux",
-        "mipsel-linux",
-        "loongarch64-linux",
-        "riscv32-linux",
-        "x86_64-linux",
-        "armv6l-linux",
-        "armv5tel-linux",
-        "s390x-linux",
-        "riscv64-linux",
-        "microblazeel-linux",
-        "armv7a-linux",
-        "armv7l-linux",
-        "mips-linux",
-        "powerpc64le-linux",
-        "s390-linux",
         "mips64el-linux",
-        "m68k-linux",
+        "riscv64-linux",
+        "armv7a-linux",
+        "armv5tel-linux",
+        "microblazeel-linux",
+        "mipsel-linux",
+        "mips64-linux",
         "powerpc64-linux",
-        "aarch64-linux"
+        "powerpc64le-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "i686-linux",
+        "loongarch64-linux",
+        "s390x-linux",
+        "x86_64-linux",
+        "s390-linux",
+        "aarch64-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "mips-linux",
+        "microblaze-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "th-cmd",
-        "thd"
+        "thd",
+        "th-cmd"
     ],
     "package_license": [
         {

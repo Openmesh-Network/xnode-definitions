@@ -1,5 +1,5 @@
 from Discovery.src.main import get_packages
-from Discovery.src.metadata_scraper import build_query
+from Discovery.src.metadata_scraper import build_query, remove_html_tags
 import json
 
 class xnode_definer:
@@ -65,7 +65,7 @@ class xnode_definer:
 
         new_service_definition = {
             'name': package_name,
-            'desc': service_description,
+            'desc': filter_desc(service_description),
             'nixName': nixName,
             'specs': self.find_spec_overrides(nixName),
             'tags': generate_tags_from_desc(service_description),
@@ -195,3 +195,9 @@ def override_tags(options_applied, scraped_services):
         new_services.append(service)
 
     return new_services
+
+def filter_desc(desc):
+    if desc is None:
+        return ''
+    else:
+        return desc#remove_html_tags(desc)

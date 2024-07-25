@@ -2,7 +2,10 @@
     "name": "manticore",
     "desc": "<rendered-html><p>Manticore is a high-level parallel programming language aimed at\ngeneral-purpose applications running on multi-core processors. Manticore\nsupports parallelism at multiple levels: explicit concurrency and\ncoarse-grain parallelism via CML-style constructs and fine-grain\nparallelism via various light-weight notations, such as parallel tuple\nexpressions and NESL/Nepal-style parallel array comprehensions.</p>\n</rendered-html>",
     "nixName": "manticore",
-    "specs": [],
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
     "tags": [],
     "website": [
         "http://manticore.cs.uchicago.edu/"

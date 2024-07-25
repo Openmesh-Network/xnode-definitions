@@ -5,8 +5,8 @@
     "package_pname": "cloudflare-warp",
     "package_pversion": "2024.4.133",
     "package_platforms": [
-        "aarch64-linux",
-        "x86_64-linux"
+        "x86_64-linux",
+        "aarch64-linux"
     ],
     "package_outputs": [
         "out"

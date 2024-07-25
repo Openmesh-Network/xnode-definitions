@@ -5,37 +5,37 @@
     "package_pname": "connman",
     "package_pversion": "1.42",
     "package_platforms": [
-        "riscv64-linux",
-        "mips-linux",
-        "s390x-linux",
-        "x86_64-linux",
-        "m68k-linux",
-        "loongarch64-linux",
-        "s390-linux",
-        "armv7a-linux",
         "mips64el-linux",
         "powerpc64-linux",
-        "riscv32-linux",
-        "armv5tel-linux",
-        "mipsel-linux",
+        "s390x-linux",
         "microblaze-linux",
+        "loongarch64-linux",
+        "mips-linux",
+        "riscv64-linux",
+        "mipsel-linux",
         "armv7l-linux",
-        "mips64-linux",
         "aarch64-linux",
-        "armv6l-linux",
         "i686-linux",
-        "microblazeel-linux",
-        "powerpc64le-linux"
+        "riscv32-linux",
+        "m68k-linux",
+        "x86_64-linux",
+        "armv5tel-linux",
+        "s390-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "powerpc64le-linux",
+        "microblazeel-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "connman-vpnd",
+        "connmand-wait-online",
         "connmand",
-        "connmanctl",
-        "connmand-wait-online"
+        "connman-vpnd",
+        "connmanctl"
     ],
     "package_license": [
         {

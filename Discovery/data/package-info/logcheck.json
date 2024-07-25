@@ -12,8 +12,8 @@
     "package_programs": [
         "logtail",
         "logcheck-test",
-        "logcheck",
-        "logtail2"
+        "logtail2",
+        "logcheck"
     ],
     "package_license": [
         {

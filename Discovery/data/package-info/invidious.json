@@ -6,9 +6,9 @@
     "package_pversion": "2.20240427",
     "package_platforms": [
         "aarch64-darwin",
+        "x86_64-linux",
         "aarch64-linux",
-        "x86_64-darwin",
-        "x86_64-linux"
+        "x86_64-darwin"
     ],
     "package_outputs": [
         "out"

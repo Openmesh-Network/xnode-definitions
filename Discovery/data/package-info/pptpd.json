@@ -5,36 +5,36 @@
     "package_pname": "pptpd",
     "package_pversion": "1.4.0",
     "package_platforms": [
-        "i686-linux",
-        "s390-linux",
-        "mips-linux",
-        "armv7a-linux",
-        "s390x-linux",
-        "loongarch64-linux",
-        "riscv32-linux",
-        "mips64-linux",
-        "armv5tel-linux",
-        "x86_64-linux",
-        "powerpc64-linux",
-        "aarch64-linux",
-        "armv6l-linux",
-        "armv7l-linux",
-        "microblaze-linux",
-        "microblazeel-linux",
         "mipsel-linux",
+        "armv5tel-linux",
+        "mips-linux",
         "powerpc64le-linux",
+        "loongarch64-linux",
+        "armv7a-linux",
+        "mips64-linux",
+        "riscv32-linux",
+        "microblaze-linux",
+        "s390x-linux",
+        "microblazeel-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "armv7l-linux",
+        "i686-linux",
+        "m68k-linux",
         "riscv64-linux",
-        "mips64el-linux",
-        "m68k-linux"
+        "s390-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "mips64el-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "pptpctrl",
+        "bcrelay",
         "pptpd",
-        "bcrelay"
+        "pptpctrl"
     ],
     "package_license": [
         {

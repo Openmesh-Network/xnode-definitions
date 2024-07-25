@@ -5,8 +5,8 @@
     "package_pname": "roon-bridge",
     "package_pversion": "1.8-1125",
     "package_platforms": [
-        "x86_64-linux",
-        "aarch64-linux"
+        "aarch64-linux",
+        "x86_64-linux"
     ],
     "package_outputs": [
         "out"

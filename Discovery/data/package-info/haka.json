@@ -14,9 +14,9 @@
     "package_default_output": "out",
     "package_programs": [
         "hakactl",
-        "hakapcap",
         "haka",
-        "hakabench"
+        "hakabench",
+        "hakapcap"
     ],
     "package_license": [
         {

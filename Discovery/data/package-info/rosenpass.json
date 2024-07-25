@@ -5,9 +5,9 @@
     "package_pname": "rosenpass",
     "package_pversion": "0.2.2",
     "package_platforms": [
-        "aarch64-darwin",
         "aarch64-linux",
         "x86_64-linux",
+        "aarch64-darwin",
         "x86_64-darwin"
     ],
     "package_outputs": [

@@ -5,15 +5,15 @@
     "package_pname": "foundationdb",
     "package_pversion": "7.1.32",
     "package_platforms": [
-        "x86_64-linux",
-        "aarch64-linux"
+        "aarch64-linux",
+        "x86_64-linux"
     ],
     "package_outputs": [
         "debug",
-        "dev",
         "lib",
+        "pythonsrc",
         "out",
-        "pythonsrc"
+        "dev"
     ],
     "package_default_output": "out",
     "package_programs": [],

@@ -10,8 +10,8 @@
     ],
     "package_default_output": "out",
     "package_programs": [
-        "your_spotify_migrate",
-        "your_spotify_server"
+        "your_spotify_server",
+        "your_spotify_migrate"
     ],
     "package_license": [
         {

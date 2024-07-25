@@ -5,27 +5,27 @@
     "package_pname": "namecoind",
     "package_pversion": "25.0",
     "package_platforms": [
-        "mipsel-linux",
-        "mips64-linux",
-        "powerpc64-linux",
-        "m68k-linux",
-        "armv6l-linux",
-        "riscv64-linux",
-        "aarch64-linux",
-        "i686-linux",
-        "loongarch64-linux",
         "mips-linux",
-        "armv7a-linux",
-        "riscv32-linux",
-        "armv5tel-linux",
-        "s390x-linux",
-        "powerpc64le-linux",
         "s390-linux",
+        "armv7a-linux",
         "x86_64-linux",
-        "microblaze-linux",
+        "mips64-linux",
         "armv7l-linux",
+        "i686-linux",
+        "riscv32-linux",
+        "powerpc64le-linux",
+        "riscv64-linux",
+        "loongarch64-linux",
         "microblazeel-linux",
-        "mips64el-linux"
+        "powerpc64-linux",
+        "aarch64-linux",
+        "mips64el-linux",
+        "mipsel-linux",
+        "s390x-linux",
+        "armv6l-linux",
+        "m68k-linux",
+        "microblaze-linux",
+        "armv5tel-linux"
     ],
     "package_outputs": [
         "out"
@@ -33,12 +33,12 @@
     "package_default_output": "out",
     "package_programs": [
         "bench_namecoin",
-        "namecoin-cli",
-        "namecoin-wallet",
-        "namecoind",
-        "namecoin-tx",
         "test_namecoin",
-        "namecoin-util"
+        "namecoind",
+        "namecoin-wallet",
+        "namecoin-cli",
+        "namecoin-util",
+        "namecoin-tx"
     ],
     "package_license": [
         {

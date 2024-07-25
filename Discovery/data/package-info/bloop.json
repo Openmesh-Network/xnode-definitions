@@ -5,8 +5,8 @@
     "package_pname": "bloop",
     "package_pversion": "1.6.0",
     "package_platforms": [
-        "x86_64-linux",
-        "x86_64-darwin"
+        "x86_64-darwin",
+        "x86_64-linux"
     ],
     "package_outputs": [
         "out"

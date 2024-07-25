@@ -10,10 +10,10 @@
     ],
     "package_default_output": "out",
     "package_programs": [
-        "ocserv-worker",
-        "occtl",
         "ocserv",
-        "ocpasswd"
+        "ocpasswd",
+        "occtl",
+        "ocserv-worker"
     ],
     "package_license": [
         {

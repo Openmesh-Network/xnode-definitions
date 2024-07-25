@@ -5,36 +5,36 @@
     "package_pname": "snapper",
     "package_pversion": "0.11.1",
     "package_platforms": [
-        "s390x-linux",
-        "powerpc64-linux",
-        "loongarch64-linux",
-        "mipsel-linux",
-        "mips64el-linux",
-        "i686-linux",
-        "armv6l-linux",
-        "s390-linux",
-        "aarch64-linux",
-        "microblazeel-linux",
-        "mips-linux",
         "mips64-linux",
-        "armv7a-linux",
-        "m68k-linux",
-        "microblaze-linux",
         "armv5tel-linux",
-        "armv7l-linux",
-        "powerpc64le-linux",
         "riscv64-linux",
+        "s390x-linux",
+        "m68k-linux",
+        "armv7l-linux",
+        "mips64el-linux",
+        "microblaze-linux",
+        "mips-linux",
+        "mipsel-linux",
+        "armv6l-linux",
+        "aarch64-linux",
+        "powerpc64-linux",
+        "powerpc64le-linux",
+        "s390-linux",
         "x86_64-linux",
-        "riscv32-linux"
+        "armv7a-linux",
+        "microblazeel-linux",
+        "riscv32-linux",
+        "i686-linux",
+        "loongarch64-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "snapperd",
         "snapper",
-        "mksubvolume"
+        "mksubvolume",
+        "snapperd"
     ],
     "package_license": [
         {

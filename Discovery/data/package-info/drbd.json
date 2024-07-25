@@ -5,37 +5,37 @@
     "package_pname": "drbd",
     "package_pversion": "9.27.0",
     "package_platforms": [
-        "m68k-linux",
-        "armv7l-linux",
-        "armv7a-linux",
-        "mips64el-linux",
-        "riscv32-linux",
-        "x86_64-linux",
-        "i686-linux",
-        "s390-linux",
-        "microblazeel-linux",
         "aarch64-linux",
-        "armv6l-linux",
-        "mips64-linux",
-        "microblaze-linux",
-        "mips-linux",
-        "s390x-linux",
-        "powerpc64-linux",
-        "powerpc64le-linux",
-        "riscv64-linux",
         "armv5tel-linux",
+        "loongarch64-linux",
         "mipsel-linux",
-        "loongarch64-linux"
+        "mips64-linux",
+        "powerpc64-linux",
+        "x86_64-linux",
+        "mips-linux",
+        "m68k-linux",
+        "s390x-linux",
+        "s390-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "powerpc64le-linux",
+        "armv7a-linux",
+        "armv7l-linux",
+        "armv6l-linux",
+        "riscv32-linux",
+        "riscv64-linux",
+        "microblazeel-linux",
+        "mips64el-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "drbdadm",
         "drbdmon",
-        "drbdmeta",
-        "drbdsetup"
+        "drbdadm",
+        "drbdsetup",
+        "drbdmeta"
     ],
     "package_license": [
         {

@@ -5,35 +5,35 @@
     "package_pname": "radvd",
     "package_pversion": "2.19",
     "package_platforms": [
-        "s390x-linux",
-        "microblazeel-linux",
+        "powerpc64le-linux",
+        "riscv32-linux",
         "x86_64-linux",
         "armv5tel-linux",
+        "armv6l-linux",
+        "armv7a-linux",
+        "microblaze-linux",
+        "mips64el-linux",
+        "riscv64-linux",
+        "mips64-linux",
+        "armv7l-linux",
+        "m68k-linux",
+        "s390x-linux",
         "powerpc64-linux",
         "aarch64-linux",
-        "powerpc64le-linux",
-        "mips64-linux",
-        "mipsel-linux",
-        "microblaze-linux",
-        "armv7l-linux",
-        "loongarch64-linux",
-        "riscv64-linux",
+        "microblazeel-linux",
         "s390-linux",
         "mips-linux",
-        "armv7a-linux",
-        "mips64el-linux",
-        "armv6l-linux",
-        "m68k-linux",
+        "mipsel-linux",
         "i686-linux",
-        "riscv32-linux"
+        "loongarch64-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "radvdump",
-        "radvd"
+        "radvd",
+        "radvdump"
     ],
     "package_license": [
         {

@@ -9,8 +9,8 @@
         "x86_64-linux"
     ],
     "package_outputs": [
-        "out",
-        "devdoc"
+        "devdoc",
+        "out"
     ],
     "package_default_output": "out",
     "package_programs": [

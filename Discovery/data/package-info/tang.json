@@ -6,8 +6,8 @@
     "package_pversion": "15",
     "package_platforms": [],
     "package_outputs": [
-        "out",
-        "man"
+        "man",
+        "out"
     ],
     "package_default_output": "out",
     "package_programs": [

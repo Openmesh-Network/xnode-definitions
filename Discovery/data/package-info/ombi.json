@@ -5,9 +5,9 @@
     "package_pname": "ombi",
     "package_pversion": "4.43.5",
     "package_platforms": [
-        "aarch64-linux",
+        "x86_64-darwin",
         "x86_64-linux",
-        "x86_64-darwin"
+        "aarch64-linux"
     ],
     "package_outputs": [
         "out"

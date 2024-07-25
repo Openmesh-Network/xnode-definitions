@@ -5,27 +5,27 @@
     "package_pname": "python3.12-auto-cpufreq",
     "package_pversion": "2.3.0",
     "package_platforms": [
-        "m68k-linux",
-        "mips-linux",
-        "mips64-linux",
-        "microblaze-linux",
-        "armv7l-linux",
-        "microblazeel-linux",
-        "armv5tel-linux",
-        "powerpc64le-linux",
-        "mipsel-linux",
         "s390x-linux",
-        "x86_64-linux",
-        "riscv64-linux",
-        "armv7a-linux",
-        "loongarch64-linux",
-        "i686-linux",
-        "armv6l-linux",
-        "aarch64-linux",
-        "powerpc64-linux",
-        "riscv32-linux",
+        "mipsel-linux",
         "s390-linux",
-        "mips64el-linux"
+        "aarch64-linux",
+        "mips64el-linux",
+        "mips-linux",
+        "armv7l-linux",
+        "armv7a-linux",
+        "microblazeel-linux",
+        "m68k-linux",
+        "powerpc64le-linux",
+        "armv5tel-linux",
+        "armv6l-linux",
+        "mips64-linux",
+        "i686-linux",
+        "microblaze-linux",
+        "loongarch64-linux",
+        "powerpc64-linux",
+        "riscv64-linux",
+        "x86_64-linux",
+        "riscv32-linux"
     ],
     "package_outputs": [
         "out",
@@ -33,9 +33,9 @@
     ],
     "package_default_output": "out",
     "package_programs": [
-        "auto-cpufreq",
         "cpufreqctl.auto-cpufreq",
-        "auto-cpufreq-gtk"
+        "auto-cpufreq-gtk",
+        "auto-cpufreq"
     ],
     "package_license": [
         {

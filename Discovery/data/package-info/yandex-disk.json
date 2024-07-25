@@ -5,8 +5,8 @@
     "package_pname": "yandex-disk",
     "package_pversion": "0.1.6.1080",
     "package_platforms": [
-        "i686-linux",
-        "x86_64-linux"
+        "x86_64-linux",
+        "i686-linux"
     ],
     "package_outputs": [
         "out"

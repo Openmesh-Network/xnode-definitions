@@ -5,9 +5,9 @@
     "package_pname": "signald",
     "package_pversion": "0.23.2",
     "package_platforms": [
-        "x86_64-darwin",
-        "x86_64-linux",
         "aarch64-darwin",
+        "x86_64-linux",
+        "x86_64-darwin",
         "aarch64-linux"
     ],
     "package_outputs": [

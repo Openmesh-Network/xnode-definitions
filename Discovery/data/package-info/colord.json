@@ -5,42 +5,42 @@
     "package_pname": "colord",
     "package_pversion": "1.4.6",
     "package_platforms": [
-        "armv7a-linux",
-        "mipsel-linux",
+        "loongarch64-linux",
         "s390x-linux",
+        "armv5tel-linux",
+        "aarch64-linux",
+        "armv7a-linux",
         "mips64el-linux",
-        "m68k-linux",
+        "armv6l-linux",
+        "armv7l-linux",
+        "powerpc64le-linux",
+        "i686-linux",
+        "mipsel-linux",
+        "mips-linux",
+        "x86_64-linux",
         "microblaze-linux",
         "riscv64-linux",
-        "armv6l-linux",
-        "aarch64-linux",
-        "loongarch64-linux",
         "mips64-linux",
-        "armv7l-linux",
-        "i686-linux",
+        "powerpc64-linux",
         "microblazeel-linux",
-        "mips-linux",
         "s390-linux",
         "riscv32-linux",
-        "armv5tel-linux",
-        "powerpc64-linux",
-        "powerpc64le-linux",
-        "x86_64-linux"
+        "m68k-linux"
     ],
     "package_outputs": [
-        "installedTests",
-        "dev",
         "devdoc",
-        "out",
-        "man"
+        "man",
+        "dev",
+        "installedTests",
+        "out"
     ],
     "package_default_output": "out",
     "package_programs": [
         "cd-fix-profile",
+        "colormgr",
         "cd-it8",
         "cd-create-profile",
-        "cd-iccdump",
-        "colormgr"
+        "cd-iccdump"
     ],
     "package_license": [
         {

@@ -5,8 +5,8 @@
     "package_pname": "i2p",
     "package_pversion": "2.5.2",
     "package_platforms": [
-        "x86_64-linux",
         "aarch64-linux",
+        "x86_64-linux",
         "i686-linux"
     ],
     "package_outputs": [

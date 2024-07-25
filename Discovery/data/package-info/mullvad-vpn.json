@@ -13,12 +13,12 @@
     ],
     "package_default_output": "out",
     "package_programs": [
-        "mullvad-exclude",
         "mullvad-daemon",
-        "mullvad-vpn",
-        "mullvad-gui",
+        "mullvad-exclude",
         "mullvad",
-        "mullvad-problem-report"
+        "mullvad-vpn",
+        "mullvad-problem-report",
+        "mullvad-gui"
     ],
     "package_license": [
         {

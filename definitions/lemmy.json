@@ -2,7 +2,10 @@
     "name": "lemmy-help",
     "desc": "<rendered-html><p><code>lemmy-help</code> is an emmylua parser as well as a CLI which\ntakes that parsed tree and converts it into vim help docs.</p>\n</rendered-html>",
     "nixName": "lemmy",
-    "specs": [],
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
     "tags": [],
     "website": [
         "https://github.com/numToStr/lemmy-help"

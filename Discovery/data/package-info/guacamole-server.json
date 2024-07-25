@@ -5,17 +5,17 @@
     "package_pname": "guacamole-server",
     "package_pversion": "1.5.5",
     "package_platforms": [
-        "i686-linux",
-        "x86_64-linux"
+        "x86_64-linux",
+        "i686-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "guaclog",
         "guacenc",
-        "guacd"
+        "guacd",
+        "guaclog"
     ],
     "package_license": [
         {

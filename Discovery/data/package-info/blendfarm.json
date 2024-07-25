@@ -6,17 +6,17 @@
     "package_pversion": "1.1.6",
     "package_platforms": [
         "x86_64-linux",
+        "x86_64-darwin",
         "aarch64-linux",
-        "aarch64-darwin",
-        "x86_64-darwin"
+        "aarch64-darwin"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
-        "blendfarm-nix",
         "LogicReinc.BlendFarm.Server",
+        "blendfarm-nix",
         "LogicReinc.BlendFarm"
     ],
     "package_license": [

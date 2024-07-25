@@ -5,22 +5,22 @@
     "package_pname": "zammad",
     "package_pversion": "6.2.0",
     "package_platforms": [
-        "aarch64-linux",
-        "x86_64-linux"
+        "x86_64-linux",
+        "aarch64-linux"
     ],
     "package_outputs": [
         "out"
     ],
     "package_default_output": "out",
     "package_programs": [
+        "vite",
+        "rake",
         "rails",
         "yarn",
-        "setup",
-        "rake",
-        "vite",
-        "bundle",
+        "update",
         "rspec",
-        "update"
+        "bundle",
+        "setup"
     ],
     "package_license": [
         {

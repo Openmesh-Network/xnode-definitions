@@ -10,8 +10,8 @@
     ],
     "package_default_output": "out",
     "package_programs": [
-        "usbguard-dbus",
         "usbguard-rule-parser",
+        "usbguard-dbus",
         "usbguard",
         "usbguard-daemon"
     ],

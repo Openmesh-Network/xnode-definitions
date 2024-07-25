@@ -6,10 +6,10 @@
     "package_pversion": "1.11.1",
     "package_platforms": [
         "powerpc64le-linux",
-        "armv6l-linux",
-        "aarch64-linux",
         "i686-linux",
+        "aarch64-linux",
         "armv7l-linux",
+        "armv6l-linux",
         "x86_64-linux"
     ],
     "package_outputs": [

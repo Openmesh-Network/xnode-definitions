@@ -13,11 +13,11 @@
     "package_default_output": "out",
     "package_programs": [
         "hwi.exe",
-        "tor",
-        "tor.exe",
-        "hwi",
         "bitcoind",
+        "tor.exe",
         "tor.real",
+        "tor",
+        "hwi",
         "WasabiBackend"
     ],
     "package_license": [

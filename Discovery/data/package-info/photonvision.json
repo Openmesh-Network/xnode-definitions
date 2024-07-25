@@ -5,8 +5,8 @@
     "package_pname": "photonvision",
     "package_pversion": "2024.3.1",
     "package_platforms": [
-        "x86_64-linux",
-        "aarch64-linux"
+        "aarch64-linux",
+        "x86_64-linux"
     ],
     "package_outputs": [
         "out"

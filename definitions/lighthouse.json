@@ -2,7 +2,10 @@
     "name": "lighthouse",
     "desc": "Ethereum consensus client in Rust",
     "nixName": "lighthouse",
-    "specs": [],
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
     "tags": [],
     "website": [
         "https://lighthouse.sigmaprime.io/"
