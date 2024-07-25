@@ -9,9 +9,7 @@
     "tags": [
         "Software Development - Continuous Integration & Continuous Deployment"
     ],
-    "website": [
-        "http://www.go.cd"
-    ],
+    "website": "http://www.go.cd",
     "logo": "http://www.go.cd/assets/images/favicon.ico",
     "options": [
         {

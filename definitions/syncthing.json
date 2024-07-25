@@ -9,9 +9,7 @@
     "tags": [
         "File Transfer & Synchronization"
     ],
-    "website": [
-        "https://syncthing.net/"
-    ],
+    "website": "https://syncthing.net/",
     "logo": "https://syncthing.net/img/favicon.png",
     "options": [
         {

@@ -7,9 +7,7 @@
         "storage": 0
     },
     "tags": [],
-    "website": [
-        "https://github.com/searxng/searxng"
-    ],
+    "website": "https://github.com/searxng/searxng",
     "logo": "",
     "options": [
         {

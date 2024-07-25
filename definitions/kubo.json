@@ -9,9 +9,7 @@
     "tags": [
         "File Transfer - Distributed Filesystems"
     ],
-    "website": [
-        "https://ipfs.io/"
-    ],
+    "website": "https://ipfs.io/",
     "logo": "https://ipfs.io/favicon.ico",
     "options": [
         {

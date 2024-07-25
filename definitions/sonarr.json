@@ -9,9 +9,7 @@
     "tags": [
         "Automation"
     ],
-    "website": [
-        "https://sonarr.tv"
-    ],
+    "website": "https://sonarr.tv",
     "logo": "https://sonarr.tv/img/favicon.ico",
     "options": [
         {

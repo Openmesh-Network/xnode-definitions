@@ -9,9 +9,7 @@
     "tags": [
         "Analytics"
     ],
-    "website": [
-        "https://metabase.com"
-    ],
+    "website": "https://metabase.com",
     "logo": "https://metabase.com/images/favicon.ico",
     "options": [
         {

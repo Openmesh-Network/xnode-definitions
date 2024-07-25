@@ -9,9 +9,7 @@
     "tags": [
         "Proxy"
     ],
-    "website": [
-        "https://tinyproxy.github.io/"
-    ],
+    "website": "https://tinyproxy.github.io/",
     "logo": "",
     "options": [
         {

@@ -9,9 +9,7 @@
     "tags": [
         "Software Development - IDE & Tools\r"
     ],
-    "website": [
-        "https://github.com/gitpod-io/openvscode-server"
-    ],
+    "website": "https://github.com/gitpod-io/openvscode-server",
     "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {

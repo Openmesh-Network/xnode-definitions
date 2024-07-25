@@ -1,5 +1,5 @@
 from Discovery.src.main import get_packages
-from Discovery.src.metadata_scraper import build_query, remove_html_tags
+from Discovery.src.metadata_scraper import build_query#, remove_html_tags
 import json
 
 class xnode_definer:
@@ -69,7 +69,7 @@ class xnode_definer:
             'nixName': nixName,
             'specs': self.find_spec_overrides(nixName),
             'tags': generate_tags_from_desc(service_description),
-            'website': closest_match_response.get('package_homepage'),
+            'website': closest_match_response.get('package_homepage')[0],
             'logo': '',
             'options': service_definition['options']
         }

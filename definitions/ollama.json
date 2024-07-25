@@ -9,9 +9,7 @@
     "tags": [
         "Analytics"
     ],
-    "website": [
-        "https://github.com/ollama/ollama"
-    ],
+    "website": "https://github.com/ollama/ollama",
     "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {

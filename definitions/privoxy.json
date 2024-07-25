@@ -9,9 +9,7 @@
     "tags": [
         "Proxy"
     ],
-    "website": [
-        "https://www.privoxy.org/"
-    ],
+    "website": "https://www.privoxy.org/",
     "logo": "",
     "options": [
         {

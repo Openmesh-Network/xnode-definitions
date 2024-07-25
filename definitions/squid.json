@@ -9,9 +9,7 @@
     "tags": [
         "Proxy"
     ],
-    "website": [
-        "http://www.squid-cache.org"
-    ],
+    "website": "http://www.squid-cache.org",
     "logo": "",
     "options": [
         {

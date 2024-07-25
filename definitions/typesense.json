@@ -9,9 +9,7 @@
     "tags": [
         "Search Engines\r"
     ],
-    "website": [
-        "https://typesense.org"
-    ],
+    "website": "https://typesense.org",
     "logo": "https://typesense.org/favicon.png",
     "options": [
         {

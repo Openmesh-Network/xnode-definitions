@@ -9,9 +9,7 @@
     "tags": [
         "Monitoring"
     ],
-    "website": [
-        "https://www.netdata.cloud/"
-    ],
+    "website": "https://www.netdata.cloud/",
     "logo": "https://www.netdata.cloud/favicon-32x32.png",
     "options": [
         {

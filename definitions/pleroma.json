@@ -9,9 +9,7 @@
     "tags": [
         "Communication - Social Networks and Forums"
     ],
-    "website": [
-        "https://git.pleroma.social/pleroma/pleroma"
-    ],
+    "website": "https://git.pleroma.social/pleroma/pleroma",
     "logo": "https://git.pleroma.social/uploads/-/system/appearance/favicon/1/favicon.png",
     "options": [
         {

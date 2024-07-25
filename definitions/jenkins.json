@@ -9,9 +9,7 @@
     "tags": [
         "Software Development - Continuous Integration & Continuous Deployment"
     ],
-    "website": [
-        "https://jenkins.io/"
-    ],
+    "website": "https://jenkins.io/",
     "logo": "https://jenkins.io/favicon.ico",
     "options": [
         {

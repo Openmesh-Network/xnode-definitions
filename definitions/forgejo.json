@@ -9,9 +9,7 @@
     "tags": [
         "Software Development - Project Management\r"
     ],
-    "website": [
-        "https://forgejo.org"
-    ],
+    "website": "https://forgejo.org",
     "logo": "https://forgejo.org/favicon.ico",
     "options": [
         {

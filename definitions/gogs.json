@@ -9,9 +9,7 @@
     "tags": [
         "Software Development - Project Management\r"
     ],
-    "website": [
-        "https://gogs.io"
-    ],
+    "website": "https://gogs.io",
     "logo": "https://gogs.io/img/favicon.png",
     "options": [
         {

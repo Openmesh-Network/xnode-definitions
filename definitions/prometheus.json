@@ -9,9 +9,7 @@
     "tags": [
         "Monitoring"
     ],
-    "website": [
-        "https://prometheus.io"
-    ],
+    "website": "https://prometheus.io",
     "logo": "https://prometheus.io/assets/favicons/favicon.ico",
     "options": [
         {

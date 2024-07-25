@@ -1,16 +1,14 @@
 {
-    "name": "go-ethereum",
-    "desc": "Official golang implementation of the Ethereum protocol",
+    "name": "python3.11-gidgethub",
+    "desc": "Async GitHub API library",
     "nixName": "geth",
     "specs": {
         "ram": 16384,
         "storage": 4194304
     },
     "tags": [],
-    "website": [
-        "https://geth.ethereum.org/"
-    ],
-    "logo": "https://geth.ethereum.org/favicon.ico",
+    "website": "https://github.com/brettcannon/gidgethub",
+    "logo": "",
     "options": [
         {
             "name": "<name>.authrpc.address",

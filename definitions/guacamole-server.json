@@ -9,9 +9,7 @@
     "tags": [
         "Remote Access\r"
     ],
-    "website": [
-        "https://guacamole.apache.org/"
-    ],
+    "website": "https://guacamole.apache.org/",
     "logo": "https://guacamole.apache.org/images/logos/guac-classic-logo.svg",
     "options": [
         {

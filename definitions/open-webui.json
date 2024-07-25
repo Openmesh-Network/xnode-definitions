@@ -9,9 +9,7 @@
     "tags": [
         "LLM"
     ],
-    "website": [
-        "https://github.com/open-webui/open-webui"
-    ],
+    "website": "https://github.com/open-webui/open-webui",
     "logo": "",
     "options": [
         {

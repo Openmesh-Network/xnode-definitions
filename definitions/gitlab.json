@@ -9,9 +9,7 @@
     "tags": [
         "Software Development - Continuous Integration & Continuous Deployment"
     ],
-    "website": [
-        "http://www.gitlab.com/"
-    ],
+    "website": "http://www.gitlab.com/",
     "logo": "https://github.githubassets.com/favicons/favicon.png",
     "options": [
         {

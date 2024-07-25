@@ -9,9 +9,7 @@
     "tags": [
         "Web Servers"
     ],
-    "website": [
-        "https://static-web-server.net/"
-    ],
+    "website": "https://static-web-server.net/",
     "logo": "https://static-web-server.net/assets/sws.svg",
     "options": [
         {

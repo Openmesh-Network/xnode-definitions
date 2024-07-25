@@ -9,9 +9,7 @@
     "tags": [
         "Automation"
     ],
-    "website": [
-        "https://lidarr.audio/"
-    ],
+    "website": "https://lidarr.audio/",
     "logo": "https://lidarr.audio/img/favicon.ico",
     "options": [
         {

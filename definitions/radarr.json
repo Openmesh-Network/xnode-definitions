@@ -9,9 +9,7 @@
     "tags": [
         "Automation"
     ],
-    "website": [
-        "https://radarr.video/"
-    ],
+    "website": "https://radarr.video/",
     "logo": "https://radarr.video/img/favicon.ico",
     "options": [
         {
