@@ -14,7 +14,7 @@
     "options": [
         {
             "name": "customDir",
-            "desc": "Base directory for custom templates and other options.  If  services.forgejo.useWizard  is disabled (default),this directory will also hold secrets and the resulting  app.ini  config atruntime.",
+            "desc": "Base directory for custom templates and other options. If services.forgejo.useWizard is disabled (default), this directory will also hold secrets and the resulting app.ini config at runtime.",
             "nixName": "customDir",
             "type": "string",
             "value": "\"${config.services.forgejo.stateDir}/custom\""
@@ -42,7 +42,7 @@
         },
         {
             "name": "database.passwordFile",
-            "desc": "A file containing the password corresponding to  services.forgejo.database.user .",
+            "desc": "A file containing the password corresponding to services.forgejo.database.user.",
             "nixName": "database.passwordFile",
             "type": "null or path",
             "value": "null"
@@ -91,21 +91,21 @@
         },
         {
             "name": "dump.enable",
-            "desc": "Whether to enable periodic dumps via the  built-in dump command .",
+            "desc": "Whether to enable periodic dumps via the built-in dump command.",
             "nixName": "dump.enable",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "dump.file",
-            "desc": "Filename to be used for the dump. If  null  a default nameis chosen by forgejo.",
+            "desc": "Filename to be used for the dump. If null a default name is chosen by forgejo.",
             "nixName": "dump.file",
             "type": "null or string",
             "value": "null"
         },
         {
             "name": "dump.interval",
-            "desc": "Run a Forgejo dump at this interval. Runs by default at 04:31 everyday.  The format is described in   systemd.time(7)  .",
+            "desc": "Run a Forgejo dump at this interval. Runs by default at 04:31 every day. The format is described in systemd.time(7).",
             "nixName": "dump.interval",
             "type": "string",
             "value": "\"04:31\""
@@ -161,14 +161,14 @@
         },
         {
             "name": "secrets",
-            "desc": "This is a small wrapper over systemd\u2019s LoadCredential .  It takes the same sections and keys as  services.forgejo.settings , but the value of eachkey is a path instead of a string or bool.  The path is then loaded as credential, exported as environmentvariable and then feed through  https://codeberg.org/forgejo/forgejo/src/branch/forgejo/contrib/environment-to-ini/environment-to-ini.go .  It does the required environment variable escaping for you.   Keys specified here take priority over the ones in  services.forgejo.settings !",
+            "desc": "This is a small wrapper over systemd\u2019s LoadCredential. It takes the same sections and keys as services.forgejo.settings, but the value of each key is a path instead of a string or bool. The path is then loaded as credential, exported as environment variable and then feed through https://codeberg.org/forgejo/forgejo/src/branch/forgejo/contrib/environment-to-ini/environment-to-ini.go. It does the required environment variable escaping for you.  Keys specified here take priority over the ones in services.forgejo.settings!",
             "nixName": "secrets",
             "type": "attribute set of attribute set of path",
             "value": "{ }"
         },
         {
             "name": "settings",
-            "desc": "Free-form settings written directly to the  app.ini configfile file. Refer to  https://forgejo.org/docs/latest/admin/config-cheat-sheet/ for supported values.",
+            "desc": "Free-form settings written directly to the app.ini configfile file. Refer to https://forgejo.org/docs/latest/admin/config-cheat-sheet/ for supported values.",
             "nixName": "settings",
             "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string))",
             "value": "{ }"
@@ -217,7 +217,7 @@
         },
         {
             "name": "settings.server.PROTOCOL",
-            "desc": "Listen protocol.  +unix  means \u201cover unix\u201d, not \u201cinaddition to.\u201d",
+            "desc": "Listen protocol. +unix means \u201cover unix\u201d, not \u201cin addition to.\u201d",
             "nixName": "settings.server.PROTOCOL",
             "type": "one of \"http\", \"https\", \"fcgi\", \"http+unix\", \"fcgi+unix\"",
             "value": "\"http\""
@@ -231,7 +231,7 @@
         },
         {
             "name": "settings.server.SSH_PORT",
-            "desc": "SSH port displayed in clone URL. The option is required to configurea service when the external visible port differs from the locallistening port i.e. if port forwarding is used.",
+            "desc": "SSH port displayed in clone URL. The option is required to configure a service when the external visible port differs from the local listening port i.e. if port forwarding is used.",
             "nixName": "settings.server.SSH_PORT",
             "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
             "value": "22"
@@ -245,7 +245,7 @@
         },
         {
             "name": "settings.session.COOKIE_SECURE",
-            "desc": "Marks session cookies as \u201csecure\u201d as a hint for browsers to only sendthem via HTTPS. This option is recommend, if Forgejo is being servedover HTTPS.",
+            "desc": "Marks session cookies as \u201csecure\u201d as a hint for browsers to only send them via HTTPS. This option is recommend, if Forgejo is being served over HTTPS.",
             "nixName": "settings.session.COOKIE_SECURE",
             "type": "boolean",
             "value": "false"
@@ -259,7 +259,7 @@
         },
         {
             "name": "useWizard",
-            "desc": "Whether to use the built-in installation wizard instead ofdeclaratively managing the  app.ini  config file in nix.",
+            "desc": "Whether to use the built-in installation wizard instead of declaratively managing the app.ini config file in nix.",
             "nixName": "useWizard",
             "type": "boolean",
             "value": "false"

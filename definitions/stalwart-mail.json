@@ -22,7 +22,7 @@
         },
         {
             "name": "openFirewall",
-            "desc": "Whether to open TCP firewall ports, which are specified in  services.stalwart-mail.settings.listener  on allinterfaces.",
+            "desc": "Whether to open TCP firewall ports, which are specified in services.stalwart-mail.settings.listener on all interfaces.",
             "nixName": "openFirewall",
             "type": "boolean",
             "value": "false"
@@ -36,7 +36,7 @@
         },
         {
             "name": "settings",
-            "desc": "Configuration options for the Stalwart email server. See  https://stalw.art/docs/category/configuration for available options.  By default, the module is configured to store everything locally.",
+            "desc": "Configuration options for the Stalwart email server. See https://stalw.art/docs/category/configuration for available options. By default, the module is configured to store everything locally.",
             "nixName": "settings",
             "type": "TOML value",
             "value": "{ }"

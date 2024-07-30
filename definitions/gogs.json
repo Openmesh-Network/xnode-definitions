@@ -21,7 +21,7 @@
         },
         {
             "name": "cookieSecure",
-            "desc": "Marks session cookies as \u201csecure\u201d as a hint for browsers to only sendthem via HTTPS. This option is recommend, if Gogs is being served overHTTPS.",
+            "desc": "Marks session cookies as \u201csecure\u201d as a hint for browsers to only send them via HTTPS. This option is recommend, if Gogs is being served over HTTPS.",
             "nixName": "cookieSecure",
             "type": "boolean",
             "value": "false"
@@ -42,14 +42,14 @@
         },
         {
             "name": "database.password",
-            "desc": "The password corresponding to  database.user . Warning: this is stored in cleartextin the Nix store! Use  database.passwordFile  instead.",
+            "desc": "The password corresponding to database.user. Warning: this is stored in cleartext in the Nix store! Use database.passwordFile instead.",
             "nixName": "database.password",
             "type": "string",
             "value": "\"\""
         },
         {
             "name": "database.passwordFile",
-            "desc": "A file containing the password corresponding to  database.user .",
+            "desc": "A file containing the password corresponding to database.user.",
             "nixName": "database.passwordFile",
             "type": "null or path",
             "value": "null"
@@ -98,7 +98,7 @@
         },
         {
             "name": "extraConfig",
-            "desc": "Configuration lines appended to the generated Gogs configurationfile.",
+            "desc": "Configuration lines appended to the generated Gogs configuration file.",
             "nixName": "extraConfig",
             "type": "string",
             "value": "\"\""
@@ -147,7 +147,7 @@
         },
         {
             "name": "useWizard",
-            "desc": "Do not generate a configuration and use Gogs\u2019 installation wizardinstead. The first registered user will be administrator.",
+            "desc": "Do not generate a configuration and use Gogs\u2019 installation wizard instead. The first registered user will be administrator.",
             "nixName": "useWizard",
             "type": "boolean",
             "value": "false"

@@ -14,21 +14,21 @@
     "options": [
         {
             "name": "baseURL",
-            "desc": "The base url used in notifications and  {base_url} token.",
+            "desc": "The base url used in notifications and {base_url} token.",
             "nixName": "baseURL",
             "type": "null or string",
             "value": "null"
         },
         {
             "name": "behindProxy",
-            "desc": "Enable this option when changedetection-io runs behind a reverseproxy, so that it trusts X-* headers. It is recommend to runchangedetection-io behind a TLS reverse proxy.",
+            "desc": "Enable this option when changedetection-io runs behind a reverse proxy, so that it trusts X-* headers. It is recommend to run changedetection-io behind a TLS reverse proxy.",
             "nixName": "behindProxy",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "chromePort",
-            "desc": "A free port on which webDriverSupport or playwrightSupport listen onlocalhost.",
+            "desc": "A free port on which webDriverSupport or playwrightSupport listen on localhost.",
             "nixName": "chromePort",
             "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
             "value": "4444"
@@ -49,7 +49,7 @@
         },
         {
             "name": "environmentFile",
-            "desc": "Securely pass environment variabels to changedetection-io.  This can be used to set for example a frontend password reproduciblevia  SALTED_PASS  which convinetly also deactivates nagsabout the hosted version.  SALTED_PASS  should be 64characters long while the first 32 are the salt and the second thefrontend password. It can easily be retrieved from the settings filewhen first set via the frontend with the following command: jq -r .settings.application.password /var/lib/changedetection-io/url-watches.json",
+            "desc": "Securely pass environment variabels to changedetection-io. This can be used to set for example a frontend password reproducible via SALTED_PASS which convinetly also deactivates nags about the hosted version. SALTED_PASS should be 64 characters long while the first 32 are the salt and the second the frontend password. It can easily be retrieved from the settings file when first set via the frontend with the following command: jq -r .settings.application.password /var/lib/changedetection-io/url-watches.json",
             "nixName": "environmentFile",
             "type": "null or path",
             "value": "null"
@@ -70,7 +70,7 @@
         },
         {
             "name": "playwrightSupport",
-            "desc": "Enable support for fetching web pages using playwright and Chromium.This starts a headless Chromium controlled by puppeteer in an ocicontainer.   Playwright can currently leak memory. See  https://github.com/dgtlmoon/changedetection.io/wiki/Playwright-content-fetcher#playwright-memory-leak",
+            "desc": "Enable support for fetching web pages using playwright and Chromium. This starts a headless Chromium controlled by puppeteer in an oci container.  Playwright can currently leak memory. See https://github.com/dgtlmoon/changedetection.io/wiki/Playwright-content-fetcher#playwright-memory-leak",
             "nixName": "playwrightSupport",
             "type": "boolean",
             "value": "false"
@@ -91,7 +91,7 @@
         },
         {
             "name": "webDriverSupport",
-            "desc": "Enable support for fetching web pages using WebDriver and Chromium.This starts a headless chromium controlled by puppeteer in an ocicontainer.   Playwright can currently leak memory. See  https://github.com/dgtlmoon/changedetection.io/wiki/Playwright-content-fetcher#playwright-memory-leak",
+            "desc": "Enable support for fetching web pages using WebDriver and Chromium. This starts a headless chromium controlled by puppeteer in an oci container.  Playwright can currently leak memory. See https://github.com/dgtlmoon/changedetection.io/wiki/Playwright-content-fetcher#playwright-memory-leak",
             "nixName": "webDriverSupport",
             "type": "boolean",
             "value": "false"

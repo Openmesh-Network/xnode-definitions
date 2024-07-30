@@ -56,21 +56,21 @@
         },
         {
             "name": "extraGroups",
-            "desc": "An array of additional groups for the  openvscode-server user.",
+            "desc": "An array of additional groups for the openvscode-server user.",
             "nixName": "extraGroups",
             "type": "list of string",
             "value": "[ ]"
         },
         {
             "name": "extraPackages",
-            "desc": "Additional packages to add to the openvscode-server  PATH .",
+            "desc": "Additional packages to add to the openvscode-server PATH.",
             "nixName": "extraPackages",
             "type": "list of package",
             "value": "[ ]"
         },
         {
             "name": "group",
-            "desc": "The group to run openvscode-server under. By default, a group named openvscode-server  will be created.",
+            "desc": "The group to run openvscode-server under. By default, a group named openvscode-server will be created.",
             "nixName": "group",
             "type": "string",
             "value": "\"openvscode-server\""
@@ -91,7 +91,7 @@
         },
         {
             "name": "port",
-            "desc": "The port the server should listen to. If 0 is passed a random freeport is picked. If a range in the format num-num is passed, a free portfrom the range (end inclusive) is selected.",
+            "desc": "The port the server should listen to. If 0 is passed a random free port is picked. If a range in the format num-num is passed, a free port from the range (end inclusive) is selected.",
             "nixName": "port",
             "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
             "value": "3000"
@@ -112,28 +112,28 @@
         },
         {
             "name": "telemetryLevel",
-            "desc": "Sets the initial telemetry level. Valid levels are: \u2018off\u2019, \u2018crash\u2019,\u2018error\u2019 and \u2018all\u2019.",
+            "desc": "Sets the initial telemetry level. Valid levels are: \u2018off\u2019, \u2018crash\u2019, \u2018error\u2019 and \u2018all\u2019.",
             "nixName": "telemetryLevel",
             "type": "null or one of \"off\", \"crash\", \"error\", \"all\"",
             "value": "null"
         },
         {
             "name": "user",
-            "desc": "The user to run openvscode-server as. By default, a user named openvscode-server  will be created.",
+            "desc": "The user to run openvscode-server as. By default, a user named openvscode-server will be created.",
             "nixName": "user",
             "type": "string",
             "value": "\"openvscode-server\""
         },
         {
             "name": "userDataDir",
-            "desc": "Specifies the directory that user data is kept in. Can be used toopen multiple distinct instances of Code.",
+            "desc": "Specifies the directory that user data is kept in. Can be used to open multiple distinct instances of Code.",
             "nixName": "userDataDir",
             "type": "null or string",
             "value": "null"
         },
         {
             "name": "withoutConnectionToken",
-            "desc": "Run without a connection token. Only use this if the connection issecured by other means.",
+            "desc": "Run without a connection token. Only use this if the connection is secured by other means.",
             "nixName": "withoutConnectionToken",
             "type": "boolean",
             "value": "false"

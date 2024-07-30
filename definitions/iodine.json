@@ -14,7 +14,7 @@
     "options": [
         {
             "name": "clients",
-            "desc": "Each attribute of this option defines a systemd service that runsiodine. Many or none may be defined. The name of each service is iodine-\u00abname\u00bb  where \u00abname\u00bb is the name of the correspondingattribute name.",
+            "desc": "Each attribute of this option defines a systemd service that runs iodine. Many or none may be defined. The name of each service is iodine-\u00abname\u00bb where \u00abname\u00bb is the name of the corresponding attribute name.",
             "nixName": "clients",
             "type": "attribute set of (submodule)",
             "value": "{ }"

@@ -28,7 +28,7 @@
         },
         {
             "name": "home",
-            "desc": "The path to use as hound\u2019s $HOME. If the default user \u201chound\u201d isconfigured then this is the home of the \u201chound\u201d user.",
+            "desc": "The path to use as hound\u2019s $HOME. If the default user \u201chound\u201d is configured then this is the home of the \u201chound\u201d user.",
             "nixName": "home",
             "type": "path",
             "value": "\"/var/lib/hound\""
@@ -49,7 +49,7 @@
         },
         {
             "name": "settings",
-            "desc": "The full configuration of the Hound daemon. See the upstreamdocumentation  https://github.com/hound-search/hound/blob/main/docs/config-options.md for details.   The  dbpath  should be an absolute path to a writabledirectory.",
+            "desc": "The full configuration of the Hound daemon. See the upstream documentation https://github.com/hound-search/hound/blob/main/docs/config-options.md for details.  The dbpath should be an absolute path to a writable directory.",
             "nixName": "settings",
             "type": "JSON value",
             "value": null

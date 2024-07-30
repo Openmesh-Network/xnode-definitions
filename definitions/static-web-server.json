@@ -14,7 +14,7 @@
     "options": [
         {
             "name": "configuration",
-            "desc": "Configuration for Static Web Server. See  https://static-web-server.net/configuration/config-file/ .NOTE: Don\u2019t set \u201chost\u201d, \u201cport\u201d, or \u201croot\u201d here. They will be ignored.Use the top-level \u201clisten\u201d and \u201croot\u201d options instead.",
+            "desc": "Configuration for Static Web Server. See https://static-web-server.net/configuration/config-file/. NOTE: Don\u2019t set \u201chost\u201d, \u201cport\u201d, or \u201croot\u201d here. They will be ignored. Use the top-level \u201clisten\u201d and \u201croot\u201d options instead.",
             "nixName": "configuration",
             "type": "TOML value",
             "value": "{ }"
@@ -28,14 +28,14 @@
         },
         {
             "name": "listen",
-            "desc": "The \u201cListenStream\u201d used in static-web-server.socket. This isequivalent to SWS\u2019s \u201chost\u201d and \u201cport\u201d options. See here for specificsyntax:  https://www.freedesktop.org/software/systemd/man/systemd.socket.html#ListenStream=",
+            "desc": "The \u201cListenStream\u201d used in static-web-server.socket. This is equivalent to SWS\u2019s \u201chost\u201d and \u201cport\u201d options. See here for specific syntax: https://www.freedesktop.org/software/systemd/man/systemd.socket.html#ListenStream=",
             "nixName": "listen",
             "type": "string",
             "value": "\"[::]:8787\""
         },
         {
             "name": "root",
-            "desc": "The location of files for SWS to serve. Equivalent to SWS\u2019s \u201croot\u201dconfig value. NOTE: This folder must exist before starting SWS.",
+            "desc": "The location of files for SWS to serve. Equivalent to SWS\u2019s \u201croot\u201d config value. NOTE: This folder must exist before starting SWS.",
             "nixName": "root",
             "type": "path",
             "value": null

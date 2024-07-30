@@ -142,10 +142,11 @@ def add_extra_definitions(starting_services, extra_services, nix_data):
 
 def remove_html_tags(text):
     if (text):
-      clean_text = re.sub(r'<[^>]+>', '', text)
-      clean_text = clean_text.replace('\"', '')
-      # Convert HTML entities to characters
-      clean_text = html.unescape(clean_text)
-      clean_text = clean_text.replace('\n', ' ')
-      return clean_text.strip()
+        clean_text = text.replace('\n', ' ')
+        clean_text = clean_text.replace('  ', ' ')
+        clean_text = re.sub(r'<[^>]+>', '', clean_text)
+        clean_text = clean_text.replace('\"', '')
+        # Convert HTML entities to characters
+        clean_text = html.unescape(clean_text)
+        return clean_text.strip()
     return ""

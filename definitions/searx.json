@@ -19,14 +19,14 @@
         },
         {
             "name": "environmentFile",
-            "desc": "Environment file (see  systemd.exec(5)  \u201cEnvironmentFile=\u201dsection for the syntax) to define variables for Searx. This option canbe used to safely include secret keys into the Searx configuration.",
+            "desc": "Environment file (see systemd.exec(5) \u201cEnvironmentFile=\u201d section for the syntax) to define variables for Searx. This option can be used to safely include secret keys into the Searx configuration.",
             "nixName": "environmentFile",
             "type": "null or path",
             "value": "null"
         },
         {
             "name": "limiterSettings",
-            "desc": "Limiter settings for SearXNG.   For available settings, see the SearXNG  schemafile .",
+            "desc": "Limiter settings for SearXNG.  For available settings, see the SearXNG schema file.",
             "nixName": "limiterSettings",
             "type": "attribute set of (JSON value)",
             "value": "{ }"
@@ -40,35 +40,35 @@
         },
         {
             "name": "redisCreateLocally",
-            "desc": "Configure a local Redis server for SearXNG. This is required if youwant to enable the rate limiter and bot protection of SearXNG.",
+            "desc": "Configure a local Redis server for SearXNG. This is required if you want to enable the rate limiter and bot protection of SearXNG.",
             "nixName": "redisCreateLocally",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "runInUwsgi",
-            "desc": "Whether to run searx in uWSGI as a \u201cvassal\u201d, instead of using itsbuilt-in HTTP server. This is the recommended mode for public or largeinstances, but is unnecessary for LAN or local-only use.   The built-in HTTP server logs all queries by default.",
+            "desc": "Whether to run searx in uWSGI as a \u201cvassal\u201d, instead of using its built-in HTTP server. This is the recommended mode for public or large instances, but is unnecessary for LAN or local-only use.  The built-in HTTP server logs all queries by default.",
             "nixName": "runInUwsgi",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "settings",
-            "desc": "Searx settings. These will be merged with (taking precedence over)the default configuration. It\u2019s also possible to refer to environmentvariables (defined in  services.searx.environmentFile )using the syntax  @VARIABLE_NAME@ .   For available settings, see the Searx  docs .",
+            "desc": "Searx settings. These will be merged with (taking precedence over) the default configuration. It\u2019s also possible to refer to environment variables (defined in services.searx.environmentFile) using the syntax @VARIABLE_NAME@.  For available settings, see the Searx docs.",
             "nixName": "settings",
             "type": "attribute set of (JSON value)",
             "value": "{ }"
         },
         {
             "name": "settingsFile",
-            "desc": "The path of the Searx server settings.yml file. If no file isspecified, a default file is used (default config file has debug modeenabled). Note: setting this options overrides  services.searx.settings .   This file, along with any secret key it contains, will be copied intothe world-readable Nix store.",
+            "desc": "The path of the Searx server settings.yml file. If no file is specified, a default file is used (default config file has debug mode enabled). Note: setting this options overrides services.searx.settings.  This file, along with any secret key it contains, will be copied into the world-readable Nix store.",
             "nixName": "settingsFile",
             "type": "path",
             "value": "\"/run/searx/settings.yml\""
         },
         {
             "name": "uwsgiConfig",
-            "desc": "Additional configuration of the uWSGI vassal running searx. It shouldnotably specify on which interfaces and ports the vassal shouldlisten.",
+            "desc": "Additional configuration of the uWSGI vassal running searx. It should notably specify on which interfaces and ports the vassal should listen.",
             "nixName": "uwsgiConfig",
             "type": "Json value or lambda",
             "value": "{\n  http = \":8080\";\n}"

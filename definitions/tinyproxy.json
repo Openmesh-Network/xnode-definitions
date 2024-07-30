@@ -28,21 +28,21 @@
         },
         {
             "name": "settings",
-            "desc": "Configuration for  tinyproxy .",
+            "desc": "Configuration for tinyproxy.",
             "nixName": "settings",
             "type": "attribute set of (atom (null, bool, int, float or string) or a list of them for duplicate keys)",
             "value": "{ }"
         },
         {
             "name": "settings.Anonymous",
-            "desc": "If an  Anonymous  keyword is present, then anonymousproxying is enabled. The headers listed with  Anonymous  areallowed through, while all others are denied. If no Anonymous keyword ispresent, then all headers are allowed through. You must include quotesaround the headers.",
+            "desc": "If an Anonymous keyword is present, then anonymous proxying is enabled. The headers listed with Anonymous are allowed through, while all others are denied. If no Anonymous keyword is present, then all headers are allowed through. You must include quotes around the headers.",
             "nixName": "settings.Anonymous",
             "type": "list of string",
             "value": "[ ]"
         },
         {
             "name": "settings.Filter",
-            "desc": "Tinyproxy supports filtering of web sites based on URLs or domains.This option specifies the location of the file containing the filterrules, one rule per line.",
+            "desc": "Tinyproxy supports filtering of web sites based on URLs or domains. This option specifies the location of the file containing the filter rules, one rule per line.",
             "nixName": "settings.Filter",
             "type": "null or path",
             "value": "null"

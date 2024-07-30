@@ -21,21 +21,21 @@
         },
         {
             "name": "declarative",
-            "desc": "Whether to use a declarative Minecraft server configuration. Only ifset to  true , the options  services.minecraft-server.whitelist  and  services.minecraft-server.serverProperties  will beapplied.",
+            "desc": "Whether to use a declarative Minecraft server configuration. Only if set to true, the options services.minecraft-server.whitelist and services.minecraft-server.serverProperties will be applied.",
             "nixName": "declarative",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "enable",
-            "desc": "If enabled, start a Minecraft Server. The server data will be loadedfrom and saved to  services.minecraft-server.dataDir .",
+            "desc": "If enabled, start a Minecraft Server. The server data will be loaded from and saved to services.minecraft-server.dataDir.",
             "nixName": "enable",
             "type": "boolean",
             "value": "true"
         },
         {
             "name": "eula",
-            "desc": "Whether you agree to   MojangsEULA . This option must be set to  true  to run Minecraftserver.",
+            "desc": "Whether you agree to  Mojangs EULA. This option must be set to true to run Minecraft server.",
             "nixName": "eula",
             "type": "boolean",
             "value": "false"
@@ -63,7 +63,7 @@
         },
         {
             "name": "serverProperties",
-            "desc": "Minecraft server properties for the server.properties file. Only hasan effect when  services.minecraft-server.declarative  is set to true . See  https://minecraft.gamepedia.com/Server.properties#Java_Edition_3 for documentation on these values.",
+            "desc": "Minecraft server properties for the server.properties file. Only has an effect when services.minecraft-server.declarative is set to true. See https://minecraft.gamepedia.com/Server.properties#Java_Edition_3 for documentation on these values.",
             "nixName": "serverProperties",
             "type": "attribute set of (boolean or signed integer or string)",
             "value": "{ }",
@@ -408,7 +408,7 @@
         },
         {
             "name": "whitelist",
-            "desc": "Whitelisted players, only has an effect when  services.minecraft-server.declarative  is true  and the whitelist is enabled via  services.minecraft-server.serverProperties  bysetting  white-list  to  true . This is a mappingfrom Minecraft usernames to UUIDs. You can use  https://mcuuid.net/  to get a MinecraftUUID for a username.",
+            "desc": "Whitelisted players, only has an effect when services.minecraft-server.declarative is true and the whitelist is enabled via services.minecraft-server.serverProperties by setting white-list to true. This is a mapping from Minecraft usernames to UUIDs. You can use https://mcuuid.net/ to get a Minecraft UUID for a username.",
             "nixName": "whitelist",
             "type": "attribute set of Minecraft UUID",
             "value": "{ }"

@@ -14,7 +14,7 @@
     "options": [
         {
             "name": "certsLifetime",
-            "desc": "If  inspectHttps  is enabled, the time generated HTTPScertificates will be stored in a temporary directory for reuse. Once thelifetime has expired the directory will cleared and the certificate willhave to be generated again, on-demand.  Depending on the traffic, you may want to reduce the lifetime tolimit the disk usage, since Privoxy itself never deletes thecertificates.   The format is that of the  tmpfiles.d(5)  Ageparameter.",
+            "desc": "If inspectHttps is enabled, the time generated HTTPS certificates will be stored in a temporary directory for reuse. Once the lifetime has expired the directory will cleared and the certificate will have to be generated again, on-demand. Depending on the traffic, you may want to reduce the lifetime to limit the disk usage, since Privoxy itself never deletes the certificates.  The format is that of the tmpfiles.d(5) Age parameter.",
             "nixName": "certsLifetime",
             "type": "tmpfiles.d(5) age format",
             "value": "\"10d\""
@@ -28,28 +28,28 @@
         },
         {
             "name": "enableTor",
-            "desc": "Whether to configure Privoxy to use Tor\u2019s faster SOCKS port, suitablefor HTTP.",
+            "desc": "Whether to configure Privoxy to use Tor\u2019s faster SOCKS port, suitable for HTTP.",
             "nixName": "enableTor",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "inspectHttps",
-            "desc": "Whether to configure Privoxy to inspect HTTPS requests, meaning allencrypted traffic will be filtered as well. This works by decrypting andre-encrypting the requests using a per-domain generated certificate.  To issue per-domain certificates, Privoxy must be provided with a CAcertificate, using the  ca-cert-file , ca-key-file  settings.   The CA certificate must also be added to the system trust roots,otherwise browsers will reject all Privoxy certificates as invalid. Youcan do so by using the option  security.pki.certificateFiles .",
+            "desc": "Whether to configure Privoxy to inspect HTTPS requests, meaning all encrypted traffic will be filtered as well. This works by decrypting and re-encrypting the requests using a per-domain generated certificate. To issue per-domain certificates, Privoxy must be provided with a CA certificate, using the ca-cert-file, ca-key-file settings.  The CA certificate must also be added to the system trust roots, otherwise browsers will reject all Privoxy certificates as invalid. You can do so by using the option security.pki.certificateFiles.",
             "nixName": "inspectHttps",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "settings",
-            "desc": "This option is mapped to the main Privoxy configuration file. Checkout the Privoxy user manual at  https://www.privoxy.org/user-manual/config.html for available settings and documentation.   Repeated settings can be represented by using a list.",
+            "desc": "This option is mapped to the main Privoxy configuration file. Check out the Privoxy user manual at https://www.privoxy.org/user-manual/config.html for available settings and documentation.  Repeated settings can be represented by using a list.",
             "nixName": "settings",
             "type": "privoxy configuration type. The format consists of an attribute\nset of settings. Each setting can be either a value (integer, string,\nboolean or path) or a list of such values.\n",
             "value": "{ }"
         },
         {
             "name": "settings.actionsfile",
-            "desc": "List of paths to Privoxy action files. These paths may either beabsolute or relative to the privoxy configuration directory.",
+            "desc": "List of paths to Privoxy action files. These paths may either be absolute or relative to the privoxy configuration directory.",
             "nixName": "settings.actionsfile",
             "type": "list of string",
             "value": "[\n  \"match-all.action\"\n  \"default.action\"\n]"
@@ -63,7 +63,7 @@
         },
         {
             "name": "settings.filterfile",
-            "desc": "List of paths to Privoxy filter files. These paths may either beabsolute or relative to the privoxy configuration directory.",
+            "desc": "List of paths to Privoxy filter files. These paths may either be absolute or relative to the privoxy configuration directory.",
             "nixName": "settings.filterfile",
             "type": "list of string",
             "value": "[\n  \"default.filter\"\n]"
@@ -77,14 +77,14 @@
         },
         {
             "name": "userActions",
-            "desc": "Actions to be included in a  user.action  file. This willhave a higher priority and can be used to override all otheractions.",
+            "desc": "Actions to be included in a user.action file. This will have a higher priority and can be used to override all other actions.",
             "nixName": "userActions",
             "type": "strings concatenated with \"\\n\"",
             "value": "\"\""
         },
         {
             "name": "userFilters",
-            "desc": "Filters to be included in a  user.filter  file. This willhave a higher priority and can be used to override all other filtersdefinitions.",
+            "desc": "Filters to be included in a user.filter file. This will have a higher priority and can be used to override all other filters definitions.",
             "nixName": "userFilters",
             "type": "strings concatenated with \"\\n\"",
             "value": "\"\""

@@ -12,21 +12,21 @@
     "options": [
         {
             "name": "appstoreEnable",
-            "desc": "Allow the installation and updating of apps from the Nextcloudappstore. Enabled by default unless there are packages in  services.nextcloud.extraApps .Set this to true to force enable the store even if  services.nextcloud.extraApps is used. Set this to false to disable the installation of apps from theglobal appstore. App management is always enabled regardless of thissetting.",
+            "desc": "Allow the installation and updating of apps from the Nextcloud appstore. Enabled by default unless there are packages in services.nextcloud.extraApps. Set this to true to force enable the store even if services.nextcloud.extraApps is used. Set this to false to disable the installation of apps from the global appstore. App management is always enabled regardless of this setting.",
             "nixName": "appstoreEnable",
             "type": "null or boolean",
             "value": "null"
         },
         {
             "name": "autoUpdateApps.enable",
-            "desc": "Run a regular auto-update of all apps installed from the Nextcloudapp store.",
+            "desc": "Run a regular auto-update of all apps installed from the Nextcloud app store.",
             "nixName": "autoUpdateApps.enable",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "autoUpdateApps.startAt",
-            "desc": "When to run the update. See systemd.services.<name>.startAt .",
+            "desc": "When to run the update. See systemd.services.<name>.startAt.",
             "nixName": "autoUpdateApps.startAt",
             "type": "string or list of string",
             "value": "\"05:00:00\""
@@ -40,42 +40,42 @@
         },
         {
             "name": "caching.memcached",
-            "desc": "Whether to load the Memcached module into PHP. You still need toenable Memcached in your config.php. See  https://docs.nextcloud.com/server/14/admin_manual/configuration_server/caching_configuration.html",
+            "desc": "Whether to load the Memcached module into PHP. You still need to enable Memcached in your config.php. See https://docs.nextcloud.com/server/14/admin_manual/configuration_server/caching_configuration.html",
             "nixName": "caching.memcached",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "caching.redis",
-            "desc": "Whether to load the Redis module into PHP. You still need to enableRedis in your config.php. See  https://docs.nextcloud.com/server/14/admin_manual/configuration_server/caching_configuration.html",
+            "desc": "Whether to load the Redis module into PHP. You still need to enable Redis in your config.php. See https://docs.nextcloud.com/server/14/admin_manual/configuration_server/caching_configuration.html",
             "nixName": "caching.redis",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "cli.memoryLimit",
-            "desc": "The  memory_limit  of PHP is equal to  services.nextcloud.maxUploadSize .The value can be customized for  nextcloud-cron.service using this option.",
+            "desc": "The memory_limit of PHP is equal to services.nextcloud.maxUploadSize. The value can be customized for nextcloud-cron.service using this option.",
             "nixName": "cli.memoryLimit",
             "type": "null or string",
             "value": "null"
         },
         {
             "name": "config.adminpassFile",
-            "desc": "The full path to a file that contains the admin\u2019s password. Must bereadable by user  nextcloud . The password is set only in theinitial setup of Nextcloud by the systemd service nextcloud-setup.service .",
+            "desc": "The full path to a file that contains the admin\u2019s password. Must be readable by user nextcloud. The password is set only in the initial setup of Nextcloud by the systemd service nextcloud-setup.service.",
             "nixName": "config.adminpassFile",
             "type": "string",
             "value": null
         },
         {
             "name": "config.adminuser",
-            "desc": "Username for the admin account. The username is only set during theinitial setup of Nextcloud! Since the username also acts as unique IDinternally, it cannot be changed later!",
+            "desc": "Username for the admin account. The username is only set during the initial setup of Nextcloud! Since the username also acts as unique ID internally, it cannot be changed later!",
             "nixName": "config.adminuser",
             "type": "string",
             "value": "\"root\""
         },
         {
             "name": "config.dbhost",
-            "desc": "Database host (+port) or socket path. If  services.nextcloud.database.createLocally is true and  services.nextcloud.config.dbtype is either  pgsql  or  mysql , defaults to thecorrect Unix socket instead.",
+            "desc": "Database host (+port) or socket path. If services.nextcloud.database.createLocally is true and services.nextcloud.config.dbtype is either pgsql or mysql, defaults to the correct Unix socket instead.",
             "nixName": "config.dbhost",
             "type": "null or string",
             "value": "\"localhost\""
@@ -96,7 +96,7 @@
         },
         {
             "name": "config.dbtableprefix",
-            "desc": "Table prefix in Nextcloud\u2019s database.   Note:  since Nextcloud 20 it\u2019s not an option anymoreto create a database schema with a custom table prefix. This option onlyexists for backwards compatibility with installations that wereoriginally provisioned with Nextcloud <20.",
+            "desc": "Table prefix in Nextcloud\u2019s database. Note: since Nextcloud 20 it\u2019s not an option anymore to create a database schema with a custom table prefix. This option only exists for backwards compatibility with installations that were originally provisioned with Nextcloud <20.",
             "nixName": "config.dbtableprefix",
             "type": "null or string",
             "value": "null"
@@ -131,7 +131,7 @@
         },
         {
             "name": "config.objectstore.s3.enable",
-            "desc": "Whether to enable S3 object storage as primary storage.  This mounts a bucket on an Amazon S3 object storage or compatibleimplementation into the virtual filesystem.  Further details about this feature can be found in the  upstreamdocumentation  .",
+            "desc": "Whether to enable S3 object storage as primary storage. This mounts a bucket on an Amazon S3 object storage or compatible implementation into the virtual filesystem. Further details about this feature can be found in the upstream documentation .",
             "nixName": "config.objectstore.s3.enable",
             "type": "boolean",
             "value": "false"
@@ -166,21 +166,21 @@
         },
         {
             "name": "config.objectstore.s3.secretFile",
-            "desc": "The full path to a file that contains the access secret. Must bereadable by user  nextcloud .",
+            "desc": "The full path to a file that contains the access secret. Must be readable by user nextcloud.",
             "nixName": "config.objectstore.s3.secretFile",
             "type": "string",
             "value": null
         },
         {
             "name": "config.objectstore.s3.sseCKeyFile",
-            "desc": "If provided this is the full path to a file that contains the key toenable  server-sideencryption with customer-provided keys  (SSE-C).  The file must contain a random 32-byte key encoded as a base64string, e.g. generated with the command   openssl rand 32 | base64   Must be readable by user  nextcloud .",
+            "desc": "If provided this is the full path to a file that contains the key to enable server-side encryption with customer-provided keys (SSE-C). The file must contain a random 32-byte key encoded as a base64 string, e.g. generated with the command openssl rand 32 | base64 Must be readable by user nextcloud.",
             "nixName": "config.objectstore.s3.sseCKeyFile",
             "type": "null or path",
             "value": "null"
         },
         {
             "name": "config.objectstore.s3.usePathStyle",
-            "desc": "Required for some non-Amazon S3 implementations.  Ordinarily, requests will be made with http://bucket.hostname.domain/ , but with path style enabledrequests are made with  http://hostname.domain/bucket instead.",
+            "desc": "Required for some non-Amazon S3 implementations. Ordinarily, requests will be made with http://bucket.hostname.domain/, but with path style enabled requests are made with http://hostname.domain/bucket instead.",
             "nixName": "config.objectstore.s3.usePathStyle",
             "type": "boolean",
             "value": "false"
@@ -194,7 +194,7 @@
         },
         {
             "name": "configureRedis",
-            "desc": "Whether to configure Nextcloud to use the recommended Redis settingsfor small instances.   The  notify_push  app requires Redis to be configured. Ifthis option is turned off, this must be configured manually.",
+            "desc": "Whether to configure Nextcloud to use the recommended Redis settings for small instances.  The notify_push app requires Redis to be configured. If this option is turned off, this must be configured manually.",
             "nixName": "configureRedis",
             "type": "boolean",
             "value": "config.services.nextcloud.notify_push.enable"
@@ -208,7 +208,7 @@
         },
         {
             "name": "datadir",
-            "desc": "Nextcloud\u2019s data storage path. Will be  services.nextcloud.home by default. This folder will be populated with a config.php file and adata folder which contains the state of the instance (excluding thedatabase).\u201c;",
+            "desc": "Nextcloud\u2019s data storage path. Will be services.nextcloud.home by default. This folder will be populated with a config.php file and a data folder which contains the state of the instance (excluding the database).\u201c;",
             "nixName": "datadir",
             "type": "string",
             "value": "config.services.nextcloud.home"
@@ -222,21 +222,21 @@
         },
         {
             "name": "enableImagemagick",
-            "desc": "Whether to enable the ImageMagick module for PHP. This is used by thetheming app and for generating previews of certain images (e.g. SVG andHEIF). You may want to disable it for increased security. In that case,previews will still be available for some images (e.g. JPEG and PNG).See  https://github.com/nextcloud/server/issues/13099 .",
+            "desc": "Whether to enable the ImageMagick module for PHP. This is used by the theming app and for generating previews of certain images (e.g. SVG and HEIF). You may want to disable it for increased security. In that case, previews will still be available for some images (e.g. JPEG and PNG). See https://github.com/nextcloud/server/issues/13099 .",
             "nixName": "enableImagemagick",
             "type": "boolean",
             "value": "true"
         },
         {
             "name": "extraApps",
-            "desc": "Extra apps to install. Should be an attrSet of appid to packagesgenerated by fetchNextcloudApp. The appid must be identical to the \u201cid\u201dvalue in the apps appinfo/info.xml. Using this will disable the appstoreto prevent Nextcloud from updating these apps (see  services.nextcloud.appstoreEnable ).",
+            "desc": "Extra apps to install. Should be an attrSet of appid to packages generated by fetchNextcloudApp. The appid must be identical to the \u201cid\u201d value in the apps appinfo/info.xml. Using this will disable the appstore to prevent Nextcloud from updating these apps (see services.nextcloud.appstoreEnable).",
             "nixName": "extraApps",
             "type": "attribute set of package",
             "value": "{ }"
         },
         {
             "name": "extraAppsEnable",
-            "desc": "Automatically enable the apps in  services.nextcloud.extraApps every time Nextcloud starts. If set to false, apps need to be enabled inthe Nextcloud web user interface or with nextcloud-occ app:enable .",
+            "desc": "Automatically enable the apps in services.nextcloud.extraApps every time Nextcloud starts. If set to false, apps need to be enabled in the Nextcloud web user interface or with nextcloud-occ app:enable.",
             "nixName": "extraAppsEnable",
             "type": "boolean",
             "value": "true"
@@ -271,14 +271,14 @@
         },
         {
             "name": "maxUploadSize",
-            "desc": "The upload limit for files. This changes the relevant options inphp.ini and nginx if enabled.",
+            "desc": "The upload limit for files. This changes the relevant options in php.ini and nginx if enabled.",
             "nixName": "maxUploadSize",
             "type": "string",
             "value": "\"512M\""
         },
         {
             "name": "nginx.hstsMaxAge",
-            "desc": "Value for the  max-age  directive of the HTTP Strict-Transport-Security  header.  See section 6.1.1 of IETF RFC 6797 for detailed information on thisdirective and header.",
+            "desc": "Value for the max-age directive of the HTTP Strict-Transport-Security header. See section 6.1.1 of IETF RFC 6797 for detailed information on this directive and header.",
             "nixName": "nginx.hstsMaxAge",
             "type": "positive integer, meaning >0",
             "value": "15552000"
@@ -292,14 +292,14 @@
         },
         {
             "name": "notify_push.bendDomainToLocalhost",
-            "desc": "Whether to add an entry to  /etc/hosts  for the configurednextcloud domain to point to  localhost  and add localhost  to nextcloud\u2019s  trusted_proxies config option.  This is useful when nextcloud\u2019s domain is not a static IP address andwhen the reverse proxy cannot be bypassed because the backend connectionis done via unix socket.",
+            "desc": "Whether to add an entry to /etc/hosts for the configured nextcloud domain to point to localhost and add localhost to nextcloud\u2019s trusted_proxies config option. This is useful when nextcloud\u2019s domain is not a static IP address and when the reverse proxy cannot be bypassed because the backend connection is done via unix socket.",
             "nixName": "notify_push.bendDomainToLocalhost",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "notify_push.dbhost",
-            "desc": "Database host (+port) or socket path. If  services.nextcloud.database.createLocally is true and  services.nextcloud.config.dbtype is either  pgsql  or  mysql , defaults to thecorrect Unix socket instead.",
+            "desc": "Database host (+port) or socket path. If services.nextcloud.database.createLocally is true and services.nextcloud.config.dbtype is either pgsql or mysql, defaults to the correct Unix socket instead.",
             "nixName": "notify_push.dbhost",
             "type": "null or string",
             "value": "\"config.services.nextcloud.config.dbhost\""
@@ -320,7 +320,7 @@
         },
         {
             "name": "notify_push.dbtableprefix",
-            "desc": "Table prefix in Nextcloud\u2019s database.   Note:  since Nextcloud 20 it\u2019s not an option anymoreto create a database schema with a custom table prefix. This option onlyexists for backwards compatibility with installations that wereoriginally provisioned with Nextcloud <20.",
+            "desc": "Table prefix in Nextcloud\u2019s database. Note: since Nextcloud 20 it\u2019s not an option anymore to create a database schema with a custom table prefix. This option only exists for backwards compatibility with installations that were originally provisioned with Nextcloud <20.",
             "nixName": "notify_push.dbtableprefix",
             "type": "null or string",
             "value": "\"config.services.nextcloud.config.dbtableprefix\""
@@ -369,7 +369,7 @@
         },
         {
             "name": "occ",
-            "desc": "The nextcloud-occ program preconfigured to target this Nextcloudinstance.",
+            "desc": "The nextcloud-occ program preconfigured to target this Nextcloud instance.",
             "nixName": "occ",
             "type": "package",
             "value": "<rendered-html><p>generated script</p>\n</rendered-html>"
@@ -383,14 +383,14 @@
         },
         {
             "name": "phpExtraExtensions",
-            "desc": "Additional PHP extensions to use for Nextcloud. By default, onlyextensions necessary for a vanilla Nextcloud installation are enabled,but you may choose from the list of available extensions and add furtherones. This is sometimes necessary to be able to install a certainNextcloud app that has additional requirements.",
+            "desc": "Additional PHP extensions to use for Nextcloud. By default, only extensions necessary for a vanilla Nextcloud installation are enabled, but you may choose from the list of available extensions and add further ones. This is sometimes necessary to be able to install a certain Nextcloud app that has additional requirements.",
             "nixName": "phpExtraExtensions",
             "type": "function that evaluates to a(n) list of package",
             "value": "all: []"
         },
         {
             "name": "phpOptions",
-            "desc": "Options for PHP\u2019s php.ini file for nextcloud.  Please note that this option is  additive  on purpose whilethe attribute values inside the default are option defaults: that meansthat        {        services . nextcloud . phpOptions . \" opcache.interned_strings_buffer \"   =   \"23\"  ;      }      will override the  php.ini  option opcache.interned_strings_buffer  without discarding the restof the defaults.  Overriding all of  phpOptions  (including upload_max_filesize ,  post_max_size  and memory_limit  which all point to  services.nextcloud.maxUploadSize by default) can be done like this:        {        services . nextcloud . phpOptions   =  lib.mkForce  {          /* ... */        };      }",
+            "desc": "Options for PHP\u2019s php.ini file for nextcloud. Please note that this option is additive on purpose while the attribute values inside the default are option defaults: that means that {  services.nextcloud.phpOptions.\"opcache.interned_strings_buffer\" = \"23\"; } will override the php.ini option opcache.interned_strings_buffer without discarding the rest of the defaults. Overriding all of phpOptions (including upload_max_filesize, post_max_size and memory_limit which all point to services.nextcloud.maxUploadSize by default) can be done like this: {  services.nextcloud.phpOptions = lib.mkForce {   /* ... */  }; }",
             "nixName": "phpOptions",
             "type": "attribute set of (string or signed integer)",
             "value": "{\n  catch_workers_output = \"yes\";\n  display_errors = \"stderr\";\n  error_reporting = \"E_ALL & ~E_DEPRECATED & ~E_STRICT\";\n  expose_php = \"Off\";\n  \"opcache.fast_shutdown\" = \"1\";\n  \"opcache.interned_strings_buffer\" = \"8\";\n  \"opcache.max_accelerated_files\" = \"10000\";\n  \"opcache.memory_consumption\" = \"128\";\n  \"opcache.revalidate_freq\" = \"1\";\n  \"openssl.cafile\" = \"/etc/ssl/certs/ca-certificates.crt\";\n  output_buffering = \"0\";\n  short_open_tag = \"Off\";\n}"
@@ -404,91 +404,91 @@
         },
         {
             "name": "poolConfig",
-            "desc": "Options for Nextcloud\u2019s PHP pool. See the documentation on php-fpm.conf  for details on configuration directives.",
+            "desc": "Options for Nextcloud\u2019s PHP pool. See the documentation on php-fpm.conf for details on configuration directives.",
             "nixName": "poolConfig",
             "type": "null or strings concatenated with \"\\n\"",
             "value": "null"
         },
         {
             "name": "poolSettings",
-            "desc": "Options for nextcloud\u2019s PHP pool. See the documentation on php-fpm.conf  for details on configuration directives.",
+            "desc": "Options for nextcloud\u2019s PHP pool. See the documentation on php-fpm.conf for details on configuration directives.",
             "nixName": "poolSettings",
             "type": "attribute set of (string or signed integer or boolean)",
             "value": "{\n  pm = \"dynamic\";\n  \"pm.max_children\" = \"32\";\n  \"pm.max_requests\" = \"500\";\n  \"pm.max_spare_servers\" = \"4\";\n  \"pm.min_spare_servers\" = \"2\";\n  \"pm.start_servers\" = \"2\";\n}"
         },
         {
             "name": "secretFile",
-            "desc": "Secret options which will be appended to Nextcloud\u2019s config.php file(written as JSON, in the same form as the  services.nextcloud.settings option), for example  {\"redis\":{\"password\":\"secret\"}} .",
+            "desc": "Secret options which will be appended to Nextcloud\u2019s config.php file (written as JSON, in the same form as the services.nextcloud.settings option), for example {redis:{password:secret}}.",
             "nixName": "secretFile",
             "type": "null or string",
             "value": "null"
         },
         {
             "name": "settings",
-            "desc": "Extra options which should be appended to Nextcloud\u2019s config.phpfile.",
+            "desc": "Extra options which should be appended to Nextcloud\u2019s config.php file.",
             "nixName": "settings",
             "type": "JSON value",
             "value": "{ }"
         },
         {
             "name": "settings.default_phone_region",
-            "desc": "An  ISO3166-1  country code which replaces automatic phone-number detectionwithout a country code.  As an example, with  DE  set as the default phone region,the  +49  prefix can be omitted for phone numbers.",
+            "desc": "An ISO 3166-1 country code which replaces automatic phone-number detection without a country code. As an example, with DE set as the default phone region, the +49 prefix can be omitted for phone numbers.",
             "nixName": "settings.default_phone_region",
             "type": "string",
             "value": "\"\""
         },
         {
             "name": "settings.log_type",
-            "desc": "Logging backend to use. systemd requires the php-systemd package tobe added to services.nextcloud.phpExtraExtensions. See the  nextclouddocumentation  for details.",
+            "desc": "Logging backend to use. systemd requires the php-systemd package to be added to services.nextcloud.phpExtraExtensions. See the nextcloud documentation for details.",
             "nixName": "settings.log_type",
             "type": "one of \"errorlog\", \"file\", \"syslog\", \"systemd\"",
             "value": "\"syslog\""
         },
         {
             "name": "settings.loglevel",
-            "desc": "Log level value between 0 (DEBUG) and 4 (FATAL).    0 (debug): Log all activity.    1 (info): Log activity such as user logins and file activities,plus warnings, errors, and fatal errors.    2 (warn): Log successful operations, as well as warnings ofpotential problems, errors and fatal errors.    3 (error): Log failed operations and fatal errors.    4 (fatal): Log only fatal errors that cause the server tostop.",
+            "desc": "Log level value between 0 (DEBUG) and 4 (FATAL).  0 (debug): Log all activity. 1 (info): Log activity such as user logins and file activities, plus warnings, errors, and fatal errors. 2 (warn): Log successful operations, as well as warnings of potential problems, errors and fatal errors. 3 (error): Log failed operations and fatal errors. 4 (fatal): Log only fatal errors that cause the server to stop.",
             "nixName": "settings.loglevel",
             "type": "integer between 0 and 4 (both inclusive)",
             "value": "2"
         },
         {
             "name": "settings.overwriteprotocol",
-            "desc": "Force Nextcloud to always use HTTP or HTTPS i.e. for link generation.Nextcloud uses the currently used protocol by default, but when behind areverse-proxy, it may use  http  for everything althoughNextcloud may be served via HTTPS.",
+            "desc": "Force Nextcloud to always use HTTP or HTTPS i.e. for link generation. Nextcloud uses the currently used protocol by default, but when behind a reverse-proxy, it may use http for everything although Nextcloud may be served via HTTPS.",
             "nixName": "settings.overwriteprotocol",
             "type": "one of \"\", \"http\", \"https\"",
             "value": "\"\""
         },
         {
             "name": "settings.\"profile.enabled\"",
-            "desc": "Makes user-profiles globally available under nextcloud.tld/u/user.name . Even though it\u2019s enabled bydefault in Nextcloud, it must be explicitly enabled here because it hasthe side-effect that personal information is even accessible tounauthenticated users by default. By default, the following propertiesare set to \u201cShow to everyone\u201d if this flag is enabled:   About  Full name  Headline  Organisation  Profile picture  Role  Twitter  Website Only has an effect in Nextcloud 23 and later.",
+            "desc": "Makes user-profiles globally available under nextcloud.tld/u/user.name. Even though it\u2019s enabled by default in Nextcloud, it must be explicitly enabled here because it has the side-effect that personal information is even accessible to unauthenticated users by default. By default, the following properties are set to \u201cShow to everyone\u201d if this flag is enabled:  About Full name Headline Organisation Profile picture Role Twitter Website Only has an effect in Nextcloud 23 and later.",
             "nixName": "settings.\"profile.enabled\"",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "settings.skeletondirectory",
-            "desc": "The directory where the skeleton files are located. These files willbe copied to the data directory of new users. Leave empty to not copyany skeleton files.",
+            "desc": "The directory where the skeleton files are located. These files will be copied to the data directory of new users. Leave empty to not copy any skeleton files.",
             "nixName": "settings.skeletondirectory",
             "type": "string",
             "value": "\"\""
         },
         {
             "name": "settings.trusted_domains",
-            "desc": "Trusted domains, from which the nextcloud installation will beaccessible. You don\u2019t need to add services.nextcloud.hostname  here.",
+            "desc": "Trusted domains, from which the nextcloud installation will be accessible. You don\u2019t need to add services.nextcloud.hostname here.",
             "nixName": "settings.trusted_domains",
             "type": "list of string",
             "value": "[ ]"
         },
         {
             "name": "settings.trusted_proxies",
-            "desc": "Trusted proxies, to provide if the nextcloud installation is beingproxied to secure against e.g. spoofing.",
+            "desc": "Trusted proxies, to provide if the nextcloud installation is being proxied to secure against e.g. spoofing.",
             "nixName": "settings.trusted_proxies",
             "type": "list of string",
             "value": "[ ]"
         },
         {
             "name": "webfinger",
-            "desc": "Enable this option if you plan on using the webfinger plugin. Theappropriate nginx rewrite rules will be added to your configuration.",
+            "desc": "Enable this option if you plan on using the webfinger plugin. The appropriate nginx rewrite rules will be added to your configuration.",
             "nixName": "webfinger",
             "type": "boolean",
             "value": "false"
