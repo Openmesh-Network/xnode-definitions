@@ -38,6 +38,6 @@ def combine(starting_templates = args[1], other_templates = args[2], output_temp
     
     print(missing_indexes)
     with open(output_templates, 'w') as json_out:
-        json_out.write(json.dumps(new_templates, indent=4))
+        json_out.write(json.dumps(new_templates, indent=3))
 
 combine()
