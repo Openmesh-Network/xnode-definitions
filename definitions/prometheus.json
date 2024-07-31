@@ -66,7 +66,7 @@
             "desc": "Address to listen on for the web interface and API. Empty string willlisten on all interfaces. \u201clocalhost\u201d will listen on 127.0.0.1 (but not::1).",
             "nixName": "alertmanager.listenAddress",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "alertmanager.logFormat",
@@ -136,7 +136,7 @@
             "desc": "Configuration for Alertmanager IRC Relay as a Nix attribute set. Fora reference, check out the  exampleconfiguration  and the  sourcecode .  Note: The webhook\u2019s URL MUST point to the IRC channel where themessage should be posted. For  #mychannel  from the example,this would be  http://localhost:8080/mychannel .",
             "nixName": "alertmanagerIrcRelay.settings",
             "type": "YAML value",
-            "value": null
+            "value": ""
         },
         {
             "name": "alertmanagerNotificationQueueCapacity",
@@ -220,7 +220,7 @@
             "desc": "Address of the apcupsd Network Information Server (NIS).",
             "nixName": "exporters.apcupsd.apcupsdAddress",
             "type": "string",
-            "value": "\":3551\""
+            "value": ":3551"
         },
         {
             "name": "exporters.apcupsd.apcupsdNetwork",
@@ -262,14 +262,14 @@
             "desc": "Group under which the apcupsd exporter shall be run.",
             "nixName": "exporters.apcupsd.group",
             "type": "string",
-            "value": "\"apcupsd-exporter\""
+            "value": "apcupsd-exporter"
         },
         {
             "name": "exporters.apcupsd.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.apcupsd.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.apcupsd.openFirewall",
@@ -290,28 +290,28 @@
             "desc": "User name under which the apcupsd exporter shall be run.",
             "nixName": "exporters.apcupsd.user",
             "type": "string",
-            "value": "\"apcupsd-exporter\""
+            "value": "apcupsd-exporter"
         },
         {
             "name": "exporters.artifactory.artiAccessToken",
             "desc": "Access token for authentication against JFrog Artifactory API. One ofthe password or access token needs to be set.",
             "nixName": "exporters.artifactory.artiAccessToken",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.artifactory.artiPassword",
             "desc": "Password for authentication against JFrog Artifactory API. One of thepassword or access token needs to be set.",
             "nixName": "exporters.artifactory.artiPassword",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.artifactory.artiUsername",
             "desc": "Username for authentication against JFrog Artifactory API.",
             "nixName": "exporters.artifactory.artiUsername",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.artifactory.enable",
@@ -346,14 +346,14 @@
             "desc": "Group under which the artifactory exporter shall be run.",
             "nixName": "exporters.artifactory.group",
             "type": "string",
-            "value": "\"artifactory-exporter\""
+            "value": "artifactory-exporter"
         },
         {
             "name": "exporters.artifactory.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.artifactory.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.artifactory.openFirewall",
@@ -374,14 +374,14 @@
             "desc": "URI on which to scrape JFrog Artifactory.",
             "nixName": "exporters.artifactory.scrapeUri",
             "type": "string",
-            "value": "\"http://localhost:8081/artifactory\""
+            "value": "http://localhost:8081/artifactory"
         },
         {
             "name": "exporters.artifactory.user",
             "desc": "User name under which the artifactory exporter shall be run.",
             "nixName": "exporters.artifactory.user",
             "type": "string",
-            "value": "\"artifactory-exporter\""
+            "value": "artifactory-exporter"
         },
         {
             "name": "exporters.bind.bindGroups",
@@ -395,14 +395,14 @@
             "desc": "Timeout for trying to get stats from Bind.",
             "nixName": "exporters.bind.bindTimeout",
             "type": "string",
-            "value": "\"10s\""
+            "value": "10s"
         },
         {
             "name": "exporters.bind.bindURI",
             "desc": "HTTP XML API address of an Bind server.",
             "nixName": "exporters.bind.bindURI",
             "type": "string",
-            "value": "\"http://localhost:8053/\""
+            "value": "http://localhost:8053/"
         },
         {
             "name": "exporters.bind.bindVersion",
@@ -444,14 +444,14 @@
             "desc": "Group under which the bind exporter shall be run.",
             "nixName": "exporters.bind.group",
             "type": "string",
-            "value": "\"bind-exporter\""
+            "value": "bind-exporter"
         },
         {
             "name": "exporters.bind.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.bind.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.bind.openFirewall",
@@ -472,7 +472,7 @@
             "desc": "User name under which the bind exporter shall be run.",
             "nixName": "exporters.bind.user",
             "type": "string",
-            "value": "\"bind-exporter\""
+            "value": "bind-exporter"
         },
         {
             "name": "exporters.bird.birdSocket",
@@ -521,14 +521,14 @@
             "desc": "Group under which the bird exporter shall be run.",
             "nixName": "exporters.bird.group",
             "type": "string",
-            "value": "\"bird-exporter\""
+            "value": "bird-exporter"
         },
         {
             "name": "exporters.bird.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.bird.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.bird.newMetricFormat",
@@ -556,7 +556,7 @@
             "desc": "User name under which the bird exporter shall be run.",
             "nixName": "exporters.bird.user",
             "type": "string",
-            "value": "\"bird-exporter\""
+            "value": "bird-exporter"
         },
         {
             "name": "exporters.bitcoin.enable",
@@ -598,14 +598,14 @@
             "desc": "Group under which the bitcoin exporter shall be run.",
             "nixName": "exporters.bitcoin.group",
             "type": "string",
-            "value": "\"bitcoin-exporter\""
+            "value": "bitcoin-exporter"
         },
         {
             "name": "exporters.bitcoin.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.bitcoin.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.bitcoin.openFirewall",
@@ -640,14 +640,14 @@
             "desc": "RPC host.",
             "nixName": "exporters.bitcoin.rpcHost",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "exporters.bitcoin.rpcPasswordFile",
             "desc": "File containing RPC password.",
             "nixName": "exporters.bitcoin.rpcPasswordFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.bitcoin.rpcPort",
@@ -668,21 +668,21 @@
             "desc": "RPC user name.",
             "nixName": "exporters.bitcoin.rpcUser",
             "type": "string",
-            "value": "\"bitcoinrpc\""
+            "value": "bitcoinrpc"
         },
         {
             "name": "exporters.bitcoin.user",
             "desc": "User name under which the bitcoin exporter shall be run.",
             "nixName": "exporters.bitcoin.user",
             "type": "string",
-            "value": "\"bitcoin-exporter\""
+            "value": "bitcoin-exporter"
         },
         {
             "name": "exporters.blackbox.configFile",
             "desc": "Path to configuration file.",
             "nixName": "exporters.blackbox.configFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.blackbox.enable",
@@ -724,14 +724,14 @@
             "desc": "Group under which the blackbox exporter shall be run.",
             "nixName": "exporters.blackbox.group",
             "type": "string",
-            "value": "\"blackbox-exporter\""
+            "value": "blackbox-exporter"
         },
         {
             "name": "exporters.blackbox.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.blackbox.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.blackbox.openFirewall",
@@ -752,7 +752,7 @@
             "desc": "User name under which the blackbox exporter shall be run.",
             "nixName": "exporters.blackbox.user",
             "type": "string",
-            "value": "\"blackbox-exporter\""
+            "value": "blackbox-exporter"
         },
         {
             "name": "exporters.borgmatic.configFile",
@@ -794,14 +794,14 @@
             "desc": "Group under which the borgmatic exporter shall be run.",
             "nixName": "exporters.borgmatic.group",
             "type": "string",
-            "value": "\"borgmatic-exporter\""
+            "value": "borgmatic-exporter"
         },
         {
             "name": "exporters.borgmatic.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.borgmatic.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.borgmatic.openFirewall",
@@ -822,7 +822,7 @@
             "desc": "User name under which the borgmatic exporter shall be run.",
             "nixName": "exporters.borgmatic.user",
             "type": "string",
-            "value": "\"borgmatic-exporter\""
+            "value": "borgmatic-exporter"
         },
         {
             "name": "exporters.buildkite-agent.enable",
@@ -836,7 +836,7 @@
             "desc": "The Buildkite Agent API endpoint.",
             "nixName": "exporters.buildkite-agent.endpoint",
             "type": "string",
-            "value": "\"https://agent.buildkite.com/v3\""
+            "value": "https://agent.buildkite.com/v3"
         },
         {
             "name": "exporters.buildkite-agent.extraFlags",
@@ -864,21 +864,21 @@
             "desc": "Group under which the buildkite-agent exporter shall be run.",
             "nixName": "exporters.buildkite-agent.group",
             "type": "string",
-            "value": "\"buildkite-agent-exporter\""
+            "value": "buildkite-agent-exporter"
         },
         {
             "name": "exporters.buildkite-agent.interval",
             "desc": "How often to update metrics.",
             "nixName": "exporters.buildkite-agent.interval",
             "type": "string",
-            "value": "\"30s\""
+            "value": "30s"
         },
         {
             "name": "exporters.buildkite-agent.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.buildkite-agent.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.buildkite-agent.openFirewall",
@@ -906,14 +906,14 @@
             "desc": "The token from your Buildkite \u201cAgents\u201d page.  A run-time path to the token file, which is supposed to beprovisioned outside of Nix store.",
             "nixName": "exporters.buildkite-agent.tokenPath",
             "type": "null or path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.buildkite-agent.user",
             "desc": "User name under which the buildkite-agent exporter shall be run.",
             "nixName": "exporters.buildkite-agent.user",
             "type": "string",
-            "value": "\"buildkite-agent-exporter\""
+            "value": "buildkite-agent-exporter"
         },
         {
             "name": "exporters.collectd.collectdBinary.authFile",
@@ -934,7 +934,7 @@
             "desc": "Address to listen on for binary network packets.",
             "nixName": "exporters.collectd.collectdBinary.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.collectd.collectdBinary.port",
@@ -983,14 +983,14 @@
             "desc": "Group under which the collectd exporter shall be run.",
             "nixName": "exporters.collectd.group",
             "type": "string",
-            "value": "\"collectd-exporter\""
+            "value": "collectd-exporter"
         },
         {
             "name": "exporters.collectd.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.collectd.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.collectd.logFormat",
@@ -1025,14 +1025,14 @@
             "desc": "User name under which the collectd exporter shall be run.",
             "nixName": "exporters.collectd.user",
             "type": "string",
-            "value": "\"collectd-exporter\""
+            "value": "collectd-exporter"
         },
         {
             "name": "exporters.deluge.delugeHost",
             "desc": "Hostname where deluge server is running.",
             "nixName": "exporters.deluge.delugeHost",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "exporters.deluge.delugePassword",
@@ -1060,7 +1060,7 @@
             "desc": "User to connect to deluge server.",
             "nixName": "exporters.deluge.delugeUser",
             "type": "string",
-            "value": "\"localclient\""
+            "value": "localclient"
         },
         {
             "name": "exporters.deluge.enable",
@@ -1102,14 +1102,14 @@
             "desc": "Group under which the deluge exporter shall be run.",
             "nixName": "exporters.deluge.group",
             "type": "string",
-            "value": "\"deluge-exporter\""
+            "value": "deluge-exporter"
         },
         {
             "name": "exporters.deluge.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.deluge.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.deluge.openFirewall",
@@ -1130,7 +1130,7 @@
             "desc": "User name under which the deluge exporter shall be run.",
             "nixName": "exporters.deluge.user",
             "type": "string",
-            "value": "\"deluge-exporter\""
+            "value": "deluge-exporter"
         },
         {
             "name": "exporters.dmarc.debug",
@@ -1179,42 +1179,42 @@
             "desc": "IMAP mailbox that successfully processed reports are moved to.",
             "nixName": "exporters.dmarc.folders.done",
             "type": "string",
-            "value": "\"Archive\""
+            "value": "Archive"
         },
         {
             "name": "exporters.dmarc.folders.error",
             "desc": "IMAP mailbox that emails are moved to that could not beprocessed.",
             "nixName": "exporters.dmarc.folders.error",
             "type": "string",
-            "value": "\"Invalid\""
+            "value": "Invalid"
         },
         {
             "name": "exporters.dmarc.folders.inbox",
             "desc": "IMAP mailbox that is checked for incoming DMARC aggregate reports",
             "nixName": "exporters.dmarc.folders.inbox",
             "type": "string",
-            "value": "\"INBOX\""
+            "value": "INBOX"
         },
         {
             "name": "exporters.dmarc.group",
             "desc": "Group under which the dmarc exporter shall be run.",
             "nixName": "exporters.dmarc.group",
             "type": "string",
-            "value": "\"dmarc-exporter\""
+            "value": "dmarc-exporter"
         },
         {
             "name": "exporters.dmarc.imap.host",
             "desc": "Hostname of IMAP server to connect to.",
             "nixName": "exporters.dmarc.imap.host",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "exporters.dmarc.imap.passwordFile",
             "desc": "File containing the login password for the IMAP connection.",
             "nixName": "exporters.dmarc.imap.passwordFile",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.dmarc.imap.port",
@@ -1228,14 +1228,14 @@
             "desc": "Login username for the IMAP connection.",
             "nixName": "exporters.dmarc.imap.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.dmarc.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.dmarc.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.dmarc.openFirewall",
@@ -1263,14 +1263,14 @@
             "desc": "User name under which the dmarc exporter shall be run.",
             "nixName": "exporters.dmarc.user",
             "type": "string",
-            "value": "\"dmarc-exporter\""
+            "value": "dmarc-exporter"
         },
         {
             "name": "exporters.dnsmasq.dnsmasqListenAddress",
             "desc": "Address on which dnsmasq listens.",
             "nixName": "exporters.dnsmasq.dnsmasqListenAddress",
             "type": "string",
-            "value": "\"localhost:53\""
+            "value": "localhost:53"
         },
         {
             "name": "exporters.dnsmasq.enable",
@@ -1305,7 +1305,7 @@
             "desc": "Group under which the dnsmasq exporter shall be run.",
             "nixName": "exporters.dnsmasq.group",
             "type": "string",
-            "value": "\"dnsmasq-exporter\""
+            "value": "dnsmasq-exporter"
         },
         {
             "name": "exporters.dnsmasq.leasesPath",
@@ -1319,7 +1319,7 @@
             "desc": "Address to listen on.",
             "nixName": "exporters.dnsmasq.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.dnsmasq.openFirewall",
@@ -1340,7 +1340,7 @@
             "desc": "User name under which the dnsmasq exporter shall be run.",
             "nixName": "exporters.dnsmasq.user",
             "type": "string",
-            "value": "\"dnsmasq-exporter\""
+            "value": "dnsmasq-exporter"
         },
         {
             "name": "exporters.dnssec.configuration",
@@ -1382,7 +1382,7 @@
             "desc": "Group under which the dnssec exporter shall be run.",
             "nixName": "exporters.dnssec.group",
             "type": "string",
-            "value": "\"dnssec-exporter\""
+            "value": "dnssec-exporter"
         },
         {
             "name": "exporters.dnssec.listenAddress",
@@ -1424,7 +1424,7 @@
             "desc": "User name under which the dnssec exporter shall be run.",
             "nixName": "exporters.dnssec.user",
             "type": "string",
-            "value": "\"dnssec-exporter\""
+            "value": "dnssec-exporter"
         },
         {
             "name": "exporters.domain.enable",
@@ -1459,14 +1459,14 @@
             "desc": "Group under which the domain exporter shall be run.",
             "nixName": "exporters.domain.group",
             "type": "string",
-            "value": "\"domain-exporter\""
+            "value": "domain-exporter"
         },
         {
             "name": "exporters.domain.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.domain.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.domain.openFirewall",
@@ -1487,7 +1487,7 @@
             "desc": "User name under which the domain exporter shall be run.",
             "nixName": "exporters.domain.user",
             "type": "string",
-            "value": "\"domain-exporter\""
+            "value": "domain-exporter"
         },
         {
             "name": "exporters.dovecot.enable",
@@ -1522,14 +1522,14 @@
             "desc": "Group under which the dovecot exporter shall be run.",
             "nixName": "exporters.dovecot.group",
             "type": "string",
-            "value": "\"dovecot-exporter\""
+            "value": "dovecot-exporter"
         },
         {
             "name": "exporters.dovecot.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.dovecot.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.dovecot.openFirewall",
@@ -1564,14 +1564,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.dovecot.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.dovecot.user",
             "desc": "User name under which the dovecot exporter shall be run.",
             "nixName": "exporters.dovecot.user",
             "type": "string",
-            "value": "\"dovecot-exporter\""
+            "value": "dovecot-exporter"
         },
         {
             "name": "exporters.exportarr-bazarr.apiKeyFile",
@@ -1620,14 +1620,14 @@
             "desc": "Group under which the exportarr-bazarr exporter shall be run.",
             "nixName": "exporters.exportarr-bazarr.group",
             "type": "string",
-            "value": "\"exportarr-bazarr-exporter\""
+            "value": "exportarr-bazarr-exporter"
         },
         {
             "name": "exporters.exportarr-bazarr.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.exportarr-bazarr.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.exportarr-bazarr.openFirewall",
@@ -1655,14 +1655,14 @@
             "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
             "nixName": "exporters.exportarr-bazarr.url",
             "type": "string",
-            "value": "\"http://127.0.0.1\""
+            "value": "http://127.0.0.1"
         },
         {
             "name": "exporters.exportarr-bazarr.user",
             "desc": "User name under which the exportarr-bazarr exporter shall be run.",
             "nixName": "exporters.exportarr-bazarr.user",
             "type": "string",
-            "value": "\"exportarr-bazarr-exporter\""
+            "value": "exportarr-bazarr-exporter"
         },
         {
             "name": "exporters.exportarr-lidarr.apiKeyFile",
@@ -1711,14 +1711,14 @@
             "desc": "Group under which the exportarr-lidarr exporter shall be run.",
             "nixName": "exporters.exportarr-lidarr.group",
             "type": "string",
-            "value": "\"exportarr-lidarr-exporter\""
+            "value": "exportarr-lidarr-exporter"
         },
         {
             "name": "exporters.exportarr-lidarr.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.exportarr-lidarr.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.exportarr-lidarr.openFirewall",
@@ -1746,14 +1746,14 @@
             "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
             "nixName": "exporters.exportarr-lidarr.url",
             "type": "string",
-            "value": "\"http://127.0.0.1\""
+            "value": "http://127.0.0.1"
         },
         {
             "name": "exporters.exportarr-lidarr.user",
             "desc": "User name under which the exportarr-lidarr exporter shall be run.",
             "nixName": "exporters.exportarr-lidarr.user",
             "type": "string",
-            "value": "\"exportarr-lidarr-exporter\""
+            "value": "exportarr-lidarr-exporter"
         },
         {
             "name": "exporters.exportarr-prowlarr.apiKeyFile",
@@ -1802,14 +1802,14 @@
             "desc": "Group under which the exportarr-prowlarr exporter shall be run.",
             "nixName": "exporters.exportarr-prowlarr.group",
             "type": "string",
-            "value": "\"exportarr-prowlarr-exporter\""
+            "value": "exportarr-prowlarr-exporter"
         },
         {
             "name": "exporters.exportarr-prowlarr.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.exportarr-prowlarr.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.exportarr-prowlarr.openFirewall",
@@ -1837,14 +1837,14 @@
             "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
             "nixName": "exporters.exportarr-prowlarr.url",
             "type": "string",
-            "value": "\"http://127.0.0.1\""
+            "value": "http://127.0.0.1"
         },
         {
             "name": "exporters.exportarr-prowlarr.user",
             "desc": "User name under which the exportarr-prowlarr exporter shall berun.",
             "nixName": "exporters.exportarr-prowlarr.user",
             "type": "string",
-            "value": "\"exportarr-prowlarr-exporter\""
+            "value": "exportarr-prowlarr-exporter"
         },
         {
             "name": "exporters.exportarr-radarr.apiKeyFile",
@@ -1893,14 +1893,14 @@
             "desc": "Group under which the exportarr-radarr exporter shall be run.",
             "nixName": "exporters.exportarr-radarr.group",
             "type": "string",
-            "value": "\"exportarr-radarr-exporter\""
+            "value": "exportarr-radarr-exporter"
         },
         {
             "name": "exporters.exportarr-radarr.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.exportarr-radarr.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.exportarr-radarr.openFirewall",
@@ -1928,14 +1928,14 @@
             "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
             "nixName": "exporters.exportarr-radarr.url",
             "type": "string",
-            "value": "\"http://127.0.0.1\""
+            "value": "http://127.0.0.1"
         },
         {
             "name": "exporters.exportarr-radarr.user",
             "desc": "User name under which the exportarr-radarr exporter shall be run.",
             "nixName": "exporters.exportarr-radarr.user",
             "type": "string",
-            "value": "\"exportarr-radarr-exporter\""
+            "value": "exportarr-radarr-exporter"
         },
         {
             "name": "exporters.exportarr-readarr.apiKeyFile",
@@ -1984,14 +1984,14 @@
             "desc": "Group under which the exportarr-readarr exporter shall be run.",
             "nixName": "exporters.exportarr-readarr.group",
             "type": "string",
-            "value": "\"exportarr-readarr-exporter\""
+            "value": "exportarr-readarr-exporter"
         },
         {
             "name": "exporters.exportarr-readarr.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.exportarr-readarr.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.exportarr-readarr.openFirewall",
@@ -2019,14 +2019,14 @@
             "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
             "nixName": "exporters.exportarr-readarr.url",
             "type": "string",
-            "value": "\"http://127.0.0.1\""
+            "value": "http://127.0.0.1"
         },
         {
             "name": "exporters.exportarr-readarr.user",
             "desc": "User name under which the exportarr-readarr exporter shall berun.",
             "nixName": "exporters.exportarr-readarr.user",
             "type": "string",
-            "value": "\"exportarr-readarr-exporter\""
+            "value": "exportarr-readarr-exporter"
         },
         {
             "name": "exporters.exportarr-sonarr.apiKeyFile",
@@ -2075,14 +2075,14 @@
             "desc": "Group under which the exportarr-sonarr exporter shall be run.",
             "nixName": "exporters.exportarr-sonarr.group",
             "type": "string",
-            "value": "\"exportarr-sonarr-exporter\""
+            "value": "exportarr-sonarr-exporter"
         },
         {
             "name": "exporters.exportarr-sonarr.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.exportarr-sonarr.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.exportarr-sonarr.openFirewall",
@@ -2110,14 +2110,14 @@
             "desc": "The full URL to Sonarr, Radarr, or Lidarr.",
             "nixName": "exporters.exportarr-sonarr.url",
             "type": "string",
-            "value": "\"http://127.0.0.1\""
+            "value": "http://127.0.0.1"
         },
         {
             "name": "exporters.exportarr-sonarr.user",
             "desc": "User name under which the exportarr-sonarr exporter shall be run.",
             "nixName": "exporters.exportarr-sonarr.user",
             "type": "string",
-            "value": "\"exportarr-sonarr-exporter\""
+            "value": "exportarr-sonarr-exporter"
         },
         {
             "name": "exporters.fastly.configFile",
@@ -2159,14 +2159,14 @@
             "desc": "Group under which the fastly exporter shall be run.",
             "nixName": "exporters.fastly.group",
             "type": "string",
-            "value": "\"fastly-exporter\""
+            "value": "fastly-exporter"
         },
         {
             "name": "exporters.fastly.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.fastly.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.fastly.openFirewall",
@@ -2187,28 +2187,28 @@
             "desc": "A run-time path to the token file, which is supposed to beprovisioned outside of Nix store.",
             "nixName": "exporters.fastly.tokenPath",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.fastly.user",
             "desc": "User name under which the fastly exporter shall be run.",
             "nixName": "exporters.fastly.user",
             "type": "string",
-            "value": "\"fastly-exporter\""
+            "value": "fastly-exporter"
         },
         {
             "name": "exporters.flow.asn",
             "desc": "The ASN being monitored.",
             "nixName": "exporters.flow.asn",
             "type": "positive integer, meaning >0",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.flow.brokers",
             "desc": "List of Kafka brokers to connect to.",
             "nixName": "exporters.flow.brokers",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.flow.enable",
@@ -2243,14 +2243,14 @@
             "desc": "Group under which the flow exporter shall be run.",
             "nixName": "exporters.flow.group",
             "type": "string",
-            "value": "\"flow-exporter\""
+            "value": "flow-exporter"
         },
         {
             "name": "exporters.flow.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.flow.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.flow.openFirewall",
@@ -2278,14 +2278,14 @@
             "desc": "The Kafka topic to consume from.",
             "nixName": "exporters.flow.topic",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.flow.user",
             "desc": "User name under which the flow exporter shall be run.",
             "nixName": "exporters.flow.user",
             "type": "string",
-            "value": "\"flow-exporter\""
+            "value": "flow-exporter"
         },
         {
             "name": "exporters.fritz.enable",
@@ -2320,14 +2320,14 @@
             "desc": "Group under which the fritz exporter shall be run.",
             "nixName": "exporters.fritz.group",
             "type": "string",
-            "value": "\"fritz-exporter\""
+            "value": "fritz-exporter"
         },
         {
             "name": "exporters.fritz.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.fritz.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.fritz.openFirewall",
@@ -2348,7 +2348,7 @@
             "desc": "Configuration settings for fritz-exporter.",
             "nixName": "exporters.fritz.settings",
             "type": "YAML value",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.fritz.settings.devices",
@@ -2369,28 +2369,28 @@
             "desc": "Hostname under which the target device is reachable.",
             "nixName": "exporters.fritz.settings.devices.*.hostname",
             "type": "string",
-            "value": "\"fritz.box\""
+            "value": "fritz.box"
         },
         {
             "name": "exporters.fritz.settings.devices.*.name",
             "desc": "Name to use for the device.",
             "nixName": "exporters.fritz.settings.devices.*.name",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.fritz.settings.devices.*.password_file",
             "desc": "Path to a file which contains the password to authenticate with thetarget device. Needs to be readable by the user the exporter runsunder.",
             "nixName": "exporters.fritz.settings.devices.*.password_file",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.fritz.settings.devices.*.username",
             "desc": "Username to authenticate with the target device.",
             "nixName": "exporters.fritz.settings.devices.*.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.fritz.settings.log_level",
@@ -2404,7 +2404,7 @@
             "desc": "User name under which the fritz exporter shall be run.",
             "nixName": "exporters.fritz.user",
             "type": "string",
-            "value": "\"fritz-exporter\""
+            "value": "fritz-exporter"
         },
         {
             "name": "exporters.fritzbox.enable",
@@ -2439,7 +2439,7 @@
             "desc": "The hostname or IP of the FRITZ!Box.",
             "nixName": "exporters.fritzbox.gatewayAddress",
             "type": "string",
-            "value": "\"fritz.box\""
+            "value": "fritz.box"
         },
         {
             "name": "exporters.fritzbox.gatewayPort",
@@ -2453,14 +2453,14 @@
             "desc": "Group under which the fritzbox exporter shall be run.",
             "nixName": "exporters.fritzbox.group",
             "type": "string",
-            "value": "\"fritzbox-exporter\""
+            "value": "fritzbox-exporter"
         },
         {
             "name": "exporters.fritzbox.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.fritzbox.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.fritzbox.openFirewall",
@@ -2481,7 +2481,7 @@
             "desc": "User name under which the fritzbox exporter shall be run.",
             "nixName": "exporters.fritzbox.user",
             "type": "string",
-            "value": "\"fritzbox-exporter\""
+            "value": "fritzbox-exporter"
         },
         {
             "name": "exporters.graphite.enable",
@@ -2523,14 +2523,14 @@
             "desc": "Group under which the graphite exporter shall be run.",
             "nixName": "exporters.graphite.group",
             "type": "string",
-            "value": "\"graphite-exporter\""
+            "value": "graphite-exporter"
         },
         {
             "name": "exporters.graphite.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.graphite.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.graphite.mappingSettings",
@@ -2558,7 +2558,7 @@
             "desc": "User name under which the graphite exporter shall be run.",
             "nixName": "exporters.graphite.user",
             "type": "string",
-            "value": "\"graphite-exporter\""
+            "value": "graphite-exporter"
         },
         {
             "name": "exporters.idrac.configuration",
@@ -2607,14 +2607,14 @@
             "desc": "Group under which the idrac exporter shall be run.",
             "nixName": "exporters.idrac.group",
             "type": "string",
-            "value": "\"idrac-exporter\""
+            "value": "idrac-exporter"
         },
         {
             "name": "exporters.idrac.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.idrac.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.idrac.openFirewall",
@@ -2635,7 +2635,7 @@
             "desc": "User name under which the idrac exporter shall be run.",
             "nixName": "exporters.idrac.user",
             "type": "string",
-            "value": "\"idrac-exporter\""
+            "value": "idrac-exporter"
         },
         {
             "name": "exporters.imap-mailstat.accounts",
@@ -2691,7 +2691,7 @@
             "desc": "File containing the configuration",
             "nixName": "exporters.imap-mailstat.configurationFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.imap-mailstat.enable",
@@ -2726,14 +2726,14 @@
             "desc": "Group under which the imap-mailstat exporter shall be run.",
             "nixName": "exporters.imap-mailstat.group",
             "type": "string",
-            "value": "\"imap-mailstat-exporter\""
+            "value": "imap-mailstat-exporter"
         },
         {
             "name": "exporters.imap-mailstat.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.imap-mailstat.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.imap-mailstat.oldestUnseenDate",
@@ -2761,7 +2761,7 @@
             "desc": "User name under which the imap-mailstat exporter shall be run.",
             "nixName": "exporters.imap-mailstat.user",
             "type": "string",
-            "value": "\"imap-mailstat-exporter\""
+            "value": "imap-mailstat-exporter"
         },
         {
             "name": "exporters.influxdb.enable",
@@ -2796,14 +2796,14 @@
             "desc": "Group under which the influxdb exporter shall be run.",
             "nixName": "exporters.influxdb.group",
             "type": "string",
-            "value": "\"influxdb-exporter\""
+            "value": "influxdb-exporter"
         },
         {
             "name": "exporters.influxdb.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.influxdb.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.influxdb.openFirewall",
@@ -2824,21 +2824,21 @@
             "desc": "How long a sample is valid for",
             "nixName": "exporters.influxdb.sampleExpiry",
             "type": "string",
-            "value": "\"5m\""
+            "value": "5m"
         },
         {
             "name": "exporters.influxdb.udpBindAddress",
             "desc": "Address on which to listen for udp packets",
             "nixName": "exporters.influxdb.udpBindAddress",
             "type": "string",
-            "value": "\":9122\""
+            "value": ":9122"
         },
         {
             "name": "exporters.influxdb.user",
             "desc": "User name under which the influxdb exporter shall be run.",
             "nixName": "exporters.influxdb.user",
             "type": "string",
-            "value": "\"influxdb-exporter\""
+            "value": "influxdb-exporter"
         },
         {
             "name": "exporters.ipmi.configFile",
@@ -2880,14 +2880,14 @@
             "desc": "Group under which the ipmi exporter shall be run.",
             "nixName": "exporters.ipmi.group",
             "type": "string",
-            "value": "\"ipmi-exporter\""
+            "value": "ipmi-exporter"
         },
         {
             "name": "exporters.ipmi.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.ipmi.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.ipmi.openFirewall",
@@ -2908,7 +2908,7 @@
             "desc": "User name under which the ipmi exporter shall be run.",
             "nixName": "exporters.ipmi.user",
             "type": "string",
-            "value": "\"ipmi-exporter\""
+            "value": "ipmi-exporter"
         },
         {
             "name": "exporters.ipmi.webConfigFile",
@@ -2950,21 +2950,21 @@
             "desc": "Group under which the jitsi exporter shall be run.",
             "nixName": "exporters.jitsi.group",
             "type": "string",
-            "value": "\"jitsi-exporter\""
+            "value": "jitsi-exporter"
         },
         {
             "name": "exporters.jitsi.interval",
             "desc": "How often to scrape new data",
             "nixName": "exporters.jitsi.interval",
             "type": "string",
-            "value": "\"30s\""
+            "value": "30s"
         },
         {
             "name": "exporters.jitsi.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.jitsi.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.jitsi.openFirewall",
@@ -2985,21 +2985,21 @@
             "desc": "Jitsi Videobridge metrics URL to monitor. This is usually/colibri/stats on port 8080 of the jitsi videobridge host.",
             "nixName": "exporters.jitsi.url",
             "type": "string",
-            "value": "\"http://localhost:8080/colibri/stats\""
+            "value": "http://localhost:8080/colibri/stats"
         },
         {
             "name": "exporters.jitsi.user",
             "desc": "User name under which the jitsi exporter shall be run.",
             "nixName": "exporters.jitsi.user",
             "type": "string",
-            "value": "\"jitsi-exporter\""
+            "value": "jitsi-exporter"
         },
         {
             "name": "exporters.json.configFile",
             "desc": "Path to configuration file.",
             "nixName": "exporters.json.configFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.json.enable",
@@ -3034,14 +3034,14 @@
             "desc": "Group under which the json exporter shall be run.",
             "nixName": "exporters.json.group",
             "type": "string",
-            "value": "\"json-exporter\""
+            "value": "json-exporter"
         },
         {
             "name": "exporters.json.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.json.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.json.openFirewall",
@@ -3062,7 +3062,7 @@
             "desc": "User name under which the json exporter shall be run.",
             "nixName": "exporters.json.user",
             "type": "string",
-            "value": "\"json-exporter\""
+            "value": "json-exporter"
         },
         {
             "name": "exporters.junos-czerwonk.configuration",
@@ -3118,14 +3118,14 @@
             "desc": "Group under which the junos-czerwonk exporter shall be run.",
             "nixName": "exporters.junos-czerwonk.group",
             "type": "string",
-            "value": "\"junos-czerwonk-exporter\""
+            "value": "junos-czerwonk-exporter"
         },
         {
             "name": "exporters.junos-czerwonk.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.junos-czerwonk.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.junos-czerwonk.openFirewall",
@@ -3146,14 +3146,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.junos-czerwonk.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.junos-czerwonk.user",
             "desc": "User name under which the junos-czerwonk exporter shall be run.",
             "nixName": "exporters.junos-czerwonk.user",
             "type": "string",
-            "value": "\"junos-czerwonk-exporter\""
+            "value": "junos-czerwonk-exporter"
         },
         {
             "name": "exporters.kea.enable",
@@ -3188,14 +3188,14 @@
             "desc": "Group under which the kea exporter shall be run.",
             "nixName": "exporters.kea.group",
             "type": "string",
-            "value": "\"kea-exporter\""
+            "value": "kea-exporter"
         },
         {
             "name": "exporters.kea.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.kea.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.kea.openFirewall",
@@ -3216,14 +3216,14 @@
             "desc": "Paths or URLs to the Kea control socket.",
             "nixName": "exporters.kea.targets",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.kea.user",
             "desc": "User name under which the kea exporter shall be run.",
             "nixName": "exporters.kea.user",
             "type": "string",
-            "value": "\"kea-exporter\""
+            "value": "kea-exporter"
         },
         {
             "name": "exporters.keylight.enable",
@@ -3258,14 +3258,14 @@
             "desc": "Group under which the keylight exporter shall be run.",
             "nixName": "exporters.keylight.group",
             "type": "string",
-            "value": "\"keylight-exporter\""
+            "value": "keylight-exporter"
         },
         {
             "name": "exporters.keylight.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.keylight.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.keylight.openFirewall",
@@ -3286,7 +3286,7 @@
             "desc": "User name under which the keylight exporter shall be run.",
             "nixName": "exporters.keylight.user",
             "type": "string",
-            "value": "\"keylight-exporter\""
+            "value": "keylight-exporter"
         },
         {
             "name": "exporters.knot.enable",
@@ -3321,7 +3321,7 @@
             "desc": "Group under which the knot exporter shall be run.",
             "nixName": "exporters.knot.group",
             "type": "string",
-            "value": "\"knot-exporter\""
+            "value": "knot-exporter"
         },
         {
             "name": "exporters.knot.knotLibraryPath",
@@ -3335,7 +3335,7 @@
             "desc": "Socket path of  knotd(8) .",
             "nixName": "exporters.knot.knotSocketPath",
             "type": "string",
-            "value": "\"/run/knot/knot.sock\""
+            "value": "/run/knot/knot.sock"
         },
         {
             "name": "exporters.knot.knotSocketTimeout",
@@ -3349,7 +3349,7 @@
             "desc": "Address to listen on.",
             "nixName": "exporters.knot.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.knot.openFirewall",
@@ -3370,7 +3370,7 @@
             "desc": "User name under which the knot exporter shall be run.",
             "nixName": "exporters.knot.user",
             "type": "string",
-            "value": "\"knot-exporter\""
+            "value": "knot-exporter"
         },
         {
             "name": "exporters.lnd.enable",
@@ -3405,35 +3405,35 @@
             "desc": "Group under which the lnd exporter shall be run.",
             "nixName": "exporters.lnd.group",
             "type": "string",
-            "value": "\"lnd-exporter\""
+            "value": "lnd-exporter"
         },
         {
             "name": "exporters.lnd.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.lnd.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.lnd.lndHost",
             "desc": "lnd instance gRPC address:port.",
             "nixName": "exporters.lnd.lndHost",
             "type": "string",
-            "value": "\"localhost:10009\""
+            "value": "localhost:10009"
         },
         {
             "name": "exporters.lnd.lndMacaroonDir",
             "desc": "Path to lnd macaroons.",
             "nixName": "exporters.lnd.lndMacaroonDir",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.lnd.lndTlsPath",
             "desc": "Path to lnd TLS certificate.",
             "nixName": "exporters.lnd.lndTlsPath",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.lnd.openFirewall",
@@ -3454,7 +3454,7 @@
             "desc": "User name under which the lnd exporter shall be run.",
             "nixName": "exporters.lnd.user",
             "type": "string",
-            "value": "\"lnd-exporter\""
+            "value": "lnd-exporter"
         },
         {
             "name": "exporters.mail.configFile",
@@ -3482,14 +3482,14 @@
             "desc": "Timeout until mails are considered \u201cdidn\u2019t make it\u201d.",
             "nixName": "exporters.mail.configuration.mailCheckTimeout",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mail.configuration.monitoringInterval",
             "desc": "Time interval between two probe attempts.",
             "nixName": "exporters.mail.configuration.monitoringInterval",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mail.configuration.servers",
@@ -3503,14 +3503,14 @@
             "desc": "Directory in which new mails for the exporter user are placed. Notethat this needs to exist when the exporter starts.",
             "nixName": "exporters.mail.configuration.servers.*.detectionDir",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mail.configuration.servers.*.from",
             "desc": "Content of \u2018From\u2019 Header for probing mails.",
             "nixName": "exporters.mail.configuration.servers.*.from",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mail.configuration.servers.*.login",
@@ -3524,7 +3524,7 @@
             "desc": "Value for label \u2018configname\u2019 which will be added to all metrics.",
             "nixName": "exporters.mail.configuration.servers.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mail.configuration.servers.*.passphrase",
@@ -3538,21 +3538,21 @@
             "desc": "Port to use for SMTP.",
             "nixName": "exporters.mail.configuration.servers.*.port",
             "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mail.configuration.servers.*.server",
             "desc": "Hostname of the server that should be probed.",
             "nixName": "exporters.mail.configuration.servers.*.server",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mail.configuration.servers.*.to",
             "desc": "Content of \u2018To\u2019 Header for probing mails.",
             "nixName": "exporters.mail.configuration.servers.*.to",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mail.enable",
@@ -3594,14 +3594,14 @@
             "desc": "Group under which the mail exporter shall be run.",
             "nixName": "exporters.mail.group",
             "type": "string",
-            "value": "\"mail-exporter\""
+            "value": "mail-exporter"
         },
         {
             "name": "exporters.mail.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.mail.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.mail.openFirewall",
@@ -3622,14 +3622,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.mail.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.mail.user",
             "desc": "User name under which the mail exporter shall be run.",
             "nixName": "exporters.mail.user",
             "type": "string",
-            "value": "\"mail-exporter\""
+            "value": "mail-exporter"
         },
         {
             "name": "exporters.mikrotik.configFile",
@@ -3678,14 +3678,14 @@
             "desc": "Group under which the mikrotik exporter shall be run.",
             "nixName": "exporters.mikrotik.group",
             "type": "string",
-            "value": "\"mikrotik-exporter\""
+            "value": "mikrotik-exporter"
         },
         {
             "name": "exporters.mikrotik.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.mikrotik.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.mikrotik.openFirewall",
@@ -3706,7 +3706,7 @@
             "desc": "User name under which the mikrotik exporter shall be run.",
             "nixName": "exporters.mikrotik.user",
             "type": "string",
-            "value": "\"mikrotik-exporter\""
+            "value": "mikrotik-exporter"
         },
         {
             "name": "exporters.modemmanager.enable",
@@ -3741,14 +3741,14 @@
             "desc": "Group under which the modemmanager exporter shall be run.",
             "nixName": "exporters.modemmanager.group",
             "type": "string",
-            "value": "\"modemmanager-exporter\""
+            "value": "modemmanager-exporter"
         },
         {
             "name": "exporters.modemmanager.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.modemmanager.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.modemmanager.openFirewall",
@@ -3769,14 +3769,14 @@
             "desc": "How frequently ModemManager will refresh the extended signal qualityinformation for each modem. The duration should be specified in seconds(\u201c5s\u201d), minutes (\u201c1m\u201d), or hours (\u201c1h\u201d).",
             "nixName": "exporters.modemmanager.refreshRate",
             "type": "string",
-            "value": "\"5s\""
+            "value": "5s"
         },
         {
             "name": "exporters.modemmanager.user",
             "desc": "User name under which the modemmanager exporter shall be run.",
             "nixName": "exporters.modemmanager.user",
             "type": "string",
-            "value": "\"modemmanager-exporter\""
+            "value": "modemmanager-exporter"
         },
         {
             "name": "exporters.mongodb.collStats",
@@ -3832,7 +3832,7 @@
             "desc": "Group under which the mongodb exporter shall be run.",
             "nixName": "exporters.mongodb.group",
             "type": "string",
-            "value": "\"mongodb-exporter\""
+            "value": "mongodb-exporter"
         },
         {
             "name": "exporters.mongodb.indexStats",
@@ -3846,7 +3846,7 @@
             "desc": "Address to listen on.",
             "nixName": "exporters.mongodb.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.mongodb.openFirewall",
@@ -3867,28 +3867,28 @@
             "desc": "Metrics expose path",
             "nixName": "exporters.mongodb.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.mongodb.uri",
             "desc": "MongoDB URI to connect to.",
             "nixName": "exporters.mongodb.uri",
             "type": "string",
-            "value": "\"mongodb://localhost:27017/test\""
+            "value": "mongodb://localhost:27017/test"
         },
         {
             "name": "exporters.mongodb.user",
             "desc": "User name under which the mongodb exporter shall be run.",
             "nixName": "exporters.mongodb.user",
             "type": "string",
-            "value": "\"mongodb-exporter\""
+            "value": "mongodb-exporter"
         },
         {
             "name": "exporters.mysqld.configFile",
             "desc": "Path to the services config file.  See  https://github.com/prometheus/mysqld_exporter#running for more information about the available options.   Please do not store this file in the nix store if you choose toinclude any credentials here, as it would be world-readable.",
             "nixName": "exporters.mysqld.configFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.mysqld.enable",
@@ -3923,14 +3923,14 @@
             "desc": "Group under which the mysqld exporter shall be run.",
             "nixName": "exporters.mysqld.group",
             "type": "string",
-            "value": "\"mysqld-exporter\""
+            "value": "mysqld-exporter"
         },
         {
             "name": "exporters.mysqld.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.mysqld.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.mysqld.openFirewall",
@@ -3958,14 +3958,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.mysqld.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.mysqld.user",
             "desc": "User name under which the mysqld exporter shall be run.",
             "nixName": "exporters.mysqld.user",
             "type": "string",
-            "value": "\"mysqld-exporter\""
+            "value": "mysqld-exporter"
         },
         {
             "name": "exporters.nats.enable",
@@ -4000,14 +4000,14 @@
             "desc": "Group under which the nats exporter shall be run.",
             "nixName": "exporters.nats.group",
             "type": "string",
-            "value": "\"nats-exporter\""
+            "value": "nats-exporter"
         },
         {
             "name": "exporters.nats.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.nats.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.nats.openFirewall",
@@ -4028,14 +4028,14 @@
             "desc": "NATS monitor endpoint to query.",
             "nixName": "exporters.nats.url",
             "type": "string",
-            "value": "\"http://127.0.0.1:8222\""
+            "value": "http://127.0.0.1:8222"
         },
         {
             "name": "exporters.nats.user",
             "desc": "User name under which the nats exporter shall be run.",
             "nixName": "exporters.nats.user",
             "type": "string",
-            "value": "\"nats-exporter\""
+            "value": "nats-exporter"
         },
         {
             "name": "exporters.nextcloud.enable",
@@ -4070,14 +4070,14 @@
             "desc": "Group under which the nextcloud exporter shall be run.",
             "nixName": "exporters.nextcloud.group",
             "type": "string",
-            "value": "\"nextcloud-exporter\""
+            "value": "nextcloud-exporter"
         },
         {
             "name": "exporters.nextcloud.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.nextcloud.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.nextcloud.openFirewall",
@@ -4105,7 +4105,7 @@
             "desc": "Timeout for getting server info document.",
             "nixName": "exporters.nextcloud.timeout",
             "type": "string",
-            "value": "\"5s\""
+            "value": "5s"
         },
         {
             "name": "exporters.nextcloud.tokenFile",
@@ -4119,21 +4119,21 @@
             "desc": "URL to the Nextcloud serverinfo page. Adding the path to theserverinfo API is optional, it defaults to /ocs/v2.php/apps/serverinfo/api/v1/info .",
             "nixName": "exporters.nextcloud.url",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.nextcloud.user",
             "desc": "User name under which the nextcloud exporter shall be run.",
             "nixName": "exporters.nextcloud.user",
             "type": "string",
-            "value": "\"nextcloud-exporter\""
+            "value": "nextcloud-exporter"
         },
         {
             "name": "exporters.nextcloud.username",
             "desc": "Username for connecting to Nextcloud. Note that this account needs tohave admin privileges in Nextcloud. Unused when using tokenauthentication.",
             "nixName": "exporters.nextcloud.username",
             "type": "string",
-            "value": "\"nextcloud-exporter\""
+            "value": "nextcloud-exporter"
         },
         {
             "name": "exporters.nginx.constLabels",
@@ -4175,14 +4175,14 @@
             "desc": "Group under which the nginx exporter shall be run.",
             "nixName": "exporters.nginx.group",
             "type": "string",
-            "value": "\"nginx-exporter\""
+            "value": "nginx-exporter"
         },
         {
             "name": "exporters.nginx.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.nginx.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.nginx.openFirewall",
@@ -4203,7 +4203,7 @@
             "desc": "Address to access the nginx status page. Can be enabled withservices.nginx.statusPage = true.",
             "nixName": "exporters.nginx.scrapeUri",
             "type": "string",
-            "value": "\"http://localhost/nginx_status\""
+            "value": "http://localhost/nginx_status"
         },
         {
             "name": "exporters.nginx.sslVerify",
@@ -4217,14 +4217,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.nginx.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.nginx.user",
             "desc": "User name under which the nginx exporter shall be run.",
             "nixName": "exporters.nginx.user",
             "type": "string",
-            "value": "\"nginx-exporter\""
+            "value": "nginx-exporter"
         },
         {
             "name": "exporters.nginxlog.enable",
@@ -4259,21 +4259,21 @@
             "desc": "Group under which the nginxlog exporter shall be run.",
             "nixName": "exporters.nginxlog.group",
             "type": "string",
-            "value": "\"nginxlog-exporter\""
+            "value": "nginxlog-exporter"
         },
         {
             "name": "exporters.nginxlog.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.nginxlog.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.nginxlog.metricsEndpoint",
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.nginxlog.metricsEndpoint",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.nginxlog.openFirewall",
@@ -4315,7 +4315,7 @@
             "desc": "User name under which the nginxlog exporter shall be run.",
             "nixName": "exporters.nginxlog.user",
             "type": "string",
-            "value": "\"nginxlog-exporter\""
+            "value": "nginxlog-exporter"
         },
         {
             "name": "exporters.node.disabledCollectors",
@@ -4364,14 +4364,14 @@
             "desc": "Group under which the node exporter shall be run.",
             "nixName": "exporters.node.group",
             "type": "string",
-            "value": "\"node-exporter\""
+            "value": "node-exporter"
         },
         {
             "name": "exporters.node.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.node.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.node.openFirewall",
@@ -4392,7 +4392,7 @@
             "desc": "User name under which the node exporter shall be run.",
             "nixName": "exporters.node.user",
             "type": "string",
-            "value": "\"node-exporter\""
+            "value": "node-exporter"
         },
         {
             "name": "exporters.nut.enable",
@@ -4427,28 +4427,28 @@
             "desc": "Group under which the nut exporter shall be run.",
             "nixName": "exporters.nut.group",
             "type": "string",
-            "value": "\"nut-exporter\""
+            "value": "nut-exporter"
         },
         {
             "name": "exporters.nut.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.nut.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.nut.nutServer",
             "desc": "Hostname or address of the NUT server",
             "nixName": "exporters.nut.nutServer",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "exporters.nut.nutUser",
             "desc": "The user to log in into NUT server. If set, passwordPath should alsobe set.  Default NUT configs usually permit reading variables withoutauthentication.",
             "nixName": "exporters.nut.nutUser",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.nut.nutVariables",
@@ -4483,7 +4483,7 @@
             "desc": "User name under which the nut exporter shall be run.",
             "nixName": "exporters.nut.user",
             "type": "string",
-            "value": "\"nut-exporter\""
+            "value": "nut-exporter"
         },
         {
             "name": "exporters.openldap.enable",
@@ -4518,42 +4518,42 @@
             "desc": "Group under which the openldap exporter shall be run.",
             "nixName": "exporters.openldap.group",
             "type": "string",
-            "value": "\"openldap-exporter\""
+            "value": "openldap-exporter"
         },
         {
             "name": "exporters.openldap.interval",
             "desc": "Scrape interval of the exporter.",
             "nixName": "exporters.openldap.interval",
             "type": "string",
-            "value": "\"30s\""
+            "value": "30s"
         },
         {
             "name": "exporters.openldap.ldapAddr",
             "desc": "Address of the  openldap -instance.",
             "nixName": "exporters.openldap.ldapAddr",
             "type": "string",
-            "value": "\"localhost:389\""
+            "value": "localhost:389"
         },
         {
             "name": "exporters.openldap.ldapCredentialFile",
             "desc": "Environment file to contain the credentials to authenticate against openldap .  The file should look like this:   ---ldapUser: \"cn=monitoring,cn=Monitor\"ldapPass: \"secret\"",
             "nixName": "exporters.openldap.ldapCredentialFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.openldap.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.openldap.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.openldap.metricsPath",
             "desc": "URL path where metrics should be exposed.",
             "nixName": "exporters.openldap.metricsPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.openldap.openFirewall",
@@ -4574,21 +4574,21 @@
             "desc": "Which protocol to use to connect against  openldap .",
             "nixName": "exporters.openldap.protocol",
             "type": "string",
-            "value": "\"tcp\""
+            "value": "tcp"
         },
         {
             "name": "exporters.openldap.user",
             "desc": "User name under which the openldap exporter shall be run.",
             "nixName": "exporters.openldap.user",
             "type": "string",
-            "value": "\"openldap-exporter\""
+            "value": "openldap-exporter"
         },
         {
             "name": "exporters.pgbouncer.connectionString",
             "desc": "Connection string for accessing pgBouncer.  NOTE: You MUST keep pgbouncer as database name (special internaldb)!!!  NOTE: Admin user (with password or passwordless) MUST exist in theservices.pgbouncer.authFile if authType other than any is used.  WARNING: this secret is stored in the world-readable Nix store! Use connectionStringFile instead.",
             "nixName": "exporters.pgbouncer.connectionString",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.pgbouncer.connectionStringFile",
@@ -4630,14 +4630,14 @@
             "desc": "Group under which the pgbouncer exporter shall be run.",
             "nixName": "exporters.pgbouncer.group",
             "type": "string",
-            "value": "\"pgbouncer-exporter\""
+            "value": "pgbouncer-exporter"
         },
         {
             "name": "exporters.pgbouncer.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.pgbouncer.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.pgbouncer.logFormat",
@@ -4679,14 +4679,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.pgbouncer.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.pgbouncer.user",
             "desc": "User name under which the pgbouncer exporter shall be run.",
             "nixName": "exporters.pgbouncer.user",
             "type": "string",
-            "value": "\"pgbouncer-exporter\""
+            "value": "pgbouncer-exporter"
         },
         {
             "name": "exporters.pgbouncer.webConfigFile",
@@ -4742,14 +4742,14 @@
             "desc": "Group under which the php-fpm exporter shall be run.",
             "nixName": "exporters.php-fpm.group",
             "type": "string",
-            "value": "\"php-fpm-exporter\""
+            "value": "php-fpm-exporter"
         },
         {
             "name": "exporters.php-fpm.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.php-fpm.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.php-fpm.openFirewall",
@@ -4777,21 +4777,21 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.php-fpm.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.php-fpm.user",
             "desc": "User name under which the php-fpm exporter shall be run.",
             "nixName": "exporters.php-fpm.user",
             "type": "string",
-            "value": "\"php-fpm-exporter\""
+            "value": "php-fpm-exporter"
         },
         {
             "name": "exporters.pihole.apiToken",
             "desc": "Pi-Hole API token which can be used instead of a password",
             "nixName": "exporters.pihole.apiToken",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.pihole.enable",
@@ -4826,14 +4826,14 @@
             "desc": "Group under which the pihole exporter shall be run.",
             "nixName": "exporters.pihole.group",
             "type": "string",
-            "value": "\"pihole-exporter\""
+            "value": "pihole-exporter"
         },
         {
             "name": "exporters.pihole.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.pihole.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.pihole.openFirewall",
@@ -4847,14 +4847,14 @@
             "desc": "The password to login into Pi-Hole. An api token can be usedinstead.",
             "nixName": "exporters.pihole.password",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.pihole.piholeHostname",
             "desc": "Hostname or address where to find the Pi-Hole webinterface",
             "nixName": "exporters.pihole.piholeHostname",
             "type": "string",
-            "value": "\"pihole\""
+            "value": "pihole"
         },
         {
             "name": "exporters.pihole.piholePort",
@@ -4882,14 +4882,14 @@
             "desc": "Controls the timeout to connect to a Pi-Hole instance",
             "nixName": "exporters.pihole.timeout",
             "type": "string",
-            "value": "\"5s\""
+            "value": "5s"
         },
         {
             "name": "exporters.pihole.user",
             "desc": "User name under which the pihole exporter shall be run.",
             "nixName": "exporters.pihole.user",
             "type": "string",
-            "value": "\"pihole-exporter\""
+            "value": "pihole-exporter"
         },
         {
             "name": "exporters.ping.enable",
@@ -4924,14 +4924,14 @@
             "desc": "Group under which the ping exporter shall be run.",
             "nixName": "exporters.ping.group",
             "type": "string",
-            "value": "\"ping-exporter\""
+            "value": "ping-exporter"
         },
         {
             "name": "exporters.ping.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.ping.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.ping.openFirewall",
@@ -4959,14 +4959,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.ping.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.ping.user",
             "desc": "User name under which the ping exporter shall be run.",
             "nixName": "exporters.ping.user",
             "type": "string",
-            "value": "\"ping-exporter\""
+            "value": "ping-exporter"
         },
         {
             "name": "exporters.postfix.enable",
@@ -5001,14 +5001,14 @@
             "desc": "Group under which the postfix exporter shall be run. It should matchthe group that is allowed to access the  showq  socket in the queue/public/  directory. Defaults to services.postfix.setgidGroup  when postfix is enabled.",
             "nixName": "exporters.postfix.group",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.postfix.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.postfix.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.postfix.logfilePath",
@@ -5064,28 +5064,28 @@
             "desc": "Name of the postfix systemd unit.",
             "nixName": "exporters.postfix.systemd.unit",
             "type": "string",
-            "value": "\"postfix.service\""
+            "value": "postfix.service"
         },
         {
             "name": "exporters.postfix.telemetryPath",
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.postfix.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.postfix.user",
             "desc": "User name under which the postfix exporter shall be run.",
             "nixName": "exporters.postfix.user",
             "type": "string",
-            "value": "\"postfix-exporter\""
+            "value": "postfix-exporter"
         },
         {
             "name": "exporters.postgres.dataSourceName",
             "desc": "Accepts PostgreSQL URI form and key=value form arguments.",
             "nixName": "exporters.postgres.dataSourceName",
             "type": "string",
-            "value": "\"user=postgres database=postgres host=/run/postgresql sslmode=disable\""
+            "value": "user=postgres database=postgres host=/run/postgresql sslmode=disable"
         },
         {
             "name": "exporters.postgres.enable",
@@ -5127,14 +5127,14 @@
             "desc": "Group under which the postgres exporter shall be run.",
             "nixName": "exporters.postgres.group",
             "type": "string",
-            "value": "\"postgres-exporter\""
+            "value": "postgres-exporter"
         },
         {
             "name": "exporters.postgres.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.postgres.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.postgres.openFirewall",
@@ -5162,14 +5162,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.postgres.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.postgres.user",
             "desc": "User name under which the postgres exporter shall be run.",
             "nixName": "exporters.postgres.user",
             "type": "string",
-            "value": "\"postgres-exporter\""
+            "value": "postgres-exporter"
         },
         {
             "name": "exporters.process.enable",
@@ -5204,14 +5204,14 @@
             "desc": "Group under which the process exporter shall be run.",
             "nixName": "exporters.process.group",
             "type": "string",
-            "value": "\"process-exporter\""
+            "value": "process-exporter"
         },
         {
             "name": "exporters.process.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.process.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.process.openFirewall",
@@ -5239,7 +5239,7 @@
             "desc": "User name under which the process exporter shall be run.",
             "nixName": "exporters.process.user",
             "type": "string",
-            "value": "\"process-exporter\""
+            "value": "process-exporter"
         },
         {
             "name": "exporters.pve.collectors.cluster",
@@ -5330,14 +5330,14 @@
             "desc": "Group under which the pve exporter shall be run.",
             "nixName": "exporters.pve.group",
             "type": "string",
-            "value": "\"pve-exporter\""
+            "value": "pve-exporter"
         },
         {
             "name": "exporters.pve.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.pve.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.pve.openFirewall",
@@ -5379,14 +5379,14 @@
             "desc": "User name under which the pve exporter shall be run.",
             "nixName": "exporters.pve.user",
             "type": "string",
-            "value": "\"pve-exporter\""
+            "value": "pve-exporter"
         },
         {
             "name": "exporters.py-air-control.deviceHostname",
             "desc": "The hostname of the air purification device from which to scrape themetrics.",
             "nixName": "exporters.py-air-control.deviceHostname",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.py-air-control.enable",
@@ -5421,14 +5421,14 @@
             "desc": "Group under which the py-air-control exporter shall be run.",
             "nixName": "exporters.py-air-control.group",
             "type": "string",
-            "value": "\"py-air-control-exporter\""
+            "value": "py-air-control-exporter"
         },
         {
             "name": "exporters.py-air-control.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.py-air-control.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.py-air-control.openFirewall",
@@ -5449,21 +5449,21 @@
             "desc": "The protocol to use when communicating with the air purificationdevice. Available: [http, coap, plain_coap]",
             "nixName": "exporters.py-air-control.protocol",
             "type": "string",
-            "value": "\"http\""
+            "value": "http"
         },
         {
             "name": "exporters.py-air-control.stateDir",
             "desc": "Directory below  /var/lib  to store runtime data. Thisdirectory will be created automatically using systemd\u2019s StateDirectorymechanism.",
             "nixName": "exporters.py-air-control.stateDir",
             "type": "string",
-            "value": "\"prometheus-py-air-control-exporter\""
+            "value": "prometheus-py-air-control-exporter"
         },
         {
             "name": "exporters.py-air-control.user",
             "desc": "User name under which the py-air-control exporter shall be run.",
             "nixName": "exporters.py-air-control.user",
             "type": "string",
-            "value": "\"py-air-control-exporter\""
+            "value": "py-air-control-exporter"
         },
         {
             "name": "exporters.redis.enable",
@@ -5498,14 +5498,14 @@
             "desc": "Group under which the redis exporter shall be run.",
             "nixName": "exporters.redis.group",
             "type": "string",
-            "value": "\"redis-exporter\""
+            "value": "redis-exporter"
         },
         {
             "name": "exporters.redis.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.redis.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.redis.openFirewall",
@@ -5526,7 +5526,7 @@
             "desc": "User name under which the redis exporter shall be run.",
             "nixName": "exporters.redis.user",
             "type": "string",
-            "value": "\"redis-exporter\""
+            "value": "redis-exporter"
         },
         {
             "name": "exporters.restic.enable",
@@ -5568,14 +5568,14 @@
             "desc": "Group under which the restic exporter shall be run.",
             "nixName": "exporters.restic.group",
             "type": "string",
-            "value": "\"restic-exporter\""
+            "value": "restic-exporter"
         },
         {
             "name": "exporters.restic.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.restic.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.restic.openFirewall",
@@ -5589,7 +5589,7 @@
             "desc": "File containing the password to the repository.",
             "nixName": "exporters.restic.passwordFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.restic.port",
@@ -5631,14 +5631,14 @@
             "desc": "URI pointing to the repository to monitor.",
             "nixName": "exporters.restic.repository",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.restic.user",
             "desc": "User name under which the restic exporter shall be run.",
             "nixName": "exporters.restic.user",
             "type": "string",
-            "value": "\"restic-exporter\""
+            "value": "restic-exporter"
         },
         {
             "name": "exporters.rspamd.enable",
@@ -5680,14 +5680,14 @@
             "desc": "Group under which the rspamd exporter shall be run.",
             "nixName": "exporters.rspamd.group",
             "type": "string",
-            "value": "\"rspamd-exporter\""
+            "value": "rspamd-exporter"
         },
         {
             "name": "exporters.rspamd.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.rspamd.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.rspamd.openFirewall",
@@ -5708,7 +5708,7 @@
             "desc": "User name under which the rspamd exporter shall be run.",
             "nixName": "exporters.rspamd.user",
             "type": "string",
-            "value": "\"rspamd-exporter\""
+            "value": "rspamd-exporter"
         },
         {
             "name": "exporters.rtl_433.channels",
@@ -5722,21 +5722,21 @@
             "desc": "Channel to match.",
             "nixName": "exporters.rtl_433.channels.*.channel",
             "type": "signed integer",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.rtl_433.channels.*.location",
             "desc": "Location to match.",
             "nixName": "exporters.rtl_433.channels.*.location",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.rtl_433.channels.*.name",
             "desc": "Name to match.",
             "nixName": "exporters.rtl_433.channels.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.rtl_433.enable",
@@ -5771,7 +5771,7 @@
             "desc": "Group under which the rtl_433 exporter shall be run.",
             "nixName": "exporters.rtl_433.group",
             "type": "string",
-            "value": "\"rtl_433-exporter\""
+            "value": "rtl_433-exporter"
         },
         {
             "name": "exporters.rtl_433.ids",
@@ -5785,28 +5785,28 @@
             "desc": "ID to match.",
             "nixName": "exporters.rtl_433.ids.*.id",
             "type": "signed integer",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.rtl_433.ids.*.location",
             "desc": "Location to match.",
             "nixName": "exporters.rtl_433.ids.*.location",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.rtl_433.ids.*.name",
             "desc": "Name to match.",
             "nixName": "exporters.rtl_433.ids.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.rtl_433.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.rtl_433.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.rtl_433.openFirewall",
@@ -5827,14 +5827,14 @@
             "desc": "Flags passed verbatim to rtl_433 binary. Having  -C si (the default) is recommended since only Celsius temperatures areparsed.",
             "nixName": "exporters.rtl_433.rtl433Flags",
             "type": "string",
-            "value": "\"-C si\""
+            "value": "-C si"
         },
         {
             "name": "exporters.rtl_433.user",
             "desc": "User name under which the rtl_433 exporter shall be run.",
             "nixName": "exporters.rtl_433.user",
             "type": "string",
-            "value": "\"rtl_433-exporter\""
+            "value": "rtl_433-exporter"
         },
         {
             "name": "exporters.sabnzbd.enable",
@@ -5869,14 +5869,14 @@
             "desc": "Group under which the sabnzbd exporter shall be run.",
             "nixName": "exporters.sabnzbd.group",
             "type": "string",
-            "value": "\"sabnzbd-exporter\""
+            "value": "sabnzbd-exporter"
         },
         {
             "name": "exporters.sabnzbd.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.sabnzbd.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.sabnzbd.openFirewall",
@@ -5897,28 +5897,28 @@
             "desc": "List of sabnzbd servers to connect to.",
             "nixName": "exporters.sabnzbd.servers",
             "type": "list of (submodule)",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.sabnzbd.servers.*.apiKeyFile",
             "desc": "The path to a file containing the API key. The file is securelypassed to the service by leveraging systemd credentials. No specialpermissions need to be set on this file.",
             "nixName": "exporters.sabnzbd.servers.*.apiKeyFile",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.sabnzbd.servers.*.baseUrl",
             "desc": "Base URL of the sabnzbd server.",
             "nixName": "exporters.sabnzbd.servers.*.baseUrl",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.sabnzbd.user",
             "desc": "User name under which the sabnzbd exporter shall be run.",
             "nixName": "exporters.sabnzbd.user",
             "type": "string",
-            "value": "\"sabnzbd-exporter\""
+            "value": "sabnzbd-exporter"
         },
         {
             "name": "exporters.scaphandre.enable",
@@ -5953,14 +5953,14 @@
             "desc": "Group under which the scaphandre exporter shall be run.",
             "nixName": "exporters.scaphandre.group",
             "type": "string",
-            "value": "\"scaphandre-exporter\""
+            "value": "scaphandre-exporter"
         },
         {
             "name": "exporters.scaphandre.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.scaphandre.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.scaphandre.openFirewall",
@@ -5981,14 +5981,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.scaphandre.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.scaphandre.user",
             "desc": "User name under which the scaphandre exporter shall be run.",
             "nixName": "exporters.scaphandre.user",
             "type": "string",
-            "value": "\"scaphandre-exporter\""
+            "value": "scaphandre-exporter"
         },
         {
             "name": "exporters.script.enable",
@@ -6023,14 +6023,14 @@
             "desc": "Group under which the script exporter shall be run.",
             "nixName": "exporters.script.group",
             "type": "string",
-            "value": "\"script-exporter\""
+            "value": "script-exporter"
         },
         {
             "name": "exporters.script.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.script.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.script.openFirewall",
@@ -6051,21 +6051,21 @@
             "desc": "All settings expressed as an Nix attrset.  Check the official documentation for the corresponding YAML settingsthat can all be used here:  https://github.com/adhocteam/script_exporter#sample-configuration",
             "nixName": "exporters.script.settings.scripts",
             "type": "list of (submodule)",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.script.settings.scripts.*.name",
             "desc": "Name of the script.",
             "nixName": "exporters.script.settings.scripts.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.script.settings.scripts.*.script",
             "desc": "Shell script to execute when metrics are requested.",
             "nixName": "exporters.script.settings.scripts.*.script",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.script.settings.scripts.*.timeout",
@@ -6079,7 +6079,7 @@
             "desc": "User name under which the script exporter shall be run.",
             "nixName": "exporters.script.user",
             "type": "string",
-            "value": "\"script-exporter\""
+            "value": "script-exporter"
         },
         {
             "name": "exporters.shelly.enable",
@@ -6114,21 +6114,21 @@
             "desc": "Group under which the shelly exporter shall be run.",
             "nixName": "exporters.shelly.group",
             "type": "string",
-            "value": "\"shelly-exporter\""
+            "value": "shelly-exporter"
         },
         {
             "name": "exporters.shelly.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.shelly.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.shelly.metrics-file",
             "desc": "Path to the JSON file with the metric definitions",
             "nixName": "exporters.shelly.metrics-file",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.shelly.openFirewall",
@@ -6149,7 +6149,7 @@
             "desc": "User name under which the shelly exporter shall be run.",
             "nixName": "exporters.shelly.user",
             "type": "string",
-            "value": "\"shelly-exporter\""
+            "value": "shelly-exporter"
         },
         {
             "name": "exporters.smartctl.devices",
@@ -6191,21 +6191,21 @@
             "desc": "Group under which the smartctl exporter shall be run.",
             "nixName": "exporters.smartctl.group",
             "type": "string",
-            "value": "\"smartctl-exporter\""
+            "value": "smartctl-exporter"
         },
         {
             "name": "exporters.smartctl.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.smartctl.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.smartctl.maxInterval",
             "desc": "Interval that limits how often a disk can be queried.",
             "nixName": "exporters.smartctl.maxInterval",
             "type": "string",
-            "value": "\"60s\""
+            "value": "60s"
         },
         {
             "name": "exporters.smartctl.openFirewall",
@@ -6226,7 +6226,7 @@
             "desc": "User name under which the smartctl exporter shall be run.",
             "nixName": "exporters.smartctl.user",
             "type": "string",
-            "value": "\"smartctl-exporter\""
+            "value": "smartctl-exporter"
         },
         {
             "name": "exporters.smokeping.buckets",
@@ -6268,21 +6268,21 @@
             "desc": "Group under which the smokeping exporter shall be run.",
             "nixName": "exporters.smokeping.group",
             "type": "string",
-            "value": "\"smokeping-exporter\""
+            "value": "smokeping-exporter"
         },
         {
             "name": "exporters.smokeping.hosts",
             "desc": "List of endpoints to probe.",
             "nixName": "exporters.smokeping.hosts",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.smokeping.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.smokeping.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.smokeping.openFirewall",
@@ -6310,14 +6310,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.smokeping.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.smokeping.user",
             "desc": "User name under which the smokeping exporter shall be run.",
             "nixName": "exporters.smokeping.user",
             "type": "string",
-            "value": "\"smokeping-exporter\""
+            "value": "smokeping-exporter"
         },
         {
             "name": "exporters.snmp.configuration",
@@ -6380,14 +6380,14 @@
             "desc": "Group under which the snmp exporter shall be run.",
             "nixName": "exporters.snmp.group",
             "type": "string",
-            "value": "\"snmp-exporter\""
+            "value": "snmp-exporter"
         },
         {
             "name": "exporters.snmp.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.snmp.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.snmp.logFormat",
@@ -6422,7 +6422,7 @@
             "desc": "User name under which the snmp exporter shall be run.",
             "nixName": "exporters.snmp.user",
             "type": "string",
-            "value": "\"snmp-exporter\""
+            "value": "snmp-exporter"
         },
         {
             "name": "exporters.sql.configFile",
@@ -6450,21 +6450,21 @@
             "desc": "A list of connection strings of the SQL servers to scrape metricsfrom",
             "nixName": "exporters.sql.configuration.jobs.<name>.connections",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.sql.configuration.jobs.<name>.interval",
             "desc": "How often to run this job, specified in  Go duration format.",
             "nixName": "exporters.sql.configuration.jobs.<name>.interval",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.sql.configuration.jobs.<name>.queries",
             "desc": "SQL queries to run.",
             "nixName": "exporters.sql.configuration.jobs.<name>.queries",
             "type": "attribute set of (submodule)",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.sql.configuration.jobs.<name>.queries.<name>.help",
@@ -6485,14 +6485,14 @@
             "desc": "The SQL query to run.",
             "nixName": "exporters.sql.configuration.jobs.<name>.queries.<name>.query",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.sql.configuration.jobs.<name>.queries.<name>.values",
             "desc": "A set of columns that will be used as values of this metric.",
             "nixName": "exporters.sql.configuration.jobs.<name>.queries.<name>.values",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.sql.configuration.jobs.<name>.startupSql",
@@ -6534,14 +6534,14 @@
             "desc": "Group under which the sql exporter shall be run.",
             "nixName": "exporters.sql.group",
             "type": "string",
-            "value": "\"sql-exporter\""
+            "value": "sql-exporter"
         },
         {
             "name": "exporters.sql.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.sql.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.sql.openFirewall",
@@ -6562,7 +6562,7 @@
             "desc": "User name under which the sql exporter shall be run.",
             "nixName": "exporters.sql.user",
             "type": "string",
-            "value": "\"sql-exporter\""
+            "value": "sql-exporter"
         },
         {
             "name": "exporters.statsd.enable",
@@ -6597,14 +6597,14 @@
             "desc": "Group under which the statsd exporter shall be run.",
             "nixName": "exporters.statsd.group",
             "type": "string",
-            "value": "\"statsd-exporter\""
+            "value": "statsd-exporter"
         },
         {
             "name": "exporters.statsd.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.statsd.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.statsd.openFirewall",
@@ -6625,7 +6625,7 @@
             "desc": "User name under which the statsd exporter shall be run.",
             "nixName": "exporters.statsd.user",
             "type": "string",
-            "value": "\"statsd-exporter\""
+            "value": "statsd-exporter"
         },
         {
             "name": "exporters.surfboard.enable",
@@ -6660,21 +6660,21 @@
             "desc": "Group under which the surfboard exporter shall be run.",
             "nixName": "exporters.surfboard.group",
             "type": "string",
-            "value": "\"surfboard-exporter\""
+            "value": "surfboard-exporter"
         },
         {
             "name": "exporters.surfboard.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.surfboard.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.surfboard.modemAddress",
             "desc": "The hostname or IP of the cable modem.",
             "nixName": "exporters.surfboard.modemAddress",
             "type": "string",
-            "value": "\"192.168.100.1\""
+            "value": "192.168.100.1"
         },
         {
             "name": "exporters.surfboard.openFirewall",
@@ -6695,7 +6695,7 @@
             "desc": "User name under which the surfboard exporter shall be run.",
             "nixName": "exporters.surfboard.user",
             "type": "string",
-            "value": "\"surfboard-exporter\""
+            "value": "surfboard-exporter"
         },
         {
             "name": "exporters.systemd.enable",
@@ -6730,14 +6730,14 @@
             "desc": "Group under which the systemd exporter shall be run.",
             "nixName": "exporters.systemd.group",
             "type": "string",
-            "value": "\"systemd-exporter\""
+            "value": "systemd-exporter"
         },
         {
             "name": "exporters.systemd.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.systemd.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.systemd.openFirewall",
@@ -6758,7 +6758,7 @@
             "desc": "User name under which the systemd exporter shall be run.",
             "nixName": "exporters.systemd.user",
             "type": "string",
-            "value": "\"systemd-exporter\""
+            "value": "systemd-exporter"
         },
         {
             "name": "exporters.tor.enable",
@@ -6793,14 +6793,14 @@
             "desc": "Group under which the tor exporter shall be run.",
             "nixName": "exporters.tor.group",
             "type": "string",
-            "value": "\"tor-exporter\""
+            "value": "tor-exporter"
         },
         {
             "name": "exporters.tor.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.tor.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.tor.openFirewall",
@@ -6821,7 +6821,7 @@
             "desc": "Tor control IP address or hostname.",
             "nixName": "exporters.tor.torControlAddress",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "exporters.tor.torControlPort",
@@ -6835,7 +6835,7 @@
             "desc": "User name under which the tor exporter shall be run.",
             "nixName": "exporters.tor.user",
             "type": "string",
-            "value": "\"tor-exporter\""
+            "value": "tor-exporter"
         },
         {
             "name": "exporters.unbound.enable",
@@ -6870,14 +6870,14 @@
             "desc": "Group under which the unbound exporter shall be run.",
             "nixName": "exporters.unbound.group",
             "type": "string",
-            "value": "\"unbound-exporter\""
+            "value": "unbound-exporter"
         },
         {
             "name": "exporters.unbound.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.unbound.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.unbound.openFirewall",
@@ -6898,7 +6898,7 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.unbound.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.unbound.unbound.ca",
@@ -6919,7 +6919,7 @@
             "desc": "Path to the unbound control socket. Supports unix domain sockets, aswell as the TCP interface.",
             "nixName": "exporters.unbound.unbound.host",
             "type": "string",
-            "value": "\"tcp://127.0.0.1:8953\""
+            "value": "tcp://127.0.0.1:8953"
         },
         {
             "name": "exporters.unbound.unbound.key",
@@ -6933,7 +6933,7 @@
             "desc": "User name under which the unbound exporter shall be run.",
             "nixName": "exporters.unbound.user",
             "type": "string",
-            "value": "\"unbound-exporter\""
+            "value": "unbound-exporter"
         },
         {
             "name": "exporters.unifi.enable",
@@ -6968,14 +6968,14 @@
             "desc": "Group under which the unifi exporter shall be run.",
             "nixName": "exporters.unifi.group",
             "type": "string",
-            "value": "\"unifi-exporter\""
+            "value": "unifi-exporter"
         },
         {
             "name": "exporters.unifi.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.unifi.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.unifi.openFirewall",
@@ -6996,7 +6996,7 @@
             "desc": "URL of the UniFi Controller API.",
             "nixName": "exporters.unifi.unifiAddress",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.unifi.unifiInsecure",
@@ -7010,28 +7010,28 @@
             "desc": "Password for authentication against UniFi Controller API.",
             "nixName": "exporters.unifi.unifiPassword",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.unifi.unifiTimeout",
             "desc": "Timeout including unit for UniFi Controller API requests.",
             "nixName": "exporters.unifi.unifiTimeout",
             "type": "string",
-            "value": "\"5s\""
+            "value": "5s"
         },
         {
             "name": "exporters.unifi.unifiUsername",
             "desc": "username for authentication against UniFi Controller API.",
             "nixName": "exporters.unifi.unifiUsername",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "exporters.unifi.user",
             "desc": "User name under which the unifi exporter shall be run.",
             "nixName": "exporters.unifi.user",
             "type": "string",
-            "value": "\"unifi-exporter\""
+            "value": "unifi-exporter"
         },
         {
             "name": "exporters.unpoller.controllers",
@@ -7108,14 +7108,14 @@
             "desc": "URL of the Unifi controller.",
             "nixName": "exporters.unpoller.controllers.*.url",
             "type": "string",
-            "value": "\"https://unifi:8443\""
+            "value": "https://unifi:8443"
         },
         {
             "name": "exporters.unpoller.controllers.*.user",
             "desc": "Unifi service user name.",
             "nixName": "exporters.unpoller.controllers.*.user",
             "type": "string",
-            "value": "\"unifi\""
+            "value": "unifi"
         },
         {
             "name": "exporters.unpoller.controllers.*.verify_ssl",
@@ -7157,14 +7157,14 @@
             "desc": "Group under which the unpoller exporter shall be run.",
             "nixName": "exporters.unpoller.group",
             "type": "string",
-            "value": "\"unpoller-exporter\""
+            "value": "unpoller-exporter"
         },
         {
             "name": "exporters.unpoller.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.unpoller.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.unpoller.log.debug",
@@ -7192,7 +7192,7 @@
             "desc": "How often the events are polled and pushed to Loki.",
             "nixName": "exporters.unpoller.loki.interval",
             "type": "string",
-            "value": "\"2m\""
+            "value": "2m"
         },
         {
             "name": "exporters.unpoller.loki.pass",
@@ -7206,28 +7206,28 @@
             "desc": "Tenant ID to use in Loki.",
             "nixName": "exporters.unpoller.loki.tenant_id",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.unpoller.loki.timeout",
             "desc": "Should be increased in case of timeout errors.",
             "nixName": "exporters.unpoller.loki.timeout",
             "type": "string",
-            "value": "\"10s\""
+            "value": "10s"
         },
         {
             "name": "exporters.unpoller.loki.url",
             "desc": "URL of the Loki host.",
             "nixName": "exporters.unpoller.loki.url",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.unpoller.loki.user",
             "desc": "Username for Loki.",
             "nixName": "exporters.unpoller.loki.user",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "exporters.unpoller.loki.verify_ssl",
@@ -7255,7 +7255,7 @@
             "desc": "User name under which the unpoller exporter shall be run.",
             "nixName": "exporters.unpoller.user",
             "type": "string",
-            "value": "\"unpoller-exporter\""
+            "value": "unpoller-exporter"
         },
         {
             "name": "exporters.v2ray.enable",
@@ -7290,14 +7290,14 @@
             "desc": "Group under which the v2ray exporter shall be run.",
             "nixName": "exporters.v2ray.group",
             "type": "string",
-            "value": "\"v2ray-exporter\""
+            "value": "v2ray-exporter"
         },
         {
             "name": "exporters.v2ray.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.v2ray.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.v2ray.openFirewall",
@@ -7318,14 +7318,14 @@
             "desc": "User name under which the v2ray exporter shall be run.",
             "nixName": "exporters.v2ray.user",
             "type": "string",
-            "value": "\"v2ray-exporter\""
+            "value": "v2ray-exporter"
         },
         {
             "name": "exporters.v2ray.v2rayEndpoint",
             "desc": "v2ray grpc api endpoint",
             "nixName": "exporters.v2ray.v2rayEndpoint",
             "type": "string",
-            "value": "\"127.0.0.1:54321\""
+            "value": "127.0.0.1:54321"
         },
         {
             "name": "exporters.varnish.enable",
@@ -7360,7 +7360,7 @@
             "desc": "Group under which the varnish exporter shall be run.",
             "nixName": "exporters.varnish.group",
             "type": "string",
-            "value": "\"varnish-exporter\""
+            "value": "varnish-exporter"
         },
         {
             "name": "exporters.varnish.healthPath",
@@ -7381,7 +7381,7 @@
             "desc": "Address to listen on.",
             "nixName": "exporters.varnish.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.varnish.noExit",
@@ -7416,21 +7416,21 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.varnish.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.varnish.user",
             "desc": "User name under which the varnish exporter shall be run.",
             "nixName": "exporters.varnish.user",
             "type": "string",
-            "value": "\"varnish-exporter\""
+            "value": "varnish-exporter"
         },
         {
             "name": "exporters.varnish.varnishStatPath",
             "desc": "Path to varnishstat.",
             "nixName": "exporters.varnish.varnishStatPath",
             "type": "string",
-            "value": "\"varnishstat\""
+            "value": "varnishstat"
         },
         {
             "name": "exporters.varnish.verbose",
@@ -7479,14 +7479,14 @@
             "desc": "Group under which the wireguard exporter shall be run.",
             "nixName": "exporters.wireguard.group",
             "type": "string",
-            "value": "\"wireguard-exporter\""
+            "value": "wireguard-exporter"
         },
         {
             "name": "exporters.wireguard.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.wireguard.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.wireguard.openFirewall",
@@ -7514,7 +7514,7 @@
             "desc": "User name under which the wireguard exporter shall be run.",
             "nixName": "exporters.wireguard.user",
             "type": "string",
-            "value": "\"wireguard-exporter\""
+            "value": "wireguard-exporter"
         },
         {
             "name": "exporters.wireguard.verbose",
@@ -7570,14 +7570,14 @@
             "desc": "Group under which the zfs exporter shall be run.",
             "nixName": "exporters.zfs.group",
             "type": "string",
-            "value": "\"zfs-exporter\""
+            "value": "zfs-exporter"
         },
         {
             "name": "exporters.zfs.listenAddress",
             "desc": "Address to listen on.",
             "nixName": "exporters.zfs.listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "exporters.zfs.openFirewall",
@@ -7605,14 +7605,14 @@
             "desc": "Path under which to expose metrics.",
             "nixName": "exporters.zfs.telemetryPath",
             "type": "string",
-            "value": "\"/metrics\""
+            "value": "/metrics"
         },
         {
             "name": "exporters.zfs.user",
             "desc": "User name under which the zfs exporter shall be run.",
             "nixName": "exporters.zfs.user",
             "type": "string",
-            "value": "\"zfs-exporter\""
+            "value": "zfs-exporter"
         },
         {
             "name": "extraFlags",
@@ -7668,7 +7668,7 @@
             "desc": "Address to listen on for the web interface, API, and telemetry.",
             "nixName": "listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "package",
@@ -7738,7 +7738,7 @@
             "desc": "Directory below  /var/lib  to store metrics.  This directory will be created automatically using systemd\u2019sStateDirectory mechanism when  services.prometheus.pushgateway.persistMetrics  isenabled.",
             "nixName": "pushgateway.stateDir",
             "type": "string",
-            "value": "\"pushgateway\""
+            "value": "pushgateway"
         },
         {
             "name": "pushgateway.web.external-url",
@@ -7801,7 +7801,7 @@
             "desc": "HTTP username",
             "nixName": "remoteRead.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "remoteRead.*.bearer_token",
@@ -7906,7 +7906,7 @@
             "desc": "ServerName extension to indicate the name of the server.  http://tools.ietf.org/html/rfc4366#section-3.1",
             "nixName": "remoteRead.*.url",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "remoteWrite",
@@ -7941,7 +7941,7 @@
             "desc": "HTTP username",
             "nixName": "remoteWrite.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "remoteWrite.*.bearer_token",
@@ -8109,7 +8109,7 @@
             "desc": "ServerName extension to indicate the name of the server.  http://tools.ietf.org/html/rfc4366#section-3.1",
             "nixName": "remoteWrite.*.url",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "remoteWrite.*.write_relabel_configs",
@@ -8193,7 +8193,7 @@
             "desc": "The address Sachet will listen to.",
             "nixName": "sachet.address",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "sachet.configuration",
@@ -8298,7 +8298,7 @@
             "desc": "The subscription ID.",
             "nixName": "scrapeConfigs.*.azure_sd_configs.*.subscription_id",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.azure_sd_configs.*.tenant_id",
@@ -8375,7 +8375,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.bearer_token",
@@ -8466,7 +8466,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.consul_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.consul_sd_configs.*.datacenter",
@@ -8711,7 +8711,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.digitalocean_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.digitalocean_sd_configs.*.follow_redirects",
@@ -8844,7 +8844,7 @@
             "desc": "A list of DNS SRV record names to be queried.",
             "nixName": "scrapeConfigs.*.dns_sd_configs.*.names",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.dns_sd_configs.*.port",
@@ -8928,7 +8928,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.docker_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.docker_sd_configs.*.filters",
@@ -8942,14 +8942,14 @@
             "desc": "Name of the filter. The available filters are listed in the upstreamdocumentation: Services:  https://docs.docker.com/engine/api/v1.40/#operation/ServiceList Tasks:  https://docs.docker.com/engine/api/v1.40/#operation/TaskList Nodes:  https://docs.docker.com/engine/api/v1.40/#operation/NodeList",
             "nixName": "scrapeConfigs.*.docker_sd_configs.*.filters.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.docker_sd_configs.*.filters.*.values",
             "desc": "Value for the filter.",
             "nixName": "scrapeConfigs.*.docker_sd_configs.*.filters.*.values",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.docker_sd_configs.*.follow_redirects",
@@ -8963,7 +8963,7 @@
             "desc": "Address of the Docker daemon.",
             "nixName": "scrapeConfigs.*.docker_sd_configs.*.host",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.docker_sd_configs.*.host_networking_host",
@@ -9145,7 +9145,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.dockerswarm_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.dockerswarm_sd_configs.*.filters",
@@ -9159,14 +9159,14 @@
             "desc": "Name of the filter. The available filters are listed in the upstreamdocumentation: Services:  https://docs.docker.com/engine/api/v1.40/#operation/ServiceList Tasks:  https://docs.docker.com/engine/api/v1.40/#operation/TaskList Nodes:  https://docs.docker.com/engine/api/v1.40/#operation/NodeList",
             "nixName": "scrapeConfigs.*.dockerswarm_sd_configs.*.filters.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.dockerswarm_sd_configs.*.filters.*.values",
             "desc": "Value for the filter.",
             "nixName": "scrapeConfigs.*.dockerswarm_sd_configs.*.filters.*.values",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.dockerswarm_sd_configs.*.follow_redirects",
@@ -9180,7 +9180,7 @@
             "desc": "Address of the Docker daemon.",
             "nixName": "scrapeConfigs.*.dockerswarm_sd_configs.*.host",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.dockerswarm_sd_configs.*.oauth2",
@@ -9257,7 +9257,7 @@
             "desc": "Role of the targets to retrieve. Must be  services , tasks , or  nodes .",
             "nixName": "scrapeConfigs.*.dockerswarm_sd_configs.*.role",
             "type": "one of \"services\", \"tasks\", \"nodes\"",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.dockerswarm_sd_configs.*.tls_config",
@@ -9334,7 +9334,7 @@
             "desc": "See  thislist  for the available filters.",
             "nixName": "scrapeConfigs.*.ec2_sd_configs.*.filters.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.ec2_sd_configs.*.filters.*.values",
@@ -9369,7 +9369,7 @@
             "desc": "The AWS Region. If blank, the region from the instance metadata isused.",
             "nixName": "scrapeConfigs.*.ec2_sd_configs.*.region",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.ec2_sd_configs.*.role_arn",
@@ -9446,7 +9446,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.eureka_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.eureka_sd_configs.*.follow_redirects",
@@ -9516,7 +9516,7 @@
             "desc": "The URL to connect to the Eureka server.",
             "nixName": "scrapeConfigs.*.eureka_sd_configs.*.server",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.eureka_sd_configs.*.tls_config",
@@ -9572,7 +9572,7 @@
             "desc": "Patterns for files from which target groups are extracted. Refer tothe Prometheus documentation for permitted filename patterns andformats.",
             "nixName": "scrapeConfigs.*.file_sd_configs.*.files",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.file_sd_configs.*.refresh_interval",
@@ -9607,7 +9607,7 @@
             "desc": "The GCP Project.",
             "nixName": "scrapeConfigs.*.gce_sd_configs.*.project",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.gce_sd_configs.*.refresh_interval",
@@ -9628,7 +9628,7 @@
             "desc": "The zone of the scrape targets. If you need multiple zones usemultiple gce_sd_configs.",
             "nixName": "scrapeConfigs.*.gce_sd_configs.*.zone",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.hetzner_sd_configs",
@@ -9691,7 +9691,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.hetzner_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.hetzner_sd_configs.*.follow_redirects",
@@ -9775,7 +9775,7 @@
             "desc": "The Hetzner role of entities that should be discovered. One of robot  or  hcloud .",
             "nixName": "scrapeConfigs.*.hetzner_sd_configs.*.role",
             "type": "one of \"robot\", \"hcloud\"",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.hetzner_sd_configs.*.tls_config",
@@ -9866,7 +9866,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.http_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.http_sd_configs.*.follow_redirects",
@@ -9936,14 +9936,14 @@
             "desc": "URL from which the targets are fetched.",
             "nixName": "scrapeConfigs.*.http_sd_configs.*.url",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.job_name",
             "desc": "The job name assigned to scraped metrics by default.",
             "nixName": "scrapeConfigs.*.job_name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.kubernetes_sd_configs",
@@ -10013,7 +10013,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.kubernetes_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.kubernetes_sd_configs.*.follow_redirects",
@@ -10104,7 +10104,7 @@
             "desc": "The Kubernetes role of entities that should be discovered. One ofendpoints, service, pod, node, or ingress.",
             "nixName": "scrapeConfigs.*.kubernetes_sd_configs.*.role",
             "type": "one of \"endpoints\", \"service\", \"pod\", \"node\", \"ingress\"",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.kubernetes_sd_configs.*.selectors",
@@ -10132,7 +10132,7 @@
             "desc": "Selector role",
             "nixName": "scrapeConfigs.*.kubernetes_sd_configs.*.selectors.*.role",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.kubernetes_sd_configs.*.tls_config",
@@ -10237,7 +10237,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.kuma_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.kuma_sd_configs.*.fetch_timeout",
@@ -10321,7 +10321,7 @@
             "desc": "Address of the Kuma Control Plane\u2019s MADS xDS server.",
             "nixName": "scrapeConfigs.*.kuma_sd_configs.*.server",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.kuma_sd_configs.*.tls_config",
@@ -10510,7 +10510,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.linode_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.linode_sd_configs.*.follow_redirects",
@@ -10713,7 +10713,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.marathon_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.marathon_sd_configs.*.follow_redirects",
@@ -10790,7 +10790,7 @@
             "desc": "List of URLs to be used to contact Marathon servers. You need toprovide at least one server URL.",
             "nixName": "scrapeConfigs.*.marathon_sd_configs.*.servers",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.marathon_sd_configs.*.tls_config",
@@ -10909,14 +10909,14 @@
             "desc": "Paths can point to a single service, or the root of a tree ofservices.",
             "nixName": "scrapeConfigs.*.nerve_sd_configs.*.paths",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.nerve_sd_configs.*.servers",
             "desc": "The Zookeeper servers.",
             "nixName": "scrapeConfigs.*.nerve_sd_configs.*.servers",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.nerve_sd_configs.*.timeout",
@@ -11028,14 +11028,14 @@
             "desc": "The OpenStack Region.",
             "nixName": "scrapeConfigs.*.openstack_sd_configs.*.region",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.openstack_sd_configs.*.role",
             "desc": "The OpenStack role of entities that should be discovered.",
             "nixName": "scrapeConfigs.*.openstack_sd_configs.*.role",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.openstack_sd_configs.*.tls_config",
@@ -11168,7 +11168,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.puppetdb_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.puppetdb_sd_configs.*.follow_redirects",
@@ -11252,7 +11252,7 @@
             "desc": "Puppet Query Language (PQL) query. Only resources are supported.  https://puppet.com/docs/puppetdb/latest/api/query/v4/pql.html",
             "nixName": "scrapeConfigs.*.puppetdb_sd_configs.*.query",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.puppetdb_sd_configs.*.refresh_interval",
@@ -11308,7 +11308,7 @@
             "desc": "The URL of the PuppetDB root query endpoint.",
             "nixName": "scrapeConfigs.*.puppetdb_sd_configs.*.url",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.relabel_configs",
@@ -11385,7 +11385,7 @@
             "desc": "Access key to use.  https://console.scaleway.com/project/credentials",
             "nixName": "scrapeConfigs.*.scaleway_sd_configs.*.access_key",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.scaleway_sd_configs.*.api_url",
@@ -11420,7 +11420,7 @@
             "desc": "Project ID of the targets.",
             "nixName": "scrapeConfigs.*.scaleway_sd_configs.*.project_id",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.scaleway_sd_configs.*.proxy_url",
@@ -11441,7 +11441,7 @@
             "desc": "Role of the targets to retrieve. Must be  instance  or baremetal .",
             "nixName": "scrapeConfigs.*.scaleway_sd_configs.*.role",
             "type": "one of \"instance\", \"baremetal\"",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.scaleway_sd_configs.*.secret_key",
@@ -11546,14 +11546,14 @@
             "desc": "Paths can point to a single service, or the root of a tree ofservices.",
             "nixName": "scrapeConfigs.*.serverset_sd_configs.*.paths",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.serverset_sd_configs.*.servers",
             "desc": "The Zookeeper servers.",
             "nixName": "scrapeConfigs.*.serverset_sd_configs.*.servers",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.serverset_sd_configs.*.timeout",
@@ -11581,7 +11581,7 @@
             "desc": "The targets specified by the target group.",
             "nixName": "scrapeConfigs.*.static_configs.*.targets",
             "type": "list of string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.target_limit",
@@ -11644,21 +11644,21 @@
             "desc": "The account to use for discovering new targets.",
             "nixName": "scrapeConfigs.*.triton_sd_configs.*.account",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.triton_sd_configs.*.dns_suffix",
             "desc": "The DNS suffix which should be applied to target.",
             "nixName": "scrapeConfigs.*.triton_sd_configs.*.dns_suffix",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.triton_sd_configs.*.endpoint",
             "desc": "The Triton discovery endpoint (e.g. cmon.us-east-3b.triton.zone ). This is often the same valueas dns_suffix.",
             "nixName": "scrapeConfigs.*.triton_sd_configs.*.endpoint",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.triton_sd_configs.*.groups",
@@ -11798,7 +11798,7 @@
             "desc": "HTTP username",
             "nixName": "scrapeConfigs.*.uyuni_sd_configs.*.basic_auth.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.uyuni_sd_configs.*.entitlement",
@@ -11868,7 +11868,7 @@
             "desc": "Credentials are used to authenticate the requests to Uyuni API.",
             "nixName": "scrapeConfigs.*.uyuni_sd_configs.*.password",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.uyuni_sd_configs.*.proxy_url",
@@ -11896,7 +11896,7 @@
             "desc": "The URL to connect to the Uyuni server.",
             "nixName": "scrapeConfigs.*.uyuni_sd_configs.*.server",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "scrapeConfigs.*.uyuni_sd_configs.*.tls_config",
@@ -11945,14 +11945,14 @@
             "desc": "Credentials are used to authenticate the requests to Uyuni API.",
             "nixName": "scrapeConfigs.*.uyuni_sd_configs.*.username",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "stateDir",
             "desc": "Directory below  /var/lib  to store Prometheus metricsdata. This directory will be created automatically using systemd\u2019sStateDirectory mechanism.",
             "nixName": "stateDir",
             "type": "string",
-            "value": "\"prometheus2\""
+            "value": "prometheus2"
         },
         {
             "name": "webConfigFile",

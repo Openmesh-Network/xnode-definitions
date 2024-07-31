@@ -24,7 +24,7 @@
             "desc": "IP address that Metabase should listen on.",
             "nixName": "listen.ip",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "listen.port",

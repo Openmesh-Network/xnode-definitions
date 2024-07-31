@@ -52,7 +52,7 @@
             "desc": "Specify which address to listen to.",
             "nixName": "settings.Listen",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "settings.Port",

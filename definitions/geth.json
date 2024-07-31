@@ -15,7 +15,7 @@
             "desc": "Listen address of Go Ethereum Auth RPC API.",
             "nixName": "<name>.authrpc.address",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "<name>.authrpc.enable",
@@ -29,7 +29,7 @@
             "desc": "Path to a JWT secret for authenticated RPC endpoint.",
             "nixName": "<name>.authrpc.jwtsecret",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "<name>.authrpc.port",
@@ -71,7 +71,7 @@
             "desc": "Listen address of Go Ethereum HTTP API.",
             "nixName": "<name>.http.address",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "<name>.http.apis",
@@ -106,7 +106,7 @@
             "desc": "Listen address of Go Ethereum metrics service.",
             "nixName": "<name>.metrics.address",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "<name>.metrics.enable",
@@ -155,7 +155,7 @@
             "desc": "Listen address of Go Ethereum WebSocket API.",
             "nixName": "<name>.websocket.address",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "<name>.websocket.apis",

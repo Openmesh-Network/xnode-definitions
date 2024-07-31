@@ -22,14 +22,14 @@
             "desc": "Listen address of Beacon node.",
             "nixName": "beacon.address",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "beacon.dataDir",
             "desc": "Directory where data will be stored. Each chain will be stored underit\u2019s own specific subdirectory.",
             "nixName": "beacon.dataDir",
             "type": "string",
-            "value": "\"/var/lib/lighthouse-beacon\""
+            "value": "/var/lib/lighthouse-beacon"
         },
         {
             "name": "beacon.disableDepositContractSync",
@@ -50,14 +50,14 @@
             "desc": "Listen address for the execution layer.",
             "nixName": "beacon.execution.address",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "beacon.execution.jwtPath",
             "desc": "Path for the jwt secret required to connect to the executionlayer.",
             "nixName": "beacon.execution.jwtPath",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "beacon.execution.port",
@@ -71,14 +71,14 @@
             "desc": "Additional arguments passed to the lighthouse beacon command.",
             "nixName": "beacon.extraArgs",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "beacon.http.address",
             "desc": "Listen address of Beacon node RPC service.",
             "nixName": "beacon.http.address",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "beacon.http.enable",
@@ -99,7 +99,7 @@
             "desc": "Listen address of Beacon node metrics service.",
             "nixName": "beacon.metrics.address",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "beacon.metrics.enable",
@@ -134,7 +134,7 @@
             "desc": "Additional arguments passed to every lighthouse command.",
             "nixName": "extraArgs",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "network",
@@ -162,7 +162,7 @@
             "desc": "Directory where data will be stored. Each chain will be stored underit\u2019s own specific subdirectory.",
             "nixName": "validator.dataDir",
             "type": "string",
-            "value": "\"/var/lib/lighthouse-validator\""
+            "value": "/var/lib/lighthouse-validator"
         },
         {
             "name": "validator.enable",
@@ -176,14 +176,14 @@
             "desc": "Additional arguments passed to the lighthouse validator command.",
             "nixName": "validator.extraArgs",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "validator.metrics.address",
             "desc": "Listen address of Validator node metrics service.",
             "nixName": "validator.metrics.address",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "validator.metrics.enable",

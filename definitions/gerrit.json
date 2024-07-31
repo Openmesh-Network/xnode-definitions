@@ -31,7 +31,7 @@
             "desc": "How much memory to allocate to the JVM heap",
             "nixName": "jvmHeapLimit",
             "type": "string",
-            "value": "\"1024m\""
+            "value": "1024m"
         },
         {
             "name": "jvmOpts",
@@ -52,7 +52,7 @@
             "desc": "hostname:port  to listen for HTTP traffic.  This is bound using the systemd socket activation.",
             "nixName": "listenAddress",
             "type": "string",
-            "value": "\"[::]:8080\""
+            "value": "[::]:8080"
         },
         {
             "name": "package",
@@ -80,7 +80,7 @@
             "desc": "Set a UUID that uniquely identifies the server.  This can be generated with nix-shell -p util-linux --run uuidgen .",
             "nixName": "serverId",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "settings",

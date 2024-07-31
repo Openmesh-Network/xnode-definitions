@@ -45,7 +45,7 @@
             "desc": "The group OpenSearch runs as. Should be left at default unless youhave very specific needs.",
             "nixName": "group",
             "type": "string",
-            "value": "\"opensearch\""
+            "value": "opensearch"
         },
         {
             "name": "logging",
@@ -80,14 +80,14 @@
             "desc": "The name of the cluster.",
             "nixName": "settings.\"cluster.name\"",
             "type": "string",
-            "value": "\"opensearch\""
+            "value": "opensearch"
         },
         {
             "name": "settings.\"discovery.type\"",
             "desc": "The type of discovery to use.",
             "nixName": "settings.\"discovery.type\"",
             "type": "string",
-            "value": "\"single-node\""
+            "value": "single-node"
         },
         {
             "name": "settings.\"http.port\"",
@@ -101,7 +101,7 @@
             "desc": "Which port this service should listen on.",
             "nixName": "settings.\"network.host\"",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "settings.\"plugins.security.disabled\"",
@@ -122,7 +122,7 @@
             "desc": "The user OpenSearch runs as. Should be left at default unless youhave very specific needs.",
             "nixName": "user",
             "type": "string",
-            "value": "\"opensearch\""
+            "value": "opensearch"
         }
     ]
 }

@@ -24,7 +24,7 @@
             "desc": "GitLab path for backups.",
             "nixName": "backup.path",
             "type": "string",
-            "value": "config.services.gitlab.statePath + \"/backup\""
+            "value": "config.services.gitlab.statePath + /backup"
         },
         {
             "name": "backup.skip",
@@ -59,14 +59,14 @@
             "desc": "GitLab database hostname. An empty string means \u201cuse local unixsocket connection\u201d.",
             "nixName": "databaseHost",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "databaseName",
             "desc": "GitLab database name.",
             "nixName": "databaseName",
             "type": "string",
-            "value": "\"gitlab\""
+            "value": "gitlab"
         },
         {
             "name": "databasePasswordFile",
@@ -87,7 +87,7 @@
             "desc": "GitLab database user.",
             "nixName": "databaseUsername",
             "type": "string",
-            "value": "\"gitlab\""
+            "value": "gitlab"
         },
         {
             "name": "enable",
@@ -122,7 +122,7 @@
             "desc": "Extra configuration to be placed in config/extra-gitlab.rb. This canbe used to add configuration not otherwise exposed through this module\u2019soptions.",
             "nixName": "extraGitlabRb",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "extraShellConfig",
@@ -136,7 +136,7 @@
             "desc": "Group to run gitlab and all related services.",
             "nixName": "group",
             "type": "string",
-            "value": "\"gitlab\""
+            "value": "gitlab"
         },
         {
             "name": "host",
@@ -157,7 +157,7 @@
             "desc": "Initial email address of the root account if this is a newinstall.",
             "nixName": "initialRootEmail",
             "type": "string",
-            "value": "\"admin@local.host\""
+            "value": "admin@local.host"
         },
         {
             "name": "initialRootPasswordFile",
@@ -178,7 +178,7 @@
             "desc": "How often to rotate the logs.",
             "nixName": "logrotate.frequency",
             "type": "string",
-            "value": "\"daily\""
+            "value": "daily"
         },
         {
             "name": "logrotate.keep",
@@ -234,7 +234,7 @@
             "desc": "Configuration options to set in the GitLab Pages config file.  Options containing secret data should be set to an attribute setcontaining the attribute  _secret  - a string pointing to afile containing the value the option should be set to. See the exampleto get a better picture of this: in the resulting configuration file,the  auth-client-secret  and  auth-secret  keyswill be set to the contents of the  /var/keys/auth-client-secret  and  /var/keys/auth-secret  filesrespectively.",
             "nixName": "pages.settings",
             "type": "attribute set of (null or string or signed integer or boolean or (attribute set))",
-            "value": null
+            "value": ""
         },
         {
             "name": "pages.settings.artifacts-server",
@@ -283,14 +283,14 @@
             "desc": "The domain to serve static pages on.",
             "nixName": "pages.settings.pages-domain",
             "type": "null or string",
-            "value": null
+            "value": ""
         },
         {
             "name": "pages.settings.pages-root",
             "desc": "The directory where pages are stored.",
             "nixName": "pages.settings.pages-root",
             "type": "string",
-            "value": "config.services.gitlab.extraConfig.production.shared.path + \"/pages\""
+            "value": "config.services.gitlab.extraConfig.production.shared.path + /pages"
         },
         {
             "name": "port",
@@ -325,14 +325,14 @@
             "desc": "Redis URL for all GitLab services.",
             "nixName": "redisUrl",
             "type": "string",
-            "value": "\"unix:/run/gitlab/redis.sock\""
+            "value": "unix:/run/gitlab/redis.sock"
         },
         {
             "name": "registry.certFile",
             "desc": "Path to GitLab container registry certificate.",
             "nixName": "registry.certFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "registry.defaultForProjects",
@@ -353,14 +353,14 @@
             "desc": "External address used to access registry from the internet",
             "nixName": "registry.externalAddress",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "registry.externalPort",
             "desc": "External port used to access registry from the internet",
             "nixName": "registry.externalPort",
             "type": "signed integer",
-            "value": null
+            "value": ""
         },
         {
             "name": "registry.host",
@@ -374,14 +374,14 @@
             "desc": "GitLab container registry issuer.",
             "nixName": "registry.issuer",
             "type": "string",
-            "value": "\"gitlab-issuer\""
+            "value": "gitlab-issuer"
         },
         {
             "name": "registry.keyFile",
             "desc": "Path to GitLab container registry certificate-key.",
             "nixName": "registry.keyFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "registry.package",
@@ -402,7 +402,7 @@
             "desc": "GitLab container registry service name.",
             "nixName": "registry.serviceName",
             "type": "string",
-            "value": "\"container_registry\""
+            "value": "container_registry"
         },
         {
             "name": "secrets.dbFile",
@@ -472,7 +472,7 @@
             "desc": "Address of the SMTP server for GitLab.",
             "nixName": "smtp.address",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "smtp.authentication",
@@ -486,7 +486,7 @@
             "desc": "HELO domain to use for outgoing mail.",
             "nixName": "smtp.domain",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "smtp.enable",
@@ -507,7 +507,7 @@
             "desc": "How OpenSSL checks the certificate, see  http://api.rubyonrails.org/classes/ActionMailer/Base.html",
             "nixName": "smtp.opensslVerifyMode",
             "type": "string",
-            "value": "\"peer\""
+            "value": "peer"
         },
         {
             "name": "smtp.passwordFile",
@@ -542,14 +542,14 @@
             "desc": "GitLab state directory. Configuration, repositories and logs, amongother things, are stored here.  The directory will be created automatically if it doesn\u2019t existalready. Its parent directories must be owned by either root  or the user set in  services.gitlab.user .",
             "nixName": "statePath",
             "type": "string",
-            "value": "\"/var/gitlab/state\""
+            "value": "/var/gitlab/state"
         },
         {
             "name": "user",
             "desc": "User to run gitlab and all related services.",
             "nixName": "user",
             "type": "string",
-            "value": "\"gitlab\""
+            "value": "gitlab"
         },
         {
             "name": "workhorse.config",

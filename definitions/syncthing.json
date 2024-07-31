@@ -31,7 +31,7 @@
             "desc": "The path where the settings and keys will exist.",
             "nixName": "configDir",
             "type": "path",
-            "value": "<rendered-html><ul>\n<li><p>if <code>stateVersion &gt;= 19.03</code>:</p>\n<pre><code>config.services.syncthing.dataDir + &quot;/.config/syncthing&quot;</code></pre></li>\n<li><p>otherwise:</p>\n<pre><code>config.services.syncthing.dataDir</code></pre></li>\n</ul>\n</rendered-html>"
+            "value": "config.services.syncthing.dataDir + \"/.config/syncthing\""
         },
         {
             "name": "dataDir",
@@ -66,14 +66,14 @@
             "desc": "The group to run Syncthing under. By default, a group named syncthing  will be created.",
             "nixName": "group",
             "type": "string",
-            "value": "\"syncthing\""
+            "value": "syncthing"
         },
         {
             "name": "guiAddress",
             "desc": "The address to serve the web interface at.",
             "nixName": "guiAddress",
             "type": "string",
-            "value": "\"127.0.0.1:8384\""
+            "value": "127.0.0.1:8384"
         },
         {
             "name": "key",
@@ -136,7 +136,7 @@
             "desc": "Address to listen on for relay traffic.",
             "nixName": "relay.listenAddress",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "relay.perSessionRateBps",
@@ -164,14 +164,14 @@
             "desc": "Human-readable description of the provider of the relay (you).",
             "nixName": "relay.providedBy",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "relay.statusListenAddress",
             "desc": "Address to listen on for serving the relay status API.",
             "nixName": "relay.statusListenAddress",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "relay.statusPort",
@@ -206,14 +206,14 @@
             "desc": "The device ID. See  https://docs.syncthing.net/dev/device-ids.html .",
             "nixName": "settings.devices.<name>.id",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "settings.devices.<name>.name",
             "desc": "The name of the device.",
             "nixName": "settings.devices.<name>.name",
             "type": "string",
-            "value": "\"\u2039name\u203a\""
+            "value": "\u2039name\u203a"
         },
         {
             "name": "settings.folders",
@@ -248,14 +248,14 @@
             "desc": "The ID of the folder. Must be the same on all devices.",
             "nixName": "settings.folders.<name>.id",
             "type": "string",
-            "value": "\"\u2039name\u203a\""
+            "value": "\u2039name\u203a"
         },
         {
             "name": "settings.folders.<name>.label",
             "desc": "The label of the folder.",
             "nixName": "settings.folders.<name>.label",
             "type": "string",
-            "value": "\"\u2039name\u203a\""
+            "value": "\u2039name\u203a"
         },
         {
             "name": "settings.folders.<name>.path",
@@ -283,7 +283,7 @@
             "desc": "The type of versioning. See  https://docs.syncthing.net/users/versioning.html .",
             "nixName": "settings.folders.<name>.versioning.type",
             "type": "one of \"external\", \"simple\", \"staggered\", \"trashcan\"",
-            "value": null
+            "value": ""
         },
         {
             "name": "settings.options",
@@ -346,7 +346,7 @@
             "desc": "The user to run Syncthing as. By default, a user named syncthing  will be created whose home directory is  dataDir .",
             "nixName": "user",
             "type": "string",
-            "value": "\"syncthing\""
+            "value": "syncthing"
         }
     ]
 }

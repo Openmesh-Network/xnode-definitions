@@ -38,7 +38,7 @@
             "desc": "The directory used to store all data for changedetection-io.",
             "nixName": "datastorePath",
             "type": "string",
-            "value": "\"/var/lib/changedetection-io\""
+            "value": "/var/lib/changedetection-io"
         },
         {
             "name": "enable",
@@ -59,14 +59,14 @@
             "desc": "Group account under which changedetection-io runs.",
             "nixName": "group",
             "type": "string",
-            "value": "\"changedetection-io\""
+            "value": "changedetection-io"
         },
         {
             "name": "listenAddress",
             "desc": "Address the server will listen on.",
             "nixName": "listenAddress",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "playwrightSupport",
@@ -87,7 +87,7 @@
             "desc": "User account under which changedetection-io runs.",
             "nixName": "user",
             "type": "string",
-            "value": "\"changedetection-io\""
+            "value": "changedetection-io"
         },
         {
             "name": "webDriverSupport",

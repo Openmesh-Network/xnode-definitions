@@ -349,5 +349,36 @@
                 "value": "true"
             }
         ]
+    },
+    {
+        "nixName":"syncthing",
+        "options":[
+            {
+                "name": "configDir",
+                "desc": "The path where the settings and keys will exist.",
+                "nixName": "configDir",
+                "type": "path",
+                "value": "config.services.syncthing.dataDir + \"/.config/syncthing\""
+            }
+        ]
+    },
+    {
+        "nixName":"open-webui",
+        "options":[
+            {
+                "name": "openFirewall",
+                "desc": "Whether to open the firewall for Open-WebUI.",
+                "nixName": "openFirewall",
+                "type": "boolean",
+                "value": "true"
+            },
+            {
+                "name": "host",
+                "desc": "The host address which the Open-WebUI server HTTP interface listensto.",
+                "nixName": "host",
+                "type": "string",
+                "value": "0.0.0.0"
+            }
+        ]
     }
 ]

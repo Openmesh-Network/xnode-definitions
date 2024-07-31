@@ -45,28 +45,28 @@
             "desc": "If the default user \u201cgocd-server\u201d is configured then this is theprimary group of that user.",
             "nixName": "group",
             "type": "string",
-            "value": "\"gocd-server\""
+            "value": "gocd-server"
         },
         {
             "name": "initialJavaHeapSize",
             "desc": "Specifies the initial java heap memory size for the Go.CD server\u2019sjava process.",
             "nixName": "initialJavaHeapSize",
             "type": "string",
-            "value": "\"512m\""
+            "value": "512m"
         },
         {
             "name": "listenAddress",
             "desc": "Specifies the bind address on which the Go.CD server HTTP interfacelistens.",
             "nixName": "listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "maxJavaHeapMemory",
             "desc": "Specifies the java maximum heap memory size for the Go.CD server\u2019sjava process.",
             "nixName": "maxJavaHeapMemory",
             "type": "string",
-            "value": "\"1024m\""
+            "value": "1024m"
         },
         {
             "name": "packages",
@@ -101,14 +101,14 @@
             "desc": "User the Go.CD server should execute under.",
             "nixName": "user",
             "type": "string",
-            "value": "\"gocd-server\""
+            "value": "gocd-server"
         },
         {
             "name": "workDir",
             "desc": "Specifies the working directory in which the Go.CD server javaarchive resides.",
             "nixName": "workDir",
             "type": "string",
-            "value": "\"/var/lib/go-server\""
+            "value": "/var/lib/go-server"
         }
     ]
 }

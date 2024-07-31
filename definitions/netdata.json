@@ -73,7 +73,7 @@
             "desc": "Group under which netdata runs.",
             "nixName": "group",
             "type": "string",
-            "value": "\"netdata\""
+            "value": "netdata"
         },
         {
             "name": "package",
@@ -108,7 +108,7 @@
             "desc": "User account under which netdata runs.",
             "nixName": "user",
             "type": "string",
-            "value": "\"netdata\""
+            "value": "netdata"
         }
     ]
 }

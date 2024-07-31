@@ -38,14 +38,14 @@
             "desc": "Group to run the service as",
             "nixName": "group",
             "type": "string",
-            "value": "\"headphones\""
+            "value": "headphones"
         },
         {
             "name": "host",
             "desc": "Host to listen on.",
             "nixName": "host",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "port",
@@ -59,7 +59,7 @@
             "desc": "User to run the service as",
             "nixName": "user",
             "type": "string",
-            "value": "\"headphones\""
+            "value": "headphones"
         }
     ]
 }

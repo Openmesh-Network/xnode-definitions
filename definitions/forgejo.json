@@ -17,7 +17,7 @@
             "desc": "Base directory for custom templates and other options.  If  services.forgejo.useWizard  is disabled (default),this directory will also hold secrets and the resulting  app.ini  config atruntime.",
             "nixName": "customDir",
             "type": "string",
-            "value": "\"${config.services.forgejo.stateDir}/custom\""
+            "value": "${config.services.forgejo.stateDir}/custom"
         },
         {
             "name": "database.createDatabase",
@@ -31,14 +31,14 @@
             "desc": "Database host address.",
             "nixName": "database.host",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "database.name",
             "desc": "Database name.",
             "nixName": "database.name",
             "type": "string",
-            "value": "\"forgejo\""
+            "value": "forgejo"
         },
         {
             "name": "database.passwordFile",
@@ -52,7 +52,7 @@
             "desc": "Path to the sqlite3 database file.",
             "nixName": "database.path",
             "type": "string",
-            "value": "\"${config.services.forgejo.stateDir}/data/forgejo.db\""
+            "value": "${config.services.forgejo.stateDir}/data/forgejo.db"
         },
         {
             "name": "database.port",
@@ -80,14 +80,14 @@
             "desc": "Database user.",
             "nixName": "database.user",
             "type": "string",
-            "value": "\"forgejo\""
+            "value": "forgejo"
         },
         {
             "name": "dump.backupDir",
             "desc": "Path to the directory where the dump archives will be stored.",
             "nixName": "dump.backupDir",
             "type": "string",
-            "value": "\"${config.services.forgejo.stateDir}/dump\""
+            "value": "${config.services.forgejo.stateDir}/dump"
         },
         {
             "name": "dump.enable",
@@ -108,7 +108,7 @@
             "desc": "Run a Forgejo dump at this interval. Runs by default at 04:31 everyday.  The format is described in   systemd.time(7)  .",
             "nixName": "dump.interval",
             "type": "string",
-            "value": "\"04:31\""
+            "value": "04:31"
         },
         {
             "name": "dump.type",
@@ -129,14 +129,14 @@
             "desc": "Group under which Forgejo runs.",
             "nixName": "group",
             "type": "string",
-            "value": "\"forgejo\""
+            "value": "forgejo"
         },
         {
             "name": "lfs.contentDir",
             "desc": "Where to store LFS files.",
             "nixName": "lfs.contentDir",
             "type": "string",
-            "value": "\"${config.services.forgejo.stateDir}/data/lfs\""
+            "value": "${config.services.forgejo.stateDir}/data/lfs"
         },
         {
             "name": "lfs.enable",
@@ -157,7 +157,7 @@
             "desc": "Path to the git repositories.",
             "nixName": "repositoryRoot",
             "type": "string",
-            "value": "\"${config.services.forgejo.stateDir}/repositories\""
+            "value": "${config.services.forgejo.stateDir}/repositories"
         },
         {
             "name": "secrets",
@@ -185,7 +185,7 @@
             "desc": "Root path for log files.",
             "nixName": "settings.log.ROOT_PATH",
             "type": "string",
-            "value": "\"${config.services.forgejo.stateDir}/log\""
+            "value": "${config.services.forgejo.stateDir}/log"
         },
         {
             "name": "settings.server.DISABLE_SSH",
@@ -199,7 +199,7 @@
             "desc": "Domain name of your server.",
             "nixName": "settings.server.DOMAIN",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "settings.server.HTTP_ADDR",
@@ -227,7 +227,7 @@
             "desc": "Full public URL of Forgejo server.",
             "nixName": "settings.server.ROOT_URL",
             "type": "string",
-            "value": "\"http://${config.services.forgejo.settings.server.DOMAIN}:${toString config.services.forgejo.settings.server.HTTP_PORT}/\""
+            "value": "http://${config.services.forgejo.settings.server.DOMAIN}:${toString config.services.forgejo.settings.server.HTTP_PORT}/"
         },
         {
             "name": "settings.server.SSH_PORT",
@@ -255,7 +255,7 @@
             "desc": "Forgejo data directory.",
             "nixName": "stateDir",
             "type": "string",
-            "value": "\"/var/lib/forgejo\""
+            "value": "/var/lib/forgejo"
         },
         {
             "name": "useWizard",
@@ -269,7 +269,7 @@
             "desc": "User account under which Forgejo runs.",
             "nixName": "user",
             "type": "string",
-            "value": "\"forgejo\""
+            "value": "forgejo"
         }
     ]
 }

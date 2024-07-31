@@ -17,7 +17,7 @@
             "desc": "Application name.",
             "nixName": "appName",
             "type": "string",
-            "value": "\"Gogs: Go Git Service\""
+            "value": "Gogs: Go Git Service"
         },
         {
             "name": "cookieSecure",
@@ -31,21 +31,21 @@
             "desc": "Database host address.",
             "nixName": "database.host",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "database.name",
             "desc": "Database name.",
             "nixName": "database.name",
             "type": "string",
-            "value": "\"gogs\""
+            "value": "gogs"
         },
         {
             "name": "database.password",
             "desc": "The password corresponding to  database.user . Warning: this is stored in cleartextin the Nix store! Use  database.passwordFile  instead.",
             "nixName": "database.password",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "database.passwordFile",
@@ -59,7 +59,7 @@
             "desc": "Path to the sqlite3 database file.",
             "nixName": "database.path",
             "type": "string",
-            "value": "\"${config.services.gogs.stateDir}/data/gogs.db\""
+            "value": "${config.services.gogs.stateDir}/data/gogs.db"
         },
         {
             "name": "database.port",
@@ -80,14 +80,14 @@
             "desc": "Database user.",
             "nixName": "database.user",
             "type": "string",
-            "value": "\"gogs\""
+            "value": "gogs"
         },
         {
             "name": "domain",
             "desc": "Domain name of your server.",
             "nixName": "domain",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "enable",
@@ -101,21 +101,21 @@
             "desc": "Configuration lines appended to the generated Gogs configurationfile.",
             "nixName": "extraConfig",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "group",
             "desc": "Group account under which Gogs runs.",
             "nixName": "group",
             "type": "string",
-            "value": "\"gogs\""
+            "value": "gogs"
         },
         {
             "name": "httpAddress",
             "desc": "HTTP listen address.",
             "nixName": "httpAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "httpPort",
@@ -129,21 +129,21 @@
             "desc": "Path to the git repositories.",
             "nixName": "repositoryRoot",
             "type": "string",
-            "value": "\"${config.services.gogs.stateDir}/repositories\""
+            "value": "${config.services.gogs.stateDir}/repositories"
         },
         {
             "name": "rootUrl",
             "desc": "Full public URL of Gogs server.",
             "nixName": "rootUrl",
             "type": "string",
-            "value": "\"http://localhost:3000/\""
+            "value": "http://localhost:3000/"
         },
         {
             "name": "stateDir",
             "desc": "Gogs data directory.",
             "nixName": "stateDir",
             "type": "string",
-            "value": "\"/var/lib/gogs\""
+            "value": "/var/lib/gogs"
         },
         {
             "name": "useWizard",
@@ -157,7 +157,7 @@
             "desc": "User account under which Gogs runs.",
             "nixName": "user",
             "type": "string",
-            "value": "\"gogs\""
+            "value": "gogs"
         }
     ]
 }

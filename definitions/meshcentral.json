@@ -31,7 +31,7 @@
             "desc": "Settings for MeshCentral. Refer to upstream documentation fordetails:    JSONSchema definition    simplesample configuration    complexsample configuration    Old homepagewith documentation link",
             "nixName": "settings",
             "type": "JSON value",
-            "value": null
+            "value": ""
         }
     ]
 }

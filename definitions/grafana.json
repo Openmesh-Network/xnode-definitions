@@ -71,7 +71,7 @@
             "desc": "Name of the contact point. Required.",
             "nixName": "provision.alerting.contactPoints.settings.contactPoints.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.contactPoints.settings.deleteContactPoints",
@@ -92,7 +92,7 @@
             "desc": "Unique identifier for the receiver. Required.",
             "nixName": "provision.alerting.contactPoints.settings.deleteContactPoints.*.uid",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.muteTimings.path",
@@ -127,7 +127,7 @@
             "desc": "Name of the mute time interval, must be unique. Required.",
             "nixName": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.muteTimings.settings.deleteMuteTimes.*.orgId",
@@ -148,7 +148,7 @@
             "desc": "Name of the mute time interval, must be unique. Required.",
             "nixName": "provision.alerting.muteTimings.settings.muteTimes.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.policies.path",
@@ -225,7 +225,7 @@
             "desc": "Unique identifier for the rule. Required.",
             "nixName": "provision.alerting.rules.settings.deleteRules.*.uid",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.rules.settings.groups",
@@ -239,21 +239,21 @@
             "desc": "Name of the folder the rule group will be stored in. Required.",
             "nixName": "provision.alerting.rules.settings.groups.*.folder",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.rules.settings.groups.*.interval",
             "desc": "Interval that the rule group should be evaluated at. Required.",
             "nixName": "provision.alerting.rules.settings.groups.*.interval",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.rules.settings.groups.*.name",
             "desc": "Name of the rule group. Required.",
             "nixName": "provision.alerting.rules.settings.groups.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.templates.path",
@@ -288,7 +288,7 @@
             "desc": "Name of the template, must be unique. Required.",
             "nixName": "provision.alerting.templates.settings.deleteTemplates.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.templates.settings.deleteTemplates.*.orgId",
@@ -309,14 +309,14 @@
             "desc": "Name of the template, must be unique. Required.",
             "nixName": "provision.alerting.templates.settings.templates.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.alerting.templates.settings.templates.*.template",
             "desc": "Alerting with a custom text template",
             "nixName": "provision.alerting.templates.settings.templates.*.template",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.dashboards",
@@ -358,21 +358,21 @@
             "desc": "A unique provider name.",
             "nixName": "provision.dashboards.settings.providers.*.name",
             "type": "string",
-            "value": "\"default\""
+            "value": "default"
         },
         {
             "name": "provision.dashboards.settings.providers.*.options.path",
             "desc": "Path grafana will watch for dashboards. Required when using the\u2018file\u2019 type.",
             "nixName": "provision.dashboards.settings.providers.*.options.path",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.dashboards.settings.providers.*.type",
             "desc": "Dashboard provider type.",
             "nixName": "provision.dashboards.settings.providers.*.type",
             "type": "string",
-            "value": "\"file\""
+            "value": "file"
         },
         {
             "name": "provision.datasources",
@@ -435,7 +435,7 @@
             "desc": "Name of the datasource. Required.",
             "nixName": "provision.datasources.settings.datasources.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.datasources.settings.datasources.*.secureJsonData",
@@ -449,7 +449,7 @@
             "desc": "Datasource type. Required.",
             "nixName": "provision.datasources.settings.datasources.*.type",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.datasources.settings.datasources.*.uid",
@@ -463,7 +463,7 @@
             "desc": "Url of the datasource.",
             "nixName": "provision.datasources.settings.datasources.*.url",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "provision.datasources.settings.deleteDatasources",
@@ -477,14 +477,14 @@
             "desc": "Name of the datasource to delete.",
             "nixName": "provision.datasources.settings.deleteDatasources.*.name",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.datasources.settings.deleteDatasources.*.orgId",
             "desc": "Organization ID of the datasource to delete.",
             "nixName": "provision.datasources.settings.deleteDatasources.*.orgId",
             "type": "signed integer",
-            "value": null
+            "value": ""
         },
         {
             "name": "provision.enable",
@@ -498,7 +498,7 @@
             "desc": "Grafana settings. See  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/ for available options. INI format is used.",
             "nixName": "settings",
             "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string) or a non-empty list of them)",
-            "value": null
+            "value": ""
         },
         {
             "name": "settings.analytics.check_for_plugin_updates",
@@ -568,7 +568,7 @@
             "desc": "Only applicable to MySQL or Postgres. Includes IP or hostname andport or in case of Unix sockets the path to it. For example, for MySQLrunning on the same host as Grafana: host = \"127.0.0.1:3306\"  or with Unix sockets: host = \"/var/run/mysqld/mysqld.sock\"",
             "nixName": "settings.database.host",
             "type": "string",
-            "value": "\"127.0.0.1:3306\""
+            "value": "127.0.0.1:3306"
         },
         {
             "name": "settings.database.isolation_level",
@@ -610,14 +610,14 @@
             "desc": "The name of the Grafana database.",
             "nixName": "settings.database.name",
             "type": "string",
-            "value": "\"grafana\""
+            "value": "grafana"
         },
         {
             "name": "settings.database.password",
             "desc": "The database user\u2019s password (not applicable for sqlite3 ).  Please note that the contents of this option will end up in aworld-readable Nix store. Use the file provider pointing at a reasonablysecured file in the local filesystem to work around that. Look at thedocumentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
             "nixName": "settings.database.password",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "settings.database.path",
@@ -666,7 +666,7 @@
             "desc": "The database user (not applicable for  sqlite3 ).",
             "nixName": "settings.database.user",
             "type": "string",
-            "value": "\"root\""
+            "value": "root"
         },
         {
             "name": "settings.database.wal",
@@ -694,21 +694,21 @@
             "desc": "The email of the default Grafana Admin, created on startup.",
             "nixName": "settings.security.admin_email",
             "type": "string",
-            "value": "\"admin@localhost\""
+            "value": "admin@localhost"
         },
         {
             "name": "settings.security.admin_password",
             "desc": "Default admin password. Please note that the contents of this optionwill end up in a world-readable Nix store. Use the file providerpointing at a reasonably secured file in the local filesystem to workaround that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
             "nixName": "settings.security.admin_password",
             "type": "string",
-            "value": "\"admin\""
+            "value": "admin"
         },
         {
             "name": "settings.security.admin_user",
             "desc": "Default admin username.",
             "nixName": "settings.security.admin_user",
             "type": "string",
-            "value": "\"admin\""
+            "value": "admin"
         },
         {
             "name": "settings.security.allow_embedding",
@@ -792,7 +792,7 @@
             "desc": "Secret key used for signing. Please note that the contents of thisoption will end up in a world-readable Nix store. Use the file providerpointing at a reasonably secured file in the local filesystem to workaround that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
             "nixName": "settings.security.secret_key",
             "type": "string",
-            "value": "\"SW2YcwTIb9zpOOhoPsMm\""
+            "value": "SW2YcwTIb9zpOOhoPsMm"
         },
         {
             "name": "settings.security.strict_transport_security",
@@ -862,7 +862,7 @@
             "desc": "The public facing domain name used to access grafana from abrowser.  This setting is only used in the default value of the root_url  setting. If you set the latter manually, thisoption does not have to be specified.",
             "nixName": "settings.server.domain",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "settings.server.enable_gzip",
@@ -883,7 +883,7 @@
             "desc": "Listening address.   This setting intentionally varies from upstream\u2019s default to be a bitmore secure by default.",
             "nixName": "settings.server.http_addr",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "settings.server.http_port",
@@ -904,14 +904,14 @@
             "desc": "Sets the maximum time using a duration format (5s/5m/5ms) beforetiming out read of an incoming request and closing idle connections. 0means there is no timeout for reading the request.",
             "nixName": "settings.server.read_timeout",
             "type": "string",
-            "value": "\"0\""
+            "value": "0"
         },
         {
             "name": "settings.server.root_url",
             "desc": "This is the full URL used to access Grafana from a web browser. Thisis important if you use Google or GitHub OAuth authentication (for thecallback URL to be correct).  This setting is also important if you have a reverse proxy in frontof Grafana that exposes it through a subpath. In that case add thesubpath to the end of this URL setting.",
             "nixName": "settings.server.root_url",
             "type": "string",
-            "value": "\"%(protocol)s://%(domain)s:%(http_port)s/\""
+            "value": "%(protocol)s://%(domain)s:%(http_port)s/"
         },
         {
             "name": "settings.server.router_logging",
@@ -932,7 +932,7 @@
             "desc": "Path where the socket should be created when protocol=socket . Make sure that Grafana has appropriatepermissions before you change this setting.",
             "nixName": "settings.server.socket",
             "type": "string",
-            "value": "\"/run/grafana/grafana.sock\""
+            "value": "/run/grafana/grafana.sock"
         },
         {
             "name": "settings.server.socket_gid",
@@ -946,14 +946,14 @@
             "desc": "Mode where the socket should be set when protocol=socket . Make sure that Grafana process is the fileowner before you change this setting.",
             "nixName": "settings.server.socket_mode",
             "type": "string",
-            "value": "\"0660\""
+            "value": "0660"
         },
         {
             "name": "settings.server.static_root_path",
             "desc": "Root path for static assets.",
             "nixName": "settings.server.static_root_path",
             "type": "string",
-            "value": "\"${package}/share/grafana/public\""
+            "value": "${package}/share/grafana/public"
         },
         {
             "name": "settings.smtp.cert_file",
@@ -981,21 +981,21 @@
             "desc": "Address used when sending out emails.",
             "nixName": "settings.smtp.from_address",
             "type": "string",
-            "value": "\"admin@grafana.localhost\""
+            "value": "admin@grafana.localhost"
         },
         {
             "name": "settings.smtp.from_name",
             "desc": "Name to be used as client identity for EHLO in SMTP dialog.",
             "nixName": "settings.smtp.from_name",
             "type": "string",
-            "value": "\"Grafana\""
+            "value": "Grafana"
         },
         {
             "name": "settings.smtp.host",
             "desc": "Host to connect to.",
             "nixName": "settings.smtp.host",
             "type": "string",
-            "value": "\"localhost:25\""
+            "value": "localhost:25"
         },
         {
             "name": "settings.smtp.key_file",
@@ -1009,7 +1009,7 @@
             "desc": "Password used for authentication. Please note that the contents ofthis option will end up in a world-readable Nix store. Use the fileprovider pointing at a reasonably secured file in the local filesystemto work around that. Look at the documentation for details:  https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/#file-provider",
             "nixName": "settings.smtp.password",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "settings.smtp.skip_verify",
@@ -1072,7 +1072,7 @@
             "desc": "This setting configures the default UI language, which must be asupported IETF language tag, such as  en-US .",
             "nixName": "settings.users.default_language",
             "type": "string",
-            "value": "\"en-US\""
+            "value": "en-US"
         },
         {
             "name": "settings.users.default_theme",
@@ -1093,35 +1093,35 @@
             "desc": "This is a comma-separated list of usernames. Users specified here arehidden in the Grafana UI. They are still visible to Grafanaadministrators and to themselves.",
             "nixName": "settings.users.hidden_users",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "settings.users.home_page",
             "desc": "Path to a custom home page. Users are only redirected to this if thedefault home dashboard is used. It should match a frontend route andcontain a leading slash.",
             "nixName": "settings.users.home_page",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "settings.users.login_hint",
             "desc": "Text used as placeholder text on login page for login/usernameinput.",
             "nixName": "settings.users.login_hint",
             "type": "string",
-            "value": "\"email or username\""
+            "value": "email or username"
         },
         {
             "name": "settings.users.password_hint",
             "desc": "Text used as placeholder text on login page for password input.",
             "nixName": "settings.users.password_hint",
             "type": "string",
-            "value": "\"password\""
+            "value": "password"
         },
         {
             "name": "settings.users.user_invite_max_lifetime_duration",
             "desc": "The duration in time a user invitation remains valid before expiring.This setting should be expressed as a duration. Examples: 6h  (hours),  2d  (days),  1w  (week).The minimum supported duration is  15m  (15 minutes).",
             "nixName": "settings.users.user_invite_max_lifetime_duration",
             "type": "string",
-            "value": "\"24h\""
+            "value": "24h"
         },
         {
             "name": "settings.users.verify_email_enabled",

@@ -31,7 +31,7 @@
             "desc": "The host name or IP address the server should listen to.",
             "nixName": "host",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "logbackXml",

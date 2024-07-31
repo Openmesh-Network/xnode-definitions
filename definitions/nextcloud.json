@@ -64,14 +64,14 @@
             "desc": "The full path to a file that contains the admin\u2019s password. Must bereadable by user  nextcloud . The password is set only in theinitial setup of Nextcloud by the systemd service nextcloud-setup.service .",
             "nixName": "config.adminpassFile",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "config.adminuser",
             "desc": "Username for the admin account. The username is only set during theinitial setup of Nextcloud! Since the username also acts as unique IDinternally, it cannot be changed later!",
             "nixName": "config.adminuser",
             "type": "string",
-            "value": "\"root\""
+            "value": "root"
         },
         {
             "name": "config.dbhost",
@@ -120,14 +120,14 @@
             "desc": "Create the objectstore if it does not exist.",
             "nixName": "config.objectstore.s3.autocreate",
             "type": "boolean",
-            "value": null
+            "value": ""
         },
         {
             "name": "config.objectstore.s3.bucket",
             "desc": "The name of the S3 bucket.",
             "nixName": "config.objectstore.s3.bucket",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "config.objectstore.s3.enable",
@@ -148,7 +148,7 @@
             "desc": "The access key for the S3 bucket.",
             "nixName": "config.objectstore.s3.key",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "config.objectstore.s3.port",
@@ -169,7 +169,7 @@
             "desc": "The full path to a file that contains the access secret. Must bereadable by user  nextcloud .",
             "nixName": "config.objectstore.s3.secretFile",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "config.objectstore.s3.sseCKeyFile",
@@ -253,14 +253,14 @@
             "desc": "Storage path of nextcloud.",
             "nixName": "home",
             "type": "string",
-            "value": "\"/var/lib/nextcloud\""
+            "value": "/var/lib/nextcloud"
         },
         {
             "name": "hostName",
             "desc": "FQDN for the nextcloud instance.",
             "nixName": "hostName",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "https",
@@ -274,7 +274,7 @@
             "desc": "The upload limit for files. This changes the relevant options inphp.ini and nginx if enabled.",
             "nixName": "maxUploadSize",
             "type": "string",
-            "value": "\"512M\""
+            "value": "512M"
         },
         {
             "name": "nginx.hstsMaxAge",
@@ -365,7 +365,7 @@
             "desc": "Socket path to use for notify_push",
             "nixName": "notify_push.socketPath",
             "type": "string",
-            "value": "\"/run/nextcloud-notify_push/sock\""
+            "value": "/run/nextcloud-notify_push/sock"
         },
         {
             "name": "occ",
@@ -379,7 +379,7 @@
             "desc": "Which package to use for the Nextcloud instance.",
             "nixName": "package",
             "type": "package",
-            "value": null
+            "value": ""
         },
         {
             "name": "phpExtraExtensions",
@@ -435,7 +435,7 @@
             "desc": "An  ISO3166-1  country code which replaces automatic phone-number detectionwithout a country code.  As an example, with  DE  set as the default phone region,the  +49  prefix can be omitted for phone numbers.",
             "nixName": "settings.default_phone_region",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "settings.log_type",
@@ -470,7 +470,7 @@
             "desc": "The directory where the skeleton files are located. These files willbe copied to the data directory of new users. Leave empty to not copyany skeleton files.",
             "nixName": "settings.skeletondirectory",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "settings.trusted_domains",

@@ -3,8 +3,8 @@
     "desc": "Full-stack of open-webui. open-webui is a user-friendly WebUI for LLMs (Formerly Ollama WebUI)",
     "nixName": "open-webui",
     "specs": {
-        "ram": 12000,
-        "storage": 12000
+        "ram": 400,
+        "storage": 100
     },
     "tags": [
         "LLM"
@@ -31,14 +31,14 @@
             "desc": "The host address which the Open-WebUI server HTTP interface listensto.",
             "nixName": "host",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "0.0.0.0"
         },
         {
             "name": "openFirewall",
             "desc": "Whether to open the firewall for Open-WebUI. This adds services.open-webui.port  to networking.firewall.allowedTCPPorts .",
             "nixName": "openFirewall",
             "type": "boolean",
-            "value": "false"
+            "value": "true"
         },
         {
             "name": "package",

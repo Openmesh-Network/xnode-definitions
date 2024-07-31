@@ -31,7 +31,7 @@
             "desc": "The data dir for Kubo",
             "nixName": "dataDir",
             "type": "string",
-            "value": "if versionAtLeast config.system.stateVersion \"17.09\"\nthen \"/var/lib/ipfs\"\nelse \"/var/lib/ipfs/.ipfs\"\n"
+            "value": "if versionAtLeast config.system.stateVersion 17.09\nthen /var/lib/ipfs\nelse /var/lib/ipfs/.ipfs\n"
         },
         {
             "name": "defaultMode",
@@ -73,7 +73,7 @@
             "desc": "Group under which the Kubo daemon runs",
             "nixName": "group",
             "type": "string",
-            "value": "\"ipfs\""
+            "value": "ipfs"
         },
         {
             "name": "localDiscovery",
@@ -129,14 +129,14 @@
             "desc": "Where to mount the IPFS namespace to",
             "nixName": "settings.Mounts.IPFS",
             "type": "string",
-            "value": "\"/ipfs\""
+            "value": "/ipfs"
         },
         {
             "name": "settings.Mounts.IPNS",
             "desc": "Where to mount the IPNS namespace to",
             "nixName": "settings.Mounts.IPNS",
             "type": "string",
-            "value": "\"/ipns\""
+            "value": "/ipns"
         },
         {
             "name": "startWhenNeeded",
@@ -150,7 +150,7 @@
             "desc": "User under which the Kubo daemon runs",
             "nixName": "user",
             "type": "string",
-            "value": "\"ipfs\""
+            "value": "ipfs"
         }
     ]
 }

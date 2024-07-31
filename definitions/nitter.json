@@ -31,7 +31,7 @@
             "desc": "Redis host.",
             "nixName": "cache.redisHost",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "cache.redisMaxConnections",
@@ -80,14 +80,14 @@
             "desc": "URL to a HTTP/HTTPS proxy.",
             "nixName": "config.proxy",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "config.proxyAuth",
             "desc": "Credentials for proxy.",
             "nixName": "config.proxyAuth",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "config.tokenCount",
@@ -206,21 +206,21 @@
             "desc": "Replace Reddit links with links to this instance (blank todisable).",
             "nixName": "preferences.replaceReddit",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "preferences.replaceTwitter",
             "desc": "Replace Twitter links with links to this instance (blank todisable).",
             "nixName": "preferences.replaceTwitter",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "preferences.replaceYouTube",
             "desc": "Replace YouTube links with links to this instance (blank todisable).",
             "nixName": "preferences.replaceYouTube",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "preferences.squareAvatars",
@@ -241,7 +241,7 @@
             "desc": "Instance theme.",
             "nixName": "preferences.theme",
             "type": "string",
-            "value": "\"Nitter\""
+            "value": "Nitter"
         },
         {
             "name": "redisCreateLocally",
@@ -255,14 +255,14 @@
             "desc": "The address to listen on.",
             "nixName": "server.address",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "server.hostname",
             "desc": "Hostname of the instance.",
             "nixName": "server.hostname",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "server.httpMaxConnections",
@@ -297,7 +297,7 @@
             "desc": "Title of the instance.",
             "nixName": "server.title",
             "type": "string",
-            "value": "\"nitter\""
+            "value": "nitter"
         },
         {
             "name": "settings",

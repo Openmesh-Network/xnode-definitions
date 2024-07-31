@@ -29,14 +29,14 @@
             "desc": "Database host address.",
             "nixName": "sites.<name>.database.host",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "sites.<name>.database.name",
             "desc": "Database name.",
             "nixName": "sites.<name>.database.name",
             "type": "string",
-            "value": "\"wordpress\""
+            "value": "wordpress"
         },
         {
             "name": "sites.<name>.database.passwordFile",
@@ -64,14 +64,14 @@
             "desc": "The $table_prefix is the value placed in the front of your databasetables. Change the value if you want to use something other than wp_ foryour database prefix. Typically this is changed if you are installingmultiple WordPress blogs in the same database.  See  https://codex.wordpress.org/Editing_wp-config.php#table_prefix .",
             "nixName": "sites.<name>.database.tablePrefix",
             "type": "string",
-            "value": "\"wp_\""
+            "value": "wp_"
         },
         {
             "name": "sites.<name>.database.user",
             "desc": "Database user.",
             "nixName": "sites.<name>.database.user",
             "type": "string",
-            "value": "\"wordpress\""
+            "value": "wordpress"
         },
         {
             "name": "sites.<name>.extraConfig",
@@ -148,7 +148,7 @@
             "desc": "Apache configuration can be done by adapting  services.httpd.virtualHosts .",
             "nixName": "sites.<name>.virtualHost",
             "type": "submodule",
-            "value": null
+            "value": ""
         },
         {
             "name": "sites.<name>.virtualHost.acmeRoot",
@@ -218,7 +218,7 @@
             "desc": "Canonical hostname for the server.",
             "nixName": "sites.<name>.virtualHost.hostName",
             "type": "string",
-            "value": "\"\u2039name\u203a\""
+            "value": "\u2039name\u203a"
         },
         {
             "name": "sites.<name>.virtualHost.http2",
@@ -239,14 +239,14 @@
             "desc": "IP to listen on. 0.0.0.0 for IPv4 only, * for all.",
             "nixName": "sites.<name>.virtualHost.listen.*.ip",
             "type": "string",
-            "value": "\"*\""
+            "value": "*"
         },
         {
             "name": "sites.<name>.virtualHost.listen.*.port",
             "desc": "Port to listen on",
             "nixName": "sites.<name>.virtualHost.listen.*.port",
             "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
-            "value": null
+            "value": ""
         },
         {
             "name": "sites.<name>.virtualHost.listen.*.ssl",
@@ -309,7 +309,7 @@
             "desc": "Log format for Apache\u2019s log files. Possible values are: combined,common, referer, agent.",
             "nixName": "sites.<name>.virtualHost.logFormat",
             "type": "string",
-            "value": "\"common\""
+            "value": "common"
         },
         {
             "name": "sites.<name>.virtualHost.onlySSL",
@@ -351,7 +351,7 @@
             "desc": "Path to server SSL certificate.",
             "nixName": "sites.<name>.virtualHost.sslServerCert",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "sites.<name>.virtualHost.sslServerChain",
@@ -365,7 +365,7 @@
             "desc": "Path to server SSL certificate key.",
             "nixName": "sites.<name>.virtualHost.sslServerKey",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "sites.<name>.virtualHost.useACMEHost",

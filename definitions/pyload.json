@@ -36,14 +36,14 @@
             "desc": "Group under which pyLoad runs, and which owns the downloaddirectory.",
             "nixName": "group",
             "type": "string",
-            "value": "\"pyload\""
+            "value": "pyload"
         },
         {
             "name": "listenAddress",
             "desc": "Address to listen on for the web UI.",
             "nixName": "listenAddress",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "package",
@@ -64,7 +64,7 @@
             "desc": "User under which pyLoad runs, and which owns the downloaddirectory.",
             "nixName": "user",
             "type": "string",
-            "value": "\"pyload\""
+            "value": "pyload"
         }
     ]
 }

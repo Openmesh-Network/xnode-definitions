@@ -1,6 +1,6 @@
 {
-    "name": "python3",
-    "desc": "<rendered-html><p>Python is a remarkably powerful dynamic programming language that is\nused in a wide variety of application domains. Some of its key\ndistinguishing features include: clear, readable syntax; strong\nintrospection capabilities; intuitive object orientation; natural\nexpression of procedural code; full modularity, supporting hierarchical\npackages; exception-based error handling; and very high level dynamic\ndata types.</p>\n</rendered-html>",
+    "name": "Jupyter Notebook",
+    "desc": "Web-based notebook environment for interactive computing",
     "nixName": "jupyter",
     "specs": [],
     "tags": [],

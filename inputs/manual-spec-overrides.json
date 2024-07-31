@@ -695,8 +695,8 @@
     {
         "nixName": "open-webui",
         "specs": {
-            "ram": 12000,
-            "storage": 12000
+            "ram": 400,
+            "storage": 100
         }
     },
     {

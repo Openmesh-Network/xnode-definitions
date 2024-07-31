@@ -73,14 +73,14 @@
             "desc": "The group to run openvscode-server under. By default, a group named openvscode-server  will be created.",
             "nixName": "group",
             "type": "string",
-            "value": "\"openvscode-server\""
+            "value": "openvscode-server"
         },
         {
             "name": "host",
             "desc": "The host name or IP address the server should listen to.",
             "nixName": "host",
             "type": "string",
-            "value": "\"localhost\""
+            "value": "localhost"
         },
         {
             "name": "package",
@@ -122,7 +122,7 @@
             "desc": "The user to run openvscode-server as. By default, a user named openvscode-server  will be created.",
             "nixName": "user",
             "type": "string",
-            "value": "\"openvscode-server\""
+            "value": "openvscode-server"
         },
         {
             "name": "userDataDir",

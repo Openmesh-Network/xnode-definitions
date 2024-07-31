@@ -38,7 +38,7 @@
             "desc": "Set the device preferred hostname. This provides a hint to the serverto use this as hostname if it is available.",
             "nixName": "preferredHostname",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "privateKey",
@@ -52,14 +52,14 @@
             "desc": "Server address of ShellHub Gateway to connect.",
             "nixName": "server",
             "type": "string",
-            "value": "\"https://cloud.shellhub.io\""
+            "value": "https://cloud.shellhub.io"
         },
         {
             "name": "tenantId",
             "desc": "The tenant ID to use when connecting to the ShellHub Gateway.",
             "nixName": "tenantId",
             "type": "string",
-            "value": null
+            "value": ""
         }
     ]
 }

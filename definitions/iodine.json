@@ -24,35 +24,35 @@
             "desc": "Additional command line parameters",
             "nixName": "clients.<name>.extraConfig",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "clients.<name>.passwordFile",
             "desc": "Path to a file containing the password.",
             "nixName": "clients.<name>.passwordFile",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "clients.<name>.relay",
             "desc": "DNS server to use as an intermediate relay to the iodined server",
             "nixName": "clients.<name>.relay",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "clients.<name>.server",
             "desc": "Hostname of server running iodined",
             "nixName": "clients.<name>.server",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "server.domain",
             "desc": "Domain or subdomain of which nameservers point to us",
             "nixName": "server.domain",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "server.enable",
@@ -66,21 +66,21 @@
             "desc": "Additional command line parameters",
             "nixName": "server.extraConfig",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "server.ip",
             "desc": "The assigned ip address or ip range",
             "nixName": "server.ip",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "server.passwordFile",
             "desc": "File that contains password",
             "nixName": "server.passwordFile",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         }
     ]
 }

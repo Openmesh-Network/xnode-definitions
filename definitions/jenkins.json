@@ -52,7 +52,7 @@
             "desc": "If the default user \u201cjenkins\u201d is configured then this is the primarygroup of that user.",
             "nixName": "group",
             "type": "string",
-            "value": "\"jenkins\""
+            "value": "jenkins"
         },
         {
             "name": "home",
@@ -66,21 +66,21 @@
             "desc": "User token in Jenkins used to reload config. WARNING: This token willbe world readable in the Nix store. To keep it secret, use the  accessTokenFile  optioninstead.",
             "nixName": "jobBuilder.accessToken",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "jobBuilder.accessTokenFile",
             "desc": "File containing the API token for the  accessUser  user.",
             "nixName": "jobBuilder.accessTokenFile",
             "type": "string",
-            "value": "\"${config.services.jenkins.home}/secrets/initialAdminPassword\""
+            "value": "${config.services.jenkins.home}/secrets/initialAdminPassword"
         },
         {
             "name": "jobBuilder.accessUser",
             "desc": "User id in Jenkins used to reload config.",
             "nixName": "jobBuilder.accessUser",
             "type": "string",
-            "value": "\"admin\""
+            "value": "admin"
         },
         {
             "name": "jobBuilder.enable",
@@ -115,7 +115,7 @@
             "desc": "Specifies the bind address on which the jenkins HTTP interfacelistens. The default is the wildcard address.",
             "nixName": "listenAddress",
             "type": "string",
-            "value": "\"0.0.0.0\""
+            "value": "0.0.0.0"
         },
         {
             "name": "package",
@@ -150,14 +150,14 @@
             "desc": "Specifies a urlPrefix to use with jenkins. If the example /jenkins isgiven, the jenkins server will be accessible usinglocalhost:8080/jenkins.",
             "nixName": "prefix",
             "type": "string",
-            "value": "\"\""
+            "value": ""
         },
         {
             "name": "user",
             "desc": "User the jenkins server should execute under.",
             "nixName": "user",
             "type": "string",
-            "value": "\"jenkins\""
+            "value": "jenkins"
         },
         {
             "name": "withCLI",

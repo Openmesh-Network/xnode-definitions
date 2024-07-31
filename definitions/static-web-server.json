@@ -31,14 +31,14 @@
             "desc": "The \u201cListenStream\u201d used in static-web-server.socket. This isequivalent to SWS\u2019s \u201chost\u201d and \u201cport\u201d options. See here for specificsyntax:  https://www.freedesktop.org/software/systemd/man/systemd.socket.html#ListenStream=",
             "nixName": "listen",
             "type": "string",
-            "value": "\"[::]:8787\""
+            "value": "[::]:8787"
         },
         {
             "name": "root",
             "desc": "The location of files for SWS to serve. Equivalent to SWS\u2019s \u201croot\u201dconfig value. NOTE: This folder must exist before starting SWS.",
             "nixName": "root",
             "type": "path",
-            "value": null
+            "value": ""
         }
     ]
 }

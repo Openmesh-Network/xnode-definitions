@@ -21,6 +21,11 @@ def create_module_definitions(option_list):
 
         if option['nixName'] == 'enable':
             option['value'] = 'true'
+        if option['type'] == 'string' and option['value'] is not None and '\"' in option['value']:
+            option['value'] = option['value'].replace('\"','')
+        if option['value'] is None:
+            print("Setting", option_name, "to empty string")
+            option['value'] = ''
 
         if module_name in modules:
             for mod_def in module_definitions:

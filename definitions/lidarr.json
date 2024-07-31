@@ -17,7 +17,7 @@
             "desc": "The directory where Lidarr stores its data files.",
             "nixName": "dataDir",
             "type": "string",
-            "value": "\"/var/lib/lidarr/.config/Lidarr\""
+            "value": "/var/lib/lidarr/.config/Lidarr"
         },
         {
             "name": "enable",
@@ -31,7 +31,7 @@
             "desc": "Group under which Lidarr runs.",
             "nixName": "group",
             "type": "string",
-            "value": "\"lidarr\""
+            "value": "lidarr"
         },
         {
             "name": "openFirewall",
@@ -52,7 +52,7 @@
             "desc": "User account under which Lidarr runs.",
             "nixName": "user",
             "type": "string",
-            "value": "\"lidarr\""
+            "value": "lidarr"
         }
     ]
 }

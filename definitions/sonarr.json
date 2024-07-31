@@ -17,7 +17,7 @@
             "desc": "The directory where Sonarr stores its data files.",
             "nixName": "dataDir",
             "type": "string",
-            "value": "\"/var/lib/sonarr/.config/NzbDrone\""
+            "value": "/var/lib/sonarr/.config/NzbDrone"
         },
         {
             "name": "enable",
@@ -31,7 +31,7 @@
             "desc": "Group under which Sonaar runs.",
             "nixName": "group",
             "type": "string",
-            "value": "\"sonarr\""
+            "value": "sonarr"
         },
         {
             "name": "openFirewall",
@@ -52,7 +52,7 @@
             "desc": "User account under which Sonaar runs.",
             "nixName": "user",
             "type": "string",
-            "value": "\"sonarr\""
+            "value": "sonarr"
         }
     ]
 }

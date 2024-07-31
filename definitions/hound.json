@@ -24,7 +24,7 @@
             "desc": "Group the hound daemon should execute under.",
             "nixName": "group",
             "type": "string",
-            "value": "\"hound\""
+            "value": "hound"
         },
         {
             "name": "home",
@@ -38,7 +38,7 @@
             "desc": "Listen on this [IP]:port",
             "nixName": "listen",
             "type": "string",
-            "value": "\"0.0.0.0:6080\""
+            "value": "0.0.0.0:6080"
         },
         {
             "name": "package",
@@ -52,14 +52,14 @@
             "desc": "The full configuration of the Hound daemon. See the upstreamdocumentation  https://github.com/hound-search/hound/blob/main/docs/config-options.md for details.   The  dbpath  should be an absolute path to a writabledirectory.",
             "nixName": "settings",
             "type": "JSON value",
-            "value": null
+            "value": ""
         },
         {
             "name": "user",
             "desc": "User the hound daemon should execute under.",
             "nixName": "user",
             "type": "string",
-            "value": "\"hound\""
+            "value": "hound"
         }
     ]
 }

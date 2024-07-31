@@ -38,14 +38,14 @@
             "desc": "The home directory that the ollama service is started in.  See also  services.ollama.writablePaths  and services.ollama.sandbox .",
             "nixName": "home",
             "type": "string",
-            "value": "\"%S/ollama\""
+            "value": "%S/ollama"
         },
         {
             "name": "host",
             "desc": "The host address which the ollama server HTTP interface listensto.",
             "nixName": "host",
             "type": "string",
-            "value": "\"127.0.0.1\""
+            "value": "127.0.0.1"
         },
         {
             "name": "loadModels",
@@ -59,7 +59,7 @@
             "desc": "The directory that the ollama service will read models from anddownload new models to.  See also  services.ollama.writablePaths  and services.ollama.sandbox  if downloading models or othermutation of the filesystem is required.",
             "nixName": "models",
             "type": "string",
-            "value": "\"%S/ollama/models\""
+            "value": "%S/ollama/models"
         },
         {
             "name": "openFirewall",

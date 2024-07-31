@@ -17,7 +17,7 @@
             "desc": "Sets the admin api key for typesense. Always use this option insteadof  settings.server.api-key  to prevent the key frombeing written to the world-readable nix store.",
             "nixName": "apiKeyFile",
             "type": "path",
-            "value": null
+            "value": ""
         },
         {
             "name": "enable",
@@ -45,7 +45,7 @@
             "desc": "Address to which Typesense API service binds.",
             "nixName": "settings.server.api-address",
             "type": "string",
-            "value": null
+            "value": ""
         },
         {
             "name": "settings.server.api-port",
@@ -59,7 +59,7 @@
             "desc": "Path to the directory where data will be stored on disk.",
             "nixName": "settings.server.data-dir",
             "type": "string",
-            "value": "\"/var/lib/typesense\""
+            "value": "/var/lib/typesense"
         }
     ]
 }
