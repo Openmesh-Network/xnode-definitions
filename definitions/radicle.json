@@ -1,0 +1,455 @@
+{
+    "name": "radicle-httpd",
+    "desc": "A Radicle HTTP daemon exposing a JSON HTTP API that allows someone to browse local repositories on a Radicle node via their web browser.",
+    "nixName": "radicle",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "tags": [],
+    "website": "https://radicle.xyz",
+    "logo": "",
+    "options": [
+        {
+            "name": "checkConfig",
+            "desc": "Whether to enable checking the config.json file resulting from services.radicle.settings.",
+            "nixName": "checkConfig",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Radicle Seed Node.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "httpd.enable",
+            "desc": "Whether to enable Radicle HTTP gateway to radicle-node.",
+            "nixName": "httpd.enable",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.extraArgs",
+            "desc": "Extra arguments for radicle-httpd",
+            "nixName": "httpd.extraArgs",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "httpd.listenAddress",
+            "desc": "The IP address on which radicle-httpd listens.",
+            "nixName": "httpd.listenAddress",
+            "type": "string",
+            "value": "127.0.0.1"
+        },
+        {
+            "name": "httpd.listenPort",
+            "desc": "The port on which radicle-httpd listens.",
+            "nixName": "httpd.listenPort",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8080"
+        },
+        {
+            "name": "httpd.nginx",
+            "desc": "With this option, you can customize an nginx virtual host which already has sensible defaults for radicle-httpd. Set to {} if you do not need any customization to the virtual host. If enabled, then by default, the serverName is radicle-${config.networking.hostName}.${config.networking.domain}, TLS is active, and certificates are acquired via ACME. If this is set to null (the default), no nginx virtual host will be configured.",
+            "nixName": "httpd.nginx",
+            "type": "null or (submodule)",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.acmeFallbackHost",
+            "desc": "Host which to proxy requests to if ACME challenge is not found. Useful if you want multiple hosts to be able to verify the same domain name. With this option, you could request certificates for the present domain with an ACME client that is running on another host, which you would specify here.",
+            "nixName": "httpd.nginx.acmeFallbackHost",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.acmeRoot",
+            "desc": "Directory for the ACME challenge, which is public. Don\u2019t put certs or keys in here. Set to null to inherit from config.security.acme.",
+            "nixName": "httpd.nginx.acmeRoot",
+            "type": "null or string",
+            "value": "\"/var/lib/acme/acme-challenge\""
+        },
+        {
+            "name": "httpd.nginx.addSSL",
+            "desc": "Whether to enable HTTPS in addition to plain HTTP. This will set defaults for listen to listen on all interfaces on the respective default ports (80, 443).",
+            "nixName": "httpd.nginx.addSSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.basicAuth",
+            "desc": "Basic Auth protection for a vhost. WARNING: This is implemented to store the password in plain text in the Nix store.",
+            "nixName": "httpd.nginx.basicAuth",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "httpd.nginx.basicAuthFile",
+            "desc": "Basic Auth password file for a vhost. Can be created via: htpasswd -c <filename> <username>. WARNING: The generate file contains the users\u2019 passwords in a non-cryptographically-securely hashed way.",
+            "nixName": "httpd.nginx.basicAuthFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.default",
+            "desc": "Makes this vhost the default.",
+            "nixName": "httpd.nginx.default",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.enableACME",
+            "desc": "Whether to ask Let\u2019s Encrypt to sign a certificate for this vhost. Alternately, you can use an existing certificate through useACMEHost.",
+            "nixName": "httpd.nginx.enableACME",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.extraConfig",
+            "desc": "These lines go to the end of the vhost verbatim.",
+            "nixName": "httpd.nginx.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "httpd.nginx.forceSSL",
+            "desc": "Whether to add a separate nginx server block that redirects (defaults to 301, configurable with redirectCode) all plain HTTP traffic to HTTPS. This will set defaults for listen to listen on all interfaces on the respective default ports (80, 443), where the non-SSL listens are used for the redirect vhosts.",
+            "nixName": "httpd.nginx.forceSSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.globalRedirect",
+            "desc": "If set, all requests for this host are redirected (defaults to 301, configurable with redirectCode) to the given hostname.",
+            "nixName": "httpd.nginx.globalRedirect",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.http2",
+            "desc": "Whether to enable the HTTP/2 protocol. Note that (as of writing) due to nginx\u2019s implementation, to disable HTTP/2 you have to disable it on all vhosts that use a given IP address / port. If there is one server block configured to enable http2, then it is enabled for all server blocks on this IP. See https://stackoverflow.com/a/39466948/263061.",
+            "nixName": "httpd.nginx.http2",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "httpd.nginx.http3",
+            "desc": "Whether to enable the HTTP/3 protocol. This requires using pkgs.nginxQuic package which can be achieved by setting services.nginx.package = pkgs.nginxQuic; and activate the QUIC transport protocol services.nginx.virtualHosts.<name>.quic = true;. Note that HTTP/3 support is experimental and not yet recommended for production. Read more at https://quic.nginx.org/ HTTP/3 availability must be manually advertised, preferably in each location block.",
+            "nixName": "httpd.nginx.http3",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "httpd.nginx.http3_hq",
+            "desc": "Whether to enable the HTTP/0.9 protocol negotiation used in QUIC interoperability tests. This requires using pkgs.nginxQuic package which can be achieved by setting services.nginx.package = pkgs.nginxQuic; and activate the QUIC transport protocol services.nginx.virtualHosts.<name>.quic = true;. Note that special application protocol support is experimental and not yet recommended for production. Read more at https://quic.nginx.org/",
+            "nixName": "httpd.nginx.http3_hq",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.kTLS",
+            "desc": "Whether to enable kTLS support. Implementing TLS in the kernel (kTLS) improves performance by significantly reducing the need for copying operations between user space and the kernel. Required Nginx version 1.21.4 or later.",
+            "nixName": "httpd.nginx.kTLS",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.listen",
+            "desc": "Listen addresses and ports for this virtual host. IPv6 addresses must be enclosed in square brackets. Note: this option overrides addSSL and onlySSL. If you only want to set the addresses manually and not the ports, take a look at listenAddresses.",
+            "nixName": "httpd.nginx.listen",
+            "type": "list of (submodule)",
+            "value": "[ ]"
+        },
+        {
+            "name": "httpd.nginx.listen.*.addr",
+            "desc": "Listen address.",
+            "nixName": "httpd.nginx.listen.*.addr",
+            "type": "string",
+            "value": ""
+        },
+        {
+            "name": "httpd.nginx.listen.*.extraParameters",
+            "desc": "Extra parameters of this listen directive.",
+            "nixName": "httpd.nginx.listen.*.extraParameters",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "httpd.nginx.listen.*.port",
+            "desc": "Port number to listen on. If unset and the listen address is not a socket then nginx defaults to 80.",
+            "nixName": "httpd.nginx.listen.*.port",
+            "type": "null or 16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.listen.*.proxyProtocol",
+            "desc": "Enable PROXY protocol.",
+            "nixName": "httpd.nginx.listen.*.proxyProtocol",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.listen.*.ssl",
+            "desc": "Enable SSL.",
+            "nixName": "httpd.nginx.listen.*.ssl",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.listenAddresses",
+            "desc": "Listen addresses for this virtual host. Compared to listen this only sets the addresses and the ports are chosen automatically. Note: This option overrides enableIPv6",
+            "nixName": "httpd.nginx.listenAddresses",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "httpd.nginx.locations",
+            "desc": "Declarative location config",
+            "nixName": "httpd.nginx.locations",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.alias",
+            "desc": "Alias directory for requests.",
+            "nixName": "httpd.nginx.locations.<name>.alias",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.basicAuth",
+            "desc": "Basic Auth protection for a vhost. WARNING: This is implemented to store the password in plain text in the Nix store.",
+            "nixName": "httpd.nginx.locations.<name>.basicAuth",
+            "type": "attribute set of string",
+            "value": "{ }"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.basicAuthFile",
+            "desc": "Basic Auth password file for a vhost. Can be created via: htpasswd -c <filename> <username>. WARNING: The generate file contains the users\u2019 passwords in a non-cryptographically-securely hashed way.",
+            "nixName": "httpd.nginx.locations.<name>.basicAuthFile",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.extraConfig",
+            "desc": "These lines go to the end of the location verbatim.",
+            "nixName": "httpd.nginx.locations.<name>.extraConfig",
+            "type": "strings concatenated with \"\\n\"",
+            "value": "\"\""
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.fastcgiParams",
+            "desc": "FastCGI parameters to override. Unlike in the Nginx configuration file, overriding only some default parameters won\u2019t unset the default values for other parameters.",
+            "nixName": "httpd.nginx.locations.<name>.fastcgiParams",
+            "type": "attribute set of (string or path)",
+            "value": "{ }"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.index",
+            "desc": "Adds index directive.",
+            "nixName": "httpd.nginx.locations.<name>.index",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.priority",
+            "desc": "Order of this location block in relation to the others in the vhost. The semantics are the same as with lib.mkOrder. Smaller values have a greater priority.",
+            "nixName": "httpd.nginx.locations.<name>.priority",
+            "type": "signed integer",
+            "value": "1000"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.proxyPass",
+            "desc": "Adds proxy_pass directive and sets recommended proxy headers if recommendedProxySettings is enabled.",
+            "nixName": "httpd.nginx.locations.<name>.proxyPass",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.proxyWebsockets",
+            "desc": "Whether to support proxying websocket connections with HTTP/1.1.",
+            "nixName": "httpd.nginx.locations.<name>.proxyWebsockets",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.recommendedProxySettings",
+            "desc": "Enable recommended proxy settings.",
+            "nixName": "httpd.nginx.locations.<name>.recommendedProxySettings",
+            "type": "boolean",
+            "value": "config.services.nginx.recommendedProxySettings"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.return",
+            "desc": "Adds a return directive, for e.g. redirections.",
+            "nixName": "httpd.nginx.locations.<name>.return",
+            "type": "null or string or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.root",
+            "desc": "Root directory for requests.",
+            "nixName": "httpd.nginx.locations.<name>.root",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.locations.<name>.tryFiles",
+            "desc": "Adds try_files directive.",
+            "nixName": "httpd.nginx.locations.<name>.tryFiles",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.onlySSL",
+            "desc": "Whether to enable HTTPS and reject plain HTTP connections. This will set defaults for listen to listen on all interfaces on port 443.",
+            "nixName": "httpd.nginx.onlySSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.quic",
+            "desc": "Whether to enable the QUIC transport protocol. This requires using pkgs.nginxQuic package which can be achieved by setting services.nginx.package = pkgs.nginxQuic;. Note that QUIC support is experimental and not yet recommended for production. Read more at https://quic.nginx.org/",
+            "nixName": "httpd.nginx.quic",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.redirectCode",
+            "desc": "HTTP status used by globalRedirect and forceSSL. Possible usecases include temporary (302, 307) redirects, keeping the request method and body (307, 308), or explicitly resetting the method to GET (303). See https://developer.mozilla.org/en-US/docs/Web/HTTP/Redirections.",
+            "nixName": "httpd.nginx.redirectCode",
+            "type": "integer between 300 and 399 (both inclusive)",
+            "value": "301"
+        },
+        {
+            "name": "httpd.nginx.rejectSSL",
+            "desc": "Whether to listen for and reject all HTTPS connections to this vhost. Useful in default server blocks to avoid serving the certificate for another vhost. Uses the ssl_reject_handshake directive available in nginx versions 1.19.4 and above.",
+            "nixName": "httpd.nginx.rejectSSL",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.reuseport",
+            "desc": "Create an individual listening socket . It is required to specify only once on one of the hosts.",
+            "nixName": "httpd.nginx.reuseport",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "httpd.nginx.root",
+            "desc": "The path of the web root directory.",
+            "nixName": "httpd.nginx.root",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.serverAliases",
+            "desc": "Additional names of virtual hosts served by this virtual host configuration.",
+            "nixName": "httpd.nginx.serverAliases",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "httpd.nginx.serverName",
+            "desc": "Name of this virtual host. Defaults to attribute name in virtualHosts.",
+            "nixName": "httpd.nginx.serverName",
+            "type": "null or string",
+            "value": "\"radicle-\\${config.networking.hostName}.\\${config.networking.domain}\""
+        },
+        {
+            "name": "httpd.nginx.sslCertificate",
+            "desc": "Path to server SSL certificate.",
+            "nixName": "httpd.nginx.sslCertificate",
+            "type": "path",
+            "value": ""
+        },
+        {
+            "name": "httpd.nginx.sslCertificateKey",
+            "desc": "Path to server SSL certificate key.",
+            "nixName": "httpd.nginx.sslCertificateKey",
+            "type": "path",
+            "value": ""
+        },
+        {
+            "name": "httpd.nginx.sslTrustedCertificate",
+            "desc": "Path to root SSL certificate for stapling and client certificates.",
+            "nixName": "httpd.nginx.sslTrustedCertificate",
+            "type": "null or path",
+            "value": "null"
+        },
+        {
+            "name": "httpd.nginx.useACMEHost",
+            "desc": "A host of an existing Let\u2019s Encrypt certificate to use. This is useful if you have many subdomains and want to avoid hitting the rate limit. Alternately, you can generate a certificate through enableACME. Note that this option does not create any certificates, nor it does add subdomains to existing ones \u2013 you will need to create them manually using security.acme.certs.",
+            "nixName": "httpd.nginx.useACMEHost",
+            "type": "null or string",
+            "value": "null"
+        },
+        {
+            "name": "httpd.package",
+            "desc": "The radicle-httpd package to use.",
+            "nixName": "httpd.package",
+            "type": "package",
+            "value": "pkgs.radicle-httpd"
+        },
+        {
+            "name": "node.extraArgs",
+            "desc": "Extra arguments for radicle-node",
+            "nixName": "node.extraArgs",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "node.listenAddress",
+            "desc": "The IP address on which radicle-node listens.",
+            "nixName": "node.listenAddress",
+            "type": "string",
+            "value": "0.0.0.0"
+        },
+        {
+            "name": "node.listenPort",
+            "desc": "The port on which radicle-node listens.",
+            "nixName": "node.listenPort",
+            "type": "16 bit unsigned integer; between 0 and 65535 (both inclusive)",
+            "value": "8776"
+        },
+        {
+            "name": "node.openFirewall",
+            "desc": "Whether to enable opening the firewall for radicle-node.",
+            "nixName": "node.openFirewall",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "package",
+            "desc": "The radicle-node package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.radicle-node"
+        },
+        {
+            "name": "privateKeyFile",
+            "desc": "SSH private key generated by rad auth. If it contains a colon (:) the string before the colon is taken as the credential name and the string after as a path encrypted with systemd-creds.",
+            "nixName": "privateKeyFile",
+            "type": "path or string",
+            "value": ""
+        },
+        {
+            "name": "publicKeyFile",
+            "desc": "SSH public key generated by rad auth.",
+            "nixName": "publicKeyFile",
+            "type": "path or string",
+            "value": ""
+        },
+        {
+            "name": "settings",
+            "desc": "See https://app.radicle.xyz/nodes/seed.radicle.garden/rad:z3gqcJUoA1n9HaHKufZs5FCSGazv5/tree/radicle/src/node/config.rs#L275",
+            "nixName": "settings",
+            "type": "JSON value",
+            "value": "{ }"
+        }
+    ]
+}

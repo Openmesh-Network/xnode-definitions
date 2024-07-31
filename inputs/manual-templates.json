@@ -1597,5 +1597,43 @@
      "quality": false,
      "implementation": false,
      "isUnitRunnable": true
+  },
+  {
+     "id": "89",
+     "logo": "https://www.tarsnap.com/images/favicon-128.png",
+     "name": "Tarsnap",
+     "category": "Data Preservation",
+     "tags": [
+        "Data Management",
+        "Data Backup",
+        "Open-source"
+     ],
+     "dateAdded": "2024-07-30T12:00:00Z",
+     "desc": "Online backups for the truly paranoid",
+     "serviceNames": [
+        "tarsnap"
+     ],
+     "quality": false,
+     "implementation": false,
+     "isUnitRunnable": true
+  },
+  {
+    "id": "90",
+    "logo": "https://www.seafile.com/media/img/favicon.png?t=3%22",
+    "name": "Seafile",
+    "category": "File Synchronization",
+    "tags": [
+      "Data Management",
+      "File Sharing",
+      "Open-source"
+    ],
+    "dateAdded": "2024-07-30T12:00:00Z",
+    "desc": "File syncing and sharing software with file encryption and group sharing, emphasis on reliability and high performance",
+    "serviceNames": [
+      "seafile"
+    ],
+    "quality": false,
+    "implementation": true,
+    "isUnitRunnable": true
   }
 ]

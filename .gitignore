@@ -1,4 +1,4 @@
 *cpython*
 Discovery/data
-definitions
-*.json
+#definitions
+#*.json

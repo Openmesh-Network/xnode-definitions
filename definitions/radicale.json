@@ -1,0 +1,56 @@
+{
+    "name": "radicale",
+    "desc": "CalDAV and CardDAV server",
+    "nixName": "radicale",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "tags": [],
+    "website": "https://radicale.org/v3.html",
+    "logo": "",
+    "options": [
+        {
+            "name": "config",
+            "desc": "Radicale configuration, this will set the service configuration file. This option is mutually exclusive with settings. This option is deprecated. Use settings instead.",
+            "nixName": "config",
+            "type": "string",
+            "value": ""
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable Radicale CalDAV and CardDAV server.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "extraArgs",
+            "desc": "Extra arguments passed to the Radicale daemon.",
+            "nixName": "extraArgs",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "package",
+            "desc": "Radicale package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.radicale"
+        },
+        {
+            "name": "rights",
+            "desc": "Configuration for Radicale\u2019s rights file. See https://radicale.org/3.0.html#documentation/authentication-and-rights. This option only works in conjunction with settings. Setting this will also set settings.rights.type and settings.rights.file to appropriate values.",
+            "nixName": "rights",
+            "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string) or a non-empty list of them)",
+            "value": "{ }"
+        },
+        {
+            "name": "settings",
+            "desc": "Configuration for Radicale. See https://radicale.org/3.0.html#documentation/configuration. This option is mutually exclusive with config.",
+            "nixName": "settings",
+            "type": "attribute set of section of an INI file (attrs of INI atom (null, bool, int, float or string) or a non-empty list of them)",
+            "value": "{ }"
+        }
+    ]
+}

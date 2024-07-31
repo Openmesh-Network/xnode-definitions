@@ -1,0 +1,168 @@
+{
+    "name": "tarsnap",
+    "desc": "Online backups for the truly paranoid",
+    "nixName": "tarsnap",
+    "specs": {
+        "ram": 0,
+        "storage": 0
+    },
+    "tags": [],
+    "website": "http://www.tarsnap.com/",
+    "logo": "",
+    "options": [
+        {
+            "name": "archives",
+            "desc": "Tarsnap archive configurations. Each attribute names an archive to be created at a given time interval, according to the options associated with it. When uploading to the tarsnap server, archive names are suffixed by a 1 second resolution timestamp, with the format %Y%m%d%H%M%S. For each member of the set is created a timer which triggers the instanced tarsnap-archive-name service unit. You may use systemctl start tarsnap-archive-name to manually trigger creation of archive-name at any time.",
+            "nixName": "archives",
+            "type": "attribute set of (submodule)",
+            "value": "{ }"
+        },
+        {
+            "name": "archives.<name>.aggressiveNetworking",
+            "desc": "Upload data over multiple TCP connections, potentially increasing tarsnap\u2019s bandwidth utilisation at the cost of slowing down all other network traffic. Not recommended unless TCP congestion is the dominant limiting factor.",
+            "nixName": "archives.<name>.aggressiveNetworking",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "archives.<name>.cachedir",
+            "desc": "The cache allows tarsnap to identify previously stored data blocks, reducing archival time and bandwidth usage. Should the cache become desynchronized or corrupted, tarsnap will refuse to run until you manually rebuild the cache with tarsnap --fsck. Set to null to disable caching.",
+            "nixName": "archives.<name>.cachedir",
+            "type": "null or path",
+            "value": "\"/var/cache/tarsnap/${utils.escapeSystemdPath config.services.tarsnap.archives.<name>.keyfile}\"\n"
+        },
+        {
+            "name": "archives.<name>.checkpointBytes",
+            "desc": "Create a checkpoint every checkpointBytes of uploaded data (optionally specified using an SI prefix). 1GB is the minimum value. A higher value is recommended, as checkpointing is expensive. Set to null to disable checkpointing.",
+            "nixName": "archives.<name>.checkpointBytes",
+            "type": "null or string",
+            "value": "\"1GB\""
+        },
+        {
+            "name": "archives.<name>.directories",
+            "desc": "List of filesystem paths to archive.",
+            "nixName": "archives.<name>.directories",
+            "type": "list of path",
+            "value": "[ ]"
+        },
+        {
+            "name": "archives.<name>.excludes",
+            "desc": "Exclude files and directories matching these patterns.",
+            "nixName": "archives.<name>.excludes",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "archives.<name>.explicitSymlinks",
+            "desc": "Whether to follow symlinks specified as archives.",
+            "nixName": "archives.<name>.explicitSymlinks",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "archives.<name>.followSymlinks",
+            "desc": "Whether to follow all symlinks in archive trees.",
+            "nixName": "archives.<name>.followSymlinks",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "archives.<name>.includes",
+            "desc": "Include only files and directories matching these patterns (the empty list includes everything). Exclusions have precedence over inclusions.",
+            "nixName": "archives.<name>.includes",
+            "type": "list of string",
+            "value": "[ ]"
+        },
+        {
+            "name": "archives.<name>.keyfile",
+            "desc": "Set a specific keyfile for this archive. This defaults to /root/tarsnap.key if left unspecified. Use this option if you want to run multiple backups concurrently - each archive must have a unique key. You can generate a write-only key derived from your master key (which is recommended) using tarsnap-keymgmt(1). Note: every archive must have an individual master key. You must generate multiple keys with tarsnap-keygen(1), and then generate write only keys from those. The keyfile name should be given as a string and not a path, to avoid the key being copied into the Nix store.",
+            "nixName": "archives.<name>.keyfile",
+            "type": "string",
+            "value": "config.services.tarsnap.keyfile"
+        },
+        {
+            "name": "archives.<name>.lowmem",
+            "desc": "Reduce memory consumption by not caching small files. Possibly beneficial if the average file size is smaller than 1 MB and the number of files is lower than the total amount of RAM in KB.",
+            "nixName": "archives.<name>.lowmem",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "archives.<name>.maxbw",
+            "desc": "Abort archival if upstream bandwidth usage in bytes exceeds this threshold.",
+            "nixName": "archives.<name>.maxbw",
+            "type": "null or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "archives.<name>.maxbwRateDown",
+            "desc": "Download bandwidth rate limit in bytes.",
+            "nixName": "archives.<name>.maxbwRateDown",
+            "type": "null or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "archives.<name>.maxbwRateUp",
+            "desc": "Upload bandwidth rate limit in bytes.",
+            "nixName": "archives.<name>.maxbwRateUp",
+            "type": "null or signed integer",
+            "value": "null"
+        },
+        {
+            "name": "archives.<name>.nodump",
+            "desc": "Exclude files with the nodump flag.",
+            "nixName": "archives.<name>.nodump",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "archives.<name>.period",
+            "desc": "Create archive at this interval. The format is described in systemd.time(7).",
+            "nixName": "archives.<name>.period",
+            "type": "string",
+            "value": "01:15"
+        },
+        {
+            "name": "archives.<name>.printStats",
+            "desc": "Print global archive statistics upon completion. The output is available via systemctl status tarsnap-archive-name.",
+            "nixName": "archives.<name>.printStats",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "archives.<name>.verbose",
+            "desc": "Whether to produce verbose logging output.",
+            "nixName": "archives.<name>.verbose",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "archives.<name>.verylowmem",
+            "desc": "Reduce memory consumption by a factor of 2 beyond what lowmem does, at the cost of significantly slowing down the archiving process.",
+            "nixName": "archives.<name>.verylowmem",
+            "type": "boolean",
+            "value": "false"
+        },
+        {
+            "name": "enable",
+            "desc": "Whether to enable periodic tarsnap backups.",
+            "nixName": "enable",
+            "type": "boolean",
+            "value": "true"
+        },
+        {
+            "name": "keyfile",
+            "desc": "The keyfile which associates this machine with your tarsnap account. Create the keyfile with tarsnap-keygen. Note that each individual archive (specified below) may also have its own individual keyfile specified. Tarsnap does not allow multiple concurrent backups with the same cache directory and key (starting a new backup will cause another one to fail). If you have multiple archives specified, you should either spread out your backups to be far apart, or specify a separate key for each archive. By default every archive defaults to using /root/tarsnap.key. It\u2019s recommended for backups that you generate a key for every archive using tarsnap-keygen(1), and then generate a write-only tarsnap key using tarsnap-keymgmt(1), and keep your master key(s) for a particular machine off-site. The keyfile name should be given as a string and not a path, to avoid the key being copied into the Nix store.",
+            "nixName": "keyfile",
+            "type": "string",
+            "value": "/root/tarsnap.key"
+        },
+        {
+            "name": "package",
+            "desc": "The tarsnap package to use.",
+            "nixName": "package",
+            "type": "package",
+            "value": "pkgs.tarsnap"
+        }
+    ]
+}
