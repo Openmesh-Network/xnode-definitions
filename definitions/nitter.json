@@ -35,7 +35,7 @@
         },
         {
             "name": "cache.redisMaxConnections",
-            "desc": "Maximum number of connections to Redis.  New connections are opened when none are available, but if the poolsize goes above this, they are closed when released, do not worry aboutthis unless you receive tons of requests per second.",
+            "desc": "Maximum number of connections to Redis. New connections are opened when none are available, but if the pool size goes above this, they are closed when released, do not worry about this unless you receive tons of requests per second.",
             "nixName": "cache.redisMaxConnections",
             "type": "signed integer",
             "value": "30"
@@ -91,7 +91,7 @@
         },
         {
             "name": "config.tokenCount",
-            "desc": "Minimum amount of usable tokens.  Tokens are used to authorize API requests, but they expire after ~1hour, and have a limit of 187 requests. The limit gets reset every 15minutes, and the pool is filled up so there is always at leasttokenCount usable tokens. Only increase this if you receive major burstsall the time.",
+            "desc": "Minimum amount of usable tokens. Tokens are used to authorize API requests, but they expire after ~1 hour, and have a limit of 187 requests. The limit gets reset every 15 minutes, and the pool is filled up so there is always at least tokenCount usable tokens. Only increase this if you receive major bursts all the time.",
             "nixName": "config.tokenCount",
             "type": "signed integer",
             "value": "10"
@@ -105,7 +105,7 @@
         },
         {
             "name": "guestAccounts",
-            "desc": "Path to the guest accounts file.  This file contains a list of guest accounts that can be used toaccess the instance without logging in. The file is in JSONL format,where each line is a JSON object with the following fields:  {\u201coauth_token\u201d:\u201csome_token\u201d,\u201coauth_token_secret\u201d:\u201csome_secret_key\u201d}  See  https://github.com/zedeus/nitter/wiki/Guest-Account-Branch-Deployment for more information on guest accounts and how to generate them.",
+            "desc": "Path to the guest accounts file. This file contains a list of guest accounts that can be used to access the instance without logging in. The file is in JSONL format, where each line is a JSON object with the following fields: {\u201coauth_token\u201d:\u201csome_token\u201d,\u201coauth_token_secret\u201d:\u201csome_secret_key\u201d} See https://github.com/zedeus/nitter/wiki/Guest-Account-Branch-Deployment for more information on guest accounts and how to generate them.",
             "nixName": "guestAccounts",
             "type": "path",
             "value": "\"/var/lib/nitter/guest_accounts.jsonl\""
@@ -203,21 +203,21 @@
         },
         {
             "name": "preferences.replaceReddit",
-            "desc": "Replace Reddit links with links to this instance (blank todisable).",
+            "desc": "Replace Reddit links with links to this instance (blank to disable).",
             "nixName": "preferences.replaceReddit",
             "type": "string",
             "value": ""
         },
         {
             "name": "preferences.replaceTwitter",
-            "desc": "Replace Twitter links with links to this instance (blank todisable).",
+            "desc": "Replace Twitter links with links to this instance (blank to disable).",
             "nixName": "preferences.replaceTwitter",
             "type": "string",
             "value": ""
         },
         {
             "name": "preferences.replaceYouTube",
-            "desc": "Replace YouTube links with links to this instance (blank todisable).",
+            "desc": "Replace YouTube links with links to this instance (blank to disable).",
             "nixName": "preferences.replaceYouTube",
             "type": "string",
             "value": ""
@@ -273,7 +273,7 @@
         },
         {
             "name": "server.https",
-            "desc": "Set secure attribute on cookies. Keep it disabled to enable cookieswhen not using HTTPS.",
+            "desc": "Set secure attribute on cookies. Keep it disabled to enable cookies when not using HTTPS.",
             "nixName": "server.https",
             "type": "boolean",
             "value": "false"
@@ -301,7 +301,7 @@
         },
         {
             "name": "settings",
-            "desc": "Add settings here to override NixOS module generated settings.  Check the official repository for the available settings:  https://github.com/zedeus/nitter/blob/master/nitter.example.conf",
+            "desc": "Add settings here to override NixOS module generated settings. Check the official repository for the available settings: https://github.com/zedeus/nitter/blob/master/nitter.example.conf",
             "nixName": "settings",
             "type": "attribute set",
             "value": "{ }"

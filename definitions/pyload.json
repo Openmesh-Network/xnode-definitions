@@ -12,7 +12,7 @@
     "options": [
         {
             "name": "credentialsFile",
-            "desc": "File containing  PYLOAD_DEFAULT_USERNAME  and  PYLOAD_DEFAULT_PASSWORD  inthe format of an  EnvironmentFile= , as described by   systemd.exec(5)  .  If not given, they default to the username/password combo ofpyload/pyload.",
+            "desc": "File containing PYLOAD_DEFAULT_USERNAME and PYLOAD_DEFAULT_PASSWORD in the format of an EnvironmentFile=, as described by systemd.exec(5). If not given, they default to the username/password combo of pyload/pyload.",
             "nixName": "credentialsFile",
             "type": "null or path",
             "value": "null"
@@ -33,7 +33,7 @@
         },
         {
             "name": "group",
-            "desc": "Group under which pyLoad runs, and which owns the downloaddirectory.",
+            "desc": "Group under which pyLoad runs, and which owns the download directory.",
             "nixName": "group",
             "type": "string",
             "value": "pyload"
@@ -61,7 +61,7 @@
         },
         {
             "name": "user",
-            "desc": "User under which pyLoad runs, and which owns the downloaddirectory.",
+            "desc": "User under which pyLoad runs, and which owns the download directory.",
             "nixName": "user",
             "type": "string",
             "value": "pyload"

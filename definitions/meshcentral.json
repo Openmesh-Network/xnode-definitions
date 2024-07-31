@@ -28,7 +28,7 @@
         },
         {
             "name": "settings",
-            "desc": "Settings for MeshCentral. Refer to upstream documentation fordetails:    JSONSchema definition    simplesample configuration    complexsample configuration    Old homepagewith documentation link",
+            "desc": "Settings for MeshCentral. Refer to upstream documentation for details:  JSON Schema definition simple sample configuration complex sample configuration Old homepage with documentation link",
             "nixName": "settings",
             "type": "JSON value",
             "value": ""

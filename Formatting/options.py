@@ -1,15 +1,7 @@
 import json
 import re
 import html
-
-def remove_html_tags(text):
-    # Function needs to be improved
-    clean_text = re.sub(r'<[^>]+>', ' ', text)
-    # Convert HTML entities to characters
-    clean_text = html.unescape(clean_text)
-    clean_text = clean_text.replace('\n', '')
-    return clean_text.strip(' ')
-
+from Formatting.formatter import remove_html_tags
 
 def parse_option(hit):
     option = {

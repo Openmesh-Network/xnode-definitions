@@ -21,7 +21,7 @@
         },
         {
             "name": "keepAliveInterval",
-            "desc": "Determine the interval to send the keep alive message to the server.This has a direct impact of the bandwidth used by the device.",
+            "desc": "Determine the interval to send the keep alive message to the server. This has a direct impact of the bandwidth used by the device.",
             "nixName": "keepAliveInterval",
             "type": "signed integer",
             "value": "30"
@@ -35,7 +35,7 @@
         },
         {
             "name": "preferredHostname",
-            "desc": "Set the device preferred hostname. This provides a hint to the serverto use this as hostname if it is available.",
+            "desc": "Set the device preferred hostname. This provides a hint to the server to use this as hostname if it is available.",
             "nixName": "preferredHostname",
             "type": "string",
             "value": ""

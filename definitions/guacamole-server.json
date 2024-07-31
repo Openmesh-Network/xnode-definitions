@@ -35,7 +35,7 @@
         },
         {
             "name": "logbackXml",
-            "desc": "Configuration file that correspond to  logback.xml .",
+            "desc": "Configuration file that correspond to logback.xml.",
             "nixName": "logbackXml",
             "type": "null or path",
             "value": "null"
@@ -56,7 +56,7 @@
         },
         {
             "name": "userMappingXml",
-            "desc": "Configuration file that correspond to user-mapping.xml .",
+            "desc": "Configuration file that correspond to user-mapping.xml.",
             "nixName": "userMappingXml",
             "type": "null or path",
             "value": "null"

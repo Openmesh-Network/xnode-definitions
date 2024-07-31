@@ -21,21 +21,21 @@
         },
         {
             "name": "declarative",
-            "desc": "Whether to use a declarative Minecraft server configuration. Only ifset to  true , the options  services.minecraft-server.whitelist  and  services.minecraft-server.serverProperties  will beapplied.",
+            "desc": "Whether to use a declarative Minecraft server configuration. Only if set to true, the options services.minecraft-server.whitelist and services.minecraft-server.serverProperties will be applied.",
             "nixName": "declarative",
             "type": "boolean",
             "value": "false"
         },
         {
             "name": "enable",
-            "desc": "If enabled, start a Minecraft Server. The server data will be loadedfrom and saved to  services.minecraft-server.dataDir .",
+            "desc": "If enabled, start a Minecraft Server. The server data will be loaded from and saved to services.minecraft-server.dataDir.",
             "nixName": "enable",
             "type": "boolean",
             "value": "true"
         },
         {
             "name": "eula",
-            "desc": "Whether you agree to   MojangsEULA . This option must be set to  true  to run Minecraftserver.",
+            "desc": "Whether you agree to  Mojangs EULA. This option must be set to true to run Minecraft server.",
             "nixName": "eula",
             "type": "boolean",
             "value": "false"
@@ -63,343 +63,392 @@
         },
         {
             "name": "serverProperties",
-            "desc": "Minecraft server properties for the server.properties file. Only hasan effect when  services.minecraft-server.declarative  is set to true . See  https://minecraft.gamepedia.com/Server.properties#Java_Edition_3 for documentation on these values.",
+            "desc": "Minecraft server properties for the server.properties file. Only has an effect when services.minecraft-server.declarative is set to true. See https://minecraft.gamepedia.com/Server.properties#Java_Edition_3 for documentation on these values.",
             "nixName": "serverProperties",
             "type": "attribute set of (boolean or signed integer or string)",
             "value": "{ }",
             "options": [
                 {
                     "nixName": "allow-flight",
+                    "name": "allow-flight",
                     "type": "boolean",
                     "value": "false",
-                    "desc": "Allows users to use flight on the server while in Survival mode, if they have a [[mod]] that provides flight installed.With allow-flight enabled, [[griefers]] may become more common, because it makes their work easier. In Creative mode, this has no effect."
+                    "desc": "Allows users to use flight on the server while in Survival mode, if they have a [[mod]] that provides flight installed.With allow-flight enabled, [[griefers]] may become more common, because it makes their work easier. In Creative mode, this has no effect.:'''false''' - Flight is not allowed (players in air for at least 5 seconds get kicked).:'''true''' - Flight is allowed, and used if the player has a fly mod installed."
                 },
                 {
                     "nixName": "allow-nether",
+                    "name": "allow-nether",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Allows players to travel to the [[Nether]]."
+                    "desc": "Allows players to travel to the [[Nether]].:'''false''' - [[Nether]] portals do not work.:'''true''' - The server allows [[portal]]s to send players to the Nether."
                 },
                 {
                     "nixName": "broadcast-console-to-ops",
+                    "name": "broadcast-console-to-ops",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Send console command outputs to all [[Server#Managing_and_maintaining_a_server|online operators]]."
+                    "desc": "Send console command outputs to all [[Server#Managing_and_maintaining_a_server online operators]]."
                 },
                 {
                     "nixName": "broadcast-rcon-to-ops",
+                    "name": "broadcast-rcon-to-ops",
                     "type": "boolean",
                     "value": "true",
                     "desc": "Send rcon console command outputs to all online operators."
                 },
                 {
                     "nixName": "difficulty",
+                    "name": "difficulty",
                     "type": "string",
                     "value": "easy",
-                    "desc": "Defines the [[difficulty]] (such as damage dealt by mobs and the way hunger and poison affects players) of the server.If a legacy difficulty number is specified, it is silently converted to a difficulty name."
+                    "desc": "Defines the [[difficulty]] (such as damage dealt by mobs and the way hunger and poison affects players) of the server.If a legacy difficulty number is specified, it is silently converted to a difficulty name.:'''peaceful''' (0):'''easy''' (1):'''normal''' (2):'''hard''' (3)"
                 },
                 {
                     "nixName": "enable-command-block",
+                    "name": "enable-command-block",
                     "type": "boolean",
                     "value": "false",
                     "desc": "Enables command blocks"
                 },
                 {
                     "nixName": "enable-jmx-monitoring",
+                    "name": "enable-jmx-monitoring",
                     "type": "boolean",
                     "value": "false",
                     "desc": "Exposes an MBean with the Object name <code>net.minecraft.server:type=Server</code> and two attributes <code>averageTickTime</code> and <code>tickTimes</code> exposing the tick times in milliseconds.In order for enabling JMX on the Java runtime you also need to add a couple of JVM flags to the startup as documented [https://docs.oracle.com/javase/8/docs/technotes/guides/management/agent.html here]."
                 },
                 {
                     "nixName": "enable-rcon",
+                    "name": "enable-rcon",
                     "type": "boolean",
                     "value": "false",
                     "desc": "Enables remote access to the server console.* It's not recommended to expose RCON to the Internet, because RCON protocol transfers everything without encryption. Everything (including RCON password) communicated between the RCON server and client can be leaked to someone listening in on your connection."
                 },
                 {
                     "nixName": "enable-status",
+                    "name": "enable-status",
                     "type": "boolean",
                     "value": "true",
                     "desc": "Makes the server appear as \"online\" on the server list.If set to false, it will suppress replies from clients. This means it will appear as offline, but will still accept connections."
                 },
                 {
                     "nixName": "enable-query",
+                    "name": "enable-query",
                     "type": "boolean",
                     "value": "false",
                     "desc": "Enables GameSpy4 protocol server listener. Used to get information about server."
                 },
                 {
                     "nixName": "enforce-secure-profile",
+                    "name": "enforce-secure-profile",
                     "type": "boolean",
                     "value": "true",
-                    "desc": ""
+                    "desc": "If set to '''true''', players without a Mojang-signed public key will not be able to connect to the server."
                 },
                 {
                     "nixName": "enforce-whitelist",
+                    "name": "enforce-whitelist",
                     "type": "boolean",
                     "value": "false",
-                    "desc": "Enforces the whitelist on the server.When this option is enabled, users who are not present on the whitelist (if it's enabled) get kicked from the server after the server reloads the whitelist file."
+                    "desc": "Enforces the whitelist on the server.When this option is enabled, users who are not present on the whitelist (if it's enabled) get kicked from the server after the server reloads the whitelist file.:'''false''' - No user gets kicked if not on the whitelist.:'''true''' - Online users not on the whitelist get kicked."
                 },
                 {
                     "nixName": "entity-broadcast-range-percentage",
+                    "name": "entity-broadcast-range-percentage",
                     "type": "integer (10-1000)",
                     "value": "100",
                     "desc": "Controls how close entities need to be before being sent to clients. Higher values means they'll be rendered from farther away, potentially causing more lag. This is expressed the percentage of the default value. For example, setting to 50 will make it half as usual. This mimics the function on the client video settings (not unlike Render Distance, which the client can customize so long as it's under the server's setting)."
                 },
                 {
                     "nixName": "force-gamemode",
+                    "name": "force-gamemode",
                     "type": "boolean",
                     "value": "false",
-                    "desc": "Force players to join in the default [[game mode]]."
+                    "desc": "Force players to join in the default [[game mode]].:'''false''' - Players join in the gamemode they left in.:'''true''' - Players always join in the default gamemode."
                 },
                 {
                     "nixName": "function-permission-level",
+                    "name": "function-permission-level",
                     "type": "integer (1-4)",
                     "value": "2",
-                    "desc": "Sets the default permission level for [[Function (Java Edition)|functions]].See [[permission level]] for the details on the 4 levels."
+                    "desc": "Sets the default permission level for [[Function (Java Edition) functions]].See [[permission level]] for the details on the 4 levels."
                 },
                 {
                     "nixName": "gamemode",
+                    "name": "gamemode",
                     "type": "string",
                     "value": "survival",
-                    "desc": "Defines the [[game mode|mode of gameplay]].If a legacy gamemode number is specified, it is silently converted to a gamemode name."
+                    "desc": "Defines the [[game mode mode of gameplay]].If a legacy gamemode number is specified, it is silently converted to a gamemode name.:'''[[survival]]''' (0):'''[[creative]]''' (1):'''[[adventure]]''' (2):'''[[spectator]]''' (3)"
                 },
                 {
                     "nixName": "generate-structures",
+                    "name": "generate-structures",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Defines whether [[structures]] (such as villages) can be generated."
-                },
-                {
-                    "nixName": "generator-settings",
-                    "type": "The settings used to customize world generation. Follow [[Java Edition level format#generatorOptions tag format|its format]] and write the corresponding JSON string. Remember to escape all <code>:</code> with <code>\\:</code>.",
-                    "value": "{}",
-                    "desc": ""
+                    "desc": "Defines whether [[structures]] (such as villages) can be generated.:'''false''' - Structures are not generated in new chunks.:'''true''' - Structures are generated in new chunks.'''Note:''' ''Dungeons still generate if this is set to false.''"
                 },
                 {
                     "nixName": "hardcore",
+                    "name": "hardcore",
                     "type": "boolean",
                     "value": "false",
-                    "desc": ""
+                    "desc": "If set to '''true''', server difficulty is ignored and set to hard and players are set to spectator mode if they die."
                 },
                 {
                     "nixName": "hide-online-players",
+                    "name": "hide-online-players",
                     "type": "boolean",
                     "value": "false",
-                    "desc": ""
+                    "desc": "If set to '''true''', a player list is not sent on status requests."
                 },
                 {
                     "nixName": "initial-disabled-packs",
+                    "name": "initial-disabled-packs",
                     "type": "string",
-                    "value": "|''blank''",
+                    "value": "''blank''",
                     "desc": "Comma-separated list of datapacks to not be auto-enabled on world creation."
                 },
                 {
                     "nixName": "initial-enabled-packs",
+                    "name": "initial-enabled-packs",
                     "type": "string",
                     "value": "vanilla",
                     "desc": "Comma-separated list of datapacks to be enabled during world creation. Feature packs need to be explicitly enabled."
                 },
                 {
                     "nixName": "level-name",
+                    "name": "level-name",
                     "type": "string",
                     "value": "world",
                     "desc": "The \"level-name\" value is used as the world name and its folder name. The player may also copy their saved game folder here, and change the name to the same as that folder's to load it instead.:Characters such as ' (apostrophe) may need to be escaped by adding a backslash before them."
                 },
                 {
                     "nixName": "level-seed",
+                    "name": "level-seed",
                     "type": "string",
-                    "value": "|''blank''",
-                    "desc": "Sets a world [[Seed (level generation)|seed]] for the player's world, as in Singleplayer. The world generates with a random seed if left blank.:Some examples are: minecraft, 404, 1a2b3c."
+                    "value": "''blank''",
+                    "desc": "Sets a world [[Seed (level generation) seed]] for the player's world, as in Singleplayer. The world generates with a random seed if left blank.:Some examples are: minecraft, 404, 1a2b3c."
                 },
                 {
                     "nixName": "level-type",
+                    "name": "level-type",
                     "type": "string",
                     "value": "minecraft:normal",
-                    "desc": "Determines the world preset that is generated.Escaping \":\" is required when using a world preset ID, and the vanilla world preset ID's namespace ({{cd|minecraft:}}) can be omitted."
+                    "desc": "Determines the world preset that is generated.Escaping \":\" is required when using a world preset ID, and the vanilla world preset ID's namespace ({{cd minecraft:}}) can be omitted.:'''minecraft:normal''' - Standard world with hills, valleys, water, etc.:'''minecraft:[[Superflat flat]]''' - A flat world with no features, can be modified with '''generator-settings'''.:'''minecraft:[[Large Biomes large_biomes]]''' - Same as default but all biomes are larger.:'''minecraft:[[amplified]]''' - Same as default but world-generation height limit is increased.:'''minecraft:[[Single Biome single_biome_surface]]''' - A buffet world which the entire overworld consists of one biome, can be modified with '''generator-settings'''.:'''[[buffet]]''' - Only for 1.15 or before. Same as default unless '''generator-settings''' is set.:'''default_1_1''' - Only for 1.15 or before. Same as default, but counted as a different world type.:'''[[Old Customized customized]]''' - Only for 1.15 or before. After 1.13, this value is no different than default, but in 1.12 and before, it could be used to create a completely custom world."
                 },
                 {
                     "nixName": "max-chained-neighbor-updates",
-                    "type": "integer{{more info|the valid range}}",
+                    "name": "max-chained-neighbor-updates",
+                    "type": "integer{{more info the valid range}}",
                     "value": "1000000",
                     "desc": "Limiting the amount of consecutive neighbor updates before skipping additional ones. Negative values remove the limit."
                 },
                 {
                     "nixName": "max-players",
+                    "name": "max-players",
                     "type": "integer (0-(2^31 - 1))",
                     "value": "20",
                     "desc": "The maximum number of players that can play on the server at the same time. Note that more players on the server consume more resources. Note also, op player connections are not supposed to count against the max players, but ops currently cannot join a full server. However, this can be changed by going to the file called ops.json in the player's server directory, opening it, finding the op that the player wants to change, and changing the setting called bypassesPlayerLimit to true (the default is false). This means that that op does not have to wait for a player to leave in order to join. Extremely large values for this field result in the client-side user list being broken."
                 },
                 {
                     "nixName": "max-tick-time",
+                    "name": "max-tick-time",
                     "type": "integer (-1 or 0\u2013(2^63 - 1))",
                     "value": "60000",
-                    "desc": "The maximum number of milliseconds a single tick may take before the server watchdog stops the server with the message, ''A single server tick took 60.00 seconds (should be max 0.05); Considering it to be crashed, server will forcibly shutdown.'' Once this criterion is met, it calls System.exit(1)."
+                    "desc": "The maximum number of milliseconds a single tick may take before the server watchdog stops the server with the message, ''A single server tick took 60.00 seconds (should be max 0.05); Considering it to be crashed, server will forcibly shutdown.'' Once this criterion is met, it calls System.exit(1).:'''-1''' - disable watchdog entirely (this disable option was added in 14w32a)"
                 },
                 {
                     "nixName": "max-world-size",
+                    "name": "max-world-size",
                     "type": "integer (1-29999984)",
                     "value": "29999984",
                     "desc": "This sets the maximum possible size in blocks, expressed as a radius, that the [[world border]] can obtain. Setting the world border bigger causes the commands to complete successfully but the actual border does not move past this block limit. Setting the max-world-size higher than the default doesn't appear to do anything. Examples: *Setting max-world-size to 1000 allows the player to have a 2000\u00d72000 world border.*Setting max-world-size to 4000 gives the player an 8000\u00d78000 world border."
                 },
                 {
                     "nixName": "motd",
-                    "type": "* The MOTD supports special characters, such as \"\u2665\". However, such characters must be converted to escaped Unicode form. An online converter can be found [http://www.freeformatter.com/string-utilities.html#charinfo here].",
-                    "value": "|''A Minecraft Server''",
-                    "desc": "This is the message that is displayed in the server list of the client, below the name.* The MOTD supports [[Formatting codes#Use in server.properties and pack.mcmeta|color and formatting codes]].* If the MOTD is over 59 characters, the server list may report a communication error."
+                    "name": "motd",
+                    "type": "string",
+                    "value": "Minecraft Server running on \u00a7dXnode",
+                    "desc": "This is the message that is displayed in the server list of the client, below the name.* The MOTD supports [[Formatting codes#Use in server.properties and pack.mcmeta color and formatting codes]].* If the MOTD is over 59 characters, the server list may report a communication error."
                 },
                 {
                     "nixName": "network-compression-threshold",
+                    "name": "network-compression-threshold",
                     "type": "integer",
                     "value": "256",
-                    "desc": "By default it allows packets that are ''n-1'' bytes big to go normally, but a packet of ''n'' bytes or more gets compressed down. So, a lower number means more compression but compressing small amounts of bytes might actually end up with a larger result than what went in."
+                    "desc": "By default it allows packets that are ''n-1'' bytes big to go normally, but a packet of ''n'' bytes or more gets compressed down. So, a lower number means more compression but compressing small amounts of bytes might actually end up with a larger result than what went in.:'''-1''' - disable compression entirely:'''0''' - compress everything'''Note:''' ''The Ethernet spec requires that packets less than 64 bytes become padded to 64 bytes. Thus, setting a value lower than 64 may not be beneficial. It is also not recommended to exceed the MTU, typically 1500 bytes.''"
                 },
                 {
                     "nixName": "online-mode",
+                    "name": "online-mode",
                     "type": "boolean",
                     "value": "true",
-                    "desc": ""
+                    "desc": "Server checks connecting players against ''Minecraft'' account database. Set this to false only if the player's server is '''not''' connected to the Internet. Hackers with fake accounts can connect if this is set to false! If minecraft.net is down or inaccessible, no players can connect if this is set to true. Setting this variable to off purposely is called \"cracking\" a server, and servers that are present with online mode off are called \"cracked\" servers, allowing players with unlicensed copies of ''[[Minecraft]]'' to join.:'''true''' - Enabled. The server assumes it has an Internet connection and checks every connecting player.:'''false''' - Disabled. The server does not attempt to check connecting players."
                 },
                 {
                     "nixName": "op-permission-level",
+                    "name": "op-permission-level",
                     "type": "integer (0-4)",
                     "value": "4",
-                    "desc": "Sets the default [[permission level]] for ops when using {{cmd|op}}."
+                    "desc": "Sets the default [[permission level]] for ops when using {{cmd op}}."
                 },
                 {
                     "nixName": "player-idle-timeout",
+                    "name": "player-idle-timeout",
                     "type": "integer",
                     "value": "0",
-                    "desc": "If non-zero, players are kicked from the server if they are idle for more than that many minutes. :*[http://wiki.vg/Protocol#Click_Window Click Window]:*[http://wiki.vg/Protocol#Enchant_Item Enchant Item]:*[http://wiki.vg/Protocol#Update_Sign Update Sign]:*[http://wiki.vg/Protocol#Player_Digging Player Digging]:*[http://wiki.vg/Protocol#Player_Block_Placement Player Block Placement]:*[http://wiki.vg/Protocol#Held_Item_Change_.28serverbound.29 Held Item Change]:*[http://wiki.vg/Protocol#Animation_.28serverbound.29 Animation] (swing arm):*[http://wiki.vg/Protocol#Entity_Action Entity Action]:*[http://wiki.vg/Protocol#Client_Status Client Status]:*[http://wiki.vg/Protocol#Chat_Message_.28serverbound.29 Chat Message]:*[http://wiki.vg/Protocol#Use_Entity Use Entity]"
+                    "desc": "If non-zero, players are kicked from the server if they are idle for more than that many minutes. :'''Note:''' ''Idle time is reset when the server receives one of the following packets:'':*[http://wiki.vg/Protocol#Click_Window Click Window]:*[http://wiki.vg/Protocol#Enchant_Item Enchant Item]:*[http://wiki.vg/Protocol#Update_Sign Update Sign]:*[http://wiki.vg/Protocol#Player_Digging Player Digging]:*[http://wiki.vg/Protocol#Player_Block_Placement Player Block Placement]:*[http://wiki.vg/Protocol#Held_Item_Change_.28serverbound.29 Held Item Change]:*[http://wiki.vg/Protocol#Animation_.28serverbound.29 Animation] (swing arm):*[http://wiki.vg/Protocol#Entity_Action Entity Action]:*[http://wiki.vg/Protocol#Client_Status Client Status]:*[http://wiki.vg/Protocol#Chat_Message_.28serverbound.29 Chat Message]:*[http://wiki.vg/Protocol#Use_Entity Use Entity]"
                 },
                 {
                     "nixName": "prevent-proxy-connections",
+                    "name": "prevent-proxy-connections",
                     "type": "boolean",
                     "value": "false",
                     "desc": "If the ISP/AS sent from the server is different from the one from Mojang Studios' authentication server, the player is kicked."
                 },
                 {
                     "nixName": "previews-chat",
+                    "name": "previews-chat",
                     "type": "boolean",
                     "value": "false",
-                    "desc": ""
+                    "desc": "If set to '''true''', chat preview will be enabled.:'''true''' - Enabled. When enabled, a server-controlled preview appears above the chat edit box, showing how the message will look when sent.:'''false''' - Disabled."
                 },
                 {
                     "nixName": "pvp",
+                    "name": "pvp",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Enable PvP on the server. Players shooting themselves with arrows receive damage only if PvP is enabled."
+                    "desc": "Enable PvP on the server. Players shooting themselves with arrows receive damage only if PvP is enabled.:'''true''' - Players can kill each other.:'''false''' - Players cannot kill other players (also known as '''Player versus Environment''' ('''PvE''')).'''Note:''' ''Indirect damage sources spawned by players (such as [[lava]], [[fire]], [[TNT]] and to some extent [[water]], [[sand]] and [[gravel]]) still deal damage to other players.''"
                 },
                 {
                     "nixName": "query.port",
+                    "name": "query.port",
                     "type": "integer (1-(2^16 - 2))",
                     "value": "25565",
-                    "desc": ""
+                    "desc": "Sets the port for the query server (see '''enable-query''')."
                 },
                 {
                     "nixName": "rate-limit",
+                    "name": "rate-limit",
                     "type": "integer",
                     "value": "0",
                     "desc": "Sets the maximum amount of packets a user can send before getting kicked. Setting to 0 disables this feature."
                 },
                 {
                     "nixName": "rcon.password",
+                    "name": "rcon.password",
                     "type": "string",
-                    "value": "|''blank''",
+                    "value": "''blank''",
                     "desc": "Sets the password for RCON: a remote console protocol that can allow other applications to connect and interact with a ''Minecraft'' server over the internet."
                 },
                 {
                     "nixName": "rcon.port",
+                    "name": "rcon.port",
                     "type": "integer (1-(2^16 - 2))",
                     "value": "25575",
                     "desc": "Sets the RCON network port."
                 },
                 {
                     "nixName": "resource-pack",
+                    "name": "resource-pack",
                     "type": "string",
-                    "value": "|''blank''",
+                    "value": "''blank''",
                     "desc": "Optional URI to a [[resource pack]]. The player may choose to use it. Note that (in some versions before 1.15.2), the \":\" and \"=\" characters need to be escaped with a backslash (\\), e.g. http\\://somedomain.com/somepack.zip?someparam\\=somevalueThe resource pack may not have a larger file size than 250 MiB (Before 1.18: 100 MiB (\u2248 100.8 MB)) (Before 1.15: 50 MiB (\u2248 50.4 MB)). Note that download success or failure is logged by the client, and not by the server."
                 },
                 {
                     "nixName": "resource-pack-prompt",
+                    "name": "resource-pack-prompt",
                     "type": "string",
-                    "value": "|''blank''",
-                    "desc": "|{{Anchor|resource-pack-prompt}}Optional, adds a custom message to be shown on resource pack prompt when <code>require-resource-pack</code> is used.Expects chat component syntax, can contain multiple lines."
+                    "value": "''blank''",
+                    "desc": "{{Anchor resource-pack-prompt}}Optional, adds a custom message to be shown on resource pack prompt when <code>require-resource-pack</code> is used.Expects chat component syntax, can contain multiple lines."
                 },
                 {
                     "nixName": "resource-pack-sha1",
+                    "name": "resource-pack-sha1",
                     "type": "string",
-                    "value": "|''blank''",
-                    "desc": "|{{Anchor|resource-pack-hash}} Optional SHA-1 digest of the resource pack, in lowercase hexadecimal. It is recommended to specify this, because it is used to verify the integrity of the resource pack."
+                    "value": "''blank''",
+                    "desc": "{{Anchor resource-pack-hash}} Optional SHA-1 digest of the resource pack, in lowercase hexadecimal. It is recommended to specify this, because it is used to verify the integrity of the resource pack.'''Note:''' If the resource pack is any different, a yellow message \"Invalid sha1 for resource-pack-sha1\" appears in the console when the server starts. Due to the nature of hash functions, errors have a tiny probability of occurring, so this consequence has no effect."
                 },
                 {
                     "nixName": "require-resource-pack",
+                    "name": "require-resource-pack",
                     "type": "boolean",
                     "value": "false",
-                    "desc": "|{{Anchor|resource-pack-hash}}When this option is enabled (set to true), players will be prompted for a response and will be disconnected if they decline the required pack."
+                    "desc": "{{Anchor resource-pack-hash}}When this option is enabled (set to true), players will be prompted for a response and will be disconnected if they decline the required pack."
                 },
                 {
                     "nixName": "server-ip",
+                    "name": "server-ip",
                     "type": "string",
-                    "value": "|''blank''",
+                    "value": "''blank''",
                     "desc": "The player should set this if they want the server to bind to a particular IP. It is strongly recommended that the player leaves server-ip blank.:Set to blank, or the IP the player want their server to run (listen) on."
                 },
                 {
                     "nixName": "server-port",
+                    "name": "server-port",
                     "type": "integer (1-(2^16 - 2))",
                     "value": "25565",
-                    "desc": "Changes the port the server is hosting (listening) on. This port must be [[wikipedia:Port forwarding|forwarded]] if the server is hosted in a network using [[wikipedia:Network address translation|NAT]] (if the player has a home router/firewall)."
+                    "desc": "Changes the port the server is hosting (listening) on. This port must be [[wikipedia:Port forwarding forwarded]] if the server is hosted in a network using [[wikipedia:Network address translation NAT]] (if the player has a home router/firewall)."
                 },
                 {
                     "nixName": "simulation-distance",
+                    "name": "simulation-distance",
                     "type": "integer (3-32)",
                     "value": "10",
                     "desc": "Sets the maximum distance from players that living entities may be located in order to be updated by the server, measured in chunks in each direction of the player (radius, not diameter). If entities are outside of this radius, then they will not be ticked by the server nor will they be visible to players.''10 is the default/recommended. If the player has major lag, this value is recommended to be reduced.''"
                 },
                 {
                     "nixName": "snooper-enabled",
+                    "name": "snooper-enabled",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Sets whether the server sends snoop data regularly to http://snoop.minecraft.net."
+                    "desc": "Sets whether the server sends snoop data regularly to http://snoop.minecraft.net.:'''false''' - disable snooping.:'''true''' - enable snooping."
                 },
                 {
                     "nixName": "spawn-animals",
+                    "name": "spawn-animals",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Determines if [[animal]]s can spawn.''If the player has major lag, it is recommended to turn this off/set to false.''"
+                    "desc": "Determines if [[animal]]s can spawn.:'''true''' - Animals spawn as normal.:'''false''' - Animals immediately vanish.''If the player has major lag, it is recommended to turn this off/set to false.''"
                 },
                 {
                     "nixName": "spawn-monsters",
+                    "name": "spawn-monsters",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Determines if monsters can spawn.This setting has no effect if difficulty = 0 (peaceful). If difficulty is not = 0, a monster can still spawn from a [[monster spawner]].''If the player has major lag, it is recommended to turn this off/set to false.''"
+                    "desc": "Determines if monsters can spawn.:'''true''' - Enabled. Monsters appear at night and in the dark.:'''false''' - Disabled. No monsters.This setting has no effect if difficulty = 0 (peaceful). If difficulty is not = 0, a monster can still spawn from a [[monster spawner]].''If the player has major lag, it is recommended to turn this off/set to false.''"
                 },
                 {
                     "nixName": "spawn-npcs",
+                    "name": "spawn-npcs",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Determines whether villagers can spawn."
+                    "desc": "Determines whether villagers can spawn.:'''true''' - Enabled. Villagers spawn.:'''false''' - Disabled. No villagers."
                 },
                 {
                     "nixName": "spawn-protection",
+                    "name": "spawn-protection",
                     "type": "integer",
                     "value": "16",
-                    "desc": "Determines the side length of the square [[spawn protection]] area as 2''x''+1. Setting this to 0 disables the spawn protection. A value of 1 protects a 3\u00d73 square centered on the spawn point. 2 protects 5\u00d75, 3 protects 7\u00d77, etc. This option is not generated on the first server start and appears when the first player joins. If there are no [[Server#Managing_and_maintaining_a_server|ops]] set on the server, the spawn protection is disabled automatically as well."
+                    "desc": "Determines the side length of the square [[spawn protection]] area as 2''x''+1. Setting this to 0 disables the spawn protection. A value of 1 protects a 3\u00d73 square centered on the spawn point. 2 protects 5\u00d75, 3 protects 7\u00d77, etc. This option is not generated on the first server start and appears when the first player joins. If there are no [[Server#Managing_and_maintaining_a_server ops]] set on the server, the spawn protection is disabled automatically as well."
                 },
                 {
                     "nixName": "sync-chunk-writes",
+                    "name": "sync-chunk-writes",
                     "type": "boolean",
                     "value": "true",
                     "desc": "Enables synchronous chunk writes."
                 },
                 {
                     "nixName": "use-native-transport",
+                    "name": "use-native-transport",
                     "type": "boolean",
                     "value": "true",
-                    "desc": "Linux server performance improvements: optimized packet sending/receiving on Linux"
+                    "desc": "Linux server performance improvements: optimized packet sending/receiving on Linux:'''true''' - Enabled. Enable Linux packet sending/receiving optimization:'''false''' - Disabled. Disable Linux packet sending/receiving optimization"
                 },
                 {
                     "nixName": "view-distance",
+                    "name": "view-distance",
                     "type": "integer (3-32)",
                     "value": "10",
                     "desc": "Sets the amount of world data the server sends the client, measured in chunks in each direction of the player (radius, not diameter). It determines the server-side viewing distance.''10 is the default/recommended. If the player has major lag, this value is recommended to be reduced.''"
@@ -408,7 +457,7 @@
         },
         {
             "name": "whitelist",
-            "desc": "Whitelisted players, only has an effect when  services.minecraft-server.declarative  is true  and the whitelist is enabled via  services.minecraft-server.serverProperties  bysetting  white-list  to  true . This is a mappingfrom Minecraft usernames to UUIDs. You can use  https://mcuuid.net/  to get a MinecraftUUID for a username.",
+            "desc": "Whitelisted players, only has an effect when services.minecraft-server.declarative is true and the whitelist is enabled via services.minecraft-server.serverProperties by setting white-list to true. This is a mapping from Minecraft usernames to UUIDs. You can use https://mcuuid.net/ to get a Minecraft UUID for a username.",
             "nixName": "whitelist",
             "type": "attribute set of Minecraft UUID",
             "value": "{ }"

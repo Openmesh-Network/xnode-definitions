@@ -49,7 +49,7 @@
         },
         {
             "name": "ssl.keystore",
-            "desc": "JavaKeyStore  file containing the certificates.",
+            "desc": "Java KeyStore file containing the certificates.",
             "nixName": "ssl.keystore",
             "type": "null or path",
             "value": "\"/var/lib/metabase/metabase.jks\""

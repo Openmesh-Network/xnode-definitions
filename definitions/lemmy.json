@@ -12,7 +12,7 @@
     "options": [
         {
             "name": "adminPasswordFile",
-            "desc": "File which contains the value of setup.admin_password .",
+            "desc": "File which contains the value of setup.admin_password.",
             "nixName": "adminPasswordFile",
             "type": "null or path",
             "value": "null"
@@ -33,7 +33,7 @@
         },
         {
             "name": "database.uri",
-            "desc": "The connection URI to use. Takes priority over the configuration fileif set.",
+            "desc": "The connection URI to use. Takes priority over the configuration file if set.",
             "nixName": "database.uri",
             "type": "null or string",
             "value": "null"
@@ -47,7 +47,7 @@
         },
         {
             "name": "enable",
-            "desc": "Whether to enable lemmy a federated alternative to reddit inrust.",
+            "desc": "Whether to enable lemmy a federated alternative to reddit in rust.",
             "nixName": "enable",
             "type": "boolean",
             "value": "true"
@@ -61,7 +61,7 @@
         },
         {
             "name": "pictrsApiKeyFile",
-            "desc": "File which contains the value of  pictrs.api_key .",
+            "desc": "File which contains the value of pictrs.api_key.",
             "nixName": "pictrsApiKeyFile",
             "type": "null or path",
             "value": "null"
@@ -110,7 +110,7 @@
         },
         {
             "name": "smtpPasswordFile",
-            "desc": "File which contains the value of email.smtp_password .",
+            "desc": "File which contains the value of email.smtp_password.",
             "nixName": "smtpPasswordFile",
             "type": "null or path",
             "value": "null"

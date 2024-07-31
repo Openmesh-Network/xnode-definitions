@@ -14,7 +14,7 @@
     "options": [
         {
             "name": "configs",
-            "desc": "Pleroma public configuration.  This list gets appended from left to right into/etc/pleroma/config.exs. Elixir evaluates its configurationimperatively, meaning you can override a setting by appending a new strto this NixOS option list.   DO NOT STORE ANY PLEROMA SECRET HERE , use  services.pleroma.secretConfigFile instead.  This setting is going to be stored in a file part of the Nix store.The Nix store being world-readable, it\u2019s not the right place to storeany secret  Have a look to Pleroma section in the NixOS manual for moreinformation.",
+            "desc": "Pleroma public configuration. This list gets appended from left to right into /etc/pleroma/config.exs. Elixir evaluates its configuration imperatively, meaning you can override a setting by appending a new str to this NixOS option list. DO NOT STORE ANY PLEROMA SECRET HERE, use services.pleroma.secretConfigFile instead. This setting is going to be stored in a file part of the Nix store. The Nix store being world-readable, it\u2019s not the right place to store any secret Have a look to Pleroma section in the NixOS manual for more information.",
             "nixName": "configs",
             "type": "list of string",
             "value": ""
@@ -42,14 +42,14 @@
         },
         {
             "name": "secretConfigFile",
-            "desc": "Path to the file containing your secret pleroma configuration.   DO NOT POINT THIS OPTION TO THE NIX STORE , the store beingworld-readable, it\u2019ll compromise all your secrets.",
+            "desc": "Path to the file containing your secret pleroma configuration. DO NOT POINT THIS OPTION TO THE NIX STORE, the store being world-readable, it\u2019ll compromise all your secrets.",
             "nixName": "secretConfigFile",
             "type": "string",
             "value": "/var/lib/pleroma/secrets.exs"
         },
         {
             "name": "stateDir",
-            "desc": "Directory where the pleroma service will save the uploads and staticfiles.",
+            "desc": "Directory where the pleroma service will save the uploads and static files.",
             "nixName": "stateDir",
             "type": "string",
             "value": "/var/lib/pleroma"

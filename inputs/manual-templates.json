@@ -1559,5 +1559,24 @@
         "quality": false,
         "implementation": false,
         "isUnitRunnable":false
+    },
+    {
+        "id": "88",
+        "logo": "https://radicle.xyz/assets/images/radicle.svg",
+        "name": "Radicle",
+        "category": "Version Control",
+        "tags": [
+            "Version Control",
+            "Distributed",
+            "Open-source"
+        ],
+        "dateAdded": "2024-07-30T12:00:00Z",
+        "desc": "Radicle is an open source, peer-to-peer code collaboration stack built on Git. Unlike centralized code hosting platforms, there is no single entity controlling the network. Repositories are replicated across peers in a decentralized manner, and users are in full control of their data and workflow.",
+        "serviceNames": [
+            "radicle"
+        ],
+        "quality": false,
+        "implementation": false,
+        "isUnitRunnable": true
     }
 ]

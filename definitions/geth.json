@@ -124,7 +124,7 @@
         },
         {
             "name": "<name>.network",
-            "desc": "The network to connect to. Mainnet (null) is the default ethereumnetwork.",
+            "desc": "The network to connect to. Mainnet (null) is the default ethereum network.",
             "nixName": "<name>.network",
             "type": "null or one of \"goerli\", \"rinkeby\", \"yolov2\", \"ropsten\"",
             "value": "null"
