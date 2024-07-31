@@ -129,8 +129,25 @@ def apply_overrides(services):
     # TODO: Integrate scraping module to regain this functionality in a more general way
     with open('inputs/servicesWithOptions.json', 'r') as servicesWithOptions:
         scraped_services = json.loads(servicesWithOptions.read())['services']
-    final_services = override_tags(options_applied, scraped_services)
+    tags_applied = override_tags(options_applied, scraped_services)
+
+    # Manual service overrides for outliers such as geth which don't find the correct package.
+    with open('inputs/manual-service-overrides.json', 'r') as file:
+        service_overrides = json.loads(file.read())
+
+    final_services = override_services(tags_applied, service_overrides)
+
     return final_services
+
+def override_services(starting_services, service_overrides):
+    for service in service_overrides:
+        # Find the service in final_services
+        for svc in starting_services:
+            if svc['nixName'] == service['nixName']:
+                for override_field in service:
+                    svc[override_field] = service[override_field]
+    return starting_services
+    
 
 def find_services_in_templates(templates):
     service_nix_names = []
