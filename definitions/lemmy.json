@@ -1,14 +1,14 @@
 {
-    "name": "lemmy-help",
-    "desc": "lemmy-help is an emmylua parser as well as a CLI which takes that parsed tree and converts it into vim help docs.",
+    "name": "lemmy-server",
+    "desc": "\ud83d\udc00 Building a federated alternative to reddit in rust",
     "nixName": "lemmy",
     "specs": {
         "ram": 0,
         "storage": 0
     },
     "tags": [],
-    "website": "https://github.com/numToStr/lemmy-help",
-    "logo": "",
+    "website": "https://join-lemmy.org",
+    "logo": "https://join-lemmy.org/static/assets/icons/favicon.svg",
     "options": [
         {
             "name": "adminPasswordFile",

@@ -10,5 +10,12 @@
         "tags": ["RPC", "Validator", "Blockchain"],
         "website": "https://geth.ethereum.org/",
         "logo": "https://geth.ethereum.org/favicon.ico"
+    },
+    {
+        "name":"lemmy-server",
+        "desc":"🐀 Building a federated alternative to reddit in rust",
+        "nixName": "lemmy",
+        "website": "https://join-lemmy.org",
+        "logo": "https://join-lemmy.org/static/assets/icons/favicon.svg"
     }
 ]

@@ -21,8 +21,10 @@ for line in minecraft_output:
             options.append(current_option)
             current_option = {}
         name = line.split('id="')[1].split('"')[0]
-        current_option['nixName'] = name
         current_option['name'] = name
+        if "." in name:
+            name = '"' + name + '"'
+        current_option['nixName'] = name
     #elif "'''" in line:
     #    continue
         #print("continuing", line)
@@ -32,6 +34,8 @@ for line in minecraft_output:
         #print(current_option.keys())
     elif ('nixName' in current_option.keys()) and ('type' in current_option.keys()) and not ('value' in current_option.keys()):
         current_option['value'] = line
+        if "''blank''" in current_option["value"]:
+            current_option['value'] = ""
 
     elif ('nixName' in current_option.keys()) and ('type' in current_option.keys()) and ('value' in current_option.keys()):
         if 'desc' in current_option.keys():
@@ -47,7 +51,7 @@ for opt in options:
     if "undetermined" in opt['type']:
         print("REMOVED",opt)
     elif opt["desc"] == "":
-        print("NO DESC",opt)
+        print("NO DESC",opt)  
     else:
         for val in opt:
             opt[val] = opt[val].strip()
